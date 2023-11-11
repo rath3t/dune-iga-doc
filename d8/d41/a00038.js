@@ -1,6 +1,6 @@
 var a00038 =
 [
-    [ "Dune::IGA::Boundary", "d9/d97/a01152.html", "d9/d97/a01152" ],
-    [ "Dune::IGA::TrimData", "d9/d42/a01156.html", "d9/d42/a01156" ],
+    [ "Dune::IGA::Boundary", "d2/d7b/a01150.html", "d2/d7b/a01150" ],
+    [ "Dune::IGA::TrimData", "d5/d16/a01154.html", "d5/d16/a01154" ],
     [ "BoundaryLoop", "d8/d41/a00038.html#ac852dd8efef6c18283ca22735cb02696", null ]
 ];
