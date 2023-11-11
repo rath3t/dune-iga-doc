@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('namespacemembers_func.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -91,14 +111,14 @@ $(function() {
 <li>fillQuadratureRuleImpl()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#a023d3c0845a496b2eedca5b359b49964">Dune::IGA</a></li>
 <li>findSpanCorrected()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#a38d1fb2831ca0dbfa925c4858576a99b">Dune::IGA</a></li>
 <li>findSpanUncorrected()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#a554d684e12126174010f2a98d8136a3d">Dune::IGA</a></li>
-<li>forEachUntrimmedBoundaryDOF()&#160;:&#160;<a class="el" href="d8/dfa/a00121.html#a8ce90ea47d11d38bdb1e3b675db93a18">Dune::Functions</a></li>
-<li>from_json()&#160;:&#160;<a class="el" href="d8/d87/a00118.html#a70c94a23dfddde23f8cd6b56b223f943">Dune::IGA::Ibra</a></li>
+<li>forEachUntrimmedBoundaryDOF()&#160;:&#160;<a class="el" href="df/dc8/a00122.html#a8ce90ea47d11d38bdb1e3b675db93a18">Dune::Functions</a></li>
+<li>from_json()&#160;:&#160;<a class="el" href="df/d6a/a00119.html#a70c94a23dfddde23f8cd6b56b223f943">Dune::IGA::Ibra</a></li>
 </ul>
 
 
 <h3><a id="index_g" name="index_g"></a>- g -</h3><ul>
 <li>generateRefinedKnots()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#a6bf8c0c51afc7176fc90bc962b6325e3">Dune::IGA</a></li>
-<li>getGenerics()&#160;:&#160;<a class="el" href="d8/d87/a00118.html#a778f6c433369e51195762d7e5c4c1f08">Dune::IGA::Ibra</a></li>
+<li>getGenerics()&#160;:&#160;<a class="el" href="df/d6a/a00119.html#a778f6c433369e51195762d7e5c4c1f08">Dune::IGA::Ibra</a></li>
 <li>gridEntityTupleGenerator()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#ab372b8b34cfa334f8e7767bacec8170a">Dune::IGA</a></li>
 </ul>
 
@@ -129,7 +149,7 @@ $(function() {
 
 <h3><a id="index_n" name="index_n"></a>- n -</h3><ul>
 <li>netOfSpan()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#a8a4567640bb27c2e611948baa62cb4bb">Dune::IGA</a></li>
-<li>nurbs()&#160;:&#160;<a class="el" href="df/dc8/a00122.html#a10c3f08f7830f39c003415e65e2a0361">Dune::Functions::BasisFactory</a></li>
+<li>nurbs()&#160;:&#160;<a class="el" href="de/d36/a00123.html#a10c3f08f7830f39c003415e65e2a0361">Dune::Functions::BasisFactory</a></li>
 </ul>
 
 
@@ -142,10 +162,12 @@ $(function() {
 
 
 <h3><a id="index_r" name="index_r"></a>- r -</h3><ul>
+<li>reader()&#160;:&#160;<a class="el" href="d9/d47/a00129.html#ab4fd499c59a508228004cc03f4730eda">Dune::Python::IGA</a></li>
 <li>referenceElement()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#aef81a26cbefe3fe5f7b1360e5a2cffe3">Dune::IGA</a></li>
-<li>registerControlPoint()&#160;:&#160;<a class="el" href="df/dcd/a00127.html#a5d2b9f264b1b4229ed54df9082d5d35d">Dune::Python</a></li>
-<li>registerMultiDimensionNet()&#160;:&#160;<a class="el" href="df/dcd/a00127.html#a63daff6f14eb04e3715e040c6803d6e8">Dune::Python</a></li>
-<li>registerNurbsPatchData()&#160;:&#160;<a class="el" href="df/dcd/a00127.html#abb0ad571b894541ccc4722f669ce8097">Dune::Python</a></li>
+<li>registerControlPoint()&#160;:&#160;<a class="el" href="d1/d88/a00128.html#a5d2b9f264b1b4229ed54df9082d5d35d">Dune::Python</a></li>
+<li>registerHierarchicalGrid()&#160;:&#160;<a class="el" href="d9/d47/a00129.html#aa7356f9cf54b338263a7ef697df04387">Dune::Python::IGA</a></li>
+<li>registerMultiDimensionNet()&#160;:&#160;<a class="el" href="d1/d88/a00128.html#a63daff6f14eb04e3715e040c6803d6e8">Dune::Python</a></li>
+<li>registerNurbsPatchData()&#160;:&#160;<a class="el" href="d1/d88/a00128.html#abb0ad571b894541ccc4722f669ce8097">Dune::Python</a></li>
 </ul>
 
 
@@ -157,12 +179,15 @@ $(function() {
 
 <h3><a id="index_t" name="index_t"></a>- t -</h3><ul>
 <li>triangulate()&#160;:&#160;<a class="el" href="d4/d3e/a00116.html#ab8e1d89240e3480112457535ab40b620">Dune::IGA</a></li>
-<li>typeForTypeString()&#160;:&#160;<a class="el" href="d8/d87/a00118.html#a214ef9432ef8fee94313a9e5a815d33b">Dune::IGA::Ibra</a></li>
+<li>typeForTypeString()&#160;:&#160;<a class="el" href="df/d6a/a00119.html#a214ef9432ef8fee94313a9e5a815d33b">Dune::IGA::Ibra</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

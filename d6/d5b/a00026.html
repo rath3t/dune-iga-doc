@@ -9,6 +9,10 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d6/d5b/a00026.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
@@ -77,7 +93,7 @@ $(function() {
 <code>#include &lt;numbers&gt;</code><br />
 <code>#include &lt;ranges&gt;</code><br />
 <code>#include &quot;<a class="el" href="../../d4/d51/a00017_source.html">dune/iga/bsplinealgorithms.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/db4/a02715_source.html">dune/iga/nurbspatchdata.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/db0/a02777_source.html">dune/iga/nurbspatchdata.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../db/dab/a00089_source.html">dune/iga/utils/linearalgebra.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d9/d77/a00095_source.html">dune/iga/utils/mdnet.hh</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="../../d2/d1f/a00083_source.html">dune/iga/utils/typetraits.hh</a>&quot;</code><br />
@@ -86,7 +102,7 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d43/a01020.html">Dune::IGA::Nurbs&lt; dim, ScalarType_ &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc9/a01065.html">Dune::IGA::Nurbs&lt; dim, ScalarType_ &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -102,12 +118,12 @@ Functions</h2></td></tr>
 <tr class="memitem:a6bf8c0c51afc7176fc90bc962b6325e3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a6bf8c0c51afc7176fc90bc962b6325e3">Dune::IGA::generateRefinedKnots</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans, const int dir, const int refinementLevel)</td></tr>
 <tr class="separator:a6bf8c0c51afc7176fc90bc962b6325e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a4567640bb27c2e611948baa62cb4bb"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, typename NetValueType &gt; <br />
-requires (std::floating_point&lt;NetValueType&gt; || Vector&lt;NetValueType&gt; || <a class="el" href="../../d5/d6e/a01240.html">is_instantiation_of</a>&lt;ControlPoint, NetValueType&gt;::value)</td></tr>
+requires (std::floating_point&lt;NetValueType&gt; || Vector&lt;NetValueType&gt; || <a class="el" href="../../d1/d1a/a01285.html">is_instantiation_of</a>&lt;ControlPoint, NetValueType&gt;::value)</td></tr>
 <tr class="memitem:a8a4567640bb27c2e611948baa62cb4bb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a8a4567640bb27c2e611948baa62cb4bb">Dune::IGA::netOfSpan</a> (std::array&lt; int, dim &gt; subNetStart, const std::array&lt; int, dim &gt; &amp;degree, const MultiDimensionNet&lt; dim, NetValueType &gt; &amp;net)</td></tr>
 <tr class="memdesc:a8a4567640bb27c2e611948baa62cb4bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function return a copy of the subNet of a knotspan, i.e. it is used to return the weights or controlpoints defined on one element.  <a href="../../d4/d3e/a00116.html#a8a4567640bb27c2e611948baa62cb4bb">More...</a><br /></td></tr>
 <tr class="separator:a8a4567640bb27c2e611948baa62cb4bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58f8ab052627ddfd6a4d76218d27170b"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType, std::integral auto dim, std::integral auto dim2, typename NetValueType &gt; <br />
-requires (std::floating_point&lt;NetValueType&gt; || Vector&lt;NetValueType&gt; || <a class="el" href="../../d5/d6e/a01240.html">is_instantiation_of</a>&lt;ControlPoint, NetValueType&gt;::value) (dim == dim2)</td></tr>
+requires (std::floating_point&lt;NetValueType&gt; || Vector&lt;NetValueType&gt; || <a class="el" href="../../d1/d1a/a01285.html">is_instantiation_of</a>&lt;ControlPoint, NetValueType&gt;::value) (dim == dim2)</td></tr>
 <tr class="memitem:a58f8ab052627ddfd6a4d76218d27170b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d3e/a00116.html#a58f8ab052627ddfd6a4d76218d27170b">Dune::IGA::netOfSpan</a> (const Dune::FieldVector&lt; ScalarType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ScalarType &gt;, dim2 &gt; &amp;knots, const std::array&lt; int, dim2 &gt; &amp;degree, const MultiDimensionNet&lt; dim2, NetValueType &gt; &amp;net)</td></tr>
 <tr class="memdesc:a58f8ab052627ddfd6a4d76218d27170b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as netOfSpan above but the start is searched for using the knotvector value <br  />
   <a href="../../d4/d3e/a00116.html#a58f8ab052627ddfd6a4d76218d27170b">More...</a><br /></td></tr>
@@ -132,9 +148,13 @@ requires (std::floating_point&lt;NetValueType&gt; || Vector&lt;NetValueType&gt; 
 <tr class="separator:a16fe995511a81303451229eb2a5b7646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d6/d5b/a00026.html">nurbsalgorithms.hh</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

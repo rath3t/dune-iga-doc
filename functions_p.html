@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_p.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,30 +85,33 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_p" name="index_p"></a>- p -</h3><ul>
-<li>p&#160;:&#160;<a class="el" href="d8/d18/a00948.html#a59e28962433ecc6c63740220adee87d3">Dune::IGA::ControlPoint&lt; VT &gt;</a></li>
-<li>parameterSpaceGrid()&#160;:&#160;<a class="el" href="d6/de6/a01132.html#ac09063fe348737a4cf5740fb943503ce">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>partial()&#160;:&#160;<a class="el" href="df/d89/a01032.html#a19caec343db1c4b578863e38a1956cf3">Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;</a>, <a class="el" href="db/d08/a01028.html#a326c4fc56e34b01de9d34a7b7f437456">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
-<li>partitionType()&#160;:&#160;<a class="el" href="d1/de6/a01068.html#ac72a245a9d253fccf7e649067c6c61e7">Dune::IGA::NURBSGridEntity&lt; codim, dim, GridImpl &gt;</a>, <a class="el" href="d6/d6a/a01072.html#a791deb3cfb64cc77e0640f44ee8a645b">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>patchBoundaryIndex()&#160;:&#160;<a class="el" href="d6/de6/a01132.html#a6f05b0dd7c673b4de227bd142801fec1">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>PatchData&#160;:&#160;<a class="el" href="db/d17/a01148.html#af76416410208288f6548c1d726bf37dd">Dune::IGA::Boundary</a>, <a class="el" href="d7/d76/a00992.html#ac5a13cf5d977000274c321869942cc52">Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;</a></li>
-<li>patchData()&#160;:&#160;<a class="el" href="d6/d48/a00988.html#a296ce01b77efc52b470cb932fcb392eb">Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>patchData_&#160;:&#160;<a class="el" href="db/d08/a01028.html#a21f27b41d02d46b60e163d4a3c4d437b">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a>, <a class="el" href="dc/d19/a01056.html#a5c828b9092df47214c5cd9ff556e2471">Dune::IGA::NURBSGeometry&lt; mydim, dimworld, GridImpl &gt;</a>, <a class="el" href="db/d51/a01144.html#a2cb6af45f3ded2af09900eb0690bad42">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>patchDim&#160;:&#160;<a class="el" href="dc/d64/a01140.html#ad6206583900ce3a6e663d2879feb1d7b">Dune::IGA::NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</a>, <a class="el" href="db/d51/a01144.html#acbb6c3528024de79b18dd68ffbb2f962">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>path()&#160;:&#160;<a class="el" href="db/d17/a01148.html#a2f45c9d99983a0038a5dcebd3aebb111">Dune::IGA::Boundary</a></li>
-<li>pathSamples&#160;:&#160;<a class="el" href="da/d20/a01160.html#aecdaffbb3146705cddb9d4f2811af9e4">Dune::IGA::Trim::NURBSPatchTrimmer&lt; intType_, sc_ &gt;</a></li>
-<li>Point&#160;:&#160;<a class="el" href="db/d17/a01148.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Dune::IGA::Boundary</a>, <a class="el" href="d4/d45/a01012.html#a458043700435144746a87ae7c201e4a5">Dune::IGA::IGARefinedGeometries&lt; GridView &gt;</a>, <a class="el" href="da/d20/a01160.html#a0a4b9dacafd634c66043ea047fed6b66">Dune::IGA::Trim::NURBSPatchTrimmer&lt; intType_, sc_ &gt;</a>, <a class="el" href="dc/dcc/a01200.html#a2d5a17e8f71a34ac9ba492f2b441a536">Dune::IGA::TrimmedSubGrid&lt; dim &gt;</a></li>
-<li>pointDataImpl()&#160;:&#160;<a class="el" href="dd/dac/a01008.html#a0e1f19d17d719318d365da1282cae014">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
-<li>PointSet&#160;:&#160;<a class="el" href="dd/dac/a01008.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
-<li>pointSets_&#160;:&#160;<a class="el" href="dd/dac/a01008.html#a38e52710bba07c29d37de65934406be2">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
-<li>pointsImpl()&#160;:&#160;<a class="el" href="dd/dac/a01008.html#a7146c60450378d89d507be93c2fc3567">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
-<li>preBasis_&#160;:&#160;<a class="el" href="d4/dc5/a01024.html#a2694ec0d342287865eee67f869602641">Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt;</a>, <a class="el" href="d0/ddd/a01044.html#a7b3c53f6aef8715f9d617cf8d3d04b57">Dune::Functions::NurbsNode&lt; GV &gt;</a></li>
-<li>prepareForNoTrim()&#160;:&#160;<a class="el" href="d6/de6/a01132.html#ad8c5e537e69a6e29874d6a8bb556e12f">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>prepareForTrim()&#160;:&#160;<a class="el" href="db/d08/a01028.html#a0669c8063a410aa9aa8157099ab75c77">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
+<li>p&#160;:&#160;<a class="el" href="df/dc6/a00949.html#a59e28962433ecc6c63740220adee87d3">Dune::IGA::ControlPoint&lt; VT &gt;</a></li>
+<li>parameterSpaceGrid()&#160;:&#160;<a class="el" href="dc/d98/a01177.html#ac09063fe348737a4cf5740fb943503ce">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>partial()&#160;:&#160;<a class="el" href="d0/dd3/a01077.html#a19caec343db1c4b578863e38a1956cf3">Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;</a>, <a class="el" href="d9/d7c/a01073.html#a326c4fc56e34b01de9d34a7b7f437456">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
+<li>partitionType()&#160;:&#160;<a class="el" href="d8/ded/a01113.html#ac72a245a9d253fccf7e649067c6c61e7">Dune::IGA::NURBSGridEntity&lt; codim, dim, GridImpl &gt;</a>, <a class="el" href="d6/d8b/a01117.html#a791deb3cfb64cc77e0640f44ee8a645b">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>patchBoundaryIndex()&#160;:&#160;<a class="el" href="dc/d98/a01177.html#a6f05b0dd7c673b4de227bd142801fec1">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>PatchData&#160;:&#160;<a class="el" href="dd/d43/a01193.html#af76416410208288f6548c1d726bf37dd">Dune::IGA::Boundary</a>, <a class="el" href="d2/d41/a01037.html#ac5a13cf5d977000274c321869942cc52">Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;</a></li>
+<li>patchData()&#160;:&#160;<a class="el" href="d1/df7/a00957.html#a296ce01b77efc52b470cb932fcb392eb">Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>patchData_&#160;:&#160;<a class="el" href="d9/d7c/a01073.html#a21f27b41d02d46b60e163d4a3c4d437b">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a>, <a class="el" href="de/d99/a01101.html#a5c828b9092df47214c5cd9ff556e2471">Dune::IGA::NURBSGeometry&lt; mydim, dimworld, GridImpl &gt;</a>, <a class="el" href="d3/d10/a01189.html#a2cb6af45f3ded2af09900eb0690bad42">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>patchDim&#160;:&#160;<a class="el" href="d3/dd3/a01185.html#ad6206583900ce3a6e663d2879feb1d7b">Dune::IGA::NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</a>, <a class="el" href="d3/d10/a01189.html#acbb6c3528024de79b18dd68ffbb2f962">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>path()&#160;:&#160;<a class="el" href="dd/d43/a01193.html#a2f45c9d99983a0038a5dcebd3aebb111">Dune::IGA::Boundary</a></li>
+<li>pathSamples&#160;:&#160;<a class="el" href="de/d61/a01205.html#aecdaffbb3146705cddb9d4f2811af9e4">Dune::IGA::Trim::NURBSPatchTrimmer&lt; intType_, sc_ &gt;</a></li>
+<li>Point&#160;:&#160;<a class="el" href="dd/d43/a01193.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Dune::IGA::Boundary</a>, <a class="el" href="d2/db8/a01057.html#a458043700435144746a87ae7c201e4a5">Dune::IGA::IGARefinedGeometries&lt; GridView &gt;</a>, <a class="el" href="de/d61/a01205.html#a0a4b9dacafd634c66043ea047fed6b66">Dune::IGA::Trim::NURBSPatchTrimmer&lt; intType_, sc_ &gt;</a>, <a class="el" href="d1/d31/a01245.html#a2d5a17e8f71a34ac9ba492f2b441a536">Dune::IGA::TrimmedSubGrid&lt; dim &gt;</a></li>
+<li>pointDataImpl()&#160;:&#160;<a class="el" href="dc/d99/a01053.html#a0e1f19d17d719318d365da1282cae014">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
+<li>PointSet&#160;:&#160;<a class="el" href="dc/d99/a01053.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
+<li>pointSets_&#160;:&#160;<a class="el" href="dc/d99/a01053.html#a38e52710bba07c29d37de65934406be2">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
+<li>pointsImpl()&#160;:&#160;<a class="el" href="dc/d99/a01053.html#a7146c60450378d89d507be93c2fc3567">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</a></li>
+<li>preBasis_&#160;:&#160;<a class="el" href="d8/d18/a01069.html#a2694ec0d342287865eee67f869602641">Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt;</a>, <a class="el" href="d3/dc4/a01089.html#a7b3c53f6aef8715f9d617cf8d3d04b57">Dune::Functions::NurbsNode&lt; GV &gt;</a></li>
+<li>prepareForNoTrim()&#160;:&#160;<a class="el" href="dc/d98/a01177.html#ad8c5e537e69a6e29874d6a8bb556e12f">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>prepareForTrim()&#160;:&#160;<a class="el" href="d9/d7c/a01073.html#a0669c8063a410aa9aa8157099ab75c77">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

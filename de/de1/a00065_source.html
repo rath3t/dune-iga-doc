@@ -9,6 +9,10 @@
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
@@ -46,6 +50,23 @@ $(function() {
 /* @license-end */
 </script>
 <div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('de/de1/a00065_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -60,11 +81,6 @@ $(function() {
 </iframe>
 </div>
 
-<div id="nav-path" class="navpath">
-  <ul>
-<li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li>  </ul>
-</div>
-</div><!-- top -->
 <div class="header">
   <div class="headertitle"><div class="title">igadatacollector.hh</div></div>
 </div><!--header-->
@@ -84,11 +100,11 @@ $(function() {
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;dune/vtk/types.hh&gt;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;dune/vtk/utility/lagrangepoints.hh&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../df/d6a/a00119.html">   16</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../df/d6a/a00119.html">Dune::Vtk</a> {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d4/d98/a00120.html">   16</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d98/a00120.html">Dune::Vtk</a> {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>View&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html">   19</a></span>  <span class="keyword">requires</span>(GridView::dimension == 2) <span class="keyword">class</span> <a class="code hl_class" href="../../dd/dac/a01008.html">DiscontinuousIgaDataCollector</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      : <span class="keyword">public</span> UnstructuredDataCollectorInterface&lt;GridView, <a class="code hl_class" href="../../dd/dac/a01008.html">DiscontinuousIgaDataCollector&lt;GridView&gt;</a>, Partitions::All&gt; {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">using </span><a class="code hl_class" href="../../dd/dac/a01008.html">Self</a>  = <a class="code hl_class" href="../../dd/dac/a01008.html">DiscontinuousIgaDataCollector</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html">   19</a></span>  <span class="keyword">requires</span>(GridView::dimension == 2) <span class="keyword">class</span> <a class="code hl_class" href="../../dc/d99/a01053.html">DiscontinuousIgaDataCollector</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      : <span class="keyword">public</span> UnstructuredDataCollectorInterface&lt;GridView, <a class="code hl_class" href="../../dc/d99/a01053.html">DiscontinuousIgaDataCollector&lt;GridView&gt;</a>, Partitions::All&gt; {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">using </span><a class="code hl_class" href="../../dc/d99/a01053.html">Self</a>  = <a class="code hl_class" href="../../dc/d99/a01053.html">DiscontinuousIgaDataCollector</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span>Super = UnstructuredDataCollectorInterface&lt;GridView, Self, Partitions::All&gt;;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>   <span class="keyword">public</span>:</div>
@@ -96,16 +112,16 @@ $(function() {
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">using </span>Super::partition;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>   <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a702257cf18c7201e3eda8cc496c74fef">   29</a></span>    <a class="code hl_function" href="../../dd/dac/a01008.html#a702257cf18c7201e3eda8cc496c74fef">DiscontinuousIgaDataCollector</a>(GridView <span class="keyword">const</span>&amp; gridView, <span class="keywordtype">int</span> subSampleFull, <span class="keywordtype">int</span> subSampleTrimmed)</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a702257cf18c7201e3eda8cc496c74fef">   29</a></span>    <a class="code hl_function" href="../../dc/d99/a01053.html#a702257cf18c7201e3eda8cc496c74fef">DiscontinuousIgaDataCollector</a>(GridView <span class="keyword">const</span>&amp; gridView, <span class="keywordtype">int</span> subSampleFull, <span class="keywordtype">int</span> subSampleTrimmed)</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        : Super(gridView), geometries_(gridView, subSampleFull, subSampleTrimmed) {}</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// Does not subsample</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a689889809293868de7fbe9f4f200872f">   32</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../dd/dac/a01008.html#a689889809293868de7fbe9f4f200872f">DiscontinuousIgaDataCollector</a>(GridView <span class="keyword">const</span>&amp; gridView) : <a class="code hl_class" href="../../dd/dac/a01008.html">DiscontinuousIgaDataCollector</a>(gridView, 0, 0){};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a689889809293868de7fbe9f4f200872f">   32</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../dc/d99/a01053.html#a689889809293868de7fbe9f4f200872f">DiscontinuousIgaDataCollector</a>(GridView <span class="keyword">const</span>&amp; gridView) : <a class="code hl_class" href="../../dc/d99/a01053.html">DiscontinuousIgaDataCollector</a>(gridView, 0, 0){};</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// Sub-samples trimmed elements by creating a new grid</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a50f31cc9024c6436548c154f1fcd5fea">   35</a></span>    <a class="code hl_function" href="../../dd/dac/a01008.html#a50f31cc9024c6436548c154f1fcd5fea">DiscontinuousIgaDataCollector</a>(GridView <span class="keyword">const</span>&amp; gridView, <span class="keywordtype">int</span> subsample)</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        : <a class="code hl_class" href="../../dd/dac/a01008.html">DiscontinuousIgaDataCollector</a>(gridView, subsample, subsample){};</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a50f31cc9024c6436548c154f1fcd5fea">   35</a></span>    <a class="code hl_function" href="../../dc/d99/a01053.html#a50f31cc9024c6436548c154f1fcd5fea">DiscontinuousIgaDataCollector</a>(GridView <span class="keyword">const</span>&amp; gridView, <span class="keywordtype">int</span> subsample)</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        : <a class="code hl_class" href="../../dc/d99/a01053.html">DiscontinuousIgaDataCollector</a>(gridView, subsample, subsample){};</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a3f9f1b871c8800a722379721b64ec249">   39</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dd/dac/a01008.html#a3f9f1b871c8800a722379721b64ec249">updateImpl</a>() {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a3f9f1b871c8800a722379721b64ec249">   39</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/d99/a01053.html#a3f9f1b871c8800a722379721b64ec249">updateImpl</a>() {</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      pointSets_.clear();</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keyword">auto</span> <span class="keyword">const</span>&amp; indexSet        = this-&gt;gridView().indexSet();</div>
@@ -131,11 +147,11 @@ $(function() {
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      }</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">   66</a></span>    [[nodiscard]] std::uint64_t <a class="code hl_function" href="../../dd/dac/a01008.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">numPointsImpl</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numPoints_; }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">   66</a></span>    [[nodiscard]] std::uint64_t <a class="code hl_function" href="../../dc/d99/a01053.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">numPointsImpl</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numPoints_; }</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a7146c60450378d89d507be93c2fc3567">   74</a></span>    [[nodiscard]] std::vector&lt;T&gt; <a class="code hl_function" href="../../dd/dac/a01008.html#a7146c60450378d89d507be93c2fc3567">pointsImpl</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a7146c60450378d89d507be93c2fc3567">   74</a></span>    [[nodiscard]] std::vector&lt;T&gt; <a class="code hl_function" href="../../dc/d99/a01053.html#a7146c60450378d89d507be93c2fc3567">pointsImpl</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      std::vector&lt;T&gt; data(this-&gt;numPoints() * 3);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keyword">auto</span> <span class="keyword">const</span>&amp; indexSet = this-&gt;gridView().indexSet();</div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> element : <a class="code hl_function" href="../../d4/d3e/a00116.html#abcf61b5168cb5509c107f3ec78f33fa3">elements</a>(this-&gt;gridView(), partition)) {</div>
@@ -157,10 +173,10 @@ $(function() {
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="keywordflow">return</span> data;</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#ae66e7649e22ea229d30b699b43a0af45">   97</a></span>    [[nodiscard]] std::uint64_t <a class="code hl_function" href="../../dd/dac/a01008.html#ae66e7649e22ea229d30b699b43a0af45">numCellsImpl</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numCells_; }</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#ae66e7649e22ea229d30b699b43a0af45">   97</a></span>    [[nodiscard]] std::uint64_t <a class="code hl_function" href="../../dc/d99/a01053.html#ae66e7649e22ea229d30b699b43a0af45">numCellsImpl</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> numCells_; }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a3ddd74a17c3266184bcc6dc9509c839d">  103</a></span>    [[nodiscard]] Cells <a class="code hl_function" href="../../dd/dac/a01008.html#a3ddd74a17c3266184bcc6dc9509c839d">cellsImpl</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a3ddd74a17c3266184bcc6dc9509c839d">  103</a></span>    [[nodiscard]] Cells <a class="code hl_function" href="../../dc/d99/a01053.html#a3ddd74a17c3266184bcc6dc9509c839d">cellsImpl</a>()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      Cells cells;</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      cells.connectivity.reserve(this-&gt;numPoints());</div>
 <div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>      cells.offsets.reserve(this-&gt;numCells());</div>
@@ -193,7 +209,7 @@ $(function() {
 <div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
 <div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
 <div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keyword">class</span> GlobalFunction&gt;</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a0e1f19d17d719318d365da1282cae014">  137</a></span>    [[nodiscard]] std::vector&lt;T&gt; <a class="code hl_function" href="../../dd/dac/a01008.html#a0e1f19d17d719318d365da1282cae014">pointDataImpl</a>(GlobalFunction <span class="keyword">const</span>&amp; fct)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a0e1f19d17d719318d365da1282cae014">  137</a></span>    [[nodiscard]] std::vector&lt;T&gt; <a class="code hl_function" href="../../dc/d99/a01053.html#a0e1f19d17d719318d365da1282cae014">pointDataImpl</a>(GlobalFunction <span class="keyword">const</span>&amp; fct)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <span class="keywordtype">int</span> nComps = fct.numComponents();</div>
 <div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      std::vector&lt;T&gt; data(this-&gt;numPoints() * nComps);</div>
 <div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
@@ -216,7 +232,7 @@ $(function() {
 <div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    }</div>
 <div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="comment">// Evaluate `fct` in center of cell.</span></div>
 <div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> T, <span class="keyword">class</span> VtkFunction&gt;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#ab171e5246fefe347edea777b017683ff">  160</a></span>    [[nodiscard]] std::vector&lt;T&gt; <a class="code hl_function" href="../../dd/dac/a01008.html#ab171e5246fefe347edea777b017683ff">cellDataImpl</a>(VtkFunction <span class="keyword">const</span>&amp; fct)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#ab171e5246fefe347edea777b017683ff">  160</a></span>    [[nodiscard]] std::vector&lt;T&gt; <a class="code hl_function" href="../../dc/d99/a01053.html#ab171e5246fefe347edea777b017683ff">cellDataImpl</a>(VtkFunction <span class="keyword">const</span>&amp; fct)<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      <span class="keywordtype">int</span> nComps = fct.numComponents();</div>
 <div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>      std::vector&lt;T&gt; data;</div>
 <div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>      data.reserve(this-&gt;numCells_ * nComps);</div>
@@ -245,41 +261,45 @@ $(function() {
 <div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; gridView()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> gridView_; }</div>
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#acb3c97d81a0773a69a2fb7e42c8969ac">  189</a></span>    std::uint64_t numPoints_ = 0;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#ace1c9b7c96ba1c206f79b1c115939c41">  190</a></span>    std::uint64_t numCells_  = 0;</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#acb3c97d81a0773a69a2fb7e42c8969ac">  189</a></span>    std::uint64_t numPoints_ = 0;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#ace1c9b7c96ba1c206f79b1c115939c41">  190</a></span>    std::uint64_t numCells_  = 0;</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">  192</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../dd/dac/a01008.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">PointSet</a> = LagrangePointSet&lt;typename GridView::ctype, GridView::dimension&gt;;</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a38e52710bba07c29d37de65934406be2">  193</a></span>    std::map&lt;GeometryType, PointSet&gt; <a class="code hl_variable" href="../../dd/dac/a01008.html#a38e52710bba07c29d37de65934406be2">pointSets_</a>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a90e3a8e72b603367b1ba87ed69011c82">  194</a></span>    std::vector&lt;std::int64_t&gt; <a class="code hl_variable" href="../../dd/dac/a01008.html#a90e3a8e72b603367b1ba87ed69011c82">indexMap_</a>;</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#af927188f7d6dd6e409d8cdd147a20513">  195</a></span>    std::map&lt;std::array&lt;std::size_t, 2&gt;, std::int64_t&gt; <a class="code hl_variable" href="../../dd/dac/a01008.html#af927188f7d6dd6e409d8cdd147a20513">vertexIndex_</a>;</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../dd/dac/a01008.html#a6b0e8dfe3e05f605cbfd5c7020f69376">  196</a></span>    <a class="code hl_class" href="../../d4/d45/a01012.html">IGA::IGARefinedGeometries&lt;GridView&gt;</a> <a class="code hl_variable" href="../../dd/dac/a01008.html#a6b0e8dfe3e05f605cbfd5c7020f69376">geometries_</a>;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">  192</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../dc/d99/a01053.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">PointSet</a> = LagrangePointSet&lt;typename GridView::ctype, GridView::dimension&gt;;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a38e52710bba07c29d37de65934406be2">  193</a></span>    std::map&lt;GeometryType, PointSet&gt; <a class="code hl_variable" href="../../dc/d99/a01053.html#a38e52710bba07c29d37de65934406be2">pointSets_</a>;</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a90e3a8e72b603367b1ba87ed69011c82">  194</a></span>    std::vector&lt;std::int64_t&gt; <a class="code hl_variable" href="../../dc/d99/a01053.html#a90e3a8e72b603367b1ba87ed69011c82">indexMap_</a>;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#af927188f7d6dd6e409d8cdd147a20513">  195</a></span>    std::map&lt;std::array&lt;std::size_t, 2&gt;, std::int64_t&gt; <a class="code hl_variable" href="../../dc/d99/a01053.html#af927188f7d6dd6e409d8cdd147a20513">vertexIndex_</a>;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="../../dc/d99/a01053.html#a6b0e8dfe3e05f605cbfd5c7020f69376">  196</a></span>    <a class="code hl_class" href="../../d2/db8/a01057.html">IGA::IGARefinedGeometries&lt;GridView&gt;</a> <a class="code hl_variable" href="../../dc/d99/a01053.html#a6b0e8dfe3e05f605cbfd5c7020f69376">geometries_</a>;</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>  };</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
 <div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>}  <span class="comment">// namespace Dune::Vtk</span></div>
 <div class="ttc" id="aa00074_html"><div class="ttname"><a href="../../db/db6/a00074.html">igarefinedgeometries.hh</a></div></div>
 <div class="ttc" id="aa00116_html_abcf61b5168cb5509c107f3ec78f33fa3"><div class="ttname"><a href="../../d4/d3e/a00116.html#abcf61b5168cb5509c107f3ec78f33fa3">Dune::IGA::elements</a></div><div class="ttdeci">const auto &amp; elements(const NURBSLeafGridView&lt; const GridImpl &gt; &amp;gridLeafView)</div></div>
-<div class="ttc" id="aa00119_html"><div class="ttname"><a href="../../df/d6a/a00119.html">Dune::Vtk</a></div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:16</div></div>
-<div class="ttc" id="aa01008_html"><div class="ttname"><a href="../../dd/dac/a01008.html">Dune::Vtk::DiscontinuousIgaDataCollector</a></div><div class="ttdoc">Implementation of Discontinuous DataCollector for Iga cells with or without trimming information.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:20</div></div>
-<div class="ttc" id="aa01008_html_a0e1f19d17d719318d365da1282cae014"><div class="ttname"><a href="../../dd/dac/a01008.html#a0e1f19d17d719318d365da1282cae014">Dune::Vtk::DiscontinuousIgaDataCollector::pointDataImpl</a></div><div class="ttdeci">std::vector&lt; T &gt; pointDataImpl(GlobalFunction const &amp;fct) const</div><div class="ttdoc">Evaluate the fct at element vertices and edge centers in the same order as the point coords.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:137</div></div>
-<div class="ttc" id="aa01008_html_a2d62c4e8c581d0c68f66bbc1e7c3e2a7"><div class="ttname"><a href="../../dd/dac/a01008.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">Dune::Vtk::DiscontinuousIgaDataCollector::numPointsImpl</a></div><div class="ttdeci">std::uint64_t numPointsImpl() const</div><div class="ttdoc">Return number of Lagrange nodes.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:66</div></div>
-<div class="ttc" id="aa01008_html_a38e52710bba07c29d37de65934406be2"><div class="ttname"><a href="../../dd/dac/a01008.html#a38e52710bba07c29d37de65934406be2">Dune::Vtk::DiscontinuousIgaDataCollector::pointSets_</a></div><div class="ttdeci">std::map&lt; GeometryType, PointSet &gt; pointSets_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:193</div></div>
-<div class="ttc" id="aa01008_html_a3ddd74a17c3266184bcc6dc9509c839d"><div class="ttname"><a href="../../dd/dac/a01008.html#a3ddd74a17c3266184bcc6dc9509c839d">Dune::Vtk::DiscontinuousIgaDataCollector::cellsImpl</a></div><div class="ttdeci">Cells cellsImpl() const</div><div class="ttdoc">Return cell types, offsets, and connectivity.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:103</div></div>
-<div class="ttc" id="aa01008_html_a3f9f1b871c8800a722379721b64ec249"><div class="ttname"><a href="../../dd/dac/a01008.html#a3f9f1b871c8800a722379721b64ec249">Dune::Vtk::DiscontinuousIgaDataCollector::updateImpl</a></div><div class="ttdeci">void updateImpl()</div><div class="ttdoc">Construct the point sets.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:39</div></div>
-<div class="ttc" id="aa01008_html_a50f31cc9024c6436548c154f1fcd5fea"><div class="ttname"><a href="../../dd/dac/a01008.html#a50f31cc9024c6436548c154f1fcd5fea">Dune::Vtk::DiscontinuousIgaDataCollector::DiscontinuousIgaDataCollector</a></div><div class="ttdeci">DiscontinuousIgaDataCollector(GridView const &amp;gridView, int subsample)</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:35</div></div>
-<div class="ttc" id="aa01008_html_a689889809293868de7fbe9f4f200872f"><div class="ttname"><a href="../../dd/dac/a01008.html#a689889809293868de7fbe9f4f200872f">Dune::Vtk::DiscontinuousIgaDataCollector::DiscontinuousIgaDataCollector</a></div><div class="ttdeci">DiscontinuousIgaDataCollector(GridView const &amp;gridView)</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:32</div></div>
-<div class="ttc" id="aa01008_html_a6b0e8dfe3e05f605cbfd5c7020f69376"><div class="ttname"><a href="../../dd/dac/a01008.html#a6b0e8dfe3e05f605cbfd5c7020f69376">Dune::Vtk::DiscontinuousIgaDataCollector::geometries_</a></div><div class="ttdeci">IGA::IGARefinedGeometries&lt; GridView &gt; geometries_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:196</div></div>
-<div class="ttc" id="aa01008_html_a702257cf18c7201e3eda8cc496c74fef"><div class="ttname"><a href="../../dd/dac/a01008.html#a702257cf18c7201e3eda8cc496c74fef">Dune::Vtk::DiscontinuousIgaDataCollector::DiscontinuousIgaDataCollector</a></div><div class="ttdeci">DiscontinuousIgaDataCollector(GridView const &amp;gridView, int subSampleFull, int subSampleTrimmed)</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:29</div></div>
-<div class="ttc" id="aa01008_html_a7146c60450378d89d507be93c2fc3567"><div class="ttname"><a href="../../dd/dac/a01008.html#a7146c60450378d89d507be93c2fc3567">Dune::Vtk::DiscontinuousIgaDataCollector::pointsImpl</a></div><div class="ttdeci">std::vector&lt; T &gt; pointsImpl() const</div><div class="ttdoc">Return a vector of point coordinates.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:74</div></div>
-<div class="ttc" id="aa01008_html_a90e3a8e72b603367b1ba87ed69011c82"><div class="ttname"><a href="../../dd/dac/a01008.html#a90e3a8e72b603367b1ba87ed69011c82">Dune::Vtk::DiscontinuousIgaDataCollector::indexMap_</a></div><div class="ttdeci">std::vector&lt; std::int64_t &gt; indexMap_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:194</div></div>
-<div class="ttc" id="aa01008_html_ab171e5246fefe347edea777b017683ff"><div class="ttname"><a href="../../dd/dac/a01008.html#ab171e5246fefe347edea777b017683ff">Dune::Vtk::DiscontinuousIgaDataCollector::cellDataImpl</a></div><div class="ttdeci">std::vector&lt; T &gt; cellDataImpl(VtkFunction const &amp;fct) const</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:160</div></div>
-<div class="ttc" id="aa01008_html_ada1e06e4d2fe8194d01d2abf4f52b8ea"><div class="ttname"><a href="../../dd/dac/a01008.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">Dune::Vtk::DiscontinuousIgaDataCollector::PointSet</a></div><div class="ttdeci">LagrangePointSet&lt; typename GridView::ctype, GridView::dimension &gt; PointSet</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:192</div></div>
-<div class="ttc" id="aa01008_html_ae66e7649e22ea229d30b699b43a0af45"><div class="ttname"><a href="../../dd/dac/a01008.html#ae66e7649e22ea229d30b699b43a0af45">Dune::Vtk::DiscontinuousIgaDataCollector::numCellsImpl</a></div><div class="ttdeci">std::uint64_t numCellsImpl() const</div><div class="ttdoc">Return number of grid cells.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:97</div></div>
-<div class="ttc" id="aa01008_html_af927188f7d6dd6e409d8cdd147a20513"><div class="ttname"><a href="../../dd/dac/a01008.html#af927188f7d6dd6e409d8cdd147a20513">Dune::Vtk::DiscontinuousIgaDataCollector::vertexIndex_</a></div><div class="ttdeci">std::map&lt; std::array&lt; std::size_t, 2 &gt;, std::int64_t &gt; vertexIndex_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:195</div></div>
-<div class="ttc" id="aa01012_html"><div class="ttname"><a href="../../d4/d45/a01012.html">Dune::IGA::IGARefinedGeometries</a></div><div class="ttdef"><b>Definition:</b> igarefinedgeometries.hh:12</div></div>
+<div class="ttc" id="aa00120_html"><div class="ttname"><a href="../../d4/d98/a00120.html">Dune::Vtk</a></div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:16</div></div>
+<div class="ttc" id="aa01053_html"><div class="ttname"><a href="../../dc/d99/a01053.html">Dune::Vtk::DiscontinuousIgaDataCollector</a></div><div class="ttdoc">Implementation of Discontinuous DataCollector for Iga cells with or without trimming information.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:20</div></div>
+<div class="ttc" id="aa01053_html_a0e1f19d17d719318d365da1282cae014"><div class="ttname"><a href="../../dc/d99/a01053.html#a0e1f19d17d719318d365da1282cae014">Dune::Vtk::DiscontinuousIgaDataCollector::pointDataImpl</a></div><div class="ttdeci">std::vector&lt; T &gt; pointDataImpl(GlobalFunction const &amp;fct) const</div><div class="ttdoc">Evaluate the fct at element vertices and edge centers in the same order as the point coords.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:137</div></div>
+<div class="ttc" id="aa01053_html_a2d62c4e8c581d0c68f66bbc1e7c3e2a7"><div class="ttname"><a href="../../dc/d99/a01053.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">Dune::Vtk::DiscontinuousIgaDataCollector::numPointsImpl</a></div><div class="ttdeci">std::uint64_t numPointsImpl() const</div><div class="ttdoc">Return number of Lagrange nodes.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:66</div></div>
+<div class="ttc" id="aa01053_html_a38e52710bba07c29d37de65934406be2"><div class="ttname"><a href="../../dc/d99/a01053.html#a38e52710bba07c29d37de65934406be2">Dune::Vtk::DiscontinuousIgaDataCollector::pointSets_</a></div><div class="ttdeci">std::map&lt; GeometryType, PointSet &gt; pointSets_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:193</div></div>
+<div class="ttc" id="aa01053_html_a3ddd74a17c3266184bcc6dc9509c839d"><div class="ttname"><a href="../../dc/d99/a01053.html#a3ddd74a17c3266184bcc6dc9509c839d">Dune::Vtk::DiscontinuousIgaDataCollector::cellsImpl</a></div><div class="ttdeci">Cells cellsImpl() const</div><div class="ttdoc">Return cell types, offsets, and connectivity.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:103</div></div>
+<div class="ttc" id="aa01053_html_a3f9f1b871c8800a722379721b64ec249"><div class="ttname"><a href="../../dc/d99/a01053.html#a3f9f1b871c8800a722379721b64ec249">Dune::Vtk::DiscontinuousIgaDataCollector::updateImpl</a></div><div class="ttdeci">void updateImpl()</div><div class="ttdoc">Construct the point sets.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:39</div></div>
+<div class="ttc" id="aa01053_html_a50f31cc9024c6436548c154f1fcd5fea"><div class="ttname"><a href="../../dc/d99/a01053.html#a50f31cc9024c6436548c154f1fcd5fea">Dune::Vtk::DiscontinuousIgaDataCollector::DiscontinuousIgaDataCollector</a></div><div class="ttdeci">DiscontinuousIgaDataCollector(GridView const &amp;gridView, int subsample)</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:35</div></div>
+<div class="ttc" id="aa01053_html_a689889809293868de7fbe9f4f200872f"><div class="ttname"><a href="../../dc/d99/a01053.html#a689889809293868de7fbe9f4f200872f">Dune::Vtk::DiscontinuousIgaDataCollector::DiscontinuousIgaDataCollector</a></div><div class="ttdeci">DiscontinuousIgaDataCollector(GridView const &amp;gridView)</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:32</div></div>
+<div class="ttc" id="aa01053_html_a6b0e8dfe3e05f605cbfd5c7020f69376"><div class="ttname"><a href="../../dc/d99/a01053.html#a6b0e8dfe3e05f605cbfd5c7020f69376">Dune::Vtk::DiscontinuousIgaDataCollector::geometries_</a></div><div class="ttdeci">IGA::IGARefinedGeometries&lt; GridView &gt; geometries_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:196</div></div>
+<div class="ttc" id="aa01053_html_a702257cf18c7201e3eda8cc496c74fef"><div class="ttname"><a href="../../dc/d99/a01053.html#a702257cf18c7201e3eda8cc496c74fef">Dune::Vtk::DiscontinuousIgaDataCollector::DiscontinuousIgaDataCollector</a></div><div class="ttdeci">DiscontinuousIgaDataCollector(GridView const &amp;gridView, int subSampleFull, int subSampleTrimmed)</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:29</div></div>
+<div class="ttc" id="aa01053_html_a7146c60450378d89d507be93c2fc3567"><div class="ttname"><a href="../../dc/d99/a01053.html#a7146c60450378d89d507be93c2fc3567">Dune::Vtk::DiscontinuousIgaDataCollector::pointsImpl</a></div><div class="ttdeci">std::vector&lt; T &gt; pointsImpl() const</div><div class="ttdoc">Return a vector of point coordinates.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:74</div></div>
+<div class="ttc" id="aa01053_html_a90e3a8e72b603367b1ba87ed69011c82"><div class="ttname"><a href="../../dc/d99/a01053.html#a90e3a8e72b603367b1ba87ed69011c82">Dune::Vtk::DiscontinuousIgaDataCollector::indexMap_</a></div><div class="ttdeci">std::vector&lt; std::int64_t &gt; indexMap_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:194</div></div>
+<div class="ttc" id="aa01053_html_ab171e5246fefe347edea777b017683ff"><div class="ttname"><a href="../../dc/d99/a01053.html#ab171e5246fefe347edea777b017683ff">Dune::Vtk::DiscontinuousIgaDataCollector::cellDataImpl</a></div><div class="ttdeci">std::vector&lt; T &gt; cellDataImpl(VtkFunction const &amp;fct) const</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:160</div></div>
+<div class="ttc" id="aa01053_html_ada1e06e4d2fe8194d01d2abf4f52b8ea"><div class="ttname"><a href="../../dc/d99/a01053.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">Dune::Vtk::DiscontinuousIgaDataCollector::PointSet</a></div><div class="ttdeci">LagrangePointSet&lt; typename GridView::ctype, GridView::dimension &gt; PointSet</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:192</div></div>
+<div class="ttc" id="aa01053_html_ae66e7649e22ea229d30b699b43a0af45"><div class="ttname"><a href="../../dc/d99/a01053.html#ae66e7649e22ea229d30b699b43a0af45">Dune::Vtk::DiscontinuousIgaDataCollector::numCellsImpl</a></div><div class="ttdeci">std::uint64_t numCellsImpl() const</div><div class="ttdoc">Return number of grid cells.</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:97</div></div>
+<div class="ttc" id="aa01053_html_af927188f7d6dd6e409d8cdd147a20513"><div class="ttname"><a href="../../dc/d99/a01053.html#af927188f7d6dd6e409d8cdd147a20513">Dune::Vtk::DiscontinuousIgaDataCollector::vertexIndex_</a></div><div class="ttdeci">std::map&lt; std::array&lt; std::size_t, 2 &gt;, std::int64_t &gt; vertexIndex_</div><div class="ttdef"><b>Definition:</b> igadatacollector.hh:195</div></div>
+<div class="ttc" id="aa01057_html"><div class="ttname"><a href="../../d2/db8/a01057.html">Dune::IGA::IGARefinedGeometries</a></div><div class="ttdef"><b>Definition:</b> igarefinedgeometries.hh:12</div></div>
 </div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">igadatacollector.hh</a></li>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

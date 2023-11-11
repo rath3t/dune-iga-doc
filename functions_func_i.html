@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_func_i.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,34 +85,37 @@ $(function() {
 &#160;
 
 <h3><a id="index_i" name="index_i"></a>- i -</h3><ul>
-<li>ibegin()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a19587fbfbcb3a100dab0124bd82aa90c">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="d0/dc8/a01124.html#a6fe8a52339be92303bac54a28b9138ef">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
-<li>id()&#160;:&#160;<a class="el" href="dd/dcb/a01104.html#ad50e90cf1d5a5b05e78100eb139711f6">Dune::IGA::IgaIdSet&lt; GridImpl &gt;</a></li>
-<li>iend()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#aa9e9d8f0c354092d9b81ad751e438a4b">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="d0/dc8/a01124.html#a8168ad68b38cc6c69438b926615cb371">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
-<li>IgaIdSet()&#160;:&#160;<a class="el" href="dd/dcb/a01104.html#a093f9b70ec11610ed61326b5fb7124e4">Dune::IGA::IgaIdSet&lt; GridImpl &gt;</a></li>
-<li>IGARefinedGeometries()&#160;:&#160;<a class="el" href="d4/d45/a01012.html#a35832a135806de1935c201fb8d07a52a">Dune::IGA::IGARefinedGeometries&lt; GridView &gt;</a></li>
-<li>increment()&#160;:&#160;<a class="el" href="da/db7/a01088.html#a74e2285134663f9da1ee24ef7fd74722">Dune::IGA::NURBSGridInterSectionIterator&lt; GridImp &gt;</a>, <a class="el" href="d9/d67/a01080.html#adaf8b454758505380c0fd4e14806e51e">Dune::IGA::NURBSGridLeafIterator&lt; codim, pitype, GridImp &gt;</a>, <a class="el" href="da/d93/a01084.html#aba13f2bc447a984cccc3a5297d202ed1">Dune::IGA::NurbsHierarchicIterator&lt; GridImp &gt;</a></li>
-<li>index()&#160;:&#160;<a class="el" href="d0/d67/a01232.html#a45429fa5580012a08e677d1a7b0f2c8e">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a>, <a class="el" href="d8/d2b/a01236.html#ab6b83ac44a14887a31e8923488031248">Dune::IGA::MultiDimensionNetIndex&lt; netdim &gt;</a>, <a class="el" href="d6/d80/a01076.html#a86ff4e163568fb6ad97c9b0e885cf3c0">Dune::IGA::NURBSGridLeafIndexSet&lt; GridImpl &gt;</a></li>
-<li>indexInInside()&#160;:&#160;<a class="el" href="d2/dd7/a01108.html#a3e2c2d28c3970a9543893c8cf1de0c80">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
-<li>indexInOutside()&#160;:&#160;<a class="el" href="d2/dd7/a01108.html#a6c55313c36e3c6e9ea987e16a72db811">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
-<li>indexSet()&#160;:&#160;<a class="el" href="d0/dc8/a01124.html#a03b59b5804d4fff17c9c40bbfb15c675">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
-<li>indices()&#160;:&#160;<a class="el" href="db/d08/a01028.html#afeda8feefa8f07725dcc34f750d8fc3b">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
-<li>init()&#160;:&#160;<a class="el" href="d8/d79/a01036.html#ab29a3056636e956a36a4bfe47a951091">Dune::Functions::NurbsLocalCoefficients&lt; dim &gt;</a></li>
-<li>initializeIndices()&#160;:&#160;<a class="el" href="db/d08/a01028.html#a5d0c0dc12780e031fb2ae49bd94257eb">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
-<li>inside()&#160;:&#160;<a class="el" href="d2/dd7/a01108.html#a591f7100360bac8d1c6bf60869042ec4">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
-<li>integrationElement()&#160;:&#160;<a class="el" href="dc/d19/a01056.html#a555a40be7ed3a30745a21d2c5499214a">Dune::IGA::NURBSGeometry&lt; mydim, dimworld, GridImpl &gt;</a>, <a class="el" href="d9/d12/a01128.html#a9cce05f3a484e3987930a08dae032239">Dune::IGA::NURBSLocalGeometry&lt; mydim, dimworld, GridImpl &gt;</a>, <a class="el" href="db/d51/a01144.html#aaea2f83c9342c2111d8f99aa86efc1fe">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>integrationOuterNormal()&#160;:&#160;<a class="el" href="d2/dd7/a01108.html#a580fb7c924f8b8a5f49a5cf0fcd83a25">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
-<li>interpolate()&#160;:&#160;<a class="el" href="db/d14/a01040.html#a57dd490e6f6e4bc57eb321cf1f8e4e9e">Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt;</a></li>
-<li>isConforming()&#160;:&#160;<a class="el" href="d0/dc8/a01124.html#aeb836429b50942f60c1ee63357628ae4">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
-<li>isLeaf()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#ae014c3a9ed1ce8f2593a921e7b102edd">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>isNew()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a63588ee571463e9ecb571f40f48df188">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>isPatchBoundary()&#160;:&#160;<a class="el" href="d6/de6/a01132.html#a5e9c0ab844847d9e4b15337869e58b1e">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>isTrimmed()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a478d06a525f99745744a909757ec90d7">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="d6/de6/a01132.html#a37d6c07b123a1750d9a61ddff39b0bcd">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>isValid()&#160;:&#160;<a class="el" href="d5/d16/a01060.html#a6c9c3bde3bc4387140be3198d9a46e1e">Dune::IGA::EntitySeedStruct&lt; cd, GridImpl &gt;</a>, <a class="el" href="d0/d67/a01232.html#aa3098b6d37f640443c3a0d3b309a3428">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a></li>
+<li>ibegin()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a19587fbfbcb3a100dab0124bd82aa90c">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="d7/daf/a01169.html#a6fe8a52339be92303bac54a28b9138ef">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
+<li>id()&#160;:&#160;<a class="el" href="d8/d02/a01149.html#ad50e90cf1d5a5b05e78100eb139711f6">Dune::IGA::IgaIdSet&lt; GridImpl &gt;</a></li>
+<li>iend()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#aa9e9d8f0c354092d9b81ad751e438a4b">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="d7/daf/a01169.html#a8168ad68b38cc6c69438b926615cb371">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
+<li>IgaIdSet()&#160;:&#160;<a class="el" href="d8/d02/a01149.html#a093f9b70ec11610ed61326b5fb7124e4">Dune::IGA::IgaIdSet&lt; GridImpl &gt;</a></li>
+<li>IGARefinedGeometries()&#160;:&#160;<a class="el" href="d2/db8/a01057.html#a35832a135806de1935c201fb8d07a52a">Dune::IGA::IGARefinedGeometries&lt; GridView &gt;</a></li>
+<li>increment()&#160;:&#160;<a class="el" href="db/d28/a01133.html#a74e2285134663f9da1ee24ef7fd74722">Dune::IGA::NURBSGridInterSectionIterator&lt; GridImp &gt;</a>, <a class="el" href="d6/dc4/a01125.html#adaf8b454758505380c0fd4e14806e51e">Dune::IGA::NURBSGridLeafIterator&lt; codim, pitype, GridImp &gt;</a>, <a class="el" href="d9/d17/a01129.html#aba13f2bc447a984cccc3a5297d202ed1">Dune::IGA::NurbsHierarchicIterator&lt; GridImp &gt;</a></li>
+<li>index()&#160;:&#160;<a class="el" href="d2/d1d/a01277.html#a45429fa5580012a08e677d1a7b0f2c8e">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a>, <a class="el" href="d5/d6f/a01281.html#ab6b83ac44a14887a31e8923488031248">Dune::IGA::MultiDimensionNetIndex&lt; netdim &gt;</a>, <a class="el" href="dd/de4/a01121.html#a86ff4e163568fb6ad97c9b0e885cf3c0">Dune::IGA::NURBSGridLeafIndexSet&lt; GridImpl &gt;</a></li>
+<li>indexInInside()&#160;:&#160;<a class="el" href="dc/d06/a01153.html#a3e2c2d28c3970a9543893c8cf1de0c80">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
+<li>indexInOutside()&#160;:&#160;<a class="el" href="dc/d06/a01153.html#a6c55313c36e3c6e9ea987e16a72db811">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
+<li>indexSet()&#160;:&#160;<a class="el" href="d7/daf/a01169.html#a03b59b5804d4fff17c9c40bbfb15c675">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
+<li>indices()&#160;:&#160;<a class="el" href="d9/d7c/a01073.html#afeda8feefa8f07725dcc34f750d8fc3b">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
+<li>init()&#160;:&#160;<a class="el" href="dd/dee/a01081.html#ab29a3056636e956a36a4bfe47a951091">Dune::Functions::NurbsLocalCoefficients&lt; dim &gt;</a></li>
+<li>initializeIndices()&#160;:&#160;<a class="el" href="d9/d7c/a01073.html#a5d0c0dc12780e031fb2ae49bd94257eb">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></li>
+<li>inside()&#160;:&#160;<a class="el" href="dc/d06/a01153.html#a591f7100360bac8d1c6bf60869042ec4">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
+<li>integrationElement()&#160;:&#160;<a class="el" href="de/d99/a01101.html#a555a40be7ed3a30745a21d2c5499214a">Dune::IGA::NURBSGeometry&lt; mydim, dimworld, GridImpl &gt;</a>, <a class="el" href="d7/d0c/a01173.html#a9cce05f3a484e3987930a08dae032239">Dune::IGA::NURBSLocalGeometry&lt; mydim, dimworld, GridImpl &gt;</a>, <a class="el" href="d3/d10/a01189.html#aaea2f83c9342c2111d8f99aa86efc1fe">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>integrationOuterNormal()&#160;:&#160;<a class="el" href="dc/d06/a01153.html#a580fb7c924f8b8a5f49a5cf0fcd83a25">Dune::IGA::NURBSintersection&lt; GridImp &gt;</a></li>
+<li>interpolate()&#160;:&#160;<a class="el" href="d2/df3/a01085.html#a57dd490e6f6e4bc57eb321cf1f8e4e9e">Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt;</a></li>
+<li>isConforming()&#160;:&#160;<a class="el" href="d7/daf/a01169.html#aeb836429b50942f60c1ee63357628ae4">Dune::IGA::NURBSLeafGridView&lt; GridImpl &gt;</a></li>
+<li>isLeaf()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#ae014c3a9ed1ce8f2593a921e7b102edd">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>isNew()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a63588ee571463e9ecb571f40f48df188">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>isPatchBoundary()&#160;:&#160;<a class="el" href="dc/d98/a01177.html#a5e9c0ab844847d9e4b15337869e58b1e">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>isTrimmed()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a478d06a525f99745744a909757ec90d7">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="dc/d98/a01177.html#a37d6c07b123a1750d9a61ddff39b0bcd">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>isValid()&#160;:&#160;<a class="el" href="de/d1d/a01105.html#a6c9c3bde3bc4387140be3198d9a46e1e">Dune::IGA::EntitySeedStruct&lt; cd, GridImpl &gt;</a>, <a class="el" href="d2/d1d/a01277.html#aa3098b6d37f640443c3a0d3b309a3428">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>

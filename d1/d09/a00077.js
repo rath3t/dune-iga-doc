@@ -1,0 +1,6 @@
+var a00077 =
+[
+    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >", "d6/d6e/a01137.html", "d6/d6e/a01137" ],
+    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >::Codim< cd >", "de/df6/a01141.html", "de/df6/a01141" ],
+    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >::Codim< cd >::Partition< pitype >", "d9/d65/a01145.html", "d9/d65/a01145" ]
+];

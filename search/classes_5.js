@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['ibrabase_0',['IbraBase',['../d3/de5/a00956.html',1,'Dune::IGA::Ibra']]],
-  ['ibranurbsdata_1',['IbraNURBSData',['../dd/d11/a00960.html',1,'Dune::IGA::Ibra']]],
-  ['ibranurbsdata_3c_201_2c_202_20_3e_2',['IbraNURBSData&lt; 1, 2 &gt;',['../dd/d11/a00960.html',1,'Dune::IGA::Ibra']]],
-  ['ibrareader_3',['IbraReader',['../d7/d76/a00992.html',1,'Dune::IGA']]],
-  ['igaidset_4',['IgaIdSet',['../dd/dcb/a01104.html',1,'Dune::IGA']]],
-  ['igaidset_3c_20const_20dune_3a_3aiga_3a_3anurbsgrid_20_3e_5',['IgaIdSet&lt; const Dune::IGA::NURBSGrid &gt;',['../dd/dcb/a01104.html',1,'Dune::IGA']]],
-  ['igarefinedgeometries_6',['IGARefinedGeometries',['../d4/d45/a01012.html',1,'Dune::IGA']]],
-  ['is_5finstantiation_5fof_7',['is_instantiation_of',['../d5/d6e/a01240.html',1,'']]],
-  ['is_5finstantiation_5fof_3c_20template_2c_20template_3c_20args_2e_2e_2e_20_3e_20_3e_8',['is_instantiation_of&lt; Template, Template&lt; Args... &gt; &gt;',['../d4/dd5/a01244.html',1,'']]]
+  ['hasbackuprestorefacilities_3c_20dune_3a_3aiga_3a_3anurbsgrid_3c_20dim_2c_20dimworld_2c_20scalartype_20_3e_20_3e_0',['hasBackupRestoreFacilities&lt; Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt; &gt;',['../dd/d24/a00981.html',1,'Dune::Capabilities']]],
+  ['hasentity_3c_20dune_3a_3aiga_3a_3anurbsgrid_3c_20dim_2c_20dimworld_2c_20scalartype_20_3e_2c_20codim_20_3e_1',['hasEntity&lt; Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;, codim &gt;',['../da/d45/a00961.html',1,'Dune::Capabilities']]],
+  ['hasentityiterator_3c_20dune_3a_3aiga_3a_3anurbsgrid_3c_20dim_2c_20dimworld_2c_20scalartype_20_3e_2c_20codim_20_3e_2',['hasEntityIterator&lt; Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;, codim &gt;',['../d3/dcd/a00965.html',1,'Dune::Capabilities']]],
+  ['hasgridfactory_3c_20dune_3a_3aiga_3a_3anurbsgrid_3c_20dim_2c_20dimworld_2c_20scalartype_20_3e_20_3e_3',['HasGridFactory&lt; Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt; &gt;',['../d3/d07/a01301.html',1,'Dune::Python::Capabilities']]]
 ];

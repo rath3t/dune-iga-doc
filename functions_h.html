@@ -9,6 +9,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/searchdata.js"></script>
 <script type="text/javascript" src="search/search.js"></script>
@@ -47,6 +51,22 @@ $(function() {
 </script>
 <div id="main-nav"></div>
 </div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('functions_h.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
@@ -65,19 +85,22 @@ $(function() {
 <div class="textblock">Here is a list of all class members with links to the classes they belong to:</div>
 
 <h3><a id="index_h" name="index_h"></a>- h -</h3><ul>
-<li>hasBoundaryIntersections()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#ae94bee6c22489ecf9bc19ae6ad307e48">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>hasEmptyElements()&#160;:&#160;<a class="el" href="d6/de6/a01132.html#a4ba3545ed5195396b023cd6147722206">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
-<li>hasFather()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a4d4ea0d39b9bad649910cf027dbed9bd">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>hbegin()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a4732e5db77b12fd3191ac187bb1b7a5a">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>hend()&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a2220b14fcabf8f16fcbe05256add446a">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
-<li>HierarchicIterator&#160;:&#160;<a class="el" href="d6/d6a/a01072.html#a8a2761be01e84cab4cfca1dbb96f1ec1">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="de/d9c/a01092.html#a0cddf5c098c2b3921fa183671d110f69">NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;</a></li>
-<li>hyperSurfBegin()&#160;:&#160;<a class="el" href="d0/d67/a01232.html#adc8b6d74952c0dc1120e998059878459">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a></li>
-<li>hyperSurfEnd()&#160;:&#160;<a class="el" href="d0/d67/a01232.html#ae12cb4d19b8241b8d10598e4e144a978">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a></li>
+<li>hasBoundaryIntersections()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#ae94bee6c22489ecf9bc19ae6ad307e48">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>hasEmptyElements()&#160;:&#160;<a class="el" href="dc/d98/a01177.html#a4ba3545ed5195396b023cd6147722206">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></li>
+<li>hasFather()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a4d4ea0d39b9bad649910cf027dbed9bd">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>hbegin()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a4732e5db77b12fd3191ac187bb1b7a5a">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>hend()&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a2220b14fcabf8f16fcbe05256add446a">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></li>
+<li>HierarchicIterator&#160;:&#160;<a class="el" href="d6/d8b/a01117.html#a8a2761be01e84cab4cfca1dbb96f1ec1">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a>, <a class="el" href="d6/d6e/a01137.html#a0cddf5c098c2b3921fa183671d110f69">NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;</a></li>
+<li>hyperSurfBegin()&#160;:&#160;<a class="el" href="d2/d1d/a01277.html#adc8b6d74952c0dc1120e998059878459">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a></li>
+<li>hyperSurfEnd()&#160;:&#160;<a class="el" href="d2/d1d/a01277.html#ae12cb4d19b8241b8d10598e4e144a978">Dune::IGA::MultiDimensionNet&lt; netdim, ValueType &gt;</a></li>
 </ul>
 </div><!-- contents -->
+</div><!-- doc-content -->
 <!-- start footer part -->
-<hr class="footer"/><address class="footer"><small>
-Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4
-</small></address>
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
+  </ul>
+</div>
 </body>
 </html>
