@@ -145,15 +145,18 @@ $(document).ready(function(){initNavTree('d1/dc1/a00092_source.html','../../'); 
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    x / y;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  };</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> G&gt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dd/d95/a01247.html">   66</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dd/d95/a01247.html">NurbsGeometry</a> = Dune::Concept::Geometry&lt;G&gt; &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> G g, <span class="keyword">typename</span> G::GlobalCoordinate global, <span class="keyword">typename</span> G::LocalCoordinate local) {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    { g.zeroFirstAndSecondDerivativeOfPosition(local)                    } -&gt; std::convertible_to&lt;std::tuple&lt;typename G::GlobalCoordinate,typename G::JacobianTransposed,typename G::Hessian&gt;&gt;;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    { g.domainMidPoint()                    } -&gt; std::convertible_to&lt;typename G::LocalCoordinate&gt;;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    { g.domain()                    } -&gt; std::convertible_to&lt;std::array&lt;Utilities::Domain&lt;double&gt;,G::mydimension&gt;&gt;;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  };</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}  <span class="comment">// namespace Dune::IGA</span></div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> G&gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dd/d95/a01247.html">   66</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dd/d95/a01247.html">NurbsGeometry</a> = Dune::Concept::Geometry&lt;G&gt; &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> G g, <span class="keyword">typename</span> G::GlobalCoordinate global,</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                                 <span class="keyword">typename</span> G::LocalCoordinate local) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      g.zeroFirstAndSecondDerivativeOfPosition(local)</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      } -&gt; std::convertible_to&lt;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          std::tuple&lt;typename G::GlobalCoordinate, typename G::JacobianTransposed, typename G::Hessian&gt;&gt;;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    { g.domainMidPoint() } -&gt; std::convertible_to&lt;typename G::LocalCoordinate&gt;;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    { g.domain() } -&gt; std::convertible_to&lt;std::array&lt;Utilities::Domain&lt;double&gt;, G::mydimension&gt;&gt;;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  };</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}  <span class="comment">// namespace Dune::IGA::Concept</span></div>
 <div class="ttc" id="aa00047_html"><div class="ttname"><a href="../../d6/d2d/a00047.html">geohelper.hh</a></div></div>
 <div class="ttc" id="aa00128_html"><div class="ttname"><a href="../../d1/d88/a00128.html">Dune::IGA::Concept</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:9</div></div>
 <div class="ttc" id="aa01239_html"><div class="ttname"><a href="../../d7/dbf/a01239.html">Dune::IGA::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:12</div></div>

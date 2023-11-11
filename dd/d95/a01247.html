@@ -91,10 +91,14 @@ $(document).ready(function(){initNavTree('dd/d95/a01247.html','../../'); initRes
 <p><code>#include &lt;<a class="el" href="../../d1/dc1/a00092_source.html">dune/iga/utils/concepts.hh</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> G&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../dd/d95/a01247.html">Dune::IGA::Concept::NurbsGeometry</a> =  Dune::Concept::Geometry&lt;G&gt; &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> G g, <span class="keyword">typename</span> G::GlobalCoordinate global, <span class="keyword">typename</span> G::LocalCoordinate local) {</div>
-<div class="line">    { g.zeroFirstAndSecondDerivativeOfPosition(local)                    } -&gt; std::convertible_to&lt;std::tuple&lt;typename G::GlobalCoordinate,typename G::JacobianTransposed,typename G::Hessian&gt;&gt;;</div>
-<div class="line">    { g.domainMidPoint()                    } -&gt; std::convertible_to&lt;typename G::LocalCoordinate&gt;;</div>
-<div class="line">    { g.domain()                    } -&gt; std::convertible_to&lt;std::array&lt;Utilities::Domain&lt;double&gt;,G::mydimension&gt;&gt;;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../dd/d95/a01247.html">Dune::IGA::Concept::NurbsGeometry</a> =  Dune::Concept::Geometry&lt;G&gt; &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> G g, <span class="keyword">typename</span> G::GlobalCoordinate global,</div>
+<div class="line">                                                                 <span class="keyword">typename</span> G::LocalCoordinate local) {</div>
+<div class="line">    {</div>
+<div class="line">      g.zeroFirstAndSecondDerivativeOfPosition(local)</div>
+<div class="line">      } -&gt; std::convertible_to&lt;</div>
+<div class="line">          std::tuple&lt;typename G::GlobalCoordinate, typename G::JacobianTransposed, typename G::Hessian&gt;&gt;;</div>
+<div class="line">    { g.domainMidPoint() } -&gt; std::convertible_to&lt;typename G::LocalCoordinate&gt;;</div>
+<div class="line">    { g.domain() } -&gt; std::convertible_to&lt;std::array&lt;Utilities::Domain&lt;double&gt;, G::mydimension&gt;&gt;;</div>
 <div class="line">  }</div>
 <div class="ttc" id="aa01247_html"><div class="ttname"><a href="../../dd/d95/a01247.html">Dune::IGA::Concept::NurbsGeometry</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
