@@ -1,4 +1,4 @@
 var a00035 =
 [
-    [ "Dune::IGA::TrimmedSubGrid< dim >", "da/d1f/a01203.html", "da/d1f/a01203" ]
+    [ "Dune::IGA::TrimmedSubGrid< dim >", "d7/d5a/a01204.html", "d7/d5a/a01204" ]
 ];
