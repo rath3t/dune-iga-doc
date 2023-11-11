@@ -20,6 +20,6 @@ var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
     [ "nurbsleafgridview.hh", "d3/d52/a00023.html", "d3/d52/a00023" ],
     [ "nurbslocalgeometry.hh", "d4/d3a/a00101.html", "d4/d3a/a00101" ],
     [ "nurbspatch.hh", "d5/df9/a00044.html", "d5/df9/a00044" ],
-    [ "iga/nurbspatchdata.hh", "d6/d8f/a02709.html", "d6/d8f/a02709" ],
+    [ "iga/nurbspatchdata.hh", "d9/d6c/a02710.html", "d9/d6c/a02710" ],
     [ "nurbspatchgeometry.hh", "df/d98/a00107.html", "df/d98/a00107" ]
 ];

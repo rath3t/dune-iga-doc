@@ -52,5 +52,5 @@ var searchData=
   ['istrimmed_49',['isTrimmed',['../d7/df7/a01074.html#a478d06a525f99745744a909757ec90d7',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;::isTrimmed()'],['../dd/de2/a01134.html#a37d6c07b123a1750d9a61ddff39b0bcd',1,'Dune::IGA::NURBSPatch::isTrimmed()']]],
   ['isvalid_50',['isValid',['../d4/d8a/a01062.html#a6c9c3bde3bc4387140be3198d9a46e1e',1,'Dune::IGA::EntitySeedStruct::isValid()'],['../dd/d9e/a01226.html#aa3098b6d37f640443c3a0d3b309a3428',1,'Dune::IGA::MultiDimensionNet::isValid()']]],
   ['iterator_51',['Iterator',['../d1/d3d/a01110.html#a0e396d6b52c7781f6c3c6838695cf35a',1,'Dune::IGA::NURBSintersection::Iterator()'],['../dd/d09/a01118.html#a655b6517c9236aa6fd6ac93718bbfb24',1,'Dune::IGA::NurbsLeafGridViewTraits::Codim::Iterator()'],['../db/d32/a01122.html#a2dfdb732a67755e1228be370e1ff5970',1,'Dune::IGA::NurbsLeafGridViewTraits::Codim::Partition::Iterator()']]],
-  ['nurbspatchdata_2ehh_52',['nurbspatchdata.hh',['../d6/d8f/a02709.html',1,'']]]
+  ['nurbspatchdata_2ehh_52',['nurbspatchdata.hh',['../d9/d6c/a02710.html',1,'']]]
 ];
