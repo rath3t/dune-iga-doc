@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['scalefactor_0',['scaleFactor',['../da/d20/a01160.html#a9ad998c59163399c4330f459ea411f5d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
+  ['scalingandoffset_1',['scalingAndOffset',['../d6/de6/a01132.html#a8e34f489686fa7e3324e76fb10ef6a09',1,'Dune::IGA::NURBSPatch']]],
+  ['secondderivativeofposition_2',['secondDerivativeOfPosition',['../dc/d19/a01056.html#a518068343b67eb2ece9f3b370b7a39a7',1,'Dune::IGA::NURBSGeometry']]],
+  ['secondfundamentalform_3',['secondFundamentalForm',['../dc/d19/a01056.html#abaefff2e08b1750c8395714fe82ba924',1,'Dune::IGA::NURBSGeometry']]],
+  ['seed_4',['seed',['../d1/de6/a01068.html#aa4c2626036271dc5bb0c8873121f7f73',1,'Dune::IGA::NURBSGridEntity::seed()'],['../d6/d6a/a01072.html#aae0a2d421675e42265f664ad8c77fb9d',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;::seed()']]],
+  ['set_5',['set',['../d0/d67/a01232.html#aa1f670474bb02423a2cc0fe44f8c179d',1,'Dune::IGA::MultiDimensionNet']]],
+  ['setzero_6',['setZero',['../d8/d18/a00948.html#afed2f25c3da0611b87bead57e0be03b8',1,'Dune::IGA::ControlPoint']]],
+  ['size_7',['size',['../d6/d80/a01076.html#a406b4be3552133b0b877ba6eb886c530',1,'Dune::IGA::NURBSGridLeafIndexSet::size()'],['../d8/d2b/a01236.html#ae098a52fd98fc36079e8412f0ca0036f',1,'Dune::IGA::MultiDimensionNetIndex::size()'],['../d0/d67/a01232.html#a087346faae8b79845194f8a663e7d33d',1,'Dune::IGA::MultiDimensionNet::size()'],['../d6/de6/a01132.html#a9caea6e812ee36c5fdd03fb50424e38e',1,'Dune::IGA::NURBSPatch::size()'],['../d0/dc8/a01124.html#af314b331f03ff2d4638eae1c92412871',1,'Dune::IGA::NURBSLeafGridView::size(int codim) const'],['../d0/dc8/a01124.html#a05691f80b377ca927d7d0a9cd4db237b',1,'Dune::IGA::NURBSLeafGridView::size(const GeometryType &amp;type) const'],['../d6/d80/a01076.html#ae351d9e6f292825ba69f6e3523f01144',1,'Dune::IGA::NURBSGridLeafIndexSet::size()'],['../d6/d48/a00988.html#abf0508de313510f545300e4b8b34216c',1,'Dune::IGA::NURBSGrid::size(int lvl, const GeometryType &amp;type) const'],['../d6/d48/a00988.html#ac89d96a58dd877c46c889016a7d5b9cf',1,'Dune::IGA::NURBSGrid::size(int level, int codim) const'],['../d6/d48/a00988.html#a3a6388eaddddae5a2ef242e2aca1a33e',1,'Dune::IGA::NURBSGrid::size(int codim) const'],['../db/d08/a01028.html#a8df34530f70a0e88e5899cb98047dc70',1,'Dune::Functions::NurbsPreBasis::size() const'],['../db/d08/a01028.html#ac3e34ecd153fba817521c83e6b4bbdeb',1,'Dune::Functions::NurbsPreBasis::size(const SizePrefix prefix) const'],['../d4/dc5/a01024.html#a66500fa3aeb4393533b6476ba1ae0239',1,'Dune::Functions::NurbsLocalFiniteElement::size()'],['../d8/d79/a01036.html#ab751125f214b769ded9842be52d11fa2',1,'Dune::Functions::NurbsLocalCoefficients::size()'],['../df/d89/a01032.html#acf2935949ca9304b3007895aae110cc6',1,'Dune::Functions::NurbsLocalBasis::size()'],['../de/d49/a00952.html#a6d9cac5534847b576bf88180461be8a3',1,'Dune::IGA::Utilities::Domain::size()'],['../d6/d48/a00988.html#a03d8f1f19000a8cfaa609e27ef359318',1,'Dune::IGA::NURBSGrid::size()']]],
+  ['sizeast_8',['sizeAsT',['../d0/d67/a01232.html#a39abbe83c8eb6b0755a26226dec1563a',1,'Dune::IGA::MultiDimensionNet']]],
+  ['sizeperdirection_9',['sizePerDirection',['../db/d08/a01028.html#ad8005446fd1b4cebfe545e89257e98fb',1,'Dune::Functions::NurbsPreBasis']]],
+  ['spananddirectionfromdirectindex_10',['spanAndDirectionFromDirectIndex',['../d6/de6/a01132.html#a3aad020f2cf26f7e7e023a1804277316',1,'Dune::IGA::NURBSPatch']]],
+  ['spantolocal_11',['spanToLocal',['../dc/d19/a01056.html#a551fc66039cc8f73c1fde8c8623e9933',1,'Dune::IGA::NURBSGeometry']]],
+  ['splitboundariesimpl_12',['splitBoundariesImpl',['../d4/d3e/a00116.html#ad66112982ac256c7f15589dec5fcce68',1,'Dune::IGA']]],
+  ['splitdomaininhalf_13',['splitDomainInHalf',['../d9/d4b/a00117.html#adf4a6ff4298be37a5684db7bb769bcdd',1,'Dune::IGA::Utilities']]],
+  ['stridesizes_14',['strideSizes',['../d0/d67/a01232.html#a14a18cd5a0695297f72f651f2d5fcd8e',1,'Dune::IGA::MultiDimensionNet']]],
+  ['subentities_15',['subEntities',['../d1/de6/a01068.html#a62c940a2831c73937ea1a4334ccd95bd',1,'Dune::IGA::NURBSGridEntity::subEntities()'],['../d6/d6a/a01072.html#a0d46f962cedd9396c45818885b43257b',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;::subEntities(unsigned int codim1) const']]],
+  ['subentity_16',['subEntity',['../d6/d6a/a01072.html#aefab8c2e9f0fd911c12c41e3d7b0bab1',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;']]],
+  ['subid_17',['subId',['../dd/dcb/a01104.html#a2e607fdc32cb4cf9033b39acc7bbd885',1,'Dune::IGA::IgaIdSet']]],
+  ['subindex_18',['subIndex',['../d6/d80/a01076.html#a3a01e6a404baaaec386cc7c0fce373ed',1,'Dune::IGA::NURBSGridLeafIndexSet']]],
+  ['subnet_19',['subNet',['../d0/d67/a01232.html#a7261b45553f0bce1c5265bb43faf03cf',1,'Dune::IGA::MultiDimensionNet']]]
+];
