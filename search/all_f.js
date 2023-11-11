@@ -13,13 +13,12 @@ var searchData=
   ['patchdim_10',['patchDim',['../d3/ddc/a01142.html#ad6206583900ce3a6e663d2879feb1d7b',1,'Dune::IGA::NURBSPatchData']]],
   ['path_11',['path',['../d2/d7b/a01150.html#a2f45c9d99983a0038a5dcebd3aebb111',1,'Dune::IGA::Boundary']]],
   ['pathsamples_12',['pathSamples',['../d4/d13/a01162.html#aecdaffbb3146705cddb9d4f2811af9e4',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['point_13',['Point',['../d0/d56/a01014.html#a458043700435144746a87ae7c201e4a5',1,'Dune::IGA::IGARefinedGeometries::Point()'],['../d2/d7b/a01150.html#add43ef27f7d5c9bf7e9b5083b84cb5c3',1,'Dune::IGA::Boundary::Point()'],['../d4/d13/a01162.html#a0a4b9dacafd634c66043ea047fed6b66',1,'Dune::IGA::Trim::NURBSPatchTrimmer::Point()'],['../d4/d5d/a01202.html#a2d5a17e8f71a34ac9ba492f2b441a536',1,'Dune::IGA::TrimmedSubGrid::Point()']]],
+  ['point_13',['Point',['../d4/d5d/a01202.html#a2d5a17e8f71a34ac9ba492f2b441a536',1,'Dune::IGA::TrimmedSubGrid::Point()'],['../d4/d13/a01162.html#a0a4b9dacafd634c66043ea047fed6b66',1,'Dune::IGA::Trim::NURBSPatchTrimmer::Point()'],['../d2/d7b/a01150.html#add43ef27f7d5c9bf7e9b5083b84cb5c3',1,'Dune::IGA::Boundary::Point()'],['../d0/d56/a01014.html#a458043700435144746a87ae7c201e4a5',1,'Dune::IGA::IGARefinedGeometries::Point()']]],
   ['pointdataimpl_14',['pointDataImpl',['../d0/d2b/a01010.html#a0e1f19d17d719318d365da1282cae014',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
   ['pointset_15',['PointSet',['../d0/d2b/a01010.html#ada1e06e4d2fe8194d01d2abf4f52b8ea',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
   ['pointsets_5f_16',['pointSets_',['../d0/d2b/a01010.html#a38e52710bba07c29d37de65934406be2',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
   ['pointsimpl_17',['pointsImpl',['../d0/d2b/a01010.html#a7146c60450378d89d507be93c2fc3567',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
   ['prebasis_5f_18',['preBasis_',['../de/d02/a01026.html#a2694ec0d342287865eee67f869602641',1,'Dune::Functions::NurbsLocalFiniteElement::preBasis_()'],['../da/d17/a01046.html#a7b3c53f6aef8715f9d617cf8d3d04b57',1,'Dune::Functions::NurbsNode::preBasis_()']]],
   ['preparefornotrim_19',['prepareForNoTrim',['../dd/de2/a01134.html#ad8c5e537e69a6e29874d6a8bb556e12f',1,'Dune::IGA::NURBSPatch']]],
-  ['preparefortrim_20',['prepareForTrim',['../de/d41/a01030.html#a0669c8063a410aa9aa8157099ab75c77',1,'Dune::Functions::NurbsPreBasis']]],
-  ['pybind11_5fdetailed_5ferror_5fmessages_21',['PYBIND11_DETAILED_ERROR_MESSAGES',['../d7/d46/a00002.html#a7043d9d872fdca0ec538d37d04325f31',1,'grid.hh']]]
+  ['preparefortrim_20',['prepareForTrim',['../de/d41/a01030.html#a0669c8063a410aa9aa8157099ab75c77',1,'Dune::Functions::NurbsPreBasis']]]
 ];
