@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Member List</title>
+<title>dune-iga: Dune::IGA::Matrix Concept Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
-$(document).ready(function(){initNavTree('d3/d7b/a01249.html','../../'); initResizable(); });
+$(document).ready(function(){initNavTree('d7/d04/a01246.html','../../'); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,23 +82,27 @@ $(document).ready(function(){initNavTree('d3/d7b/a01249.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Dune::IGA::TransformToSpan&lt; dim &gt; Member List</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::Matrix Concept Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d7b/a01249.html#a51161854ea25285fc83e7eae17fe9fc7">offset_</a></td><td class="entry"><a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d3/d7b/a01249.html#af4bc4bed4998c5f84bf8042fbcb3ef32">scaling_</a></td><td class="entry"><a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d7b/a01249.html#a14c9da9b4ea9c7c5781416899a0ba59a">transform</a>(const VecType &amp;cp) const -&gt; VecType</td><td class="entry"><a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d3/d7b/a01249.html#a00660a4b06a5414528705873cab0d258">transform</a>(const Clipper2Lib::PointD &amp;p) const -&gt; Clipper2Lib::PointD</td><td class="entry"><a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../d3/d7b/a01249.html#abdda0d9b1f3b5267ec997032ad6adce8">TransformToSpan</a>()=default</td><td class="entry"><a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td><td class="entry"></td></tr>
-  <tr class="odd"><td class="entry"><a class="el" href="../../d3/d7b/a01249.html#af124bca23e21b5fb1cba65f566ef291e">TransformToSpan</a>(std::pair&lt; std::array&lt; double, dim &gt;, std::array&lt; double, dim &gt; &gt; &amp;input)</td><td class="entry"><a class="el" href="../../d3/d7b/a01249.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">explicit</span></td></tr>
-</table></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="../../d1/dc1/a00092_source.html">dune/iga/utils/concepts.hh</a>&gt;</code></p>
+<h2 class="groupheader">Concept definition</h2>
+<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> MatrixType&gt;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d7/d04/a01246.html">Dune::IGA::Matrix</a> =  <span class="keyword">requires</span>(MatrixType A, <span class="keywordtype">double</span> a) {</div>
+<div class="line">    <span class="keyword">typename</span> MatrixType::value_type;</div>
+<div class="line">    { A += A } -&gt; std::same_as&lt;MatrixType&amp;&gt;;</div>
+<div class="line">    { A -= A } -&gt; std::same_as&lt;MatrixType&amp;&gt;;</div>
+<div class="line">    { A *= a } -&gt; std::same_as&lt;MatrixType&amp;&gt;;</div>
+<div class="line">    { A /= a } -&gt; std::same_as&lt;MatrixType&amp;&gt;;</div>
+<div class="line">  }</div>
+<div class="ttc" id="aa01246_html"><div class="ttname"><a href="../../d7/d04/a01246.html">Dune::IGA::Matrix</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:22</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="../../d2/da3/a00115.html">Dune</a></li><li class="navelem"><a class="el" href="../../d4/d3e/a00116.html">IGA</a></li><li class="navelem"><a class="el" href="../../d7/d04/a01246.html">Matrix</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

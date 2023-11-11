@@ -1,6 +1,6 @@
 var a00026 =
 [
-    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d0/dc9/a01065.html", "d0/dc9/a01065" ],
+    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d0/d43/a01020.html", "d0/d43/a01020" ],
     [ "degreeElevate", "d6/d5b/a00026.html#a6f1ede550b5e459f413e960a999f25a2", null ],
     [ "extractControlCoordinates", "d6/d5b/a00026.html#ae69f4e15f2e768387a5034f021325614", null ],
     [ "extractWeights", "d6/d5b/a00026.html#a1ab46c78ab2f2ec50f81f90ed2ac2c57", null ],

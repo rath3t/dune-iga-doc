@@ -6,7 +6,7 @@ var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
     [ "utils", "dir_054fedf05f142c88b967e78541d2ed3d.html", "dir_054fedf05f142c88b967e78541d2ed3d" ],
     [ "bsplinealgorithms.hh", "d4/d51/a00017.html", "d4/d51/a00017" ],
     [ "controlpoint.hh", "d4/d81/a00110.html", "d4/d81/a00110" ],
-    [ "gridcapabilities.hh", "da/dec/a00080.html", "da/dec/a00080" ],
+    [ "gridcapabilities.hh", "da/dec/a00080.html", null ],
     [ "nurbsalgorithms.hh", "d6/d5b/a00026.html", "d6/d5b/a00026" ],
     [ "nurbsbasis.hh", "df/d03/a00062.html", "df/d03/a00062" ],
     [ "nurbsgeometry.hh", "d0/dc2/a00104.html", "d0/dc2/a00104" ],
@@ -20,6 +20,6 @@ var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
     [ "nurbsleafgridview.hh", "d3/d52/a00023.html", "d3/d52/a00023" ],
     [ "nurbslocalgeometry.hh", "d4/d3a/a00101.html", "d4/d3a/a00101" ],
     [ "nurbspatch.hh", "d5/df9/a00044.html", "d5/df9/a00044" ],
-    [ "iga/nurbspatchdata.hh", "d5/db0/a02777.html", "d5/db0/a02777" ],
+    [ "iga/nurbspatchdata.hh", "d0/df8/a02717.html", "d0/df8/a02717" ],
     [ "nurbspatchgeometry.hh", "df/d98/a00107.html", "df/d98/a00107" ]
 ];
