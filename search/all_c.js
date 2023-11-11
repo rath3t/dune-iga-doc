@@ -1,7 +1,7 @@
 var searchData=
 [
   ['mainpage_2ehh_0',['mainpage.hh',['../d3/d00/a00113.html',1,'']]],
-  ['makecirculararc_1',['makeCircularArc',['../df/d6a/a00119.html#a176e3431a72b701808a5d93e3dcf325f',1,'Dune::IGA']]],
+  ['makecirculararc_1',['makeCircularArc',['../df/d6a/a00119.html#a1eeaa4b0827547b46fa451ae2a522dac',1,'Dune::IGA']]],
   ['makenode_2',['makeNode',['../de/d41/a01030.html#af99410f329efb5e8e340ef10dc108d6a',1,'Dune::Functions::NurbsPreBasis']]],
   ['makesurfaceofrevolution_3',['makeSurfaceOfRevolution',['../df/d6a/a00119.html#a16fe995511a81303451229eb2a5b7646',1,'Dune::IGA']]],
   ['maptorange_4',['mapToRange',['../d4/d98/a00120.html#a36c887e0deedc2b16c340ffcee35f961',1,'Dune::IGA::Utilities']]],
