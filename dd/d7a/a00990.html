@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('dd/d7a/a00990.html','../../'); initRes
 </div><!--header-->
 <div class="contents">
 
-<p>NURBS grid manager.  
+<p>[<em> provides Dune::Grid </em>]  
  <a href="../../dd/d7a/a00990.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../dc/dee/a00053_source.html">dune/iga/nurbsgrid.hh</a>&gt;</code></p>
@@ -103,7 +103,7 @@ Inheritance diagram for Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;:
 <div class="dyncontent">
 <div class="center"><img src="../../d4/d95/a00989.png" border="0" usemap="#a_dune_1_1_i_g_a_1_1_n_u_r_b_s_grid_3_01dim_00_01dimworld_00_01_scalar_type_01_4_inherit__map" alt="Inheritance graph"/></div>
 <map name="a_dune_1_1_i_g_a_1_1_n_u_r_b_s_grid_3_01dim_00_01dimworld_00_01_scalar_type_01_4_inherit__map" id="a_dune_1_1_i_g_a_1_1_n_u_r_b_s_grid_3_01dim_00_01dimworld_00_01_scalar_type_01_4_inherit__map">
-<area shape="rect" title="NURBS grid manager." alt="" coords="5,109,229,151"/>
+<area shape="rect" title="[ provides Dune::Grid ]" alt="" coords="5,109,229,151"/>
 <area shape="rect" title=" " alt="" coords="11,5,224,61"/>
 </map>
 </div>
@@ -147,9 +147,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ada8ec07f5b0e00a7e22a4e33df6644fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a221c7a11641ec92e1e18d060e0a682d4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/a00990.html#a221c7a11641ec92e1e18d060e0a682d4">loadBalance</a> ()</td></tr>
 <tr class="separator:a221c7a11641ec92e1e18d060e0a682d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad1303e61bd1a3514b2dc0a91c4a1b59f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/a00990.html#ad1303e61bd1a3514b2dc0a91c4a1b59f">globalRefine</a> (int refinementLevel)</td></tr>
-<tr class="separator:ad1303e61bd1a3514b2dc0a91c4a1b59f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5f00a0594603205be3cc47b4b3f70f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/a00990.html#ab5f00a0594603205be3cc47b4b3f70f2">globalRefine</a> (int refCount)</td></tr>
+<tr class="memdesc:ab5f00a0594603205be3cc47b4b3f70f2"><td class="mdescLeft">&#160;</td><td class="mdescRight">refine the grid refCount times.  <a href="../../dd/d7a/a00990.html#ab5f00a0594603205be3cc47b4b3f70f2">More...</a><br /></td></tr>
+<tr class="separator:ab5f00a0594603205be3cc47b4b3f70f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752f95c838838d7ab40be3a920c28b78"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/a00990.html#a752f95c838838d7ab40be3a920c28b78">globalRefine</a> (int refinementLevel, bool omitTrim)</td></tr>
+<tr class="memdesc:a752f95c838838d7ab40be3a920c28b78"><td class="mdescLeft">&#160;</td><td class="mdescRight">refine the grid refCount times but do not update trimming information  <a href="../../dd/d7a/a00990.html#a752f95c838838d7ab40be3a920c28b78">More...</a><br /></td></tr>
 <tr class="separator:a752f95c838838d7ab40be3a920c28b78"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a87519887118ad1cf86318be82f33bc29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/a00990.html#a87519887118ad1cf86318be82f33bc29">globalRefineInDirection</a> (const int dir, const int refinementLevel, bool omitTrim=false)</td></tr>
 <tr class="separator:a87519887118ad1cf86318be82f33bc29"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -234,7 +236,17 @@ Static Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;int dim, int dimworld, typename ScalarType = double&gt;<br />
-class Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;</div><p >NURBS grid manager. </p>
+class Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;</div><p >[<em> provides Dune::Grid </em>] </p>
+<p >Provides a Grid with NURBS Geometry</p>
+<p >YaspGrid stands for yet another structured parallel grid. It implements the dune grid interface for structured grids with arbitrary overlap (including zero),</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim</td><td>The dimension of the grid </td></tr>
+    <tr><td class="paramname">dimworld</td><td>The dimension of the grid's embedding space </td></tr>
+    <tr><td class="paramname">ScalarType</td><td>the field type (use float, double, complex, etc) </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="a6c221de5133c64e0ea805d51f6f4c095" name="a6c221de5133c64e0ea805d51f6f4c095"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6c221de5133c64e0ea805d51f6f4c095">&#9670;&nbsp;</a></span>Codim</h2>
@@ -817,8 +829,8 @@ template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="ad1303e61bd1a3514b2dc0a91c4a1b59f" name="ad1303e61bd1a3514b2dc0a91c4a1b59f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad1303e61bd1a3514b2dc0a91c4a1b59f">&#9670;&nbsp;</a></span>globalRefine() <span class="overload">[1/2]</span></h2>
+<a id="ab5f00a0594603205be3cc47b4b3f70f2" name="ab5f00a0594603205be3cc47b4b3f70f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5f00a0594603205be3cc47b4b3f70f2">&#9670;&nbsp;</a></span>globalRefine() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -832,7 +844,7 @@ template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
           <td class="memname">void <a class="el" href="../../dd/d7a/a00990.html">Dune::IGA::NURBSGrid</a>&lt; dim, dimworld, ScalarType &gt;::globalRefine </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>refinementLevel</em></td><td>)</td>
+          <td class="paramname"><em>refCount</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -842,6 +854,8 @@ template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>refine the grid refCount times. </p>
 
 </div>
 </div>
@@ -880,6 +894,8 @@ template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>refine the grid refCount times but do not update trimming information </p>
 
 </div>
 </div>

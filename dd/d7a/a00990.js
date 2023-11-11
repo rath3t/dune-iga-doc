@@ -23,7 +23,7 @@ var a00990 =
     [ "globalDegreeElevate", "dd/d7a/a00990.html#a6a7e99c38c985e49d894a37cf00611b0", null ],
     [ "globalIdSet", "dd/d7a/a00990.html#a2d2a5c62144aad583f4c1744f89b8ccd", null ],
     [ "globalMultiRefine", "dd/d7a/a00990.html#a56bfbbc6ee9f83704c205fa3f9c73e56", null ],
-    [ "globalRefine", "dd/d7a/a00990.html#ad1303e61bd1a3514b2dc0a91c4a1b59f", null ],
+    [ "globalRefine", "dd/d7a/a00990.html#ab5f00a0594603205be3cc47b4b3f70f2", null ],
     [ "globalRefine", "dd/d7a/a00990.html#a752f95c838838d7ab40be3a920c28b78", null ],
     [ "globalRefineInDirection", "dd/d7a/a00990.html#a87519887118ad1cf86318be82f33bc29", null ],
     [ "leafGridView", "dd/d7a/a00990.html#a9dd3a6af9dca206997ab2940f033cc06", null ],

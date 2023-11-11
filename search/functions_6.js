@@ -32,7 +32,7 @@ var searchData=
   ['globaldegreeelevate_29',['globalDegreeElevate',['../dd/d7a/a00990.html#a6a7e99c38c985e49d894a37cf00611b0',1,'Dune::IGA::NURBSGrid']]],
   ['globalidset_30',['globalIdSet',['../dd/d7a/a00990.html#a2d2a5c62144aad583f4c1744f89b8ccd',1,'Dune::IGA::NURBSGrid']]],
   ['globalmultirefine_31',['globalMultiRefine',['../dd/d7a/a00990.html#a56bfbbc6ee9f83704c205fa3f9c73e56',1,'Dune::IGA::NURBSGrid']]],
-  ['globalrefine_32',['globalRefine',['../dd/d7a/a00990.html#a752f95c838838d7ab40be3a920c28b78',1,'Dune::IGA::NURBSGrid::globalRefine(int refinementLevel, bool omitTrim)'],['../dd/d7a/a00990.html#ad1303e61bd1a3514b2dc0a91c4a1b59f',1,'Dune::IGA::NURBSGrid::globalRefine(int refinementLevel)']]],
+  ['globalrefine_32',['globalRefine',['../dd/d7a/a00990.html#a752f95c838838d7ab40be3a920c28b78',1,'Dune::IGA::NURBSGrid::globalRefine(int refinementLevel, bool omitTrim)'],['../dd/d7a/a00990.html#ab5f00a0594603205be3cc47b4b3f70f2',1,'Dune::IGA::NURBSGrid::globalRefine(int refCount)']]],
   ['globalrefineindirection_33',['globalRefineInDirection',['../dd/d7a/a00990.html#a87519887118ad1cf86318be82f33bc29',1,'Dune::IGA::NURBSGrid']]],
   ['grid_34',['grid',['../d2/dd5/a01002.html#a76367717e67130da608ff1d1c38595cb',1,'Dune::JSONGridFactory::grid()'],['../dc/d81/a01006.html#a25434ae3ddd4b6b12a4c59a6cbb0a907',1,'Dune::DGFGridFactory&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;::grid()'],['../db/d1e/a01126.html#a32f2ab079a13f4d456c5faeee4af10de',1,'Dune::IGA::NURBSLeafGridView::grid()']]],
   ['gridboundarysegment_35',['GridBoundarySegment',['../d5/d32/a01214.html#a931cd2b24140d6f0e06fe80195e64113',1,'Dune::IGA::GridBoundarySegment']]],
