@@ -1,4 +1,4 @@
 var a00044 =
 [
-    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "d6/de6/a01132.html", "d6/de6/a01132" ]
+    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "de/de4/a01135.html", "de/de4/a01135" ]
 ];

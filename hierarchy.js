@@ -1,113 +1,113 @@
 var hierarchy =
 [
     [ "std::array< T >", null, [
-      [ "Dune::IGA::Utilities::Domain< double >", "de/d49/a00952.html", null ],
-      [ "Dune::IGA::Utilities::Domain< ScalarType >", "de/d49/a00952.html", null ]
+      [ "Dune::IGA::Utilities::Domain< double >", "dc/db6/a00955.html", null ],
+      [ "Dune::IGA::Utilities::Domain< ScalarType >", "dc/db6/a00955.html", null ]
     ] ],
-    [ "Dune::IGA::Boundary", "db/d17/a01148.html", null ],
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d8/d8e/a01224.html", null ],
+    [ "Dune::IGA::Boundary", "de/df1/a01151.html", null ],
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d9/da8/a01227.html", null ],
     [ "Dune::BoundarySegment", null, [
-      [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "dc/db6/a01212.html", null ]
+      [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "da/d3f/a01215.html", null ]
     ] ],
-    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "d9/dce/a00944.html", null ],
-    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >::Codim< cd >", "d4/dc5/a01116.html", null ],
-    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >::Codim< cd >", "d2/d20/a01096.html", null ],
+    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "d3/d29/a00947.html", null ],
+    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >::Codim< cd >", "d0/d02/a01119.html", null ],
+    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >::Codim< cd >", "d6/dbc/a01099.html", null ],
     [ "std::vector< T >::const_iterator", null, [
-      [ "Dune::IGA::NURBSGridInterSectionIterator< GridImp >", "da/db7/a01088.html", null ]
+      [ "Dune::IGA::NURBSGridInterSectionIterator< GridImp >", "d6/d0d/a01091.html", null ]
     ] ],
-    [ "Dune::IGA::ControlPoint< VT >", "d8/d18/a00948.html", null ],
-    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "df/dbc/a01004.html", null ],
-    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d3/daa/a00996.html", null ],
-    [ "Dune::IGA::DomainInformation", "d9/d31/a01208.html", null ],
-    [ "Dune::IGA::Trim::ElementBoundaries", "d9/d42/a01156.html", null ],
+    [ "Dune::IGA::ControlPoint< VT >", "dc/da0/a00951.html", null ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d6/d8d/a01007.html", null ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "de/de2/a00999.html", null ],
+    [ "Dune::IGA::DomainInformation", "d1/d34/a01211.html", null ],
+    [ "Dune::IGA::Trim::ElementBoundaries", "d7/de8/a01159.html", null ],
     [ "EntityDefaultImplementation", null, [
-      [ "Dune::IGA::NURBSGridEntity< codim, dim, GridImpl >", "d1/de6/a01068.html", null ],
-      [ "Dune::IGA::NURBSGridEntity< 0, dim, GridImpl >", "d6/d6a/a01072.html", null ]
+      [ "Dune::IGA::NURBSGridEntity< codim, dim, GridImpl >", "df/d18/a01071.html", null ],
+      [ "Dune::IGA::NURBSGridEntity< 0, dim, GridImpl >", "dd/d80/a01075.html", null ]
     ] ],
-    [ "Dune::IGA::EntitySeedStruct< cd, GridImpl >", "d5/d16/a01060.html", null ],
+    [ "Dune::IGA::EntitySeedStruct< cd, GridImpl >", "de/de6/a01063.html", null ],
     [ "std::false_type", null, [
-      [ "is_instantiation_of< Template, T >", "d5/d6e/a01240.html", null ]
+      [ "is_instantiation_of< Template, T >", "d8/db0/a01243.html", null ]
     ] ],
     [ "Dune::Grid", null, [
-      [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "d6/d48/a00988.html", null ]
+      [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "df/d2f/a00991.html", null ]
     ] ],
-    [ "Dune::IGA::Ibra::IbraBase", "d3/de5/a00956.html", [
-      [ "Dune::IGA::Ibra::IbraNURBSData< 1, 2 >", "dd/d11/a00960.html", null ],
-      [ "Dune::IGA::Ibra::Brep< worldDim >", "d2/d4c/a00984.html", null ],
-      [ "Dune::IGA::Ibra::BrepLoop", "d0/d85/a00976.html", null ],
-      [ "Dune::IGA::Ibra::BrepLoopRepresentation", "de/d4e/a00972.html", null ],
-      [ "Dune::IGA::Ibra::BrepRepresentation", "db/d20/a00980.html", null ],
-      [ "Dune::IGA::Ibra::BrepTrim", "d7/dd4/a00968.html", null ],
-      [ "Dune::IGA::Ibra::BrepTrimRepresentation", "da/d17/a00964.html", null ],
-      [ "Dune::IGA::Ibra::IbraNURBSData< dim, worldDim >", "dd/d11/a00960.html", null ]
+    [ "Dune::IGA::Ibra::IbraBase", "db/d40/a00959.html", [
+      [ "Dune::IGA::Ibra::IbraNURBSData< 1, 2 >", "de/dad/a00963.html", null ],
+      [ "Dune::IGA::Ibra::Brep< worldDim >", "d4/d21/a00987.html", null ],
+      [ "Dune::IGA::Ibra::BrepLoop", "d8/d49/a00979.html", null ],
+      [ "Dune::IGA::Ibra::BrepLoopRepresentation", "db/dbf/a00975.html", null ],
+      [ "Dune::IGA::Ibra::BrepRepresentation", "d7/d98/a00983.html", null ],
+      [ "Dune::IGA::Ibra::BrepTrim", "d0/d3c/a00971.html", null ],
+      [ "Dune::IGA::Ibra::BrepTrimRepresentation", "d4/d94/a00967.html", null ],
+      [ "Dune::IGA::Ibra::IbraNURBSData< dim, worldDim >", "de/dad/a00963.html", null ]
     ] ],
-    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d7/d76/a00992.html", null ],
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "dd/d48/a00995.html", null ],
     [ "IdSet", null, [
-      [ "Dune::IGA::IgaIdSet< const Dune::IGA::NURBSGrid >", "dd/dcb/a01104.html", null ],
-      [ "Dune::IGA::IgaIdSet< GridImpl >", "dd/dcb/a01104.html", null ]
+      [ "Dune::IGA::IgaIdSet< const Dune::IGA::NURBSGrid >", "de/d4a/a01107.html", null ],
+      [ "Dune::IGA::IgaIdSet< GridImpl >", "de/d4a/a01107.html", null ]
     ] ],
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d4/d45/a01012.html", null ],
+    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d1/dac/a01015.html", null ],
     [ "IndexSet", null, [
-      [ "Dune::IGA::NURBSGridLeafIndexSet< const Dune::IGA::NURBSGrid >", "d6/d80/a01076.html", null ],
-      [ "Dune::IGA::NURBSGridLeafIndexSet< GridImpl >", "d6/d80/a01076.html", null ]
+      [ "Dune::IGA::NURBSGridLeafIndexSet< const Dune::IGA::NURBSGrid >", "d2/d4d/a01079.html", null ],
+      [ "Dune::IGA::NURBSGridLeafIndexSet< GridImpl >", "d2/d4d/a01079.html", null ]
     ] ],
-    [ "Dune::JSONGridFactory< Grid_ >", "d7/df2/a01000.html", null ],
+    [ "Dune::JSONGridFactory< Grid_ >", "dc/d10/a01003.html", null ],
     [ "LeafBasisNode", null, [
-      [ "Dune::Functions::NurbsNode< GV >", "d0/ddd/a01044.html", null ]
+      [ "Dune::Functions::NurbsNode< GV >", "db/dbb/a01047.html", null ]
     ] ],
-    [ "Dune::IGA::MultiDimensionNet< netdim, ValueType >", "d0/d67/a01232.html", null ],
-    [ "Dune::IGA::MultiDimensionNet< dim, ControlPointType >", "d0/d67/a01232.html", null ],
-    [ "Dune::IGA::MultiDimensionNet< dim, double >", "d0/d67/a01232.html", null ],
-    [ "Dune::IGA::MultiDimensionNet< dim, ScalarType >", "d0/d67/a01232.html", null ],
-    [ "Dune::IGA::MultiDimensionNet< griddim, typename ControlPointType::VectorType >", "d0/d67/a01232.html", null ],
-    [ "Dune::IGA::MultiDimensionNetIndex< netdim >", "d8/d2b/a01236.html", null ],
-    [ "mapbox::util::nth< 0, Dune::FieldVector< T, 2 > >", "d8/df3/a01216.html", null ],
-    [ "mapbox::util::nth< 1, Dune::FieldVector< T, 2 > >", "db/d42/a01220.html", null ],
-    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d0/d43/a01020.html", null ],
-    [ "Dune::IGA::Nurbs< griddim, ctype >", "d0/d43/a01020.html", null ],
-    [ "Dune::IGA::Nurbs< mydimension, double >", "d0/d43/a01020.html", null ],
-    [ "Dune::IGA::NURBSGeometry< mydim, dimworld, GridImpl >", "dc/d19/a01056.html", null ],
-    [ "Dune::IGA::NurbsGridFamily< dim, dimworld, ScalarType >", "d9/db3/a01064.html", null ],
-    [ "Dune::IGA::NURBSGridLeafIterator< codim, pitype, GridImp >", "d9/d67/a01080.html", null ],
-    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >", "de/d9c/a01092.html", null ],
-    [ "Dune::IGA::NurbsHierarchicIterator< GridImp >", "da/d93/a01084.html", null ],
-    [ "Dune::IGA::NURBSintersection< GridImp >", "d2/dd7/a01108.html", null ],
-    [ "Dune::IGA::NURBSLeafGridView< GridImpl >", "d0/dc8/a01124.html", null ],
-    [ "Dune::IGA::NURBSLeafGridView< const Dune::IGA::NURBSGrid >", "d0/dc8/a01124.html", null ],
-    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >", "d0/d39/a01112.html", null ],
-    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "df/d89/a01032.html", null ],
-    [ "Dune::Functions::NurbsLocalBasis< GV, double >", "df/d89/a01032.html", null ],
-    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "d8/d79/a01036.html", null ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d4/dc5/a01024.html", null ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, double >", "d4/dc5/a01024.html", null ],
-    [ "Dune::IGA::NURBSLocalGeometry< mydim, dimworld, GridImpl >", "d9/d12/a01128.html", null ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "db/d14/a01040.html", null ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, Dune::Functions::NurbsLocalBasis< GV, double > >", "db/d14/a01040.html", null ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, Dune::Functions::NurbsLocalBasis< GV, R > >", "db/d14/a01040.html", null ],
-    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "d6/de6/a01132.html", null ],
-    [ "Dune::IGA::NURBSPatch< dim, dimworld, double >", "d6/de6/a01132.html", null ],
-    [ "Dune::IGA::NURBSPatchData< dim, dimworld_, ScalarType >", "dc/d64/a01140.html", null ],
-    [ "Dune::IGA::NURBSPatchData< dim, dimworld >", "dc/d64/a01140.html", null ],
-    [ "Dune::IGA::NURBSPatchData< dim, dimworld, double >", "dc/d64/a01140.html", null ],
-    [ "Dune::IGA::NURBSPatchData< griddim, dimworld, ctype >", "dc/d64/a01140.html", null ],
-    [ "Dune::IGA::NURBSPatchData< mydimension, dimworld, double >", "dc/d64/a01140.html", null ],
-    [ "Dune::IGA::NURBSPatchData<(size_t) dim,(size_t) dimworld, double >", "dc/d64/a01140.html", null ],
-    [ "Dune::IGA::NURBSPatchGeometry< dim, dimworld, ScalarType >", "db/d51/a01144.html", null ],
-    [ "Dune::IGA::NURBSPatchGeometry< dim, worldDim >", "db/d51/a01144.html", null ],
-    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "da/d20/a01160.html", null ],
-    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "db/d08/a01028.html", null ],
-    [ "Dune::Functions::NurbsPreBasis< GV >", "db/d08/a01028.html", null ],
-    [ "Dune::Functions::NurbsPreBasis< GV, double >", "db/d08/a01028.html", null ],
-    [ "Dune::Functions::NurbsPreBasis< GV, R >", "db/d08/a01028.html", null ],
-    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >::Codim< cd >::Partition< pit >", "dc/d51/a01120.html", null ],
-    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >::Codim< cd >::Partition< pitype >", "d3/dbd/a01100.html", null ],
-    [ "Dune::IGA::TransformToSpan< dim >", "d7/d5a/a01204.html", null ],
-    [ "Dune::IGA::TrimData", "d9/d97/a01152.html", null ],
-    [ "Dune::IGA::TrimmedSubGrid< dim >", "dc/dcc/a01200.html", null ],
+    [ "Dune::IGA::MultiDimensionNet< netdim, ValueType >", "dd/dad/a01235.html", null ],
+    [ "Dune::IGA::MultiDimensionNet< dim, ControlPointType >", "dd/dad/a01235.html", null ],
+    [ "Dune::IGA::MultiDimensionNet< dim, double >", "dd/dad/a01235.html", null ],
+    [ "Dune::IGA::MultiDimensionNet< dim, ScalarType >", "dd/dad/a01235.html", null ],
+    [ "Dune::IGA::MultiDimensionNet< griddim, typename ControlPointType::VectorType >", "dd/dad/a01235.html", null ],
+    [ "Dune::IGA::MultiDimensionNetIndex< netdim >", "d7/dbf/a01239.html", null ],
+    [ "mapbox::util::nth< 0, Dune::FieldVector< T, 2 > >", "d5/d39/a01219.html", null ],
+    [ "mapbox::util::nth< 1, Dune::FieldVector< T, 2 > >", "d7/ddd/a01223.html", null ],
+    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d6/dcd/a01023.html", null ],
+    [ "Dune::IGA::Nurbs< griddim, ctype >", "d6/dcd/a01023.html", null ],
+    [ "Dune::IGA::Nurbs< mydimension, double >", "d6/dcd/a01023.html", null ],
+    [ "Dune::IGA::NURBSGeometry< mydim, dimworld, GridImpl >", "d0/d90/a01059.html", null ],
+    [ "Dune::IGA::NurbsGridFamily< dim, dimworld, ScalarType >", "d2/d49/a01067.html", null ],
+    [ "Dune::IGA::NURBSGridLeafIterator< codim, pitype, GridImp >", "d6/d9a/a01083.html", null ],
+    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >", "de/d6d/a01095.html", null ],
+    [ "Dune::IGA::NurbsHierarchicIterator< GridImp >", "d0/d1f/a01087.html", null ],
+    [ "Dune::IGA::NURBSintersection< GridImp >", "d3/de1/a01111.html", null ],
+    [ "Dune::IGA::NURBSLeafGridView< GridImpl >", "d9/d5b/a01127.html", null ],
+    [ "Dune::IGA::NURBSLeafGridView< const Dune::IGA::NURBSGrid >", "d9/d5b/a01127.html", null ],
+    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >", "df/dd5/a01115.html", null ],
+    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "de/d26/a01035.html", null ],
+    [ "Dune::Functions::NurbsLocalBasis< GV, double >", "de/d26/a01035.html", null ],
+    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "df/d21/a01039.html", null ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "dd/dfd/a01027.html", null ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, double >", "dd/dfd/a01027.html", null ],
+    [ "Dune::IGA::NURBSLocalGeometry< mydim, dimworld, GridImpl >", "d8/d84/a01131.html", null ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d8/d27/a01043.html", null ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, Dune::Functions::NurbsLocalBasis< GV, double > >", "d8/d27/a01043.html", null ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, Dune::Functions::NurbsLocalBasis< GV, R > >", "d8/d27/a01043.html", null ],
+    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "de/de4/a01135.html", null ],
+    [ "Dune::IGA::NURBSPatch< dim, dimworld, double >", "de/de4/a01135.html", null ],
+    [ "Dune::IGA::NURBSPatchData< dim, dimworld_, ScalarType >", "db/db2/a01143.html", null ],
+    [ "Dune::IGA::NURBSPatchData< dim, dimworld >", "db/db2/a01143.html", null ],
+    [ "Dune::IGA::NURBSPatchData< dim, dimworld, double >", "db/db2/a01143.html", null ],
+    [ "Dune::IGA::NURBSPatchData< griddim, dimworld, ctype >", "db/db2/a01143.html", null ],
+    [ "Dune::IGA::NURBSPatchData< mydimension, dimworld, double >", "db/db2/a01143.html", null ],
+    [ "Dune::IGA::NURBSPatchData<(size_t) dim,(size_t) dimworld, double >", "db/db2/a01143.html", null ],
+    [ "Dune::IGA::NURBSPatchGeometry< dim, dimworld, ScalarType >", "d8/ddb/a01147.html", null ],
+    [ "Dune::IGA::NURBSPatchGeometry< dim, worldDim >", "d8/ddb/a01147.html", null ],
+    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "d6/d27/a01163.html", null ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "d6/dcf/a01031.html", null ],
+    [ "Dune::Functions::NurbsPreBasis< GV >", "d6/dcf/a01031.html", null ],
+    [ "Dune::Functions::NurbsPreBasis< GV, double >", "d6/dcf/a01031.html", null ],
+    [ "Dune::Functions::NurbsPreBasis< GV, R >", "d6/dcf/a01031.html", null ],
+    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >::Codim< cd >::Partition< pit >", "de/de5/a01123.html", null ],
+    [ "NurbsGridTraits< dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp >::Codim< cd >::Partition< pitype >", "d9/d10/a01103.html", null ],
+    [ "Dune::IGA::TransformToSpan< dim >", "d5/dad/a01207.html", null ],
+    [ "Dune::IGA::TrimData", "db/d07/a01155.html", null ],
+    [ "Dune::IGA::TrimmedSubGrid< dim >", "da/d1f/a01203.html", null ],
     [ "std::true_type", null, [
-      [ "is_instantiation_of< Template, Template< Args... > >", "d4/dd5/a01244.html", null ]
+      [ "is_instantiation_of< Template, Template< Args... > >", "dd/d95/a01247.html", null ]
     ] ],
     [ "UnstructuredDataCollectorInterface", null, [
-      [ "Dune::Vtk::DiscontinuousIgaDataCollector< GridView >", "dd/dac/a01008.html", null ]
+      [ "Dune::Vtk::DiscontinuousIgaDataCollector< GridView >", "d6/d36/a01011.html", null ]
     ] ]
 ];

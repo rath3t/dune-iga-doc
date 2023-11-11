@@ -1,6 +1,6 @@
 var a00017 =
 [
-    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "d9/dce/a00944.html", "d9/dce/a00944" ],
+    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "d3/d29/a00947.html", "d3/d29/a00947" ],
     [ "findSpanCorrected", "d4/d51/a00017.html#a38d1fb2831ca0dbfa925c4858576a99b", null ],
     [ "findSpanCorrected", "d4/d51/a00017.html#ac18a8662488d7f3817b559d81efcc445", null ],
     [ "findSpanUncorrected", "d4/d51/a00017.html#a554d684e12126174010f2a98d8136a3d", null ],
