@@ -25,10 +25,7 @@
 var NAVTREE =
 [
   [ "dune-iga", "index.html", [
-    [ "Introduction", "index.html#intro_sec", null ],
-    [ "Installation", "index.html#install_sec", [
-      [ "Step 1: Opening the box", "index.html#step1", null ]
-    ] ],
+    [ "dune-iga documentation", "index.html", null ],
     [ "Deprecated List", "d4/d3e/a00116.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
