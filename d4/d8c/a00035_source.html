@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: hierachicpatchgridentityseed.hh Source File</title>
+<title>dune-iga: enums.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,6 +16,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -84,73 +91,24 @@ $(document).ready(function(){initNavTree('d4/d8c/a00035_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">hierachicpatchgridentityseed.hh</div></div>
+  <div class="headertitle"><div class="title">enums.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d4/d8c/a00035.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: Copyright © DUNE Project contributors, see file LICENSE.md in module root</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// -*- tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 2 -*-</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// vi: set et ts=4 sw=2 sts=2:</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#ifndef DUNE_IDENTITY_GRID_ENTITY_SEED_HH</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#define DUNE_IDENTITY_GRID_ENTITY_SEED_HH</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d7d/a00161.html">Dune::IGANEW</a> {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">template</span>&lt;<span class="keywordtype">int</span> codim, <span class="keyword">class</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html">   23</a></span>  <span class="keyword">class </span><a class="code hl_class" href="../../d9/db3/a01064.html">PatchGridEntitySeed</a></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="comment">// Entity type of the hostgrid</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#abc89476168d480c8c213713146f61617">   28</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> GridImp::HostGridType::Traits::template Codim&lt;codim&gt;::Entity <a class="code hl_typedef" href="../../d9/db3/a01064.html#abc89476168d480c8c213713146f61617">HostEntity</a>;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">// EntitySeed type of the hostgrid</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#aa449031fa7666de9161df5f16d539d6b">   31</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> GridImp::HostGridType::Traits::template Codim&lt;codim&gt;::EntitySeed <a class="code hl_typedef" href="../../d9/db3/a01064.html#aa449031fa7666de9161df5f16d539d6b">HostEntitySeed</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#a0e1020ac40dd8e7f0edac5e82fbb218d">   35</a></span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d9/db3/a01064.html#a0e1020ac40dd8e7f0edac5e82fbb218d">codimension</a> = codim;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#a03d9f6f67872dc8ed68bcdfd971212e3">   40</a></span>    <a class="code hl_function" href="../../d9/db3/a01064.html#a03d9f6f67872dc8ed68bcdfd971212e3">PatchGridEntitySeed</a>()</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    {}</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#a4c3b939e2326e421303bd64f9dee4216">   49</a></span>    <a class="code hl_function" href="../../d9/db3/a01064.html#a4c3b939e2326e421303bd64f9dee4216">PatchGridEntitySeed</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/db3/a01064.html#abc89476168d480c8c213713146f61617">HostEntity</a>&amp; hostEntity) :</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      hostEntitySeed_(hostEntity.seed())</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {}</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#a93838796fb1c9cb193b94ae14386b624">   56</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/db3/a01064.html#aa449031fa7666de9161df5f16d539d6b">HostEntitySeed</a>&amp; <a class="code hl_function" href="../../d9/db3/a01064.html#a93838796fb1c9cb193b94ae14386b624">hostEntitySeed</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">return</span> hostEntitySeed_;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="../../d9/db3/a01064.html#a0271677f29354d026e3cf4ab0fab29db">   64</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/db3/a01064.html#a0271677f29354d026e3cf4ab0fab29db">isValid</a>()<span class="keyword"> const</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="keyword">    </span>{</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordflow">return</span> hostEntitySeed_.isValid();</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <a class="code hl_typedef" href="../../d9/db3/a01064.html#aa449031fa7666de9161df5f16d539d6b">HostEntitySeed</a> hostEntitySeed_;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  };</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>} <span class="comment">// namespace Dune</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="preprocessor">#endif  </span><span class="comment">// #define DUNE_IDENTITY_GRID_ENTITY_SEED_HH</span></div>
-<div class="ttc" id="aa00161_html"><div class="ttname"><a href="../../d6/d7d/a00161.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> geometryalgorithms.hh:6</div></div>
-<div class="ttc" id="aa01064_html"><div class="ttname"><a href="../../d9/db3/a01064.html">Dune::IGANEW::PatchGridEntitySeed</a></div><div class="ttdoc">The EntitySeed class provides the minimal information needed to restore an Entity using the grid.</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:24</div></div>
-<div class="ttc" id="aa01064_html_a0271677f29354d026e3cf4ab0fab29db"><div class="ttname"><a href="../../d9/db3/a01064.html#a0271677f29354d026e3cf4ab0fab29db">Dune::IGANEW::PatchGridEntitySeed::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdoc">Check whether it is safe to create an Entity from this Seed.</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:64</div></div>
-<div class="ttc" id="aa01064_html_a03d9f6f67872dc8ed68bcdfd971212e3"><div class="ttname"><a href="../../d9/db3/a01064.html#a03d9f6f67872dc8ed68bcdfd971212e3">Dune::IGANEW::PatchGridEntitySeed::PatchGridEntitySeed</a></div><div class="ttdeci">PatchGridEntitySeed()</div><div class="ttdoc">Construct an empty (i.e. isValid() == false) seed.</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:40</div></div>
-<div class="ttc" id="aa01064_html_a0e1020ac40dd8e7f0edac5e82fbb218d"><div class="ttname"><a href="../../d9/db3/a01064.html#a0e1020ac40dd8e7f0edac5e82fbb218d">Dune::IGANEW::PatchGridEntitySeed::codimension</a></div><div class="ttdeci">static constexpr int codimension</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:35</div></div>
-<div class="ttc" id="aa01064_html_a4c3b939e2326e421303bd64f9dee4216"><div class="ttname"><a href="../../d9/db3/a01064.html#a4c3b939e2326e421303bd64f9dee4216">Dune::IGANEW::PatchGridEntitySeed::PatchGridEntitySeed</a></div><div class="ttdeci">PatchGridEntitySeed(const HostEntity &amp;hostEntity)</div><div class="ttdoc">Create EntitySeed from hostgrid Entity.</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:49</div></div>
-<div class="ttc" id="aa01064_html_a93838796fb1c9cb193b94ae14386b624"><div class="ttname"><a href="../../d9/db3/a01064.html#a93838796fb1c9cb193b94ae14386b624">Dune::IGANEW::PatchGridEntitySeed::hostEntitySeed</a></div><div class="ttdeci">const HostEntitySeed &amp; hostEntitySeed() const</div><div class="ttdoc">Get stored HostEntitySeed.</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:56</div></div>
-<div class="ttc" id="aa01064_html_aa449031fa7666de9161df5f16d539d6b"><div class="ttname"><a href="../../d9/db3/a01064.html#aa449031fa7666de9161df5f16d539d6b">Dune::IGANEW::PatchGridEntitySeed::HostEntitySeed</a></div><div class="ttdeci">GridImp::HostGridType::Traits::template Codim&lt; codim &gt;::EntitySeed HostEntitySeed</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:31</div></div>
-<div class="ttc" id="aa01064_html_abc89476168d480c8c213713146f61617"><div class="ttname"><a href="../../d9/db3/a01064.html#abc89476168d480c8c213713146f61617">Dune::IGANEW::PatchGridEntitySeed::HostEntity</a></div><div class="ttdeci">GridImp::HostGridType::Traits::template Codim&lt; codim &gt;::Entity HostEntity</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridentityseed.hh:28</div></div>
+<a href="../../d4/d8c/a00035.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno"><a class="line" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">    3</a></span><span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> {</div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span>  <a class="code hl_enumvalue" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474a00d23a76e43b46dae9ec7aa9dcbebb32">Enabled</a>,</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>  <a class="code hl_enumvalue" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474ab9f5c797ebbf55adccdd8539a65a0241">Disabled</a></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>};</div>
+<div class="ttc" id="aa00035_html_a0348963ad9d3a1be93263e5997711474"><div class="ttname"><a href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a></div><div class="ttdeci">Trimming</div><div class="ttdef"><b>Definition:</b> enums.hh:3</div></div>
+<div class="ttc" id="aa00035_html_a0348963ad9d3a1be93263e5997711474a00d23a76e43b46dae9ec7aa9dcbebb32"><div class="ttname"><a href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474a00d23a76e43b46dae9ec7aa9dcbebb32">Trimming::Enabled</a></div><div class="ttdeci">@ Enabled</div></div>
+<div class="ttc" id="aa00035_html_a0348963ad9d3a1be93263e5997711474ab9f5c797ebbf55adccdd8539a65a0241"><div class="ttname"><a href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474ab9f5c797ebbf55adccdd8539a65a0241">Trimming::Disabled</a></div><div class="ttdeci">@ Disabled</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d4/d8c/a00035.html">hierachicpatchgridentityseed.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d4/d8c/a00035.html">enums.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

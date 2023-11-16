@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbsgeometry.hh File Reference</title>
+<title>dune-iga: nurbslocalgeometry.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,6 +16,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -88,44 +95,40 @@ $(document).ready(function(){initNavTree('d9/db6/a00146.html','../../'); initRes
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">nurbsgeometry.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">nurbslocalgeometry.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/dc1/a00092_source.html">dune/iga/geometry/closestpointprojection.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../da/d24/a00068_source.html">dune/iga/nurbsalgorithms.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d09/a00077_source.html">dune/iga/trim/subgrid.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/db1/a00140_source.html">dune/iga/utils/fillquadraturerule.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/d89/a00071_source.html">dune/iga/nurbsalgorithms.hh</a>&quot;</code><br />
 <code>#include &lt;dune/geometry/multilineargeometry.hh&gt;</code><br />
 <code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/geometry.hh&gt;</code><br />
 </div>
 <p><a href="../../d9/db6/a00146_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01216.html">Dune::IGA::NURBSGeometry&lt; mydim, dimworld, GridImpl &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a geometry implementation for NURBS  <a href="../../d8/df3/a01216.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da0/a01291.html">Dune::IGA::NURBSLocalGeometry&lt; mydim, dimworld, GridImpl &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a geometry implementation for NURBS  <a href="../../d4/da0/a01291.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d6/db8/a00158"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db8/a00158.html">Dune</a></td></tr>
+<tr class="memitem:d6/d7d/a00161"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:de/db9/a00159"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db9/a00159.html">Dune::IGA</a></td></tr>
+<tr class="memitem:db/d44/a00162"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aef81a26cbefe3fe5f7b1360e5a2cffe3"><td class="memTemplParams" colspan="2">template&lt;std::integral auto mydim, std::integral auto dimworld, class GridImpl &gt; </td></tr>
-<tr class="memitem:aef81a26cbefe3fe5f7b1360e5a2cffe3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/db9/a00159.html#aef81a26cbefe3fe5f7b1360e5a2cffe3">Dune::IGA::referenceElement</a> (const NURBSGeometry&lt; mydim, dimworld, GridImpl &gt; &amp;geo)</td></tr>
-<tr class="separator:aef81a26cbefe3fe5f7b1360e5a2cffe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1143a824b6baf6ddd144f4f1ce090d02"><td class="memTemplParams" colspan="2">template&lt;std::integral auto mydim, std::integral auto dimworld, class GridImpl &gt; </td></tr>
+<tr class="memitem:a1143a824b6baf6ddd144f4f1ce090d02"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a1143a824b6baf6ddd144f4f1ce090d02">Dune::IGA::referenceElement</a> (const NURBSLocalGeometry&lt; mydim, dimworld, GridImpl &gt; &amp;geo)</td></tr>
+<tr class="separator:a1143a824b6baf6ddd144f4f1ce090d02"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d9/db6/a00146.html">nurbsgeometry.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d9/db6/a00146.html">nurbslocalgeometry.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: linearalgebra.hh File Reference</title>
+<title>dune-iga: igahelpers.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,6 +16,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -85,36 +92,41 @@ $(document).ready(function(){initNavTree('d7/d06/a00131.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">linearalgebra.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">igahelpers.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../de/d76/a00134_source.html">dune/iga/utils/concepts.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;dune/common/bitsetvector.hh&gt;</code><br />
+<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
 </div>
 <p><a href="../../d7/d06/a00131_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dfe/a01383.html">BoundaryPatchEnclosingVerticesPropertyTrimmed&lt; GridView, ncomp &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d6/db8/a00158"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db8/a00158.html">Dune</a></td></tr>
+<tr class="memitem:d6/d7d/a00161"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:de/db9/a00159"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/db9/a00159.html">Dune::IGA</a></td></tr>
+<tr class="memitem:de/d53/a00169"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d53/a00169.html">Dune::Functions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0b8dfb22ae9f753cbec7631fe567f317"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; <br />
-requires (VectorType::dimension == 3)</td></tr>
-<tr class="memitem:a0b8dfb22ae9f753cbec7631fe567f317"><td class="memTemplItemLeft" align="right" valign="top">VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/db9/a00159.html#a0b8dfb22ae9f753cbec7631fe567f317">Dune::IGA::cross</a> (const VectorType &amp;a, const VectorType &amp;b)</td></tr>
-<tr class="memdesc:a0b8dfb22ae9f753cbec7631fe567f317"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free cross product function it calls the member function cross of VectorType if it exists and falls back to an implementation by hand otherwise.  <a href="../../de/db9/a00159.html#a0b8dfb22ae9f753cbec7631fe567f317">More...</a><br /></td></tr>
-<tr class="separator:a0b8dfb22ae9f753cbec7631fe567f317"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ce90ea47d11d38bdb1e3b675db93a18"><td class="memTemplParams" colspan="2">template&lt;class Basis , class F &gt; </td></tr>
+<tr class="memitem:a8ce90ea47d11d38bdb1e3b675db93a18"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d53/a00169.html#a8ce90ea47d11d38bdb1e3b675db93a18">Dune::Functions::forEachUntrimmedBoundaryDOF</a> (const Basis &amp;basis, F &amp;&amp;f)</td></tr>
+<tr class="separator:a8ce90ea47d11d38bdb1e3b675db93a18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_054fedf05f142c88b967e78541d2ed3d.html">utils</a></li><li class="navelem"><a class="el" href="../../d7/d06/a00131.html">linearalgebra.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_054fedf05f142c88b967e78541d2ed3d.html">utils</a></li><li class="navelem"><a class="el" href="../../d7/d06/a00131.html">igahelpers.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

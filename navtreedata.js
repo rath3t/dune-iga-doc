@@ -26,8 +26,8 @@ var NAVTREE =
 [
   [ "dune-iga", "index.html", [
     [ "dune-iga documentation", "index.html", null ],
-    [ "Todo List", "d3/df8/a00155.html", null ],
-    [ "Deprecated List", "d2/d34/a00156.html", null ],
+    [ "Todo List", "d6/db8/a00158.html", null ],
+    [ "Deprecated List", "de/db9/a00159.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -53,7 +53,11 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Enumerations", "globals_enum.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
@@ -61,17 +65,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/d0d/a00171.html",
-"d2/dd2/a01164.html#a702257cf18c7201e3eda8cc496c74fef",
-"d3/dbd/a01100.html#af699c129b1c34f26ef1440befb8378b7",
-"d5/d53/a01324.html#a1c75635fc3cc57d877911d580f414c3e",
-"d6/dae/a01304.html#a4d6aadc112f4aa374d0972e90f8a372b",
-"d7/df2/a01000.html#a76404bb0c343548e22d4e71836ddf7c2",
-"d8/df3/a01216.html#a2e7e3aa70e91b23cdf766bb92b4a3778",
-"da/db7/a01088.html#a36253232dd50befc3b0bea46279be6df",
-"db/db2/a00020.html",
-"dd/d75/a01180.html#ac98cabfa00e615d4d4f7666bba9027d5",
-"de/db9/a00159.html#a335f93275773dac8911e330abef913a8"
+"d2/d22/a01171.html#a458043700435144746a87ae7c201e4a5",
+"d2/d8e/a01315.html#a6e3b4681a0cd2f791a300db1c70328c9",
+"d4/d41/a01267.html#ad50e90cf1d5a5b05e78100eb139711f6",
+"d6/d07/a01303.html#a652b4915a988b3c3e1aad70b26b3b9ec",
+"d7/da4/a01287.html#af314b331f03ff2d4638eae1c92412871",
+"d8/ddb/a01147.html#a916a632a13310ca395d1e35fbb859d6d",
+"db/d44/a00162.html#a3d5ca1423a00bd0d6f618357d289aa58",
+"dc/d70/a01187.html#aa407a81be8d3090180921e012e39afda",
+"dd/d86/a01367.html#acbd8d97130c06bf43ea7792f09de5979",
+"de/d69/a01311.html#a4768fb340f0562bcd03d7cac18033ee2",
+"df/d18/a01071.html#a593a2b9143bde7fd54fed564f55b87ac"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

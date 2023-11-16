@@ -1,4 +1,28 @@
 var a00164 =
 [
-    [ "DiscontinuousIgaDataCollector", "d2/dd2/a01164.html", "d2/dd2/a01164" ]
+    [ "HostGridAccess", "d6/d8d/a01007.html", null ],
+    [ "NURBSPatchGeometry", "de/d4a/a01107.html", "de/d4a/a01107" ],
+    [ "PatchGeometryLocalView", "d3/de1/a01111.html", "d3/de1/a01111" ],
+    [ "PatchGrid", "dc/d10/a01003.html", "dc/d10/a01003" ],
+    [ "PatchGridEntity", "d8/d27/a01043.html", "d8/d27/a01043" ],
+    [ "PatchGridEntity< 0, dim, GridImp >", "de/de6/a01063.html", "de/de6/a01063" ],
+    [ "PatchGridEntitySeed", "d2/d49/a01067.html", "d2/d49/a01067" ],
+    [ "PatchGridFamily", "d6/d36/a01011.html", "d6/d36/a01011" ],
+    [ "PatchGridGeometry", "df/d18/a01071.html", "df/d18/a01071" ],
+    [ "PatchGridGlobalIdSet", "d6/d9a/a01083.html", "d6/d9a/a01083" ],
+    [ "PatchGridHierarchicIterator", "d0/d90/a01059.html", "d0/d90/a01059" ],
+    [ "PatchGridLeafIndexSet", "d2/d4d/a01079.html", "d2/d4d/a01079" ],
+    [ "PatchGridLeafIntersection", "d6/d0d/a01091.html", "d6/d0d/a01091" ],
+    [ "PatchGridLeafIntersectionIterator", "d2/d71/a01055.html", "d2/d71/a01055" ],
+    [ "PatchGridLeafIterator", "d6/dbc/a01099.html", "d6/dbc/a01099" ],
+    [ "PatchGridLevelIndexSet", "dd/d80/a01075.html", "dd/d80/a01075" ],
+    [ "PatchGridLevelIntersection", "de/d6d/a01095.html", "de/d6d/a01095" ],
+    [ "PatchGridLevelIntersectionIterator", "d3/d42/a01051.html", "d3/d42/a01051" ],
+    [ "PatchGridLevelIterator", "db/dbb/a01047.html", "db/dbb/a01047" ],
+    [ "PatchGridLocalGeometry", "d9/d10/a01103.html", "d9/d10/a01103" ],
+    [ "PatchGridLocalIdSet", "d0/d1f/a01087.html", "d0/d1f/a01087" ],
+    [ "computeParameterSpaceCoordinate", "db/ddf/a00164.html#a804e6ba2e675b77dae8dffa5f2da5c75", null ],
+    [ "createParameterPatchGridFromKnotVectors", "db/ddf/a00164.html#a988da06ea7c297a83d639576ff4ed60a", null ],
+    [ "createUniqueKnotSpans", "db/ddf/a00164.html#a3afaa412b7e8964bade8f3d8948e62f0", null ],
+    [ "PatchGrid", "db/ddf/a00164.html#a4a1e00d3288e806c7dfddc9724b93ebf", null ]
 ];

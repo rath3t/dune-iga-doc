@@ -1,6 +1,8 @@
 var a00062 =
 [
-    [ "Dune::IGA::NURBSGridLeafIterator< codim, pitype, GridImp >", "d5/d6e/a01240.html", "d5/d6e/a01240" ],
-    [ "Dune::IGA::NurbsHierarchicIterator< GridImp >", "d4/dd5/a01244.html", "d4/dd5/a01244" ],
-    [ "Dune::IGA::NURBSGridInterSectionIterator< GridImp >", "da/de0/a01248.html", "da/de0/a01248" ]
+    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "df/d2f/a00991.html", "df/d2f/a00991" ],
+    [ "findSpanCorrected", "df/d03/a00062.html#a38d1fb2831ca0dbfa925c4858576a99b", null ],
+    [ "findSpanCorrected", "df/d03/a00062.html#ac18a8662488d7f3817b559d81efcc445", null ],
+    [ "findSpanUncorrected", "df/d03/a00062.html#a554d684e12126174010f2a98d8136a3d", null ],
+    [ "findSpanUncorrected", "df/d03/a00062.html#a5fe5465b190549a27424a17e79029ace", null ]
 ];

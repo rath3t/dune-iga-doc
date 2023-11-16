@@ -1,14 +1,10 @@
 var a00068 =
 [
-    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d3/d32/a01176.html", "d3/d32/a01176" ],
-    [ "Dune::IGA::Nurbs< dim, ScalarType_ >::LocalView", "dd/d75/a01180.html", "dd/d75/a01180" ],
-    [ "degreeElevate", "da/d24/a00068.html#a6f1ede550b5e459f413e960a999f25a2", null ],
-    [ "extractControlCoordinates", "da/d24/a00068.html#ae69f4e15f2e768387a5034f021325614", null ],
-    [ "extractWeights", "da/d24/a00068.html#a1ab46c78ab2f2ec50f81f90ed2ac2c57", null ],
-    [ "generateRefinedKnots", "da/d24/a00068.html#a6bf8c0c51afc7176fc90bc962b6325e3", null ],
-    [ "knotRefinement", "da/d24/a00068.html#ad0c595e4d7ef91c299d7f7fb1e3f4a7f", null ],
-    [ "makeCircularArc", "da/d24/a00068.html#a1eeaa4b0827547b46fa451ae2a522dac", null ],
-    [ "makeSurfaceOfRevolution", "da/d24/a00068.html#a16fe995511a81303451229eb2a5b7646", null ],
-    [ "netOfSpan", "da/d24/a00068.html#a79d76dbe4e2128adbb02832419716592", null ],
-    [ "netOfSpan", "da/d24/a00068.html#aab63c1e2b72ce4bc21247a1cd88ec362", null ]
+    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >", "d3/d42/a01275.html", "d3/d42/a01275" ],
+    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >::Codim< cd >", "d9/de7/a01279.html", "d9/de7/a01279" ],
+    [ "Dune::IGA::NurbsLeafGridViewTraits< GridImp >::Codim< cd >::Partition< pit >", "d5/da7/a01283.html", "d5/da7/a01283" ],
+    [ "Dune::IGA::NURBSLeafGridView< GridImpl >", "d7/da4/a01287.html", "d7/da4/a01287" ],
+    [ "elements", "da/d24/a00068.html#abcf61b5168cb5509c107f3ec78f33fa3", null ],
+    [ "elements", "da/d24/a00068.html#ab8e29760a585d12b6afe46eaf0ac3567", null ],
+    [ "intersections", "da/d24/a00068.html#a3d5ca1423a00bd0d6f618357d289aa58", null ]
 ];

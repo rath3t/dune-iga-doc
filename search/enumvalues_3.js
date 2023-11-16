@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_0',['json',['../d6/dfb/a00172.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54',1,'Dune::Python::IGA']]]
+  ['full_0',['full',['../db/d44/a00162.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0',1,'Dune::IGA']]]
 ];

@@ -1,4 +1,5 @@
 var a00131 =
 [
-    [ "cross", "d7/d06/a00131.html#a0b8dfb22ae9f753cbec7631fe567f317", null ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "de/dfe/a01383.html", "de/dfe/a01383" ],
+    [ "forEachUntrimmedBoundaryDOF", "d7/d06/a00131.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
 ];
