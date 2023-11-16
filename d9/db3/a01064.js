@@ -1,15 +1,10 @@
 var a01064 =
 [
-    [ "HostGrid", "d9/db3/a01064.html#a19e4529be8a9eb5e1d611f1fe2bc813b", null ],
-    [ "Types", "d9/db3/a01064.html#a5d20b80f7c60adb00b0b364353d4172d", null ],
-    [ "contains", "d9/db3/a01064.html#af9251bfae26e78a8ae736d8c0976db8c", null ],
-    [ "index", "d9/db3/a01064.html#aea1d75b08d009f347819e133bf1a3d48", null ],
-    [ "size", "d9/db3/a01064.html#a45396f7db89c3bf333c679c1e5764b8e", null ],
-    [ "size", "d9/db3/a01064.html#ae96823a83a06b0d86be011c40c917f5f", null ],
-    [ "subIndex", "d9/db3/a01064.html#a77453994e4038675fafa1c0df610eb49", null ],
-    [ "types", "d9/db3/a01064.html#a0209d638ec5f9e20820fac61c103c753", null ],
-    [ "update", "d9/db3/a01064.html#acb6d71ea5dc64433e1058f15a1ca848f", null ],
-    [ "dim", "d9/db3/a01064.html#ab72a866172574e517411a443bdc11542", null ],
-    [ "grid_", "d9/db3/a01064.html#ae8c4f02aa0d2a2ab67371e17902d1a67", null ],
-    [ "level_", "d9/db3/a01064.html#ae882e0b5be04768bf54198eef1b067dd", null ]
+    [ "HostEntity", "d9/db3/a01064.html#abc89476168d480c8c213713146f61617", null ],
+    [ "HostEntitySeed", "d9/db3/a01064.html#aa449031fa7666de9161df5f16d539d6b", null ],
+    [ "PatchGridEntitySeed", "d9/db3/a01064.html#a03d9f6f67872dc8ed68bcdfd971212e3", null ],
+    [ "PatchGridEntitySeed", "d9/db3/a01064.html#a4c3b939e2326e421303bd64f9dee4216", null ],
+    [ "hostEntitySeed", "d9/db3/a01064.html#a93838796fb1c9cb193b94ae14386b624", null ],
+    [ "isValid", "d9/db3/a01064.html#a0271677f29354d026e3cf4ab0fab29db", null ],
+    [ "codimension", "d9/db3/a01064.html#a0e1020ac40dd8e7f0edac5e82fbb218d", null ]
 ];

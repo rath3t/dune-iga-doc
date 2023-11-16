@@ -1,9 +1,12 @@
 var a01140 =
 [
-    [ "ControlPoint", "dc/d64/a01140.html#a05660dacc1b434b971e62129c28422fd", null ],
-    [ "ControlPointNetType", "dc/d64/a01140.html#a321198b37f2cd182d35d6ec23b96497f", null ],
-    [ "Grid", "dc/d64/a01140.html#a29a07fbaa75336571b9f293537a0ec48", null ],
-    [ "PatchData", "dc/d64/a01140.html#ac5a13cf5d977000274c321869942cc52", null ],
-    [ "read", "dc/d64/a01140.html#a00f99434abd8039a53dc9f1e1927a42d", null ],
-    [ "read", "dc/d64/a01140.html#ae156afe228cb6f46b97767f551a4b30d", null ]
+    [ "SurfaceType", "dc/d64/a01140.html#afc5eab4d9fc91ce9a747b978b2608462", null ],
+    [ "Brep", "dc/d64/a01140.html#a4cdb331e4a5a8d1056f116468e997f72", null ],
+    [ "curves2D", "dc/d64/a01140.html#a6d2f5ea6a78344635f5e08872bd07804", null ],
+    [ "key", "dc/d64/a01140.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
+    [ "loops", "dc/d64/a01140.html#adf3a869b18a3dbec9d9d5184f41ca473", null ],
+    [ "surfaces", "dc/d64/a01140.html#a77af74d7b76494e0e1282baf5a9867c8", null ],
+    [ "trims", "dc/d64/a01140.html#aff01becf209101c0944a633e2779f98b", null ],
+    [ "type", "dc/d64/a01140.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
+    [ "typeString", "dc/d64/a01140.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
 ];

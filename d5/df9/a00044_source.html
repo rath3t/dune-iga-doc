@@ -132,10 +132,63 @@ $(document).ready(function(){initNavTree('d5/df9/a00044_source.html','../../'); 
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d6/d7d/a00161.html#a59d0b19ee28da51857d99eb6a13352e2">   46</a></span>      <span class="keyword">auto</span> <a class="code hl_function" href="../../d6/d7d/a00161.html#a59d0b19ee28da51857d99eb6a13352e2">zeroFirstAndSecondDerivativeOfPosition</a>(<span class="keyword">const</span> LocalCoordinate&amp; uL)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keyword">const</span> <span class="keyword">auto</span> u = localToSpan(uL);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      GlobalCoordinate pos;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      Hessian H;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      std::array&lt;unsigned int, mydimension&gt; subDirs = getDirectionsOfSubEntityInParameterSpace();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keyword">const</span> <span class="keyword">auto</span> basisFunctionDerivatives = nurbs_.basisFunctionDerivatives(u, 2);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      std::array&lt;unsigned int, griddim&gt; ithVecZero{};</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      pos = <a class="code hl_function" href="../../de/db9/a00159.html#a65bd70f966a8ba7c54eff7f6d8bec684">Dune::IGA::dot</a>(basisFunctionDerivatives.get(ithVecZero), cpCoordinateNet_);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      JacobianTransposed J;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dir = 0; dir &lt; mydimension; ++dir) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        std::array&lt;unsigned int, griddim&gt; ithVec{};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        ithVec[subDirs[dir]] = 1;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        J[dir]               = <a class="code hl_function" href="../../de/db9/a00159.html#a65bd70f966a8ba7c54eff7f6d8bec684">dot</a>(basisFunctionDerivatives.get(ithVec), cpCoordinateNet_);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        J[dir] *= scaling_.at(subDirs[dir]);  <span class="comment">// transform back to 0..1 domain</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dir = 0; dir &lt; mydimension; ++dir) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::array&lt;unsigned int, griddim&gt; ithVec{};</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        ithVec[subDirs[dir]] = 2;  <span class="comment">// second derivative in subDirs[dir] direction</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        H[dir]               = <a class="code hl_function" href="../../de/db9/a00159.html#a65bd70f966a8ba7c54eff7f6d8bec684">dot</a>(basisFunctionDerivatives.get(ithVec), cpCoordinateNet_);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        H[dir] *= Dune::power(scaling_.at(subDirs[dir]), 2);  <span class="comment">// transform back to 0..1</span></div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (mydimension &gt; 1 and griddim &gt; 1) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        std::array&lt;int, griddim&gt; mixeDerivs;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        std::ranges::fill(mixeDerivs, 0);  <span class="comment">// first mixed derivatives</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (mydimension == 2)</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dir = 0; dir &lt; mydimension; ++dir) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            mixeDerivs[subDirs[dir]] = 1;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>          }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>          std::ranges::fill_n(mixeDerivs.begin(), 2, 1);  <span class="comment">// first mixed derivatives</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>        <span class="keywordtype">int</span> mixedDireCounter = mydimension;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>        <span class="keywordflow">do</span> {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          H[mixedDireCounter++] = <a class="code hl_function" href="../../de/db9/a00159.html#a65bd70f966a8ba7c54eff7f6d8bec684">dot</a>(basisFunctionDerivatives.get(mixeDerivs), cpCoordinateNet_);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>          <span class="keywordflow">for</span> (<span class="keywordtype">int</span> dir = 0; dir &lt; mydimension; ++dir) {</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>            <span class="keywordflow">if</span> (mixeDerivs[dir] == 0) <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>            H[mixedDireCounter - 1] *= scaling_.at(subDirs[dir]);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>          }</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (mydimension == 2) <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        } <span class="keywordflow">while</span> (std::ranges::next_permutation(mixeDerivs, std::greater()).found);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="keywordflow">return</span> std::make_tuple(pos, J, H);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>}</div>
+<div class="ttc" id="aa00159_html_a65bd70f966a8ba7c54eff7f6d8bec684"><div class="ttname"><a href="../../de/db9/a00159.html#a65bd70f966a8ba7c54eff7f6d8bec684">Dune::IGA::dot</a></div><div class="ttdeci">auto dot(const MultiDimensionNet&lt; netdim, lValueType &gt; &amp;lnet, const MultiDimensionNet&lt; netdim, rValueType &gt; &amp;rnet)</div><div class="ttdef"><b>Definition:</b> mdnet.hh:470</div></div>
 <div class="ttc" id="aa00159_html_a7a62c0cc97a46970cbdfeaa02f5afa2e"><div class="ttname"><a href="../../de/db9/a00159.html#a7a62c0cc97a46970cbdfeaa02f5afa2e">Dune::IGA::closestPointProjectionByTrustRegion</a></div><div class="ttdeci">auto closestPointProjectionByTrustRegion(const Geo &amp;geo, auto &amp;point, const std::optional&lt; typename Geo::LocalCoordinate &gt; &amp;start=std::nullopt) -&gt; std::tuple&lt; typename Geo::LocalCoordinate, typename Geo::ctype, typename Geo::ctype, typename Geo::ctype &gt; requires(Geo::mydimension==1 or Geo::mydimension==2)</div><div class="ttdef"><b>Definition:</b> closestpointprojection.hh:13</div></div>
 <div class="ttc" id="aa00160_html_abed12b304dff899714427441b8558f7b"><div class="ttname"><a href="../../de/d38/a00160.html#abed12b304dff899714427441b8558f7b">Dune::IGA::Utilities::clampToBoundaryAndCheckIfIsAtAllBoundaries</a></div><div class="ttdeci">auto clampToBoundaryAndCheckIfIsAtAllBoundaries(Dune::FieldVector&lt; ScalarType, dim &gt; &amp;x, const std::array&lt; Domain&lt; ScalarType &gt;, dim2 &gt; &amp;domain={})</div><div class="ttdef"><b>Definition:</b> geohelper.hh:28</div></div>
 <div class="ttc" id="aa00161_html"><div class="ttname"><a href="../../d6/d7d/a00161.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> geometryalgorithms.hh:6</div></div>
+<div class="ttc" id="aa00161_html_a59d0b19ee28da51857d99eb6a13352e2"><div class="ttname"><a href="../../d6/d7d/a00161.html#a59d0b19ee28da51857d99eb6a13352e2">Dune::IGANEW::zeroFirstAndSecondDerivativeOfPosition</a></div><div class="ttdeci">auto zeroFirstAndSecondDerivativeOfPosition(const LocalCoordinate &amp;uL) const</div><div class="ttdef"><b>Definition:</b> geometryalgorithms.hh:46</div></div>
 <div class="ttc" id="aa00161_html_a804e6ba2e675b77dae8dffa5f2da5c75"><div class="ttname"><a href="../../d6/d7d/a00161.html#a804e6ba2e675b77dae8dffa5f2da5c75">Dune::IGANEW::computeParameterSpaceCoordinate</a></div><div class="ttdeci">Geometry::LocalCoordinate computeParameterSpaceCoordinate(const Geometry &amp;geo, const typename Geometry::GlobalCoordinate &amp;global)</div><div class="ttdef"><b>Definition:</b> geometryalgorithms.hh:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->

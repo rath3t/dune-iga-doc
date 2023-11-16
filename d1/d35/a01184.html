@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::Functions::NurbsLocalBasis&lt; GV, R &gt; Class Template Reference</title>
+<title>dune-iga: Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -87,65 +87,93 @@ $(document).ready(function(){initNavTree('d1/d35/a01184.html','../../'); initRes
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../de/db5/a01181.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::Functions::NurbsLocalBasis&lt; GV, R &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>LocalBasis class in the sense of dune-localfunctions, presenting the restriction of a B-spline patch to a knot span.  
+<p>LocalFiniteElement in the sense of dune-localfunctions, for the B-spline basis on tensor-product grids.  
  <a href="../../d1/d35/a01184.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="../../d0/dc2/a00104_source.html">dune/iga/nurbsbasis.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;:</div>
+Inheritance diagram for Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../dc/d2d/a01183.png" border="0" usemap="#a_dune_1_1_functions_1_1_nurbs_local_basis_3_01_g_v_00_01_r_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="a_dune_1_1_functions_1_1_nurbs_local_basis_3_01_g_v_00_01_r_01_4_inherit__map" id="a_dune_1_1_functions_1_1_nurbs_local_basis_3_01_g_v_00_01_r_01_4_inherit__map">
-<area shape="rect" title="LocalBasis class in the sense of dune&#45;localfunctions, presenting the restriction of a B&#45;spline patch ..." alt="" coords="5,5,212,47"/>
-<area shape="rect" href="../../d1/d35/a01184.html" title=" " alt="" coords="5,109,212,151"/>
+<div class="center"><img src="../../dc/d2d/a01183.png" border="0" usemap="#a_dune_1_1_functions_1_1_nurbs_local_finite_element_3_01_g_v_00_01_r_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_dune_1_1_functions_1_1_nurbs_local_finite_element_3_01_g_v_00_01_r_01_4_inherit__map" id="a_dune_1_1_functions_1_1_nurbs_local_finite_element_3_01_g_v_00_01_r_01_4_inherit__map">
+<area shape="rect" title="LocalFiniteElement in the sense of dune&#45;localfunctions, for the B&#45;spline basis on tensor&#45;product grid..." alt="" coords="9,5,215,47"/>
+<area shape="rect" href="../../d1/d35/a01184.html" title=" " alt="" coords="5,109,219,151"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:aa33762da2841b00c25730b54f403b18d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#aa33762da2841b00c25730b54f403b18d">Traits</a> = LocalBasisTraits&lt; D, dim, FieldVector&lt; D, dim &gt;, R, 1, FieldVector&lt; R, 1 &gt;, FieldMatrix&lt; R, 1, dim &gt; &gt;</td></tr>
-<tr class="memdesc:aa33762da2841b00c25730b54f403b18d"><td class="mdescLeft">&#160;</td><td class="mdescRight">export type traits for function signature  <a href="../../d1/d35/a01184.html#aa33762da2841b00c25730b54f403b18d">More...</a><br /></td></tr>
-<tr class="separator:aa33762da2841b00c25730b54f403b18d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ab6966f35d5907b7236df6827ad859"><td class="memItemLeft" align="right" valign="top">typedef LocalFiniteElementTraits&lt; <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt;, <a class="el" href="../../d2/d22/a01196.html">NurbsLocalCoefficients</a>&lt; dim &gt;, <a class="el" href="../../dc/dcc/a01200.html">NurbsLocalInterpolation</a>&lt; dim, <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a82ab6966f35d5907b7236df6827ad859">Traits</a></td></tr>
+<tr class="memdesc:a82ab6966f35d5907b7236df6827ad859"><td class="mdescLeft">&#160;</td><td class="mdescRight">Export various types related to this LocalFiniteElement.  <a href="../../d1/d35/a01184.html#a82ab6966f35d5907b7236df6827ad859">More...</a><br /></td></tr>
+<tr class="separator:a82ab6966f35d5907b7236df6827ad859"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad119ff60c7cbee7b6629d14495ae1049"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#ad119ff60c7cbee7b6629d14495ae1049">NurbsLocalBasis</a> (const <a class="el" href="../../dd/d75/a01180.html">NurbsPreBasis</a>&lt; GV &gt; &amp;preBasis, const <a class="el" href="../../d3/d32/a01176.html">NurbsLocalFiniteElement</a>&lt; GV, R &gt; &amp;lFE)</td></tr>
-<tr class="memdesc:ad119ff60c7cbee7b6629d14495ae1049"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with a given B-spline patch.  <a href="../../d1/d35/a01184.html#ad119ff60c7cbee7b6629d14495ae1049">More...</a><br /></td></tr>
-<tr class="separator:ad119ff60c7cbee7b6629d14495ae1049"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f">evaluateFunction</a> (const FieldVector&lt; D, dim &gt; &amp;in, std::vector&lt; FieldVector&lt; R, 1 &gt; &gt; &amp;out) const</td></tr>
-<tr class="memdesc:a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate all shape functions.  <a href="../../d1/d35/a01184.html#a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f">More...</a><br /></td></tr>
-<tr class="separator:a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e4031a5766fdf953b67c52753a5173c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a1e4031a5766fdf953b67c52753a5173c">evaluateJacobian</a> (const FieldVector&lt; D, dim &gt; &amp;in, std::vector&lt; FieldMatrix&lt; D, 1, dim &gt; &gt; &amp;out) const</td></tr>
-<tr class="memdesc:a1e4031a5766fdf953b67c52753a5173c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate Jacobian of all shape functions.  <a href="../../d1/d35/a01184.html#a1e4031a5766fdf953b67c52753a5173c">More...</a><br /></td></tr>
-<tr class="separator:a1e4031a5766fdf953b67c52753a5173c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19caec343db1c4b578863e38a1956cf3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a19caec343db1c4b578863e38a1956cf3">partial</a> (const typename std::array&lt; unsigned int, dim &gt; &amp;<a class="el" href="../../d1/d35/a01184.html#a112e67e9f50f06663a24cfb7e1c3804f">order</a>, const typename Traits::DomainType &amp;in, std::vector&lt; typename Traits::RangeType &gt; &amp;out) const</td></tr>
-<tr class="memdesc:a19caec343db1c4b578863e38a1956cf3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate all shape functions and derivatives of any degree.  <a href="../../d1/d35/a01184.html#a19caec343db1c4b578863e38a1956cf3">More...</a><br /></td></tr>
-<tr class="separator:a19caec343db1c4b578863e38a1956cf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a112e67e9f50f06663a24cfb7e1c3804f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a112e67e9f50f06663a24cfb7e1c3804f">order</a> () const</td></tr>
-<tr class="memdesc:a112e67e9f50f06663a24cfb7e1c3804f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Polynomial degree of the shape functions.  <a href="../../d1/d35/a01184.html#a112e67e9f50f06663a24cfb7e1c3804f">More...</a><br /></td></tr>
-<tr class="separator:a112e67e9f50f06663a24cfb7e1c3804f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf2935949ca9304b3007895aae110cc6"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#acf2935949ca9304b3007895aae110cc6">size</a> () const</td></tr>
-<tr class="memdesc:acf2935949ca9304b3007895aae110cc6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of basis functions on the current knot span.  <a href="../../d1/d35/a01184.html#acf2935949ca9304b3007895aae110cc6">More...</a><br /></td></tr>
-<tr class="separator:acf2935949ca9304b3007895aae110cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a0e84df8545f34e979a84ecd0ac1fc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#af9a0e84df8545f34e979a84ecd0ac1fc">NurbsLocalFiniteElement</a> (const <a class="el" href="../../d6/d97/a01188.html">NurbsPreBasis</a>&lt; GV, R &gt; &amp;preBasis)</td></tr>
+<tr class="memdesc:af9a0e84df8545f34e979a84ecd0ac1fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor with a given B-spline basis.  <a href="../../d1/d35/a01184.html#af9a0e84df8545f34e979a84ecd0ac1fc">More...</a><br /></td></tr>
+<tr class="separator:af9a0e84df8545f34e979a84ecd0ac1fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a609ff853577297d1a0ead1e280ee7e1c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a609ff853577297d1a0ead1e280ee7e1c">NurbsLocalFiniteElement</a> (const <a class="el" href="../../d1/d35/a01184.html">NurbsLocalFiniteElement</a> &amp;other)</td></tr>
+<tr class="memdesc:a609ff853577297d1a0ead1e280ee7e1c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy constructor.  <a href="../../d1/d35/a01184.html#a609ff853577297d1a0ead1e280ee7e1c">More...</a><br /></td></tr>
+<tr class="separator:a609ff853577297d1a0ead1e280ee7e1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa407a81be8d3090180921e012e39afda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#aa407a81be8d3090180921e012e39afda">bind</a> (const std::array&lt; unsigned, dim &gt; &amp;elementIdx)</td></tr>
+<tr class="memdesc:aa407a81be8d3090180921e012e39afda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind LocalFiniteElement to a specific knot span of the spline patch.  <a href="../../d1/d35/a01184.html#aa407a81be8d3090180921e012e39afda">More...</a><br /></td></tr>
+<tr class="separator:aa407a81be8d3090180921e012e39afda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a62b782b1586d7ec645191540d0a4d2"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a6a62b782b1586d7ec645191540d0a4d2">localBasis</a> () const</td></tr>
+<tr class="memdesc:a6a62b782b1586d7ec645191540d0a4d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hand out a LocalBasis object.  <a href="../../d1/d35/a01184.html#a6a62b782b1586d7ec645191540d0a4d2">More...</a><br /></td></tr>
+<tr class="separator:a6a62b782b1586d7ec645191540d0a4d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e05aaa73b35041a4c7840b0f914d337"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d2/d22/a01196.html">NurbsLocalCoefficients</a>&lt; dim &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a0e05aaa73b35041a4c7840b0f914d337">localCoefficients</a> () const</td></tr>
+<tr class="memdesc:a0e05aaa73b35041a4c7840b0f914d337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hand out a LocalCoefficients object.  <a href="../../d1/d35/a01184.html#a0e05aaa73b35041a4c7840b0f914d337">More...</a><br /></td></tr>
+<tr class="separator:a0e05aaa73b35041a4c7840b0f914d337"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af81c002fe6cd71c2b5d5e7d6c3db553f"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dc/dcc/a01200.html">NurbsLocalInterpolation</a>&lt; dim, <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt; &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#af81c002fe6cd71c2b5d5e7d6c3db553f">localInterpolation</a> () const</td></tr>
+<tr class="memdesc:af81c002fe6cd71c2b5d5e7d6c3db553f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Hand out a LocalInterpolation object.  <a href="../../d1/d35/a01184.html#af81c002fe6cd71c2b5d5e7d6c3db553f">More...</a><br /></td></tr>
+<tr class="separator:af81c002fe6cd71c2b5d5e7d6c3db553f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66500fa3aeb4393533b6476ba1ae0239"><td class="memItemLeft" align="right" valign="top">unsigned&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a66500fa3aeb4393533b6476ba1ae0239">size</a> () const</td></tr>
+<tr class="memdesc:a66500fa3aeb4393533b6476ba1ae0239"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of shape functions in this finite element.  <a href="../../d1/d35/a01184.html#a66500fa3aeb4393533b6476ba1ae0239">More...</a><br /></td></tr>
+<tr class="separator:a66500fa3aeb4393533b6476ba1ae0239"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7245e091225683bcc105b448b63808ef"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a7245e091225683bcc105b448b63808ef">type</a> () const</td></tr>
+<tr class="memdesc:a7245e091225683bcc105b448b63808ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the reference element that the local finite element is defined on (here, a hypercube)  <a href="../../d1/d35/a01184.html#a7245e091225683bcc105b448b63808ef">More...</a><br /></td></tr>
+<tr class="separator:a7245e091225683bcc105b448b63808ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c286e952d31db312211c9aabdbda36f"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a2c286e952d31db312211c9aabdbda36f">oneDimensionalSize</a> (int i) const</td></tr>
+<tr class="memdesc:a2c286e952d31db312211c9aabdbda36f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of degrees of freedom for one coordinate direction.  <a href="../../d1/d35/a01184.html#a2c286e952d31db312211c9aabdbda36f">More...</a><br /></td></tr>
+<tr class="separator:a2c286e952d31db312211c9aabdbda36f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2694ec0d342287865eee67f869602641"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d6/d97/a01188.html">NurbsPreBasis</a>&lt; GV, R &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a2694ec0d342287865eee67f869602641">preBasis_</a></td></tr>
+<tr class="separator:a2694ec0d342287865eee67f869602641"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad08c68aef6e87b72e3099e0f20773346"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d22/a01196.html">NurbsLocalCoefficients</a>&lt; dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#ad08c68aef6e87b72e3099e0f20773346">localCoefficients_</a></td></tr>
+<tr class="separator:ad08c68aef6e87b72e3099e0f20773346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac350160da5dfcd5b105e2f4ba156a79b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/dcc/a01200.html">NurbsLocalInterpolation</a>&lt; dim, <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#ac350160da5dfcd5b105e2f4ba156a79b">localInterpolation_</a></td></tr>
+<tr class="separator:ac350160da5dfcd5b105e2f4ba156a79b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89307213ae0bc9309d3654491f6616f9"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a89307213ae0bc9309d3654491f6616f9">currentKnotSpan_</a></td></tr>
+<tr class="separator:a89307213ae0bc9309d3654491f6616f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a089ea823bcf1a2b6aaa63b3e99bb6c05"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a089ea823bcf1a2b6aaa63b3e99bb6c05">localBasis_</a></td></tr>
+<tr class="separator:a089ea823bcf1a2b6aaa63b3e99bb6c05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa191406a187a19cbe0cc3008756cd66a"><td class="memItemLeft" align="right" valign="top">std::array&lt; unsigned, dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#aa191406a187a19cbe0cc3008756cd66a">elementIdx_</a> {}</td></tr>
+<tr class="separator:aa191406a187a19cbe0cc3008756cd66a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e9ecefd3d1a91c0d053accc92f96035"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d35/a01184.html#a2e9ecefd3d1a91c0d053accc92f96035">isBound</a> {false}</td></tr>
+<tr class="separator:a2e9ecefd3d1a91c0d053accc92f96035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;class GV, class R&gt;<br />
-class Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;</div><p >LocalBasis class in the sense of dune-localfunctions, presenting the restriction of a B-spline patch to a knot span. </p>
+class Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt;</div><p >LocalFiniteElement in the sense of dune-localfunctions, for the B-spline basis on tensor-product grids. </p>
+<p >This class ties together the implementation classes <a class="el" href="../../d2/db4/a01192.html" title="LocalBasis class in the sense of dune-localfunctions, presenting the restriction of a B-spline patch ...">NurbsLocalBasis</a>, <a class="el" href="../../d2/d22/a01196.html" title="Attaches a shape function to an entity.">NurbsLocalCoefficients</a>, and <a class="el" href="../../dc/dcc/a01200.html" title="Local interpolation in the sense of dune-localfunctions, for the B-spline basis on tensor-product gri...">NurbsLocalInterpolation</a></p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">GV</td><td>Grid view that the basis is defined on </td></tr>
+    <tr><td class="paramname">D</td><td>Number type used for domain coordinates </td></tr>
     <tr><td class="paramname">R</td><td>Number type used for spline function values </td></tr>
   </table>
   </dd>
 </dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa33762da2841b00c25730b54f403b18d" name="aa33762da2841b00c25730b54f403b18d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa33762da2841b00c25730b54f403b18d">&#9670;&nbsp;</a></span>Traits</h2>
+<a id="a82ab6966f35d5907b7236df6827ad859" name="a82ab6966f35d5907b7236df6827ad859"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82ab6966f35d5907b7236df6827ad859">&#9670;&nbsp;</a></span>Traits</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,18 +181,18 @@ class Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;</div><p >LocalBasis class 
 template&lt;class GV , class R &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::Traits =  LocalBasisTraits&lt;D, dim, FieldVector&lt;D, dim&gt;, R, 1, FieldVector&lt;R, 1&gt;, FieldMatrix&lt;R, 1, dim&gt; &gt;</td>
+          <td class="memname">typedef LocalFiniteElementTraits&lt;<a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt;GV, R&gt;, <a class="el" href="../../d2/d22/a01196.html">NurbsLocalCoefficients</a>&lt;dim&gt;, <a class="el" href="../../dc/dcc/a01200.html">NurbsLocalInterpolation</a>&lt;dim, <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt;GV, R&gt; &gt; &gt; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::Traits</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>export type traits for function signature </p>
+<p>Export various types related to this LocalFiniteElement. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ad119ff60c7cbee7b6629d14495ae1049" name="ad119ff60c7cbee7b6629d14495ae1049"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad119ff60c7cbee7b6629d14495ae1049">&#9670;&nbsp;</a></span>NurbsLocalBasis()</h2>
+<a id="af9a0e84df8545f34e979a84ecd0ac1fc" name="af9a0e84df8545f34e979a84ecd0ac1fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a0e84df8545f34e979a84ecd0ac1fc">&#9670;&nbsp;</a></span>NurbsLocalFiniteElement() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,21 +203,41 @@ template&lt;class GV , class R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::NurbsLocalBasis </td>
+          <td class="memname"><a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::NurbsLocalFiniteElement </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d75/a01180.html">NurbsPreBasis</a>&lt; GV &gt; &amp;&#160;</td>
-          <td class="paramname"><em>preBasis</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="../../d6/d97/a01188.html">NurbsPreBasis</a>&lt; GV, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>preBasis</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d3/d32/a01176.html">NurbsLocalFiniteElement</a>&lt; GV, R &gt; &amp;&#160;</td>
-          <td class="paramname"><em>lFE</em>&#160;</td>
         </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor with a given B-spline basis. </p>
+
+</div>
+</div>
+<a id="a609ff853577297d1a0ead1e280ee7e1c" name="a609ff853577297d1a0ead1e280ee7e1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a609ff853577297d1a0ead1e280ee7e1c">&#9670;&nbsp;</a></span>NurbsLocalFiniteElement() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
         <tr>
+          <td class="memname"><a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::NurbsLocalFiniteElement </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d35/a01184.html">NurbsLocalFiniteElement</a>&lt; GV, R &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -199,14 +247,13 @@ template&lt;class GV , class R &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor with a given B-spline patch. </p>
-<p >The patch object does all the work. </p>
+<p>Copy constructor. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f" name="a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f">&#9670;&nbsp;</a></span>evaluateFunction()</h2>
+<a id="aa407a81be8d3090180921e012e39afda" name="aa407a81be8d3090180921e012e39afda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa407a81be8d3090180921e012e39afda">&#9670;&nbsp;</a></span>bind()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -217,21 +264,11 @@ template&lt;class GV , class R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::evaluateFunction </td>
+          <td class="memname">void <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::bind </td>
           <td>(</td>
-          <td class="paramtype">const FieldVector&lt; D, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const std::array&lt; unsigned, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>elementIdx</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::vector&lt; FieldVector&lt; R, 1 &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -241,18 +278,19 @@ template&lt;class GV , class R &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Evaluate all shape functions. </p>
+<p>Bind LocalFiniteElement to a specific knot span of the spline patch. </p>
+<p >Elements are the non-empty knot spans, here we do the renumbering</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">in</td><td>Coordinates where to evaluate the functions, in local coordinates of the current knot span </td></tr>
+    <tr><td class="paramname">elementIdx</td><td>Integer coordinates in the tensor product patch </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a1e4031a5766fdf953b67c52753a5173c" name="a1e4031a5766fdf953b67c52753a5173c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e4031a5766fdf953b67c52753a5173c">&#9670;&nbsp;</a></span>evaluateJacobian()</h2>
+<a id="a6a62b782b1586d7ec645191540d0a4d2" name="a6a62b782b1586d7ec645191540d0a4d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a62b782b1586d7ec645191540d0a4d2">&#9670;&nbsp;</a></span>localBasis()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -263,53 +301,7 @@ template&lt;class GV , class R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::evaluateJacobian </td>
-          <td>(</td>
-          <td class="paramtype">const FieldVector&lt; D, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; FieldMatrix&lt; D, 1, dim &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Evaluate Jacobian of all shape functions. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">in</td><td>Coordinates where to evaluate the Jacobian, in local coordinates of the current knot span </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a112e67e9f50f06663a24cfb7e1c3804f" name="a112e67e9f50f06663a24cfb7e1c3804f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a112e67e9f50f06663a24cfb7e1c3804f">&#9670;&nbsp;</a></span>order()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GV , class R &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::order </td>
+          <td class="memname">const <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt; &amp; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::localBasis </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -322,13 +314,12 @@ template&lt;class GV , class R &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Polynomial degree of the shape functions. </p>
-<p >Unfortunately, the general interface of the LocalBasis class mandates that the 'degree' method takes no arguments, and returns a single integer. It therefore cannot reflect that fact that a B-spline basis function can easily have different orders in the different coordinate directions. We therefore take the conservative choice and return the maximum over the orders of all directions. </p>
+<p>Hand out a LocalBasis object. </p>
 
 </div>
 </div>
-<a id="a19caec343db1c4b578863e38a1956cf3" name="a19caec343db1c4b578863e38a1956cf3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19caec343db1c4b578863e38a1956cf3">&#9670;&nbsp;</a></span>partial()</h2>
+<a id="a0e05aaa73b35041a4c7840b0f914d337" name="a0e05aaa73b35041a4c7840b0f914d337"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e05aaa73b35041a4c7840b0f914d337">&#9670;&nbsp;</a></span>localCoefficients()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,53 +330,7 @@ template&lt;class GV , class R &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::partial </td>
-          <td>(</td>
-          <td class="paramtype">const typename std::array&lt; unsigned int, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>order</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const typename Traits::DomainType &amp;&#160;</td>
-          <td class="paramname"><em>in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::vector&lt; typename Traits::RangeType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Evaluate all shape functions and derivatives of any degree. </p>
-
-</div>
-</div>
-<a id="acf2935949ca9304b3007895aae110cc6" name="acf2935949ca9304b3007895aae110cc6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acf2935949ca9304b3007895aae110cc6">&#9670;&nbsp;</a></span>size()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GV , class R &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalBasis</a>&lt; GV, R &gt;::size </td>
+          <td class="memname">const <a class="el" href="../../d2/d22/a01196.html">NurbsLocalCoefficients</a>&lt; dim &gt; &amp; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::localCoefficients </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -398,7 +343,237 @@ template&lt;class GV , class R &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Return the number of basis functions on the current knot span. </p>
+<p>Hand out a LocalCoefficients object. </p>
+
+</div>
+</div>
+<a id="af81c002fe6cd71c2b5d5e7d6c3db553f" name="af81c002fe6cd71c2b5d5e7d6c3db553f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af81c002fe6cd71c2b5d5e7d6c3db553f">&#9670;&nbsp;</a></span>localInterpolation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../dc/dcc/a01200.html">NurbsLocalInterpolation</a>&lt; dim, <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt; GV, R &gt; &gt; &amp; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::localInterpolation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Hand out a LocalInterpolation object. </p>
+
+</div>
+</div>
+<a id="a2c286e952d31db312211c9aabdbda36f" name="a2c286e952d31db312211c9aabdbda36f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c286e952d31db312211c9aabdbda36f">&#9670;&nbsp;</a></span>oneDimensionalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::oneDimensionalSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of degrees of freedom for one coordinate direction. </p>
+
+</div>
+</div>
+<a id="a66500fa3aeb4393533b6476ba1ae0239" name="a66500fa3aeb4393533b6476ba1ae0239"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66500fa3aeb4393533b6476ba1ae0239">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Number of shape functions in this finite element. </p>
+
+</div>
+</div>
+<a id="a7245e091225683bcc105b448b63808ef" name="a7245e091225683bcc105b448b63808ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7245e091225683bcc105b448b63808ef">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeometryType <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return the reference element that the local finite element is defined on (here, a hypercube) </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a89307213ae0bc9309d3654491f6616f9" name="a89307213ae0bc9309d3654491f6616f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89307213ae0bc9309d3654491f6616f9">&#9670;&nbsp;</a></span>currentKnotSpan_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;int, dim&gt; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::currentKnotSpan_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa191406a187a19cbe0cc3008756cd66a" name="aa191406a187a19cbe0cc3008756cd66a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa191406a187a19cbe0cc3008756cd66a">&#9670;&nbsp;</a></span>elementIdx_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt;unsigned, dim&gt; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::elementIdx_ {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2e9ecefd3d1a91c0d053accc92f96035" name="a2e9ecefd3d1a91c0d053accc92f96035"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e9ecefd3d1a91c0d053accc92f96035">&#9670;&nbsp;</a></span>isBound</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::isBound {false}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a089ea823bcf1a2b6aaa63b3e99bb6c05" name="a089ea823bcf1a2b6aaa63b3e99bb6c05"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a089ea823bcf1a2b6aaa63b3e99bb6c05">&#9670;&nbsp;</a></span>localBasis_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt;GV, R&gt; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::localBasis_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad08c68aef6e87b72e3099e0f20773346" name="ad08c68aef6e87b72e3099e0f20773346"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad08c68aef6e87b72e3099e0f20773346">&#9670;&nbsp;</a></span>localCoefficients_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d22/a01196.html">NurbsLocalCoefficients</a>&lt;dim&gt; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::localCoefficients_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac350160da5dfcd5b105e2f4ba156a79b" name="ac350160da5dfcd5b105e2f4ba156a79b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac350160da5dfcd5b105e2f4ba156a79b">&#9670;&nbsp;</a></span>localInterpolation_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../dc/dcc/a01200.html">NurbsLocalInterpolation</a>&lt;dim, <a class="el" href="../../d2/db4/a01192.html">NurbsLocalBasis</a>&lt;GV, R&gt; &gt; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::localInterpolation_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2694ec0d342287865eee67f869602641" name="a2694ec0d342287865eee67f869602641"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2694ec0d342287865eee67f869602641">&#9670;&nbsp;</a></span>preBasis_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GV , class R &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d6/d97/a01188.html">NurbsPreBasis</a>&lt;GV, R&gt;&amp; <a class="el" href="../../d1/d35/a01184.html">Dune::Functions::NurbsLocalFiniteElement</a>&lt; GV, R &gt;::preBasis_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -410,7 +585,7 @@ template&lt;class GV , class R &gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d6/db8/a00158.html">Dune</a></li><li class="navelem"><a class="el" href="../../d9/d38/a00166.html">Functions</a></li><li class="navelem"><a class="el" href="../../d1/d35/a01184.html">NurbsLocalBasis</a></li>
+    <li class="navelem"><a class="el" href="../../d6/db8/a00158.html">Dune</a></li><li class="navelem"><a class="el" href="../../d9/d38/a00166.html">Functions</a></li><li class="navelem"><a class="el" href="../../d1/d35/a01184.html">NurbsLocalFiniteElement</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

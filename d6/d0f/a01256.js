@@ -1,9 +1,11 @@
 var a01256 =
 [
-    [ "GridView", "d6/d0f/a01256.html#aee8e13698de38303b6de769d11d3569b", null ],
-    [ "IdType", "d6/d0f/a01256.html#a8d048896c9546abc9f15015bdfb5b3d3", null ],
-    [ "IgaIdSet", "d6/d0f/a01256.html#a093f9b70ec11610ed61326b5fb7124e4", null ],
-    [ "id", "d6/d0f/a01256.html#ad50e90cf1d5a5b05e78100eb139711f6", null ],
-    [ "id", "d6/d0f/a01256.html#a3aca90c2ffea68b28c467010d2dec7ae", null ],
-    [ "subId", "d6/d0f/a01256.html#a2e607fdc32cb4cf9033b39acc7bbd885", null ]
+    [ "Partition", "d7/da3/a01260.html", "d7/da3/a01260" ],
+    [ "Entity", "d6/d0f/a01256.html#a5b3d4942ad10bbb9f951a2396c250002", null ],
+    [ "EntitySeed", "d6/d0f/a01256.html#a98059d075e980b5a0369fd7986b730b1", null ],
+    [ "Geometry", "d6/d0f/a01256.html#a966d8a8e61c7693f3a5673cb47ae2675", null ],
+    [ "LeafIterator", "d6/d0f/a01256.html#a08734800b535e9b326f2ea0e4d56eded", null ],
+    [ "LevelIterator", "d6/d0f/a01256.html#a4031506658c242ef8f6fa3685dd2ff15", null ],
+    [ "LocalGeometry", "d6/d0f/a01256.html#a8511cfc882537995af23119db3f6ac79", null ],
+    [ "Dune::Entity< cd, dim, GridImp, EntityImp >", "d6/d0f/a01256.html#a9cdbc67db5caf11c769f9a78d7b54386", null ]
 ];

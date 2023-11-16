@@ -6,7 +6,8 @@ var a00158 =
     [ "IGANEW", "d6/d7d/a00161.html", "d6/d7d/a00161" ],
     [ "Python", "d1/d0d/a00171.html", "d1/d0d/a00171" ],
     [ "Vtk", "db/ddf/a00164.html", "db/ddf/a00164" ],
-    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d97/a01152.html", "d9/d97/a01152" ],
-    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "db/d51/a01144.html", "db/d51/a01144" ],
-    [ "JSONGridFactory", "db/d17/a01148.html", "db/d17/a01148" ]
+    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "da/d20/a01160.html", "da/d20/a01160" ],
+    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d97/a01152.html", "d9/d97/a01152" ],
+    [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/d89/a01032.html", null ],
+    [ "JSONGridFactory", "d9/d42/a01156.html", "d9/d42/a01156" ]
 ];

@@ -1,7 +1,5 @@
 var a01152 =
 [
-    [ "Grid", "d9/d97/a01152.html#a5a1489a0efa41f0ce4101c5dbd153227", null ],
-    [ "DGFGridFactory", "d9/d97/a01152.html#a303ee741c3a8e0c243351eae9bc816aa", null ],
-    [ "DGFGridFactory", "d9/d97/a01152.html#a0f2415ff67bd15e08aeb04c9a7c15c8d", null ],
-    [ "grid", "d9/d97/a01152.html#a25434ae3ddd4b6b12a4c59a6cbb0a907", null ]
+    [ "refineStepsForHalf", "d9/d97/a01152.html#af2a9314095155eef4a78c2d2946bb65d", null ],
+    [ "refineWeight", "d9/d97/a01152.html#aa6e2a1e176ef9c5147340022ef1c2175", null ]
 ];

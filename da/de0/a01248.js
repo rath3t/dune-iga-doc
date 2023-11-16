@@ -1,11 +1,11 @@
 var a01248 =
 [
-    [ "Partition", "d0/d33/a01252.html", "d0/d33/a01252" ],
-    [ "Entity", "da/de0/a01248.html#a5b3d4942ad10bbb9f951a2396c250002", null ],
-    [ "EntitySeed", "da/de0/a01248.html#a98059d075e980b5a0369fd7986b730b1", null ],
-    [ "Geometry", "da/de0/a01248.html#a966d8a8e61c7693f3a5673cb47ae2675", null ],
-    [ "LeafIterator", "da/de0/a01248.html#a08734800b535e9b326f2ea0e4d56eded", null ],
-    [ "LevelIterator", "da/de0/a01248.html#a4031506658c242ef8f6fa3685dd2ff15", null ],
-    [ "LocalGeometry", "da/de0/a01248.html#a8511cfc882537995af23119db3f6ac79", null ],
-    [ "Dune::Entity< cd, dim, GridImp, EntityImp >", "da/de0/a01248.html#a9cdbc67db5caf11c769f9a78d7b54386", null ]
+    [ "Reference", "da/de0/a01248.html#a2957445f0b32b8a83470eaf846dd87d7", null ],
+    [ "NURBSGridInterSectionIterator", "da/de0/a01248.html#ae039739658f1a0a1ecc64ecd0c6240a1", null ],
+    [ "NURBSGridInterSectionIterator", "da/de0/a01248.html#aae18adf13b82973ece9ca06ad5bcac74", null ],
+    [ "NURBSGridInterSectionIterator", "da/de0/a01248.html#a3a72f225e0a9012c96c4e388539d341a", null ],
+    [ "dereference", "da/de0/a01248.html#a6cd435e2fe5a3dcfbfcdc440ab8667dd", null ],
+    [ "equals", "da/de0/a01248.html#ab555a9055aa6537b467f5bbd40fb17b2", null ],
+    [ "increment", "da/de0/a01248.html#a74e2285134663f9da1ee24ef7fd74722", null ],
+    [ "operator<=>", "da/de0/a01248.html#af1bf0c22a0225f2519206d1a64b4de2b", null ]
 ];

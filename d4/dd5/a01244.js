@@ -1,19 +1,11 @@
 var a01244 =
 [
-    [ "Codim", "da/de0/a01248.html", "da/de0/a01248" ],
-    [ "CollectiveCommunication", "d4/dd5/a01244.html#ab7d2168fe96a09e02e1fa11a16ccb5c0", null ],
-    [ "Communication", "d4/dd5/a01244.html#a001ff54051ad62345422897993e93e1a", null ],
-    [ "GlobalIdSet", "d4/dd5/a01244.html#ae29ea027742637024de4f36bba0a7615", null ],
-    [ "Grid", "d4/dd5/a01244.html#ace3681b4a7b458f34f51e4cad5c8f3be", null ],
-    [ "HierarchicIterator", "d4/dd5/a01244.html#a0cddf5c098c2b3921fa183671d110f69", null ],
-    [ "LeafGridView", "d4/dd5/a01244.html#ab9ceecce14ce1d9741da5843d9be2536", null ],
-    [ "LeafIndexSet", "d4/dd5/a01244.html#a9c32b62eb826980f5847e0841dd9dca0", null ],
-    [ "LeafIntersection", "d4/dd5/a01244.html#a5a2b22fae92ce183b18fc5130a35f95c", null ],
-    [ "LeafIntersectionIterator", "d4/dd5/a01244.html#a0f27836975023bb5135317174815ff1b", null ],
-    [ "LevelGridView", "d4/dd5/a01244.html#a69a3c3bfccff7dbb76f6172e7b5e0fef", null ],
-    [ "LevelIndexSet", "d4/dd5/a01244.html#a630e368ebc6decb72d937599797c1ebb", null ],
-    [ "LevelIntersection", "d4/dd5/a01244.html#a036de9e7431fb0b605bd7645e839c82e", null ],
-    [ "LevelIntersectionIterator", "d4/dd5/a01244.html#a09feead87c1e83baecb3c740b7b6dc23", null ],
-    [ "LocalIdSet", "d4/dd5/a01244.html#aab2fb0fbf6a93e86d5889ffa98452caf", null ],
-    [ "SubGridType", "d4/dd5/a01244.html#a742675f40804a848c78be66f80f4af11", null ]
+    [ "Entity", "d4/dd5/a01244.html#ab5ed0e7d7966fbbd82f2927a02865a3f", null ],
+    [ "NurbsHierarchicIterator", "d4/dd5/a01244.html#a13c8cbde6859db4edbe08bef690c7edb", null ],
+    [ "dereference", "d4/dd5/a01244.html#af364067c04c1112e111d205bb1f218d4", null ],
+    [ "equals", "d4/dd5/a01244.html#a6e8197dd0af7d82c7905cba7af8c42dc", null ],
+    [ "increment", "d4/dd5/a01244.html#aba13f2bc447a984cccc3a5297d202ed1", null ],
+    [ "operator*", "d4/dd5/a01244.html#a6acd34d38a292b42e8cd7ebbe5952136", null ],
+    [ "operator<=>", "d4/dd5/a01244.html#a4347403de0b9c96a4a26313edd846c6c", null ],
+    [ "nurbsEntity", "d4/dd5/a01244.html#a99753df9e851bebc039c3bf842e5b8f4", null ]
 ];

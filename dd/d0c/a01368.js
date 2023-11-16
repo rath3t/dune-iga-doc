@@ -1,7 +1,9 @@
 var a01368 =
 [
-    [ "GridBoundarySegment", "dd/d0c/a01368.html#a931cd2b24140d6f0e06fe80195e64113", null ],
-    [ "operator()", "dd/d0c/a01368.html#a81c90fc90abea7ffb98ebc12a39de3c8", null ],
-    [ "boundary", "dd/d0c/a01368.html#a21384cf84ced50fd4b017ffd48791e53", null ],
-    [ "transformer", "dd/d0c/a01368.html#a733cce276905bfda67c91594b7200be9", null ]
+    [ "TransformToSpan", "dd/d0c/a01368.html#abdda0d9b1f3b5267ec997032ad6adce8", null ],
+    [ "TransformToSpan", "dd/d0c/a01368.html#af124bca23e21b5fb1cba65f566ef291e", null ],
+    [ "transform", "dd/d0c/a01368.html#a00660a4b06a5414528705873cab0d258", null ],
+    [ "transform", "dd/d0c/a01368.html#a14c9da9b4ea9c7c5781416899a0ba59a", null ],
+    [ "offset_", "dd/d0c/a01368.html#a51161854ea25285fc83e7eae17fe9fc7", null ],
+    [ "scaling_", "dd/d0c/a01368.html#af4bc4bed4998c5f84bf8042fbcb3ef32", null ]
 ];
