@@ -1,9 +1,9 @@
 var a01003 =
 [
     [ "ctype", "dc/d10/a01003.html#a88a34a4256e128f0157b7701b3172e0e", null ],
-    [ "GridFamily", "dc/d10/a01003.html#a443aa0c7df3d237d0c86fb7abb1683f6", null ],
+    [ "GridFamily", "dc/d10/a01003.html#a0876fa4de3e050576d994a467a4781ff", null ],
     [ "HostGridType", "dc/d10/a01003.html#aeb00a1aad09e74b918260bd0859e08fd", null ],
-    [ "Traits", "dc/d10/a01003.html#a6d6915686e2b6784963eb34cd29e1a50", null ],
+    [ "Traits", "dc/d10/a01003.html#ac1732a8b60fb3b73b683d96e17488ebf", null ],
     [ "PatchGrid", "dc/d10/a01003.html#ab705df255ef9abf8b319a3b317909ab3", null ],
     [ "adapt", "dc/d10/a01003.html#a1625fc49fe644a7f8300b9c82c14af30", null ],
     [ "comm", "dc/d10/a01003.html#af1530a885e3c6297a2bcc7879be0f53c", null ],
@@ -51,7 +51,7 @@ var a01003 =
     [ "PatchGridLevelIterator", "dc/d10/a01003.html#a7685330a2d5b9d18c61b111bb6db3ee7", null ],
     [ "PatchGridLocalIdSet< const PatchGrid >", "dc/d10/a01003.html#a76caacfb4a6ba3a883d53fad8242f735", null ],
     [ "hostgrid_", "dc/d10/a01003.html#ad48cefbcd83c266d341cf9600decaebb", null ],
-    [ "patchGeometries", "dc/d10/a01003.html#acaa195df456819d9698db51d04f0f3ab", null ],
+    [ "patchGeometries", "dc/d10/a01003.html#a2fb827d739d1c98d523c3a4ce17657eb", null ],
     [ "trim", "dc/d10/a01003.html#a1c0009484348216b661afe6173fd68b1", null ],
-    [ "uniqueCoarseKnotSpans", "dc/d10/a01003.html#a968a4d0d43ddd8697c11bd19308fe2c1", null ]
+    [ "uniqueCoarseKnotSpans", "dc/d10/a01003.html#a241a31a57a4f4bcc86b2c595ef0a09c3", null ]
 ];

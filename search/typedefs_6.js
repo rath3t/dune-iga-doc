@@ -6,7 +6,7 @@ var searchData=
   ['hostentityseed_3',['HostEntitySeed',['../d6/d9a/a01083.html#aa449031fa7666de9161df5f16d539d6b',1,'Dune::IGANEW::PatchGridEntitySeed']]],
   ['hostgrid_4',['HostGrid',['../d6/d0d/a01091.html#a19e4529be8a9eb5e1d611f1fe2bc813b',1,'Dune::IGANEW::PatchGridLevelIndexSet']]],
   ['hostgridentity_5',['HostGridEntity',['../d2/d4d/a01079.html#a65c6ce8ada6118b279d6cdffcae0580d',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
-  ['hostgridgeometry_6',['HostGridGeometry',['../d0/d1f/a01087.html#ab0f912d4c516cf06fa42bd1a9411a3a0',1,'Dune::IGANEW::PatchGridGeometry::HostGridGeometry()'],['../d0/d02/a01119.html#a012515ec230f896fccbe9b3106ed4a27',1,'Dune::IGANEW::PatchGridLocalGeometry::HostGridGeometry()']]],
+  ['hostgridgeometry_6',['HostGridGeometry',['../d0/d1f/a01087.html#a2698c6543b267cfd7c2286ecc78c4f34',1,'Dune::IGANEW::PatchGridGeometry::HostGridGeometry()'],['../d0/d02/a01119.html#a6500a1ddd4f3de20126f62df86e3da1e',1,'Dune::IGANEW::PatchGridLocalGeometry::HostGridGeometry()']]],
   ['hostgridgeometrytype_7',['HostGridGeometryType',['../d0/d1f/a01087.html#aa25de2ea868eee0927e9b63cfd21822a',1,'Dune::IGANEW::PatchGridGeometry::HostGridGeometryType()'],['../d0/d02/a01119.html#af607a0e7d0c9690e65d81a724ec191ab',1,'Dune::IGANEW::PatchGridLocalGeometry::HostGridGeometryType()']]],
   ['hostgridlocalgeometrytype_8',['HostGridLocalGeometryType',['../d0/d1f/a01087.html#ac89c2ffd0da7c100bbe84460f752b8ff',1,'Dune::IGANEW::PatchGridGeometry::HostGridLocalGeometryType()'],['../d0/d02/a01119.html#ac7d0ed3e2feaf1f9776f8af9fbebd8b7',1,'Dune::IGANEW::PatchGridLocalGeometry::HostGridLocalGeometryType()']]],
   ['hostgridtype_9',['HostGridType',['../dc/d10/a01003.html#aeb00a1aad09e74b918260bd0859e08fd',1,'Dune::IGANEW::PatchGrid']]]

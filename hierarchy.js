@@ -39,7 +39,7 @@ var hierarchy =
     [ "Dune::Grid", null, [
       [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "d7/dd6/a01167.html", null ]
     ] ],
-    [ "GridDefaultImplementation< dim, dimworld, double, PatchGridFamily< dim, dimworld, Trimming::Disabled, double, YaspGrid< dim, TensorProductCoordinates< double,dim > > > >", null, [
+    [ "GridDefaultImplementation< dim, dimworld, double, PatchGridFamily< dim, dimworld, Trimming::Disabled, double, YaspGrid< dim, TensorProductCoordinates< double, dim > > > >", null, [
       [ "Dune::IGANEW::PatchGrid< dim, dimworld, trim_, ScalarType, HostGrid >", "dc/d10/a01003.html", null ]
     ] ],
     [ "Dune::Capabilities::hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "dd/dfd/a01027.html", null ],
