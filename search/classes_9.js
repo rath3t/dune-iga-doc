@@ -1,4 +1,9 @@
 var searchData=
 [
-  ['partition_0',['Partition',['../db/d32/a01122.html',1,'Dune::IGA::NurbsLeafGridViewTraits&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt;'],['../d4/da7/a01102.html',1,'NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::Partition&lt; pitype &gt;']]]
+  ['multidimensionnet_0',['MultiDimensionNet',['../dd/d6d/a01380.html',1,'Dune::IGA']]],
+  ['multidimensionnet_3c_20dim_2c_20controlpointtype_20_3e_1',['MultiDimensionNet&lt; dim, ControlPointType &gt;',['../dd/d6d/a01380.html',1,'Dune::IGA']]],
+  ['multidimensionnet_3c_20dim_2c_20double_20_3e_2',['MultiDimensionNet&lt; dim, double &gt;',['../dd/d6d/a01380.html',1,'Dune::IGA']]],
+  ['multidimensionnet_3c_20dim_2c_20scalartype_20_3e_3',['MultiDimensionNet&lt; dim, ScalarType &gt;',['../dd/d6d/a01380.html',1,'Dune::IGA']]],
+  ['multidimensionnet_3c_20griddim_2c_20typename_20controlpointtype_3a_3avectortype_20_3e_4',['MultiDimensionNet&lt; griddim, typename ControlPointType::VectorType &gt;',['../dd/d6d/a01380.html',1,'Dune::IGA']]],
+  ['multidimensionnetindex_5',['MultiDimensionNetIndex',['../d7/dde/a01384.html',1,'Dune::IGA']]]
 ];

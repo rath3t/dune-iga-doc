@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['elementboundaries_0',['ElementBoundaries',['../df/db5/a01158.html',1,'Dune::IGA::Trim']]],
-  ['entityseedstruct_1',['EntitySeedStruct',['../d4/d8a/a01062.html',1,'Dune::IGA']]]
+  ['elementboundaries_0',['ElementBoundaries',['../d7/d41/a01312.html',1,'Dune::IGA::Trim']]],
+  ['entityseedstruct_1',['EntitySeedStruct',['../dc/db6/a01212.html',1,'Dune::IGA']]]
 ];

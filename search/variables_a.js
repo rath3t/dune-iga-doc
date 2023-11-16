@@ -1,10 +1,7 @@
 var searchData=
 [
-  ['n_5fcontrolpoints_0',['n_controlPoints',['../df/d88/a00962.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['netdim_1',['netDim',['../dd/d9e/a01226.html#ad00ca34052885ffc4c947f89e0211fe1',1,'Dune::IGA::MultiDimensionNet']]],
-  ['numcells_5f_2',['numCells_',['../d0/d2b/a01010.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
-  ['numpoints_5f_3',['numPoints_',['../d0/d2b/a01010.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
-  ['nurbs_5f_4',['nurbs_',['../d5/d4c/a01058.html#afd0070e29bd7d984dc48359f683f5315',1,'Dune::IGA::NURBSGeometry']]],
-  ['nurbsentity_5',['nurbsEntity',['../d9/df5/a01086.html#a99753df9e851bebc039c3bf842e5b8f4',1,'Dune::IGA::NurbsHierarchicIterator']]],
-  ['nurbsgeometry_6',['nurbsGeometry',['../d2/d7b/a01150.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
+  ['maxmultiindexsize_0',['maxMultiIndexSize',['../dd/d75/a01180.html#aaa6074ad11b1fcf6ecf315673598d4d3',1,'Dune::Functions::NurbsPreBasis']]],
+  ['minmultiindexsize_1',['minMultiIndexSize',['../dd/d75/a01180.html#a7c73cc0225a8d3aa5405c47ac3808130',1,'Dune::Functions::NurbsPreBasis']]],
+  ['multiindexbuffersize_2',['multiIndexBufferSize',['../dd/d75/a01180.html#afc9426299b44905aeabb91fb45217ea7',1,'Dune::Functions::NurbsPreBasis']]],
+  ['mydimension_3',['mydimension',['../d5/d16/a01060.html#acf47a66bec55cec4b5f30fe54580e186',1,'Dune::IGANEW::PatchGridGeometry::mydimension()'],['../de/d9c/a01092.html#a8eee8b296b2399a9d9e99fd853c31f0d',1,'Dune::IGANEW::PatchGridLocalGeometry::mydimension()'],['../d3/dbd/a01100.html#a9de1d5239f973f2bf97285087dea0c85',1,'Dune::IGANEW::PatchGeometryLocalView::mydimension()'],['../d9/d31/a01208.html#abb8f6bbe550743fa12938d421ea17661',1,'Dune::IGA::NURBSGeometry::mydimension()'],['../db/d42/a01220.html#a7cbb03d7f2ecd210e99c65df84732fc8',1,'Dune::IGA::NURBSGridEntity::mydimension()'],['../d8/d8e/a01224.html#af2c22d0674f744b1b82e718922feed3f',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;::mydimension()'],['../d7/da3/a01260.html#a6eccebd830192e0156f429c4e547d1e5',1,'Dune::IGA::NURBSintersection::mydimension()'],['../d8/d0d/a01280.html#a36187bb28752e02a01204a3746959128',1,'Dune::IGA::NURBSLocalGeometry::mydimension()'],['../d4/d64/a01296.html#a17a438894e15c8b2db7bb124f42dc773',1,'Dune::IGA::NURBSPatchGeometry::mydimension()']]]
 ];

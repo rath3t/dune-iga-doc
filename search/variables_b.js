@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['offset_5f_0',['offset_',['../d5/d4c/a01058.html#a235a78dc0a6434e3ab49490263e8cfc8',1,'Dune::IGA::NURBSGeometry::offset_()'],['../dc/d9e/a01206.html#a51161854ea25285fc83e7eae17fe9fc7',1,'Dune::IGA::TransformToSpan::offset_()']]],
-  ['oldpatchrepresentation_5f_1',['oldPatchRepresentation_',['../dd/d7a/a00990.html#a9ef766f6d3219b93517129d775e19a73',1,'Dune::IGA::NURBSGrid']]],
-  ['originalindices_5f_2',['originalIndices_',['../de/d41/a01030.html#a079ef7f4e05e638dde35917b9bdf37b9',1,'Dune::Functions::NurbsPreBasis']]],
-  ['outerboundaries_3',['outerBoundaries',['../df/db5/a01158.html#ac81770c3023e176dfaf779a0c975b9c9',1,'Dune::IGA::Trim::ElementBoundaries']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../d2/dd7/a01108.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['netdim_1',['netDim',['../dd/d6d/a01380.html#ad00ca34052885ffc4c947f89e0211fe1',1,'Dune::IGA::MultiDimensionNet']]],
+  ['numcells_5f_2',['numCells_',['../d9/d42/a01156.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['numpoints_5f_3',['numPoints_',['../d9/d42/a01156.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['nurbs_5f_4',['nurbs_',['../d6/db6/a01172.html#a95373be6b11fd32f2d85e75564f4f2c6',1,'Dune::IGA::Nurbs::LocalView::nurbs_()'],['../d9/d31/a01208.html#afd0070e29bd7d984dc48359f683f5315',1,'Dune::IGA::NURBSGeometry::nurbs_()']]],
+  ['nurbsentity_5',['nurbsEntity',['../d8/d2b/a01236.html#a99753df9e851bebc039c3bf842e5b8f4',1,'Dune::IGA::NurbsHierarchicIterator']]],
+  ['nurbsgeometry_6',['nurbsGeometry',['../d6/dae/a01304.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
 ];

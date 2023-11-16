@@ -1,7 +1,8 @@
 var a00059 =
 [
-    [ "Dune::IGA::NURBSGridEntity< codim, dim, GridImpl >", "d5/d67/a01070.html", "d5/d67/a01070" ],
-    [ "Dune::IGA::NURBSGridEntity< 0, dim, GridImpl >", "d7/df7/a01074.html", "d7/df7/a01074" ],
-    [ "referenceElement", "d3/d8b/a00059.html#a2c69da45b9bd2ab01a6e4ba356bfcb6d", null ],
-    [ "referenceElement", "d3/d8b/a00059.html#a768d04aefa0c03f55112d5b201dcaec9", null ]
+    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "d6/d48/a00988.html", "d6/d48/a00988" ],
+    [ "findSpanCorrected", "d3/d8b/a00059.html#a38d1fb2831ca0dbfa925c4858576a99b", null ],
+    [ "findSpanCorrected", "d3/d8b/a00059.html#ac18a8662488d7f3817b559d81efcc445", null ],
+    [ "findSpanUncorrected", "d3/d8b/a00059.html#a554d684e12126174010f2a98d8136a3d", null ],
+    [ "findSpanUncorrected", "d3/d8b/a00059.html#a5fe5465b190549a27424a17e79029ace", null ]
 ];

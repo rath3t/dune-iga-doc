@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['key_0',['key',['../df/d9c/a00958.html#ad3bff32c80e0b2c0c66f696da22af6a3',1,'Dune::IGA::Ibra::IbraBase']]],
-  ['knots_1',['knots',['../df/d88/a00962.html#a957ffc4bab5a49b687d8d302938a364c',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['knotspans_2',['knotSpans',['../d3/ddc/a01142.html#a28f83a6b5630d77034a17d61eb024a54',1,'Dune::IGA::NURBSPatchData']]]
+  ['idset_5f_0',['idSet_',['../d1/dae/a01136.html#a812c8226e0351361f780ec3df1181c62',1,'Dune::IGA::NURBSGrid']]],
+  ['indexmap_5f_1',['indexMap_',['../d9/d42/a01156.html#a90e3a8e72b603367b1ba87ed69011c82',1,'Dune::Vtk::DiscontinuousIgaDataCollector::indexMap_()'],['../dd/d75/a01180.html#abcaf716a4faecc6bf4127a91a2b4c416',1,'Dune::Functions::NurbsPreBasis::indexMap_()']]],
+  ['indexset_5f_2',['indexSet_',['../d1/dae/a01136.html#a916a632a13310ca395d1e35fbb859d6d',1,'Dune::IGA::NURBSGrid']]],
+  ['indices_5f_3',['indices_',['../d2/d3f/a01356.html#a59b9b6319b351827f6a45c1dc154ef01',1,'Dune::IGA::TrimmedSubGrid']]],
+  ['innerboundaries_4',['innerBoundaries',['../d7/d41/a01312.html#a9ca88159d168b3842d724432008ad816',1,'Dune::IGA::Trim::ElementBoundaries']]],
+  ['isbound_5',['isBound',['../d3/d32/a01176.html#a2e9ecefd3d1a91c0d053accc92f96035',1,'Dune::Functions::NurbsLocalFiniteElement']]]
 ];

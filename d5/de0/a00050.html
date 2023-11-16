@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: closestpointprojection.hh File Reference</title>
+<title>dune-iga: hierachicpatchgridentity.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -85,37 +85,42 @@ $(document).ready(function(){initNavTree('d5/de0/a00050.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">closestpointprojection.hh File Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">hierachicpatchgridentity.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d6/d2d/a00047_source.html">dune/iga/geometry/geohelper.hh</a>&quot;</code><br />
-<code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
-<code>#include &lt;dune/common/transpose.hh&gt;</code><br />
+
+<p>The PatchGridEntity class.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/grid/common/grid.hh&gt;</code><br />
 </div>
 <p><a href="../../d5/de0/a00050_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:d8/d87/a00118"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/a00118.html">Dune</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d89/a01032.html">Dune::IGANEW::PatchGridEntity&lt; codim, dim, GridImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of entities in a <a class="el" href="../../d7/df2/a01000.html" title="Provides a meta grid that is identical to its host.">PatchGrid</a>.  <a href="../../df/d89/a01032.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:df/d6a/a00119"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html">Dune::IGA</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dce/a01052.html">Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for codim-0-entities.  <a href="../../d9/dce/a01052.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a1e6e9a71e1c5fb5e7e8670d8a5748757"><td class="memTemplParams" colspan="2">template&lt;template&lt; std::integral auto, std::integral auto, typename &gt; typename Geo, std::integral auto dim, std::integral auto dimworld, typename GeoArgs &gt; </td></tr>
-<tr class="memitem:a1e6e9a71e1c5fb5e7e8670d8a5748757"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a1e6e9a71e1c5fb5e7e8670d8a5748757">Dune::IGA::closestPointProjectionByTrustRegion</a> (const Geo&lt; dim, dimworld, GeoArgs &gt; &amp;geo, auto &amp;point, const std::optional&lt; Dune::FieldVector&lt; typename Geo&lt; dim, dimworld, GeoArgs &gt;::ctype, static_cast&lt; size_t &gt;(dim)&gt; &gt; &amp;start=std::nullopt) -&gt; std::tuple&lt; Dune::FieldVector&lt; typename Geo&lt; dim, dimworld, GeoArgs &gt;::ctype, dim &gt;, typename Geo&lt; dim, dimworld, GeoArgs &gt;::ctype, typename Geo&lt; dim, dimworld, GeoArgs &gt;::ctype, typename Geo&lt; dim, dimworld, GeoArgs &gt;::ctype &gt; requires(dim==1 or dim==2)</td></tr>
-<tr class="separator:a1e6e9a71e1c5fb5e7e8670d8a5748757"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d6/db8/a00158"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db8/a00158.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/d7d/a00161"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7d/a00161.html">Dune::IGANEW</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The PatchGridEntity class. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_b534248905b8119b36a62f0ff7e8fe43.html">geometry</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">closestpointprojection.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">hierachicpatchgridentity.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

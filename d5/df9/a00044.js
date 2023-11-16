@@ -1,4 +1,4 @@
 var a00044 =
 [
-    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "dd/de2/a01134.html", "dd/de2/a01134" ]
+    [ "computeParameterSpaceCoordinate", "d5/df9/a00044.html#a804e6ba2e675b77dae8dffa5f2da5c75", null ]
 ];

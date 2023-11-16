@@ -1,4 +1,4 @@
 var a00035 =
 [
-    [ "Dune::IGA::TrimmedSubGrid< dim >", "d4/d5d/a01202.html", "d4/d5d/a01202" ]
+    [ "Dune::IGANEW::PatchGridEntitySeed< codim, GridImp >", "dc/d19/a01056.html", "dc/d19/a01056" ]
 ];
