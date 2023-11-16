@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::Functions::NurbsLocalCoefficients&lt; dim &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGA::Nurbs&lt; dim, ScalarType_ &gt;::LocalView Struct Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,55 +93,173 @@ $(document).ready(function(){initNavTree('d0/d5a/a01199.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d2/d22/a01196.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::Functions::NurbsLocalCoefficients&lt; dim &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::Nurbs&lt; dim, ScalarType_ &gt;::LocalView Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Attaches a shape function to an entity.  
- <a href="../../d0/d5a/a01199.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="../../df/d98/a00107_source.html">dune/iga/nurbsbasis.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../db/db6/a00074_source.html">dune/iga/nurbsalgorithms.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab29a3056636e956a36a4bfe47a951091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#ab29a3056636e956a36a4bfe47a951091">init</a> (const std::array&lt; unsigned, dim &gt; &amp;sizes)</td></tr>
-<tr class="separator:ab29a3056636e956a36a4bfe47a951091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab751125f214b769ded9842be52d11fa2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#ab751125f214b769ded9842be52d11fa2">size</a> () const</td></tr>
-<tr class="memdesc:ab751125f214b769ded9842be52d11fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of coefficients  <a href="../../d0/d5a/a01199.html#ab751125f214b769ded9842be52d11fa2">More...</a><br /></td></tr>
-<tr class="separator:ab751125f214b769ded9842be52d11fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf5a802caa3f9bf1b909336121dea33c"><td class="memItemLeft" align="right" valign="top">const LocalKey &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#adf5a802caa3f9bf1b909336121dea33c">localKey</a> (std::size_t i) const</td></tr>
-<tr class="memdesc:adf5a802caa3f9bf1b909336121dea33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get i'th index  <a href="../../d0/d5a/a01199.html#adf5a802caa3f9bf1b909336121dea33c">More...</a><br /></td></tr>
-<tr class="separator:adf5a802caa3f9bf1b909336121dea33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac98cabfa00e615d4d4f7666bba9027d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#ac98cabfa00e615d4d4f7666bba9027d5">LocalView</a> ()=default</td></tr>
+<tr class="separator:ac98cabfa00e615d4d4f7666bba9027d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c4ace0041c7e12c9f9fc5908b89bab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#ae6c4ace0041c7e12c9f9fc5908b89bab">LocalView</a> (const <a class="el" href="../../d8/df3/a01195.html">Nurbs</a> &amp;nurbs)</td></tr>
+<tr class="separator:ae6c4ace0041c7e12c9f9fc5908b89bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7a4d717c6525de5a808beca74efd986"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#ac7a4d717c6525de5a808beca74efd986">bind</a> (const std::array&lt; int, dim &gt; &amp;spIndex)</td></tr>
+<tr class="separator:ac7a4d717c6525de5a808beca74efd986"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5312c788e74472f87bc9d623c15e500"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#ab5312c788e74472f87bc9d623c15e500">basisFunctionDerivatives</a> (const Dune::FieldVector&lt; <a class="el" href="../../d8/df3/a01195.html#aa563204d38faa68300e921d8a8ddc543">ScalarType</a>, dim &gt; &amp;u, const int derivativeOrder) const</td></tr>
+<tr class="separator:ab5312c788e74472f87bc9d623c15e500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17d185d755fe230b039ded9df087e3c7"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#a17d185d755fe230b039ded9df087e3c7">basisFunctions</a> (const Dune::FieldVector&lt; <a class="el" href="../../d8/df3/a01195.html#aa563204d38faa68300e921d8a8ddc543">ScalarType</a>, dim &gt; &amp;u) const</td></tr>
+<tr class="separator:a17d185d755fe230b039ded9df087e3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:afd18857179ed6090575fb8d6e361a74c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::array&lt; int, dim &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#afd18857179ed6090575fb8d6e361a74c">spIndex_</a></td></tr>
+<tr class="separator:afd18857179ed6090575fb8d6e361a74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95373be6b11fd32f2d85e75564f4f2c6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/df3/a01195.html">Nurbs</a> const  *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html#a95373be6b11fd32f2d85e75564f4f2c6">nurbs_</a> {nullptr}</td></tr>
+<tr class="separator:a95373be6b11fd32f2d85e75564f4f2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int dim&gt;<br />
-class Dune::Functions::NurbsLocalCoefficients&lt; dim &gt;</div><p >Attaches a shape function to an entity. </p>
-<p >The attachment uses the same degree as for Qk elements. This does <em>not</em> provide sufficient information to compute global indices for the shape functions. However, it does allow to find all degrees of freedom that belong to the grid boundary, if the knot vector is open.</p>
-<dl class="section note"><dt>Note</dt><dd>Currently only implemented for 1d and 2d grids. For higher dimensions you can still use the BSplineBasis, but you won't be able to find the degrees of freedom on the grid boundary.</dd></dl>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">dim</td><td>Dimension of the reference cube </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab29a3056636e956a36a4bfe47a951091" name="ab29a3056636e956a36a4bfe47a951091"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab29a3056636e956a36a4bfe47a951091">&#9670;&nbsp;</a></span>init()</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="ac98cabfa00e615d4d4f7666bba9027d5" name="ac98cabfa00e615d4d4f7666bba9027d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac98cabfa00e615d4d4f7666bba9027d5">&#9670;&nbsp;</a></span>LocalView() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim&gt; </div>
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d0/d5a/a01199.html">Dune::Functions::NurbsLocalCoefficients</a>&lt; dim &gt;::init </td>
+          <td class="memname"><a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::LocalView </td>
           <td>(</td>
-          <td class="paramtype">const std::array&lt; unsigned, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>sizes</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6c4ace0041c7e12c9f9fc5908b89bab" name="ae6c4ace0041c7e12c9f9fc5908b89bab"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c4ace0041c7e12c9f9fc5908b89bab">&#9670;&nbsp;</a></span>LocalView() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::LocalView </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d8/df3/a01195.html">Nurbs</a> &amp;&#160;</td>
+          <td class="paramname"><em>nurbs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ab5312c788e74472f87bc9d623c15e500" name="ab5312c788e74472f87bc9d623c15e500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5312c788e74472f87bc9d623c15e500">&#9670;&nbsp;</a></span>basisFunctionDerivatives()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::basisFunctionDerivatives </td>
+          <td>(</td>
+          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="../../d8/df3/a01195.html#aa563204d38faa68300e921d8a8ddc543">ScalarType</a>, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>derivativeOrder</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17d185d755fe230b039ded9df087e3c7" name="a17d185d755fe230b039ded9df087e3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17d185d755fe230b039ded9df087e3c7">&#9670;&nbsp;</a></span>basisFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::basisFunctions </td>
+          <td>(</td>
+          <td class="paramtype">const Dune::FieldVector&lt; <a class="el" href="../../d8/df3/a01195.html#aa563204d38faa68300e921d8a8ddc543">ScalarType</a>, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>u</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7a4d717c6525de5a808beca74efd986" name="ac7a4d717c6525de5a808beca74efd986"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7a4d717c6525de5a808beca74efd986">&#9670;&nbsp;</a></span>bind()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::bind </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; int, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>spIndex</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -154,74 +272,48 @@ template&lt;int dim&gt; </div>
 
 </div>
 </div>
-<a id="adf5a802caa3f9bf1b909336121dea33c" name="adf5a802caa3f9bf1b909336121dea33c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf5a802caa3f9bf1b909336121dea33c">&#9670;&nbsp;</a></span>localKey()</h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a95373be6b11fd32f2d85e75564f4f2c6" name="a95373be6b11fd32f2d85e75564f4f2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95373be6b11fd32f2d85e75564f4f2c6">&#9670;&nbsp;</a></span>nurbs_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">const LocalKey &amp; <a class="el" href="../../d0/d5a/a01199.html">Dune::Functions::NurbsLocalCoefficients</a>&lt; dim &gt;::localKey </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td> const</td>
+          <td class="memname"><a class="el" href="../../d8/df3/a01195.html">Nurbs</a> const* <a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::nurbs_ {nullptr}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>get i'th index </p>
-
 </div>
 </div>
-<a id="ab751125f214b769ded9842be52d11fa2" name="ab751125f214b769ded9842be52d11fa2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab751125f214b769ded9842be52d11fa2">&#9670;&nbsp;</a></span>size()</h2>
+<a id="afd18857179ed6090575fb8d6e361a74c" name="afd18857179ed6090575fb8d6e361a74c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd18857179ed6090575fb8d6e361a74c">&#9670;&nbsp;</a></span>spIndex_</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;int dim, typename ScalarType_  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d0/d5a/a01199.html">Dune::Functions::NurbsLocalCoefficients</a>&lt; dim &gt;::size </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="memname">std::optional&lt;std::array&lt;int, dim&gt; &gt; <a class="el" href="../../d8/df3/a01195.html">Dune::IGA::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::spIndex_</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>number of coefficients </p>
-
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../df/d98/a00107_source.html">nurbsbasis.hh</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="../../db/db6/a00074_source.html">nurbsalgorithms.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../de/d53/a00169.html">Functions</a></li><li class="navelem"><a class="el" href="../../d0/d5a/a01199.html">NurbsLocalCoefficients</a></li>
+    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/d44/a00162.html">IGA</a></li><li class="navelem"><a class="el" href="../../d8/df3/a01195.html">Nurbs</a></li><li class="navelem"><a class="el" href="../../d0/d5a/a01199.html">LocalView</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

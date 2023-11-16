@@ -1,7 +1,13 @@
 var a01223 =
 [
-    [ "isValid", "d7/ddd/a01223.html#a6c9c3bde3bc4387140be3198d9a46e1e", null ],
-    [ "NURBSGrid", "d7/ddd/a01223.html#af3221cb05a117f577f9f96e64c7db0f7", null ],
-    [ "NURBSGridEntity", "d7/ddd/a01223.html#a5481fd071f4e160fb2c81f68e17eb614", null ],
-    [ "codimension", "d7/ddd/a01223.html#aef6e760fa8b743ceec0787813139a9e7", null ]
+    [ "Element", "d7/ddd/a01223.html#adf34630db453ddba777c6909a860b092", null ],
+    [ "FiniteElement", "d7/ddd/a01223.html#a32ed2fa2b77f5f0c20dec6047f101683", null ],
+    [ "size_type", "d7/ddd/a01223.html#ab19a70c9e32e266ff515ef6042716d0a", null ],
+    [ "NurbsNode", "d7/ddd/a01223.html#a850cd42307ee6518e28a4c76e43d35c4", null ],
+    [ "bind", "d7/ddd/a01223.html#a2edfe28607f59b8b78ae34d770fc379f", null ],
+    [ "element", "d7/ddd/a01223.html#a5d44299aff465f934b96a97785fd1a67", null ],
+    [ "finiteElement", "d7/ddd/a01223.html#a30eee42a1d363fb03bd25f7b35d15920", null ],
+    [ "element_", "d7/ddd/a01223.html#a46140a3c8b42bd09729688683ec9a76f", null ],
+    [ "finiteElement_", "d7/ddd/a01223.html#a072519f1aaec2ac604c94153cfc9d193", null ],
+    [ "preBasis_", "d7/ddd/a01223.html#a7b3c53f6aef8715f9d617cf8d3d04b57", null ]
 ];

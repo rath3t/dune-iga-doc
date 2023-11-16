@@ -5,9 +5,8 @@ var a00161 =
     [ "IGA", "db/d44/a00162.html", "db/d44/a00162" ],
     [ "IGANEW", "db/ddf/a00164.html", "db/ddf/a00164" ],
     [ "Python", "d8/df1/a00174.html", "d8/df1/a00174" ],
-    [ "Vtk", "dc/de6/a00167.html", "dc/de6/a00167" ],
-    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d6/d27/a01163.html", "d6/d27/a01163" ],
-    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "db/d07/a01155.html", "db/d07/a01155" ],
-    [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "de/d26/a01035.html", null ],
-    [ "JSONGridFactory", "d7/de8/a01159.html", "d7/de8/a01159" ]
+    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/d2d/a01183.html", "dc/d2d/a01183" ],
+    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d6/df2/a01175.html", "d6/df2/a01175" ],
+    [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d8/d27/a01043.html", null ],
+    [ "JSONGridFactory", "de/d1a/a01179.html", "de/d1a/a01179" ]
 ];

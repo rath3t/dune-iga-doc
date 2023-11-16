@@ -1,11 +1,11 @@
 var a01159 =
 [
-    [ "Grid", "d7/de8/a01159.html#a1df7774a327d2e6f0af13c3fb77495c3", null ],
-    [ "ScalarType", "d7/de8/a01159.html#a2b52197187bd75aefd972027495903c7", null ],
-    [ "JSONGridFactory", "d7/de8/a01159.html#ac530692f594e23f73798266a9fe090b3", null ],
-    [ "JSONGridFactory", "d7/de8/a01159.html#a9f4c7e2435c794ee5cd129f08c6d369e", null ],
-    [ "grid", "d7/de8/a01159.html#a76367717e67130da608ff1d1c38595cb", null ],
-    [ "grid_", "d7/de8/a01159.html#a8ba88636f3dc2c48f2624aca1932559f", null ],
-    [ "gridDim", "d7/de8/a01159.html#ae333f5a98f9206e2e7890cec10bc89a0", null ],
-    [ "worldDim", "d7/de8/a01159.html#ac5d1cecc6f5c369ad6c489d026a47fb1", null ]
+    [ "StringVector", "d7/de8/a01159.html#a94f119b740cc4ce55e6bd721dddbe2c1", null ],
+    [ "curve_geometries_2d", "d7/de8/a01159.html#af742ef59082640c3d941c8c617cea6fb", null ],
+    [ "key", "d7/de8/a01159.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
+    [ "loops", "d7/de8/a01159.html#ad4fb64a1c336ee19cf8b6e725030b639", null ],
+    [ "surface_geometries_3d", "d7/de8/a01159.html#a9010ce626abe088d92fa7ca94dea8809", null ],
+    [ "trims", "d7/de8/a01159.html#a0b18289437b2c70cbb84ce06024107f4", null ],
+    [ "type", "d7/de8/a01159.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
+    [ "typeString", "d7/de8/a01159.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
 ];

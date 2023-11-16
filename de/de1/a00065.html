@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbsgridleafiterator.hh File Reference</title>
+<title>dune-iga: bsplinealgorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,23 +93,24 @@ $(document).ready(function(){initNavTree('de/de1/a00065.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">nurbsgridleafiterator.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">bsplinealgorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;span&gt;</code><br />
-<code>#include &lt;dune/common/iteratorfacades.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../db/dab/a00089_source.html">dune/iga/nurbspatch.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;concepts&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/df5/a00137_source.html">dune/iga/utils/concepts.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
 </div>
 <p><a href="../../de/de1/a00065_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/db0/a01243.html">Dune::IGA::NURBSGridLeafIterator&lt; codim, pitype, GridImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d95/a01247.html">Dune::IGA::NurbsHierarchicIterator&lt; GridImp &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc2/a01251.html">Dune::IGA::NURBSGridInterSectionIterator&lt; GridImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2f/a00991.html">Dune::IGA::BsplineBasis1D&lt; ScalarType_ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One dimensional b-spline basis.  <a href="../../df/d2f/a00991.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -118,13 +119,35 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:db/d44/a00162"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a38d1fb2831ca0dbfa925c4858576a99b"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a38d1fb2831ca0dbfa925c4858576a99b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a38d1fb2831ca0dbfa925c4858576a99b">Dune::IGA::findSpanCorrected</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, int offset=0)</td></tr>
+<tr class="memdesc:a38d1fb2831ca0dbfa925c4858576a99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u -p+1-times- returned -p+1-times-.  <a href="../../db/d44/a00162.html#a38d1fb2831ca0dbfa925c4858576a99b">More...</a><br /></td></tr>
+<tr class="separator:a38d1fb2831ca0dbfa925c4858576a99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554d684e12126174010f2a98d8136a3d"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a554d684e12126174010f2a98d8136a3d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a554d684e12126174010f2a98d8136a3d">Dune::IGA::findSpanUncorrected</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, int offset=0)</td></tr>
+<tr class="separator:a554d684e12126174010f2a98d8136a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18a8662488d7f3817b559d81efcc445"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
+requires (dim2 == dim)</td></tr>
+<tr class="memitem:ac18a8662488d7f3817b559d81efcc445"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#ac18a8662488d7f3817b559d81efcc445">Dune::IGA::findSpanCorrected</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
+<tr class="memdesc:ac18a8662488d7f3817b559d81efcc445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="../../db/d44/a00162.html#a38d1fb2831ca0dbfa925c4858576a99b" title="Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than...">findSpanCorrected()</a> but for dim - knotvectors <br  />
+  <a href="../../db/d44/a00162.html#ac18a8662488d7f3817b559d81efcc445">More...</a><br /></td></tr>
+<tr class="separator:ac18a8662488d7f3817b559d81efcc445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe5465b190549a27424a17e79029ace"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
+requires (dim2 == dim)</td></tr>
+<tr class="memitem:a5fe5465b190549a27424a17e79029ace"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a5fe5465b190549a27424a17e79029ace">Dune::IGA::findSpanUncorrected</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
+<tr class="memdesc:a5fe5465b190549a27424a17e79029ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="../../db/d44/a00162.html#a554d684e12126174010f2a98d8136a3d">findSpanUncorrected()</a> but for dim - knotvectors <br  />
+  <a href="../../db/d44/a00162.html#a5fe5465b190549a27424a17e79029ace">More...</a><br /></td></tr>
+<tr class="separator:a5fe5465b190549a27424a17e79029ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">nurbsgridleafiterator.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">bsplinealgorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::IGA::NURBSGridLeafIterator&lt; codim, pitype, GridImp &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,186 +92,238 @@ $(document).ready(function(){initNavTree('dd/d42/a01259.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d6/d0f/a01256.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::NURBSGridLeafIterator&lt; codim, pitype, GridImp &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Traits associated with a specific codim.  
- <a href="../../dd/d42/a01259.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="../../df/dc8/a00122_source.html">dune/iga/nurbsgridtraits.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../da/d24/a00068_source.html">dune/iga/nurbsgridleafiterator.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/a01263.html">Partition</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Traits associated with a specific grid partition type.  <a href="../../de/dcb/a01263.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a966d8a8e61c7693f3a5673cb47ae2675"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a966d8a8e61c7693f3a5673cb47ae2675">Geometry</a> = Dune::Geometry&lt; dim - cd, dimw, const GridImp, GeometryImp &gt;</td></tr>
-<tr class="memdesc:a966d8a8e61c7693f3a5673cb47ae2675"><td class="mdescLeft">&#160;</td><td class="mdescRight">IMPORTANT: <a class="el" href="../../dd/d42/a01259.html#a966d8a8e61c7693f3a5673cb47ae2675" title="IMPORTANT: Codim&lt;codim&gt;::Geometry == Geometry&lt;dim-codim,dimw&gt;">Codim&lt;codim&gt;::Geometry</a> == Geometry&lt;dim-codim,dimw&gt;  <a href="../../dd/d42/a01259.html#a966d8a8e61c7693f3a5673cb47ae2675">More...</a><br /></td></tr>
-<tr class="separator:a966d8a8e61c7693f3a5673cb47ae2675"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8511cfc882537995af23119db3f6ac79"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a8511cfc882537995af23119db3f6ac79">LocalGeometry</a> = Dune::Geometry&lt; dim - cd, dim, const GridImp, LocalGeometryImp &gt;</td></tr>
-<tr class="memdesc:a8511cfc882537995af23119db3f6ac79"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the local geometry associated with the entity.  <a href="../../dd/d42/a01259.html#a8511cfc882537995af23119db3f6ac79">More...</a><br /></td></tr>
-<tr class="separator:a8511cfc882537995af23119db3f6ac79"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b3d4942ad10bbb9f951a2396c250002"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a5b3d4942ad10bbb9f951a2396c250002">Entity</a> = Dune::Entity&lt; cd, dim, const GridImp, EntityImp &gt;</td></tr>
-<tr class="memdesc:a5b3d4942ad10bbb9f951a2396c250002"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the entity.  <a href="../../dd/d42/a01259.html#a5b3d4942ad10bbb9f951a2396c250002">More...</a><br /></td></tr>
-<tr class="separator:a5b3d4942ad10bbb9f951a2396c250002"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98059d075e980b5a0369fd7986b730b1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a98059d075e980b5a0369fd7986b730b1">EntitySeed</a> = Dune::EntitySeed&lt; const GridImp, EntitySeedImp&lt; cd, const GridImp &gt; &gt;</td></tr>
-<tr class="memdesc:a98059d075e980b5a0369fd7986b730b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the entity seed of this codim.  <a href="../../dd/d42/a01259.html#a98059d075e980b5a0369fd7986b730b1">More...</a><br /></td></tr>
-<tr class="separator:a98059d075e980b5a0369fd7986b730b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08734800b535e9b326f2ea0e4d56eded"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../de/dcb/a01263.html">Partition</a>&lt; Dune::All_Partition &gt;::LeafIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a08734800b535e9b326f2ea0e4d56eded">LeafIterator</a></td></tr>
-<tr class="memdesc:a08734800b535e9b326f2ea0e4d56eded"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the iterator over all leaf entities of this codim.  <a href="../../dd/d42/a01259.html#a08734800b535e9b326f2ea0e4d56eded">More...</a><br /></td></tr>
-<tr class="separator:a08734800b535e9b326f2ea0e4d56eded"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4031506658c242ef8f6fa3685dd2ff15"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../de/dcb/a01263.html">Partition</a>&lt; Dune::All_Partition &gt;::LevelIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a4031506658c242ef8f6fa3685dd2ff15">LevelIterator</a></td></tr>
-<tr class="memdesc:a4031506658c242ef8f6fa3685dd2ff15"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the entity pointer for entities of this codim.  <a href="../../dd/d42/a01259.html#a4031506658c242ef8f6fa3685dd2ff15">More...</a><br /></td></tr>
-<tr class="separator:a4031506658c242ef8f6fa3685dd2ff15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6ff337a8e1607e59b17a2ca43f5908a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#aa6ff337a8e1607e59b17a2ca43f5908a">Entity</a> = typename GridImp::Traits::template Codim&lt; codim &gt;::Entity</td></tr>
+<tr class="separator:aa6ff337a8e1607e59b17a2ca43f5908a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af14dadd9b5718c221499628b674d224e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#af14dadd9b5718c221499628b674d224e">NURBSGridLeafIterator</a> (typename std::vector&lt; <a class="el" href="../../dd/d42/a01259.html#aa6ff337a8e1607e59b17a2ca43f5908a">Entity</a> &gt;::const_iterator virtualEntity)</td></tr>
+<tr class="separator:af14dadd9b5718c221499628b674d224e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa70b805bed06f2827d294defca71d41a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#aa70b805bed06f2827d294defca71d41a">NURBSGridLeafIterator</a> ()=default</td></tr>
+<tr class="separator:aa70b805bed06f2827d294defca71d41a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf8b454758505380c0fd4e14806e51e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#adaf8b454758505380c0fd4e14806e51e">increment</a> ()</td></tr>
+<tr class="memdesc:adaf8b454758505380c0fd4e14806e51e"><td class="mdescLeft">&#160;</td><td class="mdescRight">prefix increment  <a href="../../dd/d42/a01259.html#adaf8b454758505380c0fd4e14806e51e">More...</a><br /></td></tr>
+<tr class="separator:adaf8b454758505380c0fd4e14806e51e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e7df9702cdb1615e2d877e8c6418a0d"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../dd/d42/a01259.html#aa6ff337a8e1607e59b17a2ca43f5908a">Entity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#a7e7df9702cdb1615e2d877e8c6418a0d">dereference</a> () const</td></tr>
+<tr class="memdesc:a7e7df9702cdb1615e2d877e8c6418a0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">dereferencing  <a href="../../dd/d42/a01259.html#a7e7df9702cdb1615e2d877e8c6418a0d">More...</a><br /></td></tr>
+<tr class="separator:a7e7df9702cdb1615e2d877e8c6418a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad690643486b358d877a62e1d7cc07323"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#ad690643486b358d877a62e1d7cc07323">equals</a> (const <a class="el" href="../../dd/d42/a01259.html">NURBSGridLeafIterator</a> &amp;other) const</td></tr>
+<tr class="memdesc:ad690643486b358d877a62e1d7cc07323"><td class="mdescLeft">&#160;</td><td class="mdescRight">equality  <a href="../../dd/d42/a01259.html#ad690643486b358d877a62e1d7cc07323">More...</a><br /></td></tr>
+<tr class="separator:ad690643486b358d877a62e1d7cc07323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ac61e75b9e2c181ca41e9adf086f3429d"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html#ac61e75b9e2c181ca41e9adf086f3429d">codimension</a> = codim</td></tr>
+<tr class="separator:ac61e75b9e2c181ca41e9adf086f3429d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, int dimw, class GridImp, template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp, class LeafIndexSetImp, class GlobalIdSetImp, class GIDType, class LocalIdSetImp, class LIDType, class CCType, template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt;<br />
-template&lt;int cd&gt;<br />
-struct NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;</div><p >Traits associated with a specific codim. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">cd</td><td>The codimension. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a5b3d4942ad10bbb9f951a2396c250002" name="a5b3d4942ad10bbb9f951a2396c250002"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b3d4942ad10bbb9f951a2396c250002">&#9670;&nbsp;</a></span>Entity</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="aa6ff337a8e1607e59b17a2ca43f5908a" name="aa6ff337a8e1607e59b17a2ca43f5908a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6ff337a8e1607e59b17a2ca43f5908a">&#9670;&nbsp;</a></span>Entity</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimw, class GridImp , template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp , class LeafIndexSetImp , class GlobalIdSetImp , class GIDType , class LocalIdSetImp , class LIDType , class CCType , template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a>&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::Entity =  Dune::Entity&lt;cd, dim, const GridImp, EntityImp&gt;</td>
+          <td class="memname">using <a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::Entity =  typename GridImp::Traits::template Codim&lt;codim&gt;::Entity</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>The type of the entity. </p>
-
 </div>
 </div>
-<a id="a98059d075e980b5a0369fd7986b730b1" name="a98059d075e980b5a0369fd7986b730b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98059d075e980b5a0369fd7986b730b1">&#9670;&nbsp;</a></span>EntitySeed</h2>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af14dadd9b5718c221499628b674d224e" name="af14dadd9b5718c221499628b674d224e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af14dadd9b5718c221499628b674d224e">&#9670;&nbsp;</a></span>NURBSGridLeafIterator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimw, class GridImp , template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp , class LeafIndexSetImp , class GlobalIdSetImp , class GIDType , class LocalIdSetImp , class LIDType , class CCType , template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a>&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::EntitySeed =  Dune::EntitySeed&lt;const GridImp, EntitySeedImp&lt;cd, const GridImp&gt; &gt;</td>
+          <td class="memname"><a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::NURBSGridLeafIterator </td>
+          <td>(</td>
+          <td class="paramtype">typename std::vector&lt; <a class="el" href="../../dd/d42/a01259.html#aa6ff337a8e1607e59b17a2ca43f5908a">Entity</a> &gt;::const_iterator&#160;</td>
+          <td class="paramname"><em>virtualEntity</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>The type of the entity seed of this codim. </p>
-
 </div>
 </div>
-<a id="a966d8a8e61c7693f3a5673cb47ae2675" name="a966d8a8e61c7693f3a5673cb47ae2675"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a966d8a8e61c7693f3a5673cb47ae2675">&#9670;&nbsp;</a></span>Geometry</h2>
+<a id="aa70b805bed06f2827d294defca71d41a" name="aa70b805bed06f2827d294defca71d41a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa70b805bed06f2827d294defca71d41a">&#9670;&nbsp;</a></span>NURBSGridLeafIterator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimw, class GridImp , template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp , class LeafIndexSetImp , class GlobalIdSetImp , class GIDType , class LocalIdSetImp , class LIDType , class CCType , template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a>&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::Geometry =  Dune::Geometry&lt;dim - cd, dimw, const GridImp, GeometryImp&gt;</td>
+          <td class="memname"><a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::NURBSGridLeafIterator </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>IMPORTANT: <a class="el" href="../../dd/d42/a01259.html#a966d8a8e61c7693f3a5673cb47ae2675" title="IMPORTANT: Codim&lt;codim&gt;::Geometry == Geometry&lt;dim-codim,dimw&gt;">Codim&lt;codim&gt;::Geometry</a> == Geometry&lt;dim-codim,dimw&gt; </p>
-<p >The type of the geometry associated with the entity. </p>
-
 </div>
 </div>
-<a id="a08734800b535e9b326f2ea0e4d56eded" name="a08734800b535e9b326f2ea0e4d56eded"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08734800b535e9b326f2ea0e4d56eded">&#9670;&nbsp;</a></span>LeafIterator</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a7e7df9702cdb1615e2d877e8c6418a0d" name="a7e7df9702cdb1615e2d877e8c6418a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e7df9702cdb1615e2d877e8c6418a0d">&#9670;&nbsp;</a></span>dereference()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimw, class GridImp , template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp , class LeafIndexSetImp , class GlobalIdSetImp , class GIDType , class LocalIdSetImp , class LIDType , class CCType , template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="../../de/dcb/a01263.html">Partition</a>&lt;Dune::All_Partition&gt;::LeafIterator <a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a>&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::LeafIterator</td>
+          <td class="memname">const <a class="el" href="../../dd/d42/a01259.html#aa6ff337a8e1607e59b17a2ca43f5908a">Entity</a> &amp; <a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::dereference </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>The type of the iterator over all leaf entities of this codim. </p>
+<p>dereferencing </p>
 
 </div>
 </div>
-<a id="a4031506658c242ef8f6fa3685dd2ff15" name="a4031506658c242ef8f6fa3685dd2ff15"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4031506658c242ef8f6fa3685dd2ff15">&#9670;&nbsp;</a></span>LevelIterator</h2>
+<a id="ad690643486b358d877a62e1d7cc07323" name="ad690643486b358d877a62e1d7cc07323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad690643486b358d877a62e1d7cc07323">&#9670;&nbsp;</a></span>equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimw, class GridImp , template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp , class LeafIndexSetImp , class GlobalIdSetImp , class GIDType , class LocalIdSetImp , class LIDType , class CCType , template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">typedef <a class="el" href="../../de/dcb/a01263.html">Partition</a>&lt;Dune::All_Partition&gt;::LevelIterator <a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a>&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::LevelIterator</td>
+          <td class="memname">bool <a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::equals </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d42/a01259.html">NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>The type of the entity pointer for entities of this codim. </p>
+<p>equality </p>
 
 </div>
 </div>
-<a id="a8511cfc882537995af23119db3f6ac79" name="a8511cfc882537995af23119db3f6ac79"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8511cfc882537995af23119db3f6ac79">&#9670;&nbsp;</a></span>LocalGeometry</h2>
+<a id="adaf8b454758505380c0fd4e14806e51e" name="adaf8b454758505380c0fd4e14806e51e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaf8b454758505380c0fd4e14806e51e">&#9670;&nbsp;</a></span>increment()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimw, class GridImp , template&lt; int, int, class &gt; class GeometryImp, template&lt; int, int, class &gt; class EntityImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LevelIteratorImp, template&lt; class &gt; class LeafIntersectionImp, template&lt; class &gt; class LevelIntersectionImp, template&lt; class &gt; class LeafIntersectionIteratorImp, template&lt; class &gt; class LevelIntersectionIteratorImp, template&lt; class &gt; class HierarchicIteratorImp, template&lt; int, Dune::PartitionIteratorType, class &gt; class LeafIteratorImp, class LevelIndexSetImp , class LeafIndexSetImp , class GlobalIdSetImp , class GIDType , class LocalIdSetImp , class LIDType , class CCType , template&lt; class &gt; class LevelGridViewTraits, template&lt; class &gt; class LeafGridViewTraits, template&lt; int, class &gt; class EntitySeedImp, template&lt; int, int, class &gt; class LocalGeometryImp = GeometryImp&gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a>&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::LocalGeometry =  Dune::Geometry&lt;dim - cd, dim, const GridImp, LocalGeometryImp&gt;</td>
+          <td class="memname">void <a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::increment </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>The type of the local geometry associated with the entity. </p>
+<p>prefix increment </p>
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../df/dc8/a00122_source.html">nurbsgridtraits.hh</a></li>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="ac61e75b9e2c181ca41e9adf086f3429d" name="ac61e75b9e2c181ca41e9adf086f3429d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac61e75b9e2c181ca41e9adf086f3429d">&#9670;&nbsp;</a></span>codimension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int codim, PartitionIteratorType pitype, class GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="../../dd/d42/a01259.html">Dune::IGA::NURBSGridLeafIterator</a>&lt; codim, pitype, GridImp &gt;::codimension = codim</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../da/d24/a00068_source.html">nurbsgridleafiterator.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d88/a01255.html">NurbsGridTraits</a></li><li class="navelem"><a class="el" href="../../dd/d42/a01259.html">Codim</a></li>
+    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/d44/a00162.html">IGA</a></li><li class="navelem"><a class="el" href="../../dd/d42/a01259.html">NURBSGridLeafIterator</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

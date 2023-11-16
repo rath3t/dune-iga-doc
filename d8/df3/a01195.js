@@ -1,11 +1,17 @@
 var a01195 =
 [
-    [ "Traits", "d8/df3/a01195.html#aa33762da2841b00c25730b54f403b18d", null ],
-    [ "NurbsLocalBasis", "d8/df3/a01195.html#ad119ff60c7cbee7b6629d14495ae1049", null ],
-    [ "evaluateFunction", "d8/df3/a01195.html#a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f", null ],
-    [ "evaluateJacobian", "d8/df3/a01195.html#a1e4031a5766fdf953b67c52753a5173c", null ],
-    [ "order", "d8/df3/a01195.html#a112e67e9f50f06663a24cfb7e1c3804f", null ],
-    [ "partial", "d8/df3/a01195.html#a19caec343db1c4b578863e38a1956cf3", null ],
-    [ "size", "d8/df3/a01195.html#acf2935949ca9304b3007895aae110cc6", null ],
-    [ "NurbsLocalFiniteElement< GV, R >", "d8/df3/a01195.html#ad1ec86095c75c7472125add171d19867", null ]
+    [ "LocalView", "d0/d5a/a01199.html", "d0/d5a/a01199" ],
+    [ "DynamicMatrixType", "d8/df3/a01195.html#ab7c27e0b51884ec81ba7dc4a9a8c710b", null ],
+    [ "DynamicVectorType", "d8/df3/a01195.html#a25155cb3f73365d18d57e10350ce8d88", null ],
+    [ "ScalarType", "d8/df3/a01195.html#aa563204d38faa68300e921d8a8ddc543", null ],
+    [ "Nurbs", "d8/df3/a01195.html#af8eb19aa9d7a90ccaf752d910585b5a3", null ],
+    [ "Nurbs", "d8/df3/a01195.html#a44a62461cae0f13d67504a7e40a65826", null ],
+    [ "Nurbs", "d8/df3/a01195.html#ac20cd9c0c8cd38df76aa4a8eb5a4bdf5", null ],
+    [ "basisFunctionDerivatives", "d8/df3/a01195.html#a6e5712cd8630ee91952413d7b21d0082", null ],
+    [ "basisFunctionDerivatives", "d8/df3/a01195.html#acf9a67da17b5b93975b12f338c6e6f2d", null ],
+    [ "basisFunctionDerivatives", "d8/df3/a01195.html#a60479e83694fc60d61681c4955f40699", null ],
+    [ "basisFunctions", "d8/df3/a01195.html#a4f54ee9638f76ad187a7e856d3b1a49a", null ],
+    [ "basisFunctions", "d8/df3/a01195.html#ac14cbdaba9d0bd78aa4265f67fe9dbba", null ],
+    [ "basisFunctions", "d8/df3/a01195.html#ac105906e3153eb3307d0f6ee8e915e39", null ],
+    [ "localView", "d8/df3/a01195.html#a3a415494b61940c766a34b91f5de8461", null ]
 ];

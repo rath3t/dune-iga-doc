@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['transformtospan_0',['TransformToSpan',['../d6/d4d/a01371.html',1,'Dune::IGA']]],
-  ['trimdata_1',['TrimData',['../d1/d72/a01319.html',1,'Dune::IGA']]],
-  ['trimmedsubgrid_2',['TrimmedSubGrid',['../dd/d86/a01367.html',1,'Dune::IGA']]]
+  ['threadsafe_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20trim_2c_20scalartype_2c_20hostgrid_20_3e_20_3e_0',['threadSafe&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;',['../d6/dcf/a01031.html',1,'Dune::Capabilities']]],
+  ['transformtospan_1',['TransformToSpan',['../de/dfe/a01383.html',1,'Dune::IGA']]],
+  ['trimdata_2',['TrimData',['../d4/d04/a01335.html',1,'Dune::IGA']]]
 ];

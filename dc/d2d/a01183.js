@@ -1,10 +1,7 @@
 var a01183 =
 [
-    [ "LocalView", "dc/d2d/a01183.html#ac98cabfa00e615d4d4f7666bba9027d5", null ],
-    [ "LocalView", "dc/d2d/a01183.html#ae6c4ace0041c7e12c9f9fc5908b89bab", null ],
-    [ "basisFunctionDerivatives", "dc/d2d/a01183.html#ab5312c788e74472f87bc9d623c15e500", null ],
-    [ "basisFunctions", "dc/d2d/a01183.html#a17d185d755fe230b039ded9df087e3c7", null ],
-    [ "bind", "dc/d2d/a01183.html#ac7a4d717c6525de5a808beca74efd986", null ],
-    [ "nurbs_", "dc/d2d/a01183.html#a95373be6b11fd32f2d85e75564f4f2c6", null ],
-    [ "spIndex_", "dc/d2d/a01183.html#afd18857179ed6090575fb8d6e361a74c", null ]
+    [ "Grid", "dc/d2d/a01183.html#a5a1489a0efa41f0ce4101c5dbd153227", null ],
+    [ "DGFGridFactory", "dc/d2d/a01183.html#a303ee741c3a8e0c243351eae9bc816aa", null ],
+    [ "DGFGridFactory", "dc/d2d/a01183.html#a0f2415ff67bd15e08aeb04c9a7c15c8d", null ],
+    [ "grid", "dc/d2d/a01183.html#a25434ae3ddd4b6b12a4c59a6cbb0a907", null ]
 ];

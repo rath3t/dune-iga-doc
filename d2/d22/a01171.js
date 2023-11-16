@@ -1,15 +1,9 @@
 var a01171 =
 [
-    [ "Element", "d2/d22/a01171.html#ae0f1b0280a151f71808caddeb0db81b5", null ],
-    [ "Index", "d2/d22/a01171.html#a97f546935cd4cf34b919527ec5247bbf", null ],
-    [ "Point", "d2/d22/a01171.html#a458043700435144746a87ae7c201e4a5", null ],
-    [ "IGARefinedGeometries", "d2/d22/a01171.html#a35832a135806de1935c201fb8d07a52a", null ],
-    [ "geometryType", "d2/d22/a01171.html#a390b73e8b048251a0f8b5d7ac1accf81", null ],
-    [ "getElements", "d2/d22/a01171.html#ad10c518968955f7e80c9af9620121926", null ],
-    [ "getIndices", "d2/d22/a01171.html#a3bba175a82f768da753c809b41df9f6e", null ],
-    [ "getVertices", "d2/d22/a01171.html#ae6658c83500c33e2c48fb8006fb03f6f", null ],
-    [ "nElements", "d2/d22/a01171.html#a1890d8e5f8698e50f58f569324cf2ceb", null ],
-    [ "nVertices", "d2/d22/a01171.html#af31dae2b58ddb4f4933b4bae7f1689fc", null ],
-    [ "vertexSubIndex", "d2/d22/a01171.html#ae5817e582c43679fcff376da08c8671f", null ],
-    [ "dim", "d2/d22/a01171.html#a30471b9626e57db233cde8e609ea2b29", null ]
+    [ "ControlPoint", "d2/d22/a01171.html#a05660dacc1b434b971e62129c28422fd", null ],
+    [ "ControlPointNetType", "d2/d22/a01171.html#a321198b37f2cd182d35d6ec23b96497f", null ],
+    [ "Grid", "d2/d22/a01171.html#a29a07fbaa75336571b9f293537a0ec48", null ],
+    [ "PatchData", "d2/d22/a01171.html#ac5a13cf5d977000274c321869942cc52", null ],
+    [ "read", "d2/d22/a01171.html#a00f99434abd8039a53dc9f1e1927a42d", null ],
+    [ "read", "d2/d22/a01171.html#ae156afe228cb6f46b97767f551a4b30d", null ]
 ];

@@ -1,10 +1,9 @@
 var a01067 =
 [
-    [ "HostEntity", "d2/d49/a01067.html#abc89476168d480c8c213713146f61617", null ],
-    [ "HostEntitySeed", "d2/d49/a01067.html#aa449031fa7666de9161df5f16d539d6b", null ],
-    [ "PatchGridEntitySeed", "d2/d49/a01067.html#a03d9f6f67872dc8ed68bcdfd971212e3", null ],
-    [ "PatchGridEntitySeed", "d2/d49/a01067.html#a4c3b939e2326e421303bd64f9dee4216", null ],
-    [ "hostEntitySeed", "d2/d49/a01067.html#a93838796fb1c9cb193b94ae14386b624", null ],
-    [ "isValid", "d2/d49/a01067.html#a0271677f29354d026e3cf4ab0fab29db", null ],
-    [ "codimension", "d2/d49/a01067.html#a0e1020ac40dd8e7f0edac5e82fbb218d", null ]
+    [ "Intersection", "d2/d49/a01067.html#a921f35b040c39a91c42d0ef8668f9885", null ],
+    [ "PatchGridLevelIntersectionIterator", "d2/d49/a01067.html#ab7c7636cc9ad42e9c9f36ed5f20e79b8", null ],
+    [ "PatchGridLevelIntersectionIterator", "d2/d49/a01067.html#af2e2270b902af2e520b61a45eddf5f1b", null ],
+    [ "dereference", "d2/d49/a01067.html#a50406d020c20bf0da2adacfdf52910b8", null ],
+    [ "equals", "d2/d49/a01067.html#aa85be16f78dec3ec5d7c1f557bd4422f", null ],
+    [ "increment", "d2/d49/a01067.html#ad8ff7f2fc920dafa9ddb64ff81986646", null ]
 ];

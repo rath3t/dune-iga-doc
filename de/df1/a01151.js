@@ -1,9 +1,10 @@
 var a01151 =
 [
-    [ "ControlPoint", "de/df1/a01151.html#a05660dacc1b434b971e62129c28422fd", null ],
-    [ "ControlPointNetType", "de/df1/a01151.html#a321198b37f2cd182d35d6ec23b96497f", null ],
-    [ "Grid", "de/df1/a01151.html#a29a07fbaa75336571b9f293537a0ec48", null ],
-    [ "PatchData", "de/df1/a01151.html#ac5a13cf5d977000274c321869942cc52", null ],
-    [ "read", "de/df1/a01151.html#a00f99434abd8039a53dc9f1e1927a42d", null ],
-    [ "read", "de/df1/a01151.html#ae156afe228cb6f46b97767f551a4b30d", null ]
+    [ "StringVector", "de/df1/a01151.html#ab30c877d0fe57bf5b97555be6b5d2559", null ],
+    [ "brep", "de/df1/a01151.html#aa2343de3ad19b0f0a47a0b65a9b6f28c", null ],
+    [ "face", "de/df1/a01151.html#ab7ab7da83e436cfb042b22cbbd692e74", null ],
+    [ "key", "de/df1/a01151.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
+    [ "trims", "de/df1/a01151.html#a61a53e394317f3844be719ad7cfdd240", null ],
+    [ "type", "de/df1/a01151.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
+    [ "typeString", "de/df1/a01151.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
 ];

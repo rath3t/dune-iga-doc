@@ -1,6 +1,10 @@
 var a01199 =
 [
-    [ "init", "d0/d5a/a01199.html#ab29a3056636e956a36a4bfe47a951091", null ],
-    [ "localKey", "d0/d5a/a01199.html#adf5a802caa3f9bf1b909336121dea33c", null ],
-    [ "size", "d0/d5a/a01199.html#ab751125f214b769ded9842be52d11fa2", null ]
+    [ "LocalView", "d0/d5a/a01199.html#ac98cabfa00e615d4d4f7666bba9027d5", null ],
+    [ "LocalView", "d0/d5a/a01199.html#ae6c4ace0041c7e12c9f9fc5908b89bab", null ],
+    [ "basisFunctionDerivatives", "d0/d5a/a01199.html#ab5312c788e74472f87bc9d623c15e500", null ],
+    [ "basisFunctions", "d0/d5a/a01199.html#a17d185d755fe230b039ded9df087e3c7", null ],
+    [ "bind", "d0/d5a/a01199.html#ac7a4d717c6525de5a808beca74efd986", null ],
+    [ "nurbs_", "d0/d5a/a01199.html#a95373be6b11fd32f2d85e75564f4f2c6", null ],
+    [ "spIndex_", "d0/d5a/a01199.html#afd18857179ed6090575fb8d6e361a74c", null ]
 ];

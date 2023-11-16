@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;::LocalView Struct Reference</title>
+<title>dune-iga: Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,39 +92,226 @@ $(document).ready(function(){initNavTree('de/d69/a01311.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d1/d56/a01308.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::NURBSPatchGeometry&lt; dim, dimworld, ScalarType &gt;::LocalView Struct Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d3/d8b/a00059_source.html">dune/iga/nurbspatchgeometry.hh</a>&gt;</code></p>
+<p>Class where the NURBS geometry can work on.  
+ <a href="../../de/d69/a01311.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d1/dc1/a00092_source.html">dune/iga/nurbspatch.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../da/d79/a01310.png" border="0" usemap="#a_dune_1_1_i_g_a_1_1_n_u_r_b_s_patch_3_01dim_00_01dimworld_00_01_scalar_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_dune_1_1_i_g_a_1_1_n_u_r_b_s_patch_3_01dim_00_01dimworld_00_01_scalar_type_01_4_inherit__map" id="a_dune_1_1_i_g_a_1_1_n_u_r_b_s_patch_3_01dim_00_01dimworld_00_01_scalar_type_01_4_inherit__map">
+<area shape="rect" title="Class where the NURBS geometry can work on." alt="" coords="5,5,229,47"/>
+<area shape="rect" href="../../de/d69/a01311.html" title=" " alt="" coords="18,109,217,151"/>
+</map>
+</div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:aa60dfddc9fcc0fb09c0aa6d2dc7f1b57"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#aa60dfddc9fcc0fb09c0aa6d2dc7f1b57">GridImpl</a> = <a class="el" href="../../d7/dd6/a01167.html">NURBSGrid</a>&lt; dim, dimworld, ScalarType &gt;</td></tr>
+<tr class="separator:aa60dfddc9fcc0fb09c0aa6d2dc7f1b57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbad8099757c8c280639f3edc4607714"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#adbad8099757c8c280639f3edc4607714">Types</a> = typename GridImpl::Traits::LeafIndexSet::Types</td></tr>
+<tr class="separator:adbad8099757c8c280639f3edc4607714"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3712f473eed1b2db5108d5cfa4f2f40"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> = unsigned int</td></tr>
+<tr class="separator:ac3712f473eed1b2db5108d5cfa4f2f40"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b24a718c9d5e0a1979807b68d8abd06"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> = unsigned int</td></tr>
+<tr class="separator:a1b24a718c9d5e0a1979807b68d8abd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa56655168cc715e7a05fcf9559514c1d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#aa56655168cc715e7a05fcf9559514c1d">SubGridType</a> = GridImpl::Traits::SubGridType</td></tr>
+<tr class="separator:aa56655168cc715e7a05fcf9559514c1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab8f46bda3282573c587f74f62ed61274"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ab8f46bda3282573c587f74f62ed61274">LocalView</a> (const <a class="el" href="../../d2/d4c/a01307.html">NURBSPatchGeometry</a> &amp;patchGeometry)</td></tr>
-<tr class="separator:ab8f46bda3282573c587f74f62ed61274"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0e4269bae7a0a84416fca767594e28bc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/a01307.html#a0cdaad5a4cdc0b6081725eaded37d83b">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a0e4269bae7a0a84416fca767594e28bc">center</a> () const</td></tr>
-<tr class="separator:a0e4269bae7a0a84416fca767594e28bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f65d941328745f8c2d0ec2cfb5fa62e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a2f65d941328745f8c2d0ec2cfb5fa62e">bind</a> (const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;u)</td></tr>
-<tr class="separator:a2f65d941328745f8c2d0ec2cfb5fa62e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98f1a16e1981eabce9bcbc092dc37109"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d2/d4c/a01307.html#a7e11beb50f4800c62e5c07f73762f2b8">ctype</a>, dimworld &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a98f1a16e1981eabce9bcbc092dc37109">global</a> (const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;u) const</td></tr>
-<tr class="memdesc:a98f1a16e1981eabce9bcbc092dc37109"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluates the geometric position  <a href="../../de/d69/a01311.html#a98f1a16e1981eabce9bcbc092dc37109">More...</a><br /></td></tr>
-<tr class="separator:a98f1a16e1981eabce9bcbc092dc37109"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad20659c569f05d34ba0a8d23c2cd9f44"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/a01307.html#a5924050df9bfe493ab06545320018007">JacobianTransposed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ad20659c569f05d34ba0a8d23c2cd9f44">jacobianTransposed</a> (const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;u) const</td></tr>
-<tr class="separator:ad20659c569f05d34ba0a8d23c2cd9f44"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f887c5349b93b9c77d2b90497677fec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/a01307.html#af30ff4225449508c7aff7bfa62923eb6">Jacobian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a2f887c5349b93b9c77d2b90497677fec">jacobian</a> (const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;<a class="el" href="../../d2/d4c/a01307.html#a73de9d3ba74a334338518c9e0cb60fbd">local</a>) const</td></tr>
-<tr class="separator:a2f887c5349b93b9c77d2b90497677fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4768fb340f0562bcd03d7cac18033ee2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4c/a01307.html#a7e11beb50f4800c62e5c07f73762f2b8">ctype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a4768fb340f0562bcd03d7cac18033ee2">integrationElement</a> (const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;<a class="el" href="../../d2/d4c/a01307.html#a73de9d3ba74a334338518c9e0cb60fbd">local</a>) const</td></tr>
-<tr class="separator:a4768fb340f0562bcd03d7cac18033ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a96693c9e794c756797b361ae8b91d5bb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a96693c9e794c756797b361ae8b91d5bb">volume</a> (int scaleOrder=1) const</td></tr>
-<tr class="separator:a96693c9e794c756797b361ae8b91d5bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ce3d274b67aa5243db0f21c810765fd"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a4ce3d274b67aa5243db0f21c810765fd">type</a> () const</td></tr>
-<tr class="separator:a4ce3d274b67aa5243db0f21c810765fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086cedc2b2366d7f7f54542a6be041e7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a086cedc2b2366d7f7f54542a6be041e7">NURBSPatch</a> (const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;knotSpans, const typename <a class="el" href="../../d1/d72/a01319.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt;::ControlPointNetType controlPoints, const std::array&lt; int, dim &gt; degree)</td></tr>
+<tr class="memdesc:a086cedc2b2366d7f7f54542a6be041e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor of NURBS from knots, control points, weights and degree.  <a href="../../de/d69/a01311.html#a086cedc2b2366d7f7f54542a6be041e7">More...</a><br /></td></tr>
+<tr class="separator:a086cedc2b2366d7f7f54542a6be041e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ef190ba13170afe678bf95a36d28c23"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a6ef190ba13170afe678bf95a36d28c23">NURBSPatch</a> (const <a class="el" href="../../d1/d72/a01319.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt; &amp;patchData, std::optional&lt; std::shared_ptr&lt; <a class="el" href="../../d4/d04/a01335.html">TrimData</a> &gt; &gt; trimData=std::nullopt)</td></tr>
+<tr class="separator:a6ef190ba13170afe678bf95a36d28c23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac124f2d6478ad0cc94a8bba860a8f100"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim, std::integral T = int&gt; <br />
+requires (codim == 0 || codim == dim)</td></tr>
+<tr class="memitem:ac124f2d6478ad0cc94a8bba860a8f100"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; unsigned int, dim &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ac124f2d6478ad0cc94a8bba860a8f100">originalGridSize</a> () const</td></tr>
+<tr class="separator:ac124f2d6478ad0cc94a8bba860a8f100"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a931930f344ea3bb14acfea08b1a6c0c2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a931930f344ea3bb14acfea08b1a6c0c2">originalSize</a> (int codim) const</td></tr>
+<tr class="memdesc:a931930f344ea3bb14acfea08b1a6c0c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of entities of a given codimension in the untrimmed case.  <a href="../../de/d69/a01311.html#a931930f344ea3bb14acfea08b1a6c0c2">More...</a><br /></td></tr>
+<tr class="separator:a931930f344ea3bb14acfea08b1a6c0c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9caea6e812ee36c5fdd03fb50424e38e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a9caea6e812ee36c5fdd03fb50424e38e">size</a> (int codim) const</td></tr>
+<tr class="memdesc:a9caea6e812ee36c5fdd03fb50424e38e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of entities of a given codimension (considers trimmed elements)  <a href="../../de/d69/a01311.html#a9caea6e812ee36c5fdd03fb50424e38e">More...</a><br /></td></tr>
+<tr class="separator:a9caea6e812ee36c5fdd03fb50424e38e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae863b46c6bf009bf0c8431f45608dc38"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ae863b46c6bf009bf0c8431f45608dc38">getPatchData</a> ()</td></tr>
+<tr class="memdesc:ae863b46c6bf009bf0c8431f45608dc38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the patch for this patch, i.e. the control points and knotvectors.  <a href="../../de/d69/a01311.html#ae863b46c6bf009bf0c8431f45608dc38">More...</a><br /></td></tr>
+<tr class="separator:ae863b46c6bf009bf0c8431f45608dc38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e9c0ab844847d9e4b15337869e58b1e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a5e9c0ab844847d9e4b15337869e58b1e">isPatchBoundary</a> (const int &amp;id) const</td></tr>
+<tr class="memdesc:a5e9c0ab844847d9e4b15337869e58b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the element given by it's id is on the patch boundary.  <a href="../../de/d69/a01311.html#a5e9c0ab844847d9e4b15337869e58b1e">More...</a><br /></td></tr>
+<tr class="separator:a5e9c0ab844847d9e4b15337869e58b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f7778e47b0277925c9b55643e12ac34"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a0f7778e47b0277925c9b55643e12ac34">numBoundarySegments</a> () const</td></tr>
+<tr class="separator:a0f7778e47b0277925c9b55643e12ac34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f05b0dd7c673b4de227bd142801fec1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a6f05b0dd7c673b4de227bd142801fec1">patchBoundaryIndex</a> (const <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> intersectionRealIndex) const</td></tr>
+<tr class="separator:a6f05b0dd7c673b4de227bd142801fec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6fd19c08c241abe0d0e660b3720106e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ae6fd19c08c241abe0d0e660b3720106e">patchBoundaryIndex</a> (const int ocdim1Id) const</td></tr>
+<tr class="memdesc:ae6fd19c08c241abe0d0e660b3720106e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the boundary index of the passed codim 1 entity index If the passed codim 1 entity does not lie on the boundary this method returns random indices!  <a href="../../de/d69/a01311.html#ae6fd19c08c241abe0d0e660b3720106e">More...</a><br /></td></tr>
+<tr class="separator:ae6fd19c08c241abe0d0e660b3720106e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3aad020f2cf26f7e7e023a1804277316"><td class="memTemplParams" colspan="2">template&lt;std::integral auto codim&gt; </td></tr>
+<tr class="memitem:a3aad020f2cf26f7e7e023a1804277316"><td class="memTemplItemLeft" align="right" valign="top">std::pair&lt; std::array&lt; int, dim &gt;, std::array&lt; Impl::FixedOrFree, dim &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a3aad020f2cf26f7e7e023a1804277316">spanAndDirectionFromDirectIndex</a> (const int directIndex) const</td></tr>
+<tr class="memdesc:a3aad020f2cf26f7e7e023a1804277316"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns span indices in the knot vectors and the fixed or free directions of the entity from the directindex.  <a href="../../de/d69/a01311.html#a3aad020f2cf26f7e7e023a1804277316">More...</a><br /></td></tr>
+<tr class="separator:a3aad020f2cf26f7e7e023a1804277316"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa782fa65cb40062dba168167cff12694"><td class="memTemplParams" colspan="2">template&lt;std::integral auto codim&gt; </td></tr>
+<tr class="memitem:aa782fa65cb40062dba168167cff12694"><td class="memTemplItemLeft" align="right" valign="top">GridImpl::template Codim&lt; codim &gt;::Geometry&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#aa782fa65cb40062dba168167cff12694">geometry</a> (const <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> realIndex) const</td></tr>
+<tr class="memdesc:aa782fa65cb40062dba168167cff12694"><td class="mdescLeft">&#160;</td><td class="mdescRight">creates a <a class="el" href="../../dd/dad/a01235.html" title="a geometry implementation for NURBS">NURBSGeometry</a> object this function finds the i-th knot span where knot[i] &lt; knot[i+1] for each dimension and generates a Geometry object  <a href="../../de/d69/a01311.html#aa782fa65cb40062dba168167cff12694">More...</a><br /></td></tr>
+<tr class="separator:aa782fa65cb40062dba168167cff12694"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e34f489686fa7e3324e76fb10ef6a09"><td class="memItemLeft" align="right" valign="top">std::pair&lt; std::array&lt; double, dim &gt;, std::array&lt; double, dim &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a8e34f489686fa7e3324e76fb10ef6a09">scalingAndOffset</a> (const <a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> directIndex)</td></tr>
+<tr class="separator:a8e34f489686fa7e3324e76fb10ef6a09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b6b0f6f2f961787e265673bcedf1f56"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a1b6b0f6f2f961787e265673bcedf1f56">validKnotSize</a> () const</td></tr>
+<tr class="memdesc:a1b6b0f6f2f961787e265673bcedf1f56"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the size of knot spans where knot[i] &lt; knot[i+1] of each dimension  <a href="../../de/d69/a01311.html#a1b6b0f6f2f961787e265673bcedf1f56">More...</a><br /></td></tr>
+<tr class="separator:a1b6b0f6f2f961787e265673bcedf1f56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5249e2a977d19e2b05e6ba1729211a99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../de/d69/a01311.html#adbad8099757c8c280639f3edc4607714">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a5249e2a977d19e2b05e6ba1729211a99">typesInCodim</a> (const int codim) const</td></tr>
+<tr class="separator:a5249e2a977d19e2b05e6ba1729211a99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b4ffa3d069252b1e2a18c1728f0ff31"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a4b4ffa3d069252b1e2a18c1728f0ff31">reportTrimError</a> () const</td></tr>
+<tr class="memdesc:a4b4ffa3d069252b1e2a18c1728f0ff31"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns false if an error happened during processing the trim  <a href="../../de/d69/a01311.html#a4b4ffa3d069252b1e2a18c1728f0ff31">More...</a><br /></td></tr>
+<tr class="separator:a4b4ffa3d069252b1e2a18c1728f0ff31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac09063fe348737a4cf5740fb943503ce"><td class="memTemplParams" colspan="2">template&lt;typename ctype  = double&gt; </td></tr>
+<tr class="memitem:ac09063fe348737a4cf5740fb943503ce"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ac09063fe348737a4cf5740fb943503ce">parameterSpaceGrid</a> (int scale=0) const</td></tr>
+<tr class="separator:ac09063fe348737a4cf5740fb943503ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ba3545ed5195396b023cd6147722206"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a4ba3545ed5195396b023cd6147722206">hasEmptyElements</a> () const</td></tr>
+<tr class="separator:a4ba3545ed5195396b023cd6147722206"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23f266957e9046129b7b056fd8297bfa"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a23f266957e9046129b7b056fd8297bfa">emptyElements</a> () const</td></tr>
+<tr class="separator:a23f266957e9046129b7b056fd8297bfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbb4ccb746de58136d13424e00b91189"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; </td></tr>
+<tr class="memitem:afbb4ccb746de58136d13424e00b91189"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#afbb4ccb746de58136d13424e00b91189">getDirectIndex</a> (<a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> idx) const -&gt; <a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a></td></tr>
+<tr class="separator:afbb4ccb746de58136d13424e00b91189"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60b6329ea02c4fa22b44a739e1dabfc"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; </td></tr>
+<tr class="memitem:ad60b6329ea02c4fa22b44a739e1dabfc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ad60b6329ea02c4fa22b44a739e1dabfc">getRealIndex</a> (<a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> idx) const -&gt; <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a></td></tr>
+<tr class="separator:ad60b6329ea02c4fa22b44a739e1dabfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f556f4c86fbdf58ff3155b25a691a5"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; <br />
+requires (dim == 2)</td></tr>
+<tr class="memitem:aa4f556f4c86fbdf58ff3155b25a691a5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#aa4f556f4c86fbdf58ff3155b25a691a5">getDirectIndex</a> (<a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> idx) const -&gt; <a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a></td></tr>
+<tr class="separator:aa4f556f4c86fbdf58ff3155b25a691a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15e645771fc5257ebf04bf0fa5e8e215"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; <br />
+requires (dim == 2)</td></tr>
+<tr class="memitem:a15e645771fc5257ebf04bf0fa5e8e215"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a15e645771fc5257ebf04bf0fa5e8e215">getRealIndex</a> (<a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> idx) const -&gt; <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a></td></tr>
+<tr class="separator:a15e645771fc5257ebf04bf0fa5e8e215"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5430d1d05172d7f07092dc61da9105dc"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; <br />
+requires (dim == 2) (std::same_as&lt;decltype(idx), decltype(orValue)&gt;)</td></tr>
+<tr class="memitem:a5430d1d05172d7f07092dc61da9105dc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a5430d1d05172d7f07092dc61da9105dc">getRealIndexOr</a> (auto idx, auto orValue) const noexcept</td></tr>
+<tr class="separator:a5430d1d05172d7f07092dc61da9105dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88e96782fe3853bf19256f9d39009b6d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a88e96782fe3853bf19256f9d39009b6d">getTrimFlagForDirectIndex</a> (<a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> directIndex) const -&gt; <a class="el" href="../../db/d44/a00162.html#a34b2741ab599082a80dacc40c6e5069b">ElementTrimFlag</a></td></tr>
+<tr class="separator:a88e96782fe3853bf19256f9d39009b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8696be86250296b6ebed76470148e0e9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a8696be86250296b6ebed76470148e0e9">getTrimFlag</a> (<a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> realIndex) const -&gt; <a class="el" href="../../db/d44/a00162.html#a34b2741ab599082a80dacc40c6e5069b">ElementTrimFlag</a></td></tr>
+<tr class="separator:a8696be86250296b6ebed76470148e0e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37d6c07b123a1750d9a61ddff39b0bcd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a37d6c07b123a1750d9a61ddff39b0bcd">isTrimmed</a> (<a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> realIndex) const</td></tr>
+<tr class="separator:a37d6c07b123a1750d9a61ddff39b0bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a495931259f11d4f9915b3feaf1bb7dd5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a495931259f11d4f9915b3feaf1bb7dd5">getElementSubGrid</a> (<a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> realIndex) const -&gt; std::shared_ptr&lt; <a class="el" href="../../de/d69/a01311.html#aa56655168cc715e7a05fcf9559514c1d">SubGridType</a> &gt;</td></tr>
+<tr class="separator:a495931259f11d4f9915b3feaf1bb7dd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8c5e537e69a6e29874d6a8bb556e12f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ad8c5e537e69a6e29874d6a8bb556e12f">prepareForNoTrim</a> ()</td></tr>
+<tr class="separator:ad8c5e537e69a6e29874d6a8bb556e12f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55fe6bb4df5f1a59ccd102aad3cfdb17"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; <br />
+requires (dim == 2)</td></tr>
+<tr class="memitem:a55fe6bb4df5f1a59ccd102aad3cfdb17"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a55fe6bb4df5f1a59ccd102aad3cfdb17">fill1to1Maps</a> ()</td></tr>
+<tr class="separator:a55fe6bb4df5f1a59ccd102aad3cfdb17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb13e02397ca501e362d90c8e4a0c737"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#aeb13e02397ca501e362d90c8e4a0c737">computeElementTrimInfo</a> ()</td></tr>
+<tr class="separator:aeb13e02397ca501e362d90c8e4a0c737"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac60dd905faa2f4a77ddd31251b85604d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#ac60dd905faa2f4a77ddd31251b85604d">computeElementTrimInfo</a> ()</td></tr>
+<tr class="separator:ac60dd905faa2f4a77ddd31251b85604d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeae10a6b9d92afe5d63410a842532f81"><td class="memTemplParams" colspan="2">template&lt;unsigned int codim&gt; <br />
+requires (codim == 2 || codim == 1) &amp;&amp; (dim == 2)</td></tr>
+<tr class="memitem:aeae10a6b9d92afe5d63410a842532f81"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#aeae10a6b9d92afe5d63410a842532f81">constructSubEntityMaps</a> ()</td></tr>
+<tr class="separator:aeae10a6b9d92afe5d63410a842532f81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82459dacd8dfe7cc23b172f7999868d4"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d69/a01311.html#a82459dacd8dfe7cc23b172f7999868d4">boundarySegmentList</a> () const</td></tr>
+<tr class="separator:a82459dacd8dfe7cc23b172f7999868d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType = double&gt;<br />
+class Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</div><p >Class where the NURBS geometry can work on. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ac3712f473eed1b2db5108d5cfa4f2f40" name="ac3712f473eed1b2db5108d5cfa4f2f40"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3712f473eed1b2db5108d5cfa4f2f40">&#9670;&nbsp;</a></span>DirectIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::DirectIndex =  unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa60dfddc9fcc0fb09c0aa6d2dc7f1b57" name="aa60dfddc9fcc0fb09c0aa6d2dc7f1b57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa60dfddc9fcc0fb09c0aa6d2dc7f1b57">&#9670;&nbsp;</a></span>GridImpl</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::GridImpl =  <a class="el" href="../../d7/dd6/a01167.html">NURBSGrid</a>&lt;dim, dimworld, ScalarType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b24a718c9d5e0a1979807b68d8abd06" name="a1b24a718c9d5e0a1979807b68d8abd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b24a718c9d5e0a1979807b68d8abd06">&#9670;&nbsp;</a></span>RealIndex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::RealIndex =  unsigned int</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa56655168cc715e7a05fcf9559514c1d" name="aa56655168cc715e7a05fcf9559514c1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa56655168cc715e7a05fcf9559514c1d">&#9670;&nbsp;</a></span>SubGridType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::SubGridType =  GridImpl::Traits::SubGridType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adbad8099757c8c280639f3edc4607714" name="adbad8099757c8c280639f3edc4607714"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbad8099757c8c280639f3edc4607714">&#9670;&nbsp;</a></span>Types</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::Types =  typename GridImpl::Traits::LeafIndexSet::Types</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab8f46bda3282573c587f74f62ed61274" name="ab8f46bda3282573c587f74f62ed61274"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8f46bda3282573c587f74f62ed61274">&#9670;&nbsp;</a></span>LocalView()</h2>
+<a id="a086cedc2b2366d7f7f54542a6be041e7" name="a086cedc2b2366d7f7f54542a6be041e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a086cedc2b2366d7f7f54542a6be041e7">&#9670;&nbsp;</a></span>NURBSPatch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -135,11 +322,75 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::LocalView </td>
+          <td class="memname"><a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::NURBSPatch </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d4c/a01307.html">NURBSPatchGeometry</a> &amp;&#160;</td>
-          <td class="paramname"><em>patchGeometry</em></td><td>)</td>
+          <td class="paramtype">const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>knotSpans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const typename <a class="el" href="../../d1/d72/a01319.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt;::ControlPointNetType&#160;</td>
+          <td class="paramname"><em>controlPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::array&lt; int, dim &gt;&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor of NURBS from knots, control points, weights and degree. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">knotSpans</td><td>vector of knotSpans for each dimension </td></tr>
+    <tr><td class="paramname">controlPoints</td><td>a dim-dimensional net of control points </td></tr>
+    <tr><td class="paramname">degree</td><td>degree of the spline basis for each dimension </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6ef190ba13170afe678bf95a36d28c23" name="a6ef190ba13170afe678bf95a36d28c23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ef190ba13170afe678bf95a36d28c23">&#9670;&nbsp;</a></span>NURBSPatch() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::NURBSPatch </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d72/a01319.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>patchData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; std::shared_ptr&lt; <a class="el" href="../../d4/d04/a01335.html">TrimData</a> &gt; &gt;&#160;</td>
+          <td class="paramname"><em>trimData</em> = <code>std::nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -152,8 +403,8 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2f65d941328745f8c2d0ec2cfb5fa62e" name="a2f65d941328745f8c2d0ec2cfb5fa62e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f65d941328745f8c2d0ec2cfb5fa62e">&#9670;&nbsp;</a></span>bind()</h2>
+<a id="a82459dacd8dfe7cc23b172f7999868d4" name="a82459dacd8dfe7cc23b172f7999868d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a82459dacd8dfe7cc23b172f7999868d4">&#9670;&nbsp;</a></span>boundarySegmentList()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -164,10 +415,36 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::bind </td>
+          <td class="memname">std::set&lt; <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> &gt; <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::boundarySegmentList </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeb13e02397ca501e362d90c8e4a0c737" name="aeb13e02397ca501e362d90c8e4a0c737"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb13e02397ca501e362d90c8e4a0c737">&#9670;&nbsp;</a></span>computeElementTrimInfo() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::computeElementTrimInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -180,8 +457,8 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<a id="a0e4269bae7a0a84416fca767594e28bc" name="a0e4269bae7a0a84416fca767594e28bc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0e4269bae7a0a84416fca767594e28bc">&#9670;&nbsp;</a></span>center()</h2>
+<a id="ac60dd905faa2f4a77ddd31251b85604d" name="ac60dd905faa2f4a77ddd31251b85604d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac60dd905faa2f4a77ddd31251b85604d">&#9670;&nbsp;</a></span>computeElementTrimInfo() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +469,64 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d4c/a01307.html#a0cdaad5a4cdc0b6081725eaded37d83b">GlobalCoordinate</a> <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::center </td>
+          <td class="memname">void <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::computeElementTrimInfo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeae10a6b9d92afe5d63410a842532f81" name="aeae10a6b9d92afe5d63410a842532f81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeae10a6b9d92afe5d63410a842532f81">&#9670;&nbsp;</a></span>constructSubEntityMaps()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; <br />
+requires (codim == 2 || codim == 1) &amp;&amp; (dim == 2)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::constructSubEntityMaps </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a23f266957e9046129b7b056fd8297bfa" name="a23f266957e9046129b7b056fd8297bfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23f266957e9046129b7b056fd8297bfa">&#9670;&nbsp;</a></span>emptyElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::emptyElements </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -207,22 +541,54 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<a id="a98f1a16e1981eabce9bcbc092dc37109" name="a98f1a16e1981eabce9bcbc092dc37109"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98f1a16e1981eabce9bcbc092dc37109">&#9670;&nbsp;</a></span>global()</h2>
+<a id="a55fe6bb4df5f1a59ccd102aad3cfdb17" name="a55fe6bb4df5f1a59ccd102aad3cfdb17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55fe6bb4df5f1a59ccd102aad3cfdb17">&#9670;&nbsp;</a></span>fill1to1Maps()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; <br />
+requires (dim == 2)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FieldVector&lt; <a class="el" href="../../d2/d4c/a01307.html#a7e11beb50f4800c62e5c07f73762f2b8">ctype</a>, dimworld &gt; <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::global </td>
+          <td class="memname">void <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::fill1to1Maps </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa782fa65cb40062dba168167cff12694" name="aa782fa65cb40062dba168167cff12694"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa782fa65cb40062dba168167cff12694">&#9670;&nbsp;</a></span>geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;std::integral auto codim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GridImpl::template Codim&lt; codim &gt;::Geometry <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::geometry </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>realIndex</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -233,33 +599,35 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 </table>
 </div><div class="memdoc">
 
-<p>evaluates the geometric position </p>
+<p>creates a <a class="el" href="../../dd/dad/a01235.html" title="a geometry implementation for NURBS">NURBSGeometry</a> object this function finds the i-th knot span where knot[i] &lt; knot[i+1] for each dimension and generates a Geometry object </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramdir">[in]</td><td class="paramname">u</td><td>coordinates for each dimension in the [knotSpan.front(), knotSpan.back() ] domain </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">ijk</td><td>array of indices for each dimension </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a4768fb340f0562bcd03d7cac18033ee2" name="a4768fb340f0562bcd03d7cac18033ee2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4768fb340f0562bcd03d7cac18033ee2">&#9670;&nbsp;</a></span>integrationElement()</h2>
+<a id="afbb4ccb746de58136d13424e00b91189" name="afbb4ccb746de58136d13424e00b91189"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbb4ccb746de58136d13424e00b91189">&#9670;&nbsp;</a></span>getDirectIndex() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d4c/a01307.html#a7e11beb50f4800c62e5c07f73762f2b8">ctype</a> <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::integrationElement </td>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getDirectIndex </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> </td>
         </tr>
       </table>
   </td>
@@ -271,23 +639,26 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<a id="a2f887c5349b93b9c77d2b90497677fec" name="a2f887c5349b93b9c77d2b90497677fec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f887c5349b93b9c77d2b90497677fec">&#9670;&nbsp;</a></span>jacobian()</h2>
+<a id="aa4f556f4c86fbdf58ff3155b25a691a5" name="aa4f556f4c86fbdf58ff3155b25a691a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f556f4c86fbdf58ff3155b25a691a5">&#9670;&nbsp;</a></span>getDirectIndex() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; <br />
+requires (dim == 2)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d4c/a01307.html#af30ff4225449508c7aff7bfa62923eb6">Jacobian</a> <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::jacobian </td>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getDirectIndex </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a> </td>
         </tr>
       </table>
   </td>
@@ -299,8 +670,8 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<a id="ad20659c569f05d34ba0a8d23c2cd9f44" name="ad20659c569f05d34ba0a8d23c2cd9f44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad20659c569f05d34ba0a8d23c2cd9f44">&#9670;&nbsp;</a></span>jacobianTransposed()</h2>
+<a id="a495931259f11d4f9915b3feaf1bb7dd5" name="a495931259f11d4f9915b3feaf1bb7dd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a495931259f11d4f9915b3feaf1bb7dd5">&#9670;&nbsp;</a></span>getElementSubGrid()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -311,11 +682,11 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d2/d4c/a01307.html#a5924050df9bfe493ab06545320018007">JacobianTransposed</a> <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::jacobianTransposed </td>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getElementSubGrid </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d2/d4c/a01307.html#a6cbf249031e6ca2e6bc2d8e3a4511870">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>u</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>realIndex</em></td><td>)</td>
+          <td> const -&gt; std::shared_ptr&lt;<a class="el" href="../../de/d69/a01311.html#aa56655168cc715e7a05fcf9559514c1d">SubGridType</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -327,8 +698,8 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<a id="a4ce3d274b67aa5243db0f21c810765fd" name="a4ce3d274b67aa5243db0f21c810765fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ce3d274b67aa5243db0f21c810765fd">&#9670;&nbsp;</a></span>type()</h2>
+<a id="ae863b46c6bf009bf0c8431f45608dc38" name="ae863b46c6bf009bf0c8431f45608dc38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae863b46c6bf009bf0c8431f45608dc38">&#9670;&nbsp;</a></span>getPatchData()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -339,7 +710,194 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GeometryType <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::type </td>
+          <td class="memname">const auto &amp; <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getPatchData </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the patch for this patch, i.e. the control points and knotvectors. </p>
+
+</div>
+</div>
+<a id="ad60b6329ea02c4fa22b44a739e1dabfc" name="ad60b6329ea02c4fa22b44a739e1dabfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60b6329ea02c4fa22b44a739e1dabfc">&#9670;&nbsp;</a></span>getRealIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getRealIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a>&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a15e645771fc5257ebf04bf0fa5e8e215" name="a15e645771fc5257ebf04bf0fa5e8e215"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a15e645771fc5257ebf04bf0fa5e8e215">&#9670;&nbsp;</a></span>getRealIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; <br />
+requires (dim == 2)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getRealIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a>&#160;</td>
+          <td class="paramname"><em>idx</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5430d1d05172d7f07092dc61da9105dc" name="a5430d1d05172d7f07092dc61da9105dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5430d1d05172d7f07092dc61da9105dc">&#9670;&nbsp;</a></span>getRealIndexOr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim&gt; <br />
+requires (dim == 2) (std::same_as&lt;decltype(idx), decltype(orValue)&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getRealIndexOr </td>
+          <td>(</td>
+          <td class="paramtype">auto&#160;</td>
+          <td class="paramname"><em>idx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">auto&#160;</td>
+          <td class="paramname"><em>orValue</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8696be86250296b6ebed76470148e0e9" name="a8696be86250296b6ebed76470148e0e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8696be86250296b6ebed76470148e0e9">&#9670;&nbsp;</a></span>getTrimFlag()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getTrimFlag </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>realIndex</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="../../db/d44/a00162.html#a34b2741ab599082a80dacc40c6e5069b">ElementTrimFlag</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a88e96782fe3853bf19256f9d39009b6d" name="a88e96782fe3853bf19256f9d39009b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88e96782fe3853bf19256f9d39009b6d">&#9670;&nbsp;</a></span>getTrimFlagForDirectIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::getTrimFlagForDirectIndex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a>&#160;</td>
+          <td class="paramname"><em>directIndex</em></td><td>)</td>
+          <td> const -&gt; <a class="el" href="../../db/d44/a00162.html#a34b2741ab599082a80dacc40c6e5069b">ElementTrimFlag</a> </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ba3545ed5195396b023cd6147722206" name="a4ba3545ed5195396b023cd6147722206"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ba3545ed5195396b023cd6147722206">&#9670;&nbsp;</a></span>hasEmptyElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::hasEmptyElements </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -354,8 +912,8 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<a id="a96693c9e794c756797b361ae8b91d5bb" name="a96693c9e794c756797b361ae8b91d5bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a96693c9e794c756797b361ae8b91d5bb">&#9670;&nbsp;</a></span>volume()</h2>
+<a id="a5e9c0ab844847d9e4b15337869e58b1e" name="a5e9c0ab844847d9e4b15337869e58b1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e9c0ab844847d9e4b15337869e58b1e">&#9670;&nbsp;</a></span>isPatchBoundary()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,10 +924,40 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="../../d2/d4c/a01307.html">Dune::IGA::NURBSPatchGeometry</a>&lt; dim, dimworld, ScalarType &gt;::LocalView::volume </td>
+          <td class="memname">bool <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::isPatchBoundary </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>scaleOrder</em> = <code>1</code></td><td>)</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Checks if the element given by it's id is on the patch boundary. </p>
+
+</div>
+</div>
+<a id="a37d6c07b123a1750d9a61ddff39b0bcd" name="a37d6c07b123a1750d9a61ddff39b0bcd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37d6c07b123a1750d9a61ddff39b0bcd">&#9670;&nbsp;</a></span>isTrimmed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::isTrimmed </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>realIndex</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -382,15 +970,413 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d3/d8b/a00059_source.html">nurbspatchgeometry.hh</a></li>
+<a id="a0f7778e47b0277925c9b55643e12ac34" name="a0f7778e47b0277925c9b55643e12ac34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f7778e47b0277925c9b55643e12ac34">&#9670;&nbsp;</a></span>numBoundarySegments()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::numBoundarySegments </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac124f2d6478ad0cc94a8bba860a8f100" name="ac124f2d6478ad0cc94a8bba860a8f100"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac124f2d6478ad0cc94a8bba860a8f100">&#9670;&nbsp;</a></span>originalGridSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;unsigned int codim, std::integral T = int&gt; <br />
+requires (codim == 0 || codim == dim)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; unsigned int, dim &gt; <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::originalGridSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a931930f344ea3bb14acfea08b1a6c0c2" name="a931930f344ea3bb14acfea08b1a6c0c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a931930f344ea3bb14acfea08b1a6c0c2">&#9670;&nbsp;</a></span>originalSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::originalSize </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codim</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of entities of a given codimension in the untrimmed case. </p>
+
+</div>
+</div>
+<a id="ac09063fe348737a4cf5740fb943503ce" name="ac09063fe348737a4cf5740fb943503ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac09063fe348737a4cf5740fb943503ce">&#9670;&nbsp;</a></span>parameterSpaceGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;typename ctype  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::parameterSpaceGrid </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>scale</em> = <code>0</code></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae6fd19c08c241abe0d0e660b3720106e" name="ae6fd19c08c241abe0d0e660b3720106e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6fd19c08c241abe0d0e660b3720106e">&#9670;&nbsp;</a></span>patchBoundaryIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::patchBoundaryIndex </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ocdim1Id</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the boundary index of the passed codim 1 entity index If the passed codim 1 entity does not lie on the boundary this method returns random indices! </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ocdim1Id</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Increasing boundary index </dd></dl>
+
+</div>
+</div>
+<a id="a6f05b0dd7c673b4de227bd142801fec1" name="a6f05b0dd7c673b4de227bd142801fec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f05b0dd7c673b4de227bd142801fec1">&#9670;&nbsp;</a></span>patchBoundaryIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::patchBoundaryIndex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d69/a01311.html#a1b24a718c9d5e0a1979807b68d8abd06">RealIndex</a>&#160;</td>
+          <td class="paramname"><em>intersectionRealIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8c5e537e69a6e29874d6a8bb556e12f" name="ad8c5e537e69a6e29874d6a8bb556e12f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8c5e537e69a6e29874d6a8bb556e12f">&#9670;&nbsp;</a></span>prepareForNoTrim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::prepareForNoTrim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b4ffa3d069252b1e2a18c1728f0ff31" name="a4b4ffa3d069252b1e2a18c1728f0ff31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b4ffa3d069252b1e2a18c1728f0ff31">&#9670;&nbsp;</a></span>reportTrimError()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::reportTrimError </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns false if an error happened during processing the trim </p>
+
+</div>
+</div>
+<a id="a8e34f489686fa7e3324e76fb10ef6a09" name="a8e34f489686fa7e3324e76fb10ef6a09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e34f489686fa7e3324e76fb10ef6a09">&#9670;&nbsp;</a></span>scalingAndOffset()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::array&lt; double, dim &gt;, std::array&lt; double, dim &gt; &gt; <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::scalingAndOffset </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40">DirectIndex</a>&#160;</td>
+          <td class="paramname"><em>directIndex</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9caea6e812ee36c5fdd03fb50424e38e" name="a9caea6e812ee36c5fdd03fb50424e38e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9caea6e812ee36c5fdd03fb50424e38e">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::size </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>codim</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns the number of entities of a given codimension (considers trimmed elements) </p>
+
+</div>
+</div>
+<a id="a3aad020f2cf26f7e7e023a1804277316" name="a3aad020f2cf26f7e7e023a1804277316"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3aad020f2cf26f7e7e023a1804277316">&#9670;&nbsp;</a></span>spanAndDirectionFromDirectIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;std::integral auto codim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::pair&lt; std::array&lt; int, dim &gt;, std::array&lt; Impl::FixedOrFree, dim &gt; &gt; <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::spanAndDirectionFromDirectIndex </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>directIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns span indices in the knot vectors and the fixed or free directions of the entity from the directindex. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">codim</td><td>codim of the entity </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">directIndex</td><td>index of the entity This index starts from 0 for each codim. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>pair of spanindices and free or fixed direction array </dd></dl>
+
+</div>
+</div>
+<a id="a5249e2a977d19e2b05e6ba1729211a99" name="a5249e2a977d19e2b05e6ba1729211a99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5249e2a977d19e2b05e6ba1729211a99">&#9670;&nbsp;</a></span>typesInCodim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../de/d69/a01311.html#adbad8099757c8c280639f3edc4607714">Types</a> <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::typesInCodim </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>codim</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b6b0f6f2f961787e265673bcedf1f56" name="a1b6b0f6f2f961787e265673bcedf1f56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b6b0f6f2f961787e265673bcedf1f56">&#9670;&nbsp;</a></span>validKnotSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::array&lt; int, dim &gt; <a class="el" href="../../de/d69/a01311.html">Dune::IGA::NURBSPatch</a>&lt; dim, dimworld, ScalarType &gt;::validKnotSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns the size of knot spans where knot[i] &lt; knot[i+1] of each dimension </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d1/dc1/a00092_source.html">nurbspatch.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/d44/a00162.html">IGA</a></li><li class="navelem"><a class="el" href="../../d2/d4c/a01307.html">NURBSPatchGeometry</a></li><li class="navelem"><a class="el" href="../../de/d69/a01311.html">LocalView</a></li>
+    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/d44/a00162.html">IGA</a></li><li class="navelem"><a class="el" href="../../de/d69/a01311.html">NURBSPatch</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

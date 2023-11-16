@@ -1,11 +1,22 @@
 var a01247 =
 [
-    [ "Entity", "dd/d95/a01247.html#ab5ed0e7d7966fbbd82f2927a02865a3f", null ],
-    [ "NurbsHierarchicIterator", "dd/d95/a01247.html#a13c8cbde6859db4edbe08bef690c7edb", null ],
-    [ "dereference", "dd/d95/a01247.html#af364067c04c1112e111d205bb1f218d4", null ],
-    [ "equals", "dd/d95/a01247.html#a6e8197dd0af7d82c7905cba7af8c42dc", null ],
-    [ "increment", "dd/d95/a01247.html#aba13f2bc447a984cccc3a5297d202ed1", null ],
-    [ "operator*", "dd/d95/a01247.html#a6acd34d38a292b42e8cd7ebbe5952136", null ],
-    [ "operator<=>", "dd/d95/a01247.html#a4347403de0b9c96a4a26313edd846c6c", null ],
-    [ "nurbsEntity", "dd/d95/a01247.html#a99753df9e851bebc039c3bf842e5b8f4", null ]
+    [ "EntitySeed", "dd/d95/a01247.html#a8ec7bd0a7623b36cfcece97788535d21", null ],
+    [ "Geometry", "dd/d95/a01247.html#a0cbc47141021dc023a92e7757543eae3", null ],
+    [ "GridView", "dd/d95/a01247.html#a2bbd69e1c74fc334a6d678dfb562a24c", null ],
+    [ "LocalIntersectionGeometry", "dd/d95/a01247.html#aaf38aa3a1d86377c2659a19746766675", null ],
+    [ "NURBSGridEntity", "dd/d95/a01247.html#a09ed00ea44130b1adbf4de91cc411351", null ],
+    [ "NURBSGridEntity", "dd/d95/a01247.html#a586ae335f61dea9fb90800338fdaddaa", null ],
+    [ "equals", "dd/d95/a01247.html#a37bb477116d3438d43992558d4a56555", null ],
+    [ "geometry", "dd/d95/a01247.html#ab91e0badc08d85028310e791b97940b4", null ],
+    [ "getIndex", "dd/d95/a01247.html#ae91e1bb02055bcddf351701fabc08ece", null ],
+    [ "level", "dd/d95/a01247.html#aa4d1e67eeb5ad2d8cdff5ba9f1825937", null ],
+    [ "operator<=>", "dd/d95/a01247.html#afd5c10834bf89e827549bf4597ebd265", null ],
+    [ "partitionType", "dd/d95/a01247.html#ac72a245a9d253fccf7e649067c6c61e7", null ],
+    [ "seed", "dd/d95/a01247.html#aa4c2626036271dc5bb0c8873121f7f73", null ],
+    [ "subEntities", "dd/d95/a01247.html#a62c940a2831c73937ea1a4334ccd95bd", null ],
+    [ "type", "dd/d95/a01247.html#acffcaac7818d6f508614f636e4565fe7", null ],
+    [ "codimension", "dd/d95/a01247.html#a7dbb42697c1111f33461563b260b4d25", null ],
+    [ "dimension", "dd/d95/a01247.html#a194e4f2b7e01a0eb2c0027504d316bdb", null ],
+    [ "dimworld", "dd/d95/a01247.html#ad6e9b444b63d955c54b8253f806c172f", null ],
+    [ "mydimension", "dd/d95/a01247.html#a7cbb03d7f2ecd210e99c65df84732fc8", null ]
 ];

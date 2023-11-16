@@ -1,9 +1,11 @@
 var a01267 =
 [
-    [ "GridView", "d4/d41/a01267.html#aee8e13698de38303b6de769d11d3569b", null ],
-    [ "IdType", "d4/d41/a01267.html#a8d048896c9546abc9f15015bdfb5b3d3", null ],
-    [ "IgaIdSet", "d4/d41/a01267.html#a093f9b70ec11610ed61326b5fb7124e4", null ],
-    [ "id", "d4/d41/a01267.html#ad50e90cf1d5a5b05e78100eb139711f6", null ],
-    [ "id", "d4/d41/a01267.html#a3aca90c2ffea68b28c467010d2dec7ae", null ],
-    [ "subId", "d4/d41/a01267.html#a2e607fdc32cb4cf9033b39acc7bbd885", null ]
+    [ "Reference", "d4/d41/a01267.html#a2957445f0b32b8a83470eaf846dd87d7", null ],
+    [ "NURBSGridInterSectionIterator", "d4/d41/a01267.html#ae039739658f1a0a1ecc64ecd0c6240a1", null ],
+    [ "NURBSGridInterSectionIterator", "d4/d41/a01267.html#aae18adf13b82973ece9ca06ad5bcac74", null ],
+    [ "NURBSGridInterSectionIterator", "d4/d41/a01267.html#a3a72f225e0a9012c96c4e388539d341a", null ],
+    [ "dereference", "d4/d41/a01267.html#a6cd435e2fe5a3dcfbfcdc440ab8667dd", null ],
+    [ "equals", "d4/d41/a01267.html#ab555a9055aa6537b467f5bbd40fb17b2", null ],
+    [ "increment", "d4/d41/a01267.html#a74e2285134663f9da1ee24ef7fd74722", null ],
+    [ "operator<=>", "d4/d41/a01267.html#af1bf0c22a0225f2519206d1a64b4de2b", null ]
 ];
