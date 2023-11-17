@@ -1,5 +1,4 @@
 var a00032 =
 [
-    [ "Dune::IGANEW::PatchGridLeafIntersectionIterator< GridImp >", "df/d18/a01071.html", "df/d18/a01071" ],
-    [ "Dune::IGANEW::PatchGridLevelIntersectionIterator< GridImp >", "d2/d49/a01067.html", "d2/d49/a01067" ]
+    [ "computeParameterSpaceCoordinate", "dc/d87/a00032.html#a804e6ba2e675b77dae8dffa5f2da5c75", null ]
 ];

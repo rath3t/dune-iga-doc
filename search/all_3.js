@@ -24,7 +24,7 @@ var searchData=
   ['directindex_21',['DirectIndex',['../de/d69/a01311.html#ac3712f473eed1b2db5108d5cfa4f2f40',1,'Dune::IGA::NURBSPatch']]],
   ['directset_22',['directSet',['../da/d06/a01403.html#af5f2f9ba770f1094fff9e6b9fcaf9028',1,'Dune::IGA::MultiDimensionNet::directSet(int index, ValueType &amp;&amp;value)'],['../da/d06/a01403.html#ae4a5ded60217e2087e4b3bcf1182ce01',1,'Dune::IGA::MultiDimensionNet::directSet(int index, const ValueType &amp;value)']]],
   ['directtomultiindex_23',['directToMultiIndex',['../da/d06/a01403.html#a3c713e3ac3ead6db1c499fd08b10ddeb',1,'Dune::IGA::MultiDimensionNet::directToMultiIndex(const int index) const'],['../da/d06/a01403.html#aeaa8b739dc365d2b2970a13b9adcb27d',1,'Dune::IGA::MultiDimensionNet::directToMultiIndex(const std::array&lt; int, netdim &gt; &amp;dimSize, const int index)'],['../d8/d31/a01407.html#a6a9405a7fdc3de01b76e6fda425069a0',1,'Dune::IGA::MultiDimensionNetIndex::directToMultiIndex(const int index) const'],['../d8/d31/a01407.html#aa265bbeec61ee70ca8a5170e4d8895f9',1,'Dune::IGA::MultiDimensionNetIndex::directToMultiIndex(const std::array&lt; int, netdim &gt; &amp;dimSize, const int index)']]],
-  ['disabled_24',['Disabled',['../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474ab9f5c797ebbf55adccdd8539a65a0241',1,'enums.hh']]],
+  ['disabled_24',['Disabled',['../dd/d32/a00041.html#a0348963ad9d3a1be93263e5997711474ab9f5c797ebbf55adccdd8539a65a0241',1,'enums.hh']]],
   ['divideable_25',['DivideAble',['../d9/ddc/a01423.html',1,'Dune::IGA::Concept']]],
   ['divideassignable_26',['DivideAssignAble',['../d1/df4/a01422.html',1,'Dune::IGA::Concept']]],
   ['domain_27',['Domain',['../de/de2/a00999.html#a390262ed4658a52f6cb6181fea0ba4c4',1,'Dune::IGA::Utilities::Domain']]],

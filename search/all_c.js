@@ -10,7 +10,7 @@ var searchData=
   ['maxlevel_7',['maxLevel',['../d7/dd6/a01167.html#a7d50ee6f94e9f9904247b15ab0577167',1,'Dune::IGA::NURBSGrid::maxLevel()'],['../dc/d10/a01003.html#a7d2ec861428d067027e5f82a550f1f6e',1,'Dune::IGANEW::PatchGrid::maxLevel()']]],
   ['maxmultiindexsize_8',['maxMultiIndexSize',['../d5/dad/a01207.html#aaa6074ad11b1fcf6ecf315673598d4d3',1,'Dune::Functions::NurbsPreBasis']]],
   ['maxnodesize_9',['maxNodeSize',['../d5/dad/a01207.html#aeed25fe7b4007adf6e1930ee803448c2',1,'Dune::Functions::NurbsPreBasis']]],
-  ['mdnet_2ehh_10',['mdnet.hh',['../d5/db1/a00140.html',1,'']]],
+  ['mdnet_2ehh_10',['mdnet.hh',['../d7/d06/a00131.html',1,'']]],
   ['metric_11',['metric',['../dd/dad/a01235.html#a8e3c07669f55e6c9b31dcf1ae15b35c7',1,'Dune::IGA::NURBSGeometry']]],
   ['mightbecoarsened_12',['mightBeCoarsened',['../d2/d4d/a01079.html#ad137150881de3e1a4187505118352431',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
   ['mightvanish_13',['mightVanish',['../dc/dc2/a01251.html#a398be23ae216c31513a89f1b38ad0965',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;']]],

@@ -18,7 +18,7 @@ var searchData=
   ['trimdata_5f_15',['trimData_',['../d7/dd6/a01167.html#abe2a0964a32e702015f947ec5a78467f',1,'Dune::IGA::NURBSGrid']]],
   ['trimelement_16',['trimElement',['../d3/da4/a01343.html#aeb71dc8dae2d0d21041c9f5a41ae5a5d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
   ['trimmed_17',['trimmed',['../db/d44/a00162.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGA']]],
-  ['trimming_18',['Trimming',['../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474',1,'enums.hh']]],
+  ['trimming_18',['Trimming',['../dd/d32/a00041.html#a0348963ad9d3a1be93263e5997711474',1,'enums.hh']]],
   ['trims_19',['trims',['../de/df1/a01151.html#a61a53e394317f3844be719ad7cfdd240',1,'Dune::IGA::Ibra::BrepLoopRepresentation::trims()'],['../db/d07/a01155.html#a0ab2de7a74ccb203dca621407df7eeca',1,'Dune::IGA::Ibra::BrepLoop::trims()'],['../d7/de8/a01159.html#a0b18289437b2c70cbb84ce06024107f4',1,'Dune::IGA::Ibra::BrepRepresentation::trims()'],['../d6/d27/a01163.html#aff01becf209101c0944a633e2779f98b',1,'Dune::IGA::Ibra::Brep::trims()']]],
   ['type_20',['type',['../d2/d4c/a01307.html#a84c5d66c15fe25ce25516b5b91b1f374',1,'Dune::IGA::NURBSLocalGeometry']]],
   ['type_21',['Type',['../dc/de6/a00167.html#a7e1d9b847ff31435dac790c39d02451f',1,'Dune::IGA::Ibra']]],
@@ -28,5 +28,5 @@ var searchData=
   ['types_25',['types',['../d7/d88/a01255.html#a46e46bfc05ea890445ccabe2d84f3b7a',1,'Dune::IGA::NURBSGridLeafIndexSet::types()'],['../de/d6d/a01095.html#a2f2d651cefcbc797d8b36489663afec8',1,'Dune::IGANEW::PatchGridLeafIndexSet::types()'],['../d6/d0d/a01091.html#a0209d638ec5f9e20820fac61c103c753',1,'Dune::IGANEW::PatchGridLevelIndexSet::types()']]],
   ['typesincodim_26',['typesInCodim',['../de/d69/a01311.html#a5249e2a977d19e2b05e6ba1729211a99',1,'Dune::IGA::NURBSPatch']]],
   ['typestring_27',['typeString',['../de/de4/a01135.html#a51d455d391e155f6f736a2ec40b7fc69',1,'Dune::IGA::Ibra::IbraBase']]],
-  ['typetraits_2ehh_28',['typetraits.hh',['../d1/d88/a00128.html',1,'']]]
+  ['typetraits_2ehh_28',['typetraits.hh',['../d5/db1/a00140.html',1,'']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: igarefinedgeometries.hh File Reference</title>
+<title>dune-iga: nurbsgridentity.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,18 +93,27 @@ $(document).ready(function(){initNavTree('df/dc8/a00122.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">igarefinedgeometries.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">nurbsgridentity.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/geometry/multilineargeometry.hh&gt;</code><br />
-<code>#include &lt;dune/geometry/virtualrefinement.hh&gt;</code><br />
+
+<p>The NURBSGridEntity class.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d09/a00077_source.html">dune/iga/nurbsintersection.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d00/a00113_source.html">dune/iga/nurbsleafgridview.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d24/a00068_source.html">dune/iga/nurbspatch.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/gridenums.hh&gt;</code><br />
 </div>
 <p><a href="../../df/dc8/a00122_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d70/a01187.html">Dune::IGA::IGARefinedGeometries&lt; GridView &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d95/a01247.html">Dune::IGA::NURBSGridEntity&lt; codim, dim, GridImpl &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc2/a01251.html">Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -113,13 +122,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:db/d44/a00162"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a768d04aefa0c03f55112d5b201dcaec9"><td class="memTemplParams" colspan="2">template&lt;std::integral auto codim, std::integral auto dim, typename GridImp &gt; </td></tr>
+<tr class="memitem:a768d04aefa0c03f55112d5b201dcaec9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a768d04aefa0c03f55112d5b201dcaec9">Dune::IGA::referenceElement</a> (const NURBSGridEntity&lt; codim, dim, const GridImp &gt; &amp;e)</td></tr>
+<tr class="separator:a768d04aefa0c03f55112d5b201dcaec9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c69da45b9bd2ab01a6e4ba356bfcb6d"><td class="memTemplParams" colspan="2">template&lt;std::integral auto codim, std::integral auto dim, typename GridImp &gt; </td></tr>
+<tr class="memitem:a2c69da45b9bd2ab01a6e4ba356bfcb6d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a2c69da45b9bd2ab01a6e4ba356bfcb6d">Dune::IGA::referenceElement</a> (const NURBSGridEntity&lt; 0, dim, const GridImp &gt; &amp;e)</td></tr>
+<tr class="separator:a2c69da45b9bd2ab01a6e4ba356bfcb6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The NURBSGridEntity class. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li><li class="navelem"><a class="el" href="../../df/dc8/a00122.html">igarefinedgeometries.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../df/dc8/a00122.html">nurbsgridentity.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

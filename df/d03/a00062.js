@@ -1,5 +1,5 @@
 var a00062 =
 [
-    [ "Dune::IGA::NURBSPatchGeometry< dim, dimworld, ScalarType >", "db/da8/a01323.html", "db/da8/a01323" ],
-    [ "Dune::IGA::NURBSPatchGeometry< dim, dimworld, ScalarType >::LocalView", "d4/d2c/a01327.html", "d4/d2c/a01327" ]
+    [ "Dune::IGANEW::PatchGridLeafIntersectionIterator< GridImp >", "df/d18/a01071.html", "df/d18/a01071" ],
+    [ "Dune::IGANEW::PatchGridLevelIntersectionIterator< GridImp >", "d2/d49/a01067.html", "d2/d49/a01067" ]
 ];

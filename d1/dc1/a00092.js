@@ -1,4 +1,4 @@
 var a00092 =
 [
-    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "de/d69/a01311.html", "de/d69/a01311" ]
+    [ "closestPointProjectionByTrustRegion", "d1/dc1/a00092.html#a7a62c0cc97a46970cbdfeaa02f5afa2e", null ]
 ];
