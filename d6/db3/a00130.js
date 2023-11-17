@@ -1,12 +1,12 @@
 var a00130 =
 [
-    [ "canCommunicate< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d3/d7b/a00986.html", "d3/d7b/a00986" ],
-    [ "hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d9/d9a/a00998.html", "d9/d9a/a00998" ],
-    [ "hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d2/ddd/a00978.html", "d2/ddd/a00978" ],
-    [ "hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d1/d7a/a00982.html", "d1/d7a/a00982" ],
-    [ "isCartesian< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d2b/a01010.html", "d0/d2b/a01010" ],
-    [ "isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/dd0/a00994.html", "d4/dd0/a00994" ],
-    [ "isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "dd/d7a/a00990.html", "dd/d7a/a00990" ],
-    [ "threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d2/dd5/a01002.html", "d2/dd5/a01002" ],
-    [ "viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "dc/d81/a01006.html", "dc/d81/a01006" ]
+    [ "canCommunicate< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "da/deb/a00985.html", "da/deb/a00985" ],
+    [ "hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d28/a00997.html", "d0/d28/a00997" ],
+    [ "hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d5/d6c/a00977.html", "d5/d6c/a00977" ],
+    [ "hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "dd/d24/a00981.html", "dd/d24/a00981" ],
+    [ "isCartesian< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/ded/a01009.html", "d7/ded/a01009" ],
+    [ "isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "da/d0a/a00993.html", "da/d0a/a00993" ],
+    [ "isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/d95/a00989.html", "d4/d95/a00989" ],
+    [ "threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/d59/a01001.html", "df/d59/a01001" ],
+    [ "viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/d06/a01005.html", "d7/d06/a01005" ]
 ];

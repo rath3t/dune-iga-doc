@@ -1,101 +1,101 @@
 var hierarchy =
 [
     [ "std::array< T >", null, [
-      [ "Dune::IGANEW::Utilities::Domain< ScalarType >", "df/d9c/a00958.html", null ]
+      [ "Dune::IGANEW::Utilities::Domain< ScalarType >", "d1/df7/a00957.html", null ]
     ] ],
-    [ "Dune::IGA::Boundary", "dc/d19/a01190.html", null ],
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "dc/d83/a01254.html", null ],
+    [ "Dune::IGA::Boundary", "d3/d10/a01189.html", null ],
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d3/d0b/a01253.html", null ],
     [ "Dune::BoundarySegment", null, [
-      [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "d4/d22/a01250.html", null ]
+      [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "d3/d7b/a01249.html", null ]
     ] ],
-    [ "Dune::IGANEW::BsplineBasis1D< ScalarType_ >", "d6/dea/a01094.html", null ],
-    [ "Dune::Capabilities::canCommunicate< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d3/d7b/a00986.html", null ],
-    [ "Dune::IGANEW::ControlPoint< VT >", "d3/dca/a00954.html", null ],
-    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d8/d11/a01178.html", null ],
-    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d3/dc7/a01170.html", null ],
-    [ "Dune::IGA::DomainInformation", "d7/d04/a01246.html", null ],
-    [ "Dune::IGA::Trim::ElementBoundaries", "d0/d32/a01198.html", null ],
-    [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d3/d08/a01018.html", null ],
+    [ "Dune::IGANEW::BsplineBasis1D< ScalarType_ >", "de/d1c/a01093.html", null ],
+    [ "Dune::Capabilities::canCommunicate< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "da/deb/a00985.html", null ],
+    [ "Dune::IGANEW::ControlPoint< VT >", "d5/da3/a00953.html", null ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/d98/a01177.html", null ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d7/daf/a01169.html", null ],
+    [ "Dune::IGA::DomainInformation", "d1/d31/a01245.html", null ],
+    [ "Dune::IGA::Trim::ElementBoundaries", "d4/d10/a01197.html", null ],
+    [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d3/ded/a01017.html", null ],
     [ "EntityDefaultImplementation", null, [
-      [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "de/d41/a01030.html", null ],
-      [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d9/d8e/a01050.html", null ]
+      [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "d0/daa/a01029.html", null ],
+      [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d0/d22/a01049.html", null ]
     ] ],
     [ "std::false_type", null, [
-      [ "is_instantiation_of< Template, T >", "db/d32/a01122.html", null ]
+      [ "is_instantiation_of< Template, T >", "dd/de4/a01121.html", null ]
     ] ],
     [ "GeometryDefaultImplementation", null, [
-      [ "Dune::IGANEW::PatchGridGeometry< mydim, coorddim, GridImp >", "d5/d4c/a01058.html", null ],
-      [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "da/d73/a01090.html", null ]
+      [ "Dune::IGANEW::PatchGridGeometry< mydim, coorddim, GridImp >", "d2/db8/a01057.html", null ],
+      [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d3/dc4/a01089.html", null ]
     ] ],
     [ "GridDefaultImplementation< dim, dimworld, double, PatchGridFamily< dim, dimworld, Trimming::Disabled, double, YaspGrid< dim, TensorProductCoordinates< double, dim > > > >", null, [
-      [ "Dune::IGANEW::PatchGrid< dim, dimworld, trim_, ScalarType, HostGrid >", "df/dce/a00974.html", null ]
+      [ "Dune::IGANEW::PatchGrid< dim, dimworld, trim_, ScalarType, HostGrid >", "d3/da5/a00973.html", null ]
     ] ],
-    [ "Dune::Capabilities::hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d9/d9a/a00998.html", null ],
-    [ "Dune::Capabilities::hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d2/ddd/a00978.html", null ],
-    [ "Dune::Capabilities::hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d1/d7a/a00982.html", null ],
-    [ "Dune::IGANEW::HostGridAccess< Grid >", "d1/dd8/a01022.html", null ],
-    [ "Dune::IGA::Ibra::IbraBase", "d0/d61/a01130.html", [
-      [ "Dune::IGA::Ibra::IbraNURBSData< 1, 2 >", "dd/de2/a01134.html", null ],
-      [ "Dune::IGA::Ibra::Brep< worldDim >", "df/db5/a01158.html", null ],
-      [ "Dune::IGA::Ibra::BrepLoop", "d2/d7b/a01150.html", null ],
-      [ "Dune::IGA::Ibra::BrepLoopRepresentation", "de/d07/a01146.html", null ],
-      [ "Dune::IGA::Ibra::BrepRepresentation", "d5/d16/a01154.html", null ],
-      [ "Dune::IGA::Ibra::BrepTrim", "d3/ddc/a01142.html", null ],
-      [ "Dune::IGA::Ibra::BrepTrimRepresentation", "d0/d39/a01138.html", null ],
-      [ "Dune::IGA::Ibra::IbraNURBSData< dim, worldDim >", "dd/de2/a01134.html", null ]
+    [ "Dune::Capabilities::hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d28/a00997.html", null ],
+    [ "Dune::Capabilities::hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d5/d6c/a00977.html", null ],
+    [ "Dune::Capabilities::hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "dd/d24/a00981.html", null ],
+    [ "Dune::IGANEW::HostGridAccess< Grid >", "d5/dfb/a01021.html", null ],
+    [ "Dune::IGA::Ibra::IbraBase", "d9/d17/a01129.html", [
+      [ "Dune::IGA::Ibra::IbraNURBSData< 1, 2 >", "db/d28/a01133.html", null ],
+      [ "Dune::IGA::Ibra::Brep< worldDim >", "d9/d25/a01157.html", null ],
+      [ "Dune::IGA::Ibra::BrepLoop", "d8/d02/a01149.html", null ],
+      [ "Dune::IGA::Ibra::BrepLoopRepresentation", "d9/d65/a01145.html", null ],
+      [ "Dune::IGA::Ibra::BrepRepresentation", "dc/d06/a01153.html", null ],
+      [ "Dune::IGA::Ibra::BrepTrim", "de/df6/a01141.html", null ],
+      [ "Dune::IGA::Ibra::BrepTrimRepresentation", "d6/d6e/a01137.html", null ],
+      [ "Dune::IGA::Ibra::IbraNURBSData< dim, worldDim >", "db/d28/a01133.html", null ]
     ] ],
-    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "dc/dee/a01166.html", null ],
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d8/d92/a01165.html", null ],
     [ "IdSet", null, [
-      [ "Dune::IGANEW::PatchGridGlobalIdSet< const Dune::IGANEW::PatchGrid >", "d5/d67/a01070.html", null ],
-      [ "Dune::IGANEW::PatchGridLocalIdSet< const Dune::IGANEW::PatchGrid >", "d7/df7/a01074.html", null ],
-      [ "Dune::IGANEW::PatchGridGlobalIdSet< GridImp >", "d5/d67/a01070.html", null ],
-      [ "Dune::IGANEW::PatchGridLocalIdSet< GridImp >", "d7/df7/a01074.html", null ]
+      [ "Dune::IGANEW::PatchGridGlobalIdSet< const Dune::IGANEW::PatchGrid >", "d8/d18/a01069.html", null ],
+      [ "Dune::IGANEW::PatchGridLocalIdSet< const Dune::IGANEW::PatchGrid >", "d9/d7c/a01073.html", null ],
+      [ "Dune::IGANEW::PatchGridGlobalIdSet< GridImp >", "d8/d18/a01069.html", null ],
+      [ "Dune::IGANEW::PatchGridLocalIdSet< GridImp >", "d9/d7c/a01073.html", null ]
     ] ],
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "dd/de9/a01182.html", null ],
+    [ "Dune::IGA::IGARefinedGeometries< GridView >", "de/db5/a01181.html", null ],
     [ "IndexSet", null, [
-      [ "Dune::IGANEW::PatchGridLeafIndexSet< const Dune::IGANEW::PatchGrid >", "d0/dfb/a01066.html", null ],
-      [ "Dune::IGANEW::PatchGridLevelIndexSet< const Dune::IGANEW::PatchGrid >", "d4/d8a/a01062.html", null ],
-      [ "Dune::IGANEW::PatchGridLeafIndexSet< GridImp >", "d0/dfb/a01066.html", null ],
-      [ "Dune::IGANEW::PatchGridLevelIndexSet< GridImp >", "d4/d8a/a01062.html", null ]
+      [ "Dune::IGANEW::PatchGridLeafIndexSet< const Dune::IGANEW::PatchGrid >", "d0/dc9/a01065.html", null ],
+      [ "Dune::IGANEW::PatchGridLevelIndexSet< const Dune::IGANEW::PatchGrid >", "de/d9e/a01061.html", null ],
+      [ "Dune::IGANEW::PatchGridLeafIndexSet< GridImp >", "d0/dc9/a01065.html", null ],
+      [ "Dune::IGANEW::PatchGridLevelIndexSet< GridImp >", "de/d9e/a01061.html", null ]
     ] ],
-    [ "Dune::Capabilities::isCartesian< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d2b/a01010.html", null ],
-    [ "Dune::Capabilities::isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/dd0/a00994.html", null ],
-    [ "Dune::Capabilities::isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "dd/d7a/a00990.html", null ],
-    [ "Dune::JSONGridFactory< Grid_ >", "da/dfb/a01174.html", null ],
-    [ "Dune::IGANEW::Nurbs< dim, ScalarType_ >::LocalView", "d4/da7/a01102.html", null ],
-    [ "Dune::IGANEW::MultiDimensionNet< netdim, ValueType >", "d6/d40/a01114.html", null ],
-    [ "Dune::IGANEW::MultiDimensionNet< dim, ControlPointType >", "d6/d40/a01114.html", null ],
-    [ "Dune::IGANEW::MultiDimensionNet< dim, ScalarType >", "d6/d40/a01114.html", null ],
-    [ "Dune::IGANEW::MultiDimensionNetIndex< netdim >", "dd/d09/a01118.html", null ],
-    [ "Dune::IGANEW::Nurbs< dim, ScalarType_ >", "d5/d17/a01098.html", null ],
-    [ "Dune::IGANEW::Nurbs< mydimension, ctype >", "d5/d17/a01098.html", null ],
-    [ "Dune::IGANEW::Nurbs< mydimension, double >", "d5/d17/a01098.html", null ],
-    [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "d4/d13/a01162.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "df/d88/a00962.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim, dimworld, double >", "df/d88/a00962.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< GridImp::dimension, coorddimension, ctype >", "df/d88/a00962.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< GridImp::dimension, worlddimension, ctype >", "df/d88/a00962.html", null ],
-    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "da/d4e/a01106.html", null ],
-    [ "Dune::IGANEW::NURBSPatchData< mydimension, worlddimension, ctype >", "da/d4e/a01106.html", null ],
-    [ "Dune::IGANEW::NURBSPatchData< mydimension, worlddimension, double >", "da/d4e/a01106.html", null ],
-    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "d4/d5d/a01202.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, trim_ >", "d0/daf/a00970.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< 0, Trimming::Disabled >", "d0/daf/a00970.html", null ],
-    [ "Dune::IGANEW::PatchGridEntitySeed< codim, GridImp >", "dd/d57/a01054.html", null ],
-    [ "Dune::IGANEW::PatchGridFamily< dim, dimworld, trim_, ScalarType, HostGrid >", "de/d02/a01026.html", null ],
-    [ "Dune::IGANEW::PatchGridHierarchicIterator< GridImp >", "da/d17/a01046.html", null ],
-    [ "Dune::IGANEW::PatchGridLeafIntersection< GridImp >", "db/dba/a01078.html", null ],
-    [ "Dune::IGANEW::PatchGridLeafIntersectionIterator< GridImp >", "d4/d56/a01042.html", null ],
-    [ "Dune::IGANEW::PatchGridLeafIterator< codim, pitype, GridImp >", "d9/df5/a01086.html", null ],
-    [ "Dune::IGANEW::PatchGridLevelIntersection< GridImp >", "dd/df1/a01082.html", null ],
-    [ "Dune::IGANEW::PatchGridLevelIntersectionIterator< GridImp >", "d4/dbc/a01038.html", null ],
-    [ "Dune::IGANEW::PatchGridLevelIterator< codim, pitype, GridImp >", "de/d91/a01034.html", null ],
-    [ "Dune::Capabilities::threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d2/dd5/a01002.html", null ],
-    [ "Dune::IGA::TransformToSpan< dim >", "d7/dc5/a01242.html", null ],
-    [ "Dune::IGA::TrimData", "d9/d2e/a01194.html", null ],
+    [ "Dune::Capabilities::isCartesian< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/ded/a01009.html", null ],
+    [ "Dune::Capabilities::isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "da/d0a/a00993.html", null ],
+    [ "Dune::Capabilities::isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/d95/a00989.html", null ],
+    [ "Dune::JSONGridFactory< Grid_ >", "d7/d0c/a01173.html", null ],
+    [ "Dune::IGANEW::Nurbs< dim, ScalarType_ >::LocalView", "de/d99/a01101.html", null ],
+    [ "Dune::IGANEW::MultiDimensionNet< netdim, ValueType >", "d8/ded/a01113.html", null ],
+    [ "Dune::IGANEW::MultiDimensionNet< dim, ControlPointType >", "d8/ded/a01113.html", null ],
+    [ "Dune::IGANEW::MultiDimensionNet< dim, ScalarType >", "d8/ded/a01113.html", null ],
+    [ "Dune::IGANEW::MultiDimensionNetIndex< netdim >", "d6/d8b/a01117.html", null ],
+    [ "Dune::IGANEW::Nurbs< dim, ScalarType_ >", "d1/dfa/a01097.html", null ],
+    [ "Dune::IGANEW::Nurbs< mydimension, ctype >", "d1/dfa/a01097.html", null ],
+    [ "Dune::IGANEW::Nurbs< mydimension, double >", "d1/dfa/a01097.html", null ],
+    [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "dc/d81/a01161.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "da/d45/a00961.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim, dimworld, double >", "da/d45/a00961.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< GridImp::dimension, coorddimension, ctype >", "da/d45/a00961.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< GridImp::dimension, worlddimension, ctype >", "da/d45/a00961.html", null ],
+    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "de/d1d/a01105.html", null ],
+    [ "Dune::IGANEW::NURBSPatchData< mydimension, worlddimension, ctype >", "de/d1d/a01105.html", null ],
+    [ "Dune::IGANEW::NURBSPatchData< mydimension, worlddimension, double >", "de/d1d/a01105.html", null ],
+    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "de/df7/a01201.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, trim_ >", "d7/dfd/a00969.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< 0, Trimming::Disabled >", "d7/dfd/a00969.html", null ],
+    [ "Dune::IGANEW::PatchGridEntitySeed< codim, GridImp >", "dc/d99/a01053.html", null ],
+    [ "Dune::IGANEW::PatchGridFamily< dim, dimworld, trim_, ScalarType, HostGrid >", "db/d23/a01025.html", null ],
+    [ "Dune::IGANEW::PatchGridHierarchicIterator< GridImp >", "d7/d46/a01045.html", null ],
+    [ "Dune::IGANEW::PatchGridLeafIntersection< GridImp >", "d0/dd3/a01077.html", null ],
+    [ "Dune::IGANEW::PatchGridLeafIntersectionIterator< GridImp >", "d1/d83/a01041.html", null ],
+    [ "Dune::IGANEW::PatchGridLeafIterator< codim, pitype, GridImp >", "d2/df3/a01085.html", null ],
+    [ "Dune::IGANEW::PatchGridLevelIntersection< GridImp >", "dd/dee/a01081.html", null ],
+    [ "Dune::IGANEW::PatchGridLevelIntersectionIterator< GridImp >", "d2/d41/a01037.html", null ],
+    [ "Dune::IGANEW::PatchGridLevelIterator< codim, pitype, GridImp >", "d2/d57/a01033.html", null ],
+    [ "Dune::Capabilities::threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/d59/a01001.html", null ],
+    [ "Dune::IGA::TransformToSpan< dim >", "d3/d07/a01241.html", null ],
+    [ "Dune::IGA::TrimData", "dd/d43/a01193.html", null ],
     [ "std::true_type", null, [
-      [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d56/a01014.html", null ],
-      [ "is_instantiation_of< Template, Template< Args... > >", "db/d1e/a01126.html", null ]
+      [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/d59/a01013.html", null ],
+      [ "is_instantiation_of< Template, Template< Args... > >", "d6/dc4/a01125.html", null ]
     ] ],
-    [ "Dune::Capabilities::viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "dc/d81/a01006.html", null ]
+    [ "Dune::Capabilities::viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/d06/a01005.html", null ]
 ];

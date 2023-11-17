@@ -1,6 +1,6 @@
 var a00053 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d3/dca/a00954.html", "d3/dca/a00954" ],
+    [ "Dune::IGANEW::ControlPoint< VT >", "d5/da3/a00953.html", "d5/da3/a00953" ],
     [ "operator*", "dc/dee/a00053.html#a3f232585a065fb77fc7443359eda7b95", null ],
     [ "operator*", "dc/dee/a00053.html#aab23834de62fd10b103b27e062dccfbd", null ],
     [ "operator+", "dc/dee/a00053.html#a33477ec847c0f90f5090046a585d3488", null ],

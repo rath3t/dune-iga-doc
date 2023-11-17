@@ -1,5 +1,5 @@
 var a00083 =
 [
-    [ "is_instantiation_of< Template, T >", "db/d32/a01122.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "db/d1e/a01126.html", null ]
+    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "d0/daa/a01029.html", "d0/daa/a01029" ],
+    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d0/d22/a01049.html", "d0/d22/a01049" ]
 ];

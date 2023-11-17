@@ -1,4 +1,4 @@
 var a00047 =
 [
-    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, trim_ >", "d0/daf/a00970.html", "d0/daf/a00970" ]
+    [ "closestPointProjectionByTrustRegion", "d6/d2d/a00047.html#a5a86887937350922b04eaf5967ac33b9", null ]
 ];
