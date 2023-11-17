@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['dune_2diga_20documentation_0',['dune-iga documentation',['../index.html',1,'']]]
+  ['deprecated_20list_0',['Deprecated List',['../d7/d12/a00126.html',1,'']]],
+  ['dune_2diga_20documentation_1',['dune-iga documentation',['../index.html',1,'']]]
 ];

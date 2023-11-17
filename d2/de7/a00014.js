@@ -1,5 +1,5 @@
 var a00014 =
 [
-    [ "Dune::IGANEW::PatchGridLeafIntersection< GridImp >", "d0/dd3/a01077.html", "d0/dd3/a01077" ],
-    [ "Dune::IGANEW::PatchGridLevelIntersection< GridImp >", "dd/dee/a01081.html", "dd/dee/a01081" ]
+    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "de/d26/a01035.html", "de/d26/a01035" ],
+    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d2/d71/a01055.html", "d2/d71/a01055" ]
 ];

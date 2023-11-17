@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['tensorgrid_0',['TensorGrid',['../de/df7/a01201.html#a09e1f768583f5f18b9df7a3cd45c16ee',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['tensorgridelementgeometry_1',['TensorGridElementGeometry',['../de/df7/a01201.html#afcfb0ddb8c77470f4752282a63ac9f3d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['tensorgridview_2',['TensorGridView',['../de/df7/a01201.html#a6c3707db6a3e9570c04c0115b3991fcb',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['traits_3',['Traits',['../db/d23/a01025.html#aea565b00b4a34fa9431a309820a6957b',1,'Dune::IGANEW::PatchGridFamily::Traits()'],['../d3/da5/a00973.html#ac1732a8b60fb3b73b683d96e17488ebf',1,'Dune::IGANEW::PatchGrid::Traits()']]],
-  ['types_4',['Types',['../de/d9e/a01061.html#a5d20b80f7c60adb00b0b364353d4172d',1,'Dune::IGANEW::PatchGridLevelIndexSet::Types()'],['../d0/dc9/a01065.html#a5a1a954bcd10906f768f0cb6b5ae154c',1,'Dune::IGANEW::PatchGridLeafIndexSet::Types()']]]
+  ['scalartype_0',['ScalarType',['../d6/dbc/a01099.html#a953b0c575e742d8a703371c99037db79',1,'Dune::IGANEW::BsplineBasis1D::ScalarType()'],['../d9/d10/a01103.html#ac8e3864e814cbf6fbc9459fab93eb452',1,'Dune::IGANEW::Nurbs::ScalarType()'],['../de/d1a/a01179.html#a2b52197187bd75aefd972027495903c7',1,'Dune::JSONGridFactory::ScalarType()']]],
+  ['size_5ftype_1',['size_type',['../d0/d5a/a01199.html#a401b78d56f3a60443383e1ad654370ea',1,'Dune::Functions::NurbsPreBasis::size_type()'],['../da/d3f/a01215.html#ab19a70c9e32e266ff515ef6042716d0a',1,'Dune::Functions::NurbsNode::size_type()']]],
+  ['stringvector_2',['StringVector',['../de/df1/a01151.html#ab30c877d0fe57bf5b97555be6b5d2559',1,'Dune::IGA::Ibra::BrepLoopRepresentation::StringVector()'],['../d7/de8/a01159.html#a94f119b740cc4ce55e6bd721dddbe2c1',1,'Dune::IGA::Ibra::BrepRepresentation::StringVector()']]],
+  ['surface_3',['Surface',['../d2/df5/a00137.html#a1c3714f1b330303f0945eca12710d9e6',1,'Dune::IGA::Ibra']]],
+  ['surfacetype_4',['SurfaceType',['../d6/d27/a01163.html#afc5eab4d9fc91ce9a747b978b2608462',1,'Dune::IGA::Ibra::Brep']]]
 ];

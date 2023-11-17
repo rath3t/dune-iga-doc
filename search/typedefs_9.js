@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['matrixhelper_0',['MatrixHelper',['../d7/dfd/a00969.html#a0e558414ed1009d1291fb5357b16f8b4',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]]
+  ['leafintersectioniterator_0',['LeafIntersectionIterator',['../d2/d71/a01055.html#af15f0b240cac170b7d24a05192e1966a',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
+  ['levelintersectioniterator_1',['LevelIntersectionIterator',['../d2/d71/a01055.html#a08116cd45920b65d1ea2dc2dd23fdb5c',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
+  ['localcoordinate_2',['LocalCoordinate',['../d4/d94/a00967.html#a53b416fc4db181afc1222d204cf04d0b',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::LocalCoordinate()'],['../db/dbf/a00975.html#a4c49bfe289f06d0783d716501b4b0ffd',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::LocalCoordinate()'],['../de/de6/a01063.html#a2a9fe0c40fc103e56353f80aed7696cf',1,'Dune::IGANEW::PatchGridGeometry::LocalCoordinate()'],['../de/d6d/a01095.html#acda99e2f2545c5f29058308e9b24f8e5',1,'Dune::IGANEW::PatchGridLocalGeometry::LocalCoordinate()']]],
+  ['localcoordinateinpatch_3',['LocalCoordinateInPatch',['../de/de6/a01063.html#a402073861728cc49d2d86d0434dedebd',1,'Dune::IGANEW::PatchGridGeometry::LocalCoordinateInPatch()'],['../de/d6d/a01095.html#a0648d20ff98b1267ca4f72c2fc8a3770',1,'Dune::IGANEW::PatchGridLocalGeometry::LocalCoordinateInPatch()']]],
+  ['localgeometry_4',['LocalGeometry',['../d2/d71/a01055.html#adb0998479855dbc6f9ff2ef6e6598eea',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::LocalGeometry()'],['../d6/d9a/a01083.html#a55fde12fbb1fff292ea7d7bd4b4e18ec',1,'Dune::IGANEW::PatchGridLeafIntersection::LocalGeometry()'],['../d0/d1f/a01087.html#abf81e6b629ed3a9b13ec228c9a05d6cf',1,'Dune::IGANEW::PatchGridLevelIntersection::LocalGeometry()']]]
 ];

@@ -1,12 +1,13 @@
 var a00130 =
 [
-    [ "canCommunicate< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "da/deb/a00985.html", "da/deb/a00985" ],
-    [ "hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d28/a00997.html", "d0/d28/a00997" ],
-    [ "hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d5/d6c/a00977.html", "d5/d6c/a00977" ],
-    [ "hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "dd/d24/a00981.html", "dd/d24/a00981" ],
-    [ "isCartesian< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/ded/a01009.html", "d7/ded/a01009" ],
-    [ "isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "da/d0a/a00993.html", "da/d0a/a00993" ],
-    [ "isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/d95/a00989.html", "d4/d95/a00989" ],
-    [ "threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/d59/a01001.html", "df/d59/a01001" ],
-    [ "viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d7/d06/a01005.html", "d7/d06/a01005" ]
+    [ "Vector", "d8/d7a/a01292.html", null ],
+    [ "ControlPoint", "dc/dd5/a01293.html", null ],
+    [ "MultiplyAble", "d7/d88/a01294.html", null ],
+    [ "AddAble", "d2/d68/a01295.html", null ],
+    [ "SubstractAble", "d4/d64/a01296.html", null ],
+    [ "MultiplyAssignAble", "dc/d8c/a01297.html", null ],
+    [ "DivideAssignAble", "d4/d34/a01298.html", null ],
+    [ "DivideAble", "d8/d38/a01299.html", null ],
+    [ "NurbsGeometry", "d8/dc5/a01300.html", null ],
+    [ "This", "d3/d07/a01301.html", null ]
 ];

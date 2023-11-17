@@ -1,4 +1,4 @@
 var a00020 =
 [
-    [ "Dune::IGANEW::PatchGridHierarchicIterator< GridImp >", "d7/d46/a01045.html", "d7/d46/a01045" ]
+    [ "Dune::IGANEW::PatchGridLeafIterator< codim, pitype, GridImp >", "d6/d0d/a01091.html", "d6/d0d/a01091" ]
 ];

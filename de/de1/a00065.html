@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: gridcapabilities.hh File Reference</title>
+<title>dune-iga: hierachicpatchgridlocalgeometry.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,56 +94,39 @@ $(document).ready(function(){initNavTree('de/de1/a00065.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">gridcapabilities.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">hierachicpatchgridlocalgeometry.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>The PatchGridLocalGeometry class and its specializations.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/geometry.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/de0/a00050_source.html">dune/iga/hierarchicpatch/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
+</div>
 <p><a href="../../de/de1/a00065_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d6c/a00977.html">Dune::Capabilities::hasEntity&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt;, codim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">has entities for some codimensions as host grid  <a href="../../d5/d6c/a00977.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d24/a00981.html">Dune::Capabilities::hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt;, codim &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/deb/a00985.html">Dune::Capabilities::canCommunicate&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt;, codim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PatchGrid can communicate when the host grid can communicate.  <a href="../../da/deb/a00985.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d95/a00989.html">Dune::Capabilities::isLevelwiseConforming&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">has conforming level grids when host grid has  <a href="../../d4/d95/a00989.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d0a/a00993.html">Dune::Capabilities::isLeafwiseConforming&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">has conforming leaf grids when host grid has  <a href="../../da/d0a/a00993.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d28/a00997.html">Dune::Capabilities::hasBackupRestoreFacilities&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d59/a01001.html">Dune::Capabilities::threadSafe&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d06/a01005.html">Dune::Capabilities::viewThreadSafe&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ded/a01009.html">Dune::Capabilities::isCartesian&lt; IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d59/a01013.html">Dune::EnableBoundarySegmentIndexCheck&lt; Dune::IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ded/a01017.html">EnableLevelIntersectionIteratorCheck&lt; Dune::IGANEW::PatchGrid&lt; dim, dimworld, trim, ScalarType, HostGrid &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d6d/a01095.html">Dune::IGANEW::PatchGridLocalGeometry&lt; mydim, coorddim, GridImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:da/d72/a00124"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/a00124.html">Dune</a></td></tr>
+<tr class="memitem:d1/d88/a00128"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d88/a00128.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dc/dfe/a00125"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html">Dune::IGANEW</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d6/db3/a00130"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/db3/a00130.html">Dune::Capabilities</a></td></tr>
+<tr class="memitem:d9/d47/a00129"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d47/a00129.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The PatchGridLocalGeometry class and its specializations. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">gridcapabilities.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../de/de1/a00065.html">hierachicpatchgridlocalgeometry.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

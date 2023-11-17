@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['idtype_0',['IdType',['../d8/d18/a01069.html#a9bafce8adecdbfc5abce7dee6c5c6645',1,'Dune::IGANEW::PatchGridGlobalIdSet::IdType()'],['../d9/d7c/a01073.html#ac66cff8afaa7e2aa9c48351b676ae923',1,'Dune::IGANEW::PatchGridLocalIdSet::IdType()']]],
-  ['index_1',['Index',['../de/db5/a01181.html#a97f546935cd4cf34b919527ec5247bbf',1,'Dune::IGA::IGARefinedGeometries']]],
-  ['intersection_2',['Intersection',['../d1/d83/a01041.html#abede4a61528418dbe1b601a764cf6a1a',1,'Dune::IGANEW::PatchGridLeafIntersectionIterator::Intersection()'],['../d2/d41/a01037.html#a921f35b040c39a91c42d0ef8668f9885',1,'Dune::IGANEW::PatchGridLevelIntersectionIterator::Intersection()'],['../d3/d0b/a01253.html#a5fd0163b3e0e45b1b23f036029bddd58',1,'BoundaryPatchEnclosingVerticesPropertyTrimmed::Intersection()']]],
-  ['intpoint_3',['IntPoint',['../de/df7/a01201.html#aa6c8980b3745c0641404c448d0b35c6c',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['inttype_4',['intType',['../de/df7/a01201.html#a55b5a972d663f2eda00fffb9fc0901bb',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]]
+  ['hessian_0',['Hessian',['../d4/d94/a00967.html#a7a08b1313e9df7edeb0575148d806df1',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::Hessian()'],['../db/dbf/a00975.html#a0c177cd8c59b05c64f099e853a78dac7',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::Hessian()'],['../de/de6/a01063.html#a9c70ce8f0fce6a8f1da7ec5f468d43e5',1,'Dune::IGANEW::PatchGridGeometry::Hessian()'],['../de/d6d/a01095.html#a6d86a57ccdd8c1da68f9a0eb235eb33a',1,'Dune::IGANEW::PatchGridLocalGeometry::Hessian()']]],
+  ['hierarchiciterator_1',['HierarchicIterator',['../d2/d71/a01055.html#abebfdd624383b410dd6c8107d2e641bf',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
+  ['hostentity_2',['HostEntity',['../d0/d90/a01059.html#abc89476168d480c8c213713146f61617',1,'Dune::IGANEW::PatchGridEntitySeed']]],
+  ['hostentityseed_3',['HostEntitySeed',['../d0/d90/a01059.html#aa449031fa7666de9161df5f16d539d6b',1,'Dune::IGANEW::PatchGridEntitySeed']]],
+  ['hostgrid_4',['HostGrid',['../d2/d49/a01067.html#a19e4529be8a9eb5e1d611f1fe2bc813b',1,'Dune::IGANEW::PatchGridLevelIndexSet']]],
+  ['hostgridentity_5',['HostGridEntity',['../d2/d71/a01055.html#a65c6ce8ada6118b279d6cdffcae0580d',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
+  ['hostgridgeometry_6',['HostGridGeometry',['../de/de6/a01063.html#a021fdede4960c73772467eea66e6daee',1,'Dune::IGANEW::PatchGridGeometry::HostGridGeometry()'],['../de/d6d/a01095.html#a6500a1ddd4f3de20126f62df86e3da1e',1,'Dune::IGANEW::PatchGridLocalGeometry::HostGridGeometry()']]],
+  ['hostgridgeometrytype_7',['HostGridGeometryType',['../de/d6d/a01095.html#af607a0e7d0c9690e65d81a724ec191ab',1,'Dune::IGANEW::PatchGridLocalGeometry']]],
+  ['hostgridlocalgeometrytype_8',['HostGridLocalGeometryType',['../de/d6d/a01095.html#ac7d0ed3e2feaf1f9776f8af9fbebd8b7',1,'Dune::IGANEW::PatchGridLocalGeometry']]],
+  ['hostgridtype_9',['HostGridType',['../d8/d49/a00979.html#aeb00a1aad09e74b918260bd0859e08fd',1,'Dune::IGANEW::PatchGrid']]]
 ];
