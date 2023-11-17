@@ -1,15 +1,14 @@
 var searchData=
 [
-  ['basisfactory_0',['BasisFactory',['../d1/d0d/a00171.html',1,'Dune::Functions']]],
-  ['capabilities_1',['Capabilities',['../d9/d38/a00166.html',1,'Dune']]],
-  ['concept_2',['Concept',['../d8/df1/a00174.html',1,'Dune::IGA']]],
-  ['dune_3',['Dune',['../d6/d7d/a00161.html',1,'']]],
-  ['functions_4',['Functions',['../d5/dcb/a00170.html',1,'Dune']]],
-  ['geometrykernel_5',['GeometryKernel',['../d0/d48/a00165.html',1,'Dune::IGANEW']]],
-  ['ibra_6',['Ibra',['../dd/da7/a00168.html',1,'Dune::IGA']]],
-  ['iga_7',['IGA',['../db/d44/a00162.html',1,'Dune::IGA'],['../d5/de9/a00176.html',1,'Dune::Python::IGA']]],
-  ['iganew_8',['IGANEW',['../db/ddf/a00164.html',1,'Dune']]],
-  ['python_9',['Python',['../de/d45/a00175.html',1,'Dune']]],
-  ['trim_10',['Trim',['../d7/d3f/a00173.html',1,'Dune::IGA']]],
-  ['utilities_11',['Utilities',['../dd/dae/a00163.html',1,'Dune::IGA']]]
+  ['capabilities_0',['Capabilities',['../d6/db3/a00130.html',1,'Dune']]],
+  ['concept_1',['Concept',['../d5/d5b/a00135.html',1,'Dune::IGA::Concept'],['../d7/d12/a00126.html',1,'Dune::IGANEW::Concept']]],
+  ['dune_2',['Dune',['../da/d72/a00124.html',1,'']]],
+  ['functions_3',['Functions',['../d0/d5e/a00136.html',1,'Dune']]],
+  ['geometrykernel_4',['GeometryKernel',['../d1/d88/a00128.html',1,'Dune::IGANEW']]],
+  ['ibra_5',['Ibra',['../d0/de8/a00133.html',1,'Dune::IGA']]],
+  ['iga_6',['IGA',['../d5/deb/a00132.html',1,'Dune::IGA'],['../d4/ddd/a00138.html',1,'Dune::Python::IGA']]],
+  ['iganew_7',['IGANEW',['../dc/dfe/a00125.html',1,'Dune']]],
+  ['python_8',['Python',['../d2/df5/a00137.html',1,'Dune']]],
+  ['trim_9',['Trim',['../de/d76/a00134.html',1,'Dune::IGA']]],
+  ['utilities_10',['Utilities',['../df/dcd/a00127.html',1,'Dune::IGANEW']]]
 ];

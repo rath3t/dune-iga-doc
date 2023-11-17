@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: geohelper.hh File Reference</title>
+<title>dune-iga: subgridhelpers.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,61 +94,55 @@ $(document).ready(function(){initNavTree('d9/d77/a00095.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">geohelper.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">subgridhelpers.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;ranges&gt;</code><br />
-<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;mapbox/earcut.hpp&gt;</code><br />
+<code>#include &lt;dune/grid/common/boundarysegment.hh&gt;</code><br />
 </div>
 <p><a href="../../d9/d77/a00095_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df2/a01000.html">Dune::IGA::Utilities::Domain&lt; ScalarType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dc5/a01242.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d04/a01246.html">Dune::IGA::DomainInformation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d22/a01250.html">Dune::IGA::GridBoundarySegment&lt; dim, Transformer &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d6/d7d/a00161"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></td></tr>
+<tr class="memitem:da/d72/a00124"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/a00124.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:db/d44/a00162"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html">Dune::IGA</a></td></tr>
+<tr class="memitem:d5/deb/a00132"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/a00132.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dd/dae/a00163"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html">Dune::IGA::Utilities</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a25585768c010972feb9ad3e744e16623"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/a00132.html#a25585768c010972feb9ad3e744e16623">Dune::IGA::DomainType</a> = Utilities::Domain&lt; double &gt;</td></tr>
+<tr class="separator:a25585768c010972feb9ad3e744e16623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:abed12b304dff899714427441b8558f7b"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int dim, size_t dim2&gt; <br />
-requires (dim == dim2)</td></tr>
-<tr class="memitem:abed12b304dff899714427441b8558f7b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#abed12b304dff899714427441b8558f7b">Dune::IGA::Utilities::clampToBoundaryAndCheckIfIsAtAllBoundaries</a> (Dune::FieldVector&lt; ScalarType, dim &gt; &amp;x, const std::array&lt; Domain&lt; ScalarType &gt;, dim2 &gt; &amp;domain={})</td></tr>
-<tr class="separator:abed12b304dff899714427441b8558f7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3db3f379446d87eac1f9cc39abcbedd"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:aa3db3f379446d87eac1f9cc39abcbedd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#aa3db3f379446d87eac1f9cc39abcbedd">Dune::IGA::Utilities::linspace</a> (T a, T b, unsigned int N)</td></tr>
-<tr class="separator:aa3db3f379446d87eac1f9cc39abcbedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#ac6a185a07ec904f01c6563a6e01d4a7f">Dune::IGA::Utilities::clampToDomain</a> (T &amp;val, const Domain&lt; T &gt; &amp;dom)</td></tr>
-<tr class="separator:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6880eea38c01ebcd77300a8b8fa27c62"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a6880eea38c01ebcd77300a8b8fa27c62"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#a6880eea38c01ebcd77300a8b8fa27c62">Dune::IGA::Utilities::linspace</a> (std::array&lt; T, 2 &gt; ab, unsigned int N)</td></tr>
-<tr class="separator:a6880eea38c01ebcd77300a8b8fa27c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cac3b3b6837a6b5f5ced44e740bcd7a"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a8cac3b3b6837a6b5f5ced44e740bcd7a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#a8cac3b3b6837a6b5f5ced44e740bcd7a">Dune::IGA::Utilities::linspace</a> (Domain&lt; T &gt; ab, unsigned int N)</td></tr>
-<tr class="separator:a8cac3b3b6837a6b5f5ced44e740bcd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36c887e0deedc2b16c340ffcee35f961"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a36c887e0deedc2b16c340ffcee35f961"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#a36c887e0deedc2b16c340ffcee35f961">Dune::IGA::Utilities::mapToRange</a> (T value, const Domain&lt; T &gt; &amp;input, const Domain&lt; T &gt; &amp;output)</td></tr>
-<tr class="memdesc:a36c887e0deedc2b16c340ffcee35f961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value of type T that is defined in one domain into another domain.  <a href="../../dd/dae/a00163.html#a36c887e0deedc2b16c340ffcee35f961">More...</a><br /></td></tr>
-<tr class="separator:a36c887e0deedc2b16c340ffcee35f961"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf4a6ff4298be37a5684db7bb769bcdd"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:adf4a6ff4298be37a5684db7bb769bcdd"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; Domain&lt; T &gt;, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/dae/a00163.html#adf4a6ff4298be37a5684db7bb769bcdd">Dune::IGA::Utilities::splitDomainInHalf</a> (const Domain&lt; T &gt; &amp;domain)</td></tr>
-<tr class="separator:adf4a6ff4298be37a5684db7bb769bcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53d9d1af502406661ebe6320753c429"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/a00132.html#ad53d9d1af502406661ebe6320753c429">Dune::IGA::calculateBoundaryLoopLength</a> (const std::vector&lt; Boundary &gt; &amp;loop, const TransformToSpan&lt; 2 &gt; &amp;transformer, unsigned int div=200)</td></tr>
+<tr class="separator:ad53d9d1af502406661ebe6320753c429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271f64a918349a4cae9cbc2a9dad0a4d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/a00132.html#a271f64a918349a4cae9cbc2a9dad0a4d">Dune::IGA::determineCurvedBoundaries</a> (const std::vector&lt; Boundary &gt; &amp;boundaries) -&gt; std::vector&lt; bool &gt;</td></tr>
+<tr class="separator:a271f64a918349a4cae9cbc2a9dad0a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66112982ac256c7f15589dec5fcce68"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/deb/a00132.html#ad66112982ac256c7f15589dec5fcce68">Dune::IGA::splitBoundariesImpl</a> (const std::vector&lt; Boundary &gt; &amp;boundaries, int maxSubSample, double tolerance, const TransformToSpan&lt; 2 &gt; &amp;transformer)</td></tr>
+<tr class="separator:ad66112982ac256c7f15589dec5fcce68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e1d89240e3480112457535ab40b620"><td class="memTemplParams" colspan="2">template&lt;int dim, typename Transformer  = TransformToSpan&lt;dim&gt;, typename Index  = std::uint64_t, typename Point  = Dune::FieldVector&lt;double, dim&gt;&gt; </td></tr>
+<tr class="memitem:ab8e1d89240e3480112457535ab40b620"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/deb/a00132.html#ab8e1d89240e3480112457535ab40b620">Dune::IGA::triangulate</a> (auto &amp;boundaries, const Transformer &amp;transformer) -&gt; std::pair&lt; std::vector&lt; Index &gt;, std::vector&lt; Point &gt; &gt;</td></tr>
+<tr class="separator:ab8e1d89240e3480112457535ab40b620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_b534248905b8119b36a62f0ff7e8fe43.html">geometry</a></li><li class="navelem"><a class="el" href="../../d9/d77/a00095.html">geohelper.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_3a8a27db37838cd238997301ec88b300.html">trim</a></li><li class="navelem"><a class="el" href="../../d9/d77/a00095.html">subgridhelpers.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

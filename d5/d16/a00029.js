@@ -1,4 +1,5 @@
 var a00029 =
 [
-    [ "Dune::IGANEW::PatchGridLeafIterator< codim, pitype, GridImp >", "d4/dc5/a01116.html", "d4/dc5/a01116" ]
+    [ "Dune::IGANEW::PatchGridLeafIntersection< GridImp >", "db/dba/a01078.html", "db/dba/a01078" ],
+    [ "Dune::IGANEW::PatchGridLevelIntersection< GridImp >", "dd/df1/a01082.html", "dd/df1/a01082" ]
 ];

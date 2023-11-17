@@ -1,11 +1,11 @@
 var a00095 =
 [
-    [ "Dune::IGA::Utilities::Domain< ScalarType >", "d7/df2/a01000.html", "d7/df2/a01000" ],
-    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d9/d77/a00095.html#abed12b304dff899714427441b8558f7b", null ],
-    [ "clampToDomain", "d9/d77/a00095.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
-    [ "linspace", "d9/d77/a00095.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
-    [ "linspace", "d9/d77/a00095.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
-    [ "linspace", "d9/d77/a00095.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
-    [ "mapToRange", "d9/d77/a00095.html#a36c887e0deedc2b16c340ffcee35f961", null ],
-    [ "splitDomainInHalf", "d9/d77/a00095.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
+    [ "Dune::IGA::TransformToSpan< dim >", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
+    [ "Dune::IGA::DomainInformation", "d7/d04/a01246.html", "d7/d04/a01246" ],
+    [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "d4/d22/a01250.html", "d4/d22/a01250" ],
+    [ "DomainType", "d9/d77/a00095.html#a25585768c010972feb9ad3e744e16623", null ],
+    [ "calculateBoundaryLoopLength", "d9/d77/a00095.html#ad53d9d1af502406661ebe6320753c429", null ],
+    [ "determineCurvedBoundaries", "d9/d77/a00095.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
+    [ "splitBoundariesImpl", "d9/d77/a00095.html#ad66112982ac256c7f15589dec5fcce68", null ],
+    [ "triangulate", "d9/d77/a00095.html#ab8e1d89240e3480112457535ab40b620", null ]
 ];

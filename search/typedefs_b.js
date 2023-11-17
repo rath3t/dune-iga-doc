@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['node_0',['Node',['../d9/d31/a01208.html#a92687205867b4a7ab813913a6bddbae0',1,'Dune::Functions::NurbsPreBasis']]],
-  ['normalvector_1',['NormalVector',['../d2/dd7/a01108.html#ae9cd5abd8df4334dc4d00aa3f1164c3c',1,'Dune::IGANEW::PatchGridLeafIntersection::NormalVector()'],['../d0/d39/a01112.html#a86583379bffa4094c27aebbd41d860f3',1,'Dune::IGANEW::PatchGridLevelIntersection::NormalVector()']]],
-  ['nurbs_2',['Nurbs',['../d0/dc8/a01124.html#ae58e0a1d5d30534b81b8d8ddc73e1dca',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::Nurbs()'],['../d6/de6/a01132.html#a2932c78981b91b90423234261a4b38f6',1,'Dune::IGANEW::PatchGeometryLocalView::Nurbs()'],['../d5/d53/a01324.html#aabc55f4a883b7b41e2a1a5cf0dda1575',1,'Dune::IGA::NURBSPatchGeometry::Nurbs()']]],
-  ['nurbsbasis_3',['NurbsBasis',['../d5/dcb/a00170.html#a4e3cfaeb5308fbfa024b5ec8085912d1',1,'Dune::Functions']]],
-  ['nurbslocalview_4',['NurbsLocalView',['../d0/dc8/a01124.html#a8fc5afe06a762b8e4d935d3ecf18df16',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::NurbsLocalView()'],['../d6/de6/a01132.html#ab469ae50e5e33701372432fae697b632',1,'Dune::IGANEW::PatchGeometryLocalView::NurbsLocalView()'],['../d5/d53/a01324.html#a39764a3f8406fa0674179d02a332fc78',1,'Dune::IGA::NURBSPatchGeometry::NurbsLocalView()']]],
-  ['nurbspatchdatatype_5',['NURBSPatchDataType',['../d4/da6/a01168.html#a6646d70d41a63bef989e22f4cc5f611a',1,'Dune::IGA::NURBSGrid']]]
+  ['parameterspacegeometry_0',['ParameterSpaceGeometry',['../df/d88/a00962.html#a5955d7897f32e279b07c72a1e9060491',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::ParameterSpaceGeometry()'],['../d0/daf/a00970.html#a88a543cfbf75d9865fa7b964e4a7b51c',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::ParameterSpaceGeometry()']]],
+  ['patchdata_1',['PatchData',['../dc/dee/a01166.html#ac5a13cf5d977000274c321869942cc52',1,'Dune::IGA::IbraReader::PatchData()'],['../dc/d19/a01190.html#af76416410208288f6548c1d726bf37dd',1,'Dune::IGA::Boundary::PatchData()']]],
+  ['patchgeometry_2',['PatchGeometry',['../d5/d4c/a01058.html#a523eac2cc0966df074c2c37b4b95497f',1,'Dune::IGANEW::PatchGridGeometry::PatchGeometry()'],['../da/d73/a01090.html#a675c8047140e674108f7ac9c00a63f11',1,'Dune::IGANEW::PatchGridLocalGeometry::PatchGeometry()']]],
+  ['patchhessian_3',['PatchHessian',['../d0/daf/a00970.html#ad9a4e6ba85f3040b67dd0153f9afb7ab',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
+  ['patchjacobiantransposed_4',['PatchJacobianTransposed',['../d0/daf/a00970.html#af0485d78dbb3386d50945c43a519b7bd',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
+  ['point_5',['Point',['../dd/de9/a01182.html#a458043700435144746a87ae7c201e4a5',1,'Dune::IGA::IGARefinedGeometries::Point()'],['../dc/d19/a01190.html#add43ef27f7d5c9bf7e9b5083b84cb5c3',1,'Dune::IGA::Boundary::Point()'],['../d4/d5d/a01202.html#a0a4b9dacafd634c66043ea047fed6b66',1,'Dune::IGA::Trim::NURBSPatchTrimmer::Point()']]]
 ];

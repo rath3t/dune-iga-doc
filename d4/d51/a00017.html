@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: hierachicpatchgridintersections.hh File Reference</title>
+<title>dune-iga: hierachicpatchgrid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,41 +93,71 @@ $(document).ready(function(){initNavTree('d4/d51/a00017.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">hierachicpatchgridintersections.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">hierachicpatchgrid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The PatchGridLeafIntersection and PatchGridLevelIntersection classes.  
+<p>The PatchGrid class.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d9/d2e/a00056_source.html">hierachicpatchgridentity.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d16/a00029_source.html">hierachicpatchgridleafiterator.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;dune/common/parallel/communication.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/capabilities.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/grid.hh&gt;</code><br />
+<code>#include &lt;dune/grid/yaspgrid.hh&gt;</code><br />
+<code>#include &lt;dune/subgrid/subgrid.hh&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d8c/a00035_source.html">enums.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d03/a00062_source.html">gridcapabilities.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/de7/a00014_source.html">hierachicpatchgridentity.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d52/a00023_source.html">hierachicpatchgridentityseed.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d87/a00032_source.html">hierachicpatchgridgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db6/a00074_source.html">hierachicpatchgridhierarchiciterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d89/a00071_source.html">hierachicpatchgridindexsets.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d09/a00077_source.html">hierachicpatchgridintersectioniterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db2/a00020_source.html">hierachicpatchgridleafiterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d24/a00068_source.html">hierachicpatchgridleveliterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/de1/a00065_source.html">hierachicpatchgridlocalgeometry.hh</a>&quot;</code><br />
 </div>
 <p><a href="../../d4/d51/a00017_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd7/a01108.html">Dune::IGANEW::PatchGridLeafIntersection&lt; GridImp &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An intersection with a leaf neighbor elementMesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element!  <a href="../../d2/dd7/a01108.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d02/a01026.html">Dune::IGANEW::PatchGridFamily&lt; dim, dimworld, trim_, ScalarType, HostGrid &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01112.html">Dune::IGANEW::PatchGridLevelIntersection&lt; GridImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dce/a00974.html">Dune::IGANEW::PatchGrid&lt; dim, dimworld, trim_, ScalarType, HostGrid &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a meta grid that is identical to its host.  <a href="../../df/dce/a00974.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d6/d7d/a00161"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></td></tr>
+<tr class="memitem:da/d72/a00124"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/a00124.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:db/ddf/a00164"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/a00164.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:dc/dfe/a00125"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a3afaa412b7e8964bade8f3d8948e62f0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
+<tr class="memitem:a3afaa412b7e8964bade8f3d8948e62f0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a3afaa412b7e8964bade8f3d8948e62f0">Dune::IGANEW::createUniqueKnotSpans</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans)</td></tr>
+<tr class="separator:a3afaa412b7e8964bade8f3d8948e62f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a988da06ea7c297a83d639576ff4ed60a"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
+<tr class="memitem:a988da06ea7c297a83d639576ff4ed60a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a988da06ea7c297a83d639576ff4ed60a">Dune::IGANEW::createParameterPatchGridFromKnotVectors</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;uniqueKnotVector_)</td></tr>
+<tr class="separator:a988da06ea7c297a83d639576ff4ed60a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d02ee7ba9a5f74ad8cbeee49c7dc59b"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, std::size_t dimworld, typename ScalarType &gt; </td></tr>
+<tr class="memitem:a8d02ee7ba9a5f74ad8cbeee49c7dc59b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a8d02ee7ba9a5f74ad8cbeee49c7dc59b">Dune::IGANEW::PatchGrid</a> (const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;patchData) -&gt; PatchGrid&lt; static_cast&lt; int &gt;(dim), static_cast&lt; int &gt;(dimworld), <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474ab9f5c797ebbf55adccdd8539a65a0241">Trimming::Disabled</a>, ScalarType, YaspGrid&lt; dim, TensorProductCoordinates&lt; ScalarType, dim &gt; &gt; &gt;</td></tr>
+<tr class="memdesc:a8d02ee7ba9a5f74ad8cbeee49c7dc59b"><td class="mdescLeft">&#160;</td><td class="mdescRight">deduction guide  <a href="../../dc/dfe/a00125.html#a8d02ee7ba9a5f74ad8cbeee49c7dc59b">More...</a><br /></td></tr>
+<tr class="separator:a8d02ee7ba9a5f74ad8cbeee49c7dc59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The PatchGridLeafIntersection and PatchGridLevelIntersection classes. </p>
+<div class="textblock"><p >The PatchGrid class. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d4/d51/a00017.html">hierachicpatchgridintersections.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d4/d51/a00017.html">hierachicpatchgrid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

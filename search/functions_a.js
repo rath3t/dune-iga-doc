@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['knotrefinement_0',['knotRefinement',['../db/d44/a00162.html#ad0c595e4d7ef91c299d7f7fb1e3f4a7f',1,'Dune::IGA']]]
+  ['knotrefinement_0',['knotRefinement',['../dc/dfe/a00125.html#adf114762921a364c8a0b6de65180e160',1,'Dune::IGANEW']]]
 ];

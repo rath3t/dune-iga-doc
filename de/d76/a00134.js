@@ -1,4 +1,5 @@
 var a00134 =
 [
-    [ "cross", "de/d76/a00134.html#a0b8dfb22ae9f753cbec7631fe567f317", null ]
+    [ "ElementBoundaries", "d0/d32/a01198.html", "d0/d32/a01198" ],
+    [ "NURBSPatchTrimmer", "d4/d5d/a01202.html", "d4/d5d/a01202" ]
 ];

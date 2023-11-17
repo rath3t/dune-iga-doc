@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: hierachicpatchgridentity.hh File Reference</title>
+<title>dune-iga: nurbsalgorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,42 +93,79 @@ $(document).ready(function(){initNavTree('d9/d2e/a00056.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">hierachicpatchgridentity.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">nurbsalgorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The PatchGridEntity class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;dune/grid/common/grid.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d6/d2d/a00047_source.html">hierachicpatchgridgeometry.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;concepts&gt;</code><br />
+<code>#include &lt;numbers&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/d49/a02282_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d3/d8b/a00059_source.html">dune/iga/hierarchicpatch/splines/bsplinealgorithms.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/d1a/a02288_source.html">dune/iga/hierarchicpatch/splines/nurbspatchdata.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/d2a/a00086_source.html">dune/iga/hierarchicpatch/utils/linearalgebra.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../da/dec/a00080_source.html">dune/iga/hierarchicpatch/utils/mdnet.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d2/d1f/a00083_source.html">dune/iga/hierarchicpatch/utils/typetraits.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d9/d2e/a00056_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridEntity&lt; codim, dim, GridImp &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of entities in a <a class="el" href="../../df/dbc/a01004.html" title="Provides a meta grid that is identical to its host.">PatchGrid</a>.  <a href="../../d5/d16/a01060.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/a01098.html">Dune::IGANEW::Nurbs&lt; dim, ScalarType_ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <code>dim</code> dimensional NURBS function.  <a href="../../d5/d17/a01098.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d67/a01080.html">Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specialization for codim-0-entities.  <a href="../../d9/d67/a01080.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da7/a01102.html">Dune::IGANEW::Nurbs&lt; dim, ScalarType_ &gt;::LocalView</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d6/d7d/a00161"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></td></tr>
+<tr class="memitem:da/d72/a00124"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d72/a00124.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:db/ddf/a00164"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/ddf/a00164.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:dc/dfe/a00125"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a01728ba72225d2540fc1acfb6b02d131"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType, std::integral auto dim&gt; </td></tr>
+<tr class="memitem:a01728ba72225d2540fc1acfb6b02d131"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a01728ba72225d2540fc1acfb6b02d131">Dune::IGANEW::generateRefinedKnots</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans, const int dir, const int refinementLevel)</td></tr>
+<tr class="separator:a01728ba72225d2540fc1acfb6b02d131"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d22b83005e2f5fc314815928d1a99f"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, typename NetValueType &gt; <br />
+requires (std::floating_point&lt;NetValueType&gt; || Concept::Vector&lt;NetValueType&gt; || <a class="el" href="../../db/d32/a01122.html">is_instantiation_of</a>&lt;ControlPoint, NetValueType&gt;::value)</td></tr>
+<tr class="memitem:ab0d22b83005e2f5fc314815928d1a99f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#ab0d22b83005e2f5fc314815928d1a99f">Dune::IGANEW::netOfSpan</a> (std::array&lt; int, dim &gt; subNetStart, const std::array&lt; int, dim &gt; &amp;degree, const MultiDimensionNet&lt; dim, NetValueType &gt; &amp;net)</td></tr>
+<tr class="memdesc:ab0d22b83005e2f5fc314815928d1a99f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function return a copy of the subNet of a knotspan, i.e. it is used to return the weights or controlpoints defined on one element.  <a href="../../dc/dfe/a00125.html#ab0d22b83005e2f5fc314815928d1a99f">More...</a><br /></td></tr>
+<tr class="separator:ab0d22b83005e2f5fc314815928d1a99f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba9b81fe85f3b661b52a2490dd90f28c"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType, std::integral auto dim, std::integral auto dim2, typename NetValueType &gt; <br />
+requires (std::floating_point&lt;NetValueType&gt; || Concept::Vector&lt;NetValueType&gt; || <a class="el" href="../../db/d32/a01122.html">is_instantiation_of</a>&lt;ControlPoint, NetValueType&gt;::value) (dim == dim2)</td></tr>
+<tr class="memitem:aba9b81fe85f3b661b52a2490dd90f28c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#aba9b81fe85f3b661b52a2490dd90f28c">Dune::IGANEW::netOfSpan</a> (const Dune::FieldVector&lt; ScalarType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ScalarType &gt;, dim2 &gt; &amp;knots, const std::array&lt; int, dim2 &gt; &amp;degree, const MultiDimensionNet&lt; dim2, NetValueType &gt; &amp;net)</td></tr>
+<tr class="memdesc:aba9b81fe85f3b661b52a2490dd90f28c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as netOfSpan above but the start is searched for using the knotvector value <br  />
+  <a href="../../dc/dfe/a00125.html#aba9b81fe85f3b661b52a2490dd90f28c">More...</a><br /></td></tr>
+<tr class="separator:aba9b81fe85f3b661b52a2490dd90f28c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3dc15e1c2e7ff3b74de65d1416a05cf"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, Concept::ControlPoint ValueType&gt; </td></tr>
+<tr class="memitem:ac3dc15e1c2e7ff3b74de65d1416a05cf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#ac3dc15e1c2e7ff3b74de65d1416a05cf">Dune::IGANEW::extractWeights</a> (const MultiDimensionNet&lt; dim, ValueType &gt; &amp;cpsandWeight)</td></tr>
+<tr class="separator:ac3dc15e1c2e7ff3b74de65d1416a05cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6256c413720d85da419f59c203a51ad8"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, Concept::ControlPoint ValueType&gt; </td></tr>
+<tr class="memitem:a6256c413720d85da419f59c203a51ad8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a6256c413720d85da419f59c203a51ad8">Dune::IGANEW::extractControlCoordinates</a> (const MultiDimensionNet&lt; dim, ValueType &gt; &amp;cpsandWeight)</td></tr>
+<tr class="separator:a6256c413720d85da419f59c203a51ad8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3b9dfb31717d1ef4e9b67f736e8e53a"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType_ &gt; </td></tr>
+<tr class="memitem:ad3b9dfb31717d1ef4e9b67f736e8e53a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#ad3b9dfb31717d1ef4e9b67f736e8e53a">Dune::IGANEW::degreeElevate</a> (const NURBSPatchData&lt; dim, dimworld, ScalarType_ &gt; &amp;oldData, const int refinementDirection, const int elevationFactor)</td></tr>
+<tr class="separator:ad3b9dfb31717d1ef4e9b67f736e8e53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf114762921a364c8a0b6de65180e160"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </td></tr>
+<tr class="memitem:adf114762921a364c8a0b6de65180e160"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#adf114762921a364c8a0b6de65180e160">Dune::IGANEW::knotRefinement</a> (const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const std::vector&lt; double &gt; &amp;newKnots, const int refinementDirection)</td></tr>
+<tr class="separator:adf114762921a364c8a0b6de65180e160"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a000e49612164d2b6609e00015a7da1b8"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:a000e49612164d2b6609e00015a7da1b8"><td class="memTemplItemLeft" align="right" valign="top">NURBSPatchData&lt; 1, 3, ScalarType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a000e49612164d2b6609e00015a7da1b8">Dune::IGANEW::makeCircularArc</a> (const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;origin={0, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;X={1, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;Y={0, 1, 0})</td></tr>
+<tr class="separator:a000e49612164d2b6609e00015a7da1b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e85ab03ccb6fb5110279a6c3428a1d1"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:a2e85ab03ccb6fb5110279a6c3428a1d1"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/dfe/a00125.html#a2e85ab03ccb6fb5110279a6c3428a1d1">Dune::IGANEW::makeSurfaceOfRevolution</a> (const NURBSPatchData&lt; 1, 3, ScalarType &gt; &amp;generatrix, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;point, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;revolutionaxisI, const ScalarType &amp;revolutionAngle=360.0)</td></tr>
+<tr class="separator:a2e85ab03ccb6fb5110279a6c3428a1d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The PatchGridEntity class. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d9/d2e/a00056.html">hierachicpatchgridentity.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../dir_db7a8382cbcdbcaaeb9c3dd2ed6d6157.html">splines</a></li><li class="navelem"><a class="el" href="../../d9/d2e/a00056.html">nurbsalgorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

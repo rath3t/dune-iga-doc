@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: gridenums.hh Source File</title>
+<title>dune-iga: grid.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,25 +91,154 @@ $(document).ready(function(){initNavTree('da/d45/a00011_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">gridenums.hh</div></div>
+  <div class="headertitle"><div class="title">grid.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../da/d45/a00011.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../de/d45/a00175.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/de9/a00176.html">Dune::Python::IGA</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d5/de9/a00176.html#a1ef280a2762fbf1b3a46535ade3f8172">    6</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d5/de9/a00176.html#a1ef280a2762fbf1b3a46535ade3f8172">Reader</a> { json };</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}  <span class="comment">// namespace Dune::Python::IGA</span></div>
-<div class="ttc" id="aa00176_html"><div class="ttname"><a href="../../d5/de9/a00176.html">Dune::Python::IGA</a></div><div class="ttdef"><b>Definition:</b> gridenums.hh:5</div></div>
-<div class="ttc" id="aa00176_html_a1ef280a2762fbf1b3a46535ade3f8172"><div class="ttname"><a href="../../d5/de9/a00176.html#a1ef280a2762fbf1b3a46535ade3f8172">Dune::Python::IGA::Reader</a></div><div class="ttdeci">Reader</div><div class="ttdef"><b>Definition:</b> gridenums.hh:6</div></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="../../d4/dee/a00008.html">dune/python/iga/gridenums.hh</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="../../d0/dc2/a00104.html">dune/iga/io/ibra/ibrareader.hh</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;dune/iga/nurbsgrid.hh&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;dune/python/common/typeregistry.hh&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;dune/python/grid/capabilities.hh&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;dune/python/grid/enums.hh&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;dune/python/grid/hierarchical.hh&gt;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;dune/python/pybind11/pybind11.h&gt;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#if HAVE_DUNE_VTK</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#  include &lt;<a class="code" href="../../d4/d3a/a00101.html">dune/iga/io/igadatacollector.hh</a>&gt;</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#  include &lt;dune/python/vtk/writer.hh&gt;</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#  include &lt;dune/vtk/writers/vtkunstructuredgridwriter.hh&gt;</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/df5/a00137.html">Dune::Python</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#ifndef DOXYGEN</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="comment">// we have to ahead of</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="comment">// https://gitlab.dune-project.org/core/dune-grid/-/blob/releases/2.9/dune/python/grid/hierarchical.hh?ref_type=heads#L233</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="comment">// thus we use requires(IsSpecializationTwoNonTypesAndType&lt;Dune::IGA::NURBSGrid,Grid&gt;::value) to be sure this overload</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="comment">// is used</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="comment">// make sure this type is used if an iga grid is passed this is function is enabled and used by adl</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;auto, auto, <span class="keyword">typename</span>&gt; <span class="keyword">class </span><a class="code hl_enumeration" href="../../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451f">Type</a>, <span class="keyword">typename</span>&gt;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keyword">struct </span>IsSpecializationTwoNonTypesAndType : std::false_type {};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;auto, auto, <span class="keyword">typename</span>&gt; <span class="keyword">class </span><a class="code hl_enumeration" href="../../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451f">Type</a>, <span class="keyword">auto</span> T, <span class="keyword">auto</span> T2, <span class="keyword">typename</span> S&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">struct </span>IsSpecializationTwoNonTypesAndType&lt;<a class="code hl_enumeration" href="../../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451f">Type</a>, <a class="code hl_enumeration" href="../../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451f">Type</a>&lt;T, T2, S&gt;&gt; : std::true_type {};</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">struct </span>Capabilities::HasGridFactory&lt;<a class="code hl_namespace" href="../../da/d72/a00124.html">Dune</a>::IGA::NURBSGrid&lt;dim, dimworld, ScalarType&gt;&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      : <span class="keyword">public</span> std::integral_constant&lt;bool, false&gt; {};</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}  <span class="comment">// namespace Dune::Python</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/ddd/a00138.html">Dune::Python::IGA</a> {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>&gt;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">requires</span>(IsSpecializationTwoNonTypesAndType&lt;Dune::IGA::NURBSGrid, Grid&gt;::value) <span class="keyword">inline</span> <span class="keyword">static</span> std::shared_ptr&lt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      Grid&gt; reader(<span class="keyword">const</span> pybind11::dict&amp; dict) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    std::string file_path;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_enumeration" href="../../d4/ddd/a00138.html#a1ef280a2762fbf1b3a46535ade3f8172">Dune::Python::IGA::Reader</a> reader  = <a class="code hl_enumvalue" href="../../d4/ddd/a00138.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54">IGA::Reader::json</a>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordtype">bool</span> trim                         = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    std::array&lt;int, 2&gt; elevateDegree  = {0, 0};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    std::array&lt;int, 2&gt; preKnotRefine  = {0, 0};</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::array&lt;int, 2&gt; postKnotRefine = {0, 0};</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">if</span> (dict.contains(<span class="stringliteral">&quot;reader&quot;</span>)) reader = dict[<span class="stringliteral">&quot;reader&quot;</span>].cast&lt;Dune::Python::IGA::Reader&gt;();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">switch</span> (reader) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="../../d4/ddd/a00138.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54">IGA::Reader::json</a>:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keywordflow">if</span> (dict.contains(<span class="stringliteral">&quot;file_path&quot;</span>))</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          file_path = dict[<span class="stringliteral">&quot;file_path&quot;</span>].cast&lt;std::string&gt;();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>          DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;No field in dict with name file_path. Unable to read grid&quot;</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">if</span> (dict.contains(<span class="stringliteral">&quot;trim&quot;</span>)) trim = dict[<span class="stringliteral">&quot;trim&quot;</span>].cast&lt;<span class="keywordtype">bool</span>&gt;();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">if</span> (dict.contains(<span class="stringliteral">&quot;elevate_degree&quot;</span>)) elevateDegree = dict[<span class="stringliteral">&quot;elevate_degree&quot;</span>].cast&lt;std::array&lt;int, 2&gt;&gt;();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">if</span> (dict.contains(<span class="stringliteral">&quot;pre_knot_refine&quot;</span>)) preKnotRefine = dict[<span class="stringliteral">&quot;pre_knot_refine&quot;</span>].cast&lt;std::array&lt;int, 2&gt;&gt;();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        <span class="keywordflow">if</span> (dict.contains(<span class="stringliteral">&quot;post_knot_refine&quot;</span>)) postKnotRefine = dict[<span class="stringliteral">&quot;post_knot_refine&quot;</span>].cast&lt;std::array&lt;int, 2&gt;&gt;();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::integral <span class="keyword">auto</span> dim      = Grid::dimension;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> std::integral <span class="keyword">auto</span> dimworld = Grid::dimensionworld;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keyword">using </span>ScalarType                             = <span class="keyword">typename</span> Grid::ctype;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/dee/a01166.html#a00f99434abd8039a53dc9f1e1927a42d">Dune::IGA::IbraReader&lt;dim, dimworld, ScalarType&gt;::read</a>(file_path, trim, elevateDegree, preKnotRefine,</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>                                                                      postKnotRefine);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        DUNE_THROW(Dune::NotImplemented, <span class="stringliteral">&quot;Your requested reader is not implemented&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    }</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  }</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">template</span> &lt;<span class="keyword">class </span>NURBSGrid, <span class="keyword">class</span>... options&gt;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">requires</span>(IsSpecializationTwoNonTypesAndType&lt;Dune::IGA::NURBSGrid, NURBSGrid&gt;::value) <span class="keywordtype">void</span> registerHierarchicalGrid(</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      pybind11::module module, pybind11::class_&lt;NURBSGrid, options...&gt; cls) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">using </span>pybind11::operator<span class="stringliteral">&quot;&quot;</span>_a;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::integral <span class="keyword">auto</span> dimension      = NURBSGrid::dimension;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::integral <span class="keyword">auto</span> dimensionworld = NURBSGrid::dimensionworld;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">using </span>ctype                                        = <span class="keyword">typename</span> NURBSGrid::ctype;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (dimension == 2)</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      module.def(<span class="stringliteral">&quot;reader&quot;</span>, [](<span class="keyword">const</span> pybind11::dict&amp; args_) { <span class="keywordflow">return</span> Dune::Python::IGA::reader&lt;NURBSGrid&gt;(args_); });</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    Dune::Python::registerHierarchicalGrid(module, cls);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keyword">using </span>LeafGridView = <span class="keyword">typename</span> NURBSGrid::LeafGridView;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keyword">auto</span> clsLeafView   = insertClass&lt;LeafGridView&gt;(module, <span class="stringliteral">&quot;LeafGrid&quot;</span>, GenerateTypeName(cls, <span class="stringliteral">&quot;LeafGridView&quot;</span>));</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (clsLeafView.second) registerGridView(module, clsLeafView.first);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span><span class="preprocessor">#if HAVE_DUNE_VTK</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (dimension == 2) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      pybind11::module::import(<span class="stringliteral">&quot;dune.vtk&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keyword">using </span>TrimmedWriterType</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>          = Dune::VtkUnstructuredGridWriter&lt;LeafGridView, Dune::Vtk::DiscontinuousIgaDataCollector&lt;LeafGridView&gt;&gt;;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keyword">auto</span> clsLeafViewWriter = insertClass&lt;TrimmedWriterType&gt;(module, <span class="stringliteral">&quot;TrimmedVtkWriter&quot;</span>,</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>                                                              GenerateTypeName(clsLeafView.first, <span class="stringliteral">&quot;TrimmedVtkWriter&quot;</span>));</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">if</span> (clsLeafViewWriter.second) Dune::Vtk::registerVtkWriter&lt;TrimmedWriterType&gt;(module, clsLeafViewWriter.first);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      clsLeafView.first.def(</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>          <span class="stringliteral">&quot;trimmedVtkWriter&quot;</span>,</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>          [](<span class="keyword">const</span> LeafGridView&amp; self, <span class="keywordtype">int</span> subSample = 0) {</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">auto</span> dataCollector</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>                = std::make_shared&lt;Dune::Vtk::DiscontinuousIgaDataCollector&lt;LeafGridView&gt;&gt;(self, subSample);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> Dune::VtkUnstructuredGridWriter(dataCollector, Vtk::FormatTypes::ASCII);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>          },</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>          pybind11::arg(<span class="stringliteral">&quot;subSample&quot;</span>) = 0);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    }</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keyword">using </span>ControlPointNetType = <span class="keyword">typename</span> NURBSGrid::ControlPointNetType;</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">using </span>NURBSPatchDataType  = <span class="keyword">typename</span> NURBSGrid::NURBSPatchDataType;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    cls.def(pybind11::init(</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        [](<span class="keyword">const</span> std::array&lt;std::vector&lt;double&gt;, dimension&gt;&amp; knotSpans, <span class="keyword">const</span> ControlPointNetType&amp; controlPoints,</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>           <span class="keyword">const</span> std::array&lt;int, dimension&gt;&amp; order) { <span class="keywordflow">return</span> <span class="keyword">new</span> NURBSGrid(knotSpans, controlPoints, order); }));</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    cls.def(pybind11::init([](<span class="keyword">const</span> NURBSPatchDataType&amp; nurbsPatchData) { <span class="keywordflow">return</span> <span class="keyword">new</span> NURBSGrid(nurbsPatchData); }));</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    cls.def(</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        <span class="stringliteral">&quot;globalRefineInDirection&quot;</span>,</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        [](NURBSGrid&amp; self, <span class="keywordtype">int</span> dir, <span class="keywordtype">int</span> refinementLevel, <span class="keywordtype">bool</span> omitTrim = <span class="keyword">false</span>) {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>          self.globalRefineInDirection(dir, refinementLevel, omitTrim);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        },</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        pybind11::arg(<span class="stringliteral">&quot;dir&quot;</span>), pybind11::arg(<span class="stringliteral">&quot;refinementLevel&quot;</span>), pybind11::arg(<span class="stringliteral">&quot;omitTrim&quot;</span>) = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    cls.def(</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="stringliteral">&quot;patchData&quot;</span>, [](<span class="keyword">const</span> NURBSGrid&amp; self, <span class="keywordtype">int</span> i = 0) { <span class="keywordflow">return</span> self.patchData(i); }, pybind11::arg(<span class="stringliteral">&quot;i&quot;</span>) = 0);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace Dune::Python::IGA</span></div>
+<div class="ttc" id="aa00008_html"><div class="ttname"><a href="../../d4/dee/a00008.html">gridenums.hh</a></div></div>
+<div class="ttc" id="aa00101_html"><div class="ttname"><a href="../../d4/d3a/a00101.html">igadatacollector.hh</a></div></div>
+<div class="ttc" id="aa00104_html"><div class="ttname"><a href="../../d0/dc2/a00104.html">ibrareader.hh</a></div></div>
+<div class="ttc" id="aa00124_html"><div class="ttname"><a href="../../da/d72/a00124.html">Dune</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:9</div></div>
+<div class="ttc" id="aa00133_html_a7e1d9b847ff31435dac790c39d02451f"><div class="ttname"><a href="../../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451f">Dune::IGA::Ibra::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition:</b> ibrageometry.hh:17</div></div>
+<div class="ttc" id="aa00137_html"><div class="ttname"><a href="../../d2/df5/a00137.html">Dune::Python</a></div><div class="ttdef"><b>Definition:</b> gridenums.hh:5</div></div>
+<div class="ttc" id="aa00138_html"><div class="ttname"><a href="../../d4/ddd/a00138.html">Dune::Python::IGA</a></div><div class="ttdef"><b>Definition:</b> gridenums.hh:5</div></div>
+<div class="ttc" id="aa00138_html_a1ef280a2762fbf1b3a46535ade3f8172"><div class="ttname"><a href="../../d4/ddd/a00138.html#a1ef280a2762fbf1b3a46535ade3f8172">Dune::Python::IGA::Reader</a></div><div class="ttdeci">Reader</div><div class="ttdef"><b>Definition:</b> gridenums.hh:6</div></div>
+<div class="ttc" id="aa00138_html_a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54"><div class="ttname"><a href="../../d4/ddd/a00138.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54">Dune::Python::IGA::Reader::json</a></div><div class="ttdeci">@ json</div></div>
+<div class="ttc" id="aa01166_html_a00f99434abd8039a53dc9f1e1927a42d"><div class="ttname"><a href="../../dc/dee/a01166.html#a00f99434abd8039a53dc9f1e1927a42d">Dune::IGA::IbraReader::read</a></div><div class="ttdeci">static std::unique_ptr&lt; Grid &gt; read(const std::string &amp;fileName, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})</div><div class="ttdef"><b>Definition:</b> ibrareader.hh:31</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../da/d45/a00011.html">gridenums.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../da/d45/a00011.html">grid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
