@@ -71,7 +71,7 @@ var annotated_dup =
       ] ],
       [ "IGANEW", "db/ddf/a00164.html", [
         [ "GeometryKernel", "d0/d48/a00165.html", [
-          [ "NURBSPatchGeometry", "d0/dc8/a01124.html", "d0/dc8/a01124" ]
+          [ "NURBSPatch", "d0/dc8/a01124.html", "d0/dc8/a01124" ]
         ] ],
         [ "HostGridAccess", "d9/dce/a01052.html", null ],
         [ "PatchGeometryLocalView", "d6/de6/a01132.html", "d6/de6/a01132" ],

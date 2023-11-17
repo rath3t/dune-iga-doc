@@ -100,7 +100,7 @@ $(document).ready(function(){initNavTree('d0/d48/a00165.html','../../'); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html">NURBSPatchGeometry</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html">NURBSPatch</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
@@ -108,9 +108,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7d9fb670c15ac280fd2c4dbcf1bd0c94"><td class="memTemplParams" colspan="2">template&lt;typename Geometry &gt; </td></tr>
 <tr class="memitem:a7d9fb670c15ac280fd2c4dbcf1bd0c94"><td class="memTemplItemLeft" align="right" valign="top">Geometry::LocalCoordinate&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/a00165.html#a7d9fb670c15ac280fd2c4dbcf1bd0c94">computeParameterSpaceCoordinate</a> (const Geometry &amp;geo, const typename Geometry::GlobalCoordinate &amp;global)</td></tr>
 <tr class="separator:a7d9fb670c15ac280fd2c4dbcf1bd0c94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bdff876219a628941326b59074d568d"><td class="memTemplParams" colspan="2">template&lt;typename Geometry &gt; </td></tr>
-<tr class="memitem:a9bdff876219a628941326b59074d568d"><td class="memTemplItemLeft" align="right" valign="top">Geometry::Hessian&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/a00165.html#a9bdff876219a628941326b59074d568d">hessian</a> (const typename Geometry::LocalCoordinate &amp;local, const typename Geometry::NurbsLocalView &amp;nurbsLocalView, const typename Geometry::ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
-<tr class="separator:a9bdff876219a628941326b59074d568d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7693ef58b9b466df6285facbe588e2e7"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a7693ef58b9b466df6285facbe588e2e7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d48/a00165.html#a7693ef58b9b466df6285facbe588e2e7">hessian</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="separator:a7693ef58b9b466df6285facbe588e2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7d9fb670c15ac280fd2c4dbcf1bd0c94" name="a7d9fb670c15ac280fd2c4dbcf1bd0c94"></a>
@@ -143,30 +143,30 @@ template&lt;typename Geometry &gt; </div>
 
 </div>
 </div>
-<a id="a9bdff876219a628941326b59074d568d" name="a9bdff876219a628941326b59074d568d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bdff876219a628941326b59074d568d">&#9670;&nbsp;</a></span>hessian()</h2>
+<a id="a7693ef58b9b466df6285facbe588e2e7" name="a7693ef58b9b466df6285facbe588e2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7693ef58b9b466df6285facbe588e2e7">&#9670;&nbsp;</a></span>hessian()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Geometry &gt; </div>
+template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Geometry::Hessian Dune::IGANEW::GeometryKernel::hessian </td>
+          <td class="memname">auto Dune::IGANEW::GeometryKernel::hessian </td>
           <td>(</td>
-          <td class="paramtype">const typename Geometry::LocalCoordinate &amp;&#160;</td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
           <td class="paramname"><em>local</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename Geometry::NurbsLocalView &amp;&#160;</td>
+          <td class="paramtype">const NurbsLocalView &amp;&#160;</td>
           <td class="paramname"><em>nurbsLocalView</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const typename Geometry::ControlPointCoordinateNetType &amp;&#160;</td>
+          <td class="paramtype">const ControlPointCoordinateNetType &amp;&#160;</td>
           <td class="paramname"><em>localControlPointNet</em>&#160;</td>
         </tr>
         <tr>

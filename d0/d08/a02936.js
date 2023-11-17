@@ -1,4 +1,4 @@
-var a02932 =
+var a02936 =
 [
     [ "Dune::Capabilities::hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "dd/dac/a01008.html", "dd/dac/a01008" ],
     [ "Dune::Capabilities::hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d4/d45/a01012.html", "d4/d45/a01012" ],

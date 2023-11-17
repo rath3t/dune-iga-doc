@@ -13,5 +13,6 @@ var a01196 =
     [ "basisFunctions", "d2/d22/a01196.html#a4f54ee9638f76ad187a7e856d3b1a49a", null ],
     [ "basisFunctions", "d2/d22/a01196.html#ac14cbdaba9d0bd78aa4265f67fe9dbba", null ],
     [ "basisFunctions", "d2/d22/a01196.html#ac105906e3153eb3307d0f6ee8e915e39", null ],
-    [ "localView", "d2/d22/a01196.html#a3a415494b61940c766a34b91f5de8461", null ]
+    [ "localView", "d2/d22/a01196.html#a3a415494b61940c766a34b91f5de8461", null ],
+    [ "dimension", "d2/d22/a01196.html#a6682b7c839f6b7802d3b0b13e5428e6a", null ]
 ];

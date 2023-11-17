@@ -1,8 +1,8 @@
 var searchData=
 [
   ['edgeorientation_0',['EdgeOrientation',['../d9/d45/a01332.html#a4b56bac0e58a6f15d7509de369649719',1,'Dune::IGA::Boundary']]],
-  ['element_1',['element',['../d8/d8e/a01224.html#a5d44299aff465f934b96a97785fd1a67',1,'Dune::Functions::NurbsNode']]],
-  ['element_2',['Element',['../d6/d97/a01188.html#ae0f1b0280a151f71808caddeb0db81b5',1,'Dune::IGA::IGARefinedGeometries::Element()'],['../d8/d8e/a01224.html#adf34630db453ddba777c6909a860b092',1,'Dune::Functions::NurbsNode::Element()']]],
+  ['element_1',['Element',['../d6/d97/a01188.html#ae0f1b0280a151f71808caddeb0db81b5',1,'Dune::IGA::IGARefinedGeometries::Element()'],['../d8/d8e/a01224.html#adf34630db453ddba777c6909a860b092',1,'Dune::Functions::NurbsNode::Element()']]],
+  ['element_2',['element',['../d8/d8e/a01224.html#a5d44299aff465f934b96a97785fd1a67',1,'Dune::Functions::NurbsNode']]],
   ['element_5f_3',['element_',['../d8/d8e/a01224.html#a46140a3c8b42bd09729688683ec9a76f',1,'Dune::Functions::NurbsNode']]],
   ['elementboundaries_4',['ElementBoundaries',['../d7/d51/a01340.html',1,'Dune::IGA::Trim']]],
   ['elemententity_5',['ElementEntity',['../d4/da6/a01168.html#ac6cdb4ec92aebccff28c6086d7400da7',1,'Dune::IGA::NURBSGrid']]],

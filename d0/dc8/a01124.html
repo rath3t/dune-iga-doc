@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::GeometryKernel::NURBSPatchGeometry&lt; dim_, dimworld_, ScalarType &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGANEW::GeometryKernel::NURBSPatch&lt; dim_, dimworld_, ScalarType &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -97,124 +97,125 @@ $(document).ready(function(){initNavTree('d0/dc8/a01124.html','../../'); initRes
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../dd/de4/a01121.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry&lt; dim_, dimworld_, ScalarType &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::GeometryKernel::NURBSPatch&lt; dim_, dimworld_, ScalarType &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d9/da5/a02935_source.html">dune/iga/hierarchicpatch/nurbspatchgeometry.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../de/d87/a02939_source.html">dune/iga/hierarchicpatch/nurbspatchgeometry.hh</a>&gt;</code></p>
 <div class="dynheader">
-Inheritance diagram for Dune::IGANEW::GeometryKernel::NURBSPatchGeometry&lt; dim_, dimworld_, ScalarType &gt;:</div>
+Inheritance diagram for Dune::IGANEW::GeometryKernel::NURBSPatch&lt; dim_, dimworld_, ScalarType &gt;:</div>
 <div class="dyncontent">
-<div class="center"><img src="../../de/de5/a01123.png" border="0" usemap="#a_dune_1_1_i_g_a_n_e_w_1_1_geometry_kernel_1_1_n_u_r_b_s_patch_geometry_3_01dim___00_01dimworld___00_01_scalar_type_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="a_dune_1_1_i_g_a_n_e_w_1_1_geometry_kernel_1_1_n_u_r_b_s_patch_geometry_3_01dim___00_01dimworld___00_01_scalar_type_01_4_inherit__map" id="a_dune_1_1_i_g_a_n_e_w_1_1_geometry_kernel_1_1_n_u_r_b_s_patch_geometry_3_01dim___00_01dimworld___00_01_scalar_type_01_4_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,13,236,69"/>
-<area shape="rect" href="../../d0/dc8/a01124.html" title=" " alt="" coords="452,5,695,76"/>
+<div class="center"><img src="../../de/de5/a01123.png" border="0" usemap="#a_dune_1_1_i_g_a_n_e_w_1_1_geometry_kernel_1_1_n_u_r_b_s_patch_3_01dim___00_01dimworld___00_01_scalar_type_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_dune_1_1_i_g_a_n_e_w_1_1_geometry_kernel_1_1_n_u_r_b_s_patch_3_01dim___00_01dimworld___00_01_scalar_type_01_4_inherit__map" id="a_dune_1_1_i_g_a_n_e_w_1_1_geometry_kernel_1_1_n_u_r_b_s_patch_3_01dim___00_01dimworld___00_01_scalar_type_01_4_inherit__map">
+<area shape="rect" title=" " alt="" coords="5,45,236,101"/>
+<area shape="rect" href="../../d0/dc8/a01124.html" title=" " alt="" coords="452,5,711,61"/>
+<area shape="rect" href="../../d0/dc8/a01124.html" title=" " alt="" coords="452,85,711,141"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2fe61b8d337d8355cdc3ac36979cb173"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a> = ScalarType</td></tr>
-<tr class="separator:a2fe61b8d337d8355cdc3ac36979cb173"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4a5517b28c82f0b02562c585b80ae99"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> = FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt;</td></tr>
-<tr class="separator:ae4a5517b28c82f0b02562c585b80ae99"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc0672cde65dc6db0c8b6daf2aa00289"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a> = FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt;</td></tr>
-<tr class="separator:acc0672cde65dc6db0c8b6daf2aa00289"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c40c401ee96f84d8d63f818c4b08ba3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a0c40c401ee96f84d8d63f818c4b08ba3">JacobianTransposed</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt;</td></tr>
-<tr class="separator:a0c40c401ee96f84d8d63f818c4b08ba3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9400afd4971a68b163cd1672d437e116"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a9400afd4971a68b163cd1672d437e116">Hessian</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> *(<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>+1)/2, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt;</td></tr>
-<tr class="separator:a9400afd4971a68b163cd1672d437e116"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac1946344cb6657252593caa0e2ee3546"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ac1946344cb6657252593caa0e2ee3546">Jacobian</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt;</td></tr>
-<tr class="separator:ac1946344cb6657252593caa0e2ee3546"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a306102e44594cb9358d70cc48b85f5f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a306102e44594cb9358d70cc48b85f5f8">JacobianInverseTransposed</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt;</td></tr>
-<tr class="separator:a306102e44594cb9358d70cc48b85f5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3e40afe044261d4f3e62873ae489c69"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ac3e40afe044261d4f3e62873ae489c69">JacobianInverse</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt;</td></tr>
-<tr class="separator:ac3e40afe044261d4f3e62873ae489c69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a6487b569d91e8127efd89c5a3e5b50"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a1a6487b569d91e8127efd89c5a3e5b50">Volume</a> = <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a></td></tr>
-<tr class="separator:a1a6487b569d91e8127efd89c5a3e5b50"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5342bf720ab7f085650b6d0592f7cb45"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:a5342bf720ab7f085650b6d0592f7cb45"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a5342bf720ab7f085650b6d0592f7cb45">ParameterSpaceGeometry</a> = YaspGeometry&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> - codim, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, const YaspGrid&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, TensorProductCoordinates&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt; &gt; &gt;</td></tr>
-<tr class="separator:a5342bf720ab7f085650b6d0592f7cb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3800552630deb147e140348a375dd95"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aa3800552630deb147e140348a375dd95">ControlPointType</a> = typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType &gt;::ControlPointType</td></tr>
-<tr class="separator:aa3800552630deb147e140348a375dd95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e05314e10db9188bda83999f08dcbf5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a4e05314e10db9188bda83999f08dcbf5">ControlPointNetType</a> = typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType &gt;::ControlPointNetType</td></tr>
-<tr class="separator:a4e05314e10db9188bda83999f08dcbf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa45b7e67a3dc727aa3d4b68d57dc9944"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aa45b7e67a3dc727aa3d4b68d57dc9944">ControlPointCoordinateNetType</a> = <a class="el" href="../../d2/d82/a01404.html">IGA::MultiDimensionNet</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType &gt;::GlobalCoordinateType &gt;</td></tr>
-<tr class="separator:aa45b7e67a3dc727aa3d4b68d57dc9944"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0998d4c30464499f53ff3369bbbc499a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a0998d4c30464499f53ff3369bbbc499a">Nurbs</a> = <a class="el" href="../../d2/d22/a01196.html">Dune::IGA::Nurbs</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, ScalarType &gt;</td></tr>
-<tr class="separator:a0998d4c30464499f53ff3369bbbc499a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0a2d3a5c6579cac16224d7797cb646d2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a0a2d3a5c6579cac16224d7797cb646d2">NurbsLocalView</a> = typename <a class="el" href="../../dc/dcc/a01200.html">Nurbs::LocalView</a></td></tr>
-<tr class="separator:a0a2d3a5c6579cac16224d7797cb646d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada84d9c7f78c019aabe46af7cc25da1e"><td class="memTemplParams" colspan="2">template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> trim&gt; </td></tr>
-<tr class="memitem:ada84d9c7f78c019aabe46af7cc25da1e"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ada84d9c7f78c019aabe46af7cc25da1e">GeometryLocalView</a> = <a class="el" href="../../d6/de6/a01132.html">PatchGeometryLocalView</a>&lt; codim, GeometryKernel::NURBSPatch, trim &gt;</td></tr>
-<tr class="separator:ada84d9c7f78c019aabe46af7cc25da1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe1540da26e3ac319cbb2965e1b8d6f8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a> = ScalarType</td></tr>
+<tr class="separator:afe1540da26e3ac319cbb2965e1b8d6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b416fc4db181afc1222d204cf04d0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> = FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt;</td></tr>
+<tr class="separator:a53b416fc4db181afc1222d204cf04d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c31b7818240d90c415c146c4409a52e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a> = FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt;</td></tr>
+<tr class="separator:a2c31b7818240d90c415c146c4409a52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a557139b50abe68100007098c8f8c75ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a557139b50abe68100007098c8f8c75ae">JacobianTransposed</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt;</td></tr>
+<tr class="separator:a557139b50abe68100007098c8f8c75ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a08b1313e9df7edeb0575148d806df1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a7a08b1313e9df7edeb0575148d806df1">Hessian</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> *(<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>+1)/2, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt;</td></tr>
+<tr class="separator:a7a08b1313e9df7edeb0575148d806df1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf973e588defd30743bc24f5dac133cc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#acf973e588defd30743bc24f5dac133cc">Jacobian</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt;</td></tr>
+<tr class="separator:acf973e588defd30743bc24f5dac133cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6900f19cc63c761b3b6a83c99db9476"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ac6900f19cc63c761b3b6a83c99db9476">JacobianInverseTransposed</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt;</td></tr>
+<tr class="separator:ac6900f19cc63c761b3b6a83c99db9476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcc5274f9edfd69013f401b4fc880c45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#afcc5274f9edfd69013f401b4fc880c45">JacobianInverse</a> = FieldMatrix&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt;</td></tr>
+<tr class="separator:afcc5274f9edfd69013f401b4fc880c45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a698b20f511bcd3df51be210cc60a24b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a698b20f511bcd3df51be210cc60a24b6">Volume</a> = <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a></td></tr>
+<tr class="separator:a698b20f511bcd3df51be210cc60a24b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5955d7897f32e279b07c72a1e9060491"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:a5955d7897f32e279b07c72a1e9060491"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a5955d7897f32e279b07c72a1e9060491">ParameterSpaceGeometry</a> = YaspGeometry&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> - codim, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, const YaspGrid&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, TensorProductCoordinates&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt; &gt; &gt;</td></tr>
+<tr class="separator:a5955d7897f32e279b07c72a1e9060491"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affc202885fb2e2cec7b68664b978eece"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#affc202885fb2e2cec7b68664b978eece">ControlPointType</a> = typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType &gt;::ControlPointType</td></tr>
+<tr class="separator:affc202885fb2e2cec7b68664b978eece"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4ceb44edc1962a82100386c17b089a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aa4ceb44edc1962a82100386c17b089a8">ControlPointNetType</a> = typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType &gt;::ControlPointNetType</td></tr>
+<tr class="separator:aa4ceb44edc1962a82100386c17b089a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fea144d28439f2a2d706513176d5447"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a2fea144d28439f2a2d706513176d5447">ControlPointCoordinateNetType</a> = <a class="el" href="../../d2/d82/a01404.html">IGA::MultiDimensionNet</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType &gt;::GlobalCoordinateType &gt;</td></tr>
+<tr class="separator:a2fea144d28439f2a2d706513176d5447"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58e0a1d5d30534b81b8d8ddc73e1dca"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ae58e0a1d5d30534b81b8d8ddc73e1dca">Nurbs</a> = <a class="el" href="../../d2/d22/a01196.html">Dune::IGA::Nurbs</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, ScalarType &gt;</td></tr>
+<tr class="separator:ae58e0a1d5d30534b81b8d8ddc73e1dca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fc5afe06a762b8e4d935d3ecf18df16"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a8fc5afe06a762b8e4d935d3ecf18df16">NurbsLocalView</a> = typename <a class="el" href="../../dc/dcc/a01200.html">Nurbs::LocalView</a></td></tr>
+<tr class="separator:a8fc5afe06a762b8e4d935d3ecf18df16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac242b84f11c3eec410c3e01c5dd4b8e7"><td class="memTemplParams" colspan="2">template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> trim&gt; </td></tr>
+<tr class="memitem:ac242b84f11c3eec410c3e01c5dd4b8e7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ac242b84f11c3eec410c3e01c5dd4b8e7">GeometryLocalView</a> = <a class="el" href="../../d6/de6/a01132.html">Dune::IGANEW::PatchGeometryLocalView</a>&lt; codim, <a class="el" href="../../d0/dc8/a01124.html">NURBSPatch</a>, trim &gt;</td></tr>
+<tr class="separator:ac242b84f11c3eec410c3e01c5dd4b8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3428b948cc827349352022e8ca49035c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a3428b948cc827349352022e8ca49035c">NURBSPatchGeometry</a> ()=default</td></tr>
-<tr class="separator:a3428b948cc827349352022e8ca49035c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a85662f83493ae5ff225de6d255f27edf"><td class="memTemplParams" colspan="2">template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> trim&gt; </td></tr>
-<tr class="memitem:a85662f83493ae5ff225de6d255f27edf"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a85662f83493ae5ff225de6d255f27edf">localView</a> () const</td></tr>
-<tr class="separator:a85662f83493ae5ff225de6d255f27edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ff398680076fbd16eeefcb076ab9ff4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a6ff398680076fbd16eeefcb076ab9ff4">NURBSPatchGeometry</a> (const <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType &gt; &amp;patchData)</td></tr>
-<tr class="separator:a6ff398680076fbd16eeefcb076ab9ff4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0104bbb8b3d5173a53432f20b260d488"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a0104bbb8b3d5173a53432f20b260d488">center</a> () const</td></tr>
-<tr class="memdesc:a0104bbb8b3d5173a53432f20b260d488"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map the center of the element to the geometry.  <a href="../../d0/dc8/a01124.html#a0104bbb8b3d5173a53432f20b260d488">More...</a><br /></td></tr>
-<tr class="separator:a0104bbb8b3d5173a53432f20b260d488"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a216ea8507c3d3f9682a55b23668dc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ac5a216ea8507c3d3f9682a55b23668dc">local</a> (const <a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#a7a8ac65ae2d226966f4d7dcca21566e5">global</a>) const</td></tr>
-<tr class="separator:ac5a216ea8507c3d3f9682a55b23668dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad634e067b9e495ba3cc9a97576e584ba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ad634e067b9e495ba3cc9a97576e584ba">volume</a> (int scaleOrder=1) const</td></tr>
-<tr class="memdesc:ad634e067b9e495ba3cc9a97576e584ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the volume of the element with an integration rule for order max(order)*elementdim.  <a href="../../d0/dc8/a01124.html#ad634e067b9e495ba3cc9a97576e584ba">More...</a><br /></td></tr>
-<tr class="separator:ad634e067b9e495ba3cc9a97576e584ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a86ad1d000d7b5f54d938d03f1214db"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a2a86ad1d000d7b5f54d938d03f1214db">affine</a> () const</td></tr>
-<tr class="separator:a2a86ad1d000d7b5f54d938d03f1214db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a094cd554722a7c8312ea16dac2748699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a094cd554722a7c8312ea16dac2748699">corners</a> () const</td></tr>
-<tr class="memdesc:a094cd554722a7c8312ea16dac2748699"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of corners of the element.  <a href="../../d0/dc8/a01124.html#a094cd554722a7c8312ea16dac2748699">More...</a><br /></td></tr>
-<tr class="separator:a094cd554722a7c8312ea16dac2748699"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15cd2d65842db95ab42540624a89537a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a15cd2d65842db95ab42540624a89537a">corner</a> (int k) const</td></tr>
-<tr class="memdesc:a15cd2d65842db95ab42540624a89537a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return world coordinates of the k-th corner of the element.  <a href="../../d0/dc8/a01124.html#a15cd2d65842db95ab42540624a89537a">More...</a><br /></td></tr>
-<tr class="separator:a15cd2d65842db95ab42540624a89537a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a387b7e04b97769f15f322b46d62c6a12"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a387b7e04b97769f15f322b46d62c6a12">operator()</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#ac5a216ea8507c3d3f9682a55b23668dc">local</a>) const</td></tr>
-<tr class="separator:a387b7e04b97769f15f322b46d62c6a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a8ac65ae2d226966f4d7dcca21566e5"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a7a8ac65ae2d226966f4d7dcca21566e5">global</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;u) const</td></tr>
-<tr class="memdesc:a7a8ac65ae2d226966f4d7dcca21566e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluates the geometric position  <a href="../../d0/dc8/a01124.html#a7a8ac65ae2d226966f4d7dcca21566e5">More...</a><br /></td></tr>
-<tr class="separator:a7a8ac65ae2d226966f4d7dcca21566e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37efeb4b9a5fdc38c60e197b68245b58"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a37efeb4b9a5fdc38c60e197b68245b58">zeroFirstAndSecondDerivativeOfPosition</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;u) const</td></tr>
-<tr class="separator:a37efeb4b9a5fdc38c60e197b68245b58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a154e9044fc86ef041c7e99da74e1c3b2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a0c40c401ee96f84d8d63f818c4b08ba3">JacobianTransposed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a154e9044fc86ef041c7e99da74e1c3b2">jacobianTransposed</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;u) const</td></tr>
-<tr class="memdesc:a154e9044fc86ef041c7e99da74e1c3b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the Jacobian transposed matrix  <a href="../../d0/dc8/a01124.html#a154e9044fc86ef041c7e99da74e1c3b2">More...</a><br /></td></tr>
-<tr class="separator:a154e9044fc86ef041c7e99da74e1c3b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef2e740e545744f0825a152d8bb80cfc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a9400afd4971a68b163cd1672d437e116">Hessian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aef2e740e545744f0825a152d8bb80cfc">hessian</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;u) const</td></tr>
-<tr class="separator:aef2e740e545744f0825a152d8bb80cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43100d92e9e679ad28eb986a5325c45f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#ac1946344cb6657252593caa0e2ee3546">Jacobian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a43100d92e9e679ad28eb986a5325c45f">jacobian</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#ac5a216ea8507c3d3f9682a55b23668dc">local</a>) const</td></tr>
-<tr class="separator:a43100d92e9e679ad28eb986a5325c45f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ffce85705ac9b25355a8bce6b7addc3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a6ffce85705ac9b25355a8bce6b7addc3">integrationElement</a> (const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#ac5a216ea8507c3d3f9682a55b23668dc">local</a>) const</td></tr>
-<tr class="separator:a6ffce85705ac9b25355a8bce6b7addc3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab50dcf6b79fe47ef075390e9f98dd4fc"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ab50dcf6b79fe47ef075390e9f98dd4fc">type</a> () const</td></tr>
-<tr class="memdesc:ab50dcf6b79fe47ef075390e9f98dd4fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the element: a hypercube of the correct dimension.  <a href="../../d0/dc8/a01124.html#ab50dcf6b79fe47ef075390e9f98dd4fc">More...</a><br /></td></tr>
-<tr class="separator:ab50dcf6b79fe47ef075390e9f98dd4fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d05a76520b90a750db45bbbc7806cc8"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../d7/df2/a01000.html">IGA::Utilities::Domain</a>&lt; double &gt;, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a6d05a76520b90a750db45bbbc7806cc8">domain</a> () const</td></tr>
-<tr class="separator:a6d05a76520b90a750db45bbbc7806cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2bacc79409a867f33de518e69d3a0909"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a2bacc79409a867f33de518e69d3a0909">degree</a> () const</td></tr>
-<tr class="separator:a2bacc79409a867f33de518e69d3a0909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a443728b5d1cc1b1b3a208d544cf3334e"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a443728b5d1cc1b1b3a208d544cf3334e">domainMidPoint</a> () const</td></tr>
-<tr class="separator:a443728b5d1cc1b1b3a208d544cf3334e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a715a34156ff42dadb9566a7689a04fec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a715a34156ff42dadb9566a7689a04fec">NURBSPatch</a> ()=default</td></tr>
+<tr class="separator:a715a34156ff42dadb9566a7689a04fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1920e6aa3d1cd838b94938a8ebfa340d"><td class="memTemplParams" colspan="2">template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> trim&gt; </td></tr>
+<tr class="memitem:a1920e6aa3d1cd838b94938a8ebfa340d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a1920e6aa3d1cd838b94938a8ebfa340d">localView</a> () const</td></tr>
+<tr class="separator:a1920e6aa3d1cd838b94938a8ebfa340d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b5348fb851255b06c507e038ecdec10"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a7b5348fb851255b06c507e038ecdec10">NURBSPatch</a> (const <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType &gt; &amp;patchData)</td></tr>
+<tr class="separator:a7b5348fb851255b06c507e038ecdec10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8861494e54d23922a5f7a5e734d64076"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a8861494e54d23922a5f7a5e734d64076">center</a> () const</td></tr>
+<tr class="memdesc:a8861494e54d23922a5f7a5e734d64076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map the center of the element to the geometry.  <a href="../../d0/dc8/a01124.html#a8861494e54d23922a5f7a5e734d64076">More...</a><br /></td></tr>
+<tr class="separator:a8861494e54d23922a5f7a5e734d64076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a8a724cf6554714e11c7f15518d2b1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a92a8a724cf6554714e11c7f15518d2b1">local</a> (const <a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#a67a9dc507419f4356b413a49c83a05b2">global</a>) const</td></tr>
+<tr class="separator:a92a8a724cf6554714e11c7f15518d2b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a642de64fa63abf63db7a05e7d4a2e76e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a642de64fa63abf63db7a05e7d4a2e76e">volume</a> (int scaleOrder=1) const</td></tr>
+<tr class="memdesc:a642de64fa63abf63db7a05e7d4a2e76e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the volume of the element with an integration rule for order max(order)*elementdim.  <a href="../../d0/dc8/a01124.html#a642de64fa63abf63db7a05e7d4a2e76e">More...</a><br /></td></tr>
+<tr class="separator:a642de64fa63abf63db7a05e7d4a2e76e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a072bbe21d0b73e440b7f6c3c17892156"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a072bbe21d0b73e440b7f6c3c17892156">affine</a> () const</td></tr>
+<tr class="separator:a072bbe21d0b73e440b7f6c3c17892156"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a160823d9e885676db1350f3f1b9c7850"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a160823d9e885676db1350f3f1b9c7850">corners</a> () const</td></tr>
+<tr class="memdesc:a160823d9e885676db1350f3f1b9c7850"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of corners of the element.  <a href="../../d0/dc8/a01124.html#a160823d9e885676db1350f3f1b9c7850">More...</a><br /></td></tr>
+<tr class="separator:a160823d9e885676db1350f3f1b9c7850"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b0acbb3bafd33158fe5bf6f1eb02018"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a5b0acbb3bafd33158fe5bf6f1eb02018">corner</a> (int k) const</td></tr>
+<tr class="memdesc:a5b0acbb3bafd33158fe5bf6f1eb02018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return world coordinates of the k-th corner of the element.  <a href="../../d0/dc8/a01124.html#a5b0acbb3bafd33158fe5bf6f1eb02018">More...</a><br /></td></tr>
+<tr class="separator:a5b0acbb3bafd33158fe5bf6f1eb02018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab49ccb3fc978dbe42a8432d0a3626741"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ab49ccb3fc978dbe42a8432d0a3626741">operator()</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#a92a8a724cf6554714e11c7f15518d2b1">local</a>) const</td></tr>
+<tr class="separator:ab49ccb3fc978dbe42a8432d0a3626741"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a9dc507419f4356b413a49c83a05b2"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a67a9dc507419f4356b413a49c83a05b2">global</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;u) const</td></tr>
+<tr class="memdesc:a67a9dc507419f4356b413a49c83a05b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">evaluates the geometric position  <a href="../../d0/dc8/a01124.html#a67a9dc507419f4356b413a49c83a05b2">More...</a><br /></td></tr>
+<tr class="separator:a67a9dc507419f4356b413a49c83a05b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc7794edc49f2371471e260dbbeceda0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#afc7794edc49f2371471e260dbbeceda0">zeroFirstAndSecondDerivativeOfPosition</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;u) const</td></tr>
+<tr class="separator:afc7794edc49f2371471e260dbbeceda0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02bdfa1a2455fa7da3ab4b3fbb7f34f5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a557139b50abe68100007098c8f8c75ae">JacobianTransposed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a02bdfa1a2455fa7da3ab4b3fbb7f34f5">jacobianTransposed</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;u) const</td></tr>
+<tr class="memdesc:a02bdfa1a2455fa7da3ab4b3fbb7f34f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the Jacobian transposed matrix  <a href="../../d0/dc8/a01124.html#a02bdfa1a2455fa7da3ab4b3fbb7f34f5">More...</a><br /></td></tr>
+<tr class="separator:a02bdfa1a2455fa7da3ab4b3fbb7f34f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee23e7a6568f8d7253faa32776952eff"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#a7a08b1313e9df7edeb0575148d806df1">Hessian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aee23e7a6568f8d7253faa32776952eff">hessian</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;u) const</td></tr>
+<tr class="separator:aee23e7a6568f8d7253faa32776952eff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77aa916f8539b71d1c9c104c92360fe7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#acf973e588defd30743bc24f5dac133cc">Jacobian</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a77aa916f8539b71d1c9c104c92360fe7">jacobian</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#a92a8a724cf6554714e11c7f15518d2b1">local</a>) const</td></tr>
+<tr class="separator:a77aa916f8539b71d1c9c104c92360fe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6edcccddb45dc68524f67e60ac9ad4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ab6edcccddb45dc68524f67e60ac9ad4b">integrationElement</a> (const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;<a class="el" href="../../d0/dc8/a01124.html#a92a8a724cf6554714e11c7f15518d2b1">local</a>) const</td></tr>
+<tr class="separator:ab6edcccddb45dc68524f67e60ac9ad4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a865962205c7091fb854a95d51f147103"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a865962205c7091fb854a95d51f147103">type</a> () const</td></tr>
+<tr class="memdesc:a865962205c7091fb854a95d51f147103"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the element: a hypercube of the correct dimension.  <a href="../../d0/dc8/a01124.html#a865962205c7091fb854a95d51f147103">More...</a><br /></td></tr>
+<tr class="separator:a865962205c7091fb854a95d51f147103"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeaf264af7385cb1791416b53301d428f"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../d7/df2/a01000.html">IGA::Utilities::Domain</a>&lt; double &gt;, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aeaf264af7385cb1791416b53301d428f">domain</a> () const</td></tr>
+<tr class="separator:aeaf264af7385cb1791416b53301d428f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a2d56e2133a971343f2d58ec809ab3"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a55a2d56e2133a971343f2d58ec809ab3">degree</a> () const</td></tr>
+<tr class="separator:a55a2d56e2133a971343f2d58ec809ab3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb9e657006dcd7792292f8d49c802a7"><td class="memItemLeft" align="right" valign="top">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#aefb9e657006dcd7792292f8d49c802a7">domainMidPoint</a> () const</td></tr>
+<tr class="separator:aefb9e657006dcd7792292f8d49c802a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ad96cdefd7e0e0636a6550ffa27bb2412"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#ad96cdefd7e0e0636a6550ffa27bb2412">patchData_</a></td></tr>
-<tr class="separator:ad96cdefd7e0e0636a6550ffa27bb2412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a2952566984f3930cbf7d4dbf29c15a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a7a2952566984f3930cbf7d4dbf29c15a">patchData_</a></td></tr>
+<tr class="separator:a7a2952566984f3930cbf7d4dbf29c15a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a64c9e6bc86aa93bbf829de0ae0b5b963"><td class="memItemLeft" align="right" valign="top">static constexpr std::integral auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> = dimworld_</td></tr>
-<tr class="separator:a64c9e6bc86aa93bbf829de0ae0b5b963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a045ded12bdecccea30521167d4868394"><td class="memItemLeft" align="right" valign="top">static constexpr std::integral auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> = dim_</td></tr>
-<tr class="separator:a045ded12bdecccea30521167d4868394"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173616658bc7f0db6836a9dda983afa3"><td class="memItemLeft" align="right" valign="top">static constexpr std::integral auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> = dimworld_</td></tr>
+<tr class="separator:a173616658bc7f0db6836a9dda983afa3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06037363d30a70eba4b98f590f81a637"><td class="memItemLeft" align="right" valign="top">static constexpr std::integral auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> = dim_</td></tr>
+<tr class="separator:a06037363d30a70eba4b98f590f81a637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="aa45b7e67a3dc727aa3d4b68d57dc9944" name="aa45b7e67a3dc727aa3d4b68d57dc9944"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa45b7e67a3dc727aa3d4b68d57dc9944">&#9670;&nbsp;</a></span>ControlPointCoordinateNetType</h2>
+<a id="a2fea144d28439f2a2d706513176d5447" name="a2fea144d28439f2a2d706513176d5447"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fea144d28439f2a2d706513176d5447">&#9670;&nbsp;</a></span>ControlPointCoordinateNetType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -222,15 +223,15 @@ Static Public Attributes</h2></td></tr>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::ControlPointCoordinateNetType =  <a class="el" href="../../d2/d82/a01404.html">IGA::MultiDimensionNet</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType&gt;::GlobalCoordinateType&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::ControlPointCoordinateNetType =  <a class="el" href="../../d2/d82/a01404.html">IGA::MultiDimensionNet</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType&gt;::GlobalCoordinateType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4e05314e10db9188bda83999f08dcbf5" name="a4e05314e10db9188bda83999f08dcbf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e05314e10db9188bda83999f08dcbf5">&#9670;&nbsp;</a></span>ControlPointNetType</h2>
+<a id="aa4ceb44edc1962a82100386c17b089a8" name="aa4ceb44edc1962a82100386c17b089a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4ceb44edc1962a82100386c17b089a8">&#9670;&nbsp;</a></span>ControlPointNetType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -238,15 +239,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::ControlPointNetType =  typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType&gt;::ControlPointNetType</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::ControlPointNetType =  typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType&gt;::ControlPointNetType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="aa3800552630deb147e140348a375dd95" name="aa3800552630deb147e140348a375dd95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa3800552630deb147e140348a375dd95">&#9670;&nbsp;</a></span>ControlPointType</h2>
+<a id="affc202885fb2e2cec7b68664b978eece" name="affc202885fb2e2cec7b68664b978eece"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affc202885fb2e2cec7b68664b978eece">&#9670;&nbsp;</a></span>ControlPointType</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -254,15 +255,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::ControlPointType =  typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType&gt;::ControlPointType</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::ControlPointType =  typename <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType&gt;::ControlPointType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2fe61b8d337d8355cdc3ac36979cb173" name="a2fe61b8d337d8355cdc3ac36979cb173"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fe61b8d337d8355cdc3ac36979cb173">&#9670;&nbsp;</a></span>ctype</h2>
+<a id="afe1540da26e3ac319cbb2965e1b8d6f8" name="afe1540da26e3ac319cbb2965e1b8d6f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe1540da26e3ac319cbb2965e1b8d6f8">&#9670;&nbsp;</a></span>ctype</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,15 +271,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::ctype =  ScalarType</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::ctype =  ScalarType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ada84d9c7f78c019aabe46af7cc25da1e" name="ada84d9c7f78c019aabe46af7cc25da1e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada84d9c7f78c019aabe46af7cc25da1e">&#9670;&nbsp;</a></span>GeometryLocalView</h2>
+<a id="ac242b84f11c3eec410c3e01c5dd4b8e7" name="ac242b84f11c3eec410c3e01c5dd4b8e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac242b84f11c3eec410c3e01c5dd4b8e7">&#9670;&nbsp;</a></span>GeometryLocalView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,15 +289,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> trim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::GeometryLocalView =  <a class="el" href="../../d6/de6/a01132.html">PatchGeometryLocalView</a>&lt;codim, GeometryKernel::NURBSPatch, trim&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::GeometryLocalView =  <a class="el" href="../../d6/de6/a01132.html">Dune::IGANEW::PatchGeometryLocalView</a>&lt;codim, <a class="el" href="../../d0/dc8/a01124.html">NURBSPatch</a>, trim&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="acc0672cde65dc6db0c8b6daf2aa00289" name="acc0672cde65dc6db0c8b6daf2aa00289"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc0672cde65dc6db0c8b6daf2aa00289">&#9670;&nbsp;</a></span>GlobalCoordinate</h2>
+<a id="a2c31b7818240d90c415c146c4409a52e" name="a2c31b7818240d90c415c146c4409a52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c31b7818240d90c415c146c4409a52e">&#9670;&nbsp;</a></span>GlobalCoordinate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -304,15 +305,15 @@ template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::GlobalCoordinate =  FieldVector&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::GlobalCoordinate =  FieldVector&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9400afd4971a68b163cd1672d437e116" name="a9400afd4971a68b163cd1672d437e116"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9400afd4971a68b163cd1672d437e116">&#9670;&nbsp;</a></span>Hessian</h2>
+<a id="a7a08b1313e9df7edeb0575148d806df1" name="a7a08b1313e9df7edeb0575148d806df1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a08b1313e9df7edeb0575148d806df1">&#9670;&nbsp;</a></span>Hessian</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -320,15 +321,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::Hessian =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>*(<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> + 1) / 2, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::Hessian =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>*(<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> + 1) / 2, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac1946344cb6657252593caa0e2ee3546" name="ac1946344cb6657252593caa0e2ee3546"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac1946344cb6657252593caa0e2ee3546">&#9670;&nbsp;</a></span>Jacobian</h2>
+<a id="acf973e588defd30743bc24f5dac133cc" name="acf973e588defd30743bc24f5dac133cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf973e588defd30743bc24f5dac133cc">&#9670;&nbsp;</a></span>Jacobian</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -336,15 +337,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::Jacobian =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::Jacobian =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac3e40afe044261d4f3e62873ae489c69" name="ac3e40afe044261d4f3e62873ae489c69"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3e40afe044261d4f3e62873ae489c69">&#9670;&nbsp;</a></span>JacobianInverse</h2>
+<a id="afcc5274f9edfd69013f401b4fc880c45" name="afcc5274f9edfd69013f401b4fc880c45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcc5274f9edfd69013f401b4fc880c45">&#9670;&nbsp;</a></span>JacobianInverse</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -352,15 +353,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::JacobianInverse =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::JacobianInverse =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a306102e44594cb9358d70cc48b85f5f8" name="a306102e44594cb9358d70cc48b85f5f8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a306102e44594cb9358d70cc48b85f5f8">&#9670;&nbsp;</a></span>JacobianInverseTransposed</h2>
+<a id="ac6900f19cc63c761b3b6a83c99db9476" name="ac6900f19cc63c761b3b6a83c99db9476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6900f19cc63c761b3b6a83c99db9476">&#9670;&nbsp;</a></span>JacobianInverseTransposed</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -368,15 +369,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::JacobianInverseTransposed =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::JacobianInverseTransposed =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0c40c401ee96f84d8d63f818c4b08ba3" name="a0c40c401ee96f84d8d63f818c4b08ba3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c40c401ee96f84d8d63f818c4b08ba3">&#9670;&nbsp;</a></span>JacobianTransposed</h2>
+<a id="a557139b50abe68100007098c8f8c75ae" name="a557139b50abe68100007098c8f8c75ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a557139b50abe68100007098c8f8c75ae">&#9670;&nbsp;</a></span>JacobianTransposed</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,15 +385,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::JacobianTransposed =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::JacobianTransposed =  FieldMatrix&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae4a5517b28c82f0b02562c585b80ae99" name="ae4a5517b28c82f0b02562c585b80ae99"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4a5517b28c82f0b02562c585b80ae99">&#9670;&nbsp;</a></span>LocalCoordinate</h2>
+<a id="a53b416fc4db181afc1222d204cf04d0b" name="a53b416fc4db181afc1222d204cf04d0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b416fc4db181afc1222d204cf04d0b">&#9670;&nbsp;</a></span>LocalCoordinate</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -400,15 +401,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::LocalCoordinate =  FieldVector&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::LocalCoordinate =  FieldVector&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0998d4c30464499f53ff3369bbbc499a" name="a0998d4c30464499f53ff3369bbbc499a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0998d4c30464499f53ff3369bbbc499a">&#9670;&nbsp;</a></span>Nurbs</h2>
+<a id="ae58e0a1d5d30534b81b8d8ddc73e1dca" name="ae58e0a1d5d30534b81b8d8ddc73e1dca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae58e0a1d5d30534b81b8d8ddc73e1dca">&#9670;&nbsp;</a></span>Nurbs</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -416,15 +417,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::Nurbs =  <a class="el" href="../../d2/d22/a01196.html">Dune::IGA::Nurbs</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, ScalarType&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::Nurbs =  <a class="el" href="../../d2/d22/a01196.html">Dune::IGA::Nurbs</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, ScalarType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0a2d3a5c6579cac16224d7797cb646d2" name="a0a2d3a5c6579cac16224d7797cb646d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0a2d3a5c6579cac16224d7797cb646d2">&#9670;&nbsp;</a></span>NurbsLocalView</h2>
+<a id="a8fc5afe06a762b8e4d935d3ecf18df16" name="a8fc5afe06a762b8e4d935d3ecf18df16"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fc5afe06a762b8e4d935d3ecf18df16">&#9670;&nbsp;</a></span>NurbsLocalView</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,15 +433,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::NurbsLocalView =  typename <a class="el" href="../../dc/dcc/a01200.html">Nurbs::LocalView</a></td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::NurbsLocalView =  typename <a class="el" href="../../dc/dcc/a01200.html">Nurbs::LocalView</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5342bf720ab7f085650b6d0592f7cb45" name="a5342bf720ab7f085650b6d0592f7cb45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5342bf720ab7f085650b6d0592f7cb45">&#9670;&nbsp;</a></span>ParameterSpaceGeometry</h2>
+<a id="a5955d7897f32e279b07c72a1e9060491" name="a5955d7897f32e279b07c72a1e9060491"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5955d7897f32e279b07c72a1e9060491">&#9670;&nbsp;</a></span>ParameterSpaceGeometry</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -450,15 +451,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int codim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::ParameterSpaceGeometry =  YaspGeometry&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> - codim, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, const YaspGrid&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, TensorProductCoordinates&lt;<a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>&gt; &gt;&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::ParameterSpaceGeometry =  YaspGeometry&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> - codim, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, const YaspGrid&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, TensorProductCoordinates&lt;<a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>&gt; &gt;&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a1a6487b569d91e8127efd89c5a3e5b50" name="a1a6487b569d91e8127efd89c5a3e5b50"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a6487b569d91e8127efd89c5a3e5b50">&#9670;&nbsp;</a></span>Volume</h2>
+<a id="a698b20f511bcd3df51be210cc60a24b6" name="a698b20f511bcd3df51be210cc60a24b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a698b20f511bcd3df51be210cc60a24b6">&#9670;&nbsp;</a></span>Volume</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -466,7 +467,7 @@ template&lt;int codim&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::Volume =  <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a></td>
+          <td class="memname">using <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::Volume =  <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -474,8 +475,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3428b948cc827349352022e8ca49035c" name="a3428b948cc827349352022e8ca49035c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3428b948cc827349352022e8ca49035c">&#9670;&nbsp;</a></span>NURBSPatchGeometry() <span class="overload">[1/2]</span></h2>
+<a id="a715a34156ff42dadb9566a7689a04fec" name="a715a34156ff42dadb9566a7689a04fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a715a34156ff42dadb9566a7689a04fec">&#9670;&nbsp;</a></span>NURBSPatch() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -486,7 +487,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::NURBSPatchGeometry </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::NURBSPatch </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -501,8 +502,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a6ff398680076fbd16eeefcb076ab9ff4" name="a6ff398680076fbd16eeefcb076ab9ff4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ff398680076fbd16eeefcb076ab9ff4">&#9670;&nbsp;</a></span>NURBSPatchGeometry() <span class="overload">[2/2]</span></h2>
+<a id="a7b5348fb851255b06c507e038ecdec10" name="a7b5348fb851255b06c507e038ecdec10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b5348fb851255b06c507e038ecdec10">&#9670;&nbsp;</a></span>NURBSPatch() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,9 +514,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::NURBSPatchGeometry </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::NURBSPatch </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt; <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType &gt; &amp;&#160;</td>
           <td class="paramname"><em>patchData</em></td><td>)</td>
           <td></td>
         </tr>
@@ -530,8 +531,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a2a86ad1d000d7b5f54d938d03f1214db" name="a2a86ad1d000d7b5f54d938d03f1214db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a86ad1d000d7b5f54d938d03f1214db">&#9670;&nbsp;</a></span>affine()</h2>
+<a id="a072bbe21d0b73e440b7f6c3c17892156" name="a072bbe21d0b73e440b7f6c3c17892156"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a072bbe21d0b73e440b7f6c3c17892156">&#9670;&nbsp;</a></span>affine()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -542,7 +543,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::affine </td>
+          <td class="memname">bool <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::affine </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -557,8 +558,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a0104bbb8b3d5173a53432f20b260d488" name="a0104bbb8b3d5173a53432f20b260d488"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0104bbb8b3d5173a53432f20b260d488">&#9670;&nbsp;</a></span>center()</h2>
+<a id="a8861494e54d23922a5f7a5e734d64076" name="a8861494e54d23922a5f7a5e734d64076"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8861494e54d23922a5f7a5e734d64076">&#9670;&nbsp;</a></span>center()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -569,7 +570,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::center </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::center </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -586,8 +587,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a15cd2d65842db95ab42540624a89537a" name="a15cd2d65842db95ab42540624a89537a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15cd2d65842db95ab42540624a89537a">&#9670;&nbsp;</a></span>corner()</h2>
+<a id="a5b0acbb3bafd33158fe5bf6f1eb02018" name="a5b0acbb3bafd33158fe5bf6f1eb02018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b0acbb3bafd33158fe5bf6f1eb02018">&#9670;&nbsp;</a></span>corner()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -598,7 +599,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::corner </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::corner </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>k</em></td><td>)</td>
@@ -616,8 +617,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a094cd554722a7c8312ea16dac2748699" name="a094cd554722a7c8312ea16dac2748699"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a094cd554722a7c8312ea16dac2748699">&#9670;&nbsp;</a></span>corners()</h2>
+<a id="a160823d9e885676db1350f3f1b9c7850" name="a160823d9e885676db1350f3f1b9c7850"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a160823d9e885676db1350f3f1b9c7850">&#9670;&nbsp;</a></span>corners()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -628,7 +629,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::corners </td>
+          <td class="memname">int <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::corners </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -645,8 +646,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a2bacc79409a867f33de518e69d3a0909" name="a2bacc79409a867f33de518e69d3a0909"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2bacc79409a867f33de518e69d3a0909">&#9670;&nbsp;</a></span>degree()</h2>
+<a id="a55a2d56e2133a971343f2d58ec809ab3" name="a55a2d56e2133a971343f2d58ec809ab3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a2d56e2133a971343f2d58ec809ab3">&#9670;&nbsp;</a></span>degree()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -657,7 +658,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; int, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::degree </td>
+          <td class="memname">std::array&lt; int, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::degree </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -672,8 +673,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a6d05a76520b90a750db45bbbc7806cc8" name="a6d05a76520b90a750db45bbbc7806cc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6d05a76520b90a750db45bbbc7806cc8">&#9670;&nbsp;</a></span>domain()</h2>
+<a id="aeaf264af7385cb1791416b53301d428f" name="aeaf264af7385cb1791416b53301d428f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeaf264af7385cb1791416b53301d428f">&#9670;&nbsp;</a></span>domain()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -684,7 +685,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::array&lt; <a class="el" href="../../d7/df2/a01000.html">IGA::Utilities::Domain</a>&lt; double &gt;, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::domain </td>
+          <td class="memname">std::array&lt; <a class="el" href="../../d7/df2/a01000.html">IGA::Utilities::Domain</a>&lt; double &gt;, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::domain </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -699,8 +700,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a443728b5d1cc1b1b3a208d544cf3334e" name="a443728b5d1cc1b1b3a208d544cf3334e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a443728b5d1cc1b1b3a208d544cf3334e">&#9670;&nbsp;</a></span>domainMidPoint()</h2>
+<a id="aefb9e657006dcd7792292f8d49c802a7" name="aefb9e657006dcd7792292f8d49c802a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb9e657006dcd7792292f8d49c802a7">&#9670;&nbsp;</a></span>domainMidPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -711,7 +712,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::domainMidPoint </td>
+          <td class="memname">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::domainMidPoint </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -726,8 +727,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a7a8ac65ae2d226966f4d7dcca21566e5" name="a7a8ac65ae2d226966f4d7dcca21566e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a8ac65ae2d226966f4d7dcca21566e5">&#9670;&nbsp;</a></span>global()</h2>
+<a id="a67a9dc507419f4356b413a49c83a05b2" name="a67a9dc507419f4356b413a49c83a05b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a9dc507419f4356b413a49c83a05b2">&#9670;&nbsp;</a></span>global()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -738,9 +739,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::global </td>
+          <td class="memname">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::global </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -762,8 +763,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="aef2e740e545744f0825a152d8bb80cfc" name="aef2e740e545744f0825a152d8bb80cfc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef2e740e545744f0825a152d8bb80cfc">&#9670;&nbsp;</a></span>hessian()</h2>
+<a id="aee23e7a6568f8d7253faa32776952eff" name="aee23e7a6568f8d7253faa32776952eff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee23e7a6568f8d7253faa32776952eff">&#9670;&nbsp;</a></span>hessian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -774,9 +775,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a9400afd4971a68b163cd1672d437e116">Hessian</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::hessian </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a7a08b1313e9df7edeb0575148d806df1">Hessian</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::hessian </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -790,8 +791,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a6ffce85705ac9b25355a8bce6b7addc3" name="a6ffce85705ac9b25355a8bce6b7addc3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6ffce85705ac9b25355a8bce6b7addc3">&#9670;&nbsp;</a></span>integrationElement()</h2>
+<a id="ab6edcccddb45dc68524f67e60ac9ad4b" name="ab6edcccddb45dc68524f67e60ac9ad4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6edcccddb45dc68524f67e60ac9ad4b">&#9670;&nbsp;</a></span>integrationElement()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -802,9 +803,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::integrationElement </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::integrationElement </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>local</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -818,8 +819,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a43100d92e9e679ad28eb986a5325c45f" name="a43100d92e9e679ad28eb986a5325c45f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43100d92e9e679ad28eb986a5325c45f">&#9670;&nbsp;</a></span>jacobian()</h2>
+<a id="a77aa916f8539b71d1c9c104c92360fe7" name="a77aa916f8539b71d1c9c104c92360fe7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77aa916f8539b71d1c9c104c92360fe7">&#9670;&nbsp;</a></span>jacobian()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -830,9 +831,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#ac1946344cb6657252593caa0e2ee3546">Jacobian</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::jacobian </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#acf973e588defd30743bc24f5dac133cc">Jacobian</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::jacobian </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>local</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -846,8 +847,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a154e9044fc86ef041c7e99da74e1c3b2" name="a154e9044fc86ef041c7e99da74e1c3b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a154e9044fc86ef041c7e99da74e1c3b2">&#9670;&nbsp;</a></span>jacobianTransposed()</h2>
+<a id="a02bdfa1a2455fa7da3ab4b3fbb7f34f5" name="a02bdfa1a2455fa7da3ab4b3fbb7f34f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02bdfa1a2455fa7da3ab4b3fbb7f34f5">&#9670;&nbsp;</a></span>jacobianTransposed()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -858,9 +859,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a0c40c401ee96f84d8d63f818c4b08ba3">JacobianTransposed</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::jacobianTransposed </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a557139b50abe68100007098c8f8c75ae">JacobianTransposed</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::jacobianTransposed </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -882,8 +883,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="ac5a216ea8507c3d3f9682a55b23668dc" name="ac5a216ea8507c3d3f9682a55b23668dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a216ea8507c3d3f9682a55b23668dc">&#9670;&nbsp;</a></span>local()</h2>
+<a id="a92a8a724cf6554714e11c7f15518d2b1" name="a92a8a724cf6554714e11c7f15518d2b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92a8a724cf6554714e11c7f15518d2b1">&#9670;&nbsp;</a></span>local()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -894,9 +895,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::local </td>
+          <td class="memname"><a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::local </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#acc0672cde65dc6db0c8b6daf2aa00289">GlobalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a2c31b7818240d90c415c146c4409a52e">GlobalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>global</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -910,8 +911,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a85662f83493ae5ff225de6d255f27edf" name="a85662f83493ae5ff225de6d255f27edf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85662f83493ae5ff225de6d255f27edf">&#9670;&nbsp;</a></span>localView()</h2>
+<a id="a1920e6aa3d1cd838b94938a8ebfa340d" name="a1920e6aa3d1cd838b94938a8ebfa340d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1920e6aa3d1cd838b94938a8ebfa340d">&#9670;&nbsp;</a></span>localView()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -924,7 +925,7 @@ template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::localView </td>
+          <td class="memname">auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::localView </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -939,8 +940,8 @@ template&lt;int codim, <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d
 
 </div>
 </div>
-<a id="a387b7e04b97769f15f322b46d62c6a12" name="a387b7e04b97769f15f322b46d62c6a12"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a387b7e04b97769f15f322b46d62c6a12">&#9670;&nbsp;</a></span>operator()()</h2>
+<a id="ab49ccb3fc978dbe42a8432d0a3626741" name="ab49ccb3fc978dbe42a8432d0a3626741"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab49ccb3fc978dbe42a8432d0a3626741">&#9670;&nbsp;</a></span>operator()()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -951,9 +952,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#a2fe61b8d337d8355cdc3ac36979cb173">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::operator() </td>
+          <td class="memname">FieldVector&lt; <a class="el" href="../../d0/dc8/a01124.html#afe1540da26e3ac319cbb2965e1b8d6f8">ctype</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a> &gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::operator() </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>local</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -967,8 +968,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="ab50dcf6b79fe47ef075390e9f98dd4fc" name="ab50dcf6b79fe47ef075390e9f98dd4fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab50dcf6b79fe47ef075390e9f98dd4fc">&#9670;&nbsp;</a></span>type()</h2>
+<a id="a865962205c7091fb854a95d51f147103" name="a865962205c7091fb854a95d51f147103"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a865962205c7091fb854a95d51f147103">&#9670;&nbsp;</a></span>type()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -979,7 +980,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GeometryType <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::type </td>
+          <td class="memname">GeometryType <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::type </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -996,8 +997,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="ad634e067b9e495ba3cc9a97576e584ba" name="ad634e067b9e495ba3cc9a97576e584ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad634e067b9e495ba3cc9a97576e584ba">&#9670;&nbsp;</a></span>volume()</h2>
+<a id="a642de64fa63abf63db7a05e7d4a2e76e" name="a642de64fa63abf63db7a05e7d4a2e76e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a642de64fa63abf63db7a05e7d4a2e76e">&#9670;&nbsp;</a></span>volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1008,7 +1009,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::volume </td>
+          <td class="memname">double <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::volume </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>scaleOrder</em> = <code>1</code></td><td>)</td>
@@ -1026,8 +1027,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="a37efeb4b9a5fdc38c60e197b68245b58" name="a37efeb4b9a5fdc38c60e197b68245b58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37efeb4b9a5fdc38c60e197b68245b58">&#9670;&nbsp;</a></span>zeroFirstAndSecondDerivativeOfPosition()</h2>
+<a id="afc7794edc49f2371471e260dbbeceda0" name="afc7794edc49f2371471e260dbbeceda0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc7794edc49f2371471e260dbbeceda0">&#9670;&nbsp;</a></span>zeroFirstAndSecondDerivativeOfPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1038,9 +1039,9 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::zeroFirstAndSecondDerivativeOfPosition </td>
+          <td class="memname">auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::zeroFirstAndSecondDerivativeOfPosition </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#ae4a5517b28c82f0b02562c585b80ae99">LocalCoordinate</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dc8/a01124.html#a53b416fc4db181afc1222d204cf04d0b">LocalCoordinate</a> &amp;&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1055,8 +1056,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a045ded12bdecccea30521167d4868394" name="a045ded12bdecccea30521167d4868394"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a045ded12bdecccea30521167d4868394">&#9670;&nbsp;</a></span>mydimension</h2>
+<a id="a06037363d30a70eba4b98f590f81a637" name="a06037363d30a70eba4b98f590f81a637"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06037363d30a70eba4b98f590f81a637">&#9670;&nbsp;</a></span>mydimension</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1067,7 +1068,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::integral auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::mydimension = dim_</td>
+          <td class="memname">constexpr std::integral auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::mydimension = dim_</td>
         </tr>
       </table>
   </td>
@@ -1079,8 +1080,8 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 
 </div>
 </div>
-<a id="ad96cdefd7e0e0636a6550ffa27bb2412" name="ad96cdefd7e0e0636a6550ffa27bb2412"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad96cdefd7e0e0636a6550ffa27bb2412">&#9670;&nbsp;</a></span>patchData_</h2>
+<a id="a7a2952566984f3930cbf7d4dbf29c15a" name="a7a2952566984f3930cbf7d4dbf29c15a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a2952566984f3930cbf7d4dbf29c15a">&#9670;&nbsp;</a></span>patchData_</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1088,15 +1089,15 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a045ded12bdecccea30521167d4868394">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a64c9e6bc86aa93bbf829de0ae0b5b963">worlddimension</a>, ScalarType&gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::patchData_</td>
+          <td class="memname"><a class="el" href="../../df/dec/a01320.html">IGA::NURBSPatchData</a>&lt;<a class="el" href="../../d0/dc8/a01124.html#a06037363d30a70eba4b98f590f81a637">mydimension</a>, <a class="el" href="../../d0/dc8/a01124.html#a173616658bc7f0db6836a9dda983afa3">worlddimension</a>, ScalarType&gt; <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::patchData_</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a64c9e6bc86aa93bbf829de0ae0b5b963" name="a64c9e6bc86aa93bbf829de0ae0b5b963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64c9e6bc86aa93bbf829de0ae0b5b963">&#9670;&nbsp;</a></span>worlddimension</h2>
+<a id="a173616658bc7f0db6836a9dda983afa3" name="a173616658bc7f0db6836a9dda983afa3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173616658bc7f0db6836a9dda983afa3">&#9670;&nbsp;</a></span>worlddimension</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1107,7 +1108,7 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr std::integral auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatchGeometry</a>&lt; dim_, dimworld_, ScalarType &gt;::worlddimension = dimworld_</td>
+          <td class="memname">constexpr std::integral auto <a class="el" href="../../d0/dc8/a01124.html">Dune::IGANEW::GeometryKernel::NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt;::worlddimension = dimworld_</td>
         </tr>
       </table>
   </td>
@@ -1120,14 +1121,14 @@ template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d9/da5/a02935_source.html">hierarchicpatch/nurbspatchgeometry.hh</a></li>
+<li><a class="el" href="../../de/d87/a02939_source.html">hierarchicpatch/nurbspatchgeometry.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/ddf/a00164.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d0/d48/a00165.html">GeometryKernel</a></li><li class="navelem"><a class="el" href="../../d0/dc8/a01124.html">NURBSPatchGeometry</a></li>
+    <li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/ddf/a00164.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d0/d48/a00165.html">GeometryKernel</a></li><li class="navelem"><a class="el" href="../../d0/dc8/a01124.html">NURBSPatch</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
