@@ -1,5 +1,4 @@
 var a00077 =
 [
-    [ "Dune::IGANEW::PatchGridLeafIntersectionIterator< GridImp >", "d1/d83/a01041.html", "d1/d83/a01041" ],
-    [ "Dune::IGANEW::PatchGridLevelIntersectionIterator< GridImp >", "d2/d41/a01037.html", "d2/d41/a01037" ]
+    [ "cross", "d1/d09/a00077.html#a5050da969cad0713cb7f96b363d18700", null ]
 ];

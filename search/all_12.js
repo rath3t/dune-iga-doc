@@ -16,7 +16,7 @@ var searchData=
   ['trimdata_13',['TrimData',['../dd/d43/a01193.html',1,'Dune::IGA::TrimData'],['../dd/d43/a01193.html#ac2009fc47a62d0cfcfe80811f9fe6bfb',1,'Dune::IGA::TrimData::TrimData()']]],
   ['trimelement_14',['trimElement',['../de/df7/a01201.html#aeb71dc8dae2d0d21041c9f5a41ae5a5d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
   ['trimmed_15',['trimmed',['../d5/deb/a00132.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGA']]],
-  ['trimming_16',['Trimming',['../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474',1,'enums.hh']]],
+  ['trimming_16',['Trimming',['../d9/d2e/a00056.html#a0348963ad9d3a1be93263e5997711474',1,'enums.hh']]],
   ['trims_17',['trims',['../d9/d65/a01145.html#a61a53e394317f3844be719ad7cfdd240',1,'Dune::IGA::Ibra::BrepLoopRepresentation::trims()'],['../d8/d02/a01149.html#a0ab2de7a74ccb203dca621407df7eeca',1,'Dune::IGA::Ibra::BrepLoop::trims()'],['../dc/d06/a01153.html#a0b18289437b2c70cbb84ce06024107f4',1,'Dune::IGA::Ibra::BrepRepresentation::trims()'],['../d9/d25/a01157.html#aff01becf209101c0944a633e2779f98b',1,'Dune::IGA::Ibra::Brep::trims()']]],
   ['type_18',['type',['../d3/dc4/a01089.html#afe876bbc2b0d19e0dcbf4bd21539c041',1,'Dune::IGANEW::PatchGridLocalGeometry']]],
   ['type_19',['Type',['../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451f',1,'Dune::IGA::Ibra']]],
@@ -25,5 +25,5 @@ var searchData=
   ['types_22',['Types',['../de/d9e/a01061.html#a5d20b80f7c60adb00b0b364353d4172d',1,'Dune::IGANEW::PatchGridLevelIndexSet::Types()'],['../d0/dc9/a01065.html#a5a1a954bcd10906f768f0cb6b5ae154c',1,'Dune::IGANEW::PatchGridLeafIndexSet::Types()']]],
   ['types_23',['types',['../de/d9e/a01061.html#a0209d638ec5f9e20820fac61c103c753',1,'Dune::IGANEW::PatchGridLevelIndexSet::types()'],['../d0/dc9/a01065.html#a2f2d651cefcbc797d8b36489663afec8',1,'Dune::IGANEW::PatchGridLeafIndexSet::types()']]],
   ['typestring_24',['typeString',['../d9/d17/a01129.html#a51d455d391e155f6f736a2ec40b7fc69',1,'Dune::IGA::Ibra::IbraBase']]],
-  ['typetraits_2ehh_25',['typetraits.hh',['../d2/d1f/a00083.html',1,'']]]
+  ['typetraits_2ehh_25',['typetraits.hh',['../db/db6/a00074.html',1,'']]]
 ];

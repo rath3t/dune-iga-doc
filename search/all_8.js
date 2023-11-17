@@ -1,15 +1,15 @@
 var searchData=
 [
   ['ibrabase_0',['IbraBase',['../d9/d17/a01129.html',1,'Dune::IGA::Ibra']]],
-  ['ibrageometry_2ehh_1',['ibrageometry.hh',['../df/d98/a00107.html',1,'']]],
+  ['ibrageometry_2ehh_1',['ibrageometry.hh',['../d0/dc2/a00104.html',1,'']]],
   ['ibranurbsdata_2',['IbraNURBSData',['../db/d28/a01133.html',1,'Dune::IGA::Ibra']]],
   ['ibranurbsdata_3c_201_2c_202_20_3e_3',['IbraNURBSData&lt; 1, 2 &gt;',['../db/d28/a01133.html',1,'Dune::IGA::Ibra']]],
   ['ibrareader_4',['IbraReader',['../d8/d92/a01165.html',1,'Dune::IGA']]],
-  ['ibrareader_2ehh_5',['ibrareader.hh',['../d0/dc2/a00104.html',1,'']]],
+  ['ibrareader_2ehh_5',['ibrareader.hh',['../df/d98/a00107.html',1,'']]],
   ['id_6',['id',['../d9/d7c/a01073.html#a96f3c32a402013dd44c80578d65d14dc',1,'Dune::IGANEW::PatchGridLocalIdSet::id()'],['../d8/d18/a01069.html#a184d507b32205d888834fa8a7f70beb6',1,'Dune::IGANEW::PatchGridGlobalIdSet::id()']]],
   ['idtype_7',['IdType',['../d9/d7c/a01073.html#ac66cff8afaa7e2aa9c48351b676ae923',1,'Dune::IGANEW::PatchGridLocalIdSet::IdType()'],['../d8/d18/a01069.html#a9bafce8adecdbfc5abce7dee6c5c6645',1,'Dune::IGANEW::PatchGridGlobalIdSet::IdType()']]],
   ['igadatacollector_2ehh_8',['igadatacollector.hh',['../d4/d3a/a00101.html',1,'']]],
-  ['igahelpers_2ehh_9',['igahelpers.hh',['../d4/d3e/a00116.html',1,'']]],
+  ['igahelpers_2ehh_9',['igahelpers.hh',['../d3/d00/a00113.html',1,'']]],
   ['igarefinedgeometries_10',['IGARefinedGeometries',['../de/db5/a01181.html',1,'Dune::IGA::IGARefinedGeometries&lt; GridView &gt;'],['../de/db5/a01181.html#a35832a135806de1935c201fb8d07a52a',1,'Dune::IGA::IGARefinedGeometries::IGARefinedGeometries()']]],
   ['igarefinedgeometries_2ehh_11',['igarefinedgeometries.hh',['../d4/d81/a00110.html',1,'']]],
   ['ileafbegin_12',['ileafbegin',['../d0/d22/a01049.html#a9a2f1e18c3d05001b74a284eb646b129',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],

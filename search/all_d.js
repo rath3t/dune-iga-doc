@@ -14,7 +14,7 @@ var searchData=
   ['nurbs_3c_20mydimension_2c_20ctype_20_3e_11',['Nurbs&lt; mydimension, ctype &gt;',['../d1/dfa/a01097.html',1,'Dune::IGANEW']]],
   ['nurbs_3c_20mydimension_2c_20double_20_3e_12',['Nurbs&lt; mydimension, double &gt;',['../d1/dfa/a01097.html',1,'Dune::IGANEW']]],
   ['nurbs_5f_13',['nurbs_',['../de/d99/a01101.html#a6b3bd51530bacc7265d161cb68f7e19a',1,'Dune::IGANEW::Nurbs::LocalView']]],
-  ['nurbsalgorithms_2ehh_14',['nurbsalgorithms.hh',['../d9/d2e/a00056.html',1,'']]],
+  ['nurbsalgorithms_2ehh_14',['nurbsalgorithms.hh',['../d6/d5b/a00026.html',1,'']]],
   ['nurbscurvegeometry2d_15',['NurbsCurveGeometry2D',['../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451fa9dc5fac3529c3d8438040dac00d68d0f',1,'Dune::IGA::Ibra']]],
   ['nurbsgeometry_16',['nurbsGeometry',['../d3/d10/a01189.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]],
   ['nurbsgrid_17',['NURBSGrid',['../dc/d81/a01161.html',1,'Dune::IGA']]],
@@ -27,10 +27,10 @@ var searchData=
   ['nurbspatchdata_3c_20mydimension_2c_20worlddimension_2c_20ctype_20_3e_24',['NURBSPatchData&lt; mydimension, worlddimension, ctype &gt;',['../de/d1d/a01105.html',1,'Dune::IGANEW']]],
   ['nurbspatchdata_3c_20mydimension_2c_20worlddimension_2c_20double_20_3e_25',['NURBSPatchData&lt; mydimension, worlddimension, double &gt;',['../de/d1d/a01105.html',1,'Dune::IGANEW']]],
   ['nurbspatchgeometry_2ehh_26',['nurbspatchgeometry.hh',['../d5/de0/a00050.html',1,'']]],
-  ['nurbspatchgeometrylocalview_2ehh_27',['nurbspatchgeometrylocalview.hh',['../d6/d2d/a00047.html',1,'']]],
+  ['nurbspatchgeometrylocalview_2ehh_27',['nurbspatchgeometrylocalview.hh',['../d5/df9/a00044.html',1,'']]],
   ['nurbspatchtrimmer_28',['NURBSPatchTrimmer',['../de/df7/a01201.html',1,'Dune::IGA::Trim::NURBSPatchTrimmer&lt; intType_, sc_ &gt;'],['../de/df7/a01201.html#a6a9a49b4ec865be22d66702e34673b04',1,'Dune::IGA::Trim::NURBSPatchTrimmer::NURBSPatchTrimmer(const TensorGridView &amp;gridView, TrimData *trimData)'],['../de/df7/a01201.html#ae36077221d4cf7475ef98eb71ff6cb37',1,'Dune::IGA::Trim::NURBSPatchTrimmer::NURBSPatchTrimmer()=delete'],['../de/df7/a01201.html#aafe5e5e962b971309c345f1b2b9147ae',1,'Dune::IGA::Trim::NURBSPatchTrimmer::NURBSPatchTrimmer(const NURBSPatchTrimmer &amp;)=delete']]],
   ['nurbssurfacegeometry3d_29',['NurbsSurfaceGeometry3D',['../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451fadbcd2df59919078c8999bcf4522f3a0f',1,'Dune::IGA::Ibra']]],
-  ['nurbstrimboundary_2ehh_30',['nurbstrimboundary.hh',['../db/dab/a00089.html',1,'']]],
-  ['nurbstrimmer_2ehh_31',['nurbstrimmer.hh',['../d1/dc1/a00092.html',1,'']]],
+  ['nurbstrimboundary_2ehh_30',['nurbstrimboundary.hh',['../d9/d77/a00095.html',1,'']]],
+  ['nurbstrimmer_2ehh_31',['nurbstrimmer.hh',['../d1/d44/a00098.html',1,'']]],
   ['nvertices_32',['nVertices',['../de/db5/a01181.html#af31dae2b58ddb4f4933b4bae7f1689fc',1,'Dune::IGA::IGARefinedGeometries']]]
 ];
