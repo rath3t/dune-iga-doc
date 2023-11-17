@@ -9,7 +9,7 @@ var searchData=
   ['boundary_6',['Boundary',['../d3/d10/a01189.html',1,'Dune::IGA']]],
   ['boundaryloop_7',['BoundaryLoop',['../d5/deb/a00132.html#ac852dd8efef6c18283ca22735cb02696',1,'Dune::IGA']]],
   ['boundaryloops_8',['boundaryLoops',['../dd/d43/a01193.html#a3a301d623d890048a88f1d2bfe45021b',1,'Dune::IGA::TrimData']]],
-  ['boundarypatch_2ehh_9',['boundarypatch.hh',['../d4/dee/a00008.html',1,'']]],
+  ['boundarypatch_2ehh_9',['boundarypatch.hh',['../d7/d46/a00002.html',1,'']]],
   ['boundarypatchenclosingverticespropertytrimmed_10',['BoundaryPatchEnclosingVerticesPropertyTrimmed',['../d3/d0b/a01253.html#a01647e7b3cf283823fb657ad8df0e93c',1,'BoundaryPatchEnclosingVerticesPropertyTrimmed::BoundaryPatchEnclosingVerticesPropertyTrimmed()'],['../d3/d0b/a01253.html',1,'BoundaryPatchEnclosingVerticesPropertyTrimmed&lt; GridView, ncomp &gt;']]],
   ['boundarysegmentindex_11',['boundarySegmentIndex',['../d0/dd3/a01077.html#ae7e6808020e3c99ecab46509334fbaab',1,'Dune::IGANEW::PatchGridLeafIntersection::boundarySegmentIndex()'],['../dd/dee/a01081.html#ae62ff2178c516d94714d0920218fc4ff',1,'Dune::IGANEW::PatchGridLevelIntersection::boundarySegmentIndex()']]],
   ['brep_12',['brep',['../d9/d65/a01145.html#aa2343de3ad19b0f0a47a0b65a9b6f28c',1,'Dune::IGA::Ibra::BrepLoopRepresentation']]],
@@ -22,6 +22,6 @@ var searchData=
   ['breptrimrepresentation_19',['BrepTrimRepresentation',['../d6/d6e/a01137.html',1,'Dune::IGA::Ibra']]],
   ['breptrimtype_20',['BrepTrimType',['../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451fa37b318e8cf4c4e81b37f19caa036edc3',1,'Dune::IGA::Ibra']]],
   ['breptype_21',['BrepType',['../d0/de8/a00133.html#a7e1d9b847ff31435dac790c39d02451fa65aee2d1a35ccbd82f6fa3963536fbcb',1,'Dune::IGA::Ibra']]],
-  ['bsplinealgorithms_2ehh_22',['bsplinealgorithms.hh',['../d3/d52/a00023.html',1,'']]],
+  ['bsplinealgorithms_2ehh_22',['bsplinealgorithms.hh',['../d3/d8b/a00059.html',1,'']]],
   ['bsplinebasis1d_23',['BsplineBasis1D',['../de/d1c/a01093.html#a2fe967a22cc65bf7224dcd99ef0967bd',1,'Dune::IGANEW::BsplineBasis1D::BsplineBasis1D()'],['../de/d1c/a01093.html',1,'Dune::IGANEW::BsplineBasis1D&lt; ScalarType_ &gt;']]]
 ];

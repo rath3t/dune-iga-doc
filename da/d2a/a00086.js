@@ -1,4 +1,4 @@
 var a00086 =
 [
-    [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d3/dc4/a01089.html", "d3/dc4/a01089" ]
+    [ "cross", "da/d2a/a00086.html#a5050da969cad0713cb7f96b363d18700", null ]
 ];
