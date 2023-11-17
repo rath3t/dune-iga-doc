@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbsgeometry.hh File Reference</title>
+<title>dune-iga: controlpoint.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,23 +95,17 @@ $(document).ready(function(){initNavTree('d7/d9a/a00152.html','../../'); initRes
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">nurbsgeometry.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">controlpoint.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/dc1/a00092_source.html">dune/iga/geometry/closestpointprojection.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d4/d51/a00017_source.html">dune/iga/nurbsalgorithms.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/dab/a00089_source.html">dune/iga/trim/subgrid.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d2/df5/a00137_source.html">dune/iga/utils/fillquadraturerule.hh</a>&quot;</code><br />
-<code>#include &lt;dune/geometry/multilineargeometry.hh&gt;</code><br />
-<code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/geometry.hh&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d2/df5/a00137_source.html">dune/iga/utils/concepts.hh</a>&quot;</code><br />
 </div>
 <p><a href="../../d7/d9a/a00152_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dad/a01235.html">Dune::IGA::NURBSGeometry&lt; mydim, dimworld, GridImpl &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">a geometry implementation for NURBS  <a href="../../dd/dad/a01235.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/daa/a00996.html">Dune::IGA::ControlPoint&lt; VT &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The class which stored a <a class="el" href="../../d2/d22/a01196.html" title="A dim dimensional NURBS function.">Nurbs</a> <a class="el" href="../../d3/daa/a00996.html" title="The class which stored a Nurbs ControlPoint.">ControlPoint</a>.  <a href="../../d3/daa/a00996.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -123,16 +117,28 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aef81a26cbefe3fe5f7b1360e5a2cffe3"><td class="memTemplParams" colspan="2">template&lt;std::integral auto mydim, std::integral auto dimworld, class GridImpl &gt; </td></tr>
-<tr class="memitem:aef81a26cbefe3fe5f7b1360e5a2cffe3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#aef81a26cbefe3fe5f7b1360e5a2cffe3">Dune::IGA::referenceElement</a> (const NURBSGeometry&lt; mydim, dimworld, GridImpl &gt; &amp;geo)</td></tr>
-<tr class="separator:aef81a26cbefe3fe5f7b1360e5a2cffe3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89768292715310b5f770da3658c84a73"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:a89768292715310b5f770da3658c84a73"><td class="memTemplItemLeft" align="right" valign="top">ControlPoint&lt; VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a89768292715310b5f770da3658c84a73">Dune::IGA::operator*</a> (const ControlPoint&lt; VectorType &gt; &amp;cp, const typename VectorType::value_type &amp;scal)</td></tr>
+<tr class="separator:a89768292715310b5f770da3658c84a73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b3404cd6766af872a3bd7a3efbdfbb7"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:a3b3404cd6766af872a3bd7a3efbdfbb7"><td class="memTemplItemLeft" align="right" valign="top">ControlPoint&lt; VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a3b3404cd6766af872a3bd7a3efbdfbb7">Dune::IGA::operator*</a> (const typename VectorType::value_type &amp;scal, const ControlPoint&lt; VectorType &gt; &amp;cp)</td></tr>
+<tr class="separator:a3b3404cd6766af872a3bd7a3efbdfbb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9a55402086df77d594e7c5a6cf05fa7"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:ab9a55402086df77d594e7c5a6cf05fa7"><td class="memTemplItemLeft" align="right" valign="top">ControlPoint&lt; VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#ab9a55402086df77d594e7c5a6cf05fa7">Dune::IGA::operator+</a> (const ControlPoint&lt; VectorType &gt; &amp;cpL, const ControlPoint&lt; VectorType &gt; &amp;cpR)</td></tr>
+<tr class="separator:ab9a55402086df77d594e7c5a6cf05fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30e9a9595254e0a0ef37a8014ea2b1c6"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:a30e9a9595254e0a0ef37a8014ea2b1c6"><td class="memTemplItemLeft" align="right" valign="top">ControlPoint&lt; VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a30e9a9595254e0a0ef37a8014ea2b1c6">Dune::IGA::operator-</a> (const ControlPoint&lt; VectorType &gt; &amp;cpL)</td></tr>
+<tr class="separator:a30e9a9595254e0a0ef37a8014ea2b1c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e68af86ba6edc7bb6eecc3debace414"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:a7e68af86ba6edc7bb6eecc3debace414"><td class="memTemplItemLeft" align="right" valign="top">ControlPoint&lt; VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d44/a00162.html#a7e68af86ba6edc7bb6eecc3debace414">Dune::IGA::operator-</a> (const ControlPoint&lt; VectorType &gt; &amp;cpL, const ControlPoint&lt; VectorType &gt; &amp;cpR)</td></tr>
+<tr class="separator:a7e68af86ba6edc7bb6eecc3debace414"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d7/d9a/a00152.html">nurbsgeometry.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d7/d9a/a00152.html">controlpoint.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

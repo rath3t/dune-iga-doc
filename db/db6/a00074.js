@@ -1,9 +1,14 @@
 var a00074 =
 [
-    [ "Dune::IGA::EntitySeedStruct< cd, GridImpl >", "d7/dbf/a01239.html", "d7/dbf/a01239" ],
-    [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "d7/dd6/a01167.html", "d7/dd6/a01167" ],
-    [ "Dune::IGA::NurbsGridFamily< dim, dimworld, ScalarType >", "d8/db0/a01243.html", "d8/db0/a01243" ],
-    [ "gridEntityTupleGenerator", "db/db6/a00074.html#ab372b8b34cfa334f8e7767bacec8170a", null ],
-    [ "leafGridView", "db/db6/a00074.html#a8571f4f13050af2bf0d0f9ac38132765", null ],
-    [ "levelGridView", "db/db6/a00074.html#a335f93275773dac8911e330abef913a8", null ]
+    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d2/d22/a01196.html", "d2/d22/a01196" ],
+    [ "Dune::IGA::Nurbs< dim, ScalarType_ >::LocalView", "dc/dcc/a01200.html", "dc/dcc/a01200" ],
+    [ "degreeElevate", "db/db6/a00074.html#a6f1ede550b5e459f413e960a999f25a2", null ],
+    [ "extractControlCoordinates", "db/db6/a00074.html#ae69f4e15f2e768387a5034f021325614", null ],
+    [ "extractWeights", "db/db6/a00074.html#a1ab46c78ab2f2ec50f81f90ed2ac2c57", null ],
+    [ "generateRefinedKnots", "db/db6/a00074.html#a6bf8c0c51afc7176fc90bc962b6325e3", null ],
+    [ "knotRefinement", "db/db6/a00074.html#ad0c595e4d7ef91c299d7f7fb1e3f4a7f", null ],
+    [ "makeCircularArc", "db/db6/a00074.html#a1eeaa4b0827547b46fa451ae2a522dac", null ],
+    [ "makeSurfaceOfRevolution", "db/db6/a00074.html#a16fe995511a81303451229eb2a5b7646", null ],
+    [ "netOfSpan", "db/db6/a00074.html#a79d76dbe4e2128adbb02832419716592", null ],
+    [ "netOfSpan", "db/db6/a00074.html#aab63c1e2b72ce4bc21247a1cd88ec362", null ]
 ];
