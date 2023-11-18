@@ -1,6 +1,6 @@
 var a00041 =
 [
-    [ "Dune::IGANEW::Utilities::Domain< ScalarType >", "de/dad/a00963.html", "de/dad/a00963" ],
+    [ "Dune::IGANEW::Utilities::Domain< ScalarType >", "d7/dd4/a00968.html", "d7/dd4/a00968" ],
     [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "dd/d32/a00041.html#a70f96ca6d21424c7adf0f104e05cfaec", null ],
     [ "clampToDomain", "dd/d32/a00041.html#a341a1dc953d397349b5bb0d9f39c4106", null ],
     [ "linspace", "dd/d32/a00041.html#a0c6fd781b9aa39c1d69699ec173cece8", null ],

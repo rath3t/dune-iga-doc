@@ -102,10 +102,10 @@ $(document).ready(function(){initNavTree('d6/d5b/a00026_source.html','../../'); 
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/grid/concepts/geometry.hh&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="../../dd/d32/a00041.html">dune/iga/hierarchicpatch/geometrykernel/geohelper.hh</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d1/d88/a00128.html">    9</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/db3/a00130.html">Dune::IGANEW::Concept</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d7/d06/a00131.html">    9</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/de8/a00133.html">Dune::IGANEW::Concept</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> VectorType&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d8/d7a/a01292.html">   12</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d8/d7a/a01292.html">Vector</a> = <span class="keyword">requires</span>(VectorType v, <span class="keywordtype">double</span> a, <span class="keywordtype">int</span> index) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../dc/d8c/a01297.html">   12</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dc/d8c/a01297.html">Vector</a> = <span class="keyword">requires</span>(VectorType v, <span class="keywordtype">double</span> a, <span class="keywordtype">int</span> index) {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">typename</span> VectorType::value_type;</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    { v[index] } -&gt; std::same_as&lt;typename VectorType::value_type&amp;&gt;;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    { v += v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
@@ -115,7 +115,7 @@ $(document).ready(function(){initNavTree('d6/d5b/a00026_source.html','../../'); 
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  };</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ControlPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../dc/dd5/a01293.html">   24</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dc/dd5/a01293.html">ControlPoint</a> = <a class="code hl_concept" href="../../d8/d7a/a01292.html">Vector&lt;typename ControlPointType::VectorType&gt;</a> &amp;&amp; <span class="keyword">requires</span>(ControlPointType cp) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html">   24</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d4/d34/a01298.html">ControlPoint</a> = <a class="code hl_concept" href="../../dc/d8c/a01297.html">Vector&lt;typename ControlPointType::VectorType&gt;</a> &amp;&amp; <span class="keyword">requires</span>(ControlPointType cp) {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">typename</span> ControlPointType::VectorType;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">typename</span> ControlPointType::VectorType::value_type;</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    { cp.p } -&gt; std::same_as&lt;typename ControlPointType::VectorType&amp;&gt;;</div>
@@ -123,37 +123,37 @@ $(document).ready(function(){initNavTree('d6/d5b/a00026_source.html','../../'); 
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  };</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d7/d88/a01294.html">   32</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d7/d88/a01294.html">MultiplyAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d8/d38/a01299.html">   32</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d8/d38/a01299.html">MultiplyAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    x* y;</div>
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  };</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d2/d68/a01295.html">   37</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d2/d68/a01295.html">AddAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d8/dc5/a01300.html">   37</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d8/dc5/a01300.html">AddAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    x + y;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  };</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d4/d64/a01296.html">   42</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d4/d64/a01296.html">SubstractAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d3/d07/a01301.html">   42</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d3/d07/a01301.html">SubstractAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    x - y;</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  };</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../dc/d8c/a01297.html">   47</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dc/d8c/a01297.html">MultiplyAssignAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../dc/de0/a01302.html">   47</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dc/de0/a01302.html">MultiplyAssignAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    x *= y;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  };</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d4/d34/a01298.html">   52</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d4/d34/a01298.html">DivideAssignAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d6/d07/a01303.html">   52</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d6/d07/a01303.html">DivideAssignAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    x /= y;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  };</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d8/d38/a01299.html">   57</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d8/d38/a01299.html">DivideAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d6/dae/a01304.html">   57</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d6/dae/a01304.html">DivideAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    x / y;</div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  };</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> G&gt;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../d8/dc5/a01300.html">   66</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d8/dc5/a01300.html">NurbsGeometry</a> = Dune::Concept::Geometry&lt;G&gt; &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> G g, <span class="keyword">typename</span> G::GlobalCoordinate global,</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dc/d9e/a01305.html">   66</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dc/d9e/a01305.html">NurbsGeometry</a> = Dune::Concept::Geometry&lt;G&gt; &amp;&amp; <span class="keyword">requires</span>(<span class="keyword">const</span> G g, <span class="keyword">typename</span> G::GlobalCoordinate global,</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                                                 <span class="keyword">typename</span> G::LocalCoordinate local) {</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    {</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      g.zeroFirstAndSecondDerivativeOfPosition(local)</div>
@@ -165,16 +165,16 @@ $(document).ready(function(){initNavTree('d6/d5b/a00026_source.html','../../'); 
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>}  <span class="comment">// namespace Dune::IGANEW::Concept</span></div>
 <div class="ttc" id="aa00041_html"><div class="ttname"><a href="../../dd/d32/a00041.html">geohelper.hh</a></div></div>
-<div class="ttc" id="aa00130_html"><div class="ttname"><a href="../../d6/db3/a00130.html">Dune::IGANEW::Concept</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:9</div></div>
-<div class="ttc" id="aa01292_html"><div class="ttname"><a href="../../d8/d7a/a01292.html">Dune::IGANEW::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:12</div></div>
-<div class="ttc" id="aa01293_html"><div class="ttname"><a href="../../dc/dd5/a01293.html">Dune::IGANEW::Concept::ControlPoint</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:24</div></div>
-<div class="ttc" id="aa01294_html"><div class="ttname"><a href="../../d7/d88/a01294.html">Dune::IGANEW::Concept::MultiplyAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:32</div></div>
-<div class="ttc" id="aa01295_html"><div class="ttname"><a href="../../d2/d68/a01295.html">Dune::IGANEW::Concept::AddAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:37</div></div>
-<div class="ttc" id="aa01296_html"><div class="ttname"><a href="../../d4/d64/a01296.html">Dune::IGANEW::Concept::SubstractAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:42</div></div>
-<div class="ttc" id="aa01297_html"><div class="ttname"><a href="../../dc/d8c/a01297.html">Dune::IGANEW::Concept::MultiplyAssignAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:47</div></div>
-<div class="ttc" id="aa01298_html"><div class="ttname"><a href="../../d4/d34/a01298.html">Dune::IGANEW::Concept::DivideAssignAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:52</div></div>
-<div class="ttc" id="aa01299_html"><div class="ttname"><a href="../../d8/d38/a01299.html">Dune::IGANEW::Concept::DivideAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:57</div></div>
-<div class="ttc" id="aa01300_html"><div class="ttname"><a href="../../d8/dc5/a01300.html">Dune::IGANEW::Concept::NurbsGeometry</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:66</div></div>
+<div class="ttc" id="aa00133_html"><div class="ttname"><a href="../../d0/de8/a00133.html">Dune::IGANEW::Concept</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:9</div></div>
+<div class="ttc" id="aa01297_html"><div class="ttname"><a href="../../dc/d8c/a01297.html">Dune::IGANEW::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:12</div></div>
+<div class="ttc" id="aa01298_html"><div class="ttname"><a href="../../d4/d34/a01298.html">Dune::IGANEW::Concept::ControlPoint</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:24</div></div>
+<div class="ttc" id="aa01299_html"><div class="ttname"><a href="../../d8/d38/a01299.html">Dune::IGANEW::Concept::MultiplyAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:32</div></div>
+<div class="ttc" id="aa01300_html"><div class="ttname"><a href="../../d8/dc5/a01300.html">Dune::IGANEW::Concept::AddAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:37</div></div>
+<div class="ttc" id="aa01301_html"><div class="ttname"><a href="../../d3/d07/a01301.html">Dune::IGANEW::Concept::SubstractAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:42</div></div>
+<div class="ttc" id="aa01302_html"><div class="ttname"><a href="../../dc/de0/a01302.html">Dune::IGANEW::Concept::MultiplyAssignAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:47</div></div>
+<div class="ttc" id="aa01303_html"><div class="ttname"><a href="../../d6/d07/a01303.html">Dune::IGANEW::Concept::DivideAssignAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:52</div></div>
+<div class="ttc" id="aa01304_html"><div class="ttname"><a href="../../d6/dae/a01304.html">Dune::IGANEW::Concept::DivideAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:57</div></div>
+<div class="ttc" id="aa01305_html"><div class="ttname"><a href="../../dc/d9e/a01305.html">Dune::IGANEW::Concept::NurbsGeometry</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

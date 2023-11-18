@@ -1,14 +1,9 @@
 var a00056 =
 [
-    [ "Dune::IGANEW::Nurbs< dim, ScalarType_ >", "d9/d10/a01103.html", "d9/d10/a01103" ],
-    [ "Dune::IGANEW::Nurbs< dim, ScalarType_ >::LocalView", "de/d4a/a01107.html", "de/d4a/a01107" ],
-    [ "degreeElevate", "d9/d2e/a00056.html#ad3b9dfb31717d1ef4e9b67f736e8e53a", null ],
-    [ "extractControlCoordinates", "d9/d2e/a00056.html#a6256c413720d85da419f59c203a51ad8", null ],
-    [ "extractWeights", "d9/d2e/a00056.html#ac3dc15e1c2e7ff3b74de65d1416a05cf", null ],
-    [ "generateRefinedKnots", "d9/d2e/a00056.html#a01728ba72225d2540fc1acfb6b02d131", null ],
-    [ "knotRefinement", "d9/d2e/a00056.html#adf114762921a364c8a0b6de65180e160", null ],
-    [ "makeCircularArc", "d9/d2e/a00056.html#a000e49612164d2b6609e00015a7da1b8", null ],
-    [ "makeSurfaceOfRevolution", "d9/d2e/a00056.html#a2e85ab03ccb6fb5110279a6c3428a1d1", null ],
-    [ "netOfSpan", "d9/d2e/a00056.html#aba9b81fe85f3b661b52a2490dd90f28c", null ],
-    [ "netOfSpan", "d9/d2e/a00056.html#ab0d22b83005e2f5fc314815928d1a99f", null ]
+    [ "Dune::IGANEW::ControlPoint< VT >", "da/d17/a00964.html", "da/d17/a00964" ],
+    [ "operator*", "d9/d2e/a00056.html#a3f232585a065fb77fc7443359eda7b95", null ],
+    [ "operator*", "d9/d2e/a00056.html#aab23834de62fd10b103b27e062dccfbd", null ],
+    [ "operator+", "d9/d2e/a00056.html#a33477ec847c0f90f5090046a585d3488", null ],
+    [ "operator-", "d9/d2e/a00056.html#aade6853aaa9cc5602813449a1b566ec4", null ],
+    [ "operator-", "d9/d2e/a00056.html#a124862a808b0cd8eee23b3960c456f83", null ]
 ];
