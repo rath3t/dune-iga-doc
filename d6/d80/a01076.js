@@ -1,14 +1,15 @@
 var a01076 =
 [
-    [ "Types", "d6/d80/a01076.html#a5a1a954bcd10906f768f0cb6b5ae154c", null ],
-    [ "PatchGridLeafIndexSet", "d6/d80/a01076.html#a1851b0e45890a5b7765597c5076553df", null ],
-    [ "contains", "d6/d80/a01076.html#a4299df21979f10b6607ed98413ac1fb2", null ],
-    [ "index", "d6/d80/a01076.html#a8d6b68bf9fa2b36863ca4ee23158987b", null ],
-    [ "size", "d6/d80/a01076.html#ac2c7e84386ef95c993ceb72a506c8429", null ],
-    [ "size", "d6/d80/a01076.html#ad29cc4b8c0794dba6d7dbb8d57fc5852", null ],
-    [ "subIndex", "d6/d80/a01076.html#a57095970c525bd902b16c51ce9cc69f8", null ],
-    [ "types", "d6/d80/a01076.html#a2f2d651cefcbc797d8b36489663afec8", null ],
-    [ "update", "d6/d80/a01076.html#a39efa4bbb3301e97f30f59a630220a0b", null ],
-    [ "dim", "d6/d80/a01076.html#a3f264e5e9ef2bb1ab880afd80813ab19", null ],
-    [ "grid_", "d6/d80/a01076.html#a9d2f9565578f94a9df57aae2b338603f", null ]
+    [ "HostGrid", "d6/d80/a01076.html#a19e4529be8a9eb5e1d611f1fe2bc813b", null ],
+    [ "Types", "d6/d80/a01076.html#a5d20b80f7c60adb00b0b364353d4172d", null ],
+    [ "contains", "d6/d80/a01076.html#af9251bfae26e78a8ae736d8c0976db8c", null ],
+    [ "index", "d6/d80/a01076.html#aea1d75b08d009f347819e133bf1a3d48", null ],
+    [ "size", "d6/d80/a01076.html#a45396f7db89c3bf333c679c1e5764b8e", null ],
+    [ "size", "d6/d80/a01076.html#ae96823a83a06b0d86be011c40c917f5f", null ],
+    [ "subIndex", "d6/d80/a01076.html#a77453994e4038675fafa1c0df610eb49", null ],
+    [ "types", "d6/d80/a01076.html#a0209d638ec5f9e20820fac61c103c753", null ],
+    [ "update", "d6/d80/a01076.html#acb6d71ea5dc64433e1058f15a1ca848f", null ],
+    [ "dim", "d6/d80/a01076.html#ab72a866172574e517411a443bdc11542", null ],
+    [ "grid_", "d6/d80/a01076.html#ae8c4f02aa0d2a2ab67371e17902d1a67", null ],
+    [ "level_", "d6/d80/a01076.html#ae882e0b5be04768bf54198eef1b067dd", null ]
 ];

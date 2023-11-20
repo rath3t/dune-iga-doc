@@ -1,9 +1,4 @@
 var a00056 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "da/d17/a00964.html", "da/d17/a00964" ],
-    [ "operator*", "d9/d2e/a00056.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "d9/d2e/a00056.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "d9/d2e/a00056.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "d9/d2e/a00056.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "d9/d2e/a00056.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "makeSurfaceOfRevolution", "d9/d2e/a00056.html#a4cdc7d50f04f4f21c50a1eb97c4e8406", null ]
 ];

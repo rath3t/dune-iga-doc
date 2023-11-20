@@ -99,8 +99,8 @@ $(document).ready(function(){initNavTree('d4/d3a/a00101_source.html','../../'); 
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/dc1/a00092.html">nurbstrimboundary.hh</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/d77/a00095.html">nurbstrimmer.hh</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../d0/dc2/a00104.html">nurbstrimboundary.hh</a>&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../df/d98/a00107.html">nurbstrimmer.hh</a>&quot;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/d44/a00098.html">subgridhelpers.hh</a>&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;clipper2/clipper.core.h&gt;</span></div>
@@ -110,7 +110,7 @@ $(document).ready(function(){initNavTree('d4/d3a/a00101_source.html','../../'); 
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;dune/geometry/virtualrefinement.hh&gt;</span></div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="preprocessor">#include &lt;dune/grid/uggrid.hh&gt;</span></div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/d4e/a00141.html">Dune::IGA</a> {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../da/ddb/a00145.html">Dune::IGA</a> {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim&gt;</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keyword">class </span>TrimmedSubGrid {</div>
@@ -164,7 +164,7 @@ $(document).ready(function(){initNavTree('d4/d3a/a00101_source.html','../../'); 
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        std::vector&lt;Boundary&gt; newLoop;</div>
 <div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; boundary : loop) {</div>
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>          <span class="keyword">auto</span> geometry = boundary.nurbsGeometry;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          <span class="keyword">auto</span> uVec     = <a class="code hl_function" href="../../de/d76/a00134.html#a2630a0eab9b7e24915eeb52ca335972c">Utilities::linspace</a>(boundary.domain, parts + 1);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          <span class="keyword">auto</span> uVec     = <a class="code hl_function" href="../../d5/db1/a00140.html#a2630a0eab9b7e24915eeb52ca335972c">Utilities::linspace</a>(boundary.domain, parts + 1);</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
 <div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : std::views::iota(0u, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(parts)))</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            newLoop.emplace_back(geometry, Utilities::Domain&lt;double&gt;{uVec[i], uVec[i + 1]});</div>
@@ -188,7 +188,7 @@ $(document).ready(function(){initNavTree('d4/d3a/a00101_source.html','../../'); 
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keyword">auto</span> splitBoundaries()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::make_pair(splitOuterBoundaries(), splitInnerBoundaryLoops()); }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="keyword">auto</span> splitOuterBoundaries(<span class="keywordtype">int</span> maxDivisions       = maxOuterBoundaryDivisions,</div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>                              <span class="keywordtype">double</span> targetTolerance = outerTargetTolerance)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d5/d4e/a00141.html#ad66112982ac256c7f15589dec5fcce68">splitBoundariesImpl</a>(outerBoundaries_, maxDivisions, targetTolerance, transformer);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/ddb/a00145.html#ad66112982ac256c7f15589dec5fcce68">splitBoundariesImpl</a>(outerBoundaries_, maxDivisions, targetTolerance, transformer);</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>    }</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keyword">auto</span> splitInnerBoundaryLoops(<span class="keywordtype">int</span> maxDivisions       = maxInnerBoundaryDivisions,</div>
@@ -279,12 +279,12 @@ $(document).ready(function(){initNavTree('d4/d3a/a00101_source.html','../../'); 
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    }</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  };</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>}  <span class="comment">// namespace Dune::IGA</span></div>
-<div class="ttc" id="aa00092_html"><div class="ttname"><a href="../../d1/dc1/a00092.html">nurbstrimboundary.hh</a></div></div>
-<div class="ttc" id="aa00095_html"><div class="ttname"><a href="../../d9/d77/a00095.html">nurbstrimmer.hh</a></div></div>
 <div class="ttc" id="aa00098_html"><div class="ttname"><a href="../../d1/d44/a00098.html">subgridhelpers.hh</a></div></div>
-<div class="ttc" id="aa00134_html_a2630a0eab9b7e24915eeb52ca335972c"><div class="ttname"><a href="../../de/d76/a00134.html#a2630a0eab9b7e24915eeb52ca335972c">Dune::IGANEW::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdef"><b>Definition:</b> geohelper.hh:41</div></div>
-<div class="ttc" id="aa00141_html"><div class="ttname"><a href="../../d5/d4e/a00141.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> ibrageometry.hh:15</div></div>
-<div class="ttc" id="aa00141_html_ad66112982ac256c7f15589dec5fcce68"><div class="ttname"><a href="../../d5/d4e/a00141.html#ad66112982ac256c7f15589dec5fcce68">Dune::IGA::splitBoundariesImpl</a></div><div class="ttdeci">auto splitBoundariesImpl(const std::vector&lt; Boundary &gt; &amp;boundaries, int maxSubSample, double tolerance, const TransformToSpan&lt; 2 &gt; &amp;transformer)</div><div class="ttdef"><b>Definition:</b> subgridhelpers.hh:66</div></div>
+<div class="ttc" id="aa00104_html"><div class="ttname"><a href="../../d0/dc2/a00104.html">nurbstrimboundary.hh</a></div></div>
+<div class="ttc" id="aa00107_html"><div class="ttname"><a href="../../df/d98/a00107.html">nurbstrimmer.hh</a></div></div>
+<div class="ttc" id="aa00140_html_a2630a0eab9b7e24915eeb52ca335972c"><div class="ttname"><a href="../../d5/db1/a00140.html#a2630a0eab9b7e24915eeb52ca335972c">Dune::IGANEW::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdef"><b>Definition:</b> geohelper.hh:41</div></div>
+<div class="ttc" id="aa00145_html"><div class="ttname"><a href="../../da/ddb/a00145.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> ibrageometry.hh:15</div></div>
+<div class="ttc" id="aa00145_html_ad66112982ac256c7f15589dec5fcce68"><div class="ttname"><a href="../../da/ddb/a00145.html#ad66112982ac256c7f15589dec5fcce68">Dune::IGA::splitBoundariesImpl</a></div><div class="ttdeci">auto splitBoundariesImpl(const std::vector&lt; Boundary &gt; &amp;boundaries, int maxSubSample, double tolerance, const TransformToSpan&lt; 2 &gt; &amp;transformer)</div><div class="ttdef"><b>Definition:</b> subgridhelpers.hh:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

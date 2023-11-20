@@ -1,13 +1,11 @@
 var a01116 =
 [
-    [ "ControlPointNetType", "d4/dc5/a01116.html#a69f2306841b866fc6243dfc4e92ecb3a", null ],
-    [ "ControlPointType", "d4/dc5/a01116.html#a6d2b555a549c0ef07e449cf8d2e03a5c", null ],
-    [ "GlobalCoordinateType", "d4/dc5/a01116.html#a51ab1704f2ced939d707f5c8a5394c55", null ],
-    [ "NURBSPatchData", "d4/dc5/a01116.html#ab13d244f5428abe158492937797c4785", null ],
-    [ "NURBSPatchData", "d4/dc5/a01116.html#add312a85f454004fc4db34413c12d848", null ],
-    [ "controlPoints", "d4/dc5/a01116.html#a5038d8719ed15eec6042971ea15e1706", null ],
-    [ "degree", "d4/dc5/a01116.html#a30411a17ca195626ac8510acd7b99758", null ],
-    [ "dimworld", "d4/dc5/a01116.html#a3a51850e6e5281b2b5692f8fb6685187", null ],
-    [ "knotSpans", "d4/dc5/a01116.html#ac3ae0d508de8bcc031da26a4578c979b", null ],
-    [ "patchDim", "d4/dc5/a01116.html#a008c4794473967d91fae315659b7a5ef", null ]
+    [ "LocalView", "d4/dc5/a01116.html#a061e5ab7d7a24b715261b48f201eefab", null ],
+    [ "LocalView", "d4/dc5/a01116.html#ae93fa382ed7bcad68a8a838e16142f0a", null ],
+    [ "basisFunctionDerivatives", "d4/dc5/a01116.html#af09c829a478c53704cc555f56c7bf4de", null ],
+    [ "basisFunctions", "d4/dc5/a01116.html#abe422b3cf625952b7fc7e02f06c7ca2a", null ],
+    [ "bind", "d4/dc5/a01116.html#a5baa85f70a8d63631f538a657b5a5892", null ],
+    [ "dimension", "d4/dc5/a01116.html#af9460658bc72d5db93ee974d4e9825d8", null ],
+    [ "nurbs_", "d4/dc5/a01116.html#a6b3bd51530bacc7265d161cb68f7e19a", null ],
+    [ "spIndex_", "d4/dc5/a01116.html#ad94905703de8ab93610c2f39f2056154", null ]
 ];

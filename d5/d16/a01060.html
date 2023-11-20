@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGANEW::PatchGridHierarchicIterator&lt; GridImp &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,254 +94,58 @@ $(document).ready(function(){initNavTree('d5/d16/a01060.html','../../'); initRes
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d2/db8/a01057.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::PatchGridHierarchicIterator&lt; GridImp &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Specialization for codim-0-entities.  
+<p>Iterator over the descendants of an entity.Mesh entities of codimension 0 ("elements") allow to visit all entities of codimension 0 obtained through nested, hierarchic refinement of the entity. Iteration over this set of entities is provided by the HierarchicIterator, starting from a given entity.  
  <a href="../../d5/d16/a01060.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d2/de7/a00014_source.html">dune/iga/hierarchicpatch/hierachicpatchgridentity.hh</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../d0/d90/a01059.png" border="0" usemap="#a_dune_1_1_i_g_a_n_e_w_1_1_patch_grid_entity_3_010_00_01dim_00_01_grid_imp_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="a_dune_1_1_i_g_a_n_e_w_1_1_patch_grid_entity_3_010_00_01dim_00_01_grid_imp_01_4_inherit__map" id="a_dune_1_1_i_g_a_n_e_w_1_1_patch_grid_entity_3_010_00_01dim_00_01_grid_imp_01_4_inherit__map">
-<area shape="rect" title="Specialization for codim&#45;0&#45;entities." alt="" coords="23,95,249,136"/>
-<area shape="rect" title=" " alt="" coords="5,5,267,47"/>
-</map>
-</div>
+<p><code>#include &lt;<a class="el" href="../../db/db2/a00020_source.html">dune/iga/hierarchicpatch/hierachicpatchgridhierarchiciterator.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a65c6ce8ada6118b279d6cdffcae0580d"><td class="memItemLeft" align="right" valign="top">typedef GridImp::HostGridType::Traits::template Codim&lt; <a class="el" href="../../d5/d16/a01060.html#a8f27223b05549a5329120539c0e9cd03">CodimInHostGrid</a> &gt;::Entity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a></td></tr>
-<tr class="separator:a65c6ce8ada6118b279d6cdffcae0580d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6894333c0bfdf758c41db6390aa5a6aa"><td class="memItemLeft" align="right" valign="top">typedef GridImp::template Codim&lt; 0 &gt;::Geometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a6894333c0bfdf758c41db6390aa5a6aa">Geometry</a></td></tr>
-<tr class="separator:a6894333c0bfdf758c41db6390aa5a6aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb0998479855dbc6f9ff2ef6e6598eea"><td class="memItemLeft" align="right" valign="top">typedef GridImp::template Codim&lt; 0 &gt;::LocalGeometry&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#adb0998479855dbc6f9ff2ef6e6598eea">LocalGeometry</a></td></tr>
-<tr class="separator:adb0998479855dbc6f9ff2ef6e6598eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08116cd45920b65d1ea2dc2dd23fdb5c"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d5/de7/a01048.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a08116cd45920b65d1ea2dc2dd23fdb5c">LevelIntersectionIterator</a></td></tr>
-<tr class="memdesc:a08116cd45920b65d1ea2dc2dd23fdb5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Iterator over intersections on this level.  <a href="../../d5/d16/a01060.html#a08116cd45920b65d1ea2dc2dd23fdb5c">More...</a><br /></td></tr>
-<tr class="separator:a08116cd45920b65d1ea2dc2dd23fdb5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af15f0b240cac170b7d24a05192e1966a"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../d9/dce/a01052.html">PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#af15f0b240cac170b7d24a05192e1966a">LeafIntersectionIterator</a></td></tr>
-<tr class="memdesc:af15f0b240cac170b7d24a05192e1966a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Iterator over intersections on the leaf level.  <a href="../../d5/d16/a01060.html#af15f0b240cac170b7d24a05192e1966a">More...</a><br /></td></tr>
-<tr class="separator:af15f0b240cac170b7d24a05192e1966a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abebfdd624383b410dd6c8107d2e641bf"><td class="memItemLeft" align="right" valign="top">typedef <a class="el" href="../../dc/d19/a01056.html">PatchGridHierarchicIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#abebfdd624383b410dd6c8107d2e641bf">HierarchicIterator</a></td></tr>
-<tr class="memdesc:abebfdd624383b410dd6c8107d2e641bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator over descendants of the entity.  <a href="../../d5/d16/a01060.html#abebfdd624383b410dd6c8107d2e641bf">More...</a><br /></td></tr>
-<tr class="separator:abebfdd624383b410dd6c8107d2e641bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91852989cf5369317feb4fa4b6462bb1"><td class="memItemLeft" align="right" valign="top">typedef GridImp::template Codim&lt; 0 &gt;::EntitySeed&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a91852989cf5369317feb4fa4b6462bb1">EntitySeed</a></td></tr>
-<tr class="memdesc:a91852989cf5369317feb4fa4b6462bb1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The type of the EntitySeed interface class.  <a href="../../d5/d16/a01060.html#a91852989cf5369317feb4fa4b6462bb1">More...</a><br /></td></tr>
-<tr class="separator:a91852989cf5369317feb4fa4b6462bb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7d4e79984f599be612b9d3d3b9db879"><td class="memItemLeft" align="right" valign="top">typedef GridImp::template Codim&lt; 0 &gt;::Entity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a></td></tr>
+<tr class="separator:ae7d4e79984f599be612b9d3d3b9db879"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a19913b400cafd8a438350ac866144e9d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a19913b400cafd8a438350ac866144e9d">PatchGridEntity</a> ()</td></tr>
-<tr class="separator:a19913b400cafd8a438350ac866144e9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3921a03e1b815a82aff3d31ef9a922a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a3921a03e1b815a82aff3d31ef9a922a9">PatchGridEntity</a> (const GridImp *patchGrid, const <a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a> &amp;hostEntity)</td></tr>
-<tr class="separator:a3921a03e1b815a82aff3d31ef9a922a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d45bcce723e8ca17289db780ca1909a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a7d45bcce723e8ca17289db780ca1909a">PatchGridEntity</a> (const GridImp *patchGrid, <a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a> &amp;&amp;hostEntity)</td></tr>
-<tr class="separator:a7d45bcce723e8ca17289db780ca1909a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35373de2a96bf74c09d67583b3e4d6e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a35373de2a96bf74c09d67583b3e4d6e4">PatchGridEntity</a> (const <a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;original)</td></tr>
-<tr class="separator:a35373de2a96bf74c09d67583b3e4d6e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acc4ab30ea4131b9071d6a1f40a3939e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#acc4ab30ea4131b9071d6a1f40a3939e4">PatchGridEntity</a> (<a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;&amp;original) noexcept</td></tr>
-<tr class="separator:acc4ab30ea4131b9071d6a1f40a3939e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8cb859837b85eee3b9c347713510e9cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a8cb859837b85eee3b9c347713510e9cc">operator=</a> (const <a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;original)</td></tr>
-<tr class="separator:a8cb859837b85eee3b9c347713510e9cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3acb5a2c164c5db4c2ea733bc4507cfb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a3acb5a2c164c5db4c2ea733bc4507cfb">operator=</a> (<a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;&amp;original) noexcept</td></tr>
-<tr class="separator:a3acb5a2c164c5db4c2ea733bc4507cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a179168f271027a6923b02cf8729c7701"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a179168f271027a6923b02cf8729c7701">equals</a> (const <a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp;other) const</td></tr>
-<tr class="separator:a179168f271027a6923b02cf8729c7701"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a911482fbad35821622687c19e850f72b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a911482fbad35821622687c19e850f72b">hasFather</a> () const</td></tr>
-<tr class="memdesc:a911482fbad35821622687c19e850f72b"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if father entity exists  <a href="../../d5/d16/a01060.html#a911482fbad35821622687c19e850f72b">More...</a><br /></td></tr>
-<tr class="separator:a911482fbad35821622687c19e850f72b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4a1a0c683a1452e1e1113b0b47a0559c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01060.html#a91852989cf5369317feb4fa4b6462bb1">EntitySeed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a4a1a0c683a1452e1e1113b0b47a0559c">seed</a> () const</td></tr>
-<tr class="memdesc:a4a1a0c683a1452e1e1113b0b47a0559c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create EntitySeed.  <a href="../../d5/d16/a01060.html#a4a1a0c683a1452e1e1113b0b47a0559c">More...</a><br /></td></tr>
-<tr class="separator:a4a1a0c683a1452e1e1113b0b47a0559c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a31bfd22ae686aa18bf6ff634c4125c31"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a31bfd22ae686aa18bf6ff634c4125c31">level</a> () const</td></tr>
-<tr class="memdesc:a31bfd22ae686aa18bf6ff634c4125c31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Level of this element.  <a href="../../d5/d16/a01060.html#a31bfd22ae686aa18bf6ff634c4125c31">More...</a><br /></td></tr>
-<tr class="separator:a31bfd22ae686aa18bf6ff634c4125c31"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa54ea6332b37d7c5d659aa00462991b0"><td class="memItemLeft" align="right" valign="top">PartitionType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#aa54ea6332b37d7c5d659aa00462991b0">partitionType</a> () const</td></tr>
-<tr class="memdesc:aa54ea6332b37d7c5d659aa00462991b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The partition type for parallel computing.  <a href="../../d5/d16/a01060.html#aa54ea6332b37d7c5d659aa00462991b0">More...</a><br /></td></tr>
-<tr class="separator:aa54ea6332b37d7c5d659aa00462991b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29a6de9f61c8258c0571facc18aca75e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01060.html#a6894333c0bfdf758c41db6390aa5a6aa">Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a29a6de9f61c8258c0571facc18aca75e">geometry</a> () const</td></tr>
-<tr class="memdesc:a29a6de9f61c8258c0571facc18aca75e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometry of this entity.  <a href="../../d5/d16/a01060.html#a29a6de9f61c8258c0571facc18aca75e">More...</a><br /></td></tr>
-<tr class="separator:a29a6de9f61c8258c0571facc18aca75e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d935f395fc0f9a5c8e1aa697575938"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#af7d935f395fc0f9a5c8e1aa697575938">subEntities</a> (unsigned int codim) const</td></tr>
-<tr class="memdesc:af7d935f395fc0f9a5c8e1aa697575938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the number of subEntities of codimension codim.  <a href="../../d5/d16/a01060.html#af7d935f395fc0f9a5c8e1aa697575938">More...</a><br /></td></tr>
-<tr class="separator:af7d935f395fc0f9a5c8e1aa697575938"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34f497e6ca17bc351d8eb4dc2bb8b64b"><td class="memTemplParams" colspan="2">template&lt;int cc&gt; </td></tr>
-<tr class="memitem:a34f497e6ca17bc351d8eb4dc2bb8b64b"><td class="memTemplItemLeft" align="right" valign="top">GridImp::template Codim&lt; cc &gt;::Entity&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a34f497e6ca17bc351d8eb4dc2bb8b64b">subEntity</a> (int i) const</td></tr>
-<tr class="memdesc:a34f497e6ca17bc351d8eb4dc2bb8b64b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provide access to sub entity i of given codimension. Entities are numbered 0 ... subEntities(cc)-1.  <a href="../../d5/d16/a01060.html#a34f497e6ca17bc351d8eb4dc2bb8b64b">More...</a><br /></td></tr>
-<tr class="separator:a34f497e6ca17bc351d8eb4dc2bb8b64b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07b7bae13c69781f3ca7ceeb993ca945"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/de7/a01048.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a07b7bae13c69781f3ca7ceeb993ca945">ilevelbegin</a> () const</td></tr>
-<tr class="memdesc:a07b7bae13c69781f3ca7ceeb993ca945"><td class="mdescLeft">&#160;</td><td class="mdescRight">First level intersection.  <a href="../../d5/d16/a01060.html#a07b7bae13c69781f3ca7ceeb993ca945">More...</a><br /></td></tr>
-<tr class="separator:a07b7bae13c69781f3ca7ceeb993ca945"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a975889181f96bd8ded35b501cdf17411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/de7/a01048.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a975889181f96bd8ded35b501cdf17411">ilevelend</a> () const</td></tr>
-<tr class="memdesc:a975889181f96bd8ded35b501cdf17411"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to one past the last neighbor.  <a href="../../d5/d16/a01060.html#a975889181f96bd8ded35b501cdf17411">More...</a><br /></td></tr>
-<tr class="separator:a975889181f96bd8ded35b501cdf17411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9a2f1e18c3d05001b74a284eb646b129"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dce/a01052.html">PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a9a2f1e18c3d05001b74a284eb646b129">ileafbegin</a> () const</td></tr>
-<tr class="memdesc:a9a2f1e18c3d05001b74a284eb646b129"><td class="mdescLeft">&#160;</td><td class="mdescRight">First leaf intersection.  <a href="../../d5/d16/a01060.html#a9a2f1e18c3d05001b74a284eb646b129">More...</a><br /></td></tr>
-<tr class="separator:a9a2f1e18c3d05001b74a284eb646b129"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f8483cb796b028a66b289009cf668cc"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/dce/a01052.html">PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a1f8483cb796b028a66b289009cf668cc">ileafend</a> () const</td></tr>
-<tr class="memdesc:a1f8483cb796b028a66b289009cf668cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to one past the last leaf intersection.  <a href="../../d5/d16/a01060.html#a1f8483cb796b028a66b289009cf668cc">More...</a><br /></td></tr>
-<tr class="separator:a1f8483cb796b028a66b289009cf668cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa6fc8838f382fe2ba9018f3202434b4f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#aa6fc8838f382fe2ba9018f3202434b4f">isLeaf</a> () const</td></tr>
-<tr class="memdesc:aa6fc8838f382fe2ba9018f3202434b4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if Entity has NO children  <a href="../../d5/d16/a01060.html#aa6fc8838f382fe2ba9018f3202434b4f">More...</a><br /></td></tr>
-<tr class="separator:aa6fc8838f382fe2ba9018f3202434b4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6371a3ed4bd6a00b23d4fff4c519789"><td class="memItemLeft" align="right" valign="top">GridImp::template Codim&lt; 0 &gt;::Entity&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#ae6371a3ed4bd6a00b23d4fff4c519789">father</a> () const</td></tr>
-<tr class="separator:ae6371a3ed4bd6a00b23d4fff4c519789"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36aaf9ea317ba313daabe12153fb4e04"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01060.html#adb0998479855dbc6f9ff2ef6e6598eea">LocalGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a36aaf9ea317ba313daabe12153fb4e04">geometryInFather</a> () const</td></tr>
-<tr class="memdesc:a36aaf9ea317ba313daabe12153fb4e04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location of this element relative to the reference element element of the father. This is sufficient to interpolate all dofs in conforming case. Nonconforming may require access to neighbors of father and computations with local coordinates. On the fly case is somewhat inefficient since dofs are visited several times. If we store interpolation matrices, this is tolerable. We assume that on-the-fly implementation of numerical algorithms is only done for simple discretizations. Assumes that meshes are nested.  <a href="../../d5/d16/a01060.html#a36aaf9ea317ba313daabe12153fb4e04">More...</a><br /></td></tr>
-<tr class="separator:a36aaf9ea317ba313daabe12153fb4e04"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a1c6d0888feacd1ef326a0992fa8d37"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d19/a01056.html">PatchGridHierarchicIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a2a1c6d0888feacd1ef326a0992fa8d37">hbegin</a> (int maxLevel) const</td></tr>
-<tr class="memdesc:a2a1c6d0888feacd1ef326a0992fa8d37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inter-level access to son elements on higher levels&lt;=maxlevel. This is provided for sparsely stored nested unstructured meshes. Returns iterator to first son.  <a href="../../d5/d16/a01060.html#a2a1c6d0888feacd1ef326a0992fa8d37">More...</a><br /></td></tr>
-<tr class="separator:a2a1c6d0888feacd1ef326a0992fa8d37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac51c34fcc4ea0e5792141586e5488a77"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d19/a01056.html">PatchGridHierarchicIterator</a>&lt; GridImp &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#ac51c34fcc4ea0e5792141586e5488a77">hend</a> (int maxLevel) const</td></tr>
-<tr class="memdesc:ac51c34fcc4ea0e5792141586e5488a77"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns iterator to one past the last son.  <a href="../../d5/d16/a01060.html#ac51c34fcc4ea0e5792141586e5488a77">More...</a><br /></td></tr>
-<tr class="separator:ac51c34fcc4ea0e5792141586e5488a77"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abec2fbf817b010250fd6412ea79e3724"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#abec2fbf817b010250fd6412ea79e3724">wasRefined</a> () const</td></tr>
-<tr class="separator:abec2fbf817b010250fd6412ea79e3724"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad137150881de3e1a4187505118352431"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#ad137150881de3e1a4187505118352431">mightBeCoarsened</a> () const</td></tr>
-<tr class="separator:ad137150881de3e1a4187505118352431"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a7dfe26e5eff03bde7ac7957aa08eaf7a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a7dfe26e5eff03bde7ac7957aa08eaf7a">hostEntity_</a></td></tr>
-<tr class="separator:a7dfe26e5eff03bde7ac7957aa08eaf7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4c540678bb077535027d12a7f3a725fc"><td class="memItemLeft" align="right" valign="top">const GridImp *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a4c540678bb077535027d12a7f3a725fc">patchGrid_</a></td></tr>
-<tr class="separator:a4c540678bb077535027d12a7f3a725fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accfa2e5330f32c7178f85bac864cefa1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#accfa2e5330f32c7178f85bac864cefa1">PatchGridHierarchicIterator</a> (const GridImp *identityGrid, const <a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a> &amp;startEntity, int maxLevel)</td></tr>
+<tr class="memdesc:accfa2e5330f32c7178f85bac864cefa1"><td class="mdescLeft">&#160;</td><td class="mdescRight">the default Constructor  <a href="../../d5/d16/a01060.html#accfa2e5330f32c7178f85bac864cefa1">More...</a><br /></td></tr>
+<tr class="separator:accfa2e5330f32c7178f85bac864cefa1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa877e0fa8cc9caa6ff4d69f3c757f690"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#aa877e0fa8cc9caa6ff4d69f3c757f690">PatchGridHierarchicIterator</a> (const GridImp *identityGrid, const <a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a> &amp;startEntity, int maxLevel, bool endDummy)</td></tr>
+<tr class="separator:aa877e0fa8cc9caa6ff4d69f3c757f690"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f0018c7adea146b6c1fcad6c253db3d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a2f0018c7adea146b6c1fcad6c253db3d">increment</a> ()</td></tr>
+<tr class="separator:a2f0018c7adea146b6c1fcad6c253db3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb62437907ffd43cfcee68fc3c88dfe5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#acb62437907ffd43cfcee68fc3c88dfe5">dereference</a> () const</td></tr>
+<tr class="memdesc:acb62437907ffd43cfcee68fc3c88dfe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">dereferencing  <a href="../../d5/d16/a01060.html#acb62437907ffd43cfcee68fc3c88dfe5">More...</a><br /></td></tr>
+<tr class="separator:acb62437907ffd43cfcee68fc3c88dfe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e30a105d52e20fbd8add20a19b5a678"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a0e30a105d52e20fbd8add20a19b5a678">equals</a> (const <a class="el" href="../../d5/d16/a01060.html">PatchGridHierarchicIterator</a> &amp;i) const</td></tr>
+<tr class="memdesc:a0e30a105d52e20fbd8add20a19b5a678"><td class="mdescLeft">&#160;</td><td class="mdescRight">equality  <a href="../../d5/d16/a01060.html#a0e30a105d52e20fbd8add20a19b5a678">More...</a><br /></td></tr>
+<tr class="separator:a0e30a105d52e20fbd8add20a19b5a678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a3c54bcd95f00752907b8c206be8e8e7f"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a3c54bcd95f00752907b8c206be8e8e7f">trim</a> = GridImp::trim</td></tr>
-<tr class="separator:a3c54bcd95f00752907b8c206be8e8e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8f27223b05549a5329120539c0e9cd03"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a8f27223b05549a5329120539c0e9cd03">CodimInHostGrid</a> = GridImp::HostGridType::dimension - GridImp::dimension</td></tr>
-<tr class="separator:a8f27223b05549a5329120539c0e9cd03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad18b1e464308296e89409f748041b698"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#ad18b1e464308296e89409f748041b698">dimworld</a> = GridImp::dimensionworld</td></tr>
-<tr class="separator:ad18b1e464308296e89409f748041b698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fcf8ca1ab02495186000f1942768935"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01060.html#a4fcf8ca1ab02495186000f1942768935">codimension</a> = 0</td></tr>
+<tr class="separator:a4fcf8ca1ab02495186000f1942768935"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, class GridImp&gt;<br />
-class Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;</div><p >Specialization for codim-0-entities. </p>
-<p >This class embodies the topological parts of elements of the grid. It has an extended interface compared to the general entity class. For example, Entities of codimension 0 allow to visit all neighbors. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class GridImp&gt;<br />
+class Dune::IGANEW::PatchGridHierarchicIterator&lt; GridImp &gt;</div><p >Iterator over the descendants of an entity.</p>
+<p >Mesh entities of codimension 0 ("elements") allow to visit all entities of codimension 0 obtained through nested, hierarchic refinement of the entity. Iteration over this set of entities is provided by the HierarchicIterator, starting from a given entity. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a91852989cf5369317feb4fa4b6462bb1" name="a91852989cf5369317feb4fa4b6462bb1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91852989cf5369317feb4fa4b6462bb1">&#9670;&nbsp;</a></span>EntitySeed</h2>
+<a id="ae7d4e79984f599be612b9d3d3b9db879" name="ae7d4e79984f599be612b9d3d3b9db879"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7d4e79984f599be612b9d3d3b9db879">&#9670;&nbsp;</a></span>Entity</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GridImp::template Codim&lt;0&gt;::EntitySeed <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::EntitySeed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The type of the EntitySeed interface class. </p>
-
-</div>
-</div>
-<a id="a6894333c0bfdf758c41db6390aa5a6aa" name="a6894333c0bfdf758c41db6390aa5a6aa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6894333c0bfdf758c41db6390aa5a6aa">&#9670;&nbsp;</a></span>Geometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef GridImp::template Codim&lt;0&gt;::Geometry <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::Geometry</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abebfdd624383b410dd6c8107d2e641bf" name="abebfdd624383b410dd6c8107d2e641bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abebfdd624383b410dd6c8107d2e641bf">&#9670;&nbsp;</a></span>HierarchicIterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="../../dc/d19/a01056.html">PatchGridHierarchicIterator</a>&lt;GridImp&gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::HierarchicIterator</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Iterator over descendants of the entity. </p>
-
-</div>
-</div>
-<a id="a65c6ce8ada6118b279d6cdffcae0580d" name="a65c6ce8ada6118b279d6cdffcae0580d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65c6ce8ada6118b279d6cdffcae0580d">&#9670;&nbsp;</a></span>HostGridEntity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef GridImp::HostGridType::Traits::template Codim&lt;<a class="el" href="../../d5/d16/a01060.html#a8f27223b05549a5329120539c0e9cd03">CodimInHostGrid</a>&gt;::Entity <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::HostGridEntity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af15f0b240cac170b7d24a05192e1966a" name="af15f0b240cac170b7d24a05192e1966a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af15f0b240cac170b7d24a05192e1966a">&#9670;&nbsp;</a></span>LeafIntersectionIterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="../../d9/dce/a01052.html">PatchGridLeafIntersectionIterator</a>&lt;GridImp&gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::LeafIntersectionIterator</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The Iterator over intersections on the leaf level. </p>
-
-</div>
-</div>
-<a id="a08116cd45920b65d1ea2dc2dd23fdb5c" name="a08116cd45920b65d1ea2dc2dd23fdb5c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08116cd45920b65d1ea2dc2dd23fdb5c">&#9670;&nbsp;</a></span>LevelIntersectionIterator</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef <a class="el" href="../../d5/de7/a01048.html">PatchGridLevelIntersectionIterator</a>&lt;GridImp&gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::LevelIntersectionIterator</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The Iterator over intersections on this level. </p>
-
-</div>
-</div>
-<a id="adb0998479855dbc6f9ff2ef6e6598eea" name="adb0998479855dbc6f9ff2ef6e6598eea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb0998479855dbc6f9ff2ef6e6598eea">&#9670;&nbsp;</a></span>LocalGeometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">typedef GridImp::template Codim&lt;0&gt;::LocalGeometry <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::LocalGeometry</td>
+          <td class="memname">typedef GridImp::template Codim&lt;0&gt;::Entity <a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::Entity</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -349,55 +153,34 @@ template&lt;int dim, class GridImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a19913b400cafd8a438350ac866144e9d" name="a19913b400cafd8a438350ac866144e9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19913b400cafd8a438350ac866144e9d">&#9670;&nbsp;</a></span>PatchGridEntity() <span class="overload">[1/5]</span></h2>
+<a id="accfa2e5330f32c7178f85bac864cefa1" name="accfa2e5330f32c7178f85bac864cefa1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#accfa2e5330f32c7178f85bac864cefa1">&#9670;&nbsp;</a></span>PatchGridHierarchicIterator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::PatchGridEntity </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3921a03e1b815a82aff3d31ef9a922a9" name="a3921a03e1b815a82aff3d31ef9a922a9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3921a03e1b815a82aff3d31ef9a922a9">&#9670;&nbsp;</a></span>PatchGridEntity() <span class="overload">[2/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::PatchGridEntity </td>
+          <td class="memname"><a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::PatchGridHierarchicIterator </td>
           <td>(</td>
           <td class="paramtype">const GridImp *&#160;</td>
-          <td class="paramname"><em>patchGrid</em>, </td>
+          <td class="paramname"><em>identityGrid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a> &amp;&#160;</td>
-          <td class="paramname"><em>hostEntity</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a> &amp;&#160;</td>
+          <td class="paramname"><em>startEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxLevel</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -407,35 +190,49 @@ template&lt;int dim, class GridImp &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
+<p>the default Constructor </p>
+
 </div>
 </div>
-<a id="a7d45bcce723e8ca17289db780ca1909a" name="a7d45bcce723e8ca17289db780ca1909a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7d45bcce723e8ca17289db780ca1909a">&#9670;&nbsp;</a></span>PatchGridEntity() <span class="overload">[3/5]</span></h2>
+<a id="aa877e0fa8cc9caa6ff4d69f3c757f690" name="aa877e0fa8cc9caa6ff4d69f3c757f690"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa877e0fa8cc9caa6ff4d69f3c757f690">&#9670;&nbsp;</a></span>PatchGridHierarchicIterator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::PatchGridEntity </td>
+          <td class="memname"><a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::PatchGridHierarchicIterator </td>
           <td>(</td>
           <td class="paramtype">const GridImp *&#160;</td>
-          <td class="paramname"><em>patchGrid</em>, </td>
+          <td class="paramname"><em>identityGrid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>hostEntity</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a> &amp;&#160;</td>
+          <td class="paramname"><em>startEntity</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>maxLevel</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>endDummy</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -445,140 +242,28 @@ template&lt;int dim, class GridImp &gt; </div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a35373de2a96bf74c09d67583b3e4d6e4" name="a35373de2a96bf74c09d67583b3e4d6e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35373de2a96bf74c09d67583b3e4d6e4">&#9670;&nbsp;</a></span>PatchGridEntity() <span class="overload">[4/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::PatchGridEntity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a>&lt; 0, dim, GridImp &gt; &amp;&#160;</td>
-          <td class="paramname"><em>original</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../d1/d88/a00128.html#_todo000010">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
-
-</div>
-</div>
-<a id="acc4ab30ea4131b9071d6a1f40a3939e4" name="acc4ab30ea4131b9071d6a1f40a3939e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acc4ab30ea4131b9071d6a1f40a3939e4">&#9670;&nbsp;</a></span>PatchGridEntity() <span class="overload">[5/5]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::PatchGridEntity </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a>&lt; 0, dim, GridImp &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>original</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../de/d76/a00134.html#_todo000015">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a179168f271027a6923b02cf8729c7701" name="a179168f271027a6923b02cf8729c7701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a179168f271027a6923b02cf8729c7701">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="acb62437907ffd43cfcee68fc3c88dfe5" name="acb62437907ffd43cfcee68fc3c88dfe5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb62437907ffd43cfcee68fc3c88dfe5">&#9670;&nbsp;</a></span>dereference()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::equals </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a>&lt; 0, dim, GridImp &gt; &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae6371a3ed4bd6a00b23d4fff4c519789" name="ae6371a3ed4bd6a00b23d4fff4c519789"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6371a3ed4bd6a00b23d4fff4c519789">&#9670;&nbsp;</a></span>father()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GridImp::template Codim&lt; 0 &gt;::Entity <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::father </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Inter-level access to father element on coarser grid. Assumes that meshes are nested. </p>
-
-</div>
-</div>
-<a id="a29a6de9f61c8258c0571facc18aca75e" name="a29a6de9f61c8258c0571facc18aca75e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a6de9f61c8258c0571facc18aca75e">&#9670;&nbsp;</a></span>geometry()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/d16/a01060.html#a6894333c0bfdf758c41db6390aa5a6aa">Geometry</a> <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::geometry </td>
+          <td class="memname"><a class="el" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a> <a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::dereference </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -591,493 +276,25 @@ template&lt;int dim, class GridImp &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Geometry of this entity. </p>
+<p>dereferencing </p>
 
 </div>
 </div>
-<a id="a36aaf9ea317ba313daabe12153fb4e04" name="a36aaf9ea317ba313daabe12153fb4e04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36aaf9ea317ba313daabe12153fb4e04">&#9670;&nbsp;</a></span>geometryInFather()</h2>
+<a id="a0e30a105d52e20fbd8add20a19b5a678" name="a0e30a105d52e20fbd8add20a19b5a678"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0e30a105d52e20fbd8add20a19b5a678">&#9670;&nbsp;</a></span>equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d16/a01060.html#adb0998479855dbc6f9ff2ef6e6598eea">LocalGeometry</a> <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::geometryInFather </td>
+          <td class="memname">bool <a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::equals </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Location of this element relative to the reference element element of the father. This is sufficient to interpolate all dofs in conforming case. Nonconforming may require access to neighbors of father and computations with local coordinates. On the fly case is somewhat inefficient since dofs are visited several times. If we store interpolation matrices, this is tolerable. We assume that on-the-fly implementation of numerical algorithms is only done for simple discretizations. Assumes that meshes are nested. </p>
-
-</div>
-</div>
-<a id="a911482fbad35821622687c19e850f72b" name="a911482fbad35821622687c19e850f72b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a911482fbad35821622687c19e850f72b">&#9670;&nbsp;</a></span>hasFather()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::hasFather </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns true if father entity exists </p>
-
-</div>
-</div>
-<a id="a2a1c6d0888feacd1ef326a0992fa8d37" name="a2a1c6d0888feacd1ef326a0992fa8d37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a1c6d0888feacd1ef326a0992fa8d37">&#9670;&nbsp;</a></span>hbegin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dc/d19/a01056.html">PatchGridHierarchicIterator</a>&lt; GridImp &gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::hbegin </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxLevel</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Inter-level access to son elements on higher levels&lt;=maxlevel. This is provided for sparsely stored nested unstructured meshes. Returns iterator to first son. </p>
-
-</div>
-</div>
-<a id="ac51c34fcc4ea0e5792141586e5488a77" name="ac51c34fcc4ea0e5792141586e5488a77"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac51c34fcc4ea0e5792141586e5488a77">&#9670;&nbsp;</a></span>hend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dc/d19/a01056.html">PatchGridHierarchicIterator</a>&lt; GridImp &gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::hend </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxLevel</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns iterator to one past the last son. </p>
-
-</div>
-</div>
-<a id="a9a2f1e18c3d05001b74a284eb646b129" name="a9a2f1e18c3d05001b74a284eb646b129"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9a2f1e18c3d05001b74a284eb646b129">&#9670;&nbsp;</a></span>ileafbegin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d9/dce/a01052.html">PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::ileafbegin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>First leaf intersection. </p>
-
-</div>
-</div>
-<a id="a1f8483cb796b028a66b289009cf668cc" name="a1f8483cb796b028a66b289009cf668cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f8483cb796b028a66b289009cf668cc">&#9670;&nbsp;</a></span>ileafend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d9/dce/a01052.html">PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::ileafend </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reference to one past the last leaf intersection. </p>
-
-</div>
-</div>
-<a id="a07b7bae13c69781f3ca7ceeb993ca945" name="a07b7bae13c69781f3ca7ceeb993ca945"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07b7bae13c69781f3ca7ceeb993ca945">&#9670;&nbsp;</a></span>ilevelbegin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/de7/a01048.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::ilevelbegin </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>First level intersection. </p>
-
-</div>
-</div>
-<a id="a975889181f96bd8ded35b501cdf17411" name="a975889181f96bd8ded35b501cdf17411"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a975889181f96bd8ded35b501cdf17411">&#9670;&nbsp;</a></span>ilevelend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/de7/a01048.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::ilevelend </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reference to one past the last neighbor. </p>
-
-</div>
-</div>
-<a id="aa6fc8838f382fe2ba9018f3202434b4f" name="aa6fc8838f382fe2ba9018f3202434b4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa6fc8838f382fe2ba9018f3202434b4f">&#9670;&nbsp;</a></span>isLeaf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::isLeaf </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>returns true if Entity has NO children </p>
-
-</div>
-</div>
-<a id="a31bfd22ae686aa18bf6ff634c4125c31" name="a31bfd22ae686aa18bf6ff634c4125c31"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a31bfd22ae686aa18bf6ff634c4125c31">&#9670;&nbsp;</a></span>level()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::level </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Level of this element. </p>
-
-</div>
-</div>
-<a id="ad137150881de3e1a4187505118352431" name="ad137150881de3e1a4187505118352431"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad137150881de3e1a4187505118352431">&#9670;&nbsp;</a></span>mightBeCoarsened()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::mightBeCoarsened </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../d1/d88/a00128.html#_todo000014">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
-
-</div>
-</div>
-<a id="a8cb859837b85eee3b9c347713510e9cc" name="a8cb859837b85eee3b9c347713510e9cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8cb859837b85eee3b9c347713510e9cc">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a>&lt; 0, dim, GridImp &gt; &amp;&#160;</td>
-          <td class="paramname"><em>original</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../d1/d88/a00128.html#_todo000011">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
-
-</div>
-</div>
-<a id="a3acb5a2c164c5db4c2ea733bc4507cfb" name="a3acb5a2c164c5db4c2ea733bc4507cfb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3acb5a2c164c5db4c2ea733bc4507cfb">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a> &amp; <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::operator= </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../db/d14/a01040.html">PatchGridEntity</a>&lt; 0, dim, GridImp &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>original</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../d1/d88/a00128.html#_todo000012">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
-
-</div>
-</div>
-<a id="aa54ea6332b37d7c5d659aa00462991b0" name="aa54ea6332b37d7c5d659aa00462991b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa54ea6332b37d7c5d659aa00462991b0">&#9670;&nbsp;</a></span>partitionType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">PartitionType <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::partitionType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The partition type for parallel computing. </p>
-
-</div>
-</div>
-<a id="a4a1a0c683a1452e1e1113b0b47a0559c" name="a4a1a0c683a1452e1e1113b0b47a0559c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4a1a0c683a1452e1e1113b0b47a0559c">&#9670;&nbsp;</a></span>seed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/d16/a01060.html#a91852989cf5369317feb4fa4b6462bb1">EntitySeed</a> <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::seed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create EntitySeed. </p>
-
-</div>
-</div>
-<a id="af7d935f395fc0f9a5c8e1aa697575938" name="af7d935f395fc0f9a5c8e1aa697575938"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7d935f395fc0f9a5c8e1aa697575938">&#9670;&nbsp;</a></span>subEntities()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::subEntities </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>codim</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the number of subEntities of codimension codim. </p>
-
-</div>
-</div>
-<a id="a34f497e6ca17bc351d8eb4dc2bb8b64b" name="a34f497e6ca17bc351d8eb4dc2bb8b64b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34f497e6ca17bc351d8eb4dc2bb8b64b">&#9670;&nbsp;</a></span>subEntity()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int cc&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GridImp::template Codim&lt; cc &gt;::Entity <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::subEntity </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d16/a01060.html">PatchGridHierarchicIterator</a>&lt; GridImp &gt; &amp;&#160;</td>
           <td class="paramname"><em>i</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -1089,26 +306,26 @@ template&lt;int cc&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Provide access to sub entity i of given codimension. Entities are numbered 0 ... subEntities(cc)-1. </p>
+<p>equality </p>
 
 </div>
 </div>
-<a id="abec2fbf817b010250fd6412ea79e3724" name="abec2fbf817b010250fd6412ea79e3724"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abec2fbf817b010250fd6412ea79e3724">&#9670;&nbsp;</a></span>wasRefined()</h2>
+<a id="a2f0018c7adea146b6c1fcad6c253db3d" name="a2f0018c7adea146b6c1fcad6c253db3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f0018c7adea146b6c1fcad6c253db3d">&#9670;&nbsp;</a></span>increment()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::wasRefined </td>
+          <td class="memname">void <a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::increment </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -1117,24 +334,24 @@ template&lt;int dim, class GridImp &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="todo"><dt><b><a class="el" href="../../d1/d88/a00128.html#_todo000013">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="../../de/d76/a00134.html#_todo000016">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8f27223b05549a5329120539c0e9cd03" name="a8f27223b05549a5329120539c0e9cd03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8f27223b05549a5329120539c0e9cd03">&#9670;&nbsp;</a></span>CodimInHostGrid</h2>
+<a id="a4fcf8ca1ab02495186000f1942768935" name="a4fcf8ca1ab02495186000f1942768935"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fcf8ca1ab02495186000f1942768935">&#9670;&nbsp;</a></span>codimension</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
+template&lt;class GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::CodimInHostGrid = GridImp::HostGridType::dimension - GridImp::dimension</td>
+          <td class="memname">constexpr int <a class="el" href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a>&lt; GridImp &gt;::codimension = 0</td>
         </tr>
       </table>
   </td>
@@ -1146,95 +363,16 @@ template&lt;int dim, class GridImp &gt; </div>
 
 </div>
 </div>
-<a id="ad18b1e464308296e89409f748041b698" name="ad18b1e464308296e89409f748041b698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad18b1e464308296e89409f748041b698">&#9670;&nbsp;</a></span>dimworld</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::dimworld = GridImp::dimensionworld</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7dfe26e5eff03bde7ac7957aa08eaf7a" name="a7dfe26e5eff03bde7ac7957aa08eaf7a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7dfe26e5eff03bde7ac7957aa08eaf7a">&#9670;&nbsp;</a></span>hostEntity_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d5/d16/a01060.html#a65c6ce8ada6118b279d6cdffcae0580d">HostGridEntity</a> <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::hostEntity_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4c540678bb077535027d12a7f3a725fc" name="a4c540678bb077535027d12a7f3a725fc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4c540678bb077535027d12a7f3a725fc">&#9670;&nbsp;</a></span>patchGrid_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const GridImp* <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::patchGrid_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3c54bcd95f00752907b8c206be8e8e7f" name="a3c54bcd95f00752907b8c206be8e8e7f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c54bcd95f00752907b8c206be8e8e7f">&#9670;&nbsp;</a></span>trim</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, class GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr <a class="el" href="../../d4/d8c/a00035.html#a0348963ad9d3a1be93263e5997711474">Trimming</a> <a class="el" href="../../db/d14/a01040.html">Dune::IGANEW::PatchGridEntity</a>&lt; 0, dim, GridImp &gt;::trim = GridImp::trim</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d2/de7/a00014_source.html">hierachicpatchgridentity.hh</a></li>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li><a class="el" href="../../d1/dc1/a00092_source.html">hierachicpatchgridentity.hh</a></li>
+<li><a class="el" href="../../db/db2/a00020_source.html">hierachicpatchgridhierarchiciterator.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d06/a00131.html">Dune</a></li><li class="navelem"><a class="el" href="../../d5/deb/a00132.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d5/d16/a01060.html">PatchGridEntity&lt; 0, dim, GridImp &gt;</a></li>
+    <li class="navelem"><a class="el" href="../../d2/df5/a00137.html">Dune</a></li><li class="navelem"><a class="el" href="../../d4/ddd/a00138.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d5/d16/a01060.html">PatchGridHierarchicIterator</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

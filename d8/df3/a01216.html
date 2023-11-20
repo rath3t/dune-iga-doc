@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt; Class Template Reference</title>
+<title>dune-iga: Dune::Functions::NurbsLocalCoefficients&lt; dim &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,65 +94,55 @@ $(document).ready(function(){initNavTree('d8/df3/a01216.html','../../'); initRes
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../d5/d54/a01213.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::Functions::NurbsLocalCoefficients&lt; dim &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Local interpolation in the sense of dune-localfunctions, for the B-spline basis on tensor-product grids.  
+<p>Attaches a shape function to an entity.  
  <a href="../../d8/df3/a01216.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d0/dc2/a00104_source.html">dune/iga/nurbsbasis.hh</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt;:</div>
-<div class="dyncontent">
-<div class="center"><img src="../../da/d3f/a01215.png" border="0" usemap="#a_dune_1_1_functions_1_1_nurbs_local_interpolation_3_01dim_00_01_l_b_01_4_inherit__map" alt="Inheritance graph"/></div>
-<map name="a_dune_1_1_functions_1_1_nurbs_local_interpolation_3_01dim_00_01_l_b_01_4_inherit__map" id="a_dune_1_1_functions_1_1_nurbs_local_interpolation_3_01dim_00_01_l_b_01_4_inherit__map">
-<area shape="rect" title="Local interpolation in the sense of dune&#45;localfunctions, for the B&#45;spline basis on tensor&#45;product gri..." alt="" coords="5,68,212,109"/>
-<area shape="rect" href="../../d8/df3/a01216.html" title=" " alt="" coords="417,5,624,76"/>
-<area shape="rect" href="../../d8/df3/a01216.html" title=" " alt="" coords="417,100,624,171"/>
-</map>
-</div>
+<p><code>#include &lt;<a class="el" href="../../d4/d81/a00110_source.html">dune/iga/nurbsbasis.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a57dd490e6f6e4bc57eb321cf1f8e4e9e"><td class="memTemplParams" colspan="2">template&lt;typename F , typename C &gt; </td></tr>
-<tr class="memitem:a57dd490e6f6e4bc57eb321cf1f8e4e9e"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01216.html#a57dd490e6f6e4bc57eb321cf1f8e4e9e">interpolate</a> (const F &amp;f, std::vector&lt; C &gt; &amp;out) const</td></tr>
-<tr class="memdesc:a57dd490e6f6e4bc57eb321cf1f8e4e9e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local interpolation of a function.  <a href="../../d8/df3/a01216.html#a57dd490e6f6e4bc57eb321cf1f8e4e9e">More...</a><br /></td></tr>
-<tr class="separator:a57dd490e6f6e4bc57eb321cf1f8e4e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab29a3056636e956a36a4bfe47a951091"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01216.html#ab29a3056636e956a36a4bfe47a951091">init</a> (const std::array&lt; unsigned, dim &gt; &amp;sizes)</td></tr>
+<tr class="separator:ab29a3056636e956a36a4bfe47a951091"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab751125f214b769ded9842be52d11fa2"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01216.html#ab751125f214b769ded9842be52d11fa2">size</a> () const</td></tr>
+<tr class="memdesc:ab751125f214b769ded9842be52d11fa2"><td class="mdescLeft">&#160;</td><td class="mdescRight">number of coefficients  <a href="../../d8/df3/a01216.html#ab751125f214b769ded9842be52d11fa2">More...</a><br /></td></tr>
+<tr class="separator:ab751125f214b769ded9842be52d11fa2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf5a802caa3f9bf1b909336121dea33c"><td class="memItemLeft" align="right" valign="top">const LocalKey &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/df3/a01216.html#adf5a802caa3f9bf1b909336121dea33c">localKey</a> (std::size_t i) const</td></tr>
+<tr class="memdesc:adf5a802caa3f9bf1b909336121dea33c"><td class="mdescLeft">&#160;</td><td class="mdescRight">get i'th index  <a href="../../d8/df3/a01216.html#adf5a802caa3f9bf1b909336121dea33c">More...</a><br /></td></tr>
+<tr class="separator:adf5a802caa3f9bf1b909336121dea33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, class LB&gt;<br />
-class Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt;</div><p >Local interpolation in the sense of dune-localfunctions, for the B-spline basis on tensor-product grids. </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int dim&gt;<br />
+class Dune::Functions::NurbsLocalCoefficients&lt; dim &gt;</div><p >Attaches a shape function to an entity. </p>
+<p >The attachment uses the same degree as for Qk elements. This does <em>not</em> provide sufficient information to compute global indices for the shape functions. However, it does allow to find all degrees of freedom that belong to the grid boundary, if the knot vector is open.</p>
+<dl class="section note"><dt>Note</dt><dd>Currently only implemented for 1d and 2d grids. For higher dimensions you can still use the BSplineBasis, but you won't be able to find the degrees of freedom on the grid boundary.</dd></dl>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim</td><td>Dimension of the reference cube </td></tr>
+  </table>
+  </dd>
+</dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a57dd490e6f6e4bc57eb321cf1f8e4e9e" name="a57dd490e6f6e4bc57eb321cf1f8e4e9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57dd490e6f6e4bc57eb321cf1f8e4e9e">&#9670;&nbsp;</a></span>interpolate()</h2>
+<a id="ab29a3056636e956a36a4bfe47a951091" name="ab29a3056636e956a36a4bfe47a951091"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab29a3056636e956a36a4bfe47a951091">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, class LB &gt; </div>
-<div class="memtemplate">
-template&lt;typename F , typename C &gt; </div>
+template&lt;int dim&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../d8/df3/a01216.html">Dune::Functions::NurbsLocalInterpolation</a>&lt; dim, LB &gt;::interpolate </td>
+          <td class="memname">void <a class="el" href="../../d8/df3/a01216.html">Dune::Functions::NurbsLocalCoefficients</a>&lt; dim &gt;::init </td>
           <td>(</td>
-          <td class="paramtype">const F &amp;&#160;</td>
-          <td class="paramname"><em>f</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const std::array&lt; unsigned, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sizes</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">std::vector&lt; C &gt; &amp;&#160;</td>
-          <td class="paramname"><em>out</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -162,19 +152,76 @@ template&lt;typename F , typename C &gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Local interpolation of a function. </p>
+</div>
+</div>
+<a id="adf5a802caa3f9bf1b909336121dea33c" name="adf5a802caa3f9bf1b909336121dea33c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf5a802caa3f9bf1b909336121dea33c">&#9670;&nbsp;</a></span>localKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const LocalKey &amp; <a class="el" href="../../d8/df3/a01216.html">Dune::Functions::NurbsLocalCoefficients</a>&lt; dim &gt;::localKey </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>i</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get i'th index </p>
+
+</div>
+</div>
+<a id="ab751125f214b769ded9842be52d11fa2" name="ab751125f214b769ded9842be52d11fa2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab751125f214b769ded9842be52d11fa2">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="../../d8/df3/a01216.html">Dune::Functions::NurbsLocalCoefficients</a>&lt; dim &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>number of coefficients </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d0/dc2/a00104_source.html">nurbsbasis.hh</a></li>
+<li><a class="el" href="../../d4/d81/a00110_source.html">nurbsbasis.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d06/a00131.html">Dune</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">Functions</a></li><li class="navelem"><a class="el" href="../../d8/df3/a01216.html">NurbsLocalInterpolation</a></li>
+    <li class="navelem"><a class="el" href="../../d2/df5/a00137.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d4a/a00147.html">Functions</a></li><li class="navelem"><a class="el" href="../../d8/df3/a01216.html">NurbsLocalCoefficients</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
