@@ -1,14 +1,11 @@
 var a01148 =
 [
-    [ "ControlPointType", "db/d17/a01148.html#a171156a04b856a610d8c9fc00ef9f649", null ],
-    [ "compileKnotVectors", "db/d17/a01148.html#af1e9fb39ca5239871b3497c67c8cff78", null ],
-    [ "transformControlPoints", "db/d17/a01148.html#aed450e73a2ebef5fc5477e101d71a185", null ],
-    [ "controlPoints", "db/d17/a01148.html#abe6fc348097b4a6957d52eb39547305e", null ],
-    [ "degree", "db/d17/a01148.html#a8fa010e79520bc50c15d319bfbdc3d8c", null ],
-    [ "key", "db/d17/a01148.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "knots", "db/d17/a01148.html#a957ffc4bab5a49b687d8d302938a364c", null ],
-    [ "n_controlPoints", "db/d17/a01148.html#a11f6446750cdd679e343bf5c380a3b37", null ],
-    [ "type", "db/d17/a01148.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "db/d17/a01148.html#a51d455d391e155f6f736a2ec40b7fc69", null ],
-    [ "weights", "db/d17/a01148.html#a274e1d6a8d0b93d7c5b5230e2b4f6f65", null ]
+    [ "LocalView", "db/d17/a01148.html#a061e5ab7d7a24b715261b48f201eefab", null ],
+    [ "LocalView", "db/d17/a01148.html#ae93fa382ed7bcad68a8a838e16142f0a", null ],
+    [ "basisFunctionDerivatives", "db/d17/a01148.html#af09c829a478c53704cc555f56c7bf4de", null ],
+    [ "basisFunctions", "db/d17/a01148.html#abe422b3cf625952b7fc7e02f06c7ca2a", null ],
+    [ "bind", "db/d17/a01148.html#a5baa85f70a8d63631f538a657b5a5892", null ],
+    [ "dimension", "db/d17/a01148.html#af9460658bc72d5db93ee974d4e9825d8", null ],
+    [ "nurbs_", "db/d17/a01148.html#a6b3bd51530bacc7265d161cb68f7e19a", null ],
+    [ "spIndex_", "db/d17/a01148.html#ad94905703de8ab93610c2f39f2056154", null ]
 ];

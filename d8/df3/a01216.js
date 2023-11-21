@@ -1,6 +1,5 @@
 var a01216 =
 [
-    [ "init", "d8/df3/a01216.html#ab29a3056636e956a36a4bfe47a951091", null ],
-    [ "localKey", "d8/df3/a01216.html#adf5a802caa3f9bf1b909336121dea33c", null ],
-    [ "size", "d8/df3/a01216.html#ab751125f214b769ded9842be52d11fa2", null ]
+    [ "refineStepsForHalf", "d8/df3/a01216.html#af2a9314095155eef4a78c2d2946bb65d", null ],
+    [ "refineWeight", "d8/df3/a01216.html#aa6e2a1e176ef9c5147340022ef1c2175", null ]
 ];

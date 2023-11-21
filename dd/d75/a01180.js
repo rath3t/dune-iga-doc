@@ -1,9 +1,14 @@
 var a01180 =
 [
-    [ "ControlPoint", "dd/d75/a01180.html#a05660dacc1b434b971e62129c28422fd", null ],
-    [ "ControlPointNetType", "dd/d75/a01180.html#a321198b37f2cd182d35d6ec23b96497f", null ],
-    [ "Grid", "dd/d75/a01180.html#a29a07fbaa75336571b9f293537a0ec48", null ],
-    [ "PatchData", "dd/d75/a01180.html#ac5a13cf5d977000274c321869942cc52", null ],
-    [ "read", "dd/d75/a01180.html#a00f99434abd8039a53dc9f1e1927a42d", null ],
-    [ "read", "dd/d75/a01180.html#ae156afe228cb6f46b97767f551a4b30d", null ]
+    [ "ControlPointType", "dd/d75/a01180.html#a171156a04b856a610d8c9fc00ef9f649", null ],
+    [ "compileKnotVectors", "dd/d75/a01180.html#af1e9fb39ca5239871b3497c67c8cff78", null ],
+    [ "transformControlPoints", "dd/d75/a01180.html#aed450e73a2ebef5fc5477e101d71a185", null ],
+    [ "controlPoints", "dd/d75/a01180.html#abe6fc348097b4a6957d52eb39547305e", null ],
+    [ "degree", "dd/d75/a01180.html#a8fa010e79520bc50c15d319bfbdc3d8c", null ],
+    [ "key", "dd/d75/a01180.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
+    [ "knots", "dd/d75/a01180.html#a957ffc4bab5a49b687d8d302938a364c", null ],
+    [ "n_controlPoints", "dd/d75/a01180.html#a11f6446750cdd679e343bf5c380a3b37", null ],
+    [ "type", "dd/d75/a01180.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
+    [ "typeString", "dd/d75/a01180.html#a51d455d391e155f6f736a2ec40b7fc69", null ],
+    [ "weights", "dd/d75/a01180.html#a274e1d6a8d0b93d7c5b5230e2b4f6f65", null ]
 ];

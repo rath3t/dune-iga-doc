@@ -12,24 +12,24 @@ var annotated_dup =
         [ "threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "de/def/a01016.html", "de/def/a01016" ],
         [ "viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d43/a01020.html", "d0/d43/a01020" ]
       ] ],
-      [ "Functions", "d0/d4a/a00147.html", [
-        [ "NurbsLocalBasis", "dc/db6/a01212.html", "dc/db6/a01212" ],
-        [ "NurbsLocalCoefficients", "d8/df3/a01216.html", "d8/df3/a01216" ],
-        [ "NurbsLocalFiniteElement", "d7/d5a/a01204.html", "d7/d5a/a01204" ],
-        [ "NurbsLocalInterpolation", "db/d42/a01220.html", "db/d42/a01220" ],
-        [ "NurbsNode", "d8/d8e/a01224.html", "d8/d8e/a01224" ],
-        [ "NurbsPreBasis", "d9/d31/a01208.html", "d9/d31/a01208" ]
+      [ "Functions", "d5/da7/a00144.html", [
+        [ "NurbsLocalBasis", "d4/dc5/a01116.html", "d4/dc5/a01116" ],
+        [ "NurbsLocalCoefficients", "dc/d51/a01120.html", "dc/d51/a01120" ],
+        [ "NurbsLocalFiniteElement", "d2/dd7/a01108.html", "d2/dd7/a01108" ],
+        [ "NurbsLocalInterpolation", "d0/dc8/a01124.html", "d0/dc8/a01124" ],
+        [ "NurbsNode", "d9/d12/a01128.html", "d9/d12/a01128" ],
+        [ "NurbsPreBasis", "d0/d39/a01112.html", "d0/d39/a01112" ]
       ] ],
-      [ "IGA", "da/ddb/a00145.html", [
-        [ "Ibra", "d9/db6/a00146.html", [
-          [ "Brep", "d6/db6/a01172.html", "d6/db6/a01172" ],
-          [ "BrepLoop", "d2/dd2/a01164.html", "d2/dd2/a01164" ],
-          [ "BrepLoopRepresentation", "da/d20/a01160.html", "da/d20/a01160" ],
-          [ "BrepRepresentation", "d4/da6/a01168.html", "d4/da6/a01168" ],
-          [ "BrepTrim", "d9/d42/a01156.html", "d9/d42/a01156" ],
-          [ "BrepTrimRepresentation", "d9/d97/a01152.html", "d9/d97/a01152" ],
-          [ "IbraBase", "db/d51/a01144.html", "db/d51/a01144" ],
-          [ "IbraNURBSData", "db/d17/a01148.html", "db/d17/a01148" ]
+      [ "IGA", "db/d48/a00148.html", [
+        [ "Ibra", "da/d1e/a00149.html", [
+          [ "Brep", "d7/d5a/a01204.html", "d7/d5a/a01204" ],
+          [ "BrepLoop", "d2/d22/a01196.html", "d2/d22/a01196" ],
+          [ "BrepLoopRepresentation", "d2/db4/a01192.html", "d2/db4/a01192" ],
+          [ "BrepRepresentation", "dc/dcc/a01200.html", "dc/dcc/a01200" ],
+          [ "BrepTrim", "d6/d97/a01188.html", "d6/d97/a01188" ],
+          [ "BrepTrimRepresentation", "d1/d35/a01184.html", "d1/d35/a01184" ],
+          [ "IbraBase", "d3/d32/a01176.html", "d3/d32/a01176" ],
+          [ "IbraNURBSData", "dd/d75/a01180.html", "dd/d75/a01180" ]
         ] ],
         [ "Trim", "d9/d7d/a00150.html", [
           [ "ElementBoundaries", "d4/dd5/a01244.html", "d4/dd5/a01244" ],
@@ -38,9 +38,9 @@ var annotated_dup =
         [ "Boundary", "d8/d2b/a01236.html", "d8/d2b/a01236" ],
         [ "DomainInformation", "d8/d7a/a01292.html", "d8/d7a/a01292" ],
         [ "GridBoundarySegment", "d4/d64/a01296.html", "d4/d64/a01296" ],
-        [ "IbraReader", "dd/d75/a01180.html", "dd/d75/a01180" ],
-        [ "IGARefinedGeometries", "d2/d22/a01196.html", "d2/d22/a01196" ],
-        [ "NURBSGrid", "d3/d32/a01176.html", null ],
+        [ "IbraReader", "dc/db6/a01212.html", "dc/db6/a01212" ],
+        [ "IGARefinedGeometries", "de/d16/a01228.html", "de/d16/a01228" ],
+        [ "NURBSGrid", "d9/d31/a01208.html", null ],
         [ "TransformToSpan", "d7/d8d/a01288.html", "d7/d8d/a01288" ],
         [ "TrimData", "d5/d6e/a01240.html", "d5/d6e/a01240" ]
       ] ],
@@ -52,13 +52,13 @@ var annotated_dup =
         [ "Utilities", "d5/db1/a00140.html", [
           [ "Domain", "de/d4e/a00972.html", "de/d4e/a00972" ]
         ] ],
-        [ "BsplineBasis", "d2/dd7/a01108.html", "d2/dd7/a01108" ],
+        [ "BsplineBasis", "dc/d64/a01140.html", "dc/d64/a01140" ],
         [ "ControlPoint", "d7/dd4/a00968.html", "d7/dd4/a00968" ],
         [ "HostGridAccess", "d8/d79/a01036.html", null ],
-        [ "MultiDimensionNet", "d9/d12/a01128.html", "d9/d12/a01128" ],
-        [ "MultiDimensionNetIndex", "d6/de6/a01132.html", "d6/de6/a01132" ],
-        [ "Nurbs", "d0/d39/a01112.html", "d0/d39/a01112" ],
-        [ "NURBSPatchData", "dc/d51/a01120.html", "dc/d51/a01120" ],
+        [ "MultiDimensionNet", "da/d20/a01160.html", "da/d20/a01160" ],
+        [ "MultiDimensionNetIndex", "d2/dd2/a01164.html", "d2/dd2/a01164" ],
+        [ "Nurbs", "db/d51/a01144.html", "db/d51/a01144" ],
+        [ "NURBSPatchData", "d9/d97/a01152.html", "d9/d97/a01152" ],
         [ "PatchGrid", "d6/d48/a00988.html", "d6/d48/a00988" ],
         [ "PatchGridEntity", "d0/ddd/a01044.html", "d0/ddd/a01044" ],
         [ "PatchGridEntity< 0, dim, GridImp >", "d9/db3/a01064.html", "d9/db3/a01064" ],
@@ -78,13 +78,13 @@ var annotated_dup =
         [ "PatchGridLocalGeometry", "dd/dcb/a01104.html", "dd/dcb/a01104" ],
         [ "PatchGridLocalIdSet", "da/db7/a01088.html", "da/db7/a01088" ]
       ] ],
-      [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d2/db4/a01192.html", "d2/db4/a01192" ],
-      [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d1/d35/a01184.html", "d1/d35/a01184" ],
+      [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d8/d8e/a01224.html", "d8/d8e/a01224" ],
+      [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d8/df3/a01216.html", "d8/df3/a01216" ],
       [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "db/d08/a01028.html", null ],
-      [ "JSONGridFactory", "d6/d97/a01188.html", "d6/d97/a01188" ]
+      [ "JSONGridFactory", "db/d42/a01220.html", "db/d42/a01220" ]
     ] ],
     [ "BoundaryPatchEnclosingVerticesPropertyTrimmed", "d8/dc5/a01300.html", "d8/dc5/a01300" ],
     [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/d89/a01032.html", "df/d89/a01032" ],
-    [ "is_instantiation_of", "d1/dae/a01136.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "dc/d64/a01140.html", null ]
+    [ "is_instantiation_of", "d4/da6/a01168.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d6/db6/a01172.html", null ]
 ];

@@ -1,11 +1,9 @@
 var a01212 =
 [
-    [ "Traits", "dc/db6/a01212.html#aa33762da2841b00c25730b54f403b18d", null ],
-    [ "NurbsLocalBasis", "dc/db6/a01212.html#ad119ff60c7cbee7b6629d14495ae1049", null ],
-    [ "evaluateFunction", "dc/db6/a01212.html#a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f", null ],
-    [ "evaluateJacobian", "dc/db6/a01212.html#a1e4031a5766fdf953b67c52753a5173c", null ],
-    [ "order", "dc/db6/a01212.html#a112e67e9f50f06663a24cfb7e1c3804f", null ],
-    [ "partial", "dc/db6/a01212.html#a19caec343db1c4b578863e38a1956cf3", null ],
-    [ "size", "dc/db6/a01212.html#acf2935949ca9304b3007895aae110cc6", null ],
-    [ "NurbsLocalFiniteElement< GV, R >", "dc/db6/a01212.html#ad1ec86095c75c7472125add171d19867", null ]
+    [ "ControlPoint", "dc/db6/a01212.html#a05660dacc1b434b971e62129c28422fd", null ],
+    [ "ControlPointNetType", "dc/db6/a01212.html#a321198b37f2cd182d35d6ec23b96497f", null ],
+    [ "Grid", "dc/db6/a01212.html#a29a07fbaa75336571b9f293537a0ec48", null ],
+    [ "PatchData", "dc/db6/a01212.html#ac5a13cf5d977000274c321869942cc52", null ],
+    [ "read", "dc/db6/a01212.html#a00f99434abd8039a53dc9f1e1927a42d", null ],
+    [ "read", "dc/db6/a01212.html#ae156afe228cb6f46b97767f551a4b30d", null ]
 ];

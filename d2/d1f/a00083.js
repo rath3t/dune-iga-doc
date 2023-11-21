@@ -1,5 +1,7 @@
 var a00083 =
 [
-    [ "is_instantiation_of< Template, T >", "d1/dae/a01136.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "dc/d64/a01140.html", null ]
+    [ "Dune::IGANEW::PatchGridLevelIndexSet< GridImp >", "d6/d80/a01076.html", "d6/d80/a01076" ],
+    [ "Dune::IGANEW::PatchGridLeafIndexSet< GridImp >", "d9/d67/a01080.html", "d9/d67/a01080" ],
+    [ "Dune::IGANEW::PatchGridGlobalIdSet< GridImp >", "da/d93/a01084.html", "da/d93/a01084" ],
+    [ "Dune::IGANEW::PatchGridLocalIdSet< GridImp >", "da/db7/a01088.html", "da/db7/a01088" ]
 ];

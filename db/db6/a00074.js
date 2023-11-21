@@ -1,14 +1,11 @@
 var a00074 =
 [
-    [ "Dune::Capabilities::hasEntity< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d7/d76/a00992.html", "d7/d76/a00992" ],
-    [ "Dune::Capabilities::hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d3/daa/a00996.html", "d3/daa/a00996" ],
-    [ "Dune::Capabilities::canCommunicate< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid >, codim >", "d7/df2/a01000.html", "d7/df2/a01000" ],
-    [ "Dune::Capabilities::isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/dbc/a01004.html", "df/dbc/a01004" ],
-    [ "Dune::Capabilities::isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "dd/dac/a01008.html", "dd/dac/a01008" ],
-    [ "Dune::Capabilities::hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/d45/a01012.html", "d4/d45/a01012" ],
-    [ "Dune::Capabilities::threadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "de/def/a01016.html", "de/def/a01016" ],
-    [ "Dune::Capabilities::viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d0/d43/a01020.html", "d0/d43/a01020" ],
-    [ "Dune::Capabilities::isCartesian< IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "d4/dc5/a01024.html", "d4/dc5/a01024" ],
-    [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "db/d08/a01028.html", null ],
-    [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, trim, ScalarType, HostGrid > >", "df/d89/a01032.html", "df/d89/a01032" ]
+    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d4/dc5/a01116.html", "d4/dc5/a01116" ],
+    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "dc/d51/a01120.html", "dc/d51/a01120" ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d0/dc8/a01124.html", "d0/dc8/a01124" ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d2/dd7/a01108.html", "d2/dd7/a01108" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "d0/d39/a01112.html", "d0/d39/a01112" ],
+    [ "Dune::Functions::NurbsNode< GV >", "d9/d12/a01128.html", "d9/d12/a01128" ],
+    [ "nurbs", "db/db6/a00074.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
+    [ "nurbs", "db/db6/a00074.html#a10c3f08f7830f39c003415e65e2a0361", null ]
 ];

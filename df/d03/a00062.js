@@ -1,9 +1,7 @@
 var a00062 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d7/dd4/a00968.html", "d7/dd4/a00968" ],
-    [ "operator*", "df/d03/a00062.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "df/d03/a00062.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "df/d03/a00062.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "df/d03/a00062.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "df/d03/a00062.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "computeParameterSpaceCoordinate", "df/d03/a00062.html#a7d9fb670c15ac280fd2c4dbcf1bd0c94", null ],
+    [ "hessian", "df/d03/a00062.html#a7693ef58b9b466df6285facbe588e2e7", null ],
+    [ "jacobianTransposed", "df/d03/a00062.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
+    [ "position", "df/d03/a00062.html#ae7bdc51407259017c5322f80267fcc5e", null ]
 ];

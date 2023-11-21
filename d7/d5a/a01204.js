@@ -1,21 +1,12 @@
 var a01204 =
 [
-    [ "Traits", "d7/d5a/a01204.html#a82ab6966f35d5907b7236df6827ad859", null ],
-    [ "NurbsLocalFiniteElement", "d7/d5a/a01204.html#af9a0e84df8545f34e979a84ecd0ac1fc", null ],
-    [ "NurbsLocalFiniteElement", "d7/d5a/a01204.html#a609ff853577297d1a0ead1e280ee7e1c", null ],
-    [ "bind", "d7/d5a/a01204.html#aa407a81be8d3090180921e012e39afda", null ],
-    [ "localBasis", "d7/d5a/a01204.html#a6a62b782b1586d7ec645191540d0a4d2", null ],
-    [ "localCoefficients", "d7/d5a/a01204.html#a0e05aaa73b35041a4c7840b0f914d337", null ],
-    [ "localInterpolation", "d7/d5a/a01204.html#af81c002fe6cd71c2b5d5e7d6c3db553f", null ],
-    [ "oneDimensionalSize", "d7/d5a/a01204.html#a2c286e952d31db312211c9aabdbda36f", null ],
-    [ "size", "d7/d5a/a01204.html#a66500fa3aeb4393533b6476ba1ae0239", null ],
-    [ "type", "d7/d5a/a01204.html#a7245e091225683bcc105b448b63808ef", null ],
-    [ "NurbsLocalBasis< GV, R >", "d7/d5a/a01204.html#aa03ae8fa123dedceb381ff891484ab17", null ],
-    [ "currentKnotSpan_", "d7/d5a/a01204.html#a89307213ae0bc9309d3654491f6616f9", null ],
-    [ "elementIdx_", "d7/d5a/a01204.html#aa191406a187a19cbe0cc3008756cd66a", null ],
-    [ "isBound", "d7/d5a/a01204.html#a2e9ecefd3d1a91c0d053accc92f96035", null ],
-    [ "localBasis_", "d7/d5a/a01204.html#a089ea823bcf1a2b6aaa63b3e99bb6c05", null ],
-    [ "localCoefficients_", "d7/d5a/a01204.html#ad08c68aef6e87b72e3099e0f20773346", null ],
-    [ "localInterpolation_", "d7/d5a/a01204.html#ac350160da5dfcd5b105e2f4ba156a79b", null ],
-    [ "preBasis_", "d7/d5a/a01204.html#a2694ec0d342287865eee67f869602641", null ]
+    [ "SurfaceType", "d7/d5a/a01204.html#afc5eab4d9fc91ce9a747b978b2608462", null ],
+    [ "Brep", "d7/d5a/a01204.html#a4cdb331e4a5a8d1056f116468e997f72", null ],
+    [ "curves2D", "d7/d5a/a01204.html#a6d2f5ea6a78344635f5e08872bd07804", null ],
+    [ "key", "d7/d5a/a01204.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
+    [ "loops", "d7/d5a/a01204.html#adf3a869b18a3dbec9d9d5184f41ca473", null ],
+    [ "surfaces", "d7/d5a/a01204.html#a77af74d7b76494e0e1282baf5a9867c8", null ],
+    [ "trims", "d7/d5a/a01204.html#aff01becf209101c0944a633e2779f98b", null ],
+    [ "type", "d7/d5a/a01204.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
+    [ "typeString", "d7/d5a/a01204.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
 ];

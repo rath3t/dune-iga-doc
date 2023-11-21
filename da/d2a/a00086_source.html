@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: linearalgebra.hh Source File</title>
+<title>dune-iga: hierachicpatchgridhierarchiciterator.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,33 +91,66 @@ $(document).ready(function(){initNavTree('da/d2a/a00086_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">linearalgebra.hh</div></div>
+  <div class="headertitle"><div class="title">hierachicpatchgridhierarchiciterator.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../da/d2a/a00086.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="../../d0/d89/a00071.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/ddd/a00138.html">Dune::IGANEW</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">template</span> &lt;Concept::Vector VectorType&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d4/ddd/a00138.html#a5050da969cad0713cb7f96b363d18700">   12</a></span>  <span class="keyword">requires</span>(VectorType::dimension == 3) VectorType <a class="code hl_function" href="../../d4/ddd/a00138.html#a5050da969cad0713cb7f96b363d18700">cross</a>(<span class="keyword">const</span> VectorType&amp; a, <span class="keyword">const</span> VectorType&amp; b) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<span class="keyword">requires</span> { a.cross(b); })</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>      <span class="keywordflow">return</span> a.cross(b);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keywordflow">return</span> {a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]};</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
-<div class="ttc" id="aa00071_html"><div class="ttname"><a href="../../d0/d89/a00071.html">concepts.hh</a></div></div>
+<a href="../../da/d2a/a00086.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: Copyright © DUNE Project contributors, see file LICENSE.md in module root</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// -*- tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 2 -*-</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// vi: set et ts=4 sw=2 sts=2:</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/ddd/a00138.html">Dune::IGANEW</a> {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="comment">//**********************************************************************</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="comment">//</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html">   23</a></span>  <span class="keyword">class </span><a class="code hl_class" href="../../d5/d16/a01060.html">PatchGridHierarchicIterator</a> {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// Type of the corresponding HierarchicIterator in the host grid</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> GridImp::HostGridType::template Codim&lt;0&gt;::Entity::HierarchicIterator HostGridHierarchicIterator;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#a4fcf8ca1ab02495186000f1942768935">   28</a></span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d5/d16/a01060.html#a4fcf8ca1ab02495186000f1942768935">codimension</a> = 0;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">   30</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> GridImp::template Codim&lt;0&gt;::Entity <a class="code hl_typedef" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a>;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#accfa2e5330f32c7178f85bac864cefa1">   33</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../d5/d16/a01060.html#accfa2e5330f32c7178f85bac864cefa1">PatchGridHierarchicIterator</a>(<span class="keyword">const</span> GridImp* identityGrid, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a>&amp; startEntity, <span class="keywordtype">int</span> maxLevel)</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        : identityGrid_(identityGrid), hostHierarchicIterator_(startEntity.impl().hostEntity_.hbegin(maxLevel)) {}</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#aa877e0fa8cc9caa6ff4d69f3c757f690">   37</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../d5/d16/a01060.html#aa877e0fa8cc9caa6ff4d69f3c757f690">PatchGridHierarchicIterator</a>(<span class="keyword">const</span> GridImp* identityGrid, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a>&amp; startEntity, <span class="keywordtype">int</span> maxLevel,</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                                         [[maybe_unused]] <span class="keywordtype">bool</span> endDummy)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        : identityGrid_(identityGrid), hostHierarchicIterator_(startEntity.impl().hostEntity_.hend(maxLevel)) {}</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#a2f0018c7adea146b6c1fcad6c253db3d">   42</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d5/d16/a01060.html#a2f0018c7adea146b6c1fcad6c253db3d">increment</a>() { ++hostHierarchicIterator_; }</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#acb62437907ffd43cfcee68fc3c88dfe5">   45</a></span>    <a class="code hl_typedef" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a> <a class="code hl_function" href="../../d5/d16/a01060.html#acb62437907ffd43cfcee68fc3c88dfe5">dereference</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Entity</a>{{identityGrid_, *hostHierarchicIterator_}}; }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d5/d16/a01060.html#a0e30a105d52e20fbd8add20a19b5a678">   48</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d5/d16/a01060.html#a0e30a105d52e20fbd8add20a19b5a678">equals</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d5/d16/a01060.html">PatchGridHierarchicIterator</a>&amp; i)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">return</span> hostHierarchicIterator_ == i.hostHierarchicIterator_;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> GridImp* identityGrid_;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    HostGridHierarchicIterator hostHierarchicIterator_;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
 <div class="ttc" id="aa00138_html"><div class="ttname"><a href="../../d4/ddd/a00138.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:9</div></div>
-<div class="ttc" id="aa00138_html_a5050da969cad0713cb7f96b363d18700"><div class="ttname"><a href="../../d4/ddd/a00138.html#a5050da969cad0713cb7f96b363d18700">Dune::IGANEW::cross</a></div><div class="ttdeci">VectorType cross(const VectorType &amp;a, const VectorType &amp;b)</div><div class="ttdoc">Free cross product function it calls the member function cross of VectorType if it exists and falls b...</div><div class="ttdef"><b>Definition:</b> linearalgebra.hh:12</div></div>
+<div class="ttc" id="aa01060_html"><div class="ttname"><a href="../../d5/d16/a01060.html">Dune::IGANEW::PatchGridHierarchicIterator</a></div><div class="ttdoc">Iterator over the descendants of an entity.Mesh entities of codimension 0 (&quot;elements&quot;) allow to visit...</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:23</div></div>
+<div class="ttc" id="aa01060_html_a0e30a105d52e20fbd8add20a19b5a678"><div class="ttname"><a href="../../d5/d16/a01060.html#a0e30a105d52e20fbd8add20a19b5a678">Dune::IGANEW::PatchGridHierarchicIterator::equals</a></div><div class="ttdeci">bool equals(const PatchGridHierarchicIterator &amp;i) const</div><div class="ttdoc">equality</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:48</div></div>
+<div class="ttc" id="aa01060_html_a2f0018c7adea146b6c1fcad6c253db3d"><div class="ttname"><a href="../../d5/d16/a01060.html#a2f0018c7adea146b6c1fcad6c253db3d">Dune::IGANEW::PatchGridHierarchicIterator::increment</a></div><div class="ttdeci">void increment()</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:42</div></div>
+<div class="ttc" id="aa01060_html_a4fcf8ca1ab02495186000f1942768935"><div class="ttname"><a href="../../d5/d16/a01060.html#a4fcf8ca1ab02495186000f1942768935">Dune::IGANEW::PatchGridHierarchicIterator::codimension</a></div><div class="ttdeci">static constexpr int codimension</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:28</div></div>
+<div class="ttc" id="aa01060_html_aa877e0fa8cc9caa6ff4d69f3c757f690"><div class="ttname"><a href="../../d5/d16/a01060.html#aa877e0fa8cc9caa6ff4d69f3c757f690">Dune::IGANEW::PatchGridHierarchicIterator::PatchGridHierarchicIterator</a></div><div class="ttdeci">PatchGridHierarchicIterator(const GridImp *identityGrid, const Entity &amp;startEntity, int maxLevel, bool endDummy)</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:37</div></div>
+<div class="ttc" id="aa01060_html_acb62437907ffd43cfcee68fc3c88dfe5"><div class="ttname"><a href="../../d5/d16/a01060.html#acb62437907ffd43cfcee68fc3c88dfe5">Dune::IGANEW::PatchGridHierarchicIterator::dereference</a></div><div class="ttdeci">Entity dereference() const</div><div class="ttdoc">dereferencing</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:45</div></div>
+<div class="ttc" id="aa01060_html_accfa2e5330f32c7178f85bac864cefa1"><div class="ttname"><a href="../../d5/d16/a01060.html#accfa2e5330f32c7178f85bac864cefa1">Dune::IGANEW::PatchGridHierarchicIterator::PatchGridHierarchicIterator</a></div><div class="ttdeci">PatchGridHierarchicIterator(const GridImp *identityGrid, const Entity &amp;startEntity, int maxLevel)</div><div class="ttdoc">the default Constructor</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:33</div></div>
+<div class="ttc" id="aa01060_html_ae7d4e79984f599be612b9d3d3b9db879"><div class="ttname"><a href="../../d5/d16/a01060.html#ae7d4e79984f599be612b9d3d3b9db879">Dune::IGANEW::PatchGridHierarchicIterator::Entity</a></div><div class="ttdeci">GridImp::template Codim&lt; 0 &gt;::Entity Entity</div><div class="ttdef"><b>Definition:</b> hierachicpatchgridhierarchiciterator.hh:30</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../dir_29e36e3869dd8211c6d429092de827ad.html">utils</a></li><li class="navelem"><a class="el" href="../../da/d2a/a00086.html">linearalgebra.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../da/d2a/a00086.html">hierachicpatchgridhierarchiciterator.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

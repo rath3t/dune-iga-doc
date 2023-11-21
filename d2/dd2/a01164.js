@@ -1,8 +1,8 @@
 var a01164 =
 [
-    [ "BrepLoop", "d2/dd2/a01164.html#a202972e41538dbb52ab0e29d7ba13d64", null ],
-    [ "key", "d2/dd2/a01164.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "trims", "d2/dd2/a01164.html#a0ab2de7a74ccb203dca621407df7eeca", null ],
-    [ "type", "d2/dd2/a01164.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "d2/dd2/a01164.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
+    [ "MultiDimensionNetIndex", "d2/dd2/a01164.html#aa348a348aecd4a6ad7bc329ee7ef1980", null ],
+    [ "directToMultiIndex", "d2/dd2/a01164.html#a4fc73a5e5fddb1d3aef8a82ddcdc93ee", null ],
+    [ "directToMultiIndex", "d2/dd2/a01164.html#a68ad1203fb0ac545633f8aee8d29b07e", null ],
+    [ "index", "d2/dd2/a01164.html#acf8c1405c57faa5d63b5c0d8b99a168c", null ],
+    [ "size", "d2/dd2/a01164.html#a69829d487f01c43ef4085f7cb8c89d84", null ]
 ];
