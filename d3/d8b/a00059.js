@@ -1,9 +1,7 @@
 var a00059 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d7/dd4/a00968.html", "d7/dd4/a00968" ],
-    [ "operator*", "d3/d8b/a00059.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "d3/d8b/a00059.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "d3/d8b/a00059.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "d3/d8b/a00059.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "d3/d8b/a00059.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d4/dd0/a00994.html", "d4/dd0/a00994" ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d9a/a00998.html", "d9/d9a/a00998" ],
+    [ "Dune::JSONGridFactory< Grid_ >", "d2/dd5/a01002.html", "d2/dd5/a01002" ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/d81/a01006.html", "dc/d81/a01006" ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::Trim::ElementBoundaries Struct Reference</title>
+<title>dune-iga: Dune::IGA::Concept::MultiplyAssignAble Concept Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -91,60 +84,23 @@ $(document).ready(function(){initNavTree('d4/dd5/a01244.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="../../d3/d07/a01241.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::Trim::ElementBoundaries Struct Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::Concept::MultiplyAssignAble Concept Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d0/dc2/a00104_source.html">dune/iga/trim/nurbstrimmer.hh</a>&gt;</code></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:ac81770c3023e176dfaf779a0c975b9c9"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="../../d8/d2b/a01236.html">Boundary</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd5/a01244.html#ac81770c3023e176dfaf779a0c975b9c9">outerBoundaries</a></td></tr>
-<tr class="separator:ac81770c3023e176dfaf779a0c975b9c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca88159d168b3842d724432008ad816"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::vector&lt; std::vector&lt; <a class="el" href="../../d8/d2b/a01236.html">Boundary</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd5/a01244.html#a9ca88159d168b3842d724432008ad816">innerBoundaries</a></td></tr>
-<tr class="separator:a9ca88159d168b3842d724432008ad816"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a9ca88159d168b3842d724432008ad816" name="a9ca88159d168b3842d724432008ad816"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca88159d168b3842d724432008ad816">&#9670;&nbsp;</a></span>innerBoundaries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt;std::vector&lt;std::vector&lt;<a class="el" href="../../d8/d2b/a01236.html">Boundary</a>&gt; &gt; &gt; Dune::IGA::Trim::ElementBoundaries::innerBoundaries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac81770c3023e176dfaf779a0c975b9c9" name="ac81770c3023e176dfaf779a0c975b9c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac81770c3023e176dfaf779a0c975b9c9">&#9670;&nbsp;</a></span>outerBoundaries</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;<a class="el" href="../../d8/d2b/a01236.html">Boundary</a>&gt; Dune::IGA::Trim::ElementBoundaries::outerBoundaries</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d0/dc2/a00104_source.html">nurbstrimmer.hh</a></li>
-</ul>
-</div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="../../db/dab/a00089_source.html">dune/iga/utils/concepts.hh</a>&gt;</code></p>
+<h2 class="groupheader">Concept definition</h2>
+<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d4/dd5/a01244.html">Dune::IGA::Concept::MultiplyAssignAble</a> =  <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line">    x *= y;</div>
+<div class="line">  }</div>
+<div class="ttc" id="aa01244_html"><div class="ttname"><a href="../../d4/dd5/a01244.html">Dune::IGA::Concept::MultiplyAssignAble</a></div><div class="ttdef"><b>Definition:</b> concepts.hh:47</div></div>
+</div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d2/df5/a00137.html">Dune</a></li><li class="navelem"><a class="el" href="../../db/d48/a00148.html">IGA</a></li><li class="navelem"><a class="el" href="../../d9/d7d/a00150.html">Trim</a></li><li class="navelem"><a class="el" href="../../d4/dd5/a01244.html">ElementBoundaries</a></li>
+    <li class="navelem"><a class="el" href="../../d8/d87/a00118.html">Dune</a></li><li class="navelem"><a class="el" href="../../df/d6a/a00119.html">IGA</a></li><li class="navelem"><a class="el" href="../../d1/d88/a00128.html">Concept</a></li><li class="navelem"><a class="el" href="../../d4/dd5/a01244.html">MultiplyAssignAble</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

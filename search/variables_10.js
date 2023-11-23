@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['uniquecoarseknotspans_0',['uniqueCoarseKnotSpans',['../d6/d48/a00988.html#a241a31a57a4f4bcc86b2c595ef0a09c3',1,'Dune::IGANEW::PatchGrid']]],
-  ['uniqueknotvector_5f_1',['uniqueKnotVector_',['../d0/d39/a01112.html#a7f68eca48df0bef38436a722d706607c',1,'Dune::Functions::NurbsPreBasis']]]
+  ['vertexindex_5f_0',['vertexIndex_',['../d0/d2b/a01010.html#af927188f7d6dd6e409d8cdd147a20513',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['vertices_5f_1',['vertices_',['../d4/d5d/a01202.html#a7b5d8896e872cd9a06293038b990fc6f',1,'Dune::IGA::TrimmedSubGrid']]]
 ];

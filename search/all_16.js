@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zerofirstandsecondderivativeofposition_0',['zeroFirstAndSecondDerivativeOfPosition',['../d0/d85/a00976.html#afc7794edc49f2371471e260dbbeceda0',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::zeroFirstAndSecondDerivativeOfPosition()'],['../d2/d4c/a00984.html#ae7aa849f19f1c7cf98b623d6802ba1fd',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::zeroFirstAndSecondDerivativeOfPosition()']]]
+  ['zerofirstandsecondderivativeofposition_0',['zeroFirstAndSecondDerivativeOfPosition',['../d5/d4c/a01058.html#a169647db779320e7ae16ad880fa62242',1,'Dune::IGA::NURBSGeometry::zeroFirstAndSecondDerivativeOfPosition()'],['../de/d07/a01146.html#a94fb839706e21d55de4ef9b6be500b07',1,'Dune::IGA::NURBSPatchGeometry::zeroFirstAndSecondDerivativeOfPosition()']]]
 ];

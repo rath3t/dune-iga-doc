@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: makesurfaceofrevolution.hh File Reference</title>
+<title>dune-iga: subgridhelpers.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -92,35 +85,57 @@ $(document).ready(function(){initNavTree('dd/d32/a00041.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">makesurfaceofrevolution.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">subgridhelpers.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d6/d9a/a02491_source.html">dune/iga/hierarchicpatch/splines/nurbspatchdata.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d5/de0/a00050_source.html">dune/iga/hierarchicpatch/geometrykernel/basealgorithms.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;mapbox/earcut.hpp&gt;</code><br />
+<code>#include &lt;dune/grid/common/boundarysegment.hh&gt;</code><br />
 </div>
 <p><a href="../../dd/d32/a00041_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9e/a01206.html">Dune::IGA::TransformToSpan&lt; dim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/da6/a01210.html">Dune::IGA::DomainInformation</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d32/a01214.html">Dune::IGA::GridBoundarySegment&lt; dim, Transformer &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d2/df5/a00137"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/df5/a00137.html">Dune</a></td></tr>
+<tr class="memitem:d8/d87/a00118"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/a00118.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d4/ddd/a00138"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/ddd/a00138.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:df/d6a/a00119"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
+Typedefs</h2></td></tr>
+<tr class="memitem:a25585768c010972feb9ad3e744e16623"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a25585768c010972feb9ad3e744e16623">Dune::IGA::DomainType</a> = Utilities::Domain&lt; double &gt;</td></tr>
+<tr class="separator:a25585768c010972feb9ad3e744e16623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/ddd/a00138.html#a4cdc7d50f04f4f21c50a1eb97c4e8406">Dune::IGANEW::makeSurfaceOfRevolution</a> (const NURBSPatchData&lt; 1, 3, ScalarType &gt; &amp;generatrix, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;point, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;revolutionAxis, const ScalarType &amp;revolutionAngle=360.0)</td></tr>
-<tr class="separator:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad53d9d1af502406661ebe6320753c429"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#ad53d9d1af502406661ebe6320753c429">Dune::IGA::calculateBoundaryLoopLength</a> (const std::vector&lt; Boundary &gt; &amp;loop, const TransformToSpan&lt; 2 &gt; &amp;transformer, unsigned int div=200)</td></tr>
+<tr class="separator:ad53d9d1af502406661ebe6320753c429"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a271f64a918349a4cae9cbc2a9dad0a4d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a271f64a918349a4cae9cbc2a9dad0a4d">Dune::IGA::determineCurvedBoundaries</a> (const std::vector&lt; Boundary &gt; &amp;boundaries) -&gt; std::vector&lt; bool &gt;</td></tr>
+<tr class="separator:a271f64a918349a4cae9cbc2a9dad0a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad66112982ac256c7f15589dec5fcce68"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#ad66112982ac256c7f15589dec5fcce68">Dune::IGA::splitBoundariesImpl</a> (const std::vector&lt; Boundary &gt; &amp;boundaries, int maxSubSample, double tolerance, const TransformToSpan&lt; 2 &gt; &amp;transformer)</td></tr>
+<tr class="separator:ad66112982ac256c7f15589dec5fcce68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8e1d89240e3480112457535ab40b620"><td class="memTemplParams" colspan="2">template&lt;int dim, typename Transformer  = TransformToSpan&lt;dim&gt;, typename Index  = std::uint64_t, typename Point  = Dune::FieldVector&lt;double, dim&gt;&gt; </td></tr>
+<tr class="memitem:ab8e1d89240e3480112457535ab40b620"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#ab8e1d89240e3480112457535ab40b620">Dune::IGA::triangulate</a> (auto &amp;boundaries, const Transformer &amp;transformer) -&gt; std::pair&lt; std::vector&lt; Index &gt;, std::vector&lt; Point &gt; &gt;</td></tr>
+<tr class="separator:ab8e1d89240e3480112457535ab40b620"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../dir_dd59cf058be4b87402b3a744c5ea20b5.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../dd/d32/a00041.html">makesurfaceofrevolution.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_3a8a27db37838cd238997301ec88b300.html">trim</a></li><li class="navelem"><a class="el" href="../../dd/d32/a00041.html">subgridhelpers.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

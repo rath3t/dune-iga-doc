@@ -1,11 +1,8 @@
 var a00074 =
 [
-    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d4/dc5/a01116.html", "d4/dc5/a01116" ],
-    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "dc/d51/a01120.html", "dc/d51/a01120" ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d0/dc8/a01124.html", "d0/dc8/a01124" ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d2/dd7/a01108.html", "d2/dd7/a01108" ],
-    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "d0/d39/a01112.html", "d0/d39/a01112" ],
-    [ "Dune::Functions::NurbsNode< GV >", "d9/d12/a01128.html", "d9/d12/a01128" ],
-    [ "nurbs", "db/db6/a00074.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
-    [ "nurbs", "db/db6/a00074.html#a10c3f08f7830f39c003415e65e2a0361", null ]
+    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "da/d40/a00946.html", "da/d40/a00946" ],
+    [ "findSpanCorrected", "db/db6/a00074.html#a38d1fb2831ca0dbfa925c4858576a99b", null ],
+    [ "findSpanCorrected", "db/db6/a00074.html#ac18a8662488d7f3817b559d81efcc445", null ],
+    [ "findSpanUncorrected", "db/db6/a00074.html#a554d684e12126174010f2a98d8136a3d", null ],
+    [ "findSpanUncorrected", "db/db6/a00074.html#a5fe5465b190549a27424a17e79029ace", null ]
 ];

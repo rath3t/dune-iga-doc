@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['w_0',['w',['../d7/dd4/a00968.html#af47e8eebddde805b8884bf9e4271b77f',1,'Dune::IGANEW::ControlPoint']]],
-  ['wasrefined_1',['wasRefined',['../d9/db3/a01064.html#abec2fbf817b010250fd6412ea79e3724',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
-  ['weights_2',['weights',['../dd/d75/a01180.html#a274e1d6a8d0b93d7c5b5230e2b4f6f65',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['worlddim_3',['worldDim',['../db/d42/a01220.html#ac5d1cecc6f5c369ad6c489d026a47fb1',1,'Dune::JSONGridFactory::worldDim()'],['../d8/d2b/a01236.html#ac71eeeb486349846c4010f447e03132a',1,'Dune::IGA::Boundary::worldDim()']]],
-  ['worlddimension_4',['worlddimension',['../d0/d85/a00976.html#a173616658bc7f0db6836a9dda983afa3',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::worlddimension()'],['../d2/d4c/a00984.html#a8f8790245000195afdf2565608f1ef14',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::worlddimension()'],['../d6/d6a/a01072.html#af8b34998247a284b92d835c3cec7c7aa',1,'Dune::IGANEW::PatchGridGeometry::worlddimension()']]]
+  ['w_0',['w',['../df/d39/a00950.html#a49dcf9a27a50167aec078b0f12531b04',1,'Dune::IGA::ControlPoint']]],
+  ['weights_1',['weights',['../df/d88/a00962.html#a274e1d6a8d0b93d7c5b5230e2b4f6f65',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['worlddim_2',['worldDim',['../d2/dd5/a01002.html#ac5d1cecc6f5c369ad6c489d026a47fb1',1,'Dune::JSONGridFactory::worldDim()'],['../d2/d7b/a01150.html#ac71eeeb486349846c4010f447e03132a',1,'Dune::IGA::Boundary::worldDim()']]]
 ];

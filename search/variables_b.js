@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['n_5fcontrolpoints_0',['n_controlPoints',['../dd/d75/a01180.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['netdim_1',['netDim',['../da/d20/a01160.html#a3e72817af382b328202474dc79c61ff7',1,'Dune::IGANEW::MultiDimensionNet']]],
-  ['numberofsecondderivatives_2',['numberOfSecondDerivatives',['../d2/d4c/a00984.html#aa86b6a7d34052e12afc53e7213afa03d',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
-  ['nurbs_5f_3',['nurbs_',['../db/d17/a01148.html#a6b3bd51530bacc7265d161cb68f7e19a',1,'Dune::IGANEW::Nurbs::LocalView']]],
-  ['nurbsgeometry_4',['nurbsGeometry',['../d8/d2b/a01236.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
+  ['offset_5f_0',['offset_',['../d5/d4c/a01058.html#a235a78dc0a6434e3ab49490263e8cfc8',1,'Dune::IGA::NURBSGeometry::offset_()'],['../dc/d9e/a01206.html#a51161854ea25285fc83e7eae17fe9fc7',1,'Dune::IGA::TransformToSpan::offset_()']]],
+  ['oldpatchrepresentation_5f_1',['oldPatchRepresentation_',['../dd/d7a/a00990.html#a9ef766f6d3219b93517129d775e19a73',1,'Dune::IGA::NURBSGrid']]],
+  ['originalindices_5f_2',['originalIndices_',['../de/d41/a01030.html#a079ef7f4e05e638dde35917b9bdf37b9',1,'Dune::Functions::NurbsPreBasis']]],
+  ['outerboundaries_3',['outerBoundaries',['../df/db5/a01158.html#ac81770c3023e176dfaf779a0c975b9c9',1,'Dune::IGA::Trim::ElementBoundaries']]]
 ];

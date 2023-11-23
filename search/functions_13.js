@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['unitouternormal_0',['unitOuterNormal',['../de/d9c/a01092.html#a8113cdac4409a668f6e517638af3ed8d',1,'Dune::IGANEW::PatchGridLeafIntersection::unitOuterNormal()'],['../d2/d20/a01096.html#adc1daf546b52b6b77fc6f3d95b06a4d4',1,'Dune::IGANEW::PatchGridLevelIntersection::unitOuterNormal()']]],
-  ['update_1',['update',['../d6/d80/a01076.html#acb6d71ea5dc64433e1058f15a1ca848f',1,'Dune::IGANEW::PatchGridLevelIndexSet::update()'],['../d9/d67/a01080.html#a39efa4bbb3301e97f30f59a630220a0b',1,'Dune::IGANEW::PatchGridLeafIndexSet::update()'],['../da/d93/a01084.html#aa830c20a3b8a5fc6f1cca234d329499d',1,'Dune::IGANEW::PatchGridGlobalIdSet::update()'],['../da/db7/a01088.html#ae27582d43005805d67b21e6d50f67013',1,'Dune::IGANEW::PatchGridLocalIdSet::update()'],['../d0/d39/a01112.html#ae1a4a4a0eefd3cc52ee8868d4e2d3a32',1,'Dune::Functions::NurbsPreBasis::update(const GridView &amp;gv)'],['../d0/d39/a01112.html#ae1a4a4a0eefd3cc52ee8868d4e2d3a32',1,'Dune::Functions::NurbsPreBasis::update(const GridView &amp;gv)']]]
+  ['unitnormal_0',['unitNormal',['../d5/d4c/a01058.html#ad38036ff0becd82c4021b6bff24a187a',1,'Dune::IGA::NURBSGeometry::unitNormal()'],['../d0/d61/a01130.html#ae2ab66d2af469c651aa6d6a67ff79ce0',1,'Dune::IGA::NURBSLocalGeometry::unitNormal()']]],
+  ['unitouternormal_1',['unitOuterNormal',['../d1/d3d/a01110.html#a81b4d58a6912475482fcffe959dd23c3',1,'Dune::IGA::NURBSintersection']]],
+  ['update_2',['update',['../de/d41/a01030.html#ae1a4a4a0eefd3cc52ee8868d4e2d3a32',1,'Dune::Functions::NurbsPreBasis']]],
+  ['updateimpl_3',['updateImpl',['../d0/d2b/a01010.html#a3f9f1b871c8800a722379721b64ec249',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]]
 ];

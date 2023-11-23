@@ -1,4 +1,4 @@
 var a00056 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d0/d85/a00976.html", "d0/d85/a00976" ]
+    [ "Dune::Vtk::DiscontinuousIgaDataCollector< GridView >", "d0/d2b/a01010.html", "d0/d2b/a01010" ]
 ];

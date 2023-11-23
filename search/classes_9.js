@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['multidimensionnet_0',['MultiDimensionNet',['../da/d20/a01160.html',1,'Dune::IGANEW']]],
-  ['multidimensionnet_3c_20dim_2c_20controlpointtype_20_3e_1',['MultiDimensionNet&lt; dim, ControlPointType &gt;',['../da/d20/a01160.html',1,'Dune::IGANEW']]],
-  ['multidimensionnet_3c_20dim_2c_20scalartype_20_3e_2',['MultiDimensionNet&lt; dim, ScalarType &gt;',['../da/d20/a01160.html',1,'Dune::IGANEW']]],
-  ['multidimensionnetindex_3',['MultiDimensionNetIndex',['../d2/dd2/a01164.html',1,'Dune::IGANEW']]]
+  ['partition_0',['Partition',['../db/d32/a01122.html',1,'Dune::IGA::NurbsLeafGridViewTraits&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt;'],['../d4/da7/a01102.html',1,'NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::Partition&lt; pitype &gt;']]]
 ];

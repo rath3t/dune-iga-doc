@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['p_0',['p',['../d7/dd4/a00968.html#a7d28f5087c63173fd47b83c11cfef8db',1,'Dune::IGANEW::ControlPoint']]],
-  ['patchdata_5f_1',['patchData_',['../d0/d85/a00976.html#a5c43d937c5414a6e266c7116ff0a4777',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::patchData_()'],['../d0/d39/a01112.html#aafd5d2f7365e507a145be0553cefa15a',1,'Dune::Functions::NurbsPreBasis::patchData_()'],['../d0/d39/a01112.html#a21f27b41d02d46b60e163d4a3c4d437b',1,'Dune::Functions::NurbsPreBasis::patchData_()']]],
-  ['patchdim_2',['patchDim',['../d9/d97/a01152.html#a008c4794473967d91fae315659b7a5ef',1,'Dune::IGANEW::NURBSPatchData']]],
-  ['patchgeometries_3',['patchGeometries',['../d6/d48/a00988.html#a0384f329147f938f1157b2789051ca98',1,'Dune::IGANEW::PatchGrid']]],
-  ['patchgrid_5f_4',['patchGrid_',['../d9/db3/a01064.html#a4c540678bb077535027d12a7f3a725fc',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
-  ['patchnumberofsecondderivatives_5',['patchNumberOfSecondDerivatives',['../d2/d4c/a00984.html#adc67dd6208cc69ff06e2e5164c16d400',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
-  ['pathsamples_6',['pathSamples',['../da/de0/a01248.html#aecdaffbb3146705cddb9d4f2811af9e4',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['prebasis_5f_7',['preBasis_',['../d2/dd7/a01108.html#a06f8490ebbc69f81b9d91be5648450f4',1,'Dune::Functions::NurbsLocalFiniteElement::preBasis_()'],['../d9/d12/a01128.html#a011283ce1b47daddcff10caadb8defcf',1,'Dune::Functions::NurbsNode::preBasis_()']]]
+  ['scale_0',['scale',['../d4/d13/a01162.html#a1d056ab95bab7f99877a5a713727331d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
+  ['scaling_5f_1',['scaling_',['../d5/d4c/a01058.html#a37b0deda98cdb2fa4103e89b03b66536',1,'Dune::IGA::NURBSGeometry::scaling_()'],['../dc/d9e/a01206.html#af4bc4bed4998c5f84bf8042fbcb3ef32',1,'Dune::IGA::TransformToSpan::scaling_()']]],
+  ['subgrid_5f_2',['subgrid_',['../d5/d4c/a01058.html#a5a0585779a2647db21323ac5c6c38da7',1,'Dune::IGA::NURBSGeometry']]],
+  ['surface_5fgeometries_5f3d_3',['surface_geometries_3d',['../d1/d7a/a00982.html#a9010ce626abe088d92fa7ca94dea8809',1,'Dune::IGA::Ibra::BrepRepresentation']]],
+  ['surfaces_4',['surfaces',['../d3/d7b/a00986.html#a77af74d7b76494e0e1282baf5a9867c8',1,'Dune::IGA::Ibra::Brep']]]
 ];

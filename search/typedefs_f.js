@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['tensorgrid_0',['TensorGrid',['../da/de0/a01248.html#a09e1f768583f5f18b9df7a3cd45c16ee',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['tensorgridelementgeometry_1',['TensorGridElementGeometry',['../da/de0/a01248.html#afcfb0ddb8c77470f4752282a63ac9f3d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['tensorgridview_2',['TensorGridView',['../da/de0/a01248.html#a6c3707db6a3e9570c04c0115b3991fcb',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['traits_3',['Traits',['../db/d14/a01040.html#aea565b00b4a34fa9431a309820a6957b',1,'Dune::IGANEW::PatchGridFamily::Traits()'],['../d6/d48/a00988.html#ac1732a8b60fb3b73b683d96e17488ebf',1,'Dune::IGANEW::PatchGrid::Traits()'],['../d4/dc5/a01116.html#aa33762da2841b00c25730b54f403b18d',1,'Dune::Functions::NurbsLocalBasis::Traits()'],['../d2/dd7/a01108.html#a82ab6966f35d5907b7236df6827ad859',1,'Dune::Functions::NurbsLocalFiniteElement::Traits()'],['../d4/dc5/a01116.html#aa33762da2841b00c25730b54f403b18d',1,'Dune::Functions::NurbsLocalBasis::Traits()'],['../d2/dd7/a01108.html#a82ab6966f35d5907b7236df6827ad859',1,'Dune::Functions::NurbsLocalFiniteElement::Traits()']]],
-  ['types_4',['Types',['../d6/d80/a01076.html#a5d20b80f7c60adb00b0b364353d4172d',1,'Dune::IGANEW::PatchGridLevelIndexSet::Types()'],['../d9/d67/a01080.html#a5a1a954bcd10906f768f0cb6b5ae154c',1,'Dune::IGANEW::PatchGridLeafIndexSet::Types()']]]
+  ['value_5ftype_0',['value_type',['../dd/d9e/a01226.html#a94d3fbe24a39c8db10a72cdf29121faa',1,'Dune::IGA::MultiDimensionNet']]],
+  ['vectortype_1',['VectorType',['../df/d39/a00950.html#a4f2df71a64c4dde55c8222be6efe4edf',1,'Dune::IGA::ControlPoint']]],
+  ['volume_2',['Volume',['../d5/d4c/a01058.html#a14b89ae5a21c481d3e87515800c8b30c',1,'Dune::IGA::NURBSGeometry::Volume()'],['../de/d07/a01146.html#a56c81881e2cb38767fd9d4e02ca6cb3c',1,'Dune::IGA::NURBSPatchGeometry::Volume()']]]
 ];

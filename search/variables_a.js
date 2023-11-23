@@ -1,7 +1,11 @@
 var searchData=
 [
-  ['maxmultiindexsize_0',['maxMultiIndexSize',['../d0/d39/a01112.html#a0630377385bf806f9a9e8b44289240be',1,'Dune::Functions::NurbsPreBasis']]],
-  ['minmultiindexsize_1',['minMultiIndexSize',['../d0/d39/a01112.html#af6210f36f3714b0e93df464f5bd9ce84',1,'Dune::Functions::NurbsPreBasis']]],
-  ['multiindexbuffersize_2',['multiIndexBufferSize',['../d0/d39/a01112.html#a01a2df00cb51bcaa0217baa1f4016a6d',1,'Dune::Functions::NurbsPreBasis']]],
-  ['mydimension_3',['mydimension',['../d0/d85/a00976.html#a06037363d30a70eba4b98f590f81a637',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::mydimension()'],['../d2/d4c/a00984.html#a25bd36d1846b9a5e2fae588e804c3dae',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::mydimension()'],['../d6/d6a/a01072.html#acf47a66bec55cec4b5f30fe54580e186',1,'Dune::IGANEW::PatchGridGeometry::mydimension()'],['../dd/dcb/a01104.html#a8eee8b296b2399a9d9e99fd853c31f0d',1,'Dune::IGANEW::PatchGridLocalGeometry::mydimension()']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../df/d88/a00962.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['netdim_1',['netDim',['../dd/d9e/a01226.html#ad00ca34052885ffc4c947f89e0211fe1',1,'Dune::IGA::MultiDimensionNet']]],
+  ['numcells_5f_2',['numCells_',['../d0/d2b/a01010.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['numpoints_5f_3',['numPoints_',['../d0/d2b/a01010.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['numsamplesstartingpoint_4',['numSamplesStartingPoint',['../d4/d13/a01162.html#aad06c2e9a96ca36fea52ecf4354714ce',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
+  ['nurbs_5f_5',['nurbs_',['../d5/d4c/a01058.html#afd0070e29bd7d984dc48359f683f5315',1,'Dune::IGA::NURBSGeometry']]],
+  ['nurbsentity_6',['nurbsEntity',['../d9/df5/a01086.html#a99753df9e851bebc039c3bf842e5b8f4',1,'Dune::IGA::NurbsHierarchicIterator']]],
+  ['nurbsgeometry_7',['nurbsGeometry',['../d2/d7b/a01150.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
 ];

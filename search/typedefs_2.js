@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['domaintype_0',['DomainType',['../d8/d2b/a01236.html#a34497333a209c96c14414d9f89fe7603',1,'Dune::IGA::Boundary::DomainType()'],['../db/d48/a00148.html#a25585768c010972feb9ad3e744e16623',1,'Dune::IGA::DomainType()']]],
-  ['dynamicmatrixtype_1',['DynamicMatrixType',['../dc/d64/a01140.html#a2db733e734214d17cc6ea53128623cb6',1,'Dune::IGANEW::BsplineBasis::DynamicMatrixType()'],['../db/d51/a01144.html#a7d802bbb26718ae762e326b5d7ea7adc',1,'Dune::IGANEW::Nurbs::DynamicMatrixType()']]],
-  ['dynamicvectortype_2',['DynamicVectorType',['../dc/d64/a01140.html#a3ad977b8842fd799679111e8c467197c',1,'Dune::IGANEW::BsplineBasis::DynamicVectorType()'],['../db/d51/a01144.html#abfb146d31b97eb6d9c67285af0b16e37',1,'Dune::IGANEW::Nurbs::DynamicVectorType()']]]
+  ['directindex_0',['DirectIndex',['../dd/de2/a01134.html#ac3712f473eed1b2db5108d5cfa4f2f40',1,'Dune::IGA::NURBSPatch']]],
+  ['domaintype_1',['DomainType',['../d2/d7b/a01150.html#a34497333a209c96c14414d9f89fe7603',1,'Dune::IGA::Boundary::DomainType()'],['../df/d6a/a00119.html#a25585768c010972feb9ad3e744e16623',1,'Dune::IGA::DomainType()']]],
+  ['dynamicmatrixtype_2',['DynamicMatrixType',['../da/d40/a00946.html#a6d00e37615b4c29d0f9d8e1c14f0cd0a',1,'Dune::IGA::BsplineBasis1D::DynamicMatrixType()'],['../d1/dd8/a01022.html#ab7c27e0b51884ec81ba7dc4a9a8c710b',1,'Dune::IGA::Nurbs::DynamicMatrixType()']]],
+  ['dynamicvectortype_3',['DynamicVectorType',['../da/d40/a00946.html#a76395b78ca565b6b606e268925109af0',1,'Dune::IGA::BsplineBasis1D::DynamicVectorType()'],['../d1/dd8/a01022.html#a25155cb3f73365d18d57e10350ce8d88',1,'Dune::IGA::Nurbs::DynamicVectorType()']]]
 ];

@@ -1,13 +1,9 @@
 var a00026 =
 [
-    [ "Dune::IGANEW::Concept::Vector", "d3/d07/a01301.html", null ],
-    [ "Dune::IGANEW::Concept::ControlPoint", "dc/de0/a01302.html", null ],
-    [ "Dune::IGANEW::Concept::MultiplyAble", "d6/d07/a01303.html", null ],
-    [ "Dune::IGANEW::Concept::AddAble", "d6/dae/a01304.html", null ],
-    [ "Dune::IGANEW::Concept::SubstractAble", "dc/d9e/a01305.html", null ],
-    [ "Dune::IGANEW::Concept::MultiplyAssignAble", "d7/d8c/a01306.html", null ],
-    [ "Dune::IGANEW::Concept::DivideAssignAble", "d2/d4c/a01307.html", null ],
-    [ "Dune::IGANEW::Concept::DivideAble", "d1/d56/a01308.html", null ],
-    [ "Dune::IGANEW::Concept::NurbsGeometry", "db/d4b/a01309.html", null ],
-    [ "Dune::IGANEW::Concept::This", "da/d79/a01310.html", null ]
+    [ "Dune::IGA::EntitySeedStruct< cd, GridImpl >", "d4/d8a/a01062.html", "d4/d8a/a01062" ],
+    [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "dd/d7a/a00990.html", "dd/d7a/a00990" ],
+    [ "Dune::IGA::NurbsGridFamily< dim, dimworld, ScalarType >", "d0/dfb/a01066.html", "d0/dfb/a01066" ],
+    [ "gridEntityTupleGenerator", "d6/d5b/a00026.html#ab372b8b34cfa334f8e7767bacec8170a", null ],
+    [ "leafGridView", "d6/d5b/a00026.html#a8571f4f13050af2bf0d0f9ac38132765", null ],
+    [ "levelGridView", "d6/d5b/a00026.html#a335f93275773dac8911e330abef913a8", null ]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['base_0',['Base',['../de/d4e/a00972.html#a455fc618b2e21bf6e7d8984befc4edc5',1,'Dune::IGANEW::Utilities::Domain']]],
-  ['boundaryloop_1',['BoundaryLoop',['../db/d48/a00148.html#ac852dd8efef6c18283ca22735cb02696',1,'Dune::IGA']]]
+  ['base_0',['Base',['../d3/dca/a00954.html#a1f0514ee2ec1d6d2f862aa1865bd9fb4',1,'Dune::IGA::Utilities::Domain']]],
+  ['boundaryloop_1',['BoundaryLoop',['../df/d6a/a00119.html#ac852dd8efef6c18283ca22735cb02696',1,'Dune::IGA']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../d3/d32/a01176.html#a5b59867bdd8d1d0f656beb3e489bcd4f',1,'Dune::IGA::Ibra::IbraBase']]]
+  ['intersections_0',['intersections',['../d7/df7/a01074.html#a5c5d0e2a3d38514169174bb4cd73677d',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;']]]
 ];
