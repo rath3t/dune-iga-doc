@@ -1,11 +1,12 @@
 var searchData=
 [
-  ['n_5fcontrolpoints_0',['n_controlPoints',['../df/d88/a00962.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['netdim_1',['netDim',['../dd/d9e/a01226.html#ad00ca34052885ffc4c947f89e0211fe1',1,'Dune::IGA::MultiDimensionNet']]],
-  ['numcells_5f_2',['numCells_',['../d0/d2b/a01010.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
-  ['numpoints_5f_3',['numPoints_',['../d0/d2b/a01010.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
-  ['numsamplesstartingpoint_4',['numSamplesStartingPoint',['../d4/d13/a01162.html#aad06c2e9a96ca36fea52ecf4354714ce',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['nurbs_5f_5',['nurbs_',['../d5/d4c/a01058.html#afd0070e29bd7d984dc48359f683f5315',1,'Dune::IGA::NURBSGeometry']]],
-  ['nurbsentity_6',['nurbsEntity',['../d9/df5/a01086.html#a99753df9e851bebc039c3bf842e5b8f4',1,'Dune::IGA::NurbsHierarchicIterator']]],
-  ['nurbsgeometry_7',['nurbsGeometry',['../d2/d7b/a01150.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
+  ['leafindexset_5f_0',['leafIndexSet_',['../d1/dae/a01136.html#a4ab6b42be96df63301ab733f9f70e2a8',1,'Dune::IGANEW::PatchGrid']]],
+  ['level_5f_1',['level_',['../d3/d32/a01176.html#ae882e0b5be04768bf54198eef1b067dd',1,'Dune::IGANEW::PatchGridLevelIndexSet']]],
+  ['levelindexsets_5f_2',['levelIndexSets_',['../d1/dae/a01136.html#a9245ea0b6b7085bb6a6785a410605116',1,'Dune::IGANEW::PatchGrid']]],
+  ['localbasis_5f_3',['localBasis_',['../d8/d8e/a01224.html#a47ab2fe52d6ffb44066d45a1662eaa69',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['localcoefficients_5f_4',['localCoefficients_',['../d8/d8e/a01224.html#a63aeb97a501f000f507a734699b79c89',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['localidset_5f_5',['localIdSet_',['../d1/dae/a01136.html#ad01ed557487d47f65598110832a804da',1,'Dune::IGANEW::PatchGrid']]],
+  ['localindex_6',['localIndex',['../dd/d6d/a01380.html#accce87872c7dfa44c89347d946664a33',1,'Dune::IGA::DomainInformation']]],
+  ['localinterpolation_5f_7',['localInterpolation_',['../d8/d8e/a01224.html#a315668b19b95fb51f103beca8d66deb5',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['loops_8',['loops',['../dd/d18/a01284.html#ad4fb64a1c336ee19cf8b6e725030b639',1,'Dune::IGA::Ibra::BrepRepresentation::loops()'],['../d7/d8d/a01288.html#adf3a869b18a3dbec9d9d5184f41ca473',1,'Dune::IGA::Ibra::Brep::loops()']]]
 ];

@@ -1,4 +1,4 @@
 var a00071 =
 [
-    [ "Dune::IGA::IgaIdSet< GridImpl >", "da/d4e/a01106.html", "da/d4e/a01106" ]
+    [ "Dune::IGANEW::PatchGridEntitySeed< codim, GridImp >", "d2/dd2/a01164.html", "d2/dd2/a01164" ]
 ];

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['validknotsize_0',['validKnotSize',['../dd/de2/a01134.html#a1b6b0f6f2f961787e265673bcedf1f56',1,'Dune::IGA::NURBSPatch']]],
-  ['vertexsubindex_1',['vertexSubIndex',['../d0/d56/a01014.html#ae5817e582c43679fcff376da08c8671f',1,'Dune::IGA::IGARefinedGeometries']]],
-  ['volume_2',['volume',['../d5/d4c/a01058.html#a5a3a9773489ea69cbcb34cb5e15c5828',1,'Dune::IGA::NURBSGeometry::volume()'],['../d0/d61/a01130.html#a39a7c96de39d4a4a180e583256f49806',1,'Dune::IGA::NURBSLocalGeometry::volume()'],['../de/d07/a01146.html#a4d6aadc112f4aa374d0972e90f8a372b',1,'Dune::IGA::NURBSPatchGeometry::volume()']]]
+  ['vertexsubindex_0',['vertexSubIndex',['../d7/d41/a01312.html#ae5817e582c43679fcff376da08c8671f',1,'Dune::IGA::IGARefinedGeometries']]],
+  ['visit_1',['visit',['../d4/d98/a01456.html#a647f652d8dc9c0ff3a6d9c08864b274c',1,'Dune::IGANEW::Trim::LocalGeometryVariant']]],
+  ['volume_2',['volume',['../de/def/a01016.html#a51608259c110bc32da401244999271e6',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::volume()'],['../d4/dc5/a01024.html#a280437942a1ae51873016226d8691cdc',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::volume()'],['../d5/dec/a01416.html#ae200bffa16626260fc9c00e16b8cf125',1,'Dune::IGANEW::DefaultTrim::DefaultTrimmedReferenceElement::volume()']]]
 ];

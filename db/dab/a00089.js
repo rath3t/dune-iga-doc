@@ -1,13 +1,10 @@
 var a00089 =
 [
-    [ "Dune::IGA::Concept::Vector", "d7/dbf/a01239.html", null ],
-    [ "Dune::IGA::Concept::ControlPoint", "d5/d6e/a01240.html", null ],
-    [ "Dune::IGA::Concept::MultiplyAble", "d3/d07/a01241.html", null ],
-    [ "Dune::IGA::Concept::AddAble", "d7/dc5/a01242.html", null ],
-    [ "Dune::IGA::Concept::SubstractAble", "d8/db0/a01243.html", null ],
-    [ "Dune::IGA::Concept::MultiplyAssignAble", "d4/dd5/a01244.html", null ],
-    [ "Dune::IGA::Concept::DivideAssignAble", "d1/d31/a01245.html", null ],
-    [ "Dune::IGA::Concept::DivideAble", "d7/d04/a01246.html", null ],
-    [ "Dune::IGA::Concept::NurbsGeometry", "dd/d95/a01247.html", null ],
-    [ "Dune::IGA::Concept::This", "da/de0/a01248.html", null ]
+    [ "Dune::IGA::Trim::ElementBoundaries", "d9/d45/a01332.html", "d9/d45/a01332" ],
+    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "df/d93/a01336.html", "df/d93/a01336" ],
+    [ "ElementTrimFlag", "db/dab/a00089.html#a34b2741ab599082a80dacc40c6e5069b", [
+      [ "full", "db/dab/a00089.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "db/dab/a00089.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "db/dab/a00089.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ]
 ];

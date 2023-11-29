@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['addloop_0',['addLoop',['../d5/d16/a01154.html#a065412a5007835e01f8b48b745fff51d',1,'Dune::IGA::TrimData']]],
-  ['affine_1',['affine',['../d5/d4c/a01058.html#a94a200eb27beef9d981e897e798dcc3d',1,'Dune::IGA::NURBSGeometry::affine()'],['../d0/d61/a01130.html#a3d971997f2accf3b8c84b64afdcc4adc',1,'Dune::IGA::NURBSLocalGeometry::affine()'],['../de/d07/a01146.html#ace4cea5bd275aa0f1b0e095cdf8ff54c',1,'Dune::IGA::NURBSPatchGeometry::affine()']]]
+  ['adapt_0',['adapt',['../d1/dae/a01136.html#a2d7b533c9ee715adf8a79459c4a35a3c',1,'Dune::IGANEW::PatchGrid']]],
+  ['addloop_1',['addLoop',['../dc/dd9/a01328.html#a065412a5007835e01f8b48b745fff51d',1,'Dune::IGA::TrimData']]],
+  ['affine_2',['affine',['../d4/dc5/a01024.html#ad7fa12f45a8b4078bcd818376cc86b2d',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::affine()'],['../d6/db6/a01172.html#a593a2b9143bde7fd54fed564f55b87ac',1,'Dune::IGANEW::PatchGridGeometry::affine()'],['../d7/d5a/a01204.html#ac0d095774cf01b990e81c75aa3f2347c',1,'Dune::IGANEW::PatchGridLocalGeometry::affine()'],['../d2/db1/a01428.html#a929d5b8996c3b48e25ddd9a807cb490e',1,'Dune::IGANEW::DefaultTrim::TrimmedPatchLocalGeometry::affine()'],['../d4/d98/a01456.html#af4169433466f726fdd6d00b065c3186b',1,'Dune::IGANEW::Trim::LocalGeometryVariant::affine()']]]
 ];

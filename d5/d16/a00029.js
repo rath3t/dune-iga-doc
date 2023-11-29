@@ -1,4 +1,4 @@
 var a00029 =
 [
-    [ "Dune::IGA::NURBSintersection< GridImp >", "d1/d3d/a01110.html", "d1/d3d/a01110" ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedPatchLocalGeometry< mydim_, coorddim, ScalarType >", "d2/db1/a01428.html", "d2/db1/a01428" ]
 ];

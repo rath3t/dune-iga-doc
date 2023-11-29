@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbsidset.hh Source File</title>
+<title>dune-iga: patchgridentityseed.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,6 +16,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -84,61 +91,60 @@ $(document).ready(function(){initNavTree('d0/d89/a00071_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">nurbsidset.hh</div></div>
+  <div class="headertitle"><div class="title">patchgridentityseed.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d0/d89/a00071.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../df/d6a/a00119.html">Dune::IGA</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Gr<span class="keywordtype">id</span>Impl&gt;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html">    8</a></span>  <span class="keyword">class </span><a class="code hl_class" href="../../da/d4e/a01106.html">IgaIdSet</a> : <span class="keyword">public</span> IdSet&lt;GridImpl, IgaIdSet&lt;GridImpl&gt;, int&gt; {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>   <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">   10</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">IdType</a>   = int;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html#aee8e13698de38303b6de769d11d3569b">   11</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../da/d4e/a01106.html#aee8e13698de38303b6de769d11d3569b">GridView</a> = <span class="keyword">typename</span> GridImpl::Traits::LeafGridView;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html#a093f9b70ec11610ed61326b5fb7124e4">   12</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../da/d4e/a01106.html#a093f9b70ec11610ed61326b5fb7124e4">IgaIdSet</a>(<a class="code hl_typedef" href="../../da/d4e/a01106.html#aee8e13698de38303b6de769d11d3569b">GridView</a> <span class="keyword">const</span>&amp; g) : gridView_(&amp;g) {}</div>
+<a href="../../d0/d89/a00071.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: Copyright © DUNE Project contributors, see file LICENSE.md in module root</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// -*- tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 2 -*-</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// vi: set et ts=4 sw=2 sts=2:</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d48/a00165.html">Dune::IGANEW</a> {</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">template</span> &lt;<span class="keyword">class</span> Entity&gt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html#ad50e90cf1d5a5b05e78100eb139711f6">   15</a></span>    [[nodiscard]] <a class="code hl_typedef" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">IdType</a> <a class="code hl_function" href="../../da/d4e/a01106.html#ad50e90cf1d5a5b05e78100eb139711f6">id</a>(<span class="keyword">const</span> Entity&amp; entity)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keywordflow">return</span> this-&gt;offset(Entity::codimension) + gridView_-&gt;indexSet().index(entity);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    }</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> codim&gt;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html#a3aca90c2ffea68b28c467010d2dec7ae">   20</a></span>    [[nodiscard]] <a class="code hl_typedef" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">IdType</a> <a class="code hl_function" href="../../da/d4e/a01106.html#a3aca90c2ffea68b28c467010d2dec7ae">id</a>(<span class="keyword">const</span> <span class="keyword">typename</span> GridImpl::Traits::template Codim&lt;codim&gt;::Entity&amp; entity)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      <span class="keywordflow">return</span> this-&gt;<a class="code hl_function" href="../../da/d4e/a01106.html#ad50e90cf1d5a5b05e78100eb139711f6">id</a>(entity);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    }</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../da/d4e/a01106.html#a2e607fdc32cb4cf9033b39acc7bbd885">   24</a></span>    [[nodiscard]] <a class="code hl_typedef" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">IdType</a> <a class="code hl_function" href="../../da/d4e/a01106.html#a2e607fdc32cb4cf9033b39acc7bbd885">subId</a>(<span class="keyword">const</span> <span class="keyword">typename</span> GridImpl::Traits::template Codim&lt;0&gt;::Entity&amp; entity, <span class="keywordtype">int</span> i,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                               <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> codim)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keywordflow">return</span> this-&gt;offset(codim) + gridView_-&gt;indexSet().subIndex(entity, i, codim);</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> codim, <span class="keyword">class</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html">   20</a></span>  <span class="keyword">class </span><a class="code hl_class" href="../../d2/dd2/a01164.html">PatchGridEntitySeed</a> {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>   <span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="comment">// Entity type of the hostgrid</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#a4dd6baf4cd269c9391e68a422f4a2929">   23</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> GridImp::ParameterSpaceGrid::Traits::template Codim&lt;codim&gt;::Entity <a class="code hl_typedef" href="../../d2/dd2/a01164.html#a4dd6baf4cd269c9391e68a422f4a2929">ParameterSpaceGridEntity</a>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="comment">// EntitySeed type of the hostgrid</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">typedef</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#a3be121a897622edc3086b025462edb6a">   27</a></span>        <span class="keyword">typename</span> GridImp::ParameterSpaceGrid::Traits::template Codim&lt;codim&gt;::EntitySeed <a class="code hl_typedef" href="../../d2/dd2/a01164.html#a3be121a897622edc3086b025462edb6a">ParameterSpaceGridEntitySeed</a>;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    [[nodiscard]] <a class="code hl_typedef" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">IdType</a> offset(<span class="keyword">const</span> <span class="keywordtype">int</span> codim)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <a class="code hl_typedef" href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">IdType</a> sum = 0;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; codim; ++i)</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        sum += gridView_-&gt;size(i);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keywordflow">return</span> sum;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <a class="code hl_typedef" href="../../da/d4e/a01106.html#aee8e13698de38303b6de769d11d3569b">GridView</a> <span class="keyword">const</span>* gridView_;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  };</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}  <span class="comment">// namespace Dune::IGA</span></div>
-<div class="ttc" id="aa00119_html"><div class="ttname"><a href="../../df/d6a/a00119.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> bsplinealgorithms.hh:13</div></div>
-<div class="ttc" id="aa01106_html"><div class="ttname"><a href="../../da/d4e/a01106.html">Dune::IGA::IgaIdSet</a></div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:8</div></div>
-<div class="ttc" id="aa01106_html_a093f9b70ec11610ed61326b5fb7124e4"><div class="ttname"><a href="../../da/d4e/a01106.html#a093f9b70ec11610ed61326b5fb7124e4">Dune::IGA::IgaIdSet::IgaIdSet</a></div><div class="ttdeci">IgaIdSet(GridView const &amp;g)</div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:12</div></div>
-<div class="ttc" id="aa01106_html_a2e607fdc32cb4cf9033b39acc7bbd885"><div class="ttname"><a href="../../da/d4e/a01106.html#a2e607fdc32cb4cf9033b39acc7bbd885">Dune::IGA::IgaIdSet::subId</a></div><div class="ttdeci">IdType subId(const typename GridImpl::Traits::template Codim&lt; 0 &gt;::Entity &amp;entity, int i, unsigned int codim) const</div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:24</div></div>
-<div class="ttc" id="aa01106_html_a3aca90c2ffea68b28c467010d2dec7ae"><div class="ttname"><a href="../../da/d4e/a01106.html#a3aca90c2ffea68b28c467010d2dec7ae">Dune::IGA::IgaIdSet::id</a></div><div class="ttdeci">IdType id(const typename GridImpl::Traits::template Codim&lt; codim &gt;::Entity &amp;entity) const</div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:20</div></div>
-<div class="ttc" id="aa01106_html_a8d048896c9546abc9f15015bdfb5b3d3"><div class="ttname"><a href="../../da/d4e/a01106.html#a8d048896c9546abc9f15015bdfb5b3d3">Dune::IGA::IgaIdSet::IdType</a></div><div class="ttdeci">int IdType</div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:10</div></div>
-<div class="ttc" id="aa01106_html_ad50e90cf1d5a5b05e78100eb139711f6"><div class="ttname"><a href="../../da/d4e/a01106.html#ad50e90cf1d5a5b05e78100eb139711f6">Dune::IGA::IgaIdSet::id</a></div><div class="ttdeci">IdType id(const Entity &amp;entity) const</div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:15</div></div>
-<div class="ttc" id="aa01106_html_aee8e13698de38303b6de769d11d3569b"><div class="ttname"><a href="../../da/d4e/a01106.html#aee8e13698de38303b6de769d11d3569b">Dune::IGA::IgaIdSet::GridView</a></div><div class="ttdeci">typename GridImpl::Traits::LeafGridView GridView</div><div class="ttdef"><b>Definition:</b> nurbsidset.hh:11</div></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#a0e1020ac40dd8e7f0edac5e82fbb218d">   30</a></span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d2/dd2/a01164.html#a0e1020ac40dd8e7f0edac5e82fbb218d">codimension</a> = codim;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#ad71ab7750e90d56f27730f0324aef8ad">   35</a></span>    <a class="code hl_function" href="../../d2/dd2/a01164.html#ad71ab7750e90d56f27730f0324aef8ad">PatchGridEntitySeed</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#adf14c6377fa908445a2a53fb15d5c288">   43</a></span>    <a class="code hl_function" href="../../d2/dd2/a01164.html#adf14c6377fa908445a2a53fb15d5c288">PatchGridEntitySeed</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d2/dd2/a01164.html#a4dd6baf4cd269c9391e68a422f4a2929">ParameterSpaceGridEntity</a>&amp; hostEntity) : hostEntitySeed_(hostEntity.seed()) {}</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#a2a33f0b472a310a2689f78824d9f6ad4">   48</a></span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../d2/dd2/a01164.html#a3be121a897622edc3086b025462edb6a">ParameterSpaceGridEntitySeed</a>&amp; <a class="code hl_function" href="../../d2/dd2/a01164.html#a2a33f0b472a310a2689f78824d9f6ad4">hostEntitySeed</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> hostEntitySeed_; }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d2/dd2/a01164.html#a0271677f29354d026e3cf4ab0fab29db">   53</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d2/dd2/a01164.html#a0271677f29354d026e3cf4ab0fab29db">isValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> hostEntitySeed_.isValid(); }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_typedef" href="../../d2/dd2/a01164.html#a3be121a897622edc3086b025462edb6a">ParameterSpaceGridEntitySeed</a> hostEntitySeed_;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  };</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="comment">// #define DUNE_IDENTITY_GRID_ENTITY_SEED_HH</span></div>
+<div class="ttc" id="aa00165_html"><div class="ttname"><a href="../../d0/d48/a00165.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
+<div class="ttc" id="aa01164_html"><div class="ttname"><a href="../../d2/dd2/a01164.html">Dune::IGANEW::PatchGridEntitySeed</a></div><div class="ttdoc">The EntitySeed class provides the minimal information needed to restore an Entity using the grid.</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:20</div></div>
+<div class="ttc" id="aa01164_html_a0271677f29354d026e3cf4ab0fab29db"><div class="ttname"><a href="../../d2/dd2/a01164.html#a0271677f29354d026e3cf4ab0fab29db">Dune::IGANEW::PatchGridEntitySeed::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdoc">Check whether it is safe to create an Entity from this Seed.</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:53</div></div>
+<div class="ttc" id="aa01164_html_a0e1020ac40dd8e7f0edac5e82fbb218d"><div class="ttname"><a href="../../d2/dd2/a01164.html#a0e1020ac40dd8e7f0edac5e82fbb218d">Dune::IGANEW::PatchGridEntitySeed::codimension</a></div><div class="ttdeci">static constexpr int codimension</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:30</div></div>
+<div class="ttc" id="aa01164_html_a2a33f0b472a310a2689f78824d9f6ad4"><div class="ttname"><a href="../../d2/dd2/a01164.html#a2a33f0b472a310a2689f78824d9f6ad4">Dune::IGANEW::PatchGridEntitySeed::hostEntitySeed</a></div><div class="ttdeci">const ParameterSpaceGridEntitySeed &amp; hostEntitySeed() const</div><div class="ttdoc">Get stored ParameterSpaceGridEntitySeed.</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:48</div></div>
+<div class="ttc" id="aa01164_html_a3be121a897622edc3086b025462edb6a"><div class="ttname"><a href="../../d2/dd2/a01164.html#a3be121a897622edc3086b025462edb6a">Dune::IGANEW::PatchGridEntitySeed::ParameterSpaceGridEntitySeed</a></div><div class="ttdeci">GridImp::ParameterSpaceGrid::Traits::template Codim&lt; codim &gt;::EntitySeed ParameterSpaceGridEntitySeed</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:27</div></div>
+<div class="ttc" id="aa01164_html_a4dd6baf4cd269c9391e68a422f4a2929"><div class="ttname"><a href="../../d2/dd2/a01164.html#a4dd6baf4cd269c9391e68a422f4a2929">Dune::IGANEW::PatchGridEntitySeed::ParameterSpaceGridEntity</a></div><div class="ttdeci">GridImp::ParameterSpaceGrid::Traits::template Codim&lt; codim &gt;::Entity ParameterSpaceGridEntity</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:23</div></div>
+<div class="ttc" id="aa01164_html_ad71ab7750e90d56f27730f0324aef8ad"><div class="ttname"><a href="../../d2/dd2/a01164.html#ad71ab7750e90d56f27730f0324aef8ad">Dune::IGANEW::PatchGridEntitySeed::PatchGridEntitySeed</a></div><div class="ttdeci">PatchGridEntitySeed()=default</div><div class="ttdoc">Construct an empty (i.e. isValid() == false) seed.</div></div>
+<div class="ttc" id="aa01164_html_adf14c6377fa908445a2a53fb15d5c288"><div class="ttname"><a href="../../d2/dd2/a01164.html#adf14c6377fa908445a2a53fb15d5c288">Dune::IGANEW::PatchGridEntitySeed::PatchGridEntitySeed</a></div><div class="ttdeci">PatchGridEntitySeed(const ParameterSpaceGridEntity &amp;hostEntity)</div><div class="ttdoc">Create EntitySeed from hostgrid Entity.</div><div class="ttdef"><b>Definition:</b> patchgridentityseed.hh:43</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d0/d89/a00071.html">nurbsidset.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d0/d89/a00071.html">patchgridentityseed.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

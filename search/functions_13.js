@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['unitnormal_0',['unitNormal',['../d5/d4c/a01058.html#ad38036ff0becd82c4021b6bff24a187a',1,'Dune::IGA::NURBSGeometry::unitNormal()'],['../d0/d61/a01130.html#ae2ab66d2af469c651aa6d6a67ff79ce0',1,'Dune::IGA::NURBSLocalGeometry::unitNormal()']]],
-  ['unitouternormal_1',['unitOuterNormal',['../d1/d3d/a01110.html#a81b4d58a6912475482fcffe959dd23c3',1,'Dune::IGA::NURBSintersection']]],
-  ['update_2',['update',['../de/d41/a01030.html#ae1a4a4a0eefd3cc52ee8868d4e2d3a32',1,'Dune::Functions::NurbsPreBasis']]],
-  ['updateimpl_3',['updateImpl',['../d0/d2b/a01010.html#a3f9f1b871c8800a722379721b64ec249',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]]
+  ['uniqueknotvector_0',['uniqueKnotVector',['../de/def/a01016.html#a854b46f824f70ca2fa44584c634671d9',1,'Dune::IGANEW::GeometryKernel::NURBSPatch']]],
+  ['unitouternormal_1',['unitOuterNormal',['../d2/db4/a01192.html#a2ce5c52307db58b045e85027512899d3',1,'Dune::IGANEW::PatchGridLeafIntersection::unitOuterNormal()'],['../d2/d22/a01196.html#a8fc294e2cf72bd1ef0bfad9c8fbfba34',1,'Dune::IGANEW::PatchGridLevelIntersection::unitOuterNormal()']]],
+  ['untrimmedelementnumbers_2',['untrimmedElementNumbers',['../d1/dae/a01136.html#ab4bc80d7c5064170cb681f45b1e55446',1,'Dune::IGANEW::PatchGrid::untrimmedElementNumbers()'],['../d9/d31/a01208.html#a000e8b4ecae84ed3d670b70e9f0714a6',1,'Dune::IGANEW::PatchGridLevelGridView::untrimmedElementNumbers()'],['../dc/db6/a01212.html#a84b2ac5a7d3b5d8907b68c1d83e06a2b',1,'Dune::IGANEW::PatchGridLeafGridView::untrimmedElementNumbers()']]],
+  ['untrimmedpatch_3',['unTrimmedPatch',['../d9/d31/a01208.html#ac2f73e08e1bf389e8ef6698793656ba4',1,'Dune::IGANEW::PatchGridLevelGridView::unTrimmedPatch()'],['../dc/db6/a01212.html#a24ef80efa4ccc02e9b38d095f7eeb19a',1,'Dune::IGANEW::PatchGridLeafGridView::unTrimmedPatch()']]],
+  ['update_4',['update',['../d3/d32/a01176.html#acb6d71ea5dc64433e1058f15a1ca848f',1,'Dune::IGANEW::PatchGridLevelIndexSet::update()'],['../dd/d75/a01180.html#a39efa4bbb3301e97f30f59a630220a0b',1,'Dune::IGANEW::PatchGridLeafIndexSet::update()'],['../d1/d35/a01184.html#aa830c20a3b8a5fc6f1cca234d329499d',1,'Dune::IGANEW::PatchGridGlobalIdSet::update()'],['../d6/d97/a01188.html#ae27582d43005805d67b21e6d50f67013',1,'Dune::IGANEW::PatchGridLocalIdSet::update()'],['../dc/d51/a01120.html#ae1a4a4a0eefd3cc52ee8868d4e2d3a32',1,'Dune::Functions::NurbsPreBasis::update(const GridView &amp;gv)'],['../dc/d51/a01120.html#ae1a4a4a0eefd3cc52ee8868d4e2d3a32',1,'Dune::Functions::NurbsPreBasis::update(const GridView &amp;gv)']]]
 ];

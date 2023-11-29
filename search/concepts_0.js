@@ -1,13 +1,15 @@
 var searchData=
 [
-  ['addable_0',['AddAble',['../d7/dc5/a01242.html',1,'Dune::IGA::Concept']]],
-  ['controlpoint_1',['ControlPoint',['../d5/d6e/a01240.html',1,'Dune::IGA::Concept']]],
-  ['divideable_2',['DivideAble',['../d7/d04/a01246.html',1,'Dune::IGA::Concept']]],
-  ['divideassignable_3',['DivideAssignAble',['../d1/d31/a01245.html',1,'Dune::IGA::Concept']]],
-  ['multiplyable_4',['MultiplyAble',['../d3/d07/a01241.html',1,'Dune::IGA::Concept']]],
-  ['multiplyassignable_5',['MultiplyAssignAble',['../d4/dd5/a01244.html',1,'Dune::IGA::Concept']]],
-  ['nurbsgeometry_6',['NurbsGeometry',['../dd/d95/a01247.html',1,'Dune::IGA::Concept']]],
-  ['substractable_7',['SubstractAble',['../d8/db0/a01243.html',1,'Dune::IGA::Concept']]],
-  ['this_8',['This',['../da/de0/a01248.html',1,'Dune::IGA::Concept']]],
-  ['vector_9',['Vector',['../d7/dbf/a01239.html',1,'Dune::IGA::Concept']]]
+  ['addable_0',['AddAble',['../d1/d38/a01480.html',1,'Dune::IGANEW::Concept']]],
+  ['controlpoint_1',['ControlPoint',['../d8/d7b/a01478.html',1,'Dune::IGANEW::Concept']]],
+  ['divideable_2',['DivideAble',['../d2/d21/a01484.html',1,'Dune::IGANEW::Concept']]],
+  ['divideassignable_3',['DivideAssignAble',['../d2/dc4/a01483.html',1,'Dune::IGANEW::Concept']]],
+  ['multiplyable_4',['MultiplyAble',['../da/d1e/a01479.html',1,'Dune::IGANEW::Concept']]],
+  ['multiplyassignable_5',['MultiplyAssignAble',['../da/d36/a01482.html',1,'Dune::IGANEW::Concept']]],
+  ['nurbsgeometry_6',['NurbsGeometry',['../d4/d39/a01485.html',1,'Dune::IGANEW::Concept']]],
+  ['substractable_7',['SubstractAble',['../d1/de4/a01481.html',1,'Dune::IGANEW::Concept']]],
+  ['this_8',['This',['../d2/daa/a01488.html',1,'Dune::IGANEW::Concept']]],
+  ['trimdatacontainer_9',['TrimDataContainer',['../d0/d34/a01486.html',1,'Dune::IGANEW::Concept']]],
+  ['trimmer_10',['Trimmer',['../dc/d47/a01487.html',1,'Dune::IGANEW::Concept']]],
+  ['vector_11',['Vector',['../d8/d67/a01477.html',1,'Dune::IGANEW::Concept']]]
 ];

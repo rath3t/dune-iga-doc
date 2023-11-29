@@ -1,6 +1,30 @@
 var searchData=
 [
-  ['transformtospan_0',['TransformToSpan',['../dc/d9e/a01206.html',1,'Dune::IGA']]],
-  ['trimdata_1',['TrimData',['../d5/d16/a01154.html',1,'Dune::IGA']]],
-  ['trimmedsubgrid_2',['TrimmedSubGrid',['../d4/d5d/a01202.html',1,'Dune::IGA']]]
+  ['nurbs_0',['Nurbs',['../d9/d45/a01396.html',1,'Dune::IGANEW::Splines']]],
+  ['nurbs_3c_20mydimension_2c_20ctype_20_3e_1',['Nurbs&lt; mydimension, ctype &gt;',['../d9/d45/a01396.html',1,'Dune::IGANEW::Splines']]],
+  ['nurbs_3c_20mydimension_2c_20double_20_3e_2',['Nurbs&lt; mydimension, double &gt;',['../d9/d45/a01396.html',1,'Dune::IGANEW::Splines']]],
+  ['nurbsgrid_3',['NURBSGrid',['../d8/d7a/a01292.html',1,'Dune::IGA']]],
+  ['nurbslocalbasis_4',['NurbsLocalBasis',['../de/d16/a01228.html',1,'Dune::Functions']]],
+  ['nurbslocalbasis_3c_20gv_2c_20double_20_3e_5',['NurbsLocalBasis&lt; GV, double &gt;',['../de/d16/a01228.html',1,'Dune::Functions']]],
+  ['nurbslocalcoefficients_6',['NurbsLocalCoefficients',['../d0/d67/a01232.html',1,'Dune::Functions']]],
+  ['nurbslocalfiniteelement_7',['NurbsLocalFiniteElement',['../d8/d8e/a01224.html',1,'Dune::Functions']]],
+  ['nurbslocalfiniteelement_3c_20gv_2c_20double_20_3e_8',['NurbsLocalFiniteElement&lt; GV, double &gt;',['../d8/d8e/a01224.html',1,'Dune::Functions']]],
+  ['nurbslocalinterpolation_9',['NurbsLocalInterpolation',['../d8/d2b/a01236.html',1,'Dune::Functions']]],
+  ['nurbslocalinterpolation_3c_20dim_2c_20dune_3a_3afunctions_3a_3anurbslocalbasis_3c_20gv_2c_20double_20_3e_20_3e_10',['NurbsLocalInterpolation&lt; dim, Dune::Functions::NurbsLocalBasis&lt; GV, double &gt; &gt;',['../d8/d2b/a01236.html',1,'Dune::Functions']]],
+  ['nurbslocalinterpolation_3c_20dim_2c_20dune_3a_3afunctions_3a_3anurbslocalbasis_3c_20gv_2c_20r_20_3e_20_3e_11',['NurbsLocalInterpolation&lt; dim, Dune::Functions::NurbsLocalBasis&lt; GV, R &gt; &gt;',['../d8/d2b/a01236.html',1,'Dune::Functions']]],
+  ['nurbsnode_12',['NurbsNode',['../d5/d6e/a01240.html',1,'Dune::Functions']]],
+  ['nurbspatch_13',['NURBSPatch',['../de/def/a01016.html',1,'Dune::IGANEW::GeometryKernel']]],
+  ['nurbspatch_3c_20dim_2c_20dimworld_2c_20ctype_20_3e_14',['NURBSPatch&lt; dim, dimworld, ctype &gt;',['../de/def/a01016.html',1,'Dune::IGANEW::GeometryKernel']]],
+  ['nurbspatch_3c_20gridimp_3a_3adimension_2c_20worlddimension_2c_20ctype_20_3e_15',['NURBSPatch&lt; GridImp::dimension, worlddimension, ctype &gt;',['../de/def/a01016.html',1,'Dune::IGANEW::GeometryKernel']]],
+  ['nurbspatchdata_16',['NURBSPatchData',['../d2/d82/a01404.html',1,'Dune::IGANEW']]],
+  ['nurbspatchdata_3c_20dim_20_2d_201_2c_20dim_2c_20ctype_20_3e_17',['NURBSPatchData&lt; dim - 1, dim, ctype &gt;',['../d2/d82/a01404.html',1,'Dune::IGANEW']]],
+  ['nurbspatchdata_3c_20dim_2c_20dimworld_20_3e_18',['NURBSPatchData&lt; dim, dimworld &gt;',['../d2/d82/a01404.html',1,'Dune::IGANEW']]],
+  ['nurbspatchdata_3c_20dim_2c_20dimworld_2c_20ctype_20_3e_19',['NURBSPatchData&lt; dim, dimworld, ctype &gt;',['../d2/d82/a01404.html',1,'Dune::IGANEW']]],
+  ['nurbspatchdata_3c_20mydimension_2c_20worlddimension_2c_20ctype_20_3e_20',['NURBSPatchData&lt; mydimension, worlddimension, ctype &gt;',['../d2/d82/a01404.html',1,'Dune::IGANEW']]],
+  ['nurbspatchdata_3c_20mydimension_2c_20worlddimension_2c_20double_20_3e_21',['NURBSPatchData&lt; mydimension, worlddimension, double &gt;',['../d2/d82/a01404.html',1,'Dune::IGANEW']]],
+  ['nurbspatchtrimmer_22',['NURBSPatchTrimmer',['../df/d93/a01336.html',1,'Dune::IGA::Trim']]],
+  ['nurbsprebasis_23',['NurbsPreBasis',['../dc/d51/a01120.html',1,'Dune::Functions']]],
+  ['nurbsprebasis_3c_20gv_20_3e_24',['NurbsPreBasis&lt; GV &gt;',['../dc/d51/a01120.html',1,'Dune::Functions']]],
+  ['nurbsprebasis_3c_20gv_2c_20double_20_3e_25',['NurbsPreBasis&lt; GV, double &gt;',['../dc/d51/a01120.html',1,'Dune::Functions']]],
+  ['nurbsprebasis_3c_20gv_2c_20r_20_3e_26',['NurbsPreBasis&lt; GV, R &gt;',['../dc/d51/a01120.html',1,'Dune::Functions']]]
 ];

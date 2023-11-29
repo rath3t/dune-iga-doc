@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['thisspanindices_5f_0',['thisSpanIndices_',['../d5/d4c/a01058.html#a97bf0c2a2fc25c93e8b620d0202c326f',1,'Dune::IGA::NURBSGeometry']]],
-  ['tolerance_1',['tolerance',['../d4/d13/a01162.html#a2ff90a9bc865a2853f2466dff1db9d05',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['transformer_2',['transformer',['../d5/d32/a01214.html#a733cce276905bfda67c91594b7200be9',1,'Dune::IGA::GridBoundarySegment']]],
-  ['trimdata_5f_3',['trimData_',['../dd/d7a/a00990.html#abe2a0964a32e702015f947ec5a78467f',1,'Dune::IGA::NURBSGrid']]],
-  ['trims_4',['trims',['../df/dce/a00974.html#a61a53e394317f3844be719ad7cfdd240',1,'Dune::IGA::Ibra::BrepLoopRepresentation::trims()'],['../d2/ddd/a00978.html#a0ab2de7a74ccb203dca621407df7eeca',1,'Dune::IGA::Ibra::BrepLoop::trims()'],['../d1/d7a/a00982.html#a0b18289437b2c70cbb84ce06024107f4',1,'Dune::IGA::Ibra::BrepRepresentation::trims()'],['../d3/d7b/a00986.html#aff01becf209101c0944a633e2779f98b',1,'Dune::IGA::Ibra::Brep::trims()']]],
-  ['type_5',['type',['../df/d9c/a00958.html#a4aacf3670ded47f6e2a42fdaeebd526a',1,'Dune::IGA::Ibra::IbraBase']]],
-  ['typestring_6',['typeString',['../df/d9c/a00958.html#a51d455d391e155f6f736a2ec40b7fc69',1,'Dune::IGA::Ibra::IbraBase']]]
+  ['p_0',['p',['../d7/df2/a01000.html#a7d28f5087c63173fd47b83c11cfef8db',1,'Dune::IGANEW::ControlPoint']]],
+  ['patchdata_5f_1',['patchData_',['../d4/da6/a01168.html#ab489f0457e7cf4d1be8ee1171a76dedf',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;::patchData_()'],['../dc/d51/a01120.html#aafd5d2f7365e507a145be0553cefa15a',1,'Dune::Functions::NurbsPreBasis::patchData_()'],['../dc/d51/a01120.html#a21f27b41d02d46b60e163d4a3c4d437b',1,'Dune::Functions::NurbsPreBasis::patchData_()']]],
+  ['patchdim_2',['patchDim',['../d2/d82/a01404.html#a008c4794473967d91fae315659b7a5ef',1,'Dune::IGANEW::NURBSPatchData']]],
+  ['patchgrid_5f_3',['patchGrid_',['../da/d20/a01160.html#a4c540678bb077535027d12a7f3a725fc',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
+  ['patchnumberofsecondderivatives_4',['patchNumberOfSecondDerivatives',['../d4/dc5/a01024.html#a4a89120d0581875319aec689aa57167f',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
+  ['patchtrimdata_5f_5',['patchTrimData_',['../d4/da6/a01168.html#a27e10a93ce6496bd9cb01b7ee663d983',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
+  ['pathsamples_6',['pathSamples',['../df/d93/a01336.html#aecdaffbb3146705cddb9d4f2811af9e4',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
+  ['prebasis_5f_7',['preBasis_',['../d8/d8e/a01224.html#a06f8490ebbc69f81b9d91be5648450f4',1,'Dune::Functions::NurbsLocalFiniteElement::preBasis_()'],['../d5/d6e/a01240.html#a011283ce1b47daddcff10caadb8defcf',1,'Dune::Functions::NurbsNode::preBasis_()']]]
 ];
