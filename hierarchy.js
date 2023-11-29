@@ -31,8 +31,9 @@ var hierarchy =
     [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >::DummyEmpty", "d5/da7/a01283.html", null ],
     [ "Dune::IGA::Trim::ElementBoundaries", "dd/d86/a01367.html", null ],
     [ "Dune::IGANEW::DefaultTrim::ElementTrimData< mydim_, ScalarType >", "d6/d65/a01443.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimData< mydim_, ScalarType >", "d2/dc4/a01483.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainer< ParameterSpaceGrid >", "dc/d47/a01487.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::ElementTrimData< mydim_, ScalarType >", "dc/d47/a01487.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataContainer< ParameterSpaceGrid, ElementTrimData >", "dd/d15/a01471.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainer< ParameterSpaceGrid >", "d7/d03/a01491.html", null ],
     [ "Dune::EnableBoundarySegmentIndexCheck< Grid >", "d5/d3e/a01139.html", null ],
     [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, TrimmerType, ScalarType >::ParameterSpaceGrid >", "d5/d3e/a01139.html", [
       [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, TrimmerType, ScalarType > >", "d8/ddb/a01147.html", null ]
@@ -44,7 +45,7 @@ var hierarchy =
       [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d8/df3/a01195.html", null ]
     ] ],
     [ "std::false_type", null, [
-      [ "is_instantiation_of< Template, T >", "d2/de0/a01515.html", null ]
+      [ "is_instantiation_of< Template, T >", "d1/d34/a01519.html", null ]
     ] ],
     [ "GeometryDefaultImplementation", null, [
       [ "Dune::IGANEW::PatchGridGeometry< mydim, coorddim, GridImp >", "d5/dad/a01207.html", null ],
@@ -97,12 +98,12 @@ var hierarchy =
       [ "Dune::Functions::NurbsNode< GV >", "d3/d42/a01275.html", null ],
       [ "Dune::Functions::NurbsNode< GV >", "d3/d42/a01275.html", null ]
     ] ],
-    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "d5/d06/a01499.html", null ],
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "d6/df5/a01503.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "d3/d95/a01435.html", null ],
-    [ "Dune::IGANEW::MultiDimensionalNet< netdim, ElementType, Container >", "d8/dd9/a01507.html", null ],
-    [ "Dune::IGANEW::MultiDimensionalNet< dim, ControlPointType >", "d8/dd9/a01507.html", null ],
-    [ "Dune::IGANEW::MultiDimensionalNet< dim, ScalarType >", "d8/dd9/a01507.html", null ],
-    [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "da/d50/a01511.html", null ],
+    [ "Dune::IGANEW::MultiDimensionalNet< netdim, ElementType, Container >", "da/d50/a01511.html", null ],
+    [ "Dune::IGANEW::MultiDimensionalNet< dim, ControlPointType >", "da/d50/a01511.html", null ],
+    [ "Dune::IGANEW::MultiDimensionalNet< dim, ScalarType >", "da/d50/a01511.html", null ],
+    [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "d2/de0/a01515.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d7/d8b/a01431.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< mydimension, ctype >", "d7/d8b/a01431.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< mydimension, double >", "d7/d8b/a01431.html", null ],
@@ -130,9 +131,9 @@ var hierarchy =
     [ "Dune::Functions::NurbsPreBasis< GV >", "db/d07/a01155.html", null ],
     [ "Dune::Functions::NurbsPreBasis< GV, double >", "db/d07/a01155.html", null ],
     [ "Dune::Functions::NurbsPreBasis< GV, R >", "db/d07/a01155.html", null ],
-    [ "Dune::IGANEW::DefaultTrim::Parameter", "dd/d15/a01471.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::Parameter", "da/d1e/a01479.html", null ],
-    [ "Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant< codim_, TrimmerType_, HostImplementation, TrimmedImplementation >", "d7/d1d/a01475.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::Parameter", "d7/d1d/a01475.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::Parameter", "d2/dc4/a01483.html", null ],
+    [ "Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant< codim_, TrimmerType_, HostImplementation, TrimmedImplementation >", "da/d1e/a01479.html", null ],
     [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, TrimmerType_ >", "d0/d90/a01059.html", null ],
     [ "Dune::IGANEW::PatchGridEntitySeed< codim, GridImp >", "d0/d5a/a01199.html", null ],
     [ "Dune::IGANEW::PatchGridFamily< dim, dimworld, TrimmerType_, ScalarType >", "d7/dd6/a01167.html", null ],
@@ -144,7 +145,7 @@ var hierarchy =
     [ "Dune::IGANEW::PatchGridLevelIntersectionIterator< GridImp >", "dc/d2d/a01183.html", null ],
     [ "Dune::IGANEW::PatchGridLevelIterator< codim, pitype, GridImp >", "de/d1a/a01179.html", null ],
     [ "Dune::IGANEW::DefaultTrim::PatchTrimData< mydim_, ScalarType >", "df/d75/a01447.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchTrimData< dim, ScalarType >", "d7/d03/a01491.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::PatchTrimData< dim, ScalarType >", "d2/d36/a01495.html", null ],
     [ "Dune::IGANEW::DefaultTrim::PatchTrimData< ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype >", "df/d75/a01447.html", null ],
     [ "Dune::TensorProductCoordinates< ct, dim >", "db/dbb/a01047.html", null ],
     [ "Dune::Capabilities::threadSafe< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, TrimmerType, ScalarType > > >", "d0/d02/a01119.html", null ],
@@ -155,15 +156,15 @@ var hierarchy =
     [ "Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "d6/d3b/a01459.html", null ],
     [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >", "d3/dbc/a01451.html", null ],
     [ "Dune::IGANEW::DefaultTrim::Trimmer< dim, ScalarType >", "d7/d42/a01463.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::Trimmer< dim, ScalarType >", "d2/d36/a01495.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::Trimmer< dim, double >", "d2/d36/a01495.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::Trimmer< dim, ScalarType >", "d5/d06/a01499.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::Trimmer< dim, double >", "d5/d06/a01499.html", null ],
     [ "std::true_type", null, [
-      [ "is_instantiation_of< Template, Template< Args... > >", "d1/d34/a01519.html", null ]
+      [ "is_instantiation_of< Template, Template< Args... > >", "db/d8e/a01523.html", null ]
     ] ],
     [ "Dune::Capabilities::viewThreadSafe< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, TrimmerType, ScalarType > > >", "d9/d5b/a01127.html", null ],
     [ "Dune::Capabilities::viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, TrimmerType, ScalarType > >", "de/de5/a01123.html", null ],
     [ "Dune::YaspGrid< dim, Coordinates >", "d8/d27/a01043.html", null ],
     [ "Tree", null, [
-      [ "iga.basis.Nurbs", "db/d8e/a01523.html", null ]
+      [ "iga.basis.Nurbs", "d8/d8c/a01527.html", null ]
     ] ]
 ];
