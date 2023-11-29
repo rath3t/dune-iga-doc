@@ -1,18 +1,18 @@
 var searchData=
 [
-  ['basisfactory_0',['BasisFactory',['../d7/d3f/a00173.html',1,'Dune::Functions']]],
-  ['capabilities_1',['Capabilities',['../d1/d0d/a00171.html',1,'Dune']]],
-  ['concept_2',['Concept',['../d5/dcb/a00170.html',1,'Dune::IGANEW']]],
-  ['defaulttrim_3',['DefaultTrim',['../d0/d81/a00180.html',1,'Dune::IGANEW']]],
-  ['dune_4',['Dune',['../db/ddf/a00164.html',1,'']]],
-  ['functions_5',['Functions',['../d6/dfb/a00172.html',1,'Dune']]],
-  ['geometrykernel_6',['GeometryKernel',['../dc/de6/a00167.html',1,'Dune::IGANEW']]],
-  ['ibra_7',['Ibra',['../d5/de9/a00176.html',1,'Dune::IGA']]],
-  ['identitytrim_8',['IdentityTrim',['../d8/d64/a00181.html',1,'Dune::IGANEW']]],
-  ['iga_9',['IGA',['../de/d45/a00175.html',1,'Dune::IGA'],['../d2/d94/a00184.html',1,'Dune::Python::IGA']]],
-  ['iganew_10',['IGANEW',['../d0/d48/a00165.html',1,'Dune']]],
-  ['python_11',['Python',['../dc/d52/a00183.html',1,'Dune']]],
-  ['splines_12',['Splines',['../d9/d90/a00178.html',1,'Dune::IGANEW']]],
-  ['trim_13',['Trim',['../dd/d4c/a00177.html',1,'Dune::IGA::Trim'],['../d7/d25/a00182.html',1,'Dune::IGANEW::Trim']]],
-  ['utilities_14',['Utilities',['../d9/d38/a00166.html',1,'Dune::IGANEW']]]
+  ['basisfactory_0',['BasisFactory',['../d3/d2a/a00195.html',1,'Dune::Functions']]],
+  ['capabilities_1',['Capabilities',['../dd/df4/a00193.html',1,'Dune']]],
+  ['concept_2',['Concept',['../dd/da2/a00192.html',1,'Dune::IGANEW']]],
+  ['defaulttrim_3',['DefaultTrim',['../db/d53/a00202.html',1,'Dune::IGANEW']]],
+  ['dune_4',['Dune',['../d8/d00/a00186.html',1,'']]],
+  ['functions_5',['Functions',['../dc/d57/a00194.html',1,'Dune']]],
+  ['geometrykernel_6',['GeometryKernel',['../da/deb/a00189.html',1,'Dune::IGANEW']]],
+  ['ibra_7',['Ibra',['../d7/da0/a00198.html',1,'Dune::IGA']]],
+  ['identitytrim_8',['IdentityTrim',['../de/d79/a00203.html',1,'Dune::IGANEW']]],
+  ['iga_9',['IGA',['../de/db1/a00197.html',1,'Dune::IGA'],['../d5/df1/a00206.html',1,'Dune::Python::IGA']]],
+  ['iganew_10',['IGANEW',['../d6/daa/a00187.html',1,'Dune']]],
+  ['python_11',['Python',['../d5/d13/a00205.html',1,'Dune']]],
+  ['splines_12',['Splines',['../d3/db1/a00200.html',1,'Dune::IGANEW']]],
+  ['trim_13',['Trim',['../d8/d72/a00199.html',1,'Dune::IGA::Trim'],['../d1/d72/a00204.html',1,'Dune::IGANEW::Trim']]],
+  ['utilities_14',['Utilities',['../da/d15/a00188.html',1,'Dune::IGANEW']]]
 ];

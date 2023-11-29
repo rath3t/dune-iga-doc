@@ -1,5 +1,5 @@
 var a00026 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >", "d5/dec/a01416.html", "d5/dec/a01416" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >::Codim< codim >", "d0/d05/a01420.html", "d0/d05/a01420" ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >", "d9/d6f/a01445.html", "d9/d6f/a01445" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >::Codim< codim >", "d2/d95/a01449.html", "d2/d95/a01449" ]
 ];

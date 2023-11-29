@@ -1,6 +1,11 @@
 var searchData=
 [
-  ['adapt_0',['adapt',['../d1/dae/a01136.html#a2d7b533c9ee715adf8a79459c4a35a3c',1,'Dune::IGANEW::PatchGrid']]],
-  ['addloop_1',['addLoop',['../dc/dd9/a01328.html#a065412a5007835e01f8b48b745fff51d',1,'Dune::IGA::TrimData']]],
-  ['affine_2',['affine',['../d4/dc5/a01024.html#ad7fa12f45a8b4078bcd818376cc86b2d',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::affine()'],['../d6/db6/a01172.html#a593a2b9143bde7fd54fed564f55b87ac',1,'Dune::IGANEW::PatchGridGeometry::affine()'],['../d7/d5a/a01204.html#ac0d095774cf01b990e81c75aa3f2347c',1,'Dune::IGANEW::PatchGridLocalGeometry::affine()'],['../d2/db1/a01428.html#afee7d4c35a84de1ae760733c08856393',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry::affine()'],['../d4/d98/a01456.html#af4169433466f726fdd6d00b065c3186b',1,'Dune::IGANEW::Trim::LocalGeometryVariant::affine()']]]
+  ['_5f_5finit_5f_5f_0',['__init__',['../db/d06/a01509.html#ae3fe0416d11b39a78e81705f2a908143',1,'iga::basis::Nurbs']]],
+  ['_5f_5finit_5f_5f_2epy_1',['__init__.py',['../d6/d7d/a00161.html',1,'']]],
+  ['_5f_5frepr_5f_5f_2',['__repr__',['../db/d06/a01509.html#a7e51c24af5841629d3154aac5ea249fe',1,'iga::basis::Nurbs']]],
+  ['_5fboundarypatch_2epy_3',['_boundarypatch.py',['../d6/db8/a00158.html',1,'']]],
+  ['_5figa_2ecc_4',['_iga.cc',['../d5/dcb/a00170.html',1,'']]],
+  ['_5figagrids_2epy_5',['_igagrids.py',['../dc/de6/a00167.html',1,'']]],
+  ['_5fnurbsalgorithms_2epy_6',['_nurbsalgorithms.py',['../d7/d3f/a00173.html',1,'']]],
+  ['_5fnurbspatchdata_2epy_7',['_nurbspatchdata.py',['../db/ddf/a00164.html',1,'']]]
 ];

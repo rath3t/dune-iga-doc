@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7emultidimensionalnet_0',['~MultiDimensionalNet',['../db/d8b/a01464.html#a8c6ccd2eeba213e81432ccd19e5db391',1,'Dune::IGANEW::MultiDimensionalNet']]]
+  ['zerofirstandsecondderivativeofposition_0',['zeroFirstAndSecondDerivativeOfPosition',['../d7/d46/a01045.html#afc7794edc49f2371471e260dbbeceda0',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::zeroFirstAndSecondDerivativeOfPosition()'],['../dc/d99/a01053.html#a1c846a8de2d7d0fce849444ad744ee3f',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::zeroFirstAndSecondDerivativeOfPosition()']]]
 ];

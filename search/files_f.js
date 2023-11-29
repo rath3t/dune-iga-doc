@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['concepts_2ehh_0',['concepts.hh',['../d3/d85/a02813.html',1,'']]],
-  ['traits_2ehh_1',['traits.hh',['../dc/dee/a00053.html',1,'']]],
-  ['trimmedlocalgeometry_2ehh_2',['trimmedlocalgeometry.hh',['../d5/d16/a00029.html',1,'']]],
-  ['typetraits_2ehh_3',['typetraits.hh',['../d3/df8/a00155.html',1,'']]]
+  ['subgrid_2ehh_0',['subgrid.hh',['../d9/d77/a00095.html',1,'']]],
+  ['subgridhelpers_2ehh_1',['subgridhelpers.hh',['../d1/dc1/a00092.html',1,'']]]
 ];
