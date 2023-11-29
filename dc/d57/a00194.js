@@ -1,18 +1,11 @@
 var a00194 =
 [
-    [ "BasisFactory", "d3/d2a/a00195.html", [
-      [ "degreeElevate", "d3/d2a/a00195.html#a8251927b1f371553dd15f9a42033b3bb", null ],
-      [ "nurbs", "d3/d2a/a00195.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
-      [ "nurbs", "d3/d2a/a00195.html#a10c3f08f7830f39c003415e65e2a0361", null ],
-      [ "nurbs", "d3/d2a/a00195.html#a31785bfc560a56b1ed5f0ae7b722ea37", null ],
-      [ "nurbs", "d3/d2a/a00195.html#ad3edb7290cf6964618e46ba73da0e9ce", null ]
-    ] ],
-    [ "NurbsLocalBasis", "d9/de7/a01257.html", "d9/de7/a01257" ],
-    [ "NurbsLocalCoefficients", "de/d34/a01261.html", "de/d34/a01261" ],
-    [ "NurbsLocalFiniteElement", "d3/d0b/a01253.html", "d3/d0b/a01253" ],
-    [ "NurbsLocalInterpolation", "da/dd8/a01265.html", "da/dd8/a01265" ],
-    [ "NurbsNode", "d6/d16/a01269.html", "d6/d16/a01269" ],
-    [ "NurbsPreBasis", "d8/d02/a01149.html", "d8/d02/a01149" ],
-    [ "NurbsBasis", "dc/d57/a00194.html#a4e3cfaeb5308fbfa024b5ec8085912d1", null ],
-    [ "forEachUntrimmedBoundaryDOF", "dc/d57/a00194.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
+    [ "Domain", "df/d21/a01039.html", "df/d21/a01039" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "dc/d57/a00194.html#ada1286817f950d2e7a16f906473aa2b2", null ],
+    [ "clampToDomain", "dc/d57/a00194.html#a341a1dc953d397349b5bb0d9f39c4106", null ],
+    [ "linspace", "dc/d57/a00194.html#a0c6fd781b9aa39c1d69699ec173cece8", null ],
+    [ "linspace", "dc/d57/a00194.html#a42b0275340679a127b2576175939833f", null ],
+    [ "linspace", "dc/d57/a00194.html#a2630a0eab9b7e24915eeb52ca335972c", null ],
+    [ "mapToRange", "dc/d57/a00194.html#addda4c834225ccb0923b33a5f9d494b0", null ],
+    [ "splitDomainInHalf", "dc/d57/a00194.html#a8a1ae4d6e29645af6fa8e60672bac908", null ]
 ];

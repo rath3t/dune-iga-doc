@@ -1,8 +1,4 @@
 var searchData=
 [
-  ['indexmap_5f_0',['indexMap_',['../d8/d02/a01149.html#a119f358f55085b5ee0ddccbb9653cf64',1,'Dune::Functions::NurbsPreBasis::indexMap_()'],['../d8/d02/a01149.html#abcaf716a4faecc6bf4127a91a2b4c416',1,'Dune::Functions::NurbsPreBasis::indexMap_()']]],
-  ['innerboundaries_1',['innerBoundaries',['../d2/d1f/a01361.html#a9ca88159d168b3842d724432008ad816',1,'Dune::IGA::Trim::ElementBoundaries']]],
-  ['isalwaystrivial_2',['isAlwaysTrivial',['../da/df7/a01457.html#ad9f6ffd9b71ad1b49e66816404d4b527',1,'Dune::IGANEW::DefaultTrim::Trimmer::isAlwaysTrivial()'],['../d4/d39/a01485.html#a8893b51a2f0246c10d06c3788ce3d955',1,'Dune::IGANEW::IdentityTrim::Trimmer::isAlwaysTrivial()']]],
-  ['isbound_3',['isBound',['../d3/d0b/a01253.html#a2e9ecefd3d1a91c0d053accc92f96035',1,'Dune::Functions::NurbsLocalFiniteElement']]],
-  ['islocalgeometrylinear_4',['isLocalGeometryLinear',['../da/df7/a01457.html#ac38508428f4ef14893ba2d0e626d19b0',1,'Dune::IGANEW::DefaultTrim::Trimmer::isLocalGeometryLinear()'],['../d4/d39/a01485.html#af477d19fc4d097c489d9013637fbae63',1,'Dune::IGANEW::IdentityTrim::Trimmer::isLocalGeometryLinear()']]]
+  ['json_5f_0',['json_',['../da/d1f/a01203.html#a0971f2326da71f9e9e5f4abd7099f1e8',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]]
 ];

@@ -1,6 +1,12 @@
 var searchData=
 [
-  ['key_0',['key',['../d9/dda/a01289.html#ad3bff32c80e0b2c0c66f696da22af6a3',1,'Dune::IGA::Ibra::IbraBase']]],
-  ['knots_1',['knots',['../dc/dd5/a01293.html#a957ffc4bab5a49b687d8d302938a364c',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['knotspans_2',['knotSpans',['../d2/d9b/a01433.html#ac3ae0d508de8bcc031da26a4578c979b',1,'Dune::IGANEW::NURBSPatchData']]]
+  ['leafindexset_5f_0',['leafIndexSet_',['../d2/d22/a01171.html#a4ab6b42be96df63301ab733f9f70e2a8',1,'Dune::IGANEW::PatchGrid']]],
+  ['level_5f_1',['level_',['../d1/d34/a01211.html#ae882e0b5be04768bf54198eef1b067dd',1,'Dune::IGANEW::PatchGridLevelIndexSet']]],
+  ['levelindexsets_5f_2',['levelIndexSets_',['../d2/d22/a01171.html#a9245ea0b6b7085bb6a6785a410605116',1,'Dune::IGANEW::PatchGrid']]],
+  ['localbasis_5f_3',['localBasis_',['../dd/d42/a01259.html#a47ab2fe52d6ffb44066d45a1662eaa69',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['localcoefficients_5f_4',['localCoefficients_',['../dd/d42/a01259.html#a63aeb97a501f000f507a734699b79c89',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['localidset_5f_5',['localIdSet_',['../d2/d22/a01171.html#ad01ed557487d47f65598110832a804da',1,'Dune::IGANEW::PatchGrid']]],
+  ['localindex_6',['localIndex',['../de/d70/a01415.html#accce87872c7dfa44c89347d946664a33',1,'Dune::IGA::DomainInformation']]],
+  ['localinterpolation_5f_7',['localInterpolation_',['../dd/d42/a01259.html#a315668b19b95fb51f103beca8d66deb5',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['loops_8',['loops',['../d1/d72/a01319.html#ad4fb64a1c336ee19cf8b6e725030b639',1,'Dune::IGA::Ibra::BrepRepresentation::loops()'],['../db/da8/a01323.html#adf3a869b18a3dbec9d9d5184f41ca473',1,'Dune::IGA::Ibra::Brep::loops()']]]
 ];

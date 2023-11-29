@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['maxmultiindexsize_0',['maxMultiIndexSize',['../d8/d02/a01149.html#a0630377385bf806f9a9e8b44289240be',1,'Dune::Functions::NurbsPreBasis']]],
-  ['minmultiindexsize_1',['minMultiIndexSize',['../d8/d02/a01149.html#af6210f36f3714b0e93df464f5bd9ce84',1,'Dune::Functions::NurbsPreBasis']]],
-  ['multiindexbuffersize_2',['multiIndexBufferSize',['../d8/d02/a01149.html#a01a2df00cb51bcaa0217baa1f4016a6d',1,'Dune::Functions::NurbsPreBasis']]],
-  ['mydimension_3',['mydimension',['../d7/d46/a01045.html#a06037363d30a70eba4b98f590f81a637',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::mydimension()'],['../dc/d99/a01053.html#a651bbd7fff3d3836f8e3ae6ad0b244e4',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::mydimension()'],['../de/df7/a01201.html#acf47a66bec55cec4b5f30fe54580e186',1,'Dune::IGANEW::PatchGridGeometry::mydimension()'],['../d6/da1/a01233.html#a8eee8b296b2399a9d9e99fd853c31f0d',1,'Dune::IGANEW::PatchGridLocalGeometry::mydimension()'],['../d9/d6f/a01445.html#a1e280823c023a10171abb0a5cfb02bef',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::mydimension()'],['../d9/dae/a01453.html#a3b9b9a6302da7dee251bb5db937295a7',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::mydimension()'],['../dc/d60/a01461.html#a19095e9ce529e4677a0fe39b7aeffa1c',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry::mydimension()'],['../da/df7/a01457.html#aec3d5db121c0debf528fd7c94431ad9d',1,'Dune::IGANEW::DefaultTrim::Trimmer::mydimension()'],['../d4/d39/a01485.html#a5249c6015e4b472f97f05eb3c5b1cf4e',1,'Dune::IGANEW::IdentityTrim::Trimmer::mydimension()'],['../d2/dac/a01489.html#a2d5a12cebaad1601f39da5a1c4eadaeb',1,'Dune::IGANEW::Trim::LocalGeometryVariant::mydimension()']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../d8/d38/a01299.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['netdim_1',['netDim',['../d8/dd9/a01507.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
+  ['numberofsecondderivatives_2',['numberOfSecondDerivatives',['../d0/d90/a01059.html#a5d76ced0b546ce1dd64357bb6c644cdb',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
+  ['nurbs_5f_3',['nurbs_',['../d3/d95/a01435.html#a2e9369402c311b4b40ed88a0a249abb1',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
+  ['nurbsgeometry_4',['nurbsGeometry',['../dc/d4b/a01359.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
 ];

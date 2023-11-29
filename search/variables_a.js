@@ -1,12 +1,7 @@
 var searchData=
 [
-  ['leafindexset_5f_0',['leafIndexSet_',['../d8/d92/a01165.html#a4ab6b42be96df63301ab733f9f70e2a8',1,'Dune::IGANEW::PatchGrid']]],
-  ['level_5f_1',['level_',['../de/d61/a01205.html#ae882e0b5be04768bf54198eef1b067dd',1,'Dune::IGANEW::PatchGridLevelIndexSet']]],
-  ['levelindexsets_5f_2',['levelIndexSets_',['../d8/d92/a01165.html#a9245ea0b6b7085bb6a6785a410605116',1,'Dune::IGANEW::PatchGrid']]],
-  ['localbasis_5f_3',['localBasis_',['../d3/d0b/a01253.html#a47ab2fe52d6ffb44066d45a1662eaa69',1,'Dune::Functions::NurbsLocalFiniteElement']]],
-  ['localcoefficients_5f_4',['localCoefficients_',['../d3/d0b/a01253.html#a63aeb97a501f000f507a734699b79c89',1,'Dune::Functions::NurbsLocalFiniteElement']]],
-  ['localidset_5f_5',['localIdSet_',['../d8/d92/a01165.html#ad01ed557487d47f65598110832a804da',1,'Dune::IGANEW::PatchGrid']]],
-  ['localindex_6',['localIndex',['../d9/d6e/a01409.html#accce87872c7dfa44c89347d946664a33',1,'Dune::IGA::DomainInformation']]],
-  ['localinterpolation_5f_7',['localInterpolation_',['../d3/d0b/a01253.html#a315668b19b95fb51f103beca8d66deb5',1,'Dune::Functions::NurbsLocalFiniteElement']]],
-  ['loops_8',['loops',['../de/d90/a01313.html#ad4fb64a1c336ee19cf8b6e725030b639',1,'Dune::IGA::Ibra::BrepRepresentation::loops()'],['../df/db8/a01317.html#adf3a869b18a3dbec9d9d5184f41ca473',1,'Dune::IGA::Ibra::Brep::loops()']]]
+  ['maxmultiindexsize_0',['maxMultiIndexSize',['../db/d07/a01155.html#a0630377385bf806f9a9e8b44289240be',1,'Dune::Functions::NurbsPreBasis']]],
+  ['minmultiindexsize_1',['minMultiIndexSize',['../db/d07/a01155.html#af6210f36f3714b0e93df464f5bd9ce84',1,'Dune::Functions::NurbsPreBasis']]],
+  ['multiindexbuffersize_2',['multiIndexBufferSize',['../db/d07/a01155.html#a01a2df00cb51bcaa0217baa1f4016a6d',1,'Dune::Functions::NurbsPreBasis']]],
+  ['mydimension_3',['mydimension',['../d3/d42/a01051.html#a06037363d30a70eba4b98f590f81a637',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::mydimension()'],['../d0/d90/a01059.html#a651bbd7fff3d3836f8e3ae6ad0b244e4',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::mydimension()'],['../d5/dad/a01207.html#acf47a66bec55cec4b5f30fe54580e186',1,'Dune::IGANEW::PatchGridGeometry::mydimension()'],['../d7/dbf/a01239.html#a8eee8b296b2399a9d9e99fd853c31f0d',1,'Dune::IGANEW::PatchGridLocalGeometry::mydimension()'],['../d3/dbc/a01451.html#a1e280823c023a10171abb0a5cfb02bef',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::mydimension()'],['../df/d5e/a01467.html#a19095e9ce529e4677a0fe39b7aeffa1c',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry::mydimension()'],['../d7/d42/a01463.html#aec3d5db121c0debf528fd7c94431ad9d',1,'Dune::IGANEW::DefaultTrim::Trimmer::mydimension()'],['../d2/d36/a01495.html#a5249c6015e4b472f97f05eb3c5b1cf4e',1,'Dune::IGANEW::IdentityTrim::Trimmer::mydimension()'],['../d5/d06/a01499.html#a2d5a12cebaad1601f39da5a1c4eadaeb',1,'Dune::IGANEW::Trim::LocalGeometryVariant::mydimension()']]]
 ];
