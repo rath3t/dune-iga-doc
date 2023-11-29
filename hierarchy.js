@@ -11,7 +11,7 @@ var hierarchy =
     [ "Dune::IGANEW::Splines::BsplineBasis< ScalarType_ >", "d1/dcc/a01392.html", null ],
     [ "Dune::Capabilities::canCommunicate< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, TrimmerType, ScalarType > >, codim >", "d9/dce/a01052.html", null ],
     [ "Dune::Capabilities::canCommunicate< IGANEW::PatchGrid< dim, dimworld, TrimmerType, ScalarType >, codim >", "d5/de7/a01048.html", null ],
-    [ "Dune::IGANEW::DefaultTrim::DefaultTrimmedReferenceElement< dim, ct >::Codim< codim >", "d0/d05/a01420.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >::Codim< codim >", "d0/d05/a01420.html", null ],
     [ "Dune::IGANEW::ControlPoint< VT >", "d7/df2/a01000.html", null ],
     [ "DefaultLeafGridView", null, [
       [ "Dune::IGANEW::PatchGridLeafGridView< GridImp >", "dc/db6/a01212.html", null ]
@@ -25,7 +25,6 @@ var hierarchy =
     [ "DefaultLevelGridViewTraits", null, [
       [ "Dune::IGANEW::PatchGridLevelGridViewTraits< GridImp >", "d8/df3/a01216.html", null ]
     ] ],
-    [ "Dune::IGANEW::DefaultTrim::DefaultTrimmedReferenceElement< dim, ct >", "d5/dec/a01416.html", null ],
     [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d1/d56/a01308.html", null ],
     [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d8/dc5/a01300.html", null ],
     [ "Dune::IGA::DomainInformation", "dd/d6d/a01380.html", null ],
@@ -151,6 +150,7 @@ var hierarchy =
     [ "Dune::IGA::TransformToSpan< dim >", "d2/d29/a01376.html", null ],
     [ "Dune::IGA::TrimData", "dc/dd9/a01328.html", null ],
     [ "Dune::IGANEW::DefaultTrim::TrimmedPatchLocalGeometry< mydim_, coorddim, ScalarType >", "d2/db1/a01428.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, ct >", "d5/dec/a01416.html", null ],
     [ "Dune::IGANEW::DefaultTrim::Trimmer< dim, ScalarType >", "d5/da5/a01424.html", null ],
     [ "Dune::IGANEW::IdentityTrim::Trimmer< dim, ScalarType >", "dd/d1c/a01452.html", null ],
     [ "Dune::IGANEW::IdentityTrim::Trimmer< dim, double >", "dd/d1c/a01452.html", null ],

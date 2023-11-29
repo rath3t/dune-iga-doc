@@ -38,6 +38,7 @@ var a00165 =
     [ "dot", "d0/d48/a00165.html#aec86687240a124712c5daf95ff566abb", null ],
     [ "intersect3DLines", "d0/d48/a00165.html#a92a605959c76f4613b72045bd4fdbf5c", null ],
     [ "makeCircularArc", "d0/d48/a00165.html#a000e49612164d2b6609e00015a7da1b8", null ],
+    [ "makeCircularArc2D", "d0/d48/a00165.html#af2e971c8404f8415030e1ae459761540", null ],
     [ "makeSurfaceOfRevolution", "d0/d48/a00165.html#a4cdc7d50f04f4f21c50a1eb97c4e8406", null ],
     [ "MultiDimensionalNet", "d0/d48/a00165.html#a4549270737e222aedcbf2721e08b3d06", null ],
     [ "NURBSPatchData", "d0/d48/a00165.html#aee4d8d984f5b9053709e25ff2c1a6265", null ],

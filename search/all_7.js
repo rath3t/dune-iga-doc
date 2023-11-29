@@ -9,7 +9,7 @@ var searchData=
   ['hasentityiterator_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20trimmertype_2c_20scalartype_20_3e_20_3e_2c_20codim_20_3e_6',['hasEntityIterator&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt;, codim &gt;',['../d0/ddd/a01044.html',1,'Dune::Capabilities']]],
   ['hasentityiterator_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20trimmertype_2c_20scalartype_20_3e_2c_20codim_20_3e_7',['hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, TrimmerType, ScalarType &gt;, codim &gt;',['../db/d14/a01040.html',1,'Dune::Capabilities']]],
   ['hasfather_8',['hasFather',['../dc/d64/a01140.html#abbdbb961ece3960bdc4f703190df0d1d',1,'Dune::IGANEW::PatchGridEntity::hasFather()'],['../da/d20/a01160.html#a911482fbad35821622687c19e850f72b',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::hasFather()']]],
-  ['hash_5fvalue_9',['hash_value',['../d5/dec/a01416.html#ad77f7945460fb1a8ff20dcd9aaa631f5',1,'Dune::IGANEW::DefaultTrim::DefaultTrimmedReferenceElement']]],
+  ['hash_5fvalue_9',['hash_value',['../d5/dec/a01416.html#a18b5ca228a3c5e845dd2f21eb585762b',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]],
   ['hbegin_10',['hbegin',['../da/d20/a01160.html#a2a1c6d0888feacd1ef326a0992fa8d37',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
   ['hend_11',['hend',['../da/d20/a01160.html#ac51c34fcc4ea0e5792141586e5488a77',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
   ['hessian_12',['Hessian',['../d7/d5a/a01204.html#a6d86a57ccdd8c1da68f9a0eb235eb33a',1,'Dune::IGANEW::PatchGridLocalGeometry']]],
