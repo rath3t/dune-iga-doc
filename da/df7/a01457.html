@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, ScalarType &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,450 +94,381 @@ $(document).ready(function(){initNavTree('da/df7/a01457.html','../../'); initRes
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../da/df6/a01454.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, ScalarType &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../d2/d94/a00184.html">Trimmer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d5/d16/a00029_source.html">dune/iga/trimmer/defaulttrimmer/trimmedlocalgeometry.hh</a>&gt;</code></p>
+<p>DefaultTrimmer class representing a trimmer with reasonable defaults.  
+ <a href="../../da/df7/a01457.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/db9/a02918_source.html">dune/iga/trimmer/defaulttrimmer/trimmer.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a91936b57f166d16093ea136c168c9927"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a> = ScalarType</td></tr>
-<tr class="separator:a91936b57f166d16093ea136c168c9927"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45b4e4f29057547cc1291377bd0eacd1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a45b4e4f29057547cc1291377bd0eacd1">TrimmerType</a> = <a class="el" href="../../d9/dae/a01453.html">Trimmer</a>&lt; <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a> &gt;</td></tr>
-<tr class="separator:a45b4e4f29057547cc1291377bd0eacd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ccfec31f5b5d5d7527536db67d11b53"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a0ccfec31f5b5d5d7527536db67d11b53">TrimDataType</a> = <a class="el" href="../../d9/db0/a01437.html">ElementTrimData</a>&lt; <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a> &gt;</td></tr>
-<tr class="separator:a0ccfec31f5b5d5d7527536db67d11b53"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf35e223c949647e99415a138497aff3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#abf35e223c949647e99415a138497aff3">PatchGeometry</a> = <a class="el" href="../../d7/d46/a01045.html">GeometryKernel::NURBSPatch</a>&lt; <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a> &gt;</td></tr>
-<tr class="separator:abf35e223c949647e99415a138497aff3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4be005bd6f73022fd4309a68309f72b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a4be005bd6f73022fd4309a68309f72b6">LocalCoordinateInPatch</a> = typename <a class="el" href="../../d7/d46/a01045.html#a53b416fc4db181afc1222d204cf04d0b">PatchGeometry::LocalCoordinate</a></td></tr>
-<tr class="separator:a4be005bd6f73022fd4309a68309f72b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47d06a8dd76accbbe215215b477f4e75"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> = FieldVector&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a> &gt;</td></tr>
-<tr class="separator:a47d06a8dd76accbbe215215b477f4e75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a0a78cff050d0a20e8c26d40faae299"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a> = FieldVector&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a> &gt;</td></tr>
-<tr class="separator:a1a0a78cff050d0a20e8c26d40faae299"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a11af64bffe015b3307e1f49f81b4fb21"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a11af64bffe015b3307e1f49f81b4fb21">JacobianTransposed</a> = FieldMatrix&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a> &gt;</td></tr>
-<tr class="separator:a11af64bffe015b3307e1f49f81b4fb21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ba54cc80df1b932d87977a8763fb2fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a7ba54cc80df1b932d87977a8763fb2fe">Hessian</a> = FieldMatrix&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a> *(<a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>+1)/2, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a> &gt;</td></tr>
-<tr class="separator:a7ba54cc80df1b932d87977a8763fb2fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c940d69c9acf6c42931ca80f4de81e1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a2c940d69c9acf6c42931ca80f4de81e1">Jacobian</a> = FieldMatrix&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a> &gt;</td></tr>
-<tr class="separator:a2c940d69c9acf6c42931ca80f4de81e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94f7733ba4b30ca5674f0031961370ae"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a94f7733ba4b30ca5674f0031961370ae">JacobianInverseTransposed</a> = FieldMatrix&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a> &gt;</td></tr>
-<tr class="separator:a94f7733ba4b30ca5674f0031961370ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa628ecb8dc41e4b89096fb54451d27f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#aaa628ecb8dc41e4b89096fb54451d27f">JacobianInverse</a> = FieldMatrix&lt; <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a> &gt;</td></tr>
-<tr class="separator:aaa628ecb8dc41e4b89096fb54451d27f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40b1348673234c25cf7c2aeed8be9af2"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a40b1348673234c25cf7c2aeed8be9af2">Volume</a> = <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a></td></tr>
-<tr class="separator:a40b1348673234c25cf7c2aeed8be9af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b440475a83e3f83c8441a968747f523"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a5b440475a83e3f83c8441a968747f523">GeometryLocalView</a> = typename <a class="el" href="../../d7/d46/a01045.html">GeometryKernel::NURBSPatch</a>&lt; <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a> &gt;::template <a class="el" href="../../da/df7/a01457.html#a5b440475a83e3f83c8441a968747f523">GeometryLocalView</a>&lt; <a class="el" href="../../da/df7/a01457.html#ad6937f00d43a937ba4b28aed3c15ab38">codim</a>, <a class="el" href="../../da/df7/a01457.html#a45b4e4f29057547cc1291377bd0eacd1">TrimmerType</a> &gt;</td></tr>
-<tr class="memdesc:a5b440475a83e3f83c8441a968747f523"><td class="mdescLeft">&#160;</td><td class="mdescRight">type of the LocalView of the patch geometry  <a href="../../da/df7/a01457.html#a5b440475a83e3f83c8441a968747f523">More...</a><br /></td></tr>
-<tr class="separator:a5b440475a83e3f83c8441a968747f523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a480987b81505956517b4290685a120a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a480987b81505956517b4290685a120a8">ctype</a> = ScalarType</td></tr>
+<tr class="memdesc:a480987b81505956517b4290685a120a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar type for the coordinates.  <a href="../../da/df7/a01457.html#a480987b81505956517b4290685a120a8">More...</a><br /></td></tr>
+<tr class="separator:a480987b81505956517b4290685a120a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ac07870fdb307d8e73d09edefee4c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a38ac07870fdb307d8e73d09edefee4c3">ParameterSpaceGrid</a> = SubGrid&lt; <a class="el" href="../../da/df7/a01457.html#aec3d5db121c0debf528fd7c94431ad9d">mydimension</a>, <a class="el" href="../../d2/d41/a01037.html">UntrimmedParameterSpaceGrid</a> &gt;</td></tr>
+<tr class="memdesc:a38ac07870fdb307d8e73d09edefee4c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the Parametric grid.  <a href="../../da/df7/a01457.html#a38ac07870fdb307d8e73d09edefee4c3">More...</a><br /></td></tr>
+<tr class="separator:a38ac07870fdb307d8e73d09edefee4c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672a8af985275eea82111c93a46ab0f9"><td class="memTemplParams" colspan="2">template&lt;int mydim&gt; </td></tr>
+<tr class="memitem:a672a8af985275eea82111c93a46ab0f9"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a672a8af985275eea82111c93a46ab0f9">ReferenceElementType</a> = <a class="el" href="../../d9/d6f/a01445.html">TrimmedReferenceElement</a>&lt; mydim, <a class="el" href="../../da/df7/a01457.html#a480987b81505956517b4290685a120a8">ctype</a> &gt;</td></tr>
+<tr class="memdesc:a672a8af985275eea82111c93a46ab0f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference element type.  <a href="../../da/df7/a01457.html#a672a8af985275eea82111c93a46ab0f9">More...</a><br /></td></tr>
+<tr class="separator:a672a8af985275eea82111c93a46ab0f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32cc16db0b8e9095079df789b050cad6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a> = <a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a>&lt; ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype &gt;</td></tr>
+<tr class="memdesc:a32cc16db0b8e9095079df789b050cad6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element trim data type.  <a href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">More...</a><br /></td></tr>
+<tr class="separator:a32cc16db0b8e9095079df789b050cad6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18b60c5fcd88cc16f64911d22c53b2c6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a18b60c5fcd88cc16f64911d22c53b2c6">PatchTrimData</a> = <a class="el" href="../../da/df7/a01457.html#a18b60c5fcd88cc16f64911d22c53b2c6">PatchTrimData</a>&lt; ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype &gt;</td></tr>
+<tr class="memdesc:a18b60c5fcd88cc16f64911d22c53b2c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Patch trim data type.  <a href="../../da/df7/a01457.html#a18b60c5fcd88cc16f64911d22c53b2c6">More...</a><br /></td></tr>
+<tr class="separator:a18b60c5fcd88cc16f64911d22c53b2c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf7cb83bb45fe71ef5c0b0d983098e01"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#abf7cb83bb45fe71ef5c0b0d983098e01">ElementTrimDataContainer</a> = std::map&lt; typename ParameterSpaceGrid::Traits::GlobalIdSet::IdType, <a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a> &gt;</td></tr>
+<tr class="memdesc:abf7cb83bb45fe71ef5c0b0d983098e01"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for element trim data.  <a href="../../da/df7/a01457.html#abf7cb83bb45fe71ef5c0b0d983098e01">More...</a><br /></td></tr>
+<tr class="separator:abf7cb83bb45fe71ef5c0b0d983098e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af15f6c0bcd1d974117b2489b4329efd7"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:af15f6c0bcd1d974117b2489b4329efd7"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#af15f6c0bcd1d974117b2489b4329efd7">LocalParameterSpaceGeometry</a> = <a class="el" href="../../d2/dac/a01489.html">Trim::LocalGeometryVariant</a>&lt; <a class="el" href="../../da/df7/a01457.html">Trimmer</a>, UntrimmedLocalParameterSpaceGeometry&lt; codim &gt;, TrimmedLocalParameterSpaceGeometry&lt; codim &gt; &gt;</td></tr>
+<tr class="memdesc:af15f6c0bcd1d974117b2489b4329efd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for local geometry of a specified codimension.  <a href="../../da/df7/a01457.html#af15f6c0bcd1d974117b2489b4329efd7">More...</a><br /></td></tr>
+<tr class="separator:af15f6c0bcd1d974117b2489b4329efd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14d6f0289341fb8343da9ed3f5be6155"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:a14d6f0289341fb8343da9ed3f5be6155"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a14d6f0289341fb8343da9ed3f5be6155">LocalGeometry</a> = <a class="el" href="../../d2/dac/a01489.html">Trim::LocalGeometryVariant</a>&lt; <a class="el" href="../../da/df7/a01457.html">Trimmer</a>, UntrimmedLocalGeometry&lt; codim &gt;, TrimmedLocalGeometry&lt; codim &gt; &gt;</td></tr>
+<tr class="separator:a14d6f0289341fb8343da9ed3f5be6155"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaba3acab723a7a79a6aef2d333b229c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#aaaba3acab723a7a79a6aef2d333b229c">ParameterType</a> = <a class="el" href="../../d4/dfd/a01465.html">Parameter</a></td></tr>
+<tr class="memdesc:aaaba3acab723a7a79a6aef2d333b229c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for trimming parameters.  <a href="../../da/df7/a01457.html#aaaba3acab723a7a79a6aef2d333b229c">More...</a><br /></td></tr>
+<tr class="separator:aaaba3acab723a7a79a6aef2d333b229c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4847b10fd9ad9dc81b09f180ca318802"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a4847b10fd9ad9dc81b09f180ca318802">TrimmedLocalGeometry</a> (const <a class="el" href="../../da/df7/a01457.html#a0ccfec31f5b5d5d7527536db67d11b53">TrimDataType</a> &amp;trimData)</td></tr>
-<tr class="separator:a4847b10fd9ad9dc81b09f180ca318802"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d791e9f6b1c291e72bfcbd392581ed1"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a8d791e9f6b1c291e72bfcbd392581ed1">type</a> () const</td></tr>
-<tr class="memdesc:a8d791e9f6b1c291e72bfcbd392581ed1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the element type identifier.  <a href="../../da/df7/a01457.html#a8d791e9f6b1c291e72bfcbd392581ed1">More...</a><br /></td></tr>
-<tr class="separator:a8d791e9f6b1c291e72bfcbd392581ed1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afee7d4c35a84de1ae760733c08856393"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#afee7d4c35a84de1ae760733c08856393">affine</a> () const</td></tr>
-<tr class="separator:afee7d4c35a84de1ae760733c08856393"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6192bdd803bbf1bcc7a78a297a37c9a4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a6192bdd803bbf1bcc7a78a297a37c9a4">corners</a> () const</td></tr>
-<tr class="memdesc:a6192bdd803bbf1bcc7a78a297a37c9a4"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the number of corners of this element. Corners are numbered 0...n-1  <a href="../../da/df7/a01457.html#a6192bdd803bbf1bcc7a78a297a37c9a4">More...</a><br /></td></tr>
-<tr class="separator:a6192bdd803bbf1bcc7a78a297a37c9a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52afce14a8789069a5cf135d4ae34631"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a52afce14a8789069a5cf135d4ae34631">center</a> () const</td></tr>
-<tr class="separator:a52afce14a8789069a5cf135d4ae34631"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa7cc928d7a5972577e3c61fe41524fb4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#aa7cc928d7a5972577e3c61fe41524fb4">corner</a> (int i) const</td></tr>
-<tr class="memdesc:aa7cc928d7a5972577e3c61fe41524fb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">access to coordinates of corners. Index is the number of the corner  <a href="../../da/df7/a01457.html#aa7cc928d7a5972577e3c61fe41524fb4">More...</a><br /></td></tr>
-<tr class="separator:aa7cc928d7a5972577e3c61fe41524fb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe13803696659502fb858c31472d0da6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#afe13803696659502fb858c31472d0da6">global</a> (const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;<a class="el" href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">local</a>) const</td></tr>
-<tr class="memdesc:afe13803696659502fb858c31472d0da6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a local coordinate within reference element to global coordinate in element <br  />
-  <a href="../../da/df7/a01457.html#afe13803696659502fb858c31472d0da6">More...</a><br /></td></tr>
-<tr class="separator:afe13803696659502fb858c31472d0da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7032015feaae4057e539b61aa311250f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a11af64bffe015b3307e1f49f81b4fb21">JacobianTransposed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a7032015feaae4057e539b61aa311250f">jacobianTransposed</a> (const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;<a class="el" href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">local</a>) const</td></tr>
-<tr class="memdesc:a7032015feaae4057e539b61aa311250f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the transposed of the Jacobian.  <a href="../../da/df7/a01457.html#a7032015feaae4057e539b61aa311250f">More...</a><br /></td></tr>
-<tr class="separator:a7032015feaae4057e539b61aa311250f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a513b266fe78c385ba9f1fb4c94822b20"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">local</a> (const <a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a> &amp;<a class="el" href="../../da/df7/a01457.html#afe13803696659502fb858c31472d0da6">global</a>) const</td></tr>
-<tr class="memdesc:a513b266fe78c385ba9f1fb4c94822b20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a global coordinate within the element to a local coordinate in its reference element.  <a href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">More...</a><br /></td></tr>
-<tr class="separator:a513b266fe78c385ba9f1fb4c94822b20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a035c7a665f8efe90cb9b8e467bb270cd"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a035c7a665f8efe90cb9b8e467bb270cd">checkInside</a> (const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;<a class="el" href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">local</a>) const</td></tr>
-<tr class="memdesc:a035c7a665f8efe90cb9b8e467bb270cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the point is in the current element.  <a href="../../da/df7/a01457.html#a035c7a665f8efe90cb9b8e467bb270cd">More...</a><br /></td></tr>
-<tr class="separator:a035c7a665f8efe90cb9b8e467bb270cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4928d7fe352f18db563316fe27bd3517"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a40b1348673234c25cf7c2aeed8be9af2">Volume</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a4928d7fe352f18db563316fe27bd3517">integrationElement</a> (const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;<a class="el" href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">local</a>) const</td></tr>
-<tr class="separator:a4928d7fe352f18db563316fe27bd3517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ee772fd93da79e9b54113041215e072"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a94f7733ba4b30ca5674f0031961370ae">JacobianInverseTransposed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a7ee772fd93da79e9b54113041215e072">jacobianInverseTransposed</a> (const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;<a class="el" href="../../da/df7/a01457.html#a513b266fe78c385ba9f1fb4c94822b20">local</a>) const</td></tr>
-<tr class="memdesc:a7ee772fd93da79e9b54113041215e072"><td class="mdescLeft">&#160;</td><td class="mdescRight">The Jacobian matrix of the mapping from the reference element to this element.  <a href="../../da/df7/a01457.html#a7ee772fd93da79e9b54113041215e072">More...</a><br /></td></tr>
-<tr class="separator:a7ee772fd93da79e9b54113041215e072"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd5762529cd4a49ac6021babc1618fae"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#afd5762529cd4a49ac6021babc1618fae">Trimmer</a> ()=default</td></tr>
+<tr class="memdesc:afd5762529cd4a49ac6021babc1618fae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for <a class="el" href="../../da/df7/a01457.html" title="DefaultTrimmer class representing a trimmer with reasonable defaults.">Trimmer</a>.  <a href="../../da/df7/a01457.html#afd5762529cd4a49ac6021babc1618fae">More...</a><br /></td></tr>
+<tr class="separator:afd5762529cd4a49ac6021babc1618fae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d11b91fc9d0932def89b9fe87f34ddd"><td class="memTemplParams" colspan="2">template&lt;int dimworld&gt; </td></tr>
+<tr class="memitem:a6d11b91fc9d0932def89b9fe87f34ddd"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a6d11b91fc9d0932def89b9fe87f34ddd">Trimmer</a> (const <a class="el" href="../../d7/d46/a01045.html">GeometryKernel::NURBSPatch</a>&lt; dim, dimworld, <a class="el" href="../../da/df7/a01457.html#a480987b81505956517b4290685a120a8">ctype</a> &gt; &amp;patchData, const std::optional&lt; <a class="el" href="../../da/df7/a01457.html#a18b60c5fcd88cc16f64911d22c53b2c6">PatchTrimData</a> &gt; &amp;<a class="el" href="../../da/df7/a01457.html#a6f582ef137c48c86e6ccd4b47554deec">trimData</a>)</td></tr>
+<tr class="memdesc:a6d11b91fc9d0932def89b9fe87f34ddd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="../../da/df7/a01457.html" title="DefaultTrimmer class representing a trimmer with reasonable defaults.">Trimmer</a> with patch and trim data.  <a href="../../da/df7/a01457.html#a6d11b91fc9d0932def89b9fe87f34ddd">More...</a><br /></td></tr>
+<tr class="separator:a6d11b91fc9d0932def89b9fe87f34ddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f582ef137c48c86e6ccd4b47554deec"><td class="memTemplParams" colspan="2">template&lt;typename EntityType , typename GlobalIdSet &gt; </td></tr>
+<tr class="memitem:a6f582ef137c48c86e6ccd4b47554deec"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; std::reference_wrapper&lt; const <a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a> &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a6f582ef137c48c86e6ccd4b47554deec">trimData</a> (const EntityType &amp;element, const GlobalIdSet &amp;globalIdSet) const</td></tr>
+<tr class="memdesc:a6f582ef137c48c86e6ccd4b47554deec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the trim data for a given element and global ID set.  <a href="../../da/df7/a01457.html#a6f582ef137c48c86e6ccd4b47554deec">More...</a><br /></td></tr>
+<tr class="separator:a6f582ef137c48c86e6ccd4b47554deec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa334944dc732b8eae2a9062d313186da"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#aa334944dc732b8eae2a9062d313186da">globalRefine</a> (int ref)</td></tr>
+<tr class="memdesc:aa334944dc732b8eae2a9062d313186da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine the grid globally.  <a href="../../da/df7/a01457.html#aa334944dc732b8eae2a9062d313186da">More...</a><br /></td></tr>
+<tr class="separator:aa334944dc732b8eae2a9062d313186da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a911190a9b89089431bffb3b3cb0d18bf"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../da/df7/a01457.html#a38ac07870fdb307d8e73d09edefee4c3">ParameterSpaceGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a911190a9b89089431bffb3b3cb0d18bf">parameterSpaceGrid</a> () const</td></tr>
+<tr class="memdesc:a911190a9b89089431bffb3b3cb0d18bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the parameter space grid.  <a href="../../da/df7/a01457.html#a911190a9b89089431bffb3b3cb0d18bf">More...</a><br /></td></tr>
+<tr class="separator:a911190a9b89089431bffb3b3cb0d18bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8321b78eec854f92d79d07407c217db5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/df7/a01457.html#a38ac07870fdb307d8e73d09edefee4c3">ParameterSpaceGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a8321b78eec854f92d79d07407c217db5">parameterSpaceGrid</a> ()</td></tr>
+<tr class="memdesc:a8321b78eec854f92d79d07407c217db5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the parameter space grid.  <a href="../../da/df7/a01457.html#a8321b78eec854f92d79d07407c217db5">More...</a><br /></td></tr>
+<tr class="separator:a8321b78eec854f92d79d07407c217db5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad43184fa6b09b930d90cbc4d918c3758"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#ad43184fa6b09b930d90cbc4d918c3758">setup</a> (const <a class="el" href="../../da/df7/a01457.html#aaaba3acab723a7a79a6aef2d333b229c">ParameterType</a> &amp;par)</td></tr>
+<tr class="memdesc:ad43184fa6b09b930d90cbc4d918c3758"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the untrimmed parameter space grid.  <a href="../../da/df7/a01457.html#ad43184fa6b09b930d90cbc4d918c3758">More...</a><br /></td></tr>
+<tr class="separator:ad43184fa6b09b930d90cbc4d918c3758"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a970be6b4207630b8b04e21792d678127"><td class="memTemplParams" colspan="2">template&lt;typename EntityType &gt; </td></tr>
+<tr class="memitem:a970be6b4207630b8b04e21792d678127"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a970be6b4207630b8b04e21792d678127">referenceElement</a> (const EntityType &amp;entity)</td></tr>
+<tr class="memdesc:a970be6b4207630b8b04e21792d678127"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference element for a given entity.  <a href="../../da/df7/a01457.html#a970be6b4207630b8b04e21792d678127">More...</a><br /></td></tr>
+<tr class="separator:a970be6b4207630b8b04e21792d678127"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a19095e9ce529e4677a0fe39b7aeffa1c"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a> = mydim_</td></tr>
-<tr class="separator:a19095e9ce529e4677a0fe39b7aeffa1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1245f24f092dff5c329c17631824694"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a> = coorddim</td></tr>
-<tr class="separator:af1245f24f092dff5c329c17631824694"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6937f00d43a937ba4b28aed3c15ab38"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#ad6937f00d43a937ba4b28aed3c15ab38">codim</a> = coorddim - <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a></td></tr>
-<tr class="separator:ad6937f00d43a937ba4b28aed3c15ab38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3d5db121c0debf528fd7c94431ad9d"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#aec3d5db121c0debf528fd7c94431ad9d">mydimension</a> = dim</td></tr>
+<tr class="memdesc:aec3d5db121c0debf528fd7c94431ad9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension of the patch.  <a href="../../da/df7/a01457.html#aec3d5db121c0debf528fd7c94431ad9d">More...</a><br /></td></tr>
+<tr class="separator:aec3d5db121c0debf528fd7c94431ad9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38508428f4ef14893ba2d0e626d19b0"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:ac38508428f4ef14893ba2d0e626d19b0"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#ac38508428f4ef14893ba2d0e626d19b0">isLocalGeometryLinear</a> = codim == 0</td></tr>
+<tr class="memdesc:ac38508428f4ef14893ba2d0e626d19b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boolean for the linearity of the local geometry. For codim==0, the parameter geometry is linear.  <a href="../../da/df7/a01457.html#ac38508428f4ef14893ba2d0e626d19b0">More...</a><br /></td></tr>
+<tr class="separator:ac38508428f4ef14893ba2d0e626d19b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9f6ffd9b71ad1b49e66816404d4b527"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/df7/a01457.html#ad9f6ffd9b71ad1b49e66816404d4b527">isAlwaysTrivial</a> = false</td></tr>
+<tr class="separator:ad9f6ffd9b71ad1b49e66816404d4b527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a91936b57f166d16093ea136c168c9927" name="a91936b57f166d16093ea136c168c9927"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a91936b57f166d16093ea136c168c9927">&#9670;&nbsp;</a></span>ctype</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, typename ScalarType&gt;<br />
+class Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, ScalarType &gt;</div><p >DefaultTrimmer class representing a trimmer with reasonable defaults. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim</td><td>Dimension of the patch. </td></tr>
+    <tr><td class="paramname">ScalarType</td><td>Scalar type for geometric calculations. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a480987b81505956517b4290685a120a8" name="a480987b81505956517b4290685a120a8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480987b81505956517b4290685a120a8">&#9670;&nbsp;</a></span>ctype</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::ctype =  ScalarType</td>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::ctype =  ScalarType</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scalar type for the coordinates. </p>
+
+</div>
+</div>
+<a id="a32cc16db0b8e9095079df789b050cad6" name="a32cc16db0b8e9095079df789b050cad6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32cc16db0b8e9095079df789b050cad6">&#9670;&nbsp;</a></span>ElementTrimData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::ElementTrimData =  <a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a>&lt;ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element trim data type. </p>
+
+</div>
+</div>
+<a id="abf7cb83bb45fe71ef5c0b0d983098e01" name="abf7cb83bb45fe71ef5c0b0d983098e01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf7cb83bb45fe71ef5c0b0d983098e01">&#9670;&nbsp;</a></span>ElementTrimDataContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::ElementTrimDataContainer =  std::map&lt;typename ParameterSpaceGrid::Traits::GlobalIdSet::IdType, <a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container for element trim data. </p>
+
+</div>
+</div>
+<a id="a14d6f0289341fb8343da9ed3f5be6155" name="a14d6f0289341fb8343da9ed3f5be6155"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14d6f0289341fb8343da9ed3f5be6155">&#9670;&nbsp;</a></span>LocalGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::LocalGeometry =  <a class="el" href="../../d2/dac/a01489.html">Trim::LocalGeometryVariant</a>&lt;<a class="el" href="../../da/df7/a01457.html">Trimmer</a>, UntrimmedLocalGeometry&lt;codim&gt;, TrimmedLocalGeometry&lt;codim&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a5b440475a83e3f83c8441a968747f523" name="a5b440475a83e3f83c8441a968747f523"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b440475a83e3f83c8441a968747f523">&#9670;&nbsp;</a></span>GeometryLocalView</h2>
+<a id="af15f6c0bcd1d974117b2489b4329efd7" name="af15f6c0bcd1d974117b2489b4329efd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af15f6c0bcd1d974117b2489b4329efd7">&#9670;&nbsp;</a></span>LocalParameterSpaceGeometry</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::GeometryLocalView =  typename <a class="el" href="../../d7/d46/a01045.html">GeometryKernel::NURBSPatch</a>&lt;<a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>&gt;::template <a class="el" href="../../da/df7/a01457.html#a5b440475a83e3f83c8441a968747f523">GeometryLocalView</a>&lt;<a class="el" href="../../da/df7/a01457.html#ad6937f00d43a937ba4b28aed3c15ab38">codim</a>, <a class="el" href="../../da/df7/a01457.html#a45b4e4f29057547cc1291377bd0eacd1">TrimmerType</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::LocalParameterSpaceGeometry =  <a class="el" href="../../d2/dac/a01489.html">Trim::LocalGeometryVariant</a>&lt;<a class="el" href="../../da/df7/a01457.html">Trimmer</a>, UntrimmedLocalParameterSpaceGeometry&lt;codim&gt;, TrimmedLocalParameterSpaceGeometry&lt;codim&gt; &gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>type of the LocalView of the patch geometry </p>
+<p>Type alias for local geometry of a specified codimension. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">codim</td><td>Codimension of the local geometry. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a1a0a78cff050d0a20e8c26d40faae299" name="a1a0a78cff050d0a20e8c26d40faae299"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a0a78cff050d0a20e8c26d40faae299">&#9670;&nbsp;</a></span>GlobalCoordinate</h2>
+<a id="a38ac07870fdb307d8e73d09edefee4c3" name="a38ac07870fdb307d8e73d09edefee4c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ac07870fdb307d8e73d09edefee4c3">&#9670;&nbsp;</a></span>ParameterSpaceGrid</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::GlobalCoordinate =  FieldVector&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::ParameterSpaceGrid =  SubGrid&lt;<a class="el" href="../../da/df7/a01457.html#aec3d5db121c0debf528fd7c94431ad9d">mydimension</a>, <a class="el" href="../../d2/d41/a01037.html">UntrimmedParameterSpaceGrid</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Type of the Parametric grid. </p>
+
 </div>
 </div>
-<a id="a7ba54cc80df1b932d87977a8763fb2fe" name="a7ba54cc80df1b932d87977a8763fb2fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ba54cc80df1b932d87977a8763fb2fe">&#9670;&nbsp;</a></span>Hessian</h2>
+<a id="aaaba3acab723a7a79a6aef2d333b229c" name="aaaba3acab723a7a79a6aef2d333b229c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaaba3acab723a7a79a6aef2d333b229c">&#9670;&nbsp;</a></span>ParameterType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::Hessian =  FieldMatrix&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>*(<a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a> + 1) / 2, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::ParameterType =  <a class="el" href="../../d4/dfd/a01465.html">Parameter</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Type for trimming parameters. </p>
+
 </div>
 </div>
-<a id="a2c940d69c9acf6c42931ca80f4de81e1" name="a2c940d69c9acf6c42931ca80f4de81e1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c940d69c9acf6c42931ca80f4de81e1">&#9670;&nbsp;</a></span>Jacobian</h2>
+<a id="a18b60c5fcd88cc16f64911d22c53b2c6" name="a18b60c5fcd88cc16f64911d22c53b2c6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18b60c5fcd88cc16f64911d22c53b2c6">&#9670;&nbsp;</a></span>PatchTrimData</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::Jacobian =  FieldMatrix&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::PatchTrimData =  <a class="el" href="../../da/df7/a01457.html#a18b60c5fcd88cc16f64911d22c53b2c6">PatchTrimData</a>&lt;ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
+<p>Patch trim data type. </p>
+
 </div>
 </div>
-<a id="aaa628ecb8dc41e4b89096fb54451d27f" name="aaa628ecb8dc41e4b89096fb54451d27f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa628ecb8dc41e4b89096fb54451d27f">&#9670;&nbsp;</a></span>JacobianInverse</h2>
+<a id="a672a8af985275eea82111c93a46ab0f9" name="a672a8af985275eea82111c93a46ab0f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a672a8af985275eea82111c93a46ab0f9">&#9670;&nbsp;</a></span>ReferenceElementType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::JacobianInverse =  FieldMatrix&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a94f7733ba4b30ca5674f0031961370ae" name="a94f7733ba4b30ca5674f0031961370ae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94f7733ba4b30ca5674f0031961370ae">&#9670;&nbsp;</a></span>JacobianInverseTransposed</h2>
-
-<div class="memitem">
-<div class="memproto">
+template&lt;int dim, typename ScalarType &gt; </div>
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int mydim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::JacobianInverseTransposed =  FieldMatrix&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::ReferenceElementType =  <a class="el" href="../../d9/d6f/a01445.html">TrimmedReferenceElement</a>&lt;mydim, <a class="el" href="../../da/df7/a01457.html#a480987b81505956517b4290685a120a8">ctype</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a11af64bffe015b3307e1f49f81b4fb21" name="a11af64bffe015b3307e1f49f81b4fb21"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a11af64bffe015b3307e1f49f81b4fb21">&#9670;&nbsp;</a></span>JacobianTransposed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::JacobianTransposed =  FieldMatrix&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a47d06a8dd76accbbe215215b477f4e75" name="a47d06a8dd76accbbe215215b477f4e75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47d06a8dd76accbbe215215b477f4e75">&#9670;&nbsp;</a></span>LocalCoordinate</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::LocalCoordinate =  FieldVector&lt;<a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>, <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a4be005bd6f73022fd4309a68309f72b6" name="a4be005bd6f73022fd4309a68309f72b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4be005bd6f73022fd4309a68309f72b6">&#9670;&nbsp;</a></span>LocalCoordinateInPatch</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::LocalCoordinateInPatch =  typename <a class="el" href="../../d7/d46/a01045.html#a53b416fc4db181afc1222d204cf04d0b">PatchGeometry::LocalCoordinate</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abf35e223c949647e99415a138497aff3" name="abf35e223c949647e99415a138497aff3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf35e223c949647e99415a138497aff3">&#9670;&nbsp;</a></span>PatchGeometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::PatchGeometry =  <a class="el" href="../../d7/d46/a01045.html">GeometryKernel::NURBSPatch</a>&lt;<a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#af1245f24f092dff5c329c17631824694">coorddimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0ccfec31f5b5d5d7527536db67d11b53" name="a0ccfec31f5b5d5d7527536db67d11b53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ccfec31f5b5d5d7527536db67d11b53">&#9670;&nbsp;</a></span>TrimDataType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::TrimDataType =  <a class="el" href="../../d9/db0/a01437.html">ElementTrimData</a>&lt;<a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a45b4e4f29057547cc1291377bd0eacd1" name="a45b4e4f29057547cc1291377bd0eacd1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45b4e4f29057547cc1291377bd0eacd1">&#9670;&nbsp;</a></span>TrimmerType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::TrimmerType =  <a class="el" href="../../d9/dae/a01453.html">Trimmer</a>&lt;<a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a>, <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a40b1348673234c25cf7c2aeed8be9af2" name="a40b1348673234c25cf7c2aeed8be9af2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40b1348673234c25cf7c2aeed8be9af2">&#9670;&nbsp;</a></span>Volume</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::Volume =  <a class="el" href="../../da/df7/a01457.html#a91936b57f166d16093ea136c168c9927">ctype</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Reference element type. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4847b10fd9ad9dc81b09f180ca318802" name="a4847b10fd9ad9dc81b09f180ca318802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4847b10fd9ad9dc81b09f180ca318802">&#9670;&nbsp;</a></span>TrimmedLocalGeometry()</h2>
+<a id="afd5762529cd4a49ac6021babc1618fae" name="afd5762529cd4a49ac6021babc1618fae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd5762529cd4a49ac6021babc1618fae">&#9670;&nbsp;</a></span>Trimmer() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::TrimmedLocalGeometry </td>
+          <td class="memname"><a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::Trimmer </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a0ccfec31f5b5d5d7527536db67d11b53">TrimDataType</a> &amp;&#160;</td>
-          <td class="paramname"><em>trimData</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >constructor from host geometry </p>
+
+<p>Default constructor for <a class="el" href="../../da/df7/a01457.html" title="DefaultTrimmer class representing a trimmer with reasonable defaults.">Trimmer</a>. </p>
+
+</div>
+</div>
+<a id="a6d11b91fc9d0932def89b9fe87f34ddd" name="a6d11b91fc9d0932def89b9fe87f34ddd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d11b91fc9d0932def89b9fe87f34ddd">&#9670;&nbsp;</a></span>Trimmer() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int dimworld&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::Trimmer </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d7/d46/a01045.html">GeometryKernel::NURBSPatch</a>&lt; dim, dimworld, <a class="el" href="../../da/df7/a01457.html#a480987b81505956517b4290685a120a8">ctype</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>patchData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="../../da/df7/a01457.html#a18b60c5fcd88cc16f64911d22c53b2c6">PatchTrimData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>trimData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for <a class="el" href="../../da/df7/a01457.html" title="DefaultTrimmer class representing a trimmer with reasonable defaults.">Trimmer</a> with patch and trim data. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dimworld</td><td>Dimension of the world. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patchData</td><td>NURBS patch data. </td></tr>
+    <tr><td class="paramname">trimData</td><td>Optional patch trim data. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="afee7d4c35a84de1ae760733c08856393" name="afee7d4c35a84de1ae760733c08856393"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afee7d4c35a84de1ae760733c08856393">&#9670;&nbsp;</a></span>affine()</h2>
+<a id="aa334944dc732b8eae2a9062d313186da" name="aa334944dc732b8eae2a9062d313186da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa334944dc732b8eae2a9062d313186da">&#9670;&nbsp;</a></span>globalRefine()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::affine </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a52afce14a8789069a5cf135d4ae34631" name="a52afce14a8789069a5cf135d4ae34631"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52afce14a8789069a5cf135d4ae34631">&#9670;&nbsp;</a></span>center()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::center </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a035c7a665f8efe90cb9b8e467bb270cd" name="a035c7a665f8efe90cb9b8e467bb270cd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a035c7a665f8efe90cb9b8e467bb270cd">&#9670;&nbsp;</a></span>checkInside()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::checkInside </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns true if the point is in the current element. </p>
-
-</div>
-</div>
-<a id="aa7cc928d7a5972577e3c61fe41524fb4" name="aa7cc928d7a5972577e3c61fe41524fb4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa7cc928d7a5972577e3c61fe41524fb4">&#9670;&nbsp;</a></span>corner()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::corner </td>
+          <td class="memname">auto <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::globalRefine </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>ref</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -547,23 +478,59 @@ template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="
 </table>
 </div><div class="memdoc">
 
-<p>access to coordinates of corners. Index is the number of the corner </p>
+<p>Refine the grid globally. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>Number of refinement levels. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a6192bdd803bbf1bcc7a78a297a37c9a4" name="a6192bdd803bbf1bcc7a78a297a37c9a4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6192bdd803bbf1bcc7a78a297a37c9a4">&#9670;&nbsp;</a></span>corners()</h2>
+<a id="a8321b78eec854f92d79d07407c217db5" name="a8321b78eec854f92d79d07407c217db5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8321b78eec854f92d79d07407c217db5">&#9670;&nbsp;</a></span>parameterSpaceGrid() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::corners </td>
+          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a38ac07870fdb307d8e73d09edefee4c3">ParameterSpaceGrid</a> &amp; <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::parameterSpaceGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a reference to the parameter space grid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the parameter space grid. </dd></dl>
+
+</div>
+</div>
+<a id="a911190a9b89089431bffb3b3cb0d18bf" name="a911190a9b89089431bffb3b3cb0d18bf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a911190a9b89089431bffb3b3cb0d18bf">&#9670;&nbsp;</a></span>parameterSpaceGrid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../da/df7/a01457.html#a38ac07870fdb307d8e73d09edefee4c3">ParameterSpaceGrid</a> &amp; <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::parameterSpaceGrid </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -576,27 +543,73 @@ template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="
 </table>
 </div><div class="memdoc">
 
-<p>return the number of corners of this element. Corners are numbered 0...n-1 </p>
+<p>Get a const reference to the parameter space grid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const reference to the parameter space grid. </dd></dl>
 
 </div>
 </div>
-<a id="afe13803696659502fb858c31472d0da6" name="afe13803696659502fb858c31472d0da6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afe13803696659502fb858c31472d0da6">&#9670;&nbsp;</a></span>global()</h2>
+<a id="a970be6b4207630b8b04e21792d678127" name="a970be6b4207630b8b04e21792d678127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970be6b4207630b8b04e21792d678127">&#9670;&nbsp;</a></span>referenceElement()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;typename EntityType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::global </td>
+          <td class="memname">static auto <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::referenceElement </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the reference element for a given entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">EntityType</td><td>Type of the entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>The entity for which the reference element is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference element for the entity. </dd></dl>
+
+</div>
+</div>
+<a id="ad43184fa6b09b930d90cbc4d918c3758" name="ad43184fa6b09b930d90cbc4d918c3758"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad43184fa6b09b930d90cbc4d918c3758">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::setup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#aaaba3acab723a7a79a6aef2d333b229c">ParameterType</a> &amp;&#160;</td>
+          <td class="paramname"><em>par</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -606,28 +619,47 @@ template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="
 </table>
 </div><div class="memdoc">
 
-<p>Maps a local coordinate within reference element to global coordinate in element <br  />
- </p>
+<p>Get a const reference to the untrimmed parameter space grid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const reference to the untrimmed parameter space grid.</dd></dl>
+<p>Get a reference to the untrimmed parameter space grid. </p><dl class="section return"><dt>Returns</dt><dd>Reference to the untrimmed parameter space grid.</dd></dl>
+<p>Pass parameters to the trimmer. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">par</td><td>The parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a4928d7fe352f18db563316fe27bd3517" name="a4928d7fe352f18db563316fe27bd3517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4928d7fe352f18db563316fe27bd3517">&#9670;&nbsp;</a></span>integrationElement()</h2>
+<a id="a6f582ef137c48c86e6ccd4b47554deec" name="a6f582ef137c48c86e6ccd4b47554deec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f582ef137c48c86e6ccd4b47554deec">&#9670;&nbsp;</a></span>trimData()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;typename EntityType , typename GlobalIdSet &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a40b1348673234c25cf7c2aeed8be9af2">Volume</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::integrationElement </td>
+          <td class="memname">std::optional&lt; std::reference_wrapper&lt; const <a class="el" href="../../da/df7/a01457.html#a32cc16db0b8e9095079df789b050cad6">ElementTrimData</a> &gt; &gt; <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::trimData </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const GlobalIdSet &amp;&#160;</td>
+          <td class="paramname"><em>globalIdSet</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -637,141 +669,66 @@ template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a7ee772fd93da79e9b54113041215e072" name="a7ee772fd93da79e9b54113041215e072"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ee772fd93da79e9b54113041215e072">&#9670;&nbsp;</a></span>jacobianInverseTransposed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a94f7733ba4b30ca5674f0031961370ae">JacobianInverseTransposed</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::jacobianInverseTransposed </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The Jacobian matrix of the mapping from the reference element to this element. </p>
-
-</div>
-</div>
-<a id="a7032015feaae4057e539b61aa311250f" name="a7032015feaae4057e539b61aa311250f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7032015feaae4057e539b61aa311250f">&#9670;&nbsp;</a></span>jacobianTransposed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a11af64bffe015b3307e1f49f81b4fb21">JacobianTransposed</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::jacobianTransposed </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>local</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the transposed of the Jacobian. </p>
-
-</div>
-</div>
-<a id="a513b266fe78c385ba9f1fb4c94822b20" name="a513b266fe78c385ba9f1fb4c94822b20"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a513b266fe78c385ba9f1fb4c94822b20">&#9670;&nbsp;</a></span>local()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/df7/a01457.html#a47d06a8dd76accbbe215215b477f4e75">LocalCoordinate</a> <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::local </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/df7/a01457.html#a1a0a78cff050d0a20e8c26d40faae299">GlobalCoordinate</a> &amp;&#160;</td>
-          <td class="paramname"><em>global</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Maps a global coordinate within the element to a local coordinate in its reference element. </p>
-
-</div>
-</div>
-<a id="a8d791e9f6b1c291e72bfcbd392581ed1" name="a8d791e9f6b1c291e72bfcbd392581ed1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d791e9f6b1c291e72bfcbd392581ed1">&#9670;&nbsp;</a></span>type()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">GeometryType <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::type </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Return the element type identifier. </p>
+<p>Get the trim data for a given element and global ID set. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">EntityType</td><td>Type of the entity. </td></tr>
+    <tr><td class="paramname">GlobalIdSet</td><td>Type of the global ID set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The entity for which trim data is requested. </td></tr>
+    <tr><td class="paramname">globalIdSet</td><td>The global ID set associated with the element. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="../../d1/d72/a00204.html">Trim</a> data for the element if available, std::nullopt otherwise. </dd></dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad6937f00d43a937ba4b28aed3c15ab38" name="ad6937f00d43a937ba4b28aed3c15ab38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6937f00d43a937ba4b28aed3c15ab38">&#9670;&nbsp;</a></span>codim</h2>
+<a id="ad9f6ffd9b71ad1b49e66816404d4b527" name="ad9f6ffd9b71ad1b49e66816404d4b527"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9f6ffd9b71ad1b49e66816404d4b527">&#9670;&nbsp;</a></span>isAlwaysTrivial</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::codim = coorddim - <a class="el" href="../../da/df7/a01457.html#a19095e9ce529e4677a0fe39b7aeffa1c">mydimension</a></td>
+          <td class="memname">constexpr bool <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::isAlwaysTrivial = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Boolean indicating if the trimming is always trivial, no trimming or simple deletion of element. </p>
+
+</div>
+</div>
+<a id="ac38508428f4ef14893ba2d0e626d19b0" name="ac38508428f4ef14893ba2d0e626d19b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38508428f4ef14893ba2d0e626d19b0">&#9670;&nbsp;</a></span>isLocalGeometryLinear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::isLocalGeometryLinear = codim == 0</td>
         </tr>
       </table>
   </td>
@@ -781,21 +738,23 @@ template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="
 </table>
 </div><div class="memdoc">
 
+<p>Boolean for the linearity of the local geometry. For codim==0, the parameter geometry is linear. </p>
+
 </div>
 </div>
-<a id="af1245f24f092dff5c329c17631824694" name="af1245f24f092dff5c329c17631824694"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af1245f24f092dff5c329c17631824694">&#9670;&nbsp;</a></span>coorddimension</h2>
+<a id="aec3d5db121c0debf528fd7c94431ad9d" name="aec3d5db121c0debf528fd7c94431ad9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec3d5db121c0debf528fd7c94431ad9d">&#9670;&nbsp;</a></span>mydimension</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
+template&lt;int dim, typename ScalarType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::coorddimension = coorddim</td>
+          <td class="memname">constexpr int <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::Trimmer</a>&lt; dim, ScalarType &gt;::mydimension = dim</td>
         </tr>
       </table>
   </td>
@@ -805,41 +764,20 @@ template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="
 </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a19095e9ce529e4677a0fe39b7aeffa1c" name="a19095e9ce529e4677a0fe39b7aeffa1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19095e9ce529e4677a0fe39b7aeffa1c">&#9670;&nbsp;</a></span>mydimension</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int mydim_, int coorddim, typename ScalarType , <a class="el" href="../../db/d53/a00202.html#a732e3f39cf34394d88364942fc6b941f">LocalGeometryTag</a> localGeometryTag&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="../../da/df7/a01457.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry</a>&lt; mydim_, coorddim, ScalarType, localGeometryTag &gt;::mydimension = mydim_</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
+<p>Dimension of the patch. </p>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="../../d5/d16/a00029_source.html">trimmedlocalgeometry.hh</a></li>
+<li><a class="el" href="../../d4/db9/a02918_source.html">defaulttrimmer/trimmer.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d8/d00/a00186.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/daa/a00187.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../db/d53/a00202.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../da/df7/a01457.html">TrimmedLocalGeometry</a></li>
+    <li class="navelem"><a class="el" href="../../d8/d00/a00186.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/daa/a00187.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../db/d53/a00202.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../da/df7/a01457.html">Trimmer</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

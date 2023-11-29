@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['concepts_2ehh_0',['concepts.hh',['../df/dfc/a02908.html',1,'']]],
+  ['concepts_2ehh_0',['concepts.hh',['../dd/d3f/a02912.html',1,'']]],
   ['hasbackuprestorefacilities_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20trimmertype_2c_20scalartype_20_3e_20_3e_20_3e_1',['hasBackupRestoreFacilities&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt; &gt;',['../de/d1d/a01105.html',1,'Dune::Capabilities']]],
   ['hasbackuprestorefacilities_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20trimmertype_2c_20scalartype_20_3e_20_3e_2',['hasBackupRestoreFacilities&lt; IGANEW::PatchGrid&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt;',['../de/d99/a01101.html',1,'Dune::Capabilities']]],
   ['hasentity_3c_20const_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20trimmertype_2c_20scalartype_20_3e_20_3e_2c_20codim_20_3e_3',['hasEntity&lt; const Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt;, codim &gt;',['../d0/dc9/a01065.html',1,'Dune::Capabilities']]],
@@ -14,7 +14,7 @@ var searchData=
   ['hend_11',['hend',['../d3/d10/a01189.html#ac51c34fcc4ea0e5792141586e5488a77',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
   ['hessian_12',['Hessian',['../d6/da1/a01233.html#a6d86a57ccdd8c1da68f9a0eb235eb33a',1,'Dune::IGANEW::PatchGridLocalGeometry']]],
   ['hessian_13',['hessian',['../da/deb/a00189.html#a7693ef58b9b466df6285facbe588e2e7',1,'Dune::IGANEW::GeometryKernel']]],
-  ['hessian_14',['Hessian',['../da/df7/a01457.html#a7ba54cc80df1b932d87977a8763fb2fe',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry']]],
+  ['hessian_14',['Hessian',['../dc/d60/a01461.html#a7ba54cc80df1b932d87977a8763fb2fe',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry']]],
   ['hessian_15',['hessian',['../d7/d46/a01045.html#aee23e7a6568f8d7253faa32776952eff',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::hessian()'],['../dc/d99/a01053.html#a7dd916bd1f0e7c801809ab67165137b3',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::hessian()'],['../de/df7/a01201.html#a08a9b28640f8623d5de462f5e5be3e12',1,'Dune::IGANEW::PatchGridGeometry::hessian(const LocalCoordinate &amp;local) const']]],
   ['hessian_16',['Hessian',['../de/df7/a01201.html#a9c70ce8f0fce6a8f1da7ec5f468d43e5',1,'Dune::IGANEW::PatchGridGeometry::Hessian()'],['../dc/d99/a01053.html#a81af9b2186c22f345df8c7dd09b7049e',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::Hessian()'],['../d7/d46/a01045.html#a7a08b1313e9df7edeb0575148d806df1',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::Hessian()']]],
   ['hierarchiciterator_17',['HierarchicIterator',['../d3/d10/a01189.html#abebfdd624383b410dd6c8107d2e641bf',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
@@ -24,7 +24,7 @@ var searchData=
   ['hostgrid_21',['HostGrid',['../de/d61/a01205.html#a12c6b2abee31a1b693ea752926891fc9',1,'Dune::IGANEW::PatchGridLevelIndexSet']]],
   ['hostgridaccess_22',['HostGridAccess',['../d9/d25/a01157.html',1,'Dune::IGANEW']]],
   ['hostgridlocalgeometrytype_23',['HostGridLocalGeometryType',['../d6/da1/a01233.html#a1553ec79efe39a8136744916d9c6ff20',1,'Dune::IGANEW::PatchGridLocalGeometry']]],
-  ['hypersurfbegin_24',['hyperSurfBegin',['../d2/d41/a01493.html#a9722a77ba05269bc6fc6d86d3baed285',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['hypersurfend_25',['hyperSurfEnd',['../d2/d41/a01493.html#aa44cdf11cabb8f75b093b2b6c9cd917e',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['patchgrid_2ehh_26',['patchgrid.hh',['../d5/d1c/a02902.html',1,'']]]
+  ['hypersurfbegin_24',['hyperSurfBegin',['../db/d1e/a01497.html#a9722a77ba05269bc6fc6d86d3baed285',1,'Dune::IGANEW::MultiDimensionalNet']]],
+  ['hypersurfend_25',['hyperSurfEnd',['../db/d1e/a01497.html#aa44cdf11cabb8f75b093b2b6c9cd917e',1,'Dune::IGANEW::MultiDimensionalNet']]],
+  ['patchgrid_2ehh_26',['patchgrid.hh',['../d6/d1d/a02906.html',1,'']]]
 ];

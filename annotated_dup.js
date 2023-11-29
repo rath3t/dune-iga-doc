@@ -56,38 +56,39 @@ var annotated_dup =
       ] ],
       [ "IGANEW", "d6/daa/a00187.html", [
         [ "DefaultTrim", "db/d53/a00202.html", [
-          [ "ElementTrimData", "d9/db0/a01437.html", "d9/db0/a01437" ],
-          [ "Parameter", "dc/d60/a01461.html", "dc/d60/a01461" ],
-          [ "PatchTrimData", "d5/df9/a01441.html", null ],
-          [ "TrimmedLocalGeometry", "da/df7/a01457.html", "da/df7/a01457" ],
+          [ "ElementTrimData", "d5/df9/a01441.html", null ],
+          [ "Parameter", "d4/dfd/a01465.html", "d4/dfd/a01465" ],
+          [ "PatchTrimData", "d9/db0/a01437.html", null ],
+          [ "TrimmedLocalGeometry", "dc/d60/a01461.html", "dc/d60/a01461" ],
+          [ "TrimmedParameterSpaceGridEntity", "d9/dae/a01453.html", "d9/dae/a01453" ],
           [ "TrimmedReferenceElement", "d9/d6f/a01445.html", "d9/d6f/a01445" ],
-          [ "Trimmer", "d9/dae/a01453.html", "d9/dae/a01453" ]
+          [ "Trimmer", "da/df7/a01457.html", "da/df7/a01457" ]
         ] ],
         [ "GeometryKernel", "da/deb/a00189.html", [
           [ "NURBSPatch", "d7/d46/a01045.html", "d7/d46/a01045" ],
           [ "PatchGeometryLocalView", "dc/d99/a01053.html", "dc/d99/a01053" ]
         ] ],
         [ "IdentityTrim", "de/d79/a00203.html", [
-          [ "ElementTrimData", "d9/d8b/a01469.html", null ],
-          [ "ElementTrimDataContainer", "de/d13/a01473.html", null ],
-          [ "Parameter", "d4/dfd/a01465.html", null ],
-          [ "PatchTrimData", "d8/d67/a01477.html", null ],
-          [ "Trimmer", "d1/de4/a01481.html", "d1/de4/a01481" ]
+          [ "ElementTrimData", "de/d13/a01473.html", null ],
+          [ "ElementTrimDataContainer", "d8/d67/a01477.html", null ],
+          [ "Parameter", "d9/d8b/a01469.html", null ],
+          [ "PatchTrimData", "d1/de4/a01481.html", null ],
+          [ "Trimmer", "d4/d39/a01485.html", "d4/d39/a01485" ]
         ] ],
         [ "Splines", "d3/db1/a00200.html", [
           [ "BsplineBasis", "d4/d20/a01421.html", "d4/d20/a01421" ],
           [ "Nurbs", "db/df2/a01425.html", "db/df2/a01425" ]
         ] ],
         [ "Trim", "d1/d72/a00204.html", [
-          [ "LocalGeometryVariant", "d4/d39/a01485.html", "d4/d39/a01485" ]
+          [ "LocalGeometryVariant", "d2/dac/a01489.html", "d2/dac/a01489" ]
         ] ],
         [ "Utilities", "da/d15/a00188.html", [
           [ "Domain", "d2/d57/a01033.html", "d2/d57/a01033" ]
         ] ],
         [ "ControlPoint", "d0/daa/a01029.html", "d0/daa/a01029" ],
         [ "HostGridAccess", "d9/d25/a01157.html", null ],
-        [ "MultiDimensionalNet", "d2/d41/a01493.html", "d2/d41/a01493" ],
-        [ "MultiDimensionalNetIndex", "db/d1e/a01497.html", "db/d1e/a01497" ],
+        [ "MultiDimensionalNet", "db/d1e/a01497.html", "db/d1e/a01497" ],
+        [ "MultiDimensionalNetIndex", "db/d2c/a01501.html", "db/d2c/a01501" ],
         [ "NURBSPatchData", "d2/d9b/a01433.html", "d2/d9b/a01433" ],
         [ "PatchGrid", "d8/d92/a01165.html", "d8/d92/a01165" ],
         [ "PatchGridEntity", "d7/daf/a01169.html", "d7/daf/a01169" ],
@@ -123,12 +124,12 @@ var annotated_dup =
     ] ],
     [ "iga", "de/dd2/a00207.html", [
       [ "basis", "dd/dc1/a00212.html", [
-        [ "Nurbs", "db/d06/a01509.html", "db/d06/a01509" ]
+        [ "Nurbs", "d0/d62/a01513.html", "d0/d62/a01513" ]
       ] ]
     ] ],
     [ "BoundaryPatchEnclosingVerticesPropertyTrimmed", "de/daf/a01417.html", "de/daf/a01417" ],
     [ "EnableLevelIntersectionIteratorCheck", "d6/d6e/a01137.html", null ],
     [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, TrimmerType, ScalarType > >", "d9/d65/a01145.html", "d9/d65/a01145" ],
-    [ "is_instantiation_of", "db/d2c/a01501.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "dc/dce/a01505.html", null ]
+    [ "is_instantiation_of", "dc/dce/a01505.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "db/d06/a01509.html", null ]
 ];

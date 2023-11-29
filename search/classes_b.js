@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameter_0',['Parameter',['../dc/d60/a01461.html',1,'Dune::IGANEW::DefaultTrim::Parameter'],['../d4/dfd/a01465.html',1,'Dune::IGANEW::IdentityTrim::Parameter']]],
+  ['parameter_0',['Parameter',['../d4/dfd/a01465.html',1,'Dune::IGANEW::DefaultTrim::Parameter'],['../d9/d8b/a01469.html',1,'Dune::IGANEW::IdentityTrim::Parameter']]],
   ['patchgeometrylocalview_1',['PatchGeometryLocalView',['../dc/d99/a01053.html',1,'Dune::IGANEW::GeometryKernel']]],
   ['patchgrid_2',['PatchGrid',['../d8/d92/a01165.html',1,'Dune::IGANEW']]],
   ['patchgridentity_3',['PatchGridEntity',['../d7/daf/a01169.html',1,'Dune::IGANEW']]],
@@ -28,6 +28,6 @@ var searchData=
   ['patchgridlocalgeometry_25',['PatchGridLocalGeometry',['../d6/da1/a01233.html',1,'Dune::IGANEW']]],
   ['patchgridlocalidset_26',['PatchGridLocalIdSet',['../da/d19/a01217.html',1,'Dune::IGANEW']]],
   ['patchgridlocalidset_3c_20const_20dune_3a_3aiganew_3a_3apatchgrid_20_3e_27',['PatchGridLocalIdSet&lt; const Dune::IGANEW::PatchGrid &gt;',['../da/d19/a01217.html',1,'Dune::IGANEW']]],
-  ['patchtrimdata_28',['PatchTrimData',['../d5/df9/a01441.html',1,'Dune::IGANEW::DefaultTrim::PatchTrimData&lt; mydim_, ScalarType &gt;'],['../d8/d67/a01477.html',1,'Dune::IGANEW::IdentityTrim::PatchTrimData&lt; dim, ScalarType &gt;']]],
-  ['patchtrimdata_3c_20parameterspacegrid_3a_3adimension_2c_20typename_20parameterspacegrid_3a_3actype_20_3e_29',['PatchTrimData&lt; ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype &gt;',['../d5/df9/a01441.html',1,'Dune::IGANEW::DefaultTrim']]]
+  ['patchtrimdata_28',['PatchTrimData',['../d9/db0/a01437.html',1,'Dune::IGANEW::DefaultTrim::PatchTrimData&lt; mydim_, ScalarType &gt;'],['../d1/de4/a01481.html',1,'Dune::IGANEW::IdentityTrim::PatchTrimData&lt; dim, ScalarType &gt;']]],
+  ['patchtrimdata_3c_20parameterspacegrid_3a_3adimension_2c_20typename_20parameterspacegrid_3a_3actype_20_3e_29',['PatchTrimData&lt; ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype &gt;',['../d9/db0/a01437.html',1,'Dune::IGANEW::DefaultTrim']]]
 ];

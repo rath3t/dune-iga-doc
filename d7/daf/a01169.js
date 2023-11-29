@@ -3,6 +3,8 @@ var a01169 =
     [ "ctype", "d7/daf/a01169.html#a91fc41e3ae2d976bb855584c7bff0e4f", null ],
     [ "EntitySeed", "d7/daf/a01169.html#a3696149d4e2ce322781b8c4d245425b5", null ],
     [ "Geometry", "d7/daf/a01169.html#a1235fa6b88ceaa8b9aee90b82bb49f87", null ],
+    [ "ParameterSpaceGeometry", "d7/daf/a01169.html#afe9bbb7c7181537fa7eb0c45b2ede7bc", null ],
+    [ "ParameterSpaceGridEntity", "d7/daf/a01169.html#acfcee8a49f71ccb1dbca215c89e5bc8c", null ],
     [ "TrimmerType", "d7/daf/a01169.html#a99c6f5cc94110ca94ccab0ca473a1cad", null ],
     [ "PatchGridEntity", "d7/daf/a01169.html#a57bbe4324f9460b21fe8f6b36fda870b", null ],
     [ "PatchGridEntity", "d7/daf/a01169.html#a33417610470f7519150d10ac894cb290", null ],

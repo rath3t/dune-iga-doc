@@ -1,5 +1,5 @@
 var a00155 =
 [
-    [ "is_instantiation_of< Template, T >", "db/d2c/a01501.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "dc/dce/a01505.html", null ]
+    [ "is_instantiation_of< Template, T >", "dc/dce/a01505.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "db/d06/a01509.html", null ]
 ];

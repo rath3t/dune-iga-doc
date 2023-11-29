@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: elementtrimdata.hh Source File</title>
+<title>dune-iga: trimmedentity.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('d3/d52/a00023_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">elementtrimdata.hh</div></div>
+  <div class="headertitle"><div class="title">trimmedentity.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d3/d52/a00023.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
@@ -99,18 +99,18 @@ $(document).ready(function(){initNavTree('d3/d52/a00023_source.html','../../'); 
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d8/d00/a00186.html">Dune</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>  <span class="keyword">namespace </span>IGANEW {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../db/d53/a00202.html">    6</a></span>    <span class="keyword">namespace </span>DefaultTrim {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">namespace </span>DefaultTrim {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// : TrimPatchEntitiy</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>      <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> mydim_, <span class="keyword">typename</span> ScalarType&gt;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d9/db0/a01437.html">    9</a></span>      <span class="keyword">struct </span><a class="code hl_struct" href="../../d9/db0/a01437.html">ElementTrimData</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d9/db0/a01437.html#a9558efc29622521d5faa9a940511e041">   10</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="../../d9/db0/a01437.html#a9558efc29622521d5faa9a940511e041">ctype</a> = ScalarType;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html">    9</a></span>      <span class="keyword">struct </span><a class="code hl_struct" href="../../d9/dae/a01453.html">TrimmedParameterSpaceGridEntity</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html#a965f992942272431726be777a878c6ba">   10</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="../../d9/dae/a01453.html#a965f992942272431726be777a878c6ba">ctype</a> = ScalarType;</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d9/db0/a01437.html#a136f752604fc79f2226e0514e7e1a8d5">   12</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d9/db0/a01437.html#a136f752604fc79f2226e0514e7e1a8d5">mydimension</a> = mydim_;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d9/db0/a01437.html#a3c8085c3ae9271f052378682cc580827">   13</a></span>        [[nodiscard]] GeometryType <a class="code hl_function" href="../../d9/db0/a01437.html#a3c8085c3ae9271f052378682cc580827">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> GeometryTypes::cube(<a class="code hl_variable" href="../../d9/db0/a01437.html#a136f752604fc79f2226e0514e7e1a8d5">mydimension</a>); }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d9/db0/a01437.html#ae8f28814d577d14ac2a9106f33666834">   14</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="../../d9/db0/a01437.html#ae8f28814d577d14ac2a9106f33666834">LocalCoordinate</a> = FieldVector&lt;ctype, mydimension&gt;;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html#a3b9b9a6302da7dee251bb5db937295a7">   12</a></span>        <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d9/dae/a01453.html#a3b9b9a6302da7dee251bb5db937295a7">mydimension</a> = mydim_;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html#a35e2265f0dc69b7cfac3c44e106cdd83">   13</a></span>        [[nodiscard]] GeometryType <a class="code hl_function" href="../../d9/dae/a01453.html#a35e2265f0dc69b7cfac3c44e106cdd83">type</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> GeometryTypes::cube(<a class="code hl_variable" href="../../d9/dae/a01453.html#a3b9b9a6302da7dee251bb5db937295a7">mydimension</a>); }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html#a38b11f2cc10d40c00abc5fb3c58a7b01">   14</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="../../d9/dae/a01453.html#a38b11f2cc10d40c00abc5fb3c58a7b01">LocalCoordinate</a> = FieldVector&lt;ctype, mydimension&gt;;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d9/db0/a01437.html#aec878eb021792205a65c8a254b8c5d0e">   16</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/db0/a01437.html#aec878eb021792205a65c8a254b8c5d0e">checkInside</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/db0/a01437.html#ae8f28814d577d14ac2a9106f33666834">LocalCoordinate</a>&amp; local)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>          <span class="comment">// TODO this functions could be a bit complicated basically we have to make sure the point lies inside the</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html#a28204565c04018a65466a4a9e9b3c34b">   16</a></span>        <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d9/dae/a01453.html#a28204565c04018a65466a4a9e9b3c34b">checkInside</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/dae/a01453.html#a38b11f2cc10d40c00abc5fb3c58a7b01">LocalCoordinate</a>&amp; local)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>          <span class="comment">// @todo this functions could be a bit complicated basically we have to make sure the point lies inside the</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>          <span class="comment">// outer boundary loop, but outside the inner loops thus we have to implement something as</span></div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>          <span class="comment">// https://en.wikipedia.org/wiki/Point_in_polygon#:~:text=One%20simple%20way%20of%20finding,an%20even%20number%20of%20times.</span></div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>          <span class="comment">//  maybe what we are searching for is already existing in Clipperlib</span></div>
@@ -118,27 +118,37 @@ $(document).ready(function(){initNavTree('d3/d52/a00023_source.html','../../'); 
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>          <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>        }</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="comment">// outer loops</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="comment">// inner loops ....</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>        <span class="comment">// triangulation...</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      };</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }  <span class="comment">// namespace DefaultTrim</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  }    <span class="comment">// namespace IGANEW</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}  <span class="comment">// namespace Dune</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">template</span>&lt;<span class="keywordtype">int</span> codim&gt;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d9/dae/a01453.html#a5ebbe8dc36e1dbb6f32ce309684ce7e2">   27</a></span>        <span class="keyword">auto</span> <a class="code hl_function" href="../../d9/dae/a01453.html#a5ebbe8dc36e1dbb6f32ce309684ce7e2">subEntity</a>(<span class="keywordtype">int</span> i ) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>          <span class="keyword">auto</span> edgepatchGeometry =</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>            <span class="keywordflow">return</span>  <span class="keyword">typename</span> GridImp::template Codim&lt;codim&gt;::Entity( GridImp* patchGrid,edgepatchGeometry);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>        }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keyword">using </span>EdgesType=</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        std::vector&lt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        <span class="comment">// outer loops</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        <span class="comment">// inner loops ....</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="comment">// triangulation...</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }  <span class="comment">// namespace DefaultTrim</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }    <span class="comment">// namespace IGANEW</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}  <span class="comment">// namespace Dune</span></div>
 <div class="ttc" id="aa00186_html"><div class="ttname"><a href="../../d8/d00/a00186.html">Dune</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa01437_html"><div class="ttname"><a href="../../d9/db0/a01437.html">Dune::IGANEW::DefaultTrim::ElementTrimData</a></div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:9</div></div>
-<div class="ttc" id="aa01437_html_a136f752604fc79f2226e0514e7e1a8d5"><div class="ttname"><a href="../../d9/db0/a01437.html#a136f752604fc79f2226e0514e7e1a8d5">Dune::IGANEW::DefaultTrim::ElementTrimData::mydimension</a></div><div class="ttdeci">static constexpr int mydimension</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:12</div></div>
-<div class="ttc" id="aa01437_html_a3c8085c3ae9271f052378682cc580827"><div class="ttname"><a href="../../d9/db0/a01437.html#a3c8085c3ae9271f052378682cc580827">Dune::IGANEW::DefaultTrim::ElementTrimData::type</a></div><div class="ttdeci">GeometryType type() const</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:13</div></div>
-<div class="ttc" id="aa01437_html_a9558efc29622521d5faa9a940511e041"><div class="ttname"><a href="../../d9/db0/a01437.html#a9558efc29622521d5faa9a940511e041">Dune::IGANEW::DefaultTrim::ElementTrimData::ctype</a></div><div class="ttdeci">ScalarType ctype</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:10</div></div>
-<div class="ttc" id="aa01437_html_ae8f28814d577d14ac2a9106f33666834"><div class="ttname"><a href="../../d9/db0/a01437.html#ae8f28814d577d14ac2a9106f33666834">Dune::IGANEW::DefaultTrim::ElementTrimData::LocalCoordinate</a></div><div class="ttdeci">FieldVector&lt; ctype, mydimension &gt; LocalCoordinate</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:14</div></div>
-<div class="ttc" id="aa01437_html_aec878eb021792205a65c8a254b8c5d0e"><div class="ttname"><a href="../../d9/db0/a01437.html#aec878eb021792205a65c8a254b8c5d0e">Dune::IGANEW::DefaultTrim::ElementTrimData::checkInside</a></div><div class="ttdeci">bool checkInside(const LocalCoordinate &amp;local) const</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:16</div></div>
+<div class="ttc" id="aa01453_html"><div class="ttname"><a href="../../d9/dae/a01453.html">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity</a></div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:9</div></div>
+<div class="ttc" id="aa01453_html_a28204565c04018a65466a4a9e9b3c34b"><div class="ttname"><a href="../../d9/dae/a01453.html#a28204565c04018a65466a4a9e9b3c34b">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::checkInside</a></div><div class="ttdeci">bool checkInside(const LocalCoordinate &amp;local) const</div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:16</div></div>
+<div class="ttc" id="aa01453_html_a35e2265f0dc69b7cfac3c44e106cdd83"><div class="ttname"><a href="../../d9/dae/a01453.html#a35e2265f0dc69b7cfac3c44e106cdd83">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::type</a></div><div class="ttdeci">GeometryType type() const</div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:13</div></div>
+<div class="ttc" id="aa01453_html_a38b11f2cc10d40c00abc5fb3c58a7b01"><div class="ttname"><a href="../../d9/dae/a01453.html#a38b11f2cc10d40c00abc5fb3c58a7b01">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::LocalCoordinate</a></div><div class="ttdeci">FieldVector&lt; ctype, mydimension &gt; LocalCoordinate</div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:14</div></div>
+<div class="ttc" id="aa01453_html_a3b9b9a6302da7dee251bb5db937295a7"><div class="ttname"><a href="../../d9/dae/a01453.html#a3b9b9a6302da7dee251bb5db937295a7">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::mydimension</a></div><div class="ttdeci">static constexpr int mydimension</div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:12</div></div>
+<div class="ttc" id="aa01453_html_a5ebbe8dc36e1dbb6f32ce309684ce7e2"><div class="ttname"><a href="../../d9/dae/a01453.html#a5ebbe8dc36e1dbb6f32ce309684ce7e2">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::subEntity</a></div><div class="ttdeci">auto subEntity(int i)</div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:27</div></div>
+<div class="ttc" id="aa01453_html_a965f992942272431726be777a878c6ba"><div class="ttname"><a href="../../d9/dae/a01453.html#a965f992942272431726be777a878c6ba">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::ctype</a></div><div class="ttdeci">ScalarType ctype</div><div class="ttdef"><b>Definition:</b> trimmedentity.hh:10</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../d3/d52/a00023.html">elementtrimdata.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../d3/d52/a00023.html">trimmedentity.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
