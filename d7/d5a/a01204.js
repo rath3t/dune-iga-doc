@@ -1,7 +1,6 @@
 var a01204 =
 [
     [ "ctype", "d7/d5a/a01204.html#a2c05910d347b138108521944415e1122", null ],
-    [ "GeometryLocalView", "d7/d5a/a01204.html#a4e95c6688aadb5f0f8d3196f7b293290", null ],
     [ "GlobalCoordinate", "d7/d5a/a01204.html#ad2d3b5a4c98c0fc88cdc396dc12060bb", null ],
     [ "Hessian", "d7/d5a/a01204.html#a6d86a57ccdd8c1da68f9a0eb235eb33a", null ],
     [ "HostGridLocalGeometryType", "d7/d5a/a01204.html#a1553ec79efe39a8136744916d9c6ff20", null ],
@@ -11,11 +10,12 @@ var a01204 =
     [ "JacobianTransposed", "d7/d5a/a01204.html#ae8ce5a05e35d9fe0a2474c9d1ccb1bd0", null ],
     [ "LocalCoordinate", "d7/d5a/a01204.html#acda99e2f2545c5f29058308e9b24f8e5", null ],
     [ "LocalCoordinateInPatch", "d7/d5a/a01204.html#a0648d20ff98b1267ca4f72c2fc8a3770", null ],
+    [ "LocalGeometry", "d7/d5a/a01204.html#ac50a303ef8de8cd4b98f0c26a0d7a289", null ],
     [ "LocalHostGeometry", "d7/d5a/a01204.html#aa811b43f74db21bf64fd4684ffc72af6", null ],
     [ "PatchGeometry", "d7/d5a/a01204.html#a675c8047140e674108f7ac9c00a63f11", null ],
     [ "TrimmerType", "d7/d5a/a01204.html#a636bfe6d2c5a56f78677f11a6f523afa", null ],
     [ "Volume", "d7/d5a/a01204.html#a80ee5f15014e6c60dcdb5ca0395c0e1a", null ],
-    [ "PatchGridLocalGeometry", "d7/d5a/a01204.html#a578dc1fae29cf86736b3d37dc54bb00d", null ],
+    [ "PatchGridLocalGeometry", "d7/d5a/a01204.html#a95e00fe4572c7589cdf473720289fb53", null ],
     [ "affine", "d7/d5a/a01204.html#ac0d095774cf01b990e81c75aa3f2347c", null ],
     [ "checkInside", "d7/d5a/a01204.html#ab55b231abbdf2055a8f45377082a5161", null ],
     [ "corner", "d7/d5a/a01204.html#afae91dded49b33ec527ed6b2a9848ffe", null ],

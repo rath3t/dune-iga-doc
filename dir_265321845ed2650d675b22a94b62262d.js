@@ -4,5 +4,5 @@ var dir_265321845ed2650d675b22a94b62262d =
     [ "patchtrimdata.hh", "dc/d87/a00032.html", "dc/d87/a00032" ],
     [ "referenceelement.hh", "d6/d5b/a00026.html", "d6/d5b/a00026" ],
     [ "trimmedlocalgeometry.hh", "d5/d16/a00029.html", "d5/d16/a00029" ],
-    [ "defaulttrimmer/trimmer.hh", "d5/d85/a02818.html", "d5/d85/a02818" ]
+    [ "defaulttrimmer/trimmer.hh", "d4/d97/a02816.html", "d4/d97/a02816" ]
 ];

@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['notype_0',['NoType',['../d5/de9/a00176.html#a7e1d9b847ff31435dac790c39d02451fa7605933166d0cfdbd2af7bd1522c0b74',1,'Dune::IGA::Ibra']]],
-  ['nurbscurvegeometry2d_1',['NurbsCurveGeometry2D',['../d5/de9/a00176.html#a7e1d9b847ff31435dac790c39d02451fa9dc5fac3529c3d8438040dac00d68d0f',1,'Dune::IGA::Ibra']]],
-  ['nurbssurfacegeometry3d_2',['NurbsSurfaceGeometry3D',['../d5/de9/a00176.html#a7e1d9b847ff31435dac790c39d02451fadbcd2df59919078c8999bcf4522f3a0f',1,'Dune::IGA::Ibra']]]
+  ['json_0',['json',['../d2/d94/a00184.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54',1,'Dune::Python::IGA']]]
 ];

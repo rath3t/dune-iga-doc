@@ -10,7 +10,7 @@ var a01172 =
     [ "JacobianTransposed", "d6/db6/a01172.html#a339a1e4e3d27215babd97291101f85b2", null ],
     [ "LocalCoordinate", "d6/db6/a01172.html#a2a9fe0c40fc103e56353f80aed7696cf", null ],
     [ "LocalCoordinateInPatch", "d6/db6/a01172.html#a402073861728cc49d2d86d0434dedebd", null ],
-    [ "ParameterSpaceGeometry", "d6/db6/a01172.html#a66be6832d715c2c977dc3d55b5c4770a", null ],
+    [ "ParameterSpaceGeometry", "d6/db6/a01172.html#a807fada11eba6bf2a06a619c1484cbf1", null ],
     [ "PatchGeometry", "d6/db6/a01172.html#a523eac2cc0966df074c2c37b4b95497f", null ],
     [ "TrimmerType", "d6/db6/a01172.html#ab0b5dacaa7f05deaa296fbea55062673", null ],
     [ "Volume", "d6/db6/a01172.html#a76e40705b38a396b4aad362aa1da7bc0", null ],

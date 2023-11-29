@@ -5,6 +5,6 @@ var searchData=
   ['igadatacollector_2ehh_2',['igadatacollector.hh',['../d4/d3a/a00101.html',1,'']]],
   ['igahelpers_2ehh_3',['igahelpers.hh',['../d4/d3e/a00116.html',1,'']]],
   ['igarefinedgeometries_2ehh_4',['igarefinedgeometries.hh',['../d4/d81/a00110.html',1,'']]],
-  ['nurbspatchdata_2ehh_5',['nurbspatchdata.hh',['../dd/dfa/a02824.html',1,'']]],
-  ['trimmer_2ehh_6',['trimmer.hh',['../db/de9/a02821.html',1,'']]]
+  ['nurbspatchdata_2ehh_5',['nurbspatchdata.hh',['../d1/de5/a02822.html',1,'']]],
+  ['trimmer_2ehh_6',['trimmer.hh',['../d6/d6c/a02819.html',1,'']]]
 ];

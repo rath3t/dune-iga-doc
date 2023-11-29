@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['type_0',['Type',['../d5/de9/a00176.html#a7e1d9b847ff31435dac790c39d02451f',1,'Dune::IGA::Ibra']]]
+  ['reader_0',['Reader',['../d2/d94/a00184.html#a1ef280a2762fbf1b3a46535ade3f8172',1,'Dune::Python::IGA']]]
 ];

@@ -11,10 +11,8 @@ var concepts =
           [ "MultiplyAssignAble", "da/d36/a01482.html", null ],
           [ "DivideAssignAble", "d2/dc4/a01483.html", null ],
           [ "DivideAble", "d2/d21/a01484.html", null ],
-          [ "NurbsGeometry", "d4/d39/a01485.html", null ],
-          [ "TrimDataContainer", "d0/d34/a01486.html", null ],
-          [ "Trimmer", "dc/d47/a01487.html", null ],
-          [ "This", "d2/daa/a01488.html", null ]
+          [ "TrimDataContainer", "d4/d39/a01485.html", null ],
+          [ "Trimmer", "d0/d34/a01486.html", null ]
         ] ]
       ] ]
     ] ]
