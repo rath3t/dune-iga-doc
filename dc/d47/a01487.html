@@ -98,14 +98,44 @@ $(document).ready(function(){initNavTree('dc/d47/a01487.html','../../'); initRes
 <p><code>#include &lt;<a class="el" href="../../d3/da7/a02815_source.html">dune/iga/trimmer/concepts.hh</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
 <div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../dc/d47/a01487.html">Dune::IGANEW::Concept::Trimmer</a> =  <a class="code hl_concept" href="../../d0/d34/a01486.html">TrimDataContainer&lt;typename T::TrimDataContainer&gt;</a> and <span class="keyword">requires</span> {</div>
-<div class="line">    <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
-<div class="line">    <span class="keyword">typename</span> T::TrimDataContainer;</div>
-<div class="line">    T::isAlwaysTrivial;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../dc/d47/a01487.html">Dune::IGANEW::Concept::Trimmer</a> =  <span class="keyword">requires</span>(T trimmer,</div>
+<div class="line">                                  <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param,</div>
+<div class="line">                                  <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData,</div>
+<div class="line">                                  <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData,</div>
+<div class="line">                                  <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
+<div class="line"> </div>
+<div class="line">    { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
+<div class="line">     <span class="keyword">typename</span> T::ctype ;</div>
+<div class="line">     <span class="keyword">typename</span> T::ParameterSpaceGrid ;</div>
+<div class="line">     <span class="keyword">typename</span> T::ParameterType ;</div>
+<div class="line">     <span class="keyword">typename</span> T::ElementTrimData ;</div>
+<div class="line">     <span class="keyword">typename</span> T::PatchTrimData ;</div>
+<div class="line"> </div>
+<div class="line">    { T() } -&gt; std::convertible_to&lt;T&gt;;  </div>
+<div class="line"> </div>
+<div class="line">    { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line">    { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"> </div>
 <div class="line">    </div>
-<div class="line">  }</div>
-<div class="ttc" id="aa01486_html"><div class="ttname"><a href="../../d0/d34/a01486.html">Dune::IGANEW::Concept::TrimDataContainer</a></div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:6</div></div>
-<div class="ttc" id="aa01487_html"><div class="ttname"><a href="../../dc/d47/a01487.html">Dune::IGANEW::Concept::Trimmer</a></div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:11</div></div>
+<div class="line"> </div>
+<div class="line">    { <span class="keyword">typename</span> T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    { trimmer.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
+<div class="line"> </div>
+<div class="line">    { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line">    { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line"> </div>
+<div class="line"> </div>
+<div class="line">    { trimmer.setup(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">    </div>
+<div class="line"> </div>
+<div class="line">    </div>
+<div class="line">} and Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;</div>
+<div class="ttc" id="aa01487_html"><div class="ttname"><a href="../../dc/d47/a01487.html">Dune::IGANEW::Concept::Trimmer</a></div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

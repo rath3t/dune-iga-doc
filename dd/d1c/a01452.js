@@ -11,6 +11,7 @@ var a01452 =
     [ "Trimmer", "dd/d1c/a01452.html#adf3111d4b4e9bf0264b99df96adc73e7", null ],
     [ "Trimmer", "dd/d1c/a01452.html#a993de4207e7bc3fb17e951aa0cc80764", null ],
     [ "createParameterSpaceGrid", "dd/d1c/a01452.html#a6813780cfa833c5b84f5711736b4813c", null ],
+    [ "globalRefine", "dd/d1c/a01452.html#a97d751633318f4fcd0d637230433071d", null ],
     [ "parameterSpaceGrid", "dd/d1c/a01452.html#a93fb571eda0a2f427b9f2e088b531320", null ],
     [ "parameterSpaceGrid", "dd/d1c/a01452.html#a9948bb5ab11120d4638592d0054eb88c", null ],
     [ "referenceElement", "dd/d1c/a01452.html#a8ce61c1eafaca6d08dec0bdd0b976f42", null ],
