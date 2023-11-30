@@ -8,6 +8,6 @@ var searchData=
   ['trimmedlocalgeometry_5',['TrimmedLocalGeometry',['../df/d5e/a01467.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmedparameterspacegridentity_6',['TrimmedParameterSpaceGridEntity',['../d6/d3b/a01459.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmedreferenceelement_7',['TrimmedReferenceElement',['../d3/dbc/a01451.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmer_8',['Trimmer',['../d7/d42/a01463.html',1,'Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, ScalarType &gt;'],['../d5/d06/a01499.html',1,'Dune::IGANEW::IdentityTrim::Trimmer&lt; dim, ScalarType &gt;']]],
-  ['trimmer_3c_20dim_2c_20double_20_3e_9',['Trimmer&lt; dim, double &gt;',['../d5/d06/a01499.html',1,'Dune::IGANEW::IdentityTrim']]]
+  ['trimmer_8',['Trimmer',['../d7/d42/a01463.html',1,'Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, ScalarType &gt;'],['../d2/d36/a01495.html',1,'Dune::IGANEW::IdentityTrim::Trimmer&lt; dim, ScalarType &gt;']]],
+  ['trimmer_3c_20dim_2c_20double_20_3e_9',['Trimmer&lt; dim, double &gt;',['../d2/d36/a01495.html',1,'Dune::IGANEW::IdentityTrim']]]
 ];

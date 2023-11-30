@@ -1,8 +1,7 @@
 var a00208 =
 [
     [ "ElementTrimData", "d6/d65/a01443.html", null ],
-    [ "ElementTrimDataContainer", "dd/d15/a01471.html", "dd/d15/a01471" ],
-    [ "Parameter", "d7/d1d/a01475.html", "d7/d1d/a01475" ],
+    [ "Parameter", "dd/d15/a01471.html", "dd/d15/a01471" ],
     [ "PatchTrimData", "df/d75/a01447.html", null ],
     [ "TrimmedLocalGeometry", "df/d5e/a01467.html", "df/d5e/a01467" ],
     [ "TrimmedParameterSpaceGridEntity", "d6/d3b/a01459.html", "d6/d3b/a01459" ],
