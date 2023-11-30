@@ -1,5 +1,5 @@
 var namespaces_dup =
 [
-    [ "Dune", "dd/da2/a00192.html", "dd/da2/a00192" ],
-    [ "iga", "d1/de1/a00213.html", "d1/de1/a00213" ]
+    [ "Dune", "d3/d2a/a00195.html", "d3/d2a/a00195" ],
+    [ "iga", "d6/d43/a00216.html", "d6/d43/a00216" ]
 ];

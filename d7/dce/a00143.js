@@ -1,4 +1,5 @@
 var a00143 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d3/d42/a01051.html", "d3/d42/a01051" ]
+    [ "makeCircularArc", "d7/dce/a00143.html#a000e49612164d2b6609e00015a7da1b8", null ],
+    [ "makeCircularArc2D", "d7/dce/a00143.html#af2e971c8404f8415030e1ae459761540", null ]
 ];

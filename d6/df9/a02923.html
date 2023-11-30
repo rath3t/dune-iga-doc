@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbsbasis.hh File Reference</title>
+<title>dune-iga: patchgrid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,84 +93,61 @@ $(document).ready(function(){initNavTree('d6/df9/a02923.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">oldStuff/nurbsbasis.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">hierarchicpatch/patchgrid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The B-spline global function space basis.  
+<p>The PatchGrid class.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;array&gt;</code><br />
-<code>#include &lt;iterator&gt;</code><br />
-<code>#include &lt;limits&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;ranges&gt;</code><br />
-<code>#include &lt;set&gt;</code><br />
-<code>#include &lt;vector&gt;</code><br />
-<code>#include &lt;dune/common/diagonalmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/geometry/type.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/rangegenerators.hh&gt;</code><br />
-<code>#include &lt;dune/functions/functionspacebases/defaultglobalbasis.hh&gt;</code><br />
-<code>#include &lt;dune/functions/functionspacebases/flatmultiindex.hh&gt;</code><br />
-<code>#include &lt;dune/functions/functionspacebases/nodes.hh&gt;</code><br />
-<code>#include &quot;dune/iga/bsplinealgorithms.hh&quot;</code><br />
-<code>#include &quot;dune/iga/nurbsalgorithms.hh&quot;</code><br />
-<code>#include &quot;dune/iga/trim/nurbstrimmer.hh&quot;</code><br />
-<code>#include &quot;dune/iga/utils/concepts.hh&quot;</code><br />
-<code>#include &lt;dune/localfunctions/common/localbasis.hh&gt;</code><br />
-<code>#include &lt;dune/localfunctions/common/localfiniteelementtraits.hh&gt;</code><br />
-<code>#include &lt;dune/localfunctions/common/localkey.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d0d/a02929_source.html">concepts.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d24/a00068_source.html">enums.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d8b/a00059_source.html">traits.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d89/a00071_source.html">patchgridentity.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d09/a00077_source.html">patchgridentityseed.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d2e/a00056_source.html">patchgridfactory.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d03/a00062_source.html">patchgridfwd.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/de0/a00050_source.html">patchgridgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d1f/a00083_source.html">patchgridhierarchiciterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d2d/a00047_source.html">patchgridindexsets.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/dee/a00053_source.html">patchgridintersectioniterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/dab/a00089_source.html">patchgridleafiterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/d32/a00041_source.html">patchgridleveliterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/df9/a00044_source.html">patchgridlocalgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/de1/a00065_source.html">patchgridview.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/parallel/communication.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/grid.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../de/d06/a02938_source.html">dune/iga/trimmer/identitytrimmer/trimmer.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d6/df9/a02923_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dcb/a01263.html">Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LocalBasis class in the sense of dune-localfunctions, presenting the restriction of a B-spline patch to a knot span.  <a href="../../de/dcb/a01263.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/a01170.html">Dune::IGANEW::PatchGridFamily&lt; dim, dimworld, TrimmerType_, ScalarType &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d41/a01267.html">Dune::Functions::NurbsLocalCoefficients&lt; dim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Attaches a shape function to an entity.  <a href="../../d4/d41/a01267.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d39/a01271.html">Dune::Functions::NurbsLocalInterpolation&lt; dim, LB &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local interpolation in the sense of dune-localfunctions, for the B-spline basis on tensor-product grids.  <a href="../../dd/d39/a01271.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d42/a01259.html">Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">LocalFiniteElement in the sense of dune-localfunctions, for the B-spline basis on tensor-product grids.  <a href="../../dd/d42/a01259.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d07/a01155.html">Dune::Functions::NurbsPreBasis&lt; GV, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-basis for B-spline basis.  <a href="../../db/d07/a01155.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a01275.html">Dune::Functions::NurbsNode&lt; GV &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfb/a01174.html">Dune::IGANEW::PatchGrid&lt; dim, dimworld, TrimmerType_, ScalarType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a NURBS grid based on a single NURBS patch.  <a href="../../da/dfb/a01174.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:dd/da2/a00192"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/da2/a00192.html">Dune</a></td></tr>
+<tr class="memitem:d3/d2a/a00195"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2a/a00195.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/db1/a00200"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/db1/a00200.html">Dune::Functions</a></td></tr>
+<tr class="memitem:de/d79/a00203"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d79/a00203.html">Dune::Functions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dd/de3/a00201"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/a00201.html">Dune::Functions::BasisFactory</a></td></tr>
+<tr class="memitem:d7/ded/a00196"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ded/a00196.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a10c3f08f7830f39c003415e65e2a0361"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld&gt; </td></tr>
-<tr class="memitem:a10c3f08f7830f39c003415e65e2a0361"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/de3/a00201.html#a10c3f08f7830f39c003415e65e2a0361">Dune::Functions::BasisFactory::nurbs</a> (const Dune::IGA::NURBSPatchData&lt; dim, dimworld &gt; &amp;data)</td></tr>
-<tr class="memdesc:a10c3f08f7830f39c003415e65e2a0361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a pre-basis factory that can create a B-spline pre-basis.  <a href="../../dd/de3/a00201.html#a10c3f08f7830f39c003415e65e2a0361">More...</a><br /></td></tr>
-<tr class="separator:a10c3f08f7830f39c003415e65e2a0361"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5140df8b1bf39d0c73f6d853a2ec4c87"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/a00201.html#a5140df8b1bf39d0c73f6d853a2ec4c87">Dune::Functions::BasisFactory::nurbs</a> ()</td></tr>
-<tr class="separator:a5140df8b1bf39d0c73f6d853a2ec4c87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The B-spline global function space basis. </p>
+<div class="textblock"><p >The PatchGrid class. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_6a67ce012f0e7d7f20bfc6d5cc3e1475.html">oldStuff</a></li><li class="navelem"><a class="el" href="../../d6/df9/a02923.html">nurbsbasis.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d6/df9/a02923.html">patchgrid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

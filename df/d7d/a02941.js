@@ -1,6 +1,5 @@
 var a02941 =
 [
-    [ "registerControlPoint", "df/d7d/a02941.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "df/d7d/a02941.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
-    [ "registerNurbsPatchData", "df/d7d/a02941.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "d0/de2/a01442.html", "d0/de2/a01442" ],
+    [ "NURBSPatchData", "df/d7d/a02941.html#aee4d8d984f5b9053709e25ff2c1a6265", null ]
 ];

@@ -3,5 +3,5 @@ var dir_4df0bd6c9c69aa67512ad22eda882a96 =
     [ "boundarypatch.hh", "d7/d46/a00002.html", null ],
     [ "grid.hh", "da/d45/a00011.html", null ],
     [ "gridenums.hh", "d4/dee/a00008.html", "d4/dee/a00008" ],
-    [ "python/iga/nurbspatchdata.hh", "df/d7d/a02941.html", "df/d7d/a02941" ]
+    [ "python/iga/nurbspatchdata.hh", "d3/d8d/a02944.html", "d3/d8d/a02944" ]
 ];

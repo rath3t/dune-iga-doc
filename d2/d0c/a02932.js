@@ -1,4 +1,4 @@
 var a02932 =
 [
-    [ "Dune::IGANEW::DefaultTrim::Parameter", "dd/d15/a01471.html", "dd/d15/a01471" ]
+    [ "Dune::IGANEW::Concept::TrimDataContainer", "dc/d93/a01535.html", null ]
 ];

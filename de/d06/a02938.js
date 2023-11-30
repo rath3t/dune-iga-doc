@@ -1,5 +1,7 @@
 var a02938 =
 [
-    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "d7/dfd/a01439.html", "d7/dfd/a01439" ],
-    [ "NURBSPatchData", "de/d06/a02938.html#aee4d8d984f5b9053709e25ff2c1a6265", null ]
+    [ "Dune::IGANEW::IdentityTrim::Parameter", "da/d36/a01482.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::ElementTrimData< mydim_, ScalarType >", "d0/d34/a01486.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainer< ParameterSpaceGrid >", "de/d3c/a01490.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::PatchTrimData< dim, ScalarType >", "d6/d51/a01494.html", null ]
 ];
