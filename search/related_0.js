@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hash_5fvalue_0',['hash_value',['../da/df6/a01454.html#a18b5ca228a3c5e845dd2f21eb585762b',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
+  ['globalidset_3c_20const_20patchgrid_20_3e_0',['GlobalIdSet&lt; const PatchGrid &gt;',['../dd/d75/a01180.html#aca994d2dfe6983fb0b84a47c4f259293',1,'Dune::IGANEW::PatchGrid']]]
 ];

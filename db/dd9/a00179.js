@@ -1,4 +1,7 @@
 var a00179 =
 [
-    [ "PYBIND11_MODULE", "db/dd9/a00179.html#a07648032c5f154e5c22f2da60aa32601", null ]
+    [ "ControlPoint", "db/dd9/a00179.html#a87eb600529940f01930f93b69fb57771", null ],
+    [ "ControlPointNet", "db/dd9/a00179.html#a0aaa76ef36eaaaab6f75a00d73e7af7d", null ],
+    [ "NurbsPatchData", "db/dd9/a00179.html#a2e79a7a839b0ea0ebef0ad1ce581dd72", null ],
+    [ "NurbsPatchDataDefault", "db/dd9/a00179.html#a27a76c3c944053aa8fea7ee072860187", null ]
 ];

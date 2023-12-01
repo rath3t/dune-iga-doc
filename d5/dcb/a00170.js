@@ -1,4 +1,5 @@
 var a00170 =
 [
-    [ "registry", "d5/dcb/a00170.html#a692469dff5d684126efb9a24e2905bd4", null ]
+    [ "is_instantiation_of< Template, T >", "d3/d4c/a01540.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d6/d83/a01544.html", null ]
 ];

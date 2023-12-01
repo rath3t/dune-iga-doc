@@ -1,6 +1,5 @@
 var a00092 =
 [
-    [ "Dune::IGA::Boundary", "da/dab/a01362.html", "da/dab/a01362" ],
-    [ "Dune::IGA::TrimData", "d6/dfe/a01366.html", "d6/dfe/a01366" ],
-    [ "BoundaryLoop", "d1/dc1/a00092.html#ac852dd8efef6c18283ca22735cb02696", null ]
+    [ "Dune::IGANEW::PatchGridLeafIntersection< GridImp >", "d8/d2b/a01236.html", "d8/d2b/a01236" ],
+    [ "Dune::IGANEW::PatchGridLevelIntersection< GridImp >", "d5/d6e/a01240.html", "d5/d6e/a01240" ]
 ];

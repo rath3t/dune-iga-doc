@@ -1,4 +1,5 @@
 var a00128 =
 [
-    [ "findIntersectionCurveAndLine", "d1/d88/a00128.html#acbab55bc9467ca289ad446c860004a7a", null ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "db/dff/a01432.html", "db/dff/a01432" ],
+    [ "forEachUntrimmedBoundaryDOF", "d1/d88/a00128.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
 ];

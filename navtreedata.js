@@ -26,8 +26,8 @@ var NAVTREE =
 [
   [ "dune-iga", "index.html", [
     [ "dune-iga documentation", "index.html", null ],
-    [ "Todo List", "d9/dd0/a00191.html", null ],
-    [ "Deprecated List", "dd/da2/a00192.html", null ],
+    [ "Todo List", "de/db1/a00197.html", null ],
+    [ "Deprecated List", "d7/da0/a00198.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -67,17 +67,17 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d0/dfb/a01066.html",
-"d3/d53/a01262.html#a0e05aaa73b35041a4c7840b0f914d337",
-"d4/d8a/a01062.html#a4a89120d0581875319aec689aa57167f",
-"d5/df4/a01322.html#ad4fb64a1c336ee19cf8b6e725030b639",
-"d7/dc5/a01242.html#a3b9a1c8934e4cf74eb949cf52bbe5c20",
-"d8/dd0/a01430.html#a38601aea2fc590bdf075d6bd663b3cfb",
-"da/dab/a01362.html#a86e0d26476bdb5abee642e5fd84fdec6",
-"db/ddf/a00164_source.html",
-"dd/d57/a01054.html#a55a2d56e2133a971343f2d58ec809ab3",
-"de/dc6/a01502.html#aade6629e0adc183522ceb8e356e5869c",
-"functions_o.html"
+"d1/dae/a01136.html",
+"d2/d48/a01472.html#abf11325bfb591b6eda2037804845e72d",
+"d3/dd1/a00214.html",
+"d5/d37/a01276.html",
+"d7/d41/a01312.html#a4aacf3670ded47f6e2a42fdaeebd526a",
+"d8/df3/a01216.html#a402073861728cc49d2d86d0434dedebd",
+"da/de0/a01248.html#a941bc7d8f84a8e4874b6cf652c02223a",
+"dc/d0c/a01532.html#abfc5369985ae5300aa89a750f7ee007f",
+"dd/d0c/a01368.html#a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e",
+"dd/d75/a01180.html#ae6a2a323e1eb113e17b911f38306f7f5",
+"df/df3/a01468.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

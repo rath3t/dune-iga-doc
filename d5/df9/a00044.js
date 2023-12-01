@@ -1,4 +1,4 @@
 var a00044 =
 [
-    [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d7/dc5/a01242.html", "d7/dc5/a01242" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet< GridImp >", "db/d8b/a01464.html", "db/d8b/a01464" ]
 ];

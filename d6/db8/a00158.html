@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: bsplinealgorithms.hh File Reference</title>
+<title>dune-iga: higherorderalgorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,56 +92,50 @@ $(document).ready(function(){initNavTree('d6/db8/a00158.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">bsplinealgorithms.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">higherorderalgorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;concepts&gt;</code><br />
-<code>#include &lt;ranges&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d7/d06/a00131_source.html">dune/iga/geometrykernel/closestpointprojection.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/db1/a00140_source.html">dune/iga/geometrykernel/geohelper.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d6/db8/a00158_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dd0/a01430.html">Dune::IGANEW::Splines::BsplineBasis&lt; ScalarType_ &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One dimensional b-spline basis.  <a href="../../d8/dd0/a01430.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d3/d2a/a00195"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2a/a00195.html">Dune</a></td></tr>
+<tr class="memitem:dd/de3/a00201"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de3/a00201.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7/ded/a00196"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/ded/a00196.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:db/d53/a00202"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d53/a00202.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/de5/a00209"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/de5/a00209.html">Dune::IGANEW::Splines</a></td></tr>
+<tr class="memitem:d1/d72/a00204"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d72/a00204.html">Dune::IGANEW::GeometryKernel</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
-<tr class="memitem:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/de5/a00209.html#a3f4a0936ded82e5421a36f9f4c0c114b">Dune::IGANEW::Splines::findSpan</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)</td></tr>
-<tr class="memdesc:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u.  <a href="../../d3/de5/a00209.html#a3f4a0936ded82e5421a36f9f4c0c114b">More...</a><br /></td></tr>
-<tr class="separator:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
-requires (dim2 == dim)</td></tr>
-<tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/de5/a00209.html#a67facdaecd7f3c339ece70971f8a8f92">Dune::IGANEW::Splines::findSpan</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
-<tr class="memdesc:a67facdaecd7f3c339ece70971f8a8f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as findSpan but for dim knotvectors.  <a href="../../d3/de5/a00209.html#a67facdaecd7f3c339ece70971f8a8f92">More...</a><br /></td></tr>
-<tr class="separator:a67facdaecd7f3c339ece70971f8a8f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
-<tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/de5/a00209.html#a1d7349b1373b5c83a5a5be7377985ae0">Dune::IGANEW::Splines::createUniqueKnotSpans</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans)</td></tr>
-<tr class="separator:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="memTemplParams" colspan="2">template&lt;typename Geometry &gt; </td></tr>
+<tr class="memitem:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="memTemplItemLeft" align="right" valign="top">Geometry::LocalCoordinate&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d72/a00204.html#a85b42ae7d7cb1ba7149c382655ce96ea">Dune::IGANEW::GeometryKernel::findClosestParameterSpaceCoordinate</a> (const Geometry &amp;geo, const typename Geometry::GlobalCoordinate &amp;global)</td></tr>
+<tr class="memdesc:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the parameter space coordinate corresponding to a given global coordinate on a geometry.  <a href="../../d1/d72/a00204.html#a85b42ae7d7cb1ba7149c382655ce96ea">More...</a><br /></td></tr>
+<tr class="separator:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7693ef58b9b466df6285facbe588e2e7"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a7693ef58b9b466df6285facbe588e2e7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d72/a00204.html#a7693ef58b9b466df6285facbe588e2e7">Dune::IGANEW::GeometryKernel::hessian</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:a7693ef58b9b466df6285facbe588e2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Hessian matrix of a NURBS geometry at a specified local coordinate.  <a href="../../d1/d72/a00204.html#a7693ef58b9b466df6285facbe588e2e7">More...</a><br /></td></tr>
+<tr class="separator:a7693ef58b9b466df6285facbe588e2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558ed80fd1396cbfe7c36ad505937a52"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a558ed80fd1396cbfe7c36ad505937a52"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d72/a00204.html#a558ed80fd1396cbfe7c36ad505937a52">Dune::IGANEW::GeometryKernel::jacobianTransposed</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:a558ed80fd1396cbfe7c36ad505937a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the transposed Jacobian matrix of a NURBS geometry at a specified local coordinate.  <a href="../../d1/d72/a00204.html#a558ed80fd1396cbfe7c36ad505937a52">More...</a><br /></td></tr>
+<tr class="separator:a558ed80fd1396cbfe7c36ad505937a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bdc51407259017c5322f80267fcc5e"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:ae7bdc51407259017c5322f80267fcc5e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d72/a00204.html#ae7bdc51407259017c5322f80267fcc5e">Dune::IGANEW::GeometryKernel::position</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:ae7bdc51407259017c5322f80267fcc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the global position of a NURBS geometry at a specified local coordinate.  <a href="../../d1/d72/a00204.html#ae7bdc51407259017c5322f80267fcc5e">More...</a><br /></td></tr>
+<tr class="separator:ae7bdc51407259017c5322f80267fcc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_479b904809ee7734e338128330b60cdb.html">splines</a></li><li class="navelem"><a class="el" href="../../d6/db8/a00158.html">bsplinealgorithms.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d6/db8/a00158.html">higherorderalgorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

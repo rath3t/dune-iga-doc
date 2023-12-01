@@ -1,4 +1,4 @@
 var a00017 =
 [
-    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "de/dc6/a01502.html", "de/dc6/a01502" ]
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "d9/d34/a01524.html", "d9/d34/a01524" ]
 ];

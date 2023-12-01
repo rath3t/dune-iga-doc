@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['matrixhelper_0',['MatrixHelper',['../d4/d8a/a01062.html#a758784c15d29b5efc506da0a6b691905',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]]
+  ['matrixhelper_0',['MatrixHelper',['../d1/de6/a01068.html#a758784c15d29b5efc506da0a6b691905',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]]
 ];
