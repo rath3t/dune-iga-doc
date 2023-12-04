@@ -1,5 +1,5 @@
 var a00149 =
 [
-    [ "makeCircularArc", "da/d1e/a00149.html#a000e49612164d2b6609e00015a7da1b8", null ],
-    [ "makeCircularArc2D", "da/d1e/a00149.html#af2e971c8404f8415030e1ae459761540", null ]
+    [ "intersect3DLines", "da/d1e/a00149.html#a92a605959c76f4613b72045bd4fdbf5c", null ],
+    [ "projectPointOntoLine", "da/d1e/a00149.html#ac5771e572de1611b27eb788b95d1efec", null ]
 ];

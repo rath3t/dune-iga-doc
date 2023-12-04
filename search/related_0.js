@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['globalidset_3c_20const_20patchgrid_20_3e_0',['GlobalIdSet&lt; const PatchGrid &gt;',['../dd/d75/a01180.html#aca994d2dfe6983fb0b84a47c4f259293',1,'Dune::IGANEW::PatchGrid']]]
+  ['globalidsettype_3c_20const_20patchgrid_20_3e_0',['GlobalIdSetType&lt; const PatchGrid &gt;',['../dc/d2d/a01183.html#a1550c15776a79547bab2cb318785cd31',1,'Dune::IGANEW::PatchGrid']]]
 ];

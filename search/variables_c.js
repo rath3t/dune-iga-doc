@@ -1,6 +1,9 @@
 var searchData=
 [
-  ['offset_5f_0',['offset_',['../d0/d05/a01420.html#a51161854ea25285fc83e7eae17fe9fc7',1,'Dune::IGA::TransformToSpan']]],
-  ['originalindices_5f_1',['originalIndices_',['../d2/dd2/a01164.html#a9c6f3b1325b48b7ef697eba2bb9649cb',1,'Dune::Functions::NurbsPreBasis']]],
-  ['outerboundaries_2',['outerBoundaries',['../d2/d29/a01376.html#ac81770c3023e176dfaf779a0c975b9c9',1,'Dune::IGA::Trim::ElementBoundaries']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../d4/da0/a01291.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['netdim_1',['netDim',['../d9/d80/a01539.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
+  ['nextfreeindex_5f_2',['nextFreeIndex_',['../df/d75/a01447.html#ae4ba4ab2706240c6ef002c9373c9a51f',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],
+  ['numberofsecondderivatives_3',['numberOfSecondDerivatives',['../df/d18/a01071.html#a5d76ced0b546ce1dd64357bb6c644cdb',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
+  ['nurbs_5f_4',['nurbs_',['../db/d78/a01427.html#a2e9369402c311b4b40ed88a0a249abb1',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
+  ['nurbsgeometry_5',['nurbsGeometry',['../d1/dcd/a01351.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
 ];

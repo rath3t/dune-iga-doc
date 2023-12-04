@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['tolerance_0',['tolerance',['../dd/d6d/a01380.html#a2ff90a9bc865a2853f2466dff1db9d05',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['transformer_1',['transformer',['../d2/db1/a01428.html#a733cce276905bfda67c91594b7200be9',1,'Dune::IGA::GridBoundarySegment']]],
-  ['trimcurves_2',['trimCurves',['../dc/db6/a01212.html#aadc62eb5c71ed50e648aa92c9ec66701',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
-  ['trimmer_3',['trimmer',['../dc/db6/a01212.html#a6120eef7aa4c76e836a70cf592b55d71',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
-  ['trimprecision_4',['trimPrecision',['../da/ddc/a01492.html#adb8d6845cc381c10e0816f48ac3e9f5f',1,'Dune::IGANEW::DefaultTrim::Parameter']]],
-  ['trims_5',['trims',['../df/dec/a01320.html#a61a53e394317f3844be719ad7cfdd240',1,'Dune::IGA::Ibra::BrepLoopRepresentation::trims()'],['../d5/d53/a01324.html#a0ab2de7a74ccb203dca621407df7eeca',1,'Dune::IGA::Ibra::BrepLoop::trims()'],['../dc/dd9/a01328.html#a0b18289437b2c70cbb84ce06024107f4',1,'Dune::IGA::Ibra::BrepRepresentation::trims()'],['../d9/d45/a01332.html#aff01becf209101c0944a633e2779f98b',1,'Dune::IGA::Ibra::Brep::trims()']]],
-  ['type_6',['type',['../d6/dae/a01304.html#a4aacf3670ded47f6e2a42fdaeebd526a',1,'Dune::IGA::Ibra::IbraBase']]],
-  ['typestring_7',['typeString',['../d6/dae/a01304.html#a51d455d391e155f6f736a2ec40b7fc69',1,'Dune::IGA::Ibra::IbraBase']]]
+  ['scale_0',['scale',['../dd/d8b/a01363.html#a1d056ab95bab7f99877a5a713727331d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
+  ['scaling_5f_1',['scaling_',['../da/d06/a01403.html#af4bc4bed4998c5f84bf8042fbcb3ef32',1,'Dune::IGA::TransformToSpan']]],
+  ['spindex_5f_2',['spIndex_',['../db/d78/a01427.html#a8dce31141da04e79ed1e6b42752678d0',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
+  ['surface_5fgeometries_5f3d_3',['surface_geometries_3d',['../de/d69/a01311.html#a9010ce626abe088d92fa7ca94dea8809',1,'Dune::IGA::Ibra::BrepRepresentation']]],
+  ['surfaces_4',['surfaces',['../d2/d8e/a01315.html#a77af74d7b76494e0e1282baf5a9867c8',1,'Dune::IGA::Ibra::Brep']]]
 ];

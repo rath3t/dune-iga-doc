@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['u_0',['u',['../dd/d0c/a01368.html#a4b56bac0e58a6f15d7509de369649719a7b774effe4a349c6dd82ad4f4f21d34c',1,'Dune::IGA::Boundary']]],
-  ['unknown_1',['Unknown',['../dd/d0c/a01368.html#a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Dune::IGA::Boundary']]]
+  ['trimmed_0',['trimmed',['../d2/dc4/a01483.html#af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGANEW::DefaultTrim::IdType::trimmed()'],['../d3/dd5/a00215.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGA::trimmed()']]]
 ];

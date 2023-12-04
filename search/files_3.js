@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['trimmer_2ehh_0',['trimmer.hh',['../d7/d8c/a03049.html',1,'']]]
+  ['patchgridleafiterator_2ehh_0',['patchgridleafiterator.hh',['../da/d96/a03004.html',1,'']]],
+  ['trimmer_2ehh_1',['trimmer.hh',['../dc/de9/a03010.html',1,'']]]
 ];

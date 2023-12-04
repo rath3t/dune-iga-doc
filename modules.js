@@ -1,4 +1,4 @@
 var modules =
 [
-    [ "Trimmer", "d8/d72/a00199.html", "d8/d72/a00199" ]
+    [ "Trimmer", "db/d53/a00202.html", "db/d53/a00202" ]
 ];

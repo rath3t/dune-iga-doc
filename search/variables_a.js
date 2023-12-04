@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['maxmultiindexsize_0',['maxMultiIndexSize',['../d2/dd2/a01164.html#a0630377385bf806f9a9e8b44289240be',1,'Dune::Functions::NurbsPreBasis']]],
-  ['minmultiindexsize_1',['minMultiIndexSize',['../d2/dd2/a01164.html#af6210f36f3714b0e93df464f5bd9ce84',1,'Dune::Functions::NurbsPreBasis']]],
-  ['msg_2',['msg',['../d2/d2f/a01460.html#a7748aaaae80fbc5e415211cfa1845870',1,'Dune::IGANEW::DefaultTrim::EntityContainer::StringAndIndex']]],
-  ['multiindexbuffersize_3',['multiIndexBufferSize',['../d2/dd2/a01164.html#a01a2df00cb51bcaa0217baa1f4016a6d',1,'Dune::Functions::NurbsPreBasis']]],
-  ['mydimension_4',['mydimension',['../d5/d16/a01060.html#a06037363d30a70eba4b98f590f81a637',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::mydimension()'],['../d1/de6/a01068.html#a651bbd7fff3d3836f8e3ae6ad0b244e4',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::mydimension()'],['../d8/df3/a01216.html#acf47a66bec55cec4b5f30fe54580e186',1,'Dune::IGANEW::PatchGridGeometry::mydimension()'],['../da/de0/a01248.html#a8eee8b296b2399a9d9e99fd853c31f0d',1,'Dune::IGANEW::PatchGridLocalGeometry::mydimension()'],['../d2/d48/a01472.html#a562774a060cfc017ef894d2bfe70a2cd',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::mydimension()'],['../d2/daa/a01488.html#a75f3c85c17a7c5b60ad2afda4708383f',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry::mydimension()'],['../d2/d21/a01484.html#a71db069610c87005a2a22e36b0c897c2',1,'Dune::IGANEW::DefaultTrim::Trimmer::mydimension()'],['../d4/d51/a01520.html#a5249c6015e4b472f97f05eb3c5b1cf4e',1,'Dune::IGANEW::IdentityTrim::Trimmer::mydimension()'],['../d9/d34/a01524.html#a2d5a12cebaad1601f39da5a1c4eadaeb',1,'Dune::IGANEW::Trim::LocalGeometryVariant::mydimension()']]],
-  ['myindexmapping_5',['myIndexMapping',['../db/d8b/a01464.html#ae2e80a92a6fe3ca1759bad2f3a73ae72',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]]
+  ['leafindexset_5f_0',['leafIndexSet_',['../dc/d2d/a01183.html#a32c42670d343988d60732d9a5aaeb105',1,'Dune::IGANEW::PatchGrid']]],
+  ['level_5f_1',['level_',['../d7/d03/a01491.html#abbbaf138c14bb44e167d9f314bd7b932',1,'Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet']]],
+  ['levelindexsets_5f_2',['levelIndexSets_',['../dc/d2d/a01183.html#ae9dc7c7b0ffc39c6cfb89a5b06607e21',1,'Dune::IGANEW::PatchGrid']]],
+  ['localbasis_5f_3',['localBasis_',['../dc/dc2/a01251.html#a47ab2fe52d6ffb44066d45a1662eaa69',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['localcoefficients_5f_4',['localCoefficients_',['../dc/dc2/a01251.html#a63aeb97a501f000f507a734699b79c89',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['localidset_5f_5',['localIdSet_',['../dc/d2d/a01183.html#a1c5e0aee7e2fe0c2e39845d06bd88dfd',1,'Dune::IGANEW::PatchGrid']]],
+  ['localindex_6',['localIndex',['../d8/d31/a01407.html#accce87872c7dfa44c89347d946664a33',1,'Dune::IGA::DomainInformation']]],
+  ['localinterpolation_5f_7',['localInterpolation_',['../dc/dc2/a01251.html#a315668b19b95fb51f103beca8d66deb5',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['loops_8',['loops',['../de/d69/a01311.html#ad4fb64a1c336ee19cf8b6e725030b639',1,'Dune::IGA::Ibra::BrepRepresentation::loops()'],['../d2/d8e/a01315.html#adf3a869b18a3dbec9d9d5184f41ca473',1,'Dune::IGA::Ibra::Brep::loops()']]]
 ];

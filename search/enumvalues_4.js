@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['json_0',['json',['../dd/d52/a00221.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54',1,'Dune::Python::IGA']]]
+  ['inparameterspace_0',['InParameterSpace',['../d5/d0b/a00220.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e',1,'Dune::IGANEW::DefaultTrim']]],
+  ['inreferenceelement_1',['InReferenceElement',['../d5/d0b/a00220.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723',1,'Dune::IGANEW::DefaultTrim']]]
 ];

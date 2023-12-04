@@ -1,9 +1,16 @@
 var a00204 =
 [
-    [ "NURBSPatch", "d5/d16/a01060.html", "d5/d16/a01060" ],
-    [ "PatchGeometryLocalView", "d1/de6/a01068.html", "d1/de6/a01068" ],
-    [ "findClosestParameterSpaceCoordinate", "d1/d72/a00204.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
-    [ "hessian", "d1/d72/a00204.html#a7693ef58b9b466df6285facbe588e2e7", null ],
-    [ "jacobianTransposed", "d1/d72/a00204.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
-    [ "position", "d1/d72/a00204.html#ae7bdc51407259017c5322f80267fcc5e", null ]
+    [ "Capabilities", "dd/ded/a00211.html", "dd/ded/a00211" ],
+    [ "Functions", "dd/dc1/a00212.html", "dd/dc1/a00212" ],
+    [ "IGA", "d3/dd5/a00215.html", "d3/dd5/a00215" ],
+    [ "IGANEW", "d5/d13/a00205.html", "d5/d13/a00205" ],
+    [ "Python", "dc/d28/a00223.html", "dc/d28/a00223" ],
+    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d4/d04/a01335.html", "d4/d04/a01335" ],
+    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d4/d2c/a01327.html", "d4/d2c/a01327" ],
+    [ "EnableBoundarySegmentIndexCheck", "de/df1/a01151.html", null ],
+    [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, TrimmerType, ScalarType > >", "d7/de8/a01159.html", null ],
+    [ "GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "da/d3f/a01215.html", "da/d3f/a01215" ],
+    [ "JSONGridFactory", "dc/d8e/a01331.html", "dc/d8e/a01331" ],
+    [ "TensorProductCoordinates", "d0/d90/a01059.html", null ],
+    [ "YaspGrid", "d2/d71/a01055.html", null ]
 ];

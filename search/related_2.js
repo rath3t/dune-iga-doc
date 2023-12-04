@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['operator_3c_0',['operator&lt;',['../db/d8b/a01464.html#aa25917a59917f960ffb0114a6f4d1796',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],
-  ['operator_3c_3c_1',['operator&lt;&lt;',['../d6/dae/a01304.html#a5b59867bdd8d1d0f656beb3e489bcd4f',1,'Dune::IGA::Ibra::IbraBase']]]
+  ['leafindexset_3c_20const_20patchgrid_20_3e_0',['LeafIndexSet&lt; const PatchGrid &gt;',['../dc/d2d/a01183.html#a7b07b3c0b237ed142ba5b7529631c43f',1,'Dune::IGANEW::PatchGrid']]],
+  ['levelindexset_3c_20const_20patchgrid_20_3e_1',['LevelIndexSet&lt; const PatchGrid &gt;',['../dc/d2d/a01183.html#a93d1509a294fdeaad4aa87998d29dcd9',1,'Dune::IGANEW::PatchGrid']]],
+  ['localidsettype_3c_20const_20patchgrid_20_3e_2',['LocalIdSetType&lt; const PatchGrid &gt;',['../dc/d2d/a01183.html#a798cb9587451c77021e29c65ce4130bb',1,'Dune::IGANEW::PatchGrid']]]
 ];

@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['n_5fcontrolpoints_0',['n_controlPoints',['../d1/d56/a01308.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
-  ['netdim_1',['netDim',['../dc/d0c/a01532.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['nextfreeindex_5f_2',['nextFreeIndex_',['../db/d8b/a01464.html#ae4ba4ab2706240c6ef002c9373c9a51f',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],
-  ['numberofsecondderivatives_3',['numberOfSecondDerivatives',['../d1/de6/a01068.html#a5d76ced0b546ce1dd64357bb6c644cdb',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
-  ['nurbs_5f_4',['nurbs_',['../d7/d32/a01444.html#a2e9369402c311b4b40ed88a0a249abb1',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
-  ['nurbsgeometry_5',['nurbsGeometry',['../dd/d0c/a01368.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
+  ['maxmultiindexsize_0',['maxMultiIndexSize',['../d7/dd6/a01167.html#a0630377385bf806f9a9e8b44289240be',1,'Dune::Functions::NurbsPreBasis']]],
+  ['minmultiindexsize_1',['minMultiIndexSize',['../d7/dd6/a01167.html#af6210f36f3714b0e93df464f5bd9ce84',1,'Dune::Functions::NurbsPreBasis']]],
+  ['msg_2',['msg',['../d6/d65/a01443.html#a7748aaaae80fbc5e415211cfa1845870',1,'Dune::IGANEW::DefaultTrim::EntityContainer::StringAndIndex']]],
+  ['multiindexbuffersize_3',['multiIndexBufferSize',['../d7/dd6/a01167.html#a01a2df00cb51bcaa0217baa1f4016a6d',1,'Dune::Functions::NurbsPreBasis']]],
+  ['mydimension_4',['mydimension',['../de/de6/a01063.html#a06037363d30a70eba4b98f590f81a637',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::mydimension()'],['../df/d18/a01071.html#a651bbd7fff3d3836f8e3ae6ad0b244e4',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::mydimension()'],['../d5/d39/a01219.html#acf47a66bec55cec4b5f30fe54580e186',1,'Dune::IGANEW::PatchGridGeometry::mydimension()'],['../d0/d88/a01231.html#a8eee8b296b2399a9d9e99fd853c31f0d',1,'Dune::IGANEW::PatchGridLocalGeometry::mydimension()'],['../d6/d3b/a01459.html#a562774a060cfc017ef894d2bfe70a2cd',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::mydimension()'],['../d7/d1d/a01475.html#a75f3c85c17a7c5b60ad2afda4708383f',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry::mydimension()'],['../dd/d15/a01471.html#a71db069610c87005a2a22e36b0c897c2',1,'Dune::IGANEW::DefaultTrim::Trimmer::mydimension()'],['../d8/d8c/a01527.html#a9fc7db2cf692713727311c5bbc75d0ec',1,'Dune::IGANEW::IdentityTrim::Trimmer::mydimension()'],['../d4/d62/a01531.html#a2d5a12cebaad1601f39da5a1c4eadaeb',1,'Dune::IGANEW::Trim::LocalGeometryVariant::mydimension()']]]
 ];

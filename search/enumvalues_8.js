@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['v_0',['v',['../dd/d0c/a01368.html#a4b56bac0e58a6f15d7509de369649719a9e3669d19b675bd57058fd4664205d2a',1,'Dune::IGA::Boundary']]]
+  ['u_0',['u',['../d1/dcd/a01351.html#a4b56bac0e58a6f15d7509de369649719a7b774effe4a349c6dd82ad4f4f21d34c',1,'Dune::IGA::Boundary']]],
+  ['unknown_1',['Unknown',['../d1/dcd/a01351.html#a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Dune::IGA::Boundary']]]
 ];
