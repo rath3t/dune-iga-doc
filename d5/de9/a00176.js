@@ -1,4 +1,5 @@
 var a00176 =
 [
-    [ "boundaryPatch", "d5/de9/a00176.html#adca8f900f932f6673b01a1bff6ef60ac", null ]
+    [ "is_instantiation_of< Template, T >", "d9/dfd/a01610.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "db/d7c/a01614.html", null ]
 ];

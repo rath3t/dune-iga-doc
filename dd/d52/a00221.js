@@ -1,7 +1,15 @@
 var a00221 =
 [
-    [ "LocalGeometryVariant", "d9/d80/a01539.html", "d9/d80/a01539" ],
-    [ "ParameterSpaceGridEntityVariant", "dc/d47/a01487.html", "dc/d47/a01487" ],
-    [ "referenceElement", "dd/d52/a00221.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
-    [ "referenceElement", "dd/d52/a00221.html#a58f6695142a18937094849b86976642b", null ]
+    [ "BsplineBasis", "d8/d01/a01410.html", "d8/d01/a01410" ],
+    [ "Nurbs", "d8/df1/a01414.html", "d8/df1/a01414" ],
+    [ "createUniqueKnotSpans", "dd/d52/a00221.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "dd/d52/a00221.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "dd/d52/a00221.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "dd/d52/a00221.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "dd/d52/a00221.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "dd/d52/a00221.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "dd/d52/a00221.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "dd/d52/a00221.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "dd/d52/a00221.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
+    [ "netOfSpan", "dd/d52/a00221.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];

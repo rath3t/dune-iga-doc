@@ -1,11 +1,10 @@
 var a00107 =
 [
-    [ "Dune::IGA::TransformToSpan< dim >", "da/d06/a01403.html", "da/d06/a01403" ],
-    [ "Dune::IGA::DomainInformation", "d8/d31/a01407.html", "d8/d31/a01407" ],
-    [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "db/d99/a01411.html", "db/d99/a01411" ],
-    [ "DomainType", "df/d98/a00107.html#a25585768c010972feb9ad3e744e16623", null ],
-    [ "calculateBoundaryLoopLength", "df/d98/a00107.html#ad53d9d1af502406661ebe6320753c429", null ],
-    [ "determineCurvedBoundaries", "df/d98/a00107.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
-    [ "splitBoundariesImpl", "df/d98/a00107.html#ad66112982ac256c7f15589dec5fcce68", null ],
-    [ "triangulate", "df/d98/a00107.html#ab8e1d89240e3480112457535ab40b620", null ]
+    [ "Dune::IGA::Trim::ElementBoundaries", "da/d61/a01350.html", "da/d61/a01350" ],
+    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "d7/dc4/a01354.html", "d7/dc4/a01354" ],
+    [ "ElementTrimFlag", "df/d98/a00107.html#a34b2741ab599082a80dacc40c6e5069b", [
+      [ "full", "df/d98/a00107.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "df/d98/a00107.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "df/d98/a00107.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ]
 ];
