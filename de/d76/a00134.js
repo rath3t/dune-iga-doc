@@ -1,5 +1,4 @@
 var a00134 =
 [
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "dc/d25/a01406.html", "dc/d25/a01406" ],
-    [ "forEachUntrimmedBoundaryDOF", "de/d76/a00134.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
+    [ "fillQuadratureRuleImpl", "de/d76/a00134.html#a023d3c0845a496b2eedca5b359b49964", null ]
 ];

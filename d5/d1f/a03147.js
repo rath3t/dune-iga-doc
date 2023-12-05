@@ -1,8 +1,7 @@
 var a03147 =
 [
-    [ "iga.basis.Nurbs", "d9/d6a/a01618.html", "d9/d6a/a01618" ],
-    [ "defaultGlobalBasis", "d5/d1f/a03147.html#abe7102c803053539b7417e439b0f122f", null ],
-    [ "indexMergingStrategy", "d5/d1f/a03147.html#a1116006b529ec79e4a35a97a8614bd5e", null ],
-    [ "preBasisTypeName", "d5/d1f/a03147.html#a6b046881676017b1a2068df515deb99f", null ],
-    [ "duneFunctionsLayouts", "d5/d1f/a03147.html#a7567a58831582a87fbcc011042771efa", null ]
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet< GridImp >", "d6/db5/a01573.html", "d6/db5/a01573" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIndexSet< GridImp >", "d3/daa/a01577.html", "d3/daa/a01577" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridGlobalIdSet< GridImp >", "da/df3/a01581.html", "da/df3/a01581" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLocalIdSet< GridImp >", "da/de2/a01585.html", "da/de2/a01585" ]
 ];

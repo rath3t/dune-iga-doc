@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['offset_5f_0',['offset_',['../d6/d2f/a01394.html#a51161854ea25285fc83e7eae17fe9fc7',1,'Dune::IGA::TransformToSpan']]],
-  ['originalindices_5f_1',['originalIndices_',['../d3/dc7/a01170.html#a9c6f3b1325b48b7ef697eba2bb9649cb',1,'Dune::Functions::NurbsPreBasis']]],
-  ['outerboundaries_2',['outerBoundaries',['../da/d61/a01350.html#ac81770c3023e176dfaf779a0c975b9c9',1,'Dune::IGA::Trim::ElementBoundaries']]]
+  ['offset_5f_0',['offset_',['../d7/d1c/a01397.html#a51161854ea25285fc83e7eae17fe9fc7',1,'Dune::IGA::TransformToSpan']]],
+  ['originalindices_5f_1',['originalIndices_',['../d7/d0c/a01173.html#a9c6f3b1325b48b7ef697eba2bb9649cb',1,'Dune::Functions::NurbsPreBasis']]],
+  ['outerboundaries_2',['outerBoundaries',['../d4/dad/a01353.html#ac81770c3023e176dfaf779a0c975b9c9',1,'Dune::IGA::Trim::ElementBoundaries']]]
 ];

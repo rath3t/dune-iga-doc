@@ -1,6 +1,7 @@
 var a03144 =
 [
-    [ "registerControlPoint", "d2/d19/a03144.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "d2/d19/a03144.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
-    [ "registerNurbsPatchData", "d2/d19/a03144.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet< GridImp >", "d9/d6f/a01445.html", "d9/d6f/a01445" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLeafIndexSet< GridImp >", "d2/d95/a01449.html", "d2/d95/a01449" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet< GridImp >", "d5/df9/a01441.html", "d5/df9/a01441" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet< GridImp >", "d9/dae/a01453.html", "d9/dae/a01453" ]
 ];

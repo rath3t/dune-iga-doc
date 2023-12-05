@@ -1,5 +1,5 @@
 var a03141 =
 [
-    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "d1/df4/a01422.html", "d1/df4/a01422" ],
-    [ "NURBSPatchData", "dd/dd1/a03141.html#aee4d8d984f5b9053709e25ff2c1a6265", null ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedLeafIntersection< GridImp >", "d9/d8b/a01469.html", "d9/d8b/a01469" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedLevelIntersection< GridImp >", "de/d13/a01473.html", "de/d13/a01473" ]
 ];

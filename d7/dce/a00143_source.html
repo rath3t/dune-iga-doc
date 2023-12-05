@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: makesurfaceofrevolution.hh Source File</title>
+<title>dune-iga: findintersection.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,120 +91,75 @@ $(document).ready(function(){initNavTree('d7/dce/a00143_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">makesurfaceofrevolution.hh</div></div>
+  <div class="headertitle"><div class="title">findintersection.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d7/dce/a00143.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<a href="../../d7/dce/a00143.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The Ikarus Developers mueller@ibb.uni-stuttgart.de</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;<a class="code" href="../../d7/d9a/a00152.html">dune/iga/geometrykernel/basealgorithms.hh</a>&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="../../dd/dd1/a03141.html">dune/iga/splines/nurbspatchdata.hh</a>&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dc/d31/a00208.html">Dune::IGANEW</a> {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="keyword">namespace </span>Impl {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">template</span> &lt;Concept::Vector VectorType&gt;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">requires</span>(VectorType::dimension == 3) VectorType cross(<span class="keyword">const</span> VectorType&amp; a, <span class="keyword">const</span> VectorType&amp; b) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (<span class="keyword">requires</span> { a.cross(b); })</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keywordflow">return</span> a.cross(b);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="keywordflow">return</span> {a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]};</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  }  <span class="comment">// namespace Impl</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;dune/common/fmatrix.hh&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;dune/common/fvector.hh&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/ded/a00211.html">Dune::IGANEW</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType, <span class="keywordtype">int</span> dim&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../dd/ded/a00211.html#acbab55bc9467ca289ad446c860004a7a">    9</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/ded/a00211.html#acbab55bc9467ca289ad446c860004a7a">findIntersectionCurveAndLine</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                                    <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir,  FieldVector&lt;ScalarType, dim&gt; tParameter,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                                    ScalarType tol = 1e-10) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">struct </span>Line {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>      FieldVector&lt;ScalarType, dim&gt; operator()(ScalarType t) { <span class="keywordflow">return</span> pos + t * dir; }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>     FieldVector&lt;ScalarType, dim&gt; jacobian( ) { <span class="keywordflow">return</span> dir; }</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span> line = Line({pos, dir});</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ScalarType = <span class="keywordtype">double</span>&gt;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../dc/d31/a00208.html#a4cdc7d50f04f4f21c50a1eb97c4e8406">   46</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dc/d31/a00208.html#a4cdc7d50f04f4f21c50a1eb97c4e8406">makeSurfaceOfRevolution</a>(<span class="keyword">const</span> <a class="code hl_struct" href="../../d1/df4/a01422.html">NURBSPatchData&lt;1, 3, ScalarType&gt;</a>&amp; generatrix,</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>                               <span class="keyword">const</span> Dune::FieldVector&lt;ScalarType, 3&gt;&amp; point,</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                               <span class="keyword">const</span> Dune::FieldVector&lt;ScalarType, 3&gt;&amp; revolutionAxis,</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>                               <span class="keyword">const</span> ScalarType&amp; revolutionAngle = 360.0) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; genCP          = generatrix.<a class="code hl_variable" href="../../d1/df4/a01422.html#a5038d8719ed15eec6042971ea15e1706">controlPoints</a>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">using </span><a class="code hl_struct" href="../../d9/d8e/a01050.html">ControlPoint</a>         = <span class="keyword">typename</span> <a class="code hl_struct" href="../../d9/d8e/a01050.html">NURBSPatchData&lt;2, 3, ScalarType&gt;::ControlPointType</a>;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keyword">using </span>GlobalCoordinateType = <span class="keyword">typename</span> <a class="code hl_typedef" href="../../d1/df4/a01422.html#a51ab1704f2ced939d707f5c8a5394c55">NURBSPatchData&lt;2, 3, ScalarType&gt;::GlobalCoordinateType</a>;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">const</span> <span class="keyword">auto</span> pi              = std::numbers::pi_v&lt;ScalarType&gt;;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">const</span> <span class="keyword">auto</span> revolutionAxisN = revolutionAxis / revolutionAxis.two_norm();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">auto</span> newKnotsArray         = std::array&lt;std::vector&lt;double&gt;, 2UL&gt;();</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    newKnotsArray[1]           = generatrix.<a class="code hl_variable" href="../../d1/df4/a01422.html#ac3ae0d508de8bcc031da26a4578c979b">knotSpans</a>[0];</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">auto</span>&amp; U                    = newKnotsArray[0];</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> narcs = std::ceil(revolutionAngle / 90);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    U.resize(2 * (narcs + 2));</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">if</span> (revolutionAngle &lt;= 90.0) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (revolutionAngle &lt;= 180.0) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      U[3] = U[4] = 0.5;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (revolutionAngle &lt;= 270.0) {</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      U[3] = U[4] = 1.0 / 3.0;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      U[5] = U[6] = 2.0 / 3.0;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      U[3] = U[4] = 0.25;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      U[5] = U[6] = 0.5;</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      U[7] = U[8] = 0.75;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="keyword">const</span> ScalarType dtheta = revolutionAngle / narcs * pi / 180;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    std::ranges::fill_n(U.begin(), 3, 0.0);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    std::ranges::fill_n(std::ranges::reverse_view(U).begin(), 3, 1.0);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keyword">typename</span> <a class="code hl_class" href="../../d5/dcf/a01602.html">NURBSPatchData&lt;2UL, 3UL, ScalarType&gt;::ControlPointNetType</a> surfaceCP(</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        2 * narcs + 1, generatrix.<a class="code hl_variable" href="../../d1/df4/a01422.html#a5038d8719ed15eec6042971ea15e1706">controlPoints</a>.<a class="code hl_function" href="../../d5/dcf/a01602.html#a79bd9b57f2db24deac6f71ddd8eb3c83">strideSizes</a>()[0]);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="keyword">using </span>std::cos;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keyword">using </span>std::sin;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">const</span> ScalarType wm = cos(dtheta / 2.0);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    std::vector&lt;ScalarType&gt; cosines(narcs);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    std::vector&lt;ScalarType&gt; sines(narcs);</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    ScalarType angle = 0.0;</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; narcs; i++) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      angle += dtheta;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      cosines[i] = cos(angle);</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      sines[i]   = sin(angle);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <a class="code hl_struct" href="../../d9/d8e/a01050.html">ControlPoint</a> PO = genCP.directGet(0);</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; genCP.strideSizes()[0]; j++) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keyword">const</span> GlobalCoordinateType Om = <a class="code hl_function" href="../../dc/d31/a00208.html#ac5771e572de1611b27eb788b95d1efec">projectPointOntoLine</a>(point, revolutionAxisN, genCP.directGet(j).p);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      GlobalCoordinateType X        = genCP.directGet(j).p - Om;</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keyword">const</span> ScalarType r            = X.two_norm();</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      X /= r;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keyword">const</span> GlobalCoordinateType Y = Impl::cross(revolutionAxisN, X);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      surfaceCP(0, j) = PO    = genCP.directGet(j);</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      GlobalCoordinateType TO = Y;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0, i = 0; i &lt; narcs; ++i) {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keyword">const</span> GlobalCoordinateType P2 = Om + r * cosines[i] * X + r * sines[i] * Y;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        surfaceCP(index + 2, j)       = {.p = P2, .w = genCP.<a class="code hl_function" href="../../d5/dcf/a01602.html#a206591d2ccf1829d4f545acc77c8d16e">directGet</a>(j).w};</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">const</span> GlobalCoordinateType T2 = -sines[i] * X + cosines[i] * Y;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        surfaceCP(index + 1, j).p     = <a class="code hl_function" href="../../dc/d31/a00208.html#a92a605959c76f4613b72045bd4fdbf5c">intersect3DLines</a>(PO.<a class="code hl_variable" href="../../d9/d8e/a01050.html#a7d28f5087c63173fd47b83c11cfef8db">p</a>, TO, P2, T2);</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        surfaceCP(index + 1, j).w     = wm * genCP.<a class="code hl_function" href="../../d5/dcf/a01602.html#a206591d2ccf1829d4f545acc77c8d16e">directGet</a>(j).w;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        index += 2;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        <span class="keywordflow">if</span> (i &lt; narcs - 1) {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>          PO.<a class="code hl_variable" href="../../d9/d8e/a01050.html#a7d28f5087c63173fd47b83c11cfef8db">p</a> = P2;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>          TO   = T2;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        }</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="../../d1/df4/a01422.html">NURBSPatchData&lt;2UL, 3UL, ScalarType&gt;</a>(newKnotsArray, surfaceCP, {2, generatrix.<a class="code hl_variable" href="../../d1/df4/a01422.html#a30411a17ca195626ac8510acd7b99758">degree</a>[0]});</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
-<div class="ttc" id="aa00152_html"><div class="ttname"><a href="../../d7/d9a/a00152.html">basealgorithms.hh</a></div></div>
-<div class="ttc" id="aa00208_html"><div class="ttname"><a href="../../dc/d31/a00208.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa00208_html_a4cdc7d50f04f4f21c50a1eb97c4e8406"><div class="ttname"><a href="../../dc/d31/a00208.html#a4cdc7d50f04f4f21c50a1eb97c4e8406">Dune::IGANEW::makeSurfaceOfRevolution</a></div><div class="ttdeci">auto makeSurfaceOfRevolution(const NURBSPatchData&lt; 1, 3, ScalarType &gt; &amp;generatrix, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;point, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;revolutionAxis, const ScalarType &amp;revolutionAngle=360.0)</div><div class="ttdoc">Create a surface of revolution from a generating curve.</div><div class="ttdef"><b>Definition:</b> makesurfaceofrevolution.hh:46</div></div>
-<div class="ttc" id="aa00208_html_a92a605959c76f4613b72045bd4fdbf5c"><div class="ttname"><a href="../../dc/d31/a00208.html#a92a605959c76f4613b72045bd4fdbf5c">Dune::IGANEW::intersect3DLines</a></div><div class="ttdeci">VectorType intersect3DLines(const VectorType basepoint1, const VectorType direction1, const VectorType basepoint2, const VectorType direction2)</div><div class="ttdoc">Finds the intersection point of two 3D lines.</div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:65</div></div>
-<div class="ttc" id="aa00208_html_ac5771e572de1611b27eb788b95d1efec"><div class="ttname"><a href="../../dc/d31/a00208.html#ac5771e572de1611b27eb788b95d1efec">Dune::IGANEW::projectPointOntoLine</a></div><div class="ttdeci">VectorType projectPointOntoLine(const VectorType basepoint, const VectorType direction, const VectorType point)</div><div class="ttdoc">Projects a point onto a line defined by a basepoint and direction.</div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:30</div></div>
-<div class="ttc" id="aa01050_html"><div class="ttname"><a href="../../d9/d8e/a01050.html">Dune::IGANEW::ControlPoint</a></div><div class="ttdoc">Represents a NURBS control point.</div><div class="ttdef"><b>Definition:</b> controlpoint.hh:19</div></div>
-<div class="ttc" id="aa01050_html_a7d28f5087c63173fd47b83c11cfef8db"><div class="ttname"><a href="../../d9/d8e/a01050.html#a7d28f5087c63173fd47b83c11cfef8db">Dune::IGANEW::ControlPoint::p</a></div><div class="ttdeci">VectorType p</div><div class="ttdef"><b>Definition:</b> controlpoint.hh:21</div></div>
-<div class="ttc" id="aa01422_html"><div class="ttname"><a href="../../d1/df4/a01422.html">Dune::IGANEW::NURBSPatchData</a></div><div class="ttdoc">Struct that holds all data regarding the NURBS geometric structure.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:19</div></div>
-<div class="ttc" id="aa01422_html_a30411a17ca195626ac8510acd7b99758"><div class="ttname"><a href="../../d1/df4/a01422.html#a30411a17ca195626ac8510acd7b99758">Dune::IGANEW::NURBSPatchData::degree</a></div><div class="ttdeci">std::array&lt; int, dim &gt; degree</div><div class="ttdoc">Degree of the NURBS patch in each dimension.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:42</div></div>
-<div class="ttc" id="aa01422_html_a5038d8719ed15eec6042971ea15e1706"><div class="ttname"><a href="../../d1/df4/a01422.html#a5038d8719ed15eec6042971ea15e1706">Dune::IGANEW::NURBSPatchData::controlPoints</a></div><div class="ttdeci">ControlPointNetType controlPoints</div><div class="ttdoc">Net of control points.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:41</div></div>
-<div class="ttc" id="aa01422_html_a51ab1704f2ced939d707f5c8a5394c55"><div class="ttname"><a href="../../d1/df4/a01422.html#a51ab1704f2ced939d707f5c8a5394c55">Dune::IGANEW::NURBSPatchData::GlobalCoordinateType</a></div><div class="ttdeci">FieldVector&lt; ScalarType, dimworld &gt; GlobalCoordinateType</div><div class="ttdoc">Type for global coordinates.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:22</div></div>
-<div class="ttc" id="aa01422_html_ac3ae0d508de8bcc031da26a4578c979b"><div class="ttname"><a href="../../d1/df4/a01422.html#ac3ae0d508de8bcc031da26a4578c979b">Dune::IGANEW::NURBSPatchData::knotSpans</a></div><div class="ttdeci">std::array&lt; std::vector&lt; double &gt;, dim &gt; knotSpans</div><div class="ttdoc">Knot spans for each dimension.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:40</div></div>
-<div class="ttc" id="aa01602_html"><div class="ttname"><a href="../../d5/dcf/a01602.html">Dune::IGANEW::MultiDimensionalNet&lt; dim, ControlPointType &gt;</a></div></div>
-<div class="ttc" id="aa01602_html_a206591d2ccf1829d4f545acc77c8d16e"><div class="ttname"><a href="../../d5/dcf/a01602.html#a206591d2ccf1829d4f545acc77c8d16e">Dune::IGANEW::MultiDimensionalNet::directGet</a></div><div class="ttdeci">value_type &amp; directGet(const int index)</div><div class="ttdoc">returns a value at an index (unmapped)</div><div class="ttdef"><b>Definition:</b> mdnet.hh:243</div></div>
-<div class="ttc" id="aa01602_html_a79bd9b57f2db24deac6f71ddd8eb3c83"><div class="ttname"><a href="../../d5/dcf/a01602.html#a79bd9b57f2db24deac6f71ddd8eb3c83">Dune::IGANEW::MultiDimensionalNet::strideSizes</a></div><div class="ttdeci">std::array&lt; int, netdim &gt; strideSizes() const</div><div class="ttdoc">returns an array with the strideSizes of each dimension</div><div class="ttdef"><b>Definition:</b> mdnet.hh:272</div></div>
-<div class="ttc" id="aa03141_html"><div class="ttname"><a href="../../dd/dd1/a03141.html">nurbspatchdata.hh</a></div></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> sucess       = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> maxIterations = 1000;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    FieldVector&lt;ScalarType, 2&gt; curvePoint;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">const</span> FieldVector lineDerivative        = line.jacobian();</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iter = 0; iter &lt; maxIterations; ++iter) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      curvePoint                              = geoCurve.global(tParameter[0]);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keyword">const</span> FieldVector curveDerivative       = geoCurve.jacobianTransposed(tParameter[0])[0];</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keyword">const</span> FieldVector curvSecondeDerivative = geoCurve.hessian(tParameter[0])[0];</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="keyword">const</span> FieldVector dist                  = curvePoint - line(tParameter[1]);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keyword">const</span> ScalarType energy = 0.5 * dist.two_norm2();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      FieldVector&lt;ScalarType, 2&gt; grad({curveDerivative * dist, -lineDerivative * dist});</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      FieldMatrix&lt;ScalarType, 2&gt; Hess;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      Hess[0][0] = curveDerivative.two_norm2() + dist * curvSecondeDerivative;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      Hess[1][1] = lineDerivative.two_norm2();</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      Hess[0][1] = Hess[1][0] = -curveDerivative * lineDerivative;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// Newton-Raphson update</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      FieldVector&lt;ScalarType, 2&gt; deltaT;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      Hess.solve(deltaT, grad);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      tParameter -= deltaT;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="comment">// Check for convergence</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">if</span> (deltaT.two_norm() &lt; tol) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        sucess     = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        curvePoint = geoCurve.global(tParameter[0]);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      }</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">auto</span> domain = geoCurve.domain();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordflow">if</span> (not domain[0].checkInside(tParameter[0])) sucess = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">return</span> std::make_tuple(sucess, tParameter, curvePoint);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>}  <span class="comment">// namespaceIGANEW</span></div>
+<div class="ttc" id="aa00211_html"><div class="ttname"><a href="../../dd/ded/a00211.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
+<div class="ttc" id="aa00211_html_acbab55bc9467ca289ad446c860004a7a"><div class="ttname"><a href="../../dd/ded/a00211.html#acbab55bc9467ca289ad446c860004a7a">Dune::IGANEW::findIntersectionCurveAndLine</a></div><div class="ttdeci">auto findIntersectionCurveAndLine(const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, dim &gt; tParameter, ScalarType tol=1e-10)</div><div class="ttdef"><b>Definition:</b> findintersection.hh:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">makesurfaceofrevolution.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">findintersection.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

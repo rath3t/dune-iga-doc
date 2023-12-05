@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: makesurfaceofrevolution.hh File Reference</title>
+<title>dune-iga: findintersection.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,34 +94,33 @@ $(document).ready(function(){initNavTree('d7/dce/a00143.html','../../'); initRes
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">makesurfaceofrevolution.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">findintersection.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d7/d9a/a00152_source.html">dune/iga/geometrykernel/basealgorithms.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dd/dd1/a03141_source.html">dune/iga/splines/nurbspatchdata.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
 </div>
 <p><a href="../../d7/dce/a00143_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:de/dd2/a00207"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/a00207.html">Dune</a></td></tr>
+<tr class="memitem:da/de7/a00210"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de7/a00210.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dc/d31/a00208"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/a00208.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:dd/ded/a00211"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ded/a00211.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dc/d31/a00208.html#a4cdc7d50f04f4f21c50a1eb97c4e8406">Dune::IGANEW::makeSurfaceOfRevolution</a> (const NURBSPatchData&lt; 1, 3, ScalarType &gt; &amp;generatrix, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;point, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;revolutionAxis, const ScalarType &amp;revolutionAngle=360.0)</td></tr>
-<tr class="memdesc:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a surface of revolution from a generating curve.  <a href="../../dc/d31/a00208.html#a4cdc7d50f04f4f21c50a1eb97c4e8406">More...</a><br /></td></tr>
-<tr class="separator:a4cdc7d50f04f4f21c50a1eb97c4e8406"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acbab55bc9467ca289ad446c860004a7a"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </td></tr>
+<tr class="memitem:acbab55bc9467ca289ad446c860004a7a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/ded/a00211.html#acbab55bc9467ca289ad446c860004a7a">Dune::IGANEW::findIntersectionCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, dim &gt; tParameter, ScalarType tol=1e-10)</td></tr>
+<tr class="separator:acbab55bc9467ca289ad446c860004a7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">makesurfaceofrevolution.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d7/dce/a00143.html">findintersection.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

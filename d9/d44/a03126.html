@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: patchgridleafiterator.hh File Reference</title>
+<title>dune-iga: patchgrid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,39 +94,53 @@ $(document).ready(function(){initNavTree('d9/d44/a03126.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">identitytrimmer/patchgridleafiterator.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">hierarchicpatch/patchgrid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>The PatchGridLeafIterator class.  
+<p>The PatchGrid class.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;dune/grid/common/gridenums.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../df/dbf/a03132_source.html">concepts.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/dab/a00089_source.html">enums.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dec/a00080_source.html">traits.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/dc1/a00092_source.html">patchgridentity.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d44/a00098_source.html">patchgridentityseed.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d09/a00077_source.html">patchgridfactory.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d1f/a00083_source.html">patchgridfwd.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db6/a00074_source.html">patchgridgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/dc2/a00104_source.html">patchgridhierarchiciterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d2a/a00086_source.html">patchgridview.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/parallel/communication.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/grid.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d3/dca/a03171_source.html">dune/iga/trimmer/identitytrimmer/trimmer.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d9/d44/a03126_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d21/a01582.html">Dune::IGANEW::IdentityTrim::PatchGridLeafIterator&lt; codim, pitype, GridImp &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator over all entities of a given codimension and level of a grid.  <a href="../../d0/d21/a01582.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd3/a01185.html">Dune::IGANEW::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a NURBS grid based on a single NURBS patch.  <a href="../../d3/dd3/a01185.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:de/dd2/a00207"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd2/a00207.html">Dune</a></td></tr>
+<tr class="memitem:da/de7/a00210"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/de7/a00210.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dc/d31/a00208"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d31/a00208.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:dc/d9a/a00218"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9a/a00218.html">Dune::Functions</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d5/ddf/a00224"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/ddf/a00224.html">Dune::IGANEW::IdentityTrim</a></td></tr>
+<tr class="memitem:dd/ded/a00211"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/ded/a00211.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The PatchGridLeafIterator class. </p>
+<div class="textblock"><p >The PatchGrid class. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_aa3557bd66a6784b3b9e663253e8d0ba.html">identitytrimmer</a></li><li class="navelem"><a class="el" href="../../d9/d44/a03126.html">patchgridleafiterator.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d9/d44/a03126.html">patchgrid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
