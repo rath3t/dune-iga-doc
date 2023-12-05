@@ -5,7 +5,6 @@ var a01471 =
     [ "ElementTrimDataContainer", "dd/d15/a01471.html#a60170b408fbe831c918ceb39098685dd", null ],
     [ "EntityContainerType", "dd/d15/a01471.html#a143d3d00494d7d3c0222cd4160ace5e2", null ],
     [ "GlobalIdSet", "dd/d15/a01471.html#a8f4dc8fde8ae9a7ccd3565361b8598f5", null ],
-    [ "GlobalIdSetIdType", "dd/d15/a01471.html#ad64169d812406cbf08426cb058290b87", null ],
     [ "HostIdType", "dd/d15/a01471.html#a59ef4f9ce5f718431907dd9ffdaffda6", null ],
     [ "LocalGeometry", "dd/d15/a01471.html#af124f892c81b37f71f4fbaaba10d9e29", null ],
     [ "LocalParameterSpaceGeometry", "dd/d15/a01471.html#aa841c42bb4670cd5cf3f0ef9eb991f0b", null ],

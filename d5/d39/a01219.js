@@ -12,7 +12,7 @@ var a01219 =
     [ "LocalCoordinateInPatch", "d5/d39/a01219.html#a402073861728cc49d2d86d0434dedebd", null ],
     [ "ParameterSpaceGeometry", "d5/d39/a01219.html#a807fada11eba6bf2a06a619c1484cbf1", null ],
     [ "PatchGeometry", "d5/d39/a01219.html#a523eac2cc0966df074c2c37b4b95497f", null ],
-    [ "TrimmerType", "d5/d39/a01219.html#ab0b5dacaa7f05deaa296fbea55062673", null ],
+    [ "TrimmerType", "d5/d39/a01219.html#a2ebaa8211c1bbea16a6c3a10277d1972", null ],
     [ "Volume", "d5/d39/a01219.html#a76e40705b38a396b4aad362aa1da7bc0", null ],
     [ "PatchGridGeometry", "d5/d39/a01219.html#a774bb1f0bd8023023801791d625aec71", null ],
     [ "affine", "d5/d39/a01219.html#a593a2b9143bde7fd54fed564f55b87ac", null ],

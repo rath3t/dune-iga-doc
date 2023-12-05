@@ -13,7 +13,7 @@ var a01231 =
     [ "LocalGeometry", "d0/d88/a01231.html#ac50a303ef8de8cd4b98f0c26a0d7a289", null ],
     [ "LocalHostGeometry", "d0/d88/a01231.html#aa811b43f74db21bf64fd4684ffc72af6", null ],
     [ "PatchGeometry", "d0/d88/a01231.html#a675c8047140e674108f7ac9c00a63f11", null ],
-    [ "TrimmerType", "d0/d88/a01231.html#a636bfe6d2c5a56f78677f11a6f523afa", null ],
+    [ "TrimmerType", "d0/d88/a01231.html#a838aaefc5c365c21481b0f9f97451bb1", null ],
     [ "Volume", "d0/d88/a01231.html#a80ee5f15014e6c60dcdb5ca0395c0e1a", null ],
     [ "PatchGridLocalGeometry", "d0/d88/a01231.html#a95e00fe4572c7589cdf473720289fb53", null ],
     [ "affine", "d0/d88/a01231.html#ac0d095774cf01b990e81c75aa3f2347c", null ],

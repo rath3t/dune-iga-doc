@@ -1,4 +1,4 @@
 var a00068 =
 [
-    [ "Dune::GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "da/d3f/a01215.html", "da/d3f/a01215" ]
+    [ "Dune::GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d1/d34/a01211.html", "d1/d34/a01211" ]
 ];

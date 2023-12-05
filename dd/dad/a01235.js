@@ -1,7 +1,7 @@
 var a01235 =
 [
     [ "ThisType", "dd/dad/a01235.html#acf8009860b8d5588205792bff0aaf6af", null ],
-    [ "TrimmerType", "dd/dad/a01235.html#a4e86ad5e6e06c623756ff33eab32da34", null ],
+    [ "TrimmerType", "dd/dad/a01235.html#a4a43dfaa49f854341fcf48902030aa06", null ],
     [ "PatchGridLevelGridView", "dd/dad/a01235.html#a6136f21384c47731acb2545311477834", null ],
     [ "patchData", "dd/dad/a01235.html#ade43589957d62296e1e575e66c85ab35", null ],
     [ "tensorProductCoordinates", "dd/dad/a01235.html#a5c4dc0f991f9846e9ebc00b68134e566", null ],
