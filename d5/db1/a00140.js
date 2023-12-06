@@ -1,4 +1,5 @@
 var a00140 =
 [
-    [ "closestPointProjectionByTrustRegion", "d5/db1/a00140.html#a5a86887937350922b04eaf5967ac33b9", null ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d2/d82/a01404.html", "d2/d82/a01404" ],
+    [ "forEachUntrimmedBoundaryDOF", "d5/db1/a00140.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
 ];

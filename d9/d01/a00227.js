@@ -1,17 +1,15 @@
 var a00227 =
 [
-    [ "ElementTrimData", "d5/dc8/a01541.html", null ],
-    [ "ElementTrimDataContainer", "dd/dba/a01545.html", null ],
-    [ "Parameter", "df/d3f/a01537.html", null ],
-    [ "PatchGridFamily", "d9/dac/a01557.html", "d9/dac/a01557" ],
-    [ "PatchGridGlobalIdSet", "da/df3/a01581.html", "da/df3/a01581" ],
-    [ "PatchGridLeafIndexSet", "d3/daa/a01577.html", "d3/daa/a01577" ],
-    [ "PatchGridLeafIntersectionIterator", "d7/d29/a01589.html", "d7/d29/a01589" ],
-    [ "PatchGridLeafIterator", "d0/d1d/a01597.html", "d0/d1d/a01597" ],
-    [ "PatchGridLevelIndexSet", "d6/db5/a01573.html", "d6/db5/a01573" ],
-    [ "PatchGridLevelIntersectionIterator", "d9/dc8/a01593.html", "d9/dc8/a01593" ],
-    [ "PatchGridLevelIterator", "d7/d82/a01601.html", "d7/d82/a01601" ],
-    [ "PatchGridLocalIdSet", "da/de2/a01585.html", "da/de2/a01585" ],
-    [ "PatchTrimData", "d3/d1b/a01549.html", null ],
-    [ "Trimmer", "de/d2c/a01553.html", "de/d2c/a01553" ]
+    [ "BsplineBasis", "df/d84/a01408.html", "df/d84/a01408" ],
+    [ "Nurbs", "dc/d10/a01412.html", "dc/d10/a01412" ],
+    [ "createUniqueKnotSpans", "d9/d01/a00227.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "d9/d01/a00227.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "d9/d01/a00227.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "d9/d01/a00227.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "d9/d01/a00227.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "d9/d01/a00227.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "d9/d01/a00227.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "d9/d01/a00227.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "d9/d01/a00227.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
+    [ "netOfSpan", "d9/d01/a00227.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];

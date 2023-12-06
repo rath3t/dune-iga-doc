@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['tensorproductcoordinates_0',['TensorProductCoordinates',['../d0/dc9/a01065.html',1,'Dune']]],
-  ['threadsafe_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_20_3e_1',['threadSafe&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;',['../d6/d6e/a01137.html',1,'Dune::Capabilities']]],
-  ['threadsafe_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2',['threadSafe&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../db/d28/a01133.html',1,'Dune::Capabilities']]],
-  ['transformtospan_3',['TransformToSpan',['../d7/d1c/a01397.html',1,'Dune::IGA']]],
-  ['trimdata_4',['TrimData',['../de/d6c/a01349.html',1,'Dune::IGA']]],
-  ['trimmedleafintersection_5',['TrimmedLeafIntersection',['../d9/d8b/a01469.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedlevelintersection_6',['TrimmedLevelIntersection',['../de/d13/a01473.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedlocalgeometry_7',['TrimmedLocalGeometry',['../db/d06/a01509.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedparameterspacegridentity_8',['TrimmedParameterSpaceGridEntity',['../db/d1e/a01497.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedreferenceelement_9',['TrimmedReferenceElement',['../d2/dac/a01489.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmer_10',['Trimmer',['../dc/dce/a01505.html',1,'Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, dimworld, ScalarType &gt;'],['../de/d2c/a01553.html',1,'Dune::IGANEW::IdentityTrim::Trimmer&lt; dim, dimworld, ScalarType &gt;']]],
-  ['trimmertraits_11',['TrimmerTraits',['../db/dce/a01529.html',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits'],['../d2/d49/a01561.html',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits']]]
+  ['tensorproductcoordinates_0',['TensorProductCoordinates',['../d1/de6/a01068.html',1,'Dune']]],
+  ['threadsafe_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_20_3e_1',['threadSafe&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;',['../dc/d64/a01140.html',1,'Dune::Capabilities']]],
+  ['threadsafe_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2',['threadSafe&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../d1/dae/a01136.html',1,'Dune::Capabilities']]],
+  ['transformtospan_3',['TransformToSpan',['../d1/dcc/a01392.html',1,'Dune::IGA']]],
+  ['trimdata_4',['TrimData',['../dc/d54/a01344.html',1,'Dune::IGA']]],
+  ['trimmedleafintersection_5',['TrimmedLeafIntersection',['../d2/d48/a01472.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedlevelintersection_6',['TrimmedLevelIntersection',['../d0/d38/a01476.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedlocalgeometry_7',['TrimmedLocalGeometry',['../dc/d57/a01512.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedparameterspacegridentity_8',['TrimmedParameterSpaceGridEntity',['../de/d65/a01500.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedreferenceelement_9',['TrimmedReferenceElement',['../da/ddc/a01492.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmer_10',['Trimmer',['../d0/deb/a01508.html',1,'Dune::IGANEW::DefaultTrim::Trimmer&lt; dim, dimworld, ScalarType &gt;'],['../dc/dd2/a01604.html',1,'Dune::IGANEW::IdentityTrim::Trimmer&lt; dim, dimworld, ScalarType &gt;']]],
+  ['trimmertraits_11',['TrimmerTraits',['../dc/d0c/a01532.html',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits'],['../d5/d84/a01612.html',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits']]]
 ];

@@ -1,24 +1,19 @@
 var a00231 =
 [
-    [ "_boundarypatch", "d0/d53/a00232.html", [
-      [ "boundaryPatch", "d0/d53/a00232.html#adca8f900f932f6673b01a1bff6ef60ac", null ]
-    ] ],
-    [ "_igagrids", "d6/de1/a00233.html", [
-      [ "IGAGrid", "d6/de1/a00233.html#af93cff67f8b7e3e20822b05262c82751", null ],
-      [ "grid_registry", "d6/de1/a00233.html#a49a8630210f89f42b665afd341205e8d", null ]
-    ] ],
-    [ "_nurbsalgorithms", "da/d31/a00234.html", [
-      [ "makeCircularArc", "da/d31/a00234.html#a22eb6b54ecd977addcf9b5da165613e8", null ],
-      [ "makeSurfaceOfRevolution", "da/d31/a00234.html#a5884657662741f0cb1233206aaccdd64", null ],
-      [ "runCircularArc", "da/d31/a00234.html#a4435c22c355c8f50239394e8452069db", null ],
-      [ "runSurfaceOfRevolution", "da/d31/a00234.html#a050e71892f002f5250de3c7b3155c942", null ]
-    ] ],
-    [ "_nurbspatchdata", "d3/d42/a00235.html", [
-      [ "ControlPoint", "d3/d42/a00235.html#a87eb600529940f01930f93b69fb57771", null ],
-      [ "ControlPointNet", "d3/d42/a00235.html#a0aaa76ef36eaaaab6f75a00d73e7af7d", null ],
-      [ "NurbsPatchData", "d3/d42/a00235.html#a2e79a7a839b0ea0ebef0ad1ce581dd72", null ],
-      [ "NurbsPatchDataDefault", "d3/d42/a00235.html#a27a76c3c944053aa8fea7ee072860187", null ]
-    ] ],
-    [ "basis", "d7/d40/a00236.html", "d7/d40/a00236" ],
-    [ "registry", "df/d17/a00231.html#a692469dff5d684126efb9a24e2905bd4", null ]
+    [ "ElementTrimData", "de/d40/a01592.html", null ],
+    [ "ElementTrimDataContainer", "dd/d70/a01596.html", null ],
+    [ "Parameter", "d7/d71/a01588.html", null ],
+    [ "PatchGridEntitySeed", "d6/d83/a01544.html", "d6/d83/a01544" ],
+    [ "PatchGridFamily", "db/dfd/a01608.html", "db/dfd/a01608" ],
+    [ "PatchGridGlobalIdSet", "de/d89/a01560.html", "de/d89/a01560" ],
+    [ "PatchGridHierarchicIterator", "da/dc7/a01548.html", "da/dc7/a01548" ],
+    [ "PatchGridLeafIndexSet", "d7/db6/a01556.html", "d7/db6/a01556" ],
+    [ "PatchGridLeafIntersectionIterator", "da/daf/a01568.html", "da/daf/a01568" ],
+    [ "PatchGridLeafIterator", "db/dfd/a01576.html", "db/dfd/a01576" ],
+    [ "PatchGridLevelIndexSet", "d0/db9/a01552.html", "d0/db9/a01552" ],
+    [ "PatchGridLevelIntersectionIterator", "d3/d22/a01572.html", "d3/d22/a01572" ],
+    [ "PatchGridLevelIterator", "da/dd5/a01580.html", "da/dd5/a01580" ],
+    [ "PatchGridLocalIdSet", "de/dd5/a01564.html", "de/dd5/a01564" ],
+    [ "PatchTrimData", "d4/d3f/a01600.html", null ],
+    [ "Trimmer", "dc/dd2/a01604.html", "dc/dd2/a01604" ]
 ];
