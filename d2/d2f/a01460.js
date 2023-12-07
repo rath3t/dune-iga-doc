@@ -1,9 +1,9 @@
 var a01460 =
 [
-    [ "Intersection", "d2/d2f/a01460.html#a00edaf40589f9c764fdc3e463f1aa298", null ],
-    [ "PatchGridLeafIntersectionIterator", "d2/d2f/a01460.html#a2aadd7c7890cda2173eeb946a581d52a", null ],
-    [ "PatchGridLeafIntersectionIterator", "d2/d2f/a01460.html#a9757c733461339c49b8fc5456d2eb2b2", null ],
-    [ "dereference", "d2/d2f/a01460.html#af680064bcd96a403ec6dad3bc5b7d0c9", null ],
-    [ "equals", "d2/d2f/a01460.html#aff27fdc600197b16b8f1b5b844fe628a", null ],
-    [ "increment", "d2/d2f/a01460.html#a3e70c1ce46fac5a1102d078d5ed90673", null ]
+    [ "IdType", "d2/d2f/a01460.html#a636bf4f46b0c4bebc968c543849ca7c3", null ],
+    [ "PatchGridLocalIdSet", "d2/d2f/a01460.html#af62206ea32f5daf84948103f938671f7", null ],
+    [ "id", "d2/d2f/a01460.html#aecb92c3d2012aa550fbd1a845e82d531", null ],
+    [ "subId", "d2/d2f/a01460.html#a4a1161af0952b9de278a047b589998bd", null ],
+    [ "update", "d2/d2f/a01460.html#a3614ca9c54b70a54addbced7225ab1c1", null ],
+    [ "grid_", "d2/d2f/a01460.html#a8f38f551bb4d8d1807983cf2a35c7437", null ]
 ];

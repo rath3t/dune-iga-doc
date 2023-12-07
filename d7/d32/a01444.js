@@ -1,10 +1,12 @@
 var a01444 =
 [
-    [ "Entity", "d7/d32/a01444.html#ab1434eb357ae98abe03b0f16bda173a9", null ],
-    [ "PatchGridHierarchicIterator", "d7/d32/a01444.html#a1970a7e2b41e5049991bb9357f4dbfb6", null ],
-    [ "PatchGridHierarchicIterator", "d7/d32/a01444.html#af5f2e7c0e22cf47906a89b3c63746312", null ],
-    [ "dereference", "d7/d32/a01444.html#afceecc29e2e8c1515f1a2308112b2bb5", null ],
-    [ "equals", "d7/d32/a01444.html#a6235b8d2e05c1dda477d2805bd35695a", null ],
-    [ "increment", "d7/d32/a01444.html#aae09d95697c67a7f760a2b82a5f5c98d", null ],
-    [ "codimension", "d7/d32/a01444.html#a7ce99544410c8442ac40c4815e73460d", null ]
+    [ "Entity", "d7/d32/a01444.html#a1ec2617ac66250f7c5b47ce258dcfd3d", null ],
+    [ "EntityImp", "d7/d32/a01444.html#a948c104448d8b48d1b97e2230211275e", null ],
+    [ "ParameterSpaceGridEntitySeed", "d7/d32/a01444.html#a4f45d7cdf7f2d697d17a173dd5b27b7a", null ],
+    [ "Trimmer", "d7/d32/a01444.html#a6e02e58e1234d8eb007ae4f40ff157d1", null ],
+    [ "PatchGridEntitySeed", "d7/d32/a01444.html#a3654d5f046a1d4bb25d69767d5f9721a", null ],
+    [ "PatchGridEntitySeed", "d7/d32/a01444.html#a2e9d1ebe81ef6ea1c3caacb7fef7771f", null ],
+    [ "isValid", "d7/d32/a01444.html#adcee67777da34feecbfba5e164852986", null ],
+    [ "codimension", "d7/d32/a01444.html#ab9dcfac06e5516f019d5f691946db1ea", null ],
+    [ "Trimmer", "d7/d32/a01444.html#a036089004fd73ddd900077b7ba2f97f7", null ]
 ];

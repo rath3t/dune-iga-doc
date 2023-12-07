@@ -1,8 +1,7 @@
 var a00068 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry< mydim, coorddim, GridImp, localGeometryTag >", "dc/d57/a01512.html", "dc/d57/a01512" ],
-    [ "LocalGeometryTag", "da/d24/a00068.html#a732e3f39cf34394d88364942fc6b941f", [
-      [ "InParameterSpace", "da/d24/a00068.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e", null ],
-      [ "InReferenceElement", "da/d24/a00068.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723", null ]
-    ] ]
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d4/d49/a01316.html", "d4/d49/a01316" ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "df/dec/a01320.html", "df/dec/a01320" ],
+    [ "Dune::JSONGridFactory< Grid_ >", "d5/d53/a01324.html", "d5/d53/a01324" ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/dd9/a01328.html", "dc/dd9/a01328" ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::Concept::AddAble Concept Reference</title>
+<title>dune-iga: Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,23 +91,210 @@ $(document).ready(function(){initNavTree('d5/d8d/a01656.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Dune::IGANEW::Concept::AddAble Concept Reference</div></div>
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d1/d03/a01653.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d0/d9b/a03103_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</code></p>
-<h2 class="groupheader">Concept definition</h2>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d5/d8d/a01656.html">Dune::IGANEW::Concept::AddAble</a> =  <span class="keyword">requires</span>(L x, R y) {</div>
-<div class="line">    x + y;</div>
-<div class="line">  }</div>
-<div class="ttc" id="aa01656_html"><div class="ttname"><a href="../../d5/d8d/a01656.html">Dune::IGANEW::Concept::AddAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:38</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<p>class holds a n-dim net  
+ <a href="../../d5/d8d/a01656.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d4/d51/a00017_source.html">dune/iga/utils/mdnet.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a07bde1e4d2c1949cb416b624bdf72767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a07bde1e4d2c1949cb416b624bdf72767">MultiDimensionalNetIndex</a> (const FieldVector&lt; int, netdim &gt; &amp;dimSize)</td></tr>
+<tr class="separator:a07bde1e4d2c1949cb416b624bdf72767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8821b3ef72e566daff7ad20071f4514a"><td class="memTemplParams" colspan="2">template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
+<tr class="memitem:a8821b3ef72e566daff7ad20071f4514a"><td class="memTemplItemLeft" align="right" valign="top">ReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a8821b3ef72e566daff7ad20071f4514a">directToMultiIndex</a> (const int <a class="el" href="../../d5/d8d/a01656.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a>) const</td></tr>
+<tr class="memdesc:a8821b3ef72e566daff7ad20071f4514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a multiindex for a scalar index  <a href="../../d5/d8d/a01656.html#a8821b3ef72e566daff7ad20071f4514a">More...</a><br /></td></tr>
+<tr class="separator:a8821b3ef72e566daff7ad20071f4514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memTemplParams" colspan="2">template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
+<tr class="memitem:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a> (const ArrayType &amp;multiIndex) const</td></tr>
+<tr class="separator:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b46c1132b41bb080b0e89bb0bad98a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a1b46c1132b41bb080b0e89bb0bad98a1">size</a> () const</td></tr>
+<tr class="separator:a1b46c1132b41bb080b0e89bb0bad98a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memTemplParams" colspan="2">template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
+<tr class="memitem:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memTemplItemLeft" align="right" valign="top">static ReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a1af055fa6ad1a7cdf6b50b3b29f33040">directToMultiIndex</a> (const std::array&lt; int, netdim &gt; &amp;dimSize, const int <a class="el" href="../../d5/d8d/a01656.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a>)</td></tr>
+<tr class="separator:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t netdim&gt;<br />
+class Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt;</div><p >class holds a n-dim net </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a07bde1e4d2c1949cb416b624bdf72767" name="a07bde1e4d2c1949cb416b624bdf72767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bde1e4d2c1949cb416b624bdf72767">&#9670;&nbsp;</a></span>MultiDimensionalNetIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::MultiDimensionalNetIndex </td>
+          <td>(</td>
+          <td class="paramtype">const FieldVector&lt; int, netdim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dimSize</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8821b3ef72e566daff7ad20071f4514a" name="a8821b3ef72e566daff7ad20071f4514a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8821b3ef72e566daff7ad20071f4514a">&#9670;&nbsp;</a></span>directToMultiIndex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<div class="memtemplate">
+template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ReturnType <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::directToMultiIndex </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>returns a multiindex for a scalar index </p>
+
+</div>
+</div>
+<a id="a1af055fa6ad1a7cdf6b50b3b29f33040" name="a1af055fa6ad1a7cdf6b50b3b29f33040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af055fa6ad1a7cdf6b50b3b29f33040">&#9670;&nbsp;</a></span>directToMultiIndex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<div class="memtemplate">
+template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static ReturnType <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::directToMultiIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; int, netdim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dimSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0c37d6ecb435bf22a32dba0a0b0155ff" name="a0c37d6ecb435bf22a32dba0a0b0155ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c37d6ecb435bf22a32dba0a0b0155ff">&#9670;&nbsp;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<div class="memtemplate">
+template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::index </td>
+          <td>(</td>
+          <td class="paramtype">const ArrayType &amp;&#160;</td>
+          <td class="paramname"><em>multiIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1b46c1132b41bb080b0e89bb0bad98a1" name="a1b46c1132b41bb080b0e89bb0bad98a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b46c1132b41bb080b0e89bb0bad98a1">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d4/d51/a00017_source.html">mdnet.hh</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d1/de1/a00213.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/dd1/a00214.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../dd/df3/a00219.html">Concept</a></li><li class="navelem"><a class="el" href="../../d5/d8d/a01656.html">AddAble</a></li>
+    <li class="navelem"><a class="el" href="../../d1/de1/a00213.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/dd1/a00214.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d5/d8d/a01656.html">MultiDimensionalNetIndex</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,6 +1,9 @@
 var a01396 =
 [
-    [ "DomainInformation", "d9/d45/a01396.html#a937582ba90c62c75deccf426346f87ae", null ],
-    [ "domain", "d9/d45/a01396.html#ac96b9acfb53ef9eea0a8978894d1e924", null ],
-    [ "localIndex", "d9/d45/a01396.html#accce87872c7dfa44c89347d946664a33", null ]
+    [ "TransformToSpan", "d9/d45/a01396.html#abdda0d9b1f3b5267ec997032ad6adce8", null ],
+    [ "TransformToSpan", "d9/d45/a01396.html#af124bca23e21b5fb1cba65f566ef291e", null ],
+    [ "transform", "d9/d45/a01396.html#a00660a4b06a5414528705873cab0d258", null ],
+    [ "transform", "d9/d45/a01396.html#a14c9da9b4ea9c7c5781416899a0ba59a", null ],
+    [ "offset_", "d9/d45/a01396.html#a51161854ea25285fc83e7eae17fe9fc7", null ],
+    [ "scaling_", "d9/d45/a01396.html#af4bc4bed4998c5f84bf8042fbcb3ef32", null ]
 ];

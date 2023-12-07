@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: trimmedlocalgeometry.hh File Reference</title>
+<title>dune-iga: ibrareader.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,41 +93,45 @@ $(document).ready(function(){initNavTree('da/d24/a00068.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#enum-members">Enumerations</a>  </div>
-  <div class="headertitle"><div class="title">trimmedlocalgeometry.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">ibrareader.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;clipper2/clipper.h&gt;</code><br />
+<code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d0/d89/a00071_source.html">ibrageometry.hh</a>&quot;</code><br />
+<code>#include &lt;dune/grid/io/file/dgfparser/dgfparser.hh&gt;</code><br />
+<code>#include &quot;dune/iga/nurbsalgorithms.hh&quot;</code><br />
+<code>#include &quot;dune/iga/trim/nurbstrimboundary.hh&quot;</code><br />
+</div>
 <p><a href="../../da/d24/a00068_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d57/a01512.html">Dune::IGANEW::DefaultTrim::TrimmedLocalGeometry&lt; mydim, coorddim, GridImp, localGeometryTag &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d49/a01316.html">Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/dec/a01320.html">Dune::DGFGridInfo&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d53/a01324.html">Dune::JSONGridFactory&lt; Grid_ &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dd9/a01328.html">Dune::DGFGridFactory&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d1/de1/a00213"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/de1/a00213.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/dd1/a00214"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dd1/a00214.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:dc/d98/a00225"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d98/a00225.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dd/d2d/a00229"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html">Dune::IGANEW::DefaultTrim</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:a732e3f39cf34394d88364942fc6b941f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html#a732e3f39cf34394d88364942fc6b941f">Dune::IGANEW::DefaultTrim::LocalGeometryTag</a> { <a class="el" href="../../dd/d2d/a00229.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e">Dune::IGANEW::DefaultTrim::InParameterSpace</a>
-, <a class="el" href="../../dd/d2d/a00229.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723">Dune::IGANEW::DefaultTrim::InReferenceElement</a>
- }</td></tr>
-<tr class="separator:a732e3f39cf34394d88364942fc6b941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../da/d24/a00068.html">trimmedlocalgeometry.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_6a67ce012f0e7d7f20bfc6d5cc3e1475.html">oldStuff</a></li><li class="navelem"><a class="el" href="../../dir_9b75971e75a3e7381b24095f71781733.html">io</a></li><li class="navelem"><a class="el" href="../../dir_e1d7257eb8019e0a7ca5b44894f3df43.html">ibra</a></li><li class="navelem"><a class="el" href="../../da/d24/a00068.html">ibrareader.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

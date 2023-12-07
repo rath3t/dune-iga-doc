@@ -1,10 +1,10 @@
 var a01228 =
 [
-    [ "ThisType", "de/d16/a01228.html#aa00b81db8256928665b85a86e3d8c083", null ],
-    [ "TrimmerType", "de/d16/a01228.html#a61f9bec8f9455a94e2f0b8c1cda9bc9f", null ],
-    [ "PatchGridLeafGridView", "de/d16/a01228.html#a7e951e01b1ad4b07d2978e5ac8a2518d", null ],
-    [ "patchData", "de/d16/a01228.html#afe1897bad7b3be3b6398efe2a7151c0a", null ],
-    [ "tensorProductCoordinates", "de/d16/a01228.html#ae67fc0efafc5437a08ac31927614c0ee", null ],
-    [ "untrimmedElementNumbers", "de/d16/a01228.html#a84b2ac5a7d3b5d8907b68c1d83e06a2b", null ],
-    [ "unTrimmedPatch", "de/d16/a01228.html#a24ef80efa4ccc02e9b38d095f7eeb19a", null ]
+    [ "ThisType", "de/d16/a01228.html#acf8009860b8d5588205792bff0aaf6af", null ],
+    [ "TrimmerType", "de/d16/a01228.html#a4a43dfaa49f854341fcf48902030aa06", null ],
+    [ "PatchGridLevelGridView", "de/d16/a01228.html#a6136f21384c47731acb2545311477834", null ],
+    [ "patchData", "de/d16/a01228.html#ade43589957d62296e1e575e66c85ab35", null ],
+    [ "tensorProductCoordinates", "de/d16/a01228.html#a5c4dc0f991f9846e9ebc00b68134e566", null ],
+    [ "untrimmedElementNumbers", "de/d16/a01228.html#a000e8b4ecae84ed3d670b70e9f0714a6", null ],
+    [ "unTrimmedPatch", "de/d16/a01228.html#ac2f73e08e1bf389e8ef6698793656ba4", null ]
 ];
