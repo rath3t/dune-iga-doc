@@ -1,7 +1,9 @@
 var a01480 =
 [
     [ "ctype", "d1/d38/a01480.html#a1d75c9bbed91fb3ed061e87c1e1e1a2d", null ],
+    [ "IdType", "d1/d38/a01480.html#a119efee8518be7b1d12ebcbcdec66654", null ],
     [ "LocalCoordinate", "d1/d38/a01480.html#ad364c107244d5f1e9313336337c40de5", null ],
+    [ "LocalParameterSpaceGeometry", "d1/d38/a01480.html#a87a431e4f682031406db2ebe87840d68", null ],
     [ "NormalVector", "d1/d38/a01480.html#a4a2db92cb41b28d4cc95f269a5c886ca", null ],
     [ "TrimmedParameterSpaceGeometry", "d1/d38/a01480.html#a598eb772621c5157f74d244912e1221b", null ],
     [ "TrimmedLevelIntersection", "d1/d38/a01480.html#a8dc980e4f3c344faefb81f056b5cf560", null ],
@@ -11,7 +13,7 @@ var a01480 =
     [ "boundarySegmentIndex", "d1/d38/a01480.html#ac1955314c718ec401fcf8448e77140e4", null ],
     [ "centerUnitOuterNormal", "d1/d38/a01480.html#aa50f6c47f7b9dca813f464d2e0487059", null ],
     [ "conforming", "d1/d38/a01480.html#a3acccb5cd2b910b82a52d4cde6290cba", null ],
-    [ "geometry", "d1/d38/a01480.html#a5edc0ca9e3a55944721854bbebeed6c5", null ],
+    [ "geometry", "d1/d38/a01480.html#a1efdf6cf13c6de0deb2b8a641488abce", null ],
     [ "geometryInInside", "d1/d38/a01480.html#aea7971ce548c8739dee18298685cfa3f", null ],
     [ "geometryInOutside", "d1/d38/a01480.html#a92ea36ac27fb509fca03bb6020269570", null ],
     [ "indexInInside", "d1/d38/a01480.html#a47c17e1836fd5fb06713fd49a3bcc231", null ],

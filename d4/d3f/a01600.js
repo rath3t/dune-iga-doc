@@ -1,11 +1,9 @@
 var a01600 =
 [
-    [ "Entity", "d4/d3f/a01600.html#a5d837aaac849eb9a5849403aa175fba3", null ],
-    [ "PatchGridLevelIterator", "d4/d3f/a01600.html#a562415812e586049491f3e435aeb6414", null ],
-    [ "PatchGridLevelIterator", "d4/d3f/a01600.html#a9109a4e7532608a8c93e03a97a2663bb", null ],
-    [ "PatchGridLevelIterator", "d4/d3f/a01600.html#a8dc67f827295a49e58e1f57bf3ebc3c6", null ],
-    [ "dereference", "d4/d3f/a01600.html#a5bedfde778fefeb5d8630fb37801d47f", null ],
-    [ "equals", "d4/d3f/a01600.html#a71c64f66fef7b28c8a9e3039a9811fe8", null ],
-    [ "increment", "d4/d3f/a01600.html#a412553d3f0ccfc5b98e93fba5feacf39", null ],
-    [ "codimension", "d4/d3f/a01600.html#ae33b7a17180ff900967972eb647b081d", null ]
+    [ "IdType", "d4/d3f/a01600.html#ab65943bece9a4f96052869c1c22a86a2", null ],
+    [ "PatchGridLocalIdSet", "d4/d3f/a01600.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
+    [ "id", "d4/d3f/a01600.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
+    [ "subId", "d4/d3f/a01600.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
+    [ "update", "d4/d3f/a01600.html#af62b1ae58fd567949b09551702ecdcb6", null ],
+    [ "grid_", "d4/d3f/a01600.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
 ];

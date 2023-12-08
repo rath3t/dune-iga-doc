@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGANEW::Trim::IntersectionVariant&lt; TrimmerType_, Implementations &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,63 +93,193 @@ $(document).ready(function(){initNavTree('d5/d8d/a01656.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../d1/d03/a01653.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::Trim::IntersectionVariant&lt; TrimmerType_, Implementations &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>class holds a n-dim net  
+<p>An intersection with a leaf neighbor elementMesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element!  
  <a href="../../d5/d8d/a01656.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d4/d51/a00017_source.html">dune/iga/utils/mdnet.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d7/d9a/a00152_source.html">dune/iga/trimmer/intersectionvariants.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a07bde1e4d2c1949cb416b624bdf72767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a07bde1e4d2c1949cb416b624bdf72767">MultiDimensionalNetIndex</a> (const FieldVector&lt; int, netdim &gt; &amp;dimSize)</td></tr>
-<tr class="separator:a07bde1e4d2c1949cb416b624bdf72767"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8821b3ef72e566daff7ad20071f4514a"><td class="memTemplParams" colspan="2">template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
-<tr class="memitem:a8821b3ef72e566daff7ad20071f4514a"><td class="memTemplItemLeft" align="right" valign="top">ReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a8821b3ef72e566daff7ad20071f4514a">directToMultiIndex</a> (const int <a class="el" href="../../d5/d8d/a01656.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a>) const</td></tr>
-<tr class="memdesc:a8821b3ef72e566daff7ad20071f4514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a multiindex for a scalar index  <a href="../../d5/d8d/a01656.html#a8821b3ef72e566daff7ad20071f4514a">More...</a><br /></td></tr>
-<tr class="separator:a8821b3ef72e566daff7ad20071f4514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memTemplParams" colspan="2">template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
-<tr class="memitem:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a> (const ArrayType &amp;multiIndex) const</td></tr>
-<tr class="separator:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b46c1132b41bb080b0e89bb0bad98a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a1b46c1132b41bb080b0e89bb0bad98a1">size</a> () const</td></tr>
-<tr class="separator:a1b46c1132b41bb080b0e89bb0bad98a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memTemplParams" colspan="2">template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
-<tr class="memitem:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memTemplItemLeft" align="right" valign="top">static ReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a1af055fa6ad1a7cdf6b50b3b29f33040">directToMultiIndex</a> (const std::array&lt; int, netdim &gt; &amp;dimSize, const int <a class="el" href="../../d5/d8d/a01656.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a>)</td></tr>
-<tr class="separator:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24c8f29c7ac37310691d2abe80a3a665"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a24c8f29c7ac37310691d2abe80a3a665">visit</a> (auto &amp;&amp;lambda) const</td></tr>
+<tr class="separator:a24c8f29c7ac37310691d2abe80a3a665"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a436d1e35f76e2279fb52a8ca9b023cb1"><td class="memTemplParams" colspan="2">template&lt;class Implementation &gt; </td></tr>
+<tr class="memitem:a436d1e35f76e2279fb52a8ca9b023cb1"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a436d1e35f76e2279fb52a8ca9b023cb1">IntersectionVariant</a> (const Implementation &amp;impl)</td></tr>
+<tr class="separator:a436d1e35f76e2279fb52a8ca9b023cb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad711a2e66cb3ae2672f25a3430a9bdde"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#ad711a2e66cb3ae2672f25a3430a9bdde">IntersectionVariant</a> ()=default</td></tr>
+<tr class="separator:ad711a2e66cb3ae2672f25a3430a9bdde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcd517e5a7d2caae3dce254172e3380c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#afcd517e5a7d2caae3dce254172e3380c">IntersectionVariant</a> (const <a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;other)=default</td></tr>
+<tr class="separator:afcd517e5a7d2caae3dce254172e3380c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad07bda78d850bfa614249d7367beefb7"><td class="memTemplParams" colspan="2">template&lt;class Implementation &gt; <br />
+requires (!std::is_same_v&lt;Implementation, <a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a>&gt;)</td></tr>
+<tr class="memitem:ad07bda78d850bfa614249d7367beefb7"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#ad07bda78d850bfa614249d7367beefb7">operator=</a> (const Implementation &amp;impl)</td></tr>
+<tr class="separator:ad07bda78d850bfa614249d7367beefb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cc325451935654469ea9092c9b2318"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a69cc325451935654469ea9092c9b2318">IntersectionVariant</a> (<a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:a69cc325451935654469ea9092c9b2318"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2358a9cceef01ace152d8196528c63"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a5d2358a9cceef01ace152d8196528c63">operator=</a> (const <a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;other)=default</td></tr>
+<tr class="separator:a5d2358a9cceef01ace152d8196528c63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab943ccc23370108ff5e12e6b0f4c86cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#ab943ccc23370108ff5e12e6b0f4c86cd">operator=</a> (<a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp;&amp;other) noexcept=default</td></tr>
+<tr class="separator:ab943ccc23370108ff5e12e6b0f4c86cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52c14b63cac6ef65a2ab5a3f39396fcc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a52c14b63cac6ef65a2ab5a3f39396fcc">inside</a> () const</td></tr>
+<tr class="separator:a52c14b63cac6ef65a2ab5a3f39396fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2454c69e973538c6802a34b9eb3c9ff2"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a2454c69e973538c6802a34b9eb3c9ff2">outside</a> () const</td></tr>
+<tr class="separator:a2454c69e973538c6802a34b9eb3c9ff2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a936a69ed7807de0bd47d445600f524aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a936a69ed7807de0bd47d445600f524aa">boundary</a> () const</td></tr>
+<tr class="memdesc:a936a69ed7807de0bd47d445600f524aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if intersection is with boundary.  <a href="../../d5/d8d/a01656.html#a936a69ed7807de0bd47d445600f524aa">More...</a><br /></td></tr>
+<tr class="separator:a936a69ed7807de0bd47d445600f524aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d87a916e0875e316c14339473ee9ed5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a3d87a916e0875e316c14339473ee9ed5">centerUnitOuterNormal</a> () const</td></tr>
+<tr class="memdesc:a3d87a916e0875e316c14339473ee9ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return unit outer normal (length == 1)  <a href="../../d5/d8d/a01656.html#a3d87a916e0875e316c14339473ee9ed5">More...</a><br /></td></tr>
+<tr class="separator:a3d87a916e0875e316c14339473ee9ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2212ad4a2c01a1b77957f5bf0ca872b3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a2212ad4a2c01a1b77957f5bf0ca872b3">neighbor</a> () const</td></tr>
+<tr class="memdesc:a2212ad4a2c01a1b77957f5bf0ca872b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">return true if across the edge an neighbor on this level exists  <a href="../../d5/d8d/a01656.html#a2212ad4a2c01a1b77957f5bf0ca872b3">More...</a><br /></td></tr>
+<tr class="separator:a2212ad4a2c01a1b77957f5bf0ca872b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9fa9c1f998d9aa093654a37e6825ca95"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a9fa9c1f998d9aa093654a37e6825ca95">boundarySegmentIndex</a> () const</td></tr>
+<tr class="memdesc:a9fa9c1f998d9aa093654a37e6825ca95"><td class="mdescLeft">&#160;</td><td class="mdescRight">return the boundary segment index  <a href="../../d5/d8d/a01656.html#a9fa9c1f998d9aa093654a37e6825ca95">More...</a><br /></td></tr>
+<tr class="separator:a9fa9c1f998d9aa093654a37e6825ca95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b7a63dd601131e7ce5abbc5c002070"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a06b7a63dd601131e7ce5abbc5c002070">conforming</a> () const</td></tr>
+<tr class="memdesc:a06b7a63dd601131e7ce5abbc5c002070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if this is a conforming intersection.  <a href="../../d5/d8d/a01656.html#a06b7a63dd601131e7ce5abbc5c002070">More...</a><br /></td></tr>
+<tr class="separator:a06b7a63dd601131e7ce5abbc5c002070"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14df5f8058bd61c0685198d365cc56da"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a14df5f8058bd61c0685198d365cc56da">type</a> () const</td></tr>
+<tr class="memdesc:a14df5f8058bd61c0685198d365cc56da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Geometry type of an intersection.  <a href="../../d5/d8d/a01656.html#a14df5f8058bd61c0685198d365cc56da">More...</a><br /></td></tr>
+<tr class="separator:a14df5f8058bd61c0685198d365cc56da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1074d5ae5dd4b5fd24a8b7ae4d81da1"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#ae1074d5ae5dd4b5fd24a8b7ae4d81da1">geometryInInside</a> () const</td></tr>
+<tr class="separator:ae1074d5ae5dd4b5fd24a8b7ae4d81da1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab977e31aad58f72e102e86aacd3739a6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#ab977e31aad58f72e102e86aacd3739a6">geometryInOutside</a> () const</td></tr>
+<tr class="separator:ab977e31aad58f72e102e86aacd3739a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef8a5bd6f66bb51033b1ac259363b63"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#aaef8a5bd6f66bb51033b1ac259363b63">geometry</a> () const</td></tr>
+<tr class="separator:aaef8a5bd6f66bb51033b1ac259363b63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab11112d7bbe19dca60ff827266c2d3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#ab11112d7bbe19dca60ff827266c2d3d4">indexInInside</a> () const</td></tr>
+<tr class="memdesc:ab11112d7bbe19dca60ff827266c2d3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">local number of codim 1 entity in self where intersection is contained in  <a href="../../d5/d8d/a01656.html#ab11112d7bbe19dca60ff827266c2d3d4">More...</a><br /></td></tr>
+<tr class="separator:ab11112d7bbe19dca60ff827266c2d3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a381638a19345af1cc54539201ffa6fcc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a381638a19345af1cc54539201ffa6fcc">indexInOutside</a> () const</td></tr>
+<tr class="memdesc:a381638a19345af1cc54539201ffa6fcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">local number of codim 1 entity in neighbor where intersection is contained  <a href="../../d5/d8d/a01656.html#a381638a19345af1cc54539201ffa6fcc">More...</a><br /></td></tr>
+<tr class="separator:a381638a19345af1cc54539201ffa6fcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a038aae3e5ff9d567cd96ed3d9324646d"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a038aae3e5ff9d567cd96ed3d9324646d">outerNormal</a> (const LocalCoordinate &amp;local) const</td></tr>
+<tr class="memdesc:a038aae3e5ff9d567cd96ed3d9324646d"><td class="mdescLeft">&#160;</td><td class="mdescRight">return outer normal  <a href="../../d5/d8d/a01656.html#a038aae3e5ff9d567cd96ed3d9324646d">More...</a><br /></td></tr>
+<tr class="separator:a038aae3e5ff9d567cd96ed3d9324646d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87422f1b701cf09dbd6088a356a20452"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a87422f1b701cf09dbd6088a356a20452">integrationOuterNormal</a> (const LocalCoordinate &amp;local) const</td></tr>
+<tr class="memdesc:a87422f1b701cf09dbd6088a356a20452"><td class="mdescLeft">&#160;</td><td class="mdescRight">return outer normal multiplied by the integration element  <a href="../../d5/d8d/a01656.html#a87422f1b701cf09dbd6088a356a20452">More...</a><br /></td></tr>
+<tr class="separator:a87422f1b701cf09dbd6088a356a20452"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23cddcbbaa52739d9d2edffb544ad9ba"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8d/a01656.html#a23cddcbbaa52739d9d2edffb544ad9ba">unitOuterNormal</a> (const LocalCoordinate &amp;local) const</td></tr>
+<tr class="memdesc:a23cddcbbaa52739d9d2edffb544ad9ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">return unit outer normal  <a href="../../d5/d8d/a01656.html#a23cddcbbaa52739d9d2edffb544ad9ba">More...</a><br /></td></tr>
+<tr class="separator:a23cddcbbaa52739d9d2edffb544ad9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t netdim&gt;<br />
-class Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt;</div><p >class holds a n-dim net </p>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename TrimmerType_, class... Implementations&gt;<br />
+class Dune::IGANEW::Trim::IntersectionVariant&lt; TrimmerType_, Implementations &gt;</div><p >An intersection with a leaf neighbor element</p>
+<p >Mesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element! </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a07bde1e4d2c1949cb416b624bdf72767" name="a07bde1e4d2c1949cb416b624bdf72767"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07bde1e4d2c1949cb416b624bdf72767">&#9670;&nbsp;</a></span>MultiDimensionalNetIndex()</h2>
+<a id="a436d1e35f76e2279fb52a8ca9b023cb1" name="a436d1e35f76e2279fb52a8ca9b023cb1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a436d1e35f76e2279fb52a8ca9b023cb1">&#9670;&nbsp;</a></span>IntersectionVariant() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t netdim&gt; </div>
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<div class="memtemplate">
+template&lt;class Implementation &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::MultiDimensionalNetIndex </td>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::IntersectionVariant </td>
           <td>(</td>
-          <td class="paramtype">const FieldVector&lt; int, netdim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dimSize</em></td><td>)</td>
+          <td class="paramtype">const Implementation &amp;&#160;</td>
+          <td class="paramname"><em>impl</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad711a2e66cb3ae2672f25a3430a9bdde" name="ad711a2e66cb3ae2672f25a3430a9bdde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad711a2e66cb3ae2672f25a3430a9bdde">&#9670;&nbsp;</a></span>IntersectionVariant() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::IntersectionVariant </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcd517e5a7d2caae3dce254172e3380c" name="afcd517e5a7d2caae3dce254172e3380c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcd517e5a7d2caae3dce254172e3380c">&#9670;&nbsp;</a></span>IntersectionVariant() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::IntersectionVariant </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a69cc325451935654469ea9092c9b2318" name="a69cc325451935654469ea9092c9b2318"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cc325451935654469ea9092c9b2318">&#9670;&nbsp;</a></span>IntersectionVariant() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::IntersectionVariant </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -157,24 +287,21 @@ template&lt;std::size_t netdim&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8821b3ef72e566daff7ad20071f4514a" name="a8821b3ef72e566daff7ad20071f4514a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8821b3ef72e566daff7ad20071f4514a">&#9670;&nbsp;</a></span>directToMultiIndex() <span class="overload">[1/2]</span></h2>
+<a id="a936a69ed7807de0bd47d445600f524aa" name="a936a69ed7807de0bd47d445600f524aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a936a69ed7807de0bd47d445600f524aa">&#9670;&nbsp;</a></span>boundary()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t netdim&gt; </div>
-<div class="memtemplate">
-template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">ReturnType <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::directToMultiIndex </td>
+          <td class="memname">bool <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::boundary </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>index</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -185,68 +312,25 @@ template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>returns a multiindex for a scalar index </p>
+<p>return true if intersection is with boundary. </p>
 
 </div>
 </div>
-<a id="a1af055fa6ad1a7cdf6b50b3b29f33040" name="a1af055fa6ad1a7cdf6b50b3b29f33040"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1af055fa6ad1a7cdf6b50b3b29f33040">&#9670;&nbsp;</a></span>directToMultiIndex() <span class="overload">[2/2]</span></h2>
+<a id="a9fa9c1f998d9aa093654a37e6825ca95" name="a9fa9c1f998d9aa093654a37e6825ca95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9fa9c1f998d9aa093654a37e6825ca95">&#9670;&nbsp;</a></span>boundarySegmentIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t netdim&gt; </div>
-<div class="memtemplate">
-template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static ReturnType <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::directToMultiIndex </td>
+          <td class="memname">size_t <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::boundarySegmentIndex </td>
           <td>(</td>
-          <td class="paramtype">const std::array&lt; int, netdim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dimSize</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>index</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0c37d6ecb435bf22a32dba0a0b0155ff" name="a0c37d6ecb435bf22a32dba0a0b0155ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c37d6ecb435bf22a32dba0a0b0155ff">&#9670;&nbsp;</a></span>index()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::size_t netdim&gt; </div>
-<div class="memtemplate">
-template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::index </td>
-          <td>(</td>
-          <td class="paramtype">const ArrayType &amp;&#160;</td>
-          <td class="paramname"><em>multiIndex</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -257,21 +341,110 @@ template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>return the boundary segment index </p>
+
 </div>
 </div>
-<a id="a1b46c1132b41bb080b0e89bb0bad98a1" name="a1b46c1132b41bb080b0e89bb0bad98a1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b46c1132b41bb080b0e89bb0bad98a1">&#9670;&nbsp;</a></span>size()</h2>
+<a id="a3d87a916e0875e316c14339473ee9ed5" name="a3d87a916e0875e316c14339473ee9ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d87a916e0875e316c14339473ee9ed5">&#9670;&nbsp;</a></span>centerUnitOuterNormal()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t netdim&gt; </div>
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::size </td>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::centerUnitOuterNormal </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return unit outer normal (length == 1) </p>
+<p >The returned vector is the normal at the center() of the intersection's geometry. It is scaled to have unit length. </p>
+
+</div>
+</div>
+<a id="a06b7a63dd601131e7ce5abbc5c002070" name="a06b7a63dd601131e7ce5abbc5c002070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b7a63dd601131e7ce5abbc5c002070">&#9670;&nbsp;</a></span>conforming()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::conforming </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return true if this is a conforming intersection. </p>
+
+</div>
+</div>
+<a id="aaef8a5bd6f66bb51033b1ac259363b63" name="aaef8a5bd6f66bb51033b1ac259363b63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaef8a5bd6f66bb51033b1ac259363b63">&#9670;&nbsp;</a></span>geometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::geometry </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >intersection of codimension 1 of this neighbor with element where iteration started. Here returned element is in GLOBAL coordinates of the element where iteration started. </p>
+
+</div>
+</div>
+<a id="ae1074d5ae5dd4b5fd24a8b7ae4d81da1" name="ae1074d5ae5dd4b5fd24a8b7ae4d81da1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1074d5ae5dd4b5fd24a8b7ae4d81da1">&#9670;&nbsp;</a></span>geometryInInside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::geometryInInside </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -286,15 +459,420 @@ template&lt;std::size_t netdim&gt; </div>
 
 </div>
 </div>
+<a id="ab977e31aad58f72e102e86aacd3739a6" name="ab977e31aad58f72e102e86aacd3739a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab977e31aad58f72e102e86aacd3739a6">&#9670;&nbsp;</a></span>geometryInOutside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::geometryInOutside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >intersection of codimension 1 of this neighbor with element where iteration started. Here returned element is in LOCAL coordinates of neighbor </p>
+
+</div>
+</div>
+<a id="ab11112d7bbe19dca60ff827266c2d3d4" name="ab11112d7bbe19dca60ff827266c2d3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab11112d7bbe19dca60ff827266c2d3d4">&#9670;&nbsp;</a></span>indexInInside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::indexInInside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>local number of codim 1 entity in self where intersection is contained in </p>
+
+</div>
+</div>
+<a id="a381638a19345af1cc54539201ffa6fcc" name="a381638a19345af1cc54539201ffa6fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a381638a19345af1cc54539201ffa6fcc">&#9670;&nbsp;</a></span>indexInOutside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::indexInOutside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>local number of codim 1 entity in neighbor where intersection is contained </p>
+
+</div>
+</div>
+<a id="a52c14b63cac6ef65a2ab5a3f39396fcc" name="a52c14b63cac6ef65a2ab5a3f39396fcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52c14b63cac6ef65a2ab5a3f39396fcc">&#9670;&nbsp;</a></span>inside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::inside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >return Entity on the inside of this intersection (that is the Entity where we started this Iterator) </p>
+
+</div>
+</div>
+<a id="a87422f1b701cf09dbd6088a356a20452" name="a87422f1b701cf09dbd6088a356a20452"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87422f1b701cf09dbd6088a356a20452">&#9670;&nbsp;</a></span>integrationOuterNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::integrationOuterNormal </td>
+          <td>(</td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>local</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return outer normal multiplied by the integration element </p>
+
+</div>
+</div>
+<a id="a2212ad4a2c01a1b77957f5bf0ca872b3" name="a2212ad4a2c01a1b77957f5bf0ca872b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2212ad4a2c01a1b77957f5bf0ca872b3">&#9670;&nbsp;</a></span>neighbor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::neighbor </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return true if across the edge an neighbor on this level exists </p>
+
+</div>
+</div>
+<a id="ad07bda78d850bfa614249d7367beefb7" name="ad07bda78d850bfa614249d7367beefb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad07bda78d850bfa614249d7367beefb7">&#9670;&nbsp;</a></span>operator=() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<div class="memtemplate">
+template&lt;class Implementation &gt; <br />
+requires (!std::is_same_v&lt;Implementation, <a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a>&gt;)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp; <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const Implementation &amp;&#160;</td>
+          <td class="paramname"><em>impl</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5d2358a9cceef01ace152d8196528c63" name="a5d2358a9cceef01ace152d8196528c63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d2358a9cceef01ace152d8196528c63">&#9670;&nbsp;</a></span>operator=() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp; <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab943ccc23370108ff5e12e6b0f4c86cd" name="ab943ccc23370108ff5e12e6b0f4c86cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab943ccc23370108ff5e12e6b0f4c86cd">&#9670;&nbsp;</a></span>operator=() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a> &amp; <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a038aae3e5ff9d567cd96ed3d9324646d" name="a038aae3e5ff9d567cd96ed3d9324646d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a038aae3e5ff9d567cd96ed3d9324646d">&#9670;&nbsp;</a></span>outerNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::outerNormal </td>
+          <td>(</td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>local</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return outer normal </p>
+
+</div>
+</div>
+<a id="a2454c69e973538c6802a34b9eb3c9ff2" name="a2454c69e973538c6802a34b9eb3c9ff2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2454c69e973538c6802a34b9eb3c9ff2">&#9670;&nbsp;</a></span>outside()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::outside </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >return Entity on the outside of this intersection (that is the neighboring Entity) </p>
+
+</div>
+</div>
+<a id="a14df5f8058bd61c0685198d365cc56da" name="a14df5f8058bd61c0685198d365cc56da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14df5f8058bd61c0685198d365cc56da">&#9670;&nbsp;</a></span>type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GeometryType <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Geometry type of an intersection. </p>
+
+</div>
+</div>
+<a id="a23cddcbbaa52739d9d2edffb544ad9ba" name="a23cddcbbaa52739d9d2edffb544ad9ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23cddcbbaa52739d9d2edffb544ad9ba">&#9670;&nbsp;</a></span>unitOuterNormal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::unitOuterNormal </td>
+          <td>(</td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>local</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>return unit outer normal </p>
+
+</div>
+</div>
+<a id="a24c8f29c7ac37310691d2abe80a3a665" name="a24c8f29c7ac37310691d2abe80a3a665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24c8f29c7ac37310691d2abe80a3a665">&#9670;&nbsp;</a></span>visit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmerType_ , class... Implementations&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d5/d8d/a01656.html">Dune::IGANEW::Trim::IntersectionVariant</a>&lt; TrimmerType_, Implementations &gt;::visit </td>
+          <td>(</td>
+          <td class="paramtype">auto &amp;&amp;&#160;</td>
+          <td class="paramname"><em>lambda</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d4/d51/a00017_source.html">mdnet.hh</a></li>
+<li><a class="el" href="../../d7/d9a/a00152_source.html">intersectionvariants.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d1/de1/a00213.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/dd1/a00214.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d5/d8d/a01656.html">MultiDimensionalNetIndex</a></li>
+    <li class="navelem"><a class="el" href="../../d1/de1/a00213.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/dd1/a00214.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../df/d17/a00231.html">Trim</a></li><li class="navelem"><a class="el" href="../../d5/d8d/a01656.html">IntersectionVariant</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

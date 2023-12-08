@@ -5,6 +5,6 @@ var searchData=
   ['elements_5f_2',['elements_',['../d3/d32/a01176.html#a265d30472e118a4bcebb635237dc2502',1,'Dune::Functions::NurbsPreBasis::elements_()'],['../d3/d32/a01176.html#a1be37115f81a0ff5898f78904f8317dd',1,'Dune::Functions::NurbsPreBasis::elements_()']]],
   ['elementstate_3',['elementState',['../db/dbf/a01516.html#a27e6553fbda05a284d6c1707c69c0b6d',1,'Dune::IGANEW::DefaultTrim::IdType']]],
   ['endpoints_4',['endPoints',['../dc/d54/a01344.html#a1aa4feabb805611d11726b6328e9d99d',1,'Dune::IGA::Boundary']]],
-  ['entitycontainer_5f_5',['entityContainer_',['../d3/d4c/a01540.html#a5c7301843a232d80fdcfebcffe79d551',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
+  ['entitycontainer_5f_5',['entityContainer_',['../d7/db6/a01556.html#a68bd7c147c2502c996be75d829c14199',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
   ['entityimps_5f_6',['entityImps_',['../db/dff/a01432.html#a6f79753315def0895c5fdeee31c790f3',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]]
 ];

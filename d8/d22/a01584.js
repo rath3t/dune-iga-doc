@@ -1,9 +1,10 @@
 var a01584 =
 [
-    [ "IdType", "d8/d22/a01584.html#ab65943bece9a4f96052869c1c22a86a2", null ],
-    [ "PatchGridLocalIdSet", "d8/d22/a01584.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
-    [ "id", "d8/d22/a01584.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
-    [ "subId", "d8/d22/a01584.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
-    [ "update", "d8/d22/a01584.html#af62b1ae58fd567949b09551702ecdcb6", null ],
-    [ "grid_", "d8/d22/a01584.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
+    [ "Entity", "d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6", null ],
+    [ "PatchGridHierarchicIterator", "d8/d22/a01584.html#ab6d47c0d6a95c8fd8be2e0a8fd45acd5", null ],
+    [ "PatchGridHierarchicIterator", "d8/d22/a01584.html#aab215f0197a43b62215fa4078cd4f317", null ],
+    [ "dereference", "d8/d22/a01584.html#ae9a647048fca2579bf22151ee65322a5", null ],
+    [ "equals", "d8/d22/a01584.html#acafd6b9d1607f54f84c4976abc4b1c6e", null ],
+    [ "increment", "d8/d22/a01584.html#a0d62a62bdc84b59bf092288c0069e58b", null ],
+    [ "codimension", "d8/d22/a01584.html#a8c72edf409e2b1dd8dde084d998dac58", null ]
 ];

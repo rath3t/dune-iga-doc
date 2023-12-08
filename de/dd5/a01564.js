@@ -1,11 +1,15 @@
 var a01564 =
 [
-    [ "ParameterSpaceGridEntity", "de/dd5/a01564.html#a00f5f5908de91bcd5f6fa990a11db12b", null ],
-    [ "ParameterSpaceGridEntitySeed", "de/dd5/a01564.html#afa9302168f619fd78f4632588e830349", null ],
-    [ "Trimmer", "de/dd5/a01564.html#a701adce7c7607ae75e204687c1288482", null ],
-    [ "PatchGridEntitySeed", "de/dd5/a01564.html#a2c694dc438e381ea6b2190601ef914cf", null ],
-    [ "PatchGridEntitySeed", "de/dd5/a01564.html#a168ba76a579e2b3ed336b3cfde09dac6", null ],
-    [ "hostEntitySeed", "de/dd5/a01564.html#ad6b3ae8fa4f3a00418c80f1cc141e651", null ],
-    [ "isValid", "de/dd5/a01564.html#a4acd79d380235ff11c9566c602445b15", null ],
-    [ "codimension", "de/dd5/a01564.html#ab7101982ea5b33b584dfafb99d9c02e4", null ]
+    [ "Codim", "da/daf/a01568.html", "da/daf/a01568" ],
+    [ "ElementInfo", "de/dd5/a01564.html#a953561b140d36807a3235c6f93907026", null ],
+    [ "GlobalIdSetId", "de/dd5/a01564.html#a81acb0977b01f058b1cb29ab399ec674", null ],
+    [ "HostIdType", "de/dd5/a01564.html#acb75cd5dd00bddc2c344e87d3f70f18b", null ],
+    [ "HostLeafIntersection", "de/dd5/a01564.html#a089d73aa9079baecb1058dcaf1f226c1", null ],
+    [ "HostLevelIntersection", "de/dd5/a01564.html#a1b30b00d6647a9d357414e7732699ae9", null ],
+    [ "ParameterSpaceGrid", "de/dd5/a01564.html#a08028461a6645e0e3e8ecb5525e33cdb", null ],
+    [ "ParameterSpaceLeafIntersection", "de/dd5/a01564.html#ac36ca79b54fc311a238549d7135d43db", null ],
+    [ "ParameterSpaceLevelIntersection", "de/dd5/a01564.html#a1a620da98aa8cb2a5af778e0bae68af0", null ],
+    [ "PatchTrimData", "de/dd5/a01564.html#ae16aab7732df61e6643c3c2b964dcdd6", null ],
+    [ "TrimmedParameterSpaceLeafIntersection", "de/dd5/a01564.html#a28b8b0681948533d955c6f9b8f2c248c", null ],
+    [ "TrimmedParameterSpaceLevelIntersection", "de/dd5/a01564.html#a3cfabec8892eb3ab14c52c4903c99e62", null ]
 ];

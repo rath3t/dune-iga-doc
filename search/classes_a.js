@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nurbs_0',['Nurbs',['../d5/dec/a01416.html',1,'Dune::IGANEW::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d7/d47/a01668.html',1,'iga.basis.Nurbs']]],
+  ['nurbs_0',['Nurbs',['../d5/dec/a01416.html',1,'Dune::IGANEW::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d2/d71/a01684.html',1,'iga.basis.Nurbs']]],
   ['nurbs_3c_20mydimension_2c_20ctype_20_3e_1',['Nurbs&lt; mydimension, ctype &gt;',['../d5/dec/a01416.html',1,'Dune::IGANEW::Splines']]],
   ['nurbs_3c_20mydimension_2c_20double_20_3e_2',['Nurbs&lt; mydimension, double &gt;',['../d5/dec/a01416.html',1,'Dune::IGANEW::Splines']]],
   ['nurbsgrid_3',['NURBSGrid',['../d7/d41/a01312.html',1,'Dune::IGA']]],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['father_0',['father',['../dd/d05/a01504.html#a0ddf7c2ccb89954f7281a8b9764eb922',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::father()'],['../de/d89/a01560.html#ac97d56a362f9ac561dc7df98e64ffba5',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::father()'],['../d7/d5a/a01204.html#ae6371a3ed4bd6a00b23d4fff4c519789',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::father()']]],
+  ['father_0',['father',['../dd/d05/a01504.html#a0ddf7c2ccb89954f7281a8b9764eb922',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::father()'],['../db/dfd/a01576.html#a45879adebe1e05a500a5f2e95131729f',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::father()'],['../d7/d5a/a01204.html#ae6371a3ed4bd6a00b23d4fff4c519789',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::father()']]],
   ['fillquadratureruleimpl_1',['fillQuadratureRuleImpl',['../dc/d98/a00225.html#a023d3c0845a496b2eedca5b359b49964',1,'Dune::IGA']]],
   ['findclosestparameterspacecoordinate_2',['findClosestParameterSpaceCoordinate',['../d6/d43/a00216.html#a85b42ae7d7cb1ba7149c382655ce96ea',1,'Dune::IGANEW::GeometryKernel']]],
   ['findintersectioncurveandline_3',['findIntersectionCurveAndLine',['../d3/dd1/a00214.html#acbab55bc9467ca289ad446c860004a7a',1,'Dune::IGANEW']]],
