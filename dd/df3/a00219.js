@@ -1,13 +1,9 @@
 var a00219 =
 [
-    [ "Vector", "de/d96/a01685.html", null ],
-    [ "ControlPoint", "d0/d31/a01686.html", null ],
-    [ "MultiplyAble", "d7/db8/a01687.html", null ],
-    [ "AddAble", "d6/d53/a01688.html", null ],
-    [ "SubstractAble", "da/d20/a01689.html", null ],
-    [ "MultiplyAssignAble", "d6/d01/a01690.html", null ],
-    [ "DivideAssignAble", "d0/d54/a01691.html", null ],
-    [ "DivideAble", "da/dc4/a01692.html", null ],
-    [ "TrimDataContainer", "dd/db4/a01693.html", null ],
-    [ "Trimmer", "d4/d8e/a01694.html", null ]
+    [ "NURBSPatch", "dd/d80/a01075.html", "dd/d80/a01075" ],
+    [ "PatchGeometryLocalView", "d6/d9a/a01083.html", "d6/d9a/a01083" ],
+    [ "findClosestParameterSpaceCoordinate", "dd/df3/a00219.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
+    [ "hessian", "dd/df3/a00219.html#a7693ef58b9b466df6285facbe588e2e7", null ],
+    [ "jacobianTransposed", "dd/df3/a00219.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
+    [ "position", "dd/df3/a00219.html#ae7bdc51407259017c5322f80267fcc5e", null ]
 ];

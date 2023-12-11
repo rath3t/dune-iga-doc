@@ -1,4 +1,5 @@
 var a00185 =
 [
-    [ "registry", "de/df3/a00185.html#a692469dff5d684126efb9a24e2905bd4", null ]
+    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >", "d3/d95/a01435.html", "d3/d95/a01435" ],
+    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >::StringAndIndex", "d7/dfd/a01439.html", "d7/dfd/a01439" ]
 ];

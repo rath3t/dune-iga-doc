@@ -1,4 +1,4 @@
 var a00161 =
 [
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimData< mydim_, ScalarType >", "d2/db1/a01428.html", null ]
+    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >", "d2/d36/a01495.html", "d2/d36/a01495" ]
 ];

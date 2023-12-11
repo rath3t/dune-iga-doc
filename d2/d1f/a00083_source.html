@@ -94,7 +94,7 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083_source.html','../../'); 
   <div class="headertitle"><div class="title">subgrid.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d2/d1f/a00083.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
+<a href="../../d2/d1f/a00083.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span>PathD<span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
@@ -112,7 +112,7 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083_source.html','../../'); 
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;dune/iga/geometry/geohelper.hh&quot;</span></div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dc/d98/a00225.html">Dune::IGA</a> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../de/dc2/a00228.html">Dune::IGA</a> {</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim&gt;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">class </span>TrimmedSubGrid {</div>
@@ -166,7 +166,7 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083_source.html','../../'); 
 <div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        std::vector&lt;Boundary&gt; newLoop;</div>
 <div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; boundary : loop) {</div>
 <div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          <span class="keyword">auto</span> geometry = boundary.nurbsGeometry;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>          <span class="keyword">auto</span> uVec     = <a class="code hl_function" href="../../d3/dd5/a00215.html#a2630a0eab9b7e24915eeb52ca335972c">Utilities::linspace</a>(boundary.domain, parts + 1);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>          <span class="keyword">auto</span> uVec     = <a class="code hl_function" href="../../dc/d9a/a00218.html#a2630a0eab9b7e24915eeb52ca335972c">Utilities::linspace</a>(boundary.domain, parts + 1);</div>
 <div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : std::views::iota(0u, <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(parts)))</div>
 <div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            newLoop.emplace_back(geometry, Utilities::Domain&lt;double&gt;{uVec[i], uVec[i + 1]});</div>
@@ -190,7 +190,7 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083_source.html','../../'); 
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">auto</span> splitBoundaries()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::make_pair(splitOuterBoundaries(), splitInnerBoundaryLoops()); }</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keyword">auto</span> splitOuterBoundaries(<span class="keywordtype">int</span> maxDivisions       = maxOuterBoundaryDivisions,</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                              <span class="keywordtype">double</span> targetTolerance = outerTargetTolerance)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../dc/d98/a00225.html#ad66112982ac256c7f15589dec5fcce68">splitBoundariesImpl</a>(outerBoundaries_, maxDivisions, targetTolerance, transformer);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../de/dc2/a00228.html#ad66112982ac256c7f15589dec5fcce68">splitBoundariesImpl</a>(outerBoundaries_, maxDivisions, targetTolerance, transformer);</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    }</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <span class="keyword">auto</span> splitInnerBoundaryLoops(<span class="keywordtype">int</span> maxDivisions       = maxInnerBoundaryDivisions,</div>
@@ -284,9 +284,9 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083_source.html','../../'); 
 <div class="ttc" id="aa00074_html"><div class="ttname"><a href="../../db/db6/a00074.html">nurbstrimboundary.hh</a></div></div>
 <div class="ttc" id="aa00077_html"><div class="ttname"><a href="../../d1/d09/a00077.html">subgridhelpers.hh</a></div></div>
 <div class="ttc" id="aa00080_html"><div class="ttname"><a href="../../da/dec/a00080.html">nurbstrimmer.hh</a></div></div>
-<div class="ttc" id="aa00215_html_a2630a0eab9b7e24915eeb52ca335972c"><div class="ttname"><a href="../../d3/dd5/a00215.html#a2630a0eab9b7e24915eeb52ca335972c">Dune::IGANEW::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdoc">A view with N coordinates between a and b including a and b.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:76</div></div>
-<div class="ttc" id="aa00225_html"><div class="ttname"><a href="../../dc/d98/a00225.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> ibrageometry.hh:16</div></div>
-<div class="ttc" id="aa00225_html_ad66112982ac256c7f15589dec5fcce68"><div class="ttname"><a href="../../dc/d98/a00225.html#ad66112982ac256c7f15589dec5fcce68">Dune::IGA::splitBoundariesImpl</a></div><div class="ttdeci">auto splitBoundariesImpl(const std::vector&lt; Boundary &gt; &amp;boundaries, int maxSubSample, double tolerance, const TransformToSpan&lt; 2 &gt; &amp;transformer)</div><div class="ttdef"><b>Definition:</b> subgridhelpers.hh:66</div></div>
+<div class="ttc" id="aa00218_html_a2630a0eab9b7e24915eeb52ca335972c"><div class="ttname"><a href="../../dc/d9a/a00218.html#a2630a0eab9b7e24915eeb52ca335972c">Dune::IGANEW::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdoc">A view with N coordinates between a and b including a and b.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:76</div></div>
+<div class="ttc" id="aa00228_html"><div class="ttname"><a href="../../de/dc2/a00228.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> ibrageometry.hh:16</div></div>
+<div class="ttc" id="aa00228_html_ad66112982ac256c7f15589dec5fcce68"><div class="ttname"><a href="../../de/dc2/a00228.html#ad66112982ac256c7f15589dec5fcce68">Dune::IGA::splitBoundariesImpl</a></div><div class="ttdeci">auto splitBoundariesImpl(const std::vector&lt; Boundary &gt; &amp;boundaries, int maxSubSample, double tolerance, const TransformToSpan&lt; 2 &gt; &amp;transformer)</div><div class="ttdef"><b>Definition:</b> subgridhelpers.hh:66</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

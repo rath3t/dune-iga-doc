@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: elementtrimdata.hh Source File</title>
+<title>dune-iga: patchtrimdata.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,32 +91,44 @@ $(document).ready(function(){initNavTree('d6/d7d/a00161_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">elementtrimdata.hh</div></div>
+  <div class="headertitle"><div class="title">patchtrimdata.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d6/d7d/a00161.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The Ikarus Developers mueller@ibb.uni-stuttgart.de</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d1/de1/a00213.html">Dune</a> {</div>
+<a href="../../d6/d7d/a00161.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d43/a00216.html">Dune</a> {</div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>  <span class="keyword">namespace </span>IGANEW {</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>    <span class="keyword">namespace </span>DefaultTrim {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>      <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> mydim_, <span class="keyword">typename</span> ScalarType&gt;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d2/db1/a01428.html">    9</a></span>      <span class="keyword">struct </span><a class="code hl_struct" href="../../d2/db1/a01428.html">ElementTrimData</a> {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>        <span class="comment">//???</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>      };</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    }  <span class="comment">// namespace DefaultTrim</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  }    <span class="comment">// namespace IGANEW</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>}  <span class="comment">// namespace Dune</span></div>
-<div class="ttc" id="aa00213_html"><div class="ttname"><a href="../../d1/de1/a00213.html">Dune</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa01428_html"><div class="ttname"><a href="../../d2/db1/a01428.html">Dune::IGANEW::DefaultTrim::ElementTrimData</a></div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:9</div></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>      <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d2/d36/a01495.html">    9</a></span>      <span class="keyword">struct </span><a class="code hl_struct" href="../../d2/d36/a01495.html">PatchTrimDataImpl</a> {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d2/d36/a01495.html#a8e43129977838c5c14b41d2792c94c4d">   10</a></span>        <span class="keyword">using </span><a class="code hl_typedef" href="../../d2/d36/a01495.html#a8e43129977838c5c14b41d2792c94c4d">TrimmingCurve</a> = <span class="keyword">typename</span> GridImp::GridFamily::TrimmerTraits::TrimmingCurve;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d2/d36/a01495.html#a45f52b04d2d0c372dfe73d869bf38d86">   12</a></span>        <span class="keywordtype">void</span> <a class="code hl_function" href="../../d2/d36/a01495.html#a45f52b04d2d0c372dfe73d869bf38d86">insertTrimCurve</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d2/d36/a01495.html#a8e43129977838c5c14b41d2792c94c4d">TrimmingCurve</a>&amp; curve) { <a class="code hl_variable" href="../../d2/d36/a01495.html#a9d27609dad0ed784f549ab6661d6cfdd">curves_</a>.push_back(curve); }</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d2/d36/a01495.html#a0cf46a20ee4147c88358e8e4001352b9">   13</a></span>         <span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_function" href="../../d2/d36/a01495.html#a0cf46a20ee4147c88358e8e4001352b9">curves</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>          <span class="keywordflow">return</span> <a class="code hl_variable" href="../../d2/d36/a01495.html#a9d27609dad0ed784f549ab6661d6cfdd">curves_</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>        }</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d2/d36/a01495.html#a9d27609dad0ed784f549ab6661d6cfdd">   16</a></span>        std::vector&lt;TrimmingCurve&gt; <a class="code hl_variable" href="../../d2/d36/a01495.html#a9d27609dad0ed784f549ab6661d6cfdd">curves_</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        <span class="comment">//???</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    }  <span class="comment">// namespace DefaultTrim</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  }    <span class="comment">// namespace IGANEW</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}  <span class="comment">// namespace Dune</span></div>
+<div class="ttc" id="aa00216_html"><div class="ttname"><a href="../../d6/d43/a00216.html">Dune</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
+<div class="ttc" id="aa01495_html"><div class="ttname"><a href="../../d2/d36/a01495.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl</a></div><div class="ttdef"><b>Definition:</b> patchtrimdata.hh:9</div></div>
+<div class="ttc" id="aa01495_html_a0cf46a20ee4147c88358e8e4001352b9"><div class="ttname"><a href="../../d2/d36/a01495.html#a0cf46a20ee4147c88358e8e4001352b9">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::curves</a></div><div class="ttdeci">const auto &amp; curves() const</div><div class="ttdef"><b>Definition:</b> patchtrimdata.hh:13</div></div>
+<div class="ttc" id="aa01495_html_a45f52b04d2d0c372dfe73d869bf38d86"><div class="ttname"><a href="../../d2/d36/a01495.html#a45f52b04d2d0c372dfe73d869bf38d86">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::insertTrimCurve</a></div><div class="ttdeci">void insertTrimCurve(const TrimmingCurve &amp;curve)</div><div class="ttdef"><b>Definition:</b> patchtrimdata.hh:12</div></div>
+<div class="ttc" id="aa01495_html_a8e43129977838c5c14b41d2792c94c4d"><div class="ttname"><a href="../../d2/d36/a01495.html#a8e43129977838c5c14b41d2792c94c4d">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::TrimmingCurve</a></div><div class="ttdeci">typename GridImp::GridFamily::TrimmerTraits::TrimmingCurve TrimmingCurve</div><div class="ttdef"><b>Definition:</b> patchtrimdata.hh:10</div></div>
+<div class="ttc" id="aa01495_html_a9d27609dad0ed784f549ab6661d6cfdd"><div class="ttname"><a href="../../d2/d36/a01495.html#a9d27609dad0ed784f549ab6661d6cfdd">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::curves_</a></div><div class="ttdeci">std::vector&lt; TrimmingCurve &gt; curves_</div><div class="ttdef"><b>Definition:</b> patchtrimdata.hh:16</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">elementtrimdata.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../d6/d7d/a00161.html">patchtrimdata.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

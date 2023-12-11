@@ -1,9 +1,15 @@
 var a00231 =
 [
-    [ "HostGridAccess", "d0/dc0/a01652.html", null ],
-    [ "IntersectionVariant", "d5/d8d/a01656.html", "d5/d8d/a01656" ],
-    [ "LocalGeometryVariant", "d6/d5e/a01660.html", "d6/d5e/a01660" ],
-    [ "ParameterSpaceGridEntityVariant", "db/dfd/a01576.html", "db/dfd/a01576" ],
-    [ "referenceElement", "df/d17/a00231.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
-    [ "referenceElement", "df/d17/a00231.html#a58f6695142a18937094849b86976642b", null ]
+    [ "BsplineBasis", "de/d70/a01415.html", "de/d70/a01415" ],
+    [ "Nurbs", "d0/d7d/a01419.html", "d0/d7d/a01419" ],
+    [ "createUniqueKnotSpans", "df/d17/a00231.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "df/d17/a00231.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "df/d17/a00231.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "df/d17/a00231.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "df/d17/a00231.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "df/d17/a00231.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "df/d17/a00231.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "df/d17/a00231.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "df/d17/a00231.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
+    [ "netOfSpan", "df/d17/a00231.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];
