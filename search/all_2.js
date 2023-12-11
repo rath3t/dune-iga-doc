@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_2epy_0',['__init__.py',['../db/dd3/a03251.html',1,'']]],
+  ['_5f_5finit_5f_5f_2epy_0',['__init__.py',['../d8/dbf/a03275.html',1,'']]],
   ['base_1',['Base',['../d5/d16/a01060.html#a455fc618b2e21bf6e7d8984befc4edc5',1,'Dune::IGANEW::Utilities::Domain']]],
   ['basealgorithms_2ehh_2',['basealgorithms.hh',['../d4/d8c/a00035.html',1,'']]],
   ['basisfunctionderivatives_3',['basisFunctionDerivatives',['../d5/dec/a01416.html#ad62b4125f4027a78592724db2fa259c5',1,'Dune::IGANEW::Splines::Nurbs::basisFunctionDerivatives()'],['../d0/d05/a01420.html#a011c19976f2f5daa786055bedff436e0',1,'Dune::IGANEW::Splines::Nurbs::LocalView::basisFunctionDerivatives()'],['../dc/d10/a01412.html#a3db2a888b0361ba859a68e1853301fc7',1,'Dune::IGANEW::Splines::BsplineBasis::basisFunctionDerivatives()'],['../d5/dec/a01416.html#ad6afa16ca79cb65ea9059ba40555a47f',1,'Dune::IGANEW::Splines::Nurbs::basisFunctionDerivatives(const FieldVector&lt; ScalarType, dim &gt; &amp;u, const int derivativeOrder) const'],['../d5/dec/a01416.html#afc2d73fb22cd3d45395b9833a2c93b54',1,'Dune::IGANEW::Splines::Nurbs::basisFunctionDerivatives(const FieldVector&lt; ScalarType, dim &gt; &amp;u, const int derivativeOrder, const std::array&lt; int, dim &gt; &amp;spIndex) const']]],

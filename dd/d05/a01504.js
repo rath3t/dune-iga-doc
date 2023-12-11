@@ -11,8 +11,6 @@ var a01504 =
     [ "geometryInFather", "dd/d05/a01504.html#a9ddd9b073af978824c0367e827c4a6a9", null ],
     [ "getHostEntity", "dd/d05/a01504.html#af4bc84fbe01899dd30b342130879cb49", null ],
     [ "hasFather", "dd/d05/a01504.html#a3db0d16d204c73604cadb9a26c3f27a7", null ],
-    [ "hbegin", "dd/d05/a01504.html#ae4cf4b6475c23dc6a344bd34cacad036", null ],
-    [ "hend", "dd/d05/a01504.html#a0da3817a5b73ce7e38711c558355d999", null ],
     [ "hostEntity", "dd/d05/a01504.html#a09fd5db98198a49e1cc0b4ad50cd8b26", null ],
     [ "id", "dd/d05/a01504.html#aad7618485e129da0d8824d2e1cc1da15", null ],
     [ "ileafbegin", "dd/d05/a01504.html#abe0fec424b800d4353817ce7e52311d7", null ],

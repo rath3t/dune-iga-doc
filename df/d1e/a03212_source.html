@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: patchgridhierarchiciterator.hh Source File</title>
+<title>dune-iga: concepts.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,69 +91,68 @@ $(document).ready(function(){initNavTree('df/d1e/a03212_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">identitytrimmer/patchgridhierarchiciterator.hh</div></div>
+  <div class="headertitle"><div class="title">trimmer/concepts.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../df/d1e/a03212.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: Copyright © DUNE Project contributors, see file LICENSE.md in module root</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LicenseRef-GPL-2.0-only-with-DUNE-exception</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="comment">// -*- tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 2 -*-</span></div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="comment">// vi: set et ts=4 sw=2 sts=2:</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#pragma once</span></div>
+<a href="../../df/d1e/a03212.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;concepts&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/df3/a00219.html">Dune::IGANEW::Concept</a> {</div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d24/a00222.html">Dune::IGANEW::IdentityTrim</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="comment">//**********************************************************************</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="comment">//</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment"></span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html">   23</a></span>  <span class="keyword">class </span><a class="code hl_class" href="../../d8/d22/a01584.html">PatchGridHierarchicIterator</a> {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// Type of the corresponding HierarchicIterator in the host grid</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">typedef</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keyword">typename</span> GridImp::ParameterSpaceGrid::template Codim&lt;0&gt;::Entity::HierarchicIterator HostGridHierarchicIterator;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>   <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#a8c72edf409e2b1dd8dde084d998dac58">   29</a></span>    <span class="keyword">constexpr</span> <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d8/d22/a01584.html#a8c72edf409e2b1dd8dde084d998dac58">codimension</a> = 0;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">   31</a></span>    <span class="keyword">typedef</span> <span class="keyword">typename</span> GridImp::template Codim&lt;0&gt;::Entity <a class="code hl_typedef" href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">Entity</a>;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#ab6d47c0d6a95c8fd8be2e0a8fd45acd5">   34</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../d8/d22/a01584.html#ab6d47c0d6a95c8fd8be2e0a8fd45acd5">PatchGridHierarchicIterator</a>(<span class="keyword">const</span> GridImp* parameterSpaceGrid, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">Entity</a>&amp; startEntity, <span class="keywordtype">int</span> maxLevel)</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        : parameterSpaceGrid_(parameterSpaceGrid),</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>          hostHierarchicIterator_(startEntity.impl().getHostEntity().hbegin(maxLevel)) {}</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#aab215f0197a43b62215fa4078cd4f317">   39</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../d8/d22/a01584.html#aab215f0197a43b62215fa4078cd4f317">PatchGridHierarchicIterator</a>(<span class="keyword">const</span> GridImp* parameterSpaceGrid, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">Entity</a>&amp; startEntity, <span class="keywordtype">int</span> maxLevel,</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                         [[maybe_unused]] <span class="keywordtype">bool</span> endDummy)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        : parameterSpaceGrid_(parameterSpaceGrid),</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>          hostHierarchicIterator_(startEntity.impl().getHostEntity().hend(maxLevel)) {}</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#a0d62a62bdc84b59bf092288c0069e58b">   45</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="../../d8/d22/a01584.html#a0d62a62bdc84b59bf092288c0069e58b">increment</a>() { ++hostHierarchicIterator_; }</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../dd/db4/a01693.html">    8</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dd/db4/a01693.html">TrimDataContainer</a> = <span class="keyword">requires</span>(<span class="keyword">const</span> T&amp; t, <span class="keywordtype">size_t</span> i) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    t[i];</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  };</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d4/d8e/a01694.html">   19</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d4/d8e/a01694.html">Trimmer</a> = T::isValid and <span class="keyword">requires</span>(T trimmer, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param,</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                                            <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData,</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                                            <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                                            <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">typename</span> T::ctype;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">typename</span> T::ParameterType;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">typename</span> T::ElementTrimData;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">typename</span> T::PatchTrimData;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    T();  </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// { trimmer.referenceElement(std::declval&lt;const EntityType&gt;()) } -&gt; std::convertible_to&lt;typename</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// T::ReferenceElementType&gt;; Uncomment the line above when the referenceElement method is added to the Trimmer</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// concept.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    { <span class="keyword">typename</span> T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="comment">// { trimmer.trimData(std::declval&lt;const EntityType&gt;(), std::declval&lt;const GlobalIdSet&gt;()) } -&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// std::convertible_to&lt;std::optional&lt;std::reference_wrapper&lt;const typename T::ElementTrimData&gt;&gt;&gt;; Uncomment the line</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="comment">// above when the trimData method is added to the Trimmer concept.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    { trimmer.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#ae9a647048fca2579bf22151ee65322a5">   48</a></span>    <a class="code hl_typedef" href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">Entity</a> <a class="code hl_function" href="../../d8/d22/a01584.html#ae9a647048fca2579bf22151ee65322a5">dereference</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">Entity</a>{{parameterSpaceGrid_, *hostHierarchicIterator_}}; }</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d8/d22/a01584.html#acafd6b9d1607f54f84c4976abc4b1c6e">   51</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/d22/a01584.html#acafd6b9d1607f54f84c4976abc4b1c6e">equals</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../d8/d22/a01584.html">PatchGridHierarchicIterator</a>&amp; i)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keywordflow">return</span> hostHierarchicIterator_ == i.hostHierarchicIterator_;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">const</span> GridImp* parameterSpaceGrid_;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    HostGridHierarchicIterator hostHierarchicIterator_;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  };</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>}  <span class="comment">// namespace Dune::IGANEW::IdentityTrim</span></div>
-<div class="ttc" id="aa00222_html"><div class="ttname"><a href="../../d0/d24/a00222.html">Dune::IGANEW::IdentityTrim</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:34</div></div>
-<div class="ttc" id="aa01584_html"><div class="ttname"><a href="../../d8/d22/a01584.html">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator</a></div><div class="ttdoc">Iterator over the descendants of an entity.Mesh entities of codimension 0 (&quot;elements&quot;) allow to visit...</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:23</div></div>
-<div class="ttc" id="aa01584_html_a0d62a62bdc84b59bf092288c0069e58b"><div class="ttname"><a href="../../d8/d22/a01584.html#a0d62a62bdc84b59bf092288c0069e58b">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::increment</a></div><div class="ttdeci">void increment()</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:45</div></div>
-<div class="ttc" id="aa01584_html_a4b2059ef412fddfe435c3eac590ae0b6"><div class="ttname"><a href="../../d8/d22/a01584.html#a4b2059ef412fddfe435c3eac590ae0b6">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::Entity</a></div><div class="ttdeci">GridImp::template Codim&lt; 0 &gt;::Entity Entity</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:31</div></div>
-<div class="ttc" id="aa01584_html_a8c72edf409e2b1dd8dde084d998dac58"><div class="ttname"><a href="../../d8/d22/a01584.html#a8c72edf409e2b1dd8dde084d998dac58">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::codimension</a></div><div class="ttdeci">static constexpr int codimension</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:29</div></div>
-<div class="ttc" id="aa01584_html_aab215f0197a43b62215fa4078cd4f317"><div class="ttname"><a href="../../d8/d22/a01584.html#aab215f0197a43b62215fa4078cd4f317">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::PatchGridHierarchicIterator</a></div><div class="ttdeci">PatchGridHierarchicIterator(const GridImp *parameterSpaceGrid, const Entity &amp;startEntity, int maxLevel, bool endDummy)</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:39</div></div>
-<div class="ttc" id="aa01584_html_ab6d47c0d6a95c8fd8be2e0a8fd45acd5"><div class="ttname"><a href="../../d8/d22/a01584.html#ab6d47c0d6a95c8fd8be2e0a8fd45acd5">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::PatchGridHierarchicIterator</a></div><div class="ttdeci">PatchGridHierarchicIterator(const GridImp *parameterSpaceGrid, const Entity &amp;startEntity, int maxLevel)</div><div class="ttdoc">the default Constructor</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:34</div></div>
-<div class="ttc" id="aa01584_html_acafd6b9d1607f54f84c4976abc4b1c6e"><div class="ttname"><a href="../../d8/d22/a01584.html#acafd6b9d1607f54f84c4976abc4b1c6e">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::equals</a></div><div class="ttdeci">bool equals(const PatchGridHierarchicIterator &amp;i) const</div><div class="ttdoc">equality</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:51</div></div>
-<div class="ttc" id="aa01584_html_ae9a647048fca2579bf22151ee65322a5"><div class="ttname"><a href="../../d8/d22/a01584.html#ae9a647048fca2579bf22151ee65322a5">Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator::dereference</a></div><div class="ttdeci">Entity dereference() const</div><div class="ttdoc">dereferencing</div><div class="ttdef"><b>Definition:</b> identitytrimmer/patchgridhierarchiciterator.hh:48</div></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    { trimmer.setup(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// { trimmer.unTrimmedParameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::UntrimmedParameterSpaceGrid&amp;&gt;;</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// { trimmer.unTrimmedParameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::UntrimmedParameterSpaceGrid&amp;&gt;;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  } and Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}  <span class="comment">// namespace Dune::IGANEW::Concept</span></div>
+<div class="ttc" id="aa00219_html"><div class="ttname"><a href="../../dd/df3/a00219.html">Dune::IGANEW::Concept</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:10</div></div>
+<div class="ttc" id="aa01693_html"><div class="ttname"><a href="../../dd/db4/a01693.html">Dune::IGANEW::Concept::TrimDataContainer</a></div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:8</div></div>
+<div class="ttc" id="aa01694_html"><div class="ttname"><a href="../../d4/d8e/a01694.html">Dune::IGANEW::Concept::Trimmer</a></div><div class="ttdoc">Concept representing a Trimmer class.</div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_aa3557bd66a6784b3b9e663253e8d0ba.html">identitytrimmer</a></li><li class="navelem"><a class="el" href="../../df/d1e/a03212.html">patchgridhierarchiciterator.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../df/d1e/a03212.html">concepts.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

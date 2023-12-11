@@ -193,16 +193,6 @@ requires (codim_ == 0)</td></tr>
 <tr class="memitem:a9ddd9b073af978824c0367e827c4a6a9"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d05/a01504.html#a9ddd9b073af978824c0367e827c4a6a9">geometryInFather</a> () const</td></tr>
 <tr class="memdesc:a9ddd9b073af978824c0367e827c4a6a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Location of this element relative to the reference element element of the father. This is sufficient to interpolate all dofs in conforming case. Nonconforming may require access to neighbors of father and computations with local coordinates. On the fly case is somewhat inefficient since dofs are visited several times. If we store interpolation matrices, this is tolerable. We assume that on-the-fly implementation of numerical algorithms is only done for simple discretizations. Assumes that meshes are nested.  <a href="../../dd/d05/a01504.html#a9ddd9b073af978824c0367e827c4a6a9">More...</a><br /></td></tr>
 <tr class="separator:a9ddd9b073af978824c0367e827c4a6a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4cf4b6475c23dc6a344bd34cacad036"><td class="memTemplParams" colspan="2">template&lt;typename  = void&gt; <br />
-requires (codim_ == 0)</td></tr>
-<tr class="memitem:ae4cf4b6475c23dc6a344bd34cacad036"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d05/a01504.html#ae4cf4b6475c23dc6a344bd34cacad036">hbegin</a> (int maxLevel) const</td></tr>
-<tr class="memdesc:ae4cf4b6475c23dc6a344bd34cacad036"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inter-level access to son elements on higher levels&lt;=maxlevel. This is provided for sparsely stored nested unstructured meshes. Returns iterator to first son.  <a href="../../dd/d05/a01504.html#ae4cf4b6475c23dc6a344bd34cacad036">More...</a><br /></td></tr>
-<tr class="separator:ae4cf4b6475c23dc6a344bd34cacad036"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0da3817a5b73ce7e38711c558355d999"><td class="memTemplParams" colspan="2">template&lt;typename  = void&gt; <br />
-requires (codim_ == 0)</td></tr>
-<tr class="memitem:a0da3817a5b73ce7e38711c558355d999"><td class="memTemplItemLeft" align="right" valign="top">decltype(auto)&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d05/a01504.html#a0da3817a5b73ce7e38711c558355d999">hend</a> (int maxLevel) const</td></tr>
-<tr class="memdesc:a0da3817a5b73ce7e38711c558355d999"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns iterator to one past the last son.  <a href="../../dd/d05/a01504.html#a0da3817a5b73ce7e38711c558355d999">More...</a><br /></td></tr>
-<tr class="separator:a0da3817a5b73ce7e38711c558355d999"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7b35c3dd789aa97fde07778bc9ca7abc"><td class="memTemplParams" colspan="2">template&lt;typename  = void&gt; <br />
 requires (codim_ == 0)</td></tr>
 <tr class="memitem:a7b35c3dd789aa97fde07778bc9ca7abc"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d05/a01504.html#a7b35c3dd789aa97fde07778bc9ca7abc">wasRefined</a> () const</td></tr>
@@ -598,72 +588,6 @@ requires (codim_ == 0)</div>
 </div><div class="memdoc">
 
 <p>returns true if father entity exists </p>
-
-</div>
-</div>
-<a id="ae4cf4b6475c23dc6a344bd34cacad036" name="ae4cf4b6475c23dc6a344bd34cacad036"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4cf4b6475c23dc6a344bd34cacad036">&#9670;&nbsp;</a></span>hbegin()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int codim_, int dim, class GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;typename  = void&gt; <br />
-requires (codim_ == 0)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">decltype(auto) <a class="el" href="../../dd/d05/a01504.html">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity</a>&lt; codim_, dim, GridImp &gt;::hbegin </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxLevel</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Inter-level access to son elements on higher levels&lt;=maxlevel. This is provided for sparsely stored nested unstructured meshes. Returns iterator to first son. </p>
-
-</div>
-</div>
-<a id="a0da3817a5b73ce7e38711c558355d999" name="a0da3817a5b73ce7e38711c558355d999"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0da3817a5b73ce7e38711c558355d999">&#9670;&nbsp;</a></span>hend()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int codim_, int dim, class GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;typename  = void&gt; <br />
-requires (codim_ == 0)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">decltype(auto) <a class="el" href="../../dd/d05/a01504.html">Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity</a>&lt; codim_, dim, GridImp &gt;::hend </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maxLevel</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Returns iterator to one past the last son. </p>
 
 </div>
 </div>

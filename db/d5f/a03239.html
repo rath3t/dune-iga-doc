@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: trimmer.hh File Reference</title>
+<title>dune-iga: patchgridindexsets.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,73 +93,25 @@ $(document).ready(function(){initNavTree('db/d5f/a03239.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">defaulttrimmer/trimmer.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">defaulttrimmer/patchgridindexsets.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Definition of the identity trimmer class.  
+<p>The index and id sets for the PatchGrid class.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d25/a00182_source.html">entitycontainer.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/de9/a00176_source.html">idset.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/d73/a03203_source.html">patchgridentityseed.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/d86/a03209_source.html">patchgridhierarchiciterator.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d9/d65/a03215_source.html">patchgridindexsets.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d1/da3/a03221_source.html">patchgridintersectioniterator.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d61/a03197_source.html">patchgridintersections.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/d1b/a03227_source.html">patchgridleafiterator.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../dd/d07/a03233_source.html">patchgridleveliterator.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../db/dd9/a00179_source.html">trimmedentity.hh</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="../../d7/d3f/a00173_source.html">trimmedlocalgeometry.hh</a>&quot;</code><br />
-<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
-<code>#include &lt;dune/grid/concepts.hh&gt;</code><br />
-<code>#include &lt;dune/grid/yaspgrid.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../df/d98/a00107_source.html">dune/iga/hierarchicpatch/patchgridfwd.hh</a>&quot;</code><br />
-<code>#include &lt;<a class="el" href="../../d1/dc1/a00092_source.html">dune/iga/hierarchicpatch/patchgridgeometry.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/d81/a00110_source.html">dune/iga/hierarchicpatch/patchgridview.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d9/db6/a00146_source.html">dune/iga/trimmer/identitytrimmer/patchgridlocalgeometry.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d7/d9a/a00152_source.html">dune/iga/trimmer/intersectionvariants.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/dfe/a00125_source.html">dune/iga/trimmer/localgeometryvariant.hh</a>&gt;</code><br />
-<code>#include &lt;dune/subgrid/subgrid.hh&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../dc/de6/a00167_source.html">createlevel.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;dune/grid/common/indexidset.hh&gt;</code><br />
 </div>
 <p><a href="../../db/d5f/a03239_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d51/a01520.html">std::hash&lt; Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d1c/a01452.html">Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet&lt; GridImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbf/a01516.html">Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d98/a01456.html">Dune::IGANEW::DefaultTrim::PatchGridLeafIndexSet&lt; GridImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d34/a01524.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, codim &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d97/a01528.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, codim &gt;::Empty</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d0c/a01532.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/da6/a01536.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;::Empty</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d4c/a01540.html">Dune::IGANEW::DefaultTrim::Parameter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/d4c/a01540.html" title="Parameter struct representing parameters for the trimming operation.">Parameter</a> struct representing parameters for the trimming operation.  <a href="../../d3/d4c/a01540.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d83/a01544.html">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl&lt; mydim_, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d2/db1/a01428.html">ElementTrimData</a> struct representing trim data for an element.  <a href="../../d6/d83/a01544.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dc7/a01548.html">Dune::IGANEW::DefaultTrim::ElementTrimDataContainerImpl&lt; ParameterSpaceGrid &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ElementTrimDataContainer struct representing a container for element trim data.  <a href="../../da/dc7/a01548.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/db9/a01552.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl&lt; dim, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../da/ddc/a01492.html">PatchTrimData</a> struct representing trim data for a patch.  <a href="../../d0/db9/a01552.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d89/a01560.html">Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd5/a01564.html">Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/daf/a01568.html">Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db6/a01556.html">Dune::IGANEW::DefaultTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d3/d22/a01572.html" title="DefaultTrimmer class representing a trimmer with reasonable defaults.">Trimmer</a> struct representing a trimmer with identity trimming (no trimming at all).  <a href="../../d7/db6/a01556.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2f/a01460.html">Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet&lt; GridImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -170,41 +122,15 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d1/da8/a00230"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html">Dune::IGANEW::DefaultTrim</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d6/d43/a00216"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d43/a00216.html">Dune::IGANEW::GeometryKernel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad60258d3c3cf850f549bd14af49382bb"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
-<tr class="memitem:ad60258d3c3cf850f549bd14af49382bb"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#ad60258d3c3cf850f549bd14af49382bb">Dune::IGANEW::DefaultTrim::operator&lt;</a> (const IdType&lt; HostIdType &gt; &amp;lhs, const IdType&lt; HostIdType &gt; &amp;rhs)</td></tr>
-<tr class="separator:ad60258d3c3cf850f549bd14af49382bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b06cf2e6c68b3f5e927015dc7ef6b6e"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
-<tr class="memitem:a0b06cf2e6c68b3f5e927015dc7ef6b6e"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#a0b06cf2e6c68b3f5e927015dc7ef6b6e">Dune::IGANEW::DefaultTrim::operator&gt;</a> (const IdType&lt; HostIdType &gt; &amp;lhs, const IdType&lt; HostIdType &gt; &amp;rhs)</td></tr>
-<tr class="separator:a0b06cf2e6c68b3f5e927015dc7ef6b6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad780ed3ffc28d55054058aa0707015c9"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
-<tr class="memitem:ad780ed3ffc28d55054058aa0707015c9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#ad780ed3ffc28d55054058aa0707015c9">Dune::IGANEW::DefaultTrim::operator==</a> (const IdType&lt; HostIdType &gt; &amp;lhs, const IdType&lt; HostIdType &gt; &amp;rhs)</td></tr>
-<tr class="separator:ad780ed3ffc28d55054058aa0707015c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ac6998daef47f3ba10679c00bf49ae8"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
-<tr class="memitem:a7ac6998daef47f3ba10679c00bf49ae8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#a7ac6998daef47f3ba10679c00bf49ae8">Dune::IGANEW::DefaultTrim::operator&lt;=</a> (const IdType&lt; HostIdType &gt; &amp;lhs, const IdType&lt; HostIdType &gt; &amp;rhs)</td></tr>
-<tr class="separator:a7ac6998daef47f3ba10679c00bf49ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a9fbc56f49089cd4a4d98b0e98cf465"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
-<tr class="memitem:a2a9fbc56f49089cd4a4d98b0e98cf465"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#a2a9fbc56f49089cd4a4d98b0e98cf465">Dune::IGANEW::DefaultTrim::operator&gt;=</a> (const IdType&lt; HostIdType &gt; &amp;lhs, const IdType&lt; HostIdType &gt; &amp;rhs)</td></tr>
-<tr class="separator:a2a9fbc56f49089cd4a4d98b0e98cf465"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac274492bbfe7e60de735f1bb58fdf172"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
-<tr class="memitem:ac274492bbfe7e60de735f1bb58fdf172"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html#ac274492bbfe7e60de735f1bb58fdf172">Dune::IGANEW::DefaultTrim::operator!=</a> (const IdType&lt; HostIdType &gt; &amp;lhs, const IdType&lt; HostIdType &gt; &amp;rhs)</td></tr>
-<tr class="separator:ac274492bbfe7e60de735f1bb58fdf172"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Definition of the identity trimmer class. </p>
-<p >Definition of the default trimmer class.</p>
-<dl class="section author"><dt>Author</dt><dd>Alexander Müller <a href="#" onclick="location.href='mai'+'lto:'+'mue'+'ll'+'er@'+'ib'+'b.u'+'ni'+'-st'+'ut'+'tga'+'rt'+'.de'; return false;">muell<span class="obfuscator">.nosp@m.</span>er@i<span class="obfuscator">.nosp@m.</span>bb.un<span class="obfuscator">.nosp@m.</span>i-st<span class="obfuscator">.nosp@m.</span>uttga<span class="obfuscator">.nosp@m.</span>rt.d<span class="obfuscator">.nosp@m.</span>e</a> </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2023 </dd></dl>
+<div class="textblock"><p >The index and id sets for the PatchGrid class. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../db/d5f/a03239.html">trimmer.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../db/d5f/a03239.html">patchgridindexsets.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['nurbsbasis_2ehh_0',['nurbsbasis.hh',['../de/d3a/a03200.html',1,'']]],
+  ['nurbsbasis_2ehh_0',['nurbsbasis.hh',['../d7/de1/a03224.html',1,'']]],
   ['offset_5f_1',['offset_',['../d9/d45/a01396.html#a51161854ea25285fc83e7eae17fe9fc7',1,'Dune::IGA::TransformToSpan']]],
   ['onedimensionalsize_2',['oneDimensionalSize',['../d4/dd5/a01244.html#a2c286e952d31db312211c9aabdbda36f',1,'Dune::Functions::NurbsLocalFiniteElement::oneDimensionalSize(int i) const'],['../d4/dd5/a01244.html#a2c286e952d31db312211c9aabdbda36f',1,'Dune::Functions::NurbsLocalFiniteElement::oneDimensionalSize(int i) const']]],
   ['operator_21_3d_3',['operator!=',['../d1/dde/a01496.html#a4abb20d17d26fa7f61773e9f071216c6',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::operator!=()'],['../d1/da8/a00230.html#ac274492bbfe7e60de735f1bb58fdf172',1,'Dune::IGANEW::DefaultTrim::operator!=()']]],

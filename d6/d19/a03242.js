@@ -1,10 +1,7 @@
 var a03242 =
 [
-    [ "Dune::IGANEW::IdentityTrim::Parameter", "de/df9/a01624.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataImpl< mydim_, ScalarType >", "dd/deb/a01628.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "d6/daf/a01632.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchTrimDataImpl< dim, ScalarType >", "dd/d40/a01636.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >", "dd/d75/a01180.html", "dd/d75/a01180" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d3/d3e/a01644.html", "d3/d3e/a01644" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "da/ddf/a01648.html", "da/ddf/a01648" ]
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet< GridImp >", "d7/d71/a01588.html", "d7/d71/a01588" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIndexSet< GridImp >", "de/d40/a01592.html", "de/d40/a01592" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridGlobalIdSet< GridImp >", "dd/d70/a01596.html", "dd/d70/a01596" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLocalIdSet< GridImp >", "d4/d3f/a01600.html", "d4/d3f/a01600" ]
 ];
