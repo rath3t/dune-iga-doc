@@ -98,52 +98,62 @@ $(document).ready(function(){initNavTree('d6/db8/a00158_source.html','../../'); 
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;clipper2/clipper.h&gt;</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/de1/a00233.html">Dune::IGANEW::DefaultTrim</a> {</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d6/dd7/a01555.html#a7c62ae545acf91a93d318696f33f71bf">    8</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d6/dd7/a01555.html#a7c62ae545acf91a93d318696f33f71bf">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::trimElement</a>(<span class="keyword">const</span> <span class="keyword">typename</span> GridFamily::TrimmerTraits::template <a class="code hl_typedef" href="../../d6/dd7/a01555.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;0&gt;::UnTrimmedHostParameterSpaceGridEntity</a>&amp; element,</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../d6/dd7/a01555.html#a64be0e65208a31037a4e33b93d0a2ec4">PatchTrimData</a>&amp; trimmingCurves) {</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">using namespace </span>Clipper2Lib;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">auto</span> geo  = element.geometry();</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  std::array cornerIndices= {0,1,3,2};<span class="comment">// see dune book page 127 Figure 5.12</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  std::array&lt;FieldVector&lt;ctype,2&gt;,4&gt; corners;<span class="comment">// see dune book page 127 Figure 5.12</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  corners[0] = geo.corner(0);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  corners[1] = geo.corner(1);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  corners[2] = geo.corner(3);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  corners[3]  = geo.corner(2);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    PathsD elementPath;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    elementPath.push_back({});</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;4 ; ++i)</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      elementPath[0].push_back({corners[i][0],corners[i][1],cornerIndices[i]});</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="comment">// elementPath[0].push_back({corners[0][0],corners[0][1],cornerIndices[0]});</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    ClipperD c(5);</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordtype">int</span> intersectionCounter= 4;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    c.SetZCallback([&amp;](<span class="keyword">const</span> PointD&amp; e1bot, <span class="keyword">const</span> PointD&amp; e1top,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keyword">const</span> PointD&amp; e2bot, <span class="keyword">const</span> PointD&amp; e2top, PointD&amp; pt){pt.z=intersectionCounter++;});</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    Clipper2Lib::RectD elementRect{corners[0][0], corners[0][1], corners[2][0], corners[2][1]};</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="comment">//</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="comment">//  Clipper2Lib::Intersect(ClipperPaths{elementEdges}, clip_, Clipper2Lib::FillRule::NonZero);</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="comment">// c.AddSubject(elementPath);</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    PathsD trimmedSampledCurve;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> trimmingCurve:trimmingCurves.curves()) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      trimmedSampledCurve.emplace({});</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> v: <a class="code hl_function" href="../../dc/d9a/a00218.html#a2630a0eab9b7e24915eeb52ca335972c">Utilities::linspace</a>(trimmingCurve.domain()[0],100)) {</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        <span class="keyword">auto</span> fieldVectorPoint = trimmingCurve.global({v});</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        trimmedSampledCurve.back().push_back({fieldVectorPoint[0],fieldVectorPoint[1]});</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      }</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    PathsD clippedEdges = RectClip(elementRect,trimmedSampledCurve);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    std::cout&lt;&lt;clippedEdges.size()&lt;&lt;std::endl;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>}</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>}</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;clipper2/clipper.rectclip.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/de1/a00233.html">Dune::IGANEW::DefaultTrim</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d6/dd7/a01555.html#a7c62ae545acf91a93d318696f33f71bf">    9</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d6/dd7/a01555.html#a7c62ae545acf91a93d318696f33f71bf">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::trimElement</a>(<span class="keyword">const</span> <span class="keyword">typename</span> GridFamily::TrimmerTraits::template <a class="code hl_typedef" href="../../d6/dd7/a01555.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;0&gt;::UnTrimmedHostParameterSpaceGridEntity</a>&amp; element,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">const</span> <a class="code hl_typedef" href="../../d6/dd7/a01555.html#a64be0e65208a31037a4e33b93d0a2ec4">PatchTrimData</a>&amp; trimmingCurves) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">using namespace </span>Clipper2Lib;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">auto</span> geo  = element.geometry();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  std::array cornerIndices= {0,1,3,2};<span class="comment">// see dune book page 127 Figure 5.12</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  std::array&lt;FieldVector&lt;ctype,2&gt;,4&gt; corners;<span class="comment">// see dune book page 127 Figure 5.12</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  corners[0] = geo.corner(0);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  corners[1] = geo.corner(1);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  corners[2] = geo.corner(3);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  corners[3]  = geo.corner(2);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    PathsD elementPath;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    elementPath.push_back({});</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=0; i&lt;4 ; ++i)</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      elementPath[0].push_back({corners[i][0],corners[i][1],cornerIndices[i]});</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="comment">// elementPath[0].push_back({corners[0][0],corners[0][1],cornerIndices[0]});</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    ClipperD c(5);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">int</span> intersectionCounter= 4;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    c.SetZCallback([&amp;](<span class="keyword">const</span> PointD&amp; e1bot, <span class="keyword">const</span> PointD&amp; e1top,</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">const</span> PointD&amp; e2bot, <span class="keyword">const</span> PointD&amp; e2top, PointD&amp; pt){pt.z=intersectionCounter++;});</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <span class="keyword">auto</span> offsetX= corners[0][0];</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">const</span> <span class="keyword">auto</span> offsetY= corners[0][1];</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keyword">auto</span> right= corners[2][0];</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">const</span> <span class="keyword">auto</span> bottom= corners[2][1];</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    Clipper2Lib::RectD elementRect{offsetX, offsetY, right, bottom};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">//</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>   <span class="comment">//   c.AddSubject(elementPath);</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    PathsD trimmedSampledCurve;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> trimmingCurve:trimmingCurves.curves()) {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      trimmedSampledCurve.emplace({});</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> v: std::views::reverse(<a class="code hl_function" href="../../dc/d9a/a00218.html#a2630a0eab9b7e24915eeb52ca335972c">Utilities::linspace</a>(trimmingCurve.domain()[0],10))) {</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">auto</span> fieldVectorPoint = trimmingCurve.global({v});</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        trimmedSampledCurve.back().push_back({fieldVectorPoint[0],fieldVectorPoint[1]});</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      }</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>   PathsD clippedEdges = Clipper2Lib::Intersect(elementPath, trimmedSampledCurve, Clipper2Lib::FillRule::NonZero);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>     <span class="comment">// PathsD clippedEdges =Clipper2Lib::Intersect(elementPath, trimmedSampledCurve, Clipper2Lib::FillRule::NonZero);</span></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="comment">// c.AddClip(trimmedSampledCurve);</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="comment">// c.Execute(ClipType::Intersection,FillRule::NonZero);</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// PathsD clippedEdges = RectClipLines(elementRect,trimmedSampledCurve,5);</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    std::cout&lt;&lt;clippedEdges.size()&lt;&lt;std::endl;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>}</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}</div>
 <div class="ttc" id="aa00218_html_a2630a0eab9b7e24915eeb52ca335972c"><div class="ttname"><a href="../../dc/d9a/a00218.html#a2630a0eab9b7e24915eeb52ca335972c">Dune::IGANEW::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdoc">A view with N coordinates between a and b including a and b.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:76</div></div>
 <div class="ttc" id="aa00233_html"><div class="ttname"><a href="../../d6/de1/a00233.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createlevel.hh:4</div></div>
 <div class="ttc" id="aa01555_html_a64be0e65208a31037a4e33b93d0a2ec4"><div class="ttname"><a href="../../d6/dd7/a01555.html#a64be0e65208a31037a4e33b93d0a2ec4">Dune::IGANEW::DefaultTrim::TrimmerImpl::PatchTrimData</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::PatchTrimData PatchTrimData</div><div class="ttdoc">Patch trim data type.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:414</div></div>
-<div class="ttc" id="aa01555_html_a7c62ae545acf91a93d318696f33f71bf"><div class="ttname"><a href="../../d6/dd7/a01555.html#a7c62ae545acf91a93d318696f33f71bf">Dune::IGANEW::DefaultTrim::TrimmerImpl::trimElement</a></div><div class="ttdeci">static auto trimElement(const typename GridFamily::TrimmerTraits::template Codim&lt; 0 &gt;::UnTrimmedHostParameterSpaceGridEntity &amp;element, const PatchTrimData &amp;trimmingCurves)</div><div class="ttdef"><b>Definition:</b> trimelement.hh:8</div></div>
+<div class="ttc" id="aa01555_html_a7c62ae545acf91a93d318696f33f71bf"><div class="ttname"><a href="../../d6/dd7/a01555.html#a7c62ae545acf91a93d318696f33f71bf">Dune::IGANEW::DefaultTrim::TrimmerImpl::trimElement</a></div><div class="ttdeci">static auto trimElement(const typename GridFamily::TrimmerTraits::template Codim&lt; 0 &gt;::UnTrimmedHostParameterSpaceGridEntity &amp;element, const PatchTrimData &amp;trimmingCurves)</div><div class="ttdef"><b>Definition:</b> trimelement.hh:9</div></div>
 <div class="ttc" id="aa01555_html_addb7f4b76ecd8a379f996f9d6e793c68"><div class="ttname"><a href="../../d6/dd7/a01555.html#addb7f4b76ecd8a379f996f9d6e793c68">Dune::IGANEW::DefaultTrim::TrimmerImpl::Codim</a></div><div class="ttdeci">typename TrimmerTraits::template Codim&lt; codim &gt; Codim</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:318</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
