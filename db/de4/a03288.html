@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbspatchdata.hh File Reference</title>
+<title>dune-iga: patchgridintersectioniterator.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,20 +93,25 @@ $(document).ready(function(){initNavTree('db/de4/a03288.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">iga/splines/nurbspatchdata.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">defaulttrimmer/patchgridintersectioniterator.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../dc/d87/a00032_source.html">dune/iga/geometrykernel/controlpoint.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/d51/a00017_source.html">dune/iga/utils/mdnet.hh</a>&gt;</code><br />
+
+<p>The PatchGridLeafIntersectionIterator and PatchGridLevelIntersectionIterator classes.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/grid/common/intersection.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d0/dc2/a00104_source.html">dune/iga/hierarchicpatch/patchgridentity.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../dc/df1/a03261_source.html">dune/iga/hierarchicpatch/patchgridintersections.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../db/de4/a03288_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d78/a01427.html">Dune::IGANEW::NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that holds all data regarding the NURBS geometric structure.  <a href="../../db/d78/a01427.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5e/a01467.html">Dune::IGANEW::DefaultTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iterator over all element neighborsMesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element!  <a href="../../df/d5e/a01467.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d15/a01471.html">Dune::IGANEW::DefaultTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -115,20 +120,17 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:df/d24/a00217"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d24/a00217.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, std::size_t dimworld_, typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d24/a00217.html#aee4d8d984f5b9053709e25ff2c1a6265">Dune::IGANEW::NURBSPatchData</a> (const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;knotSpansI, const MultiDimensionalNet&lt; dim, ControlPoint&lt; FieldVector&lt; ScalarType, dimworld_ &gt; &gt; &gt; &amp;controlPointsI, const std::array&lt; int, dim &gt; &amp;degreeInput) -&gt; NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</td></tr>
-<tr class="memdesc:aee4d8d984f5b9053709e25ff2c1a6265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for creating <a class="el" href="../../db/d78/a01427.html" title="Struct that holds all data regarding the NURBS geometric structure.">NURBSPatchData</a> instances without explicitly specifying template arguments.  <a href="../../df/d24/a00217.html#aee4d8d984f5b9053709e25ff2c1a6265">More...</a><br /></td></tr>
-<tr class="separator:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune::IGANEW::DefaultTrim</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The PatchGridLeafIntersectionIterator and PatchGridLevelIntersectionIterator classes. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_479b904809ee7734e338128330b60cdb.html">splines</a></li><li class="navelem"><a class="el" href="../../db/de4/a03288.html">nurbspatchdata.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../db/de4/a03288.html">patchgridintersectioniterator.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,16 +1,16 @@
 var a01567 =
 [
-    [ "EntityImp", "d7/d57/a01567.html#ae854800468ab4c334a1508518285f52a", null ],
-    [ "EntityInfo", "d7/d57/a01567.html#ae9ee0b2effa5cf5ac42635d04146b427", null ],
-    [ "EntitySeedImpl", "d7/d57/a01567.html#a2380d12e11b258614c70eaf9b3722362", null ],
-    [ "HostParameterSpaceGridEntity", "d7/d57/a01567.html#aab4cb632ef129529c8bc5f5c3a9bcf66", null ],
-    [ "LocalGeometry", "d7/d57/a01567.html#a02f7b0508e3f67a73717114316c6f419", null ],
-    [ "LocalParameterSpaceGeometry", "d7/d57/a01567.html#a77d0575f0ff5080b265d4ff17fc12124", null ],
-    [ "ParameterSpaceGridEntity", "d7/d57/a01567.html#a779cf8a8c80a9726a7f4c0b79e202514", null ],
-    [ "ParameterSpaceGridEntitySeed", "d7/d57/a01567.html#a652d537bd99348b1d86db77f6f98bcf9", null ],
-    [ "TrimmedLocalGeometry", "d7/d57/a01567.html#a123e5d3e59182d681f73ebfdfe1a9c56", null ],
-    [ "TrimmedParameterSpaceGeometry", "d7/d57/a01567.html#a2722846dbc864aebc02d9cd126528416", null ],
-    [ "UnTrimmedHostParameterSpaceGridEntity", "d7/d57/a01567.html#ae857b214f55e39a2118f5d2833fb6666", null ],
-    [ "UntrimmedLocalGeometry", "d7/d57/a01567.html#a7fe768a69bbdba5999198466ab317f1b", null ],
-    [ "UntrimmedParameterSpaceGeometry", "d7/d57/a01567.html#a8fb925ab6c15aa87906a35caeab15f8b", null ]
+    [ "Codim", "d5/d10/a01571.html", "d5/d10/a01571" ],
+    [ "ElementInfo", "d7/d57/a01567.html#a953561b140d36807a3235c6f93907026", null ],
+    [ "GlobalIdSetId", "d7/d57/a01567.html#a81acb0977b01f058b1cb29ab399ec674", null ],
+    [ "HostIdType", "d7/d57/a01567.html#acb75cd5dd00bddc2c344e87d3f70f18b", null ],
+    [ "HostLeafIntersection", "d7/d57/a01567.html#a089d73aa9079baecb1058dcaf1f226c1", null ],
+    [ "HostLevelIntersection", "d7/d57/a01567.html#a1b30b00d6647a9d357414e7732699ae9", null ],
+    [ "ParameterSpaceGrid", "d7/d57/a01567.html#a08028461a6645e0e3e8ecb5525e33cdb", null ],
+    [ "ParameterSpaceLeafIntersection", "d7/d57/a01567.html#ac36ca79b54fc311a238549d7135d43db", null ],
+    [ "ParameterSpaceLevelIntersection", "d7/d57/a01567.html#a1a620da98aa8cb2a5af778e0bae68af0", null ],
+    [ "PatchTrimData", "d7/d57/a01567.html#aa9aef7803f0e3457056f2cf0fec6498b", null ],
+    [ "TrimmedParameterSpaceLeafIntersection", "d7/d57/a01567.html#a28b8b0681948533d955c6f9b8f2c248c", null ],
+    [ "TrimmedParameterSpaceLevelIntersection", "d7/d57/a01567.html#a3cfabec8892eb3ab14c52c4903c99e62", null ],
+    [ "TrimmingCurve", "d7/d57/a01567.html#a77cdabc9a9e97408f481b5ad8876f5d8", null ]
 ];
