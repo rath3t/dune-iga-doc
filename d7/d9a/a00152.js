@@ -1,4 +1,4 @@
 var a00152 =
 [
-    [ "Dune::IGANEW::Trim::IntersectionVariant< TrimmerType_, Implementations >", "d4/dd4/a01659.html", "d4/dd4/a01659" ]
+    [ "Dune::IGANEW::Trim::IntersectionVariant< TrimmerType_, Implementations >", "d9/dbc/a01662.html", "d9/dbc/a01662" ]
 ];

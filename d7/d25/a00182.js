@@ -1,4 +1,4 @@
 var a00182 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "da/d50/a01511.html", "da/d50/a01511" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet< GridImp >", "d8/d22/a01446.html", "d8/d22/a01446" ]
 ];

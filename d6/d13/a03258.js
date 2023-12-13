@@ -1,4 +1,4 @@
 var a03258 =
 [
-    [ "Dune::IGANEW::PatchGrid< dim, dimworld, GridFamily_, ScalarType >", "d8/df3/a01195.html", "d8/df3/a01195" ]
+    [ "Dune::IGANEW::Concept::TrimDataContainer", "d9/df7/a01699.html", null ]
 ];

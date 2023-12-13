@@ -1,4 +1,4 @@
 var a00065 =
 [
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d4/d04/a01335.html", "d4/d04/a01335" ]
+    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d2/d4d/a01338.html", "d2/d4d/a01338" ]
 ];

@@ -1,9 +1,15 @@
 var a00234 =
 [
-    [ "HostGridAccess", "df/ddd/a01655.html", null ],
-    [ "IntersectionVariant", "d4/dd4/a01659.html", "d4/dd4/a01659" ],
-    [ "LocalGeometryVariant", "dd/d38/a01663.html", "dd/d38/a01663" ],
-    [ "ParameterSpaceGridEntityVariant", "d5/d81/a01579.html", "d5/d81/a01579" ],
-    [ "referenceElement", "da/d31/a00234.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
-    [ "referenceElement", "da/d31/a00234.html#a58f6695142a18937094849b86976642b", null ]
+    [ "BsplineBasis", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
+    [ "Nurbs", "d1/df4/a01422.html", "d1/df4/a01422" ],
+    [ "createUniqueKnotSpans", "da/d31/a00234.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "da/d31/a00234.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "da/d31/a00234.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "da/d31/a00234.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "da/d31/a00234.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "da/d31/a00234.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "da/d31/a00234.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "da/d31/a00234.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "da/d31/a00234.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
+    [ "netOfSpan", "da/d31/a00234.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];

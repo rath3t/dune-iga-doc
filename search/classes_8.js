@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['localgeometryvariant_0',['LocalGeometryVariant',['../dd/d38/a01663.html',1,'Dune::IGANEW::Trim']]],
-  ['localview_1',['LocalView',['../d9/ddc/a01423.html',1,'Dune::IGANEW::Splines::Nurbs']]]
+  ['localgeometryvariant_0',['LocalGeometryVariant',['../d8/d75/a01666.html',1,'Dune::IGANEW::Trim']]],
+  ['localview_1',['LocalView',['../dc/de6/a01426.html',1,'Dune::IGANEW::Splines::Nurbs']]]
 ];

@@ -1,4 +1,4 @@
 var a00044 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "dd/d80/a01075.html", "dd/d80/a01075" ]
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "db/dba/a01078.html", "db/dba/a01078" ]
 ];
