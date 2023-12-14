@@ -27,17 +27,18 @@ var a00236 =
     [ "TrimmedReferenceElement", "de/dc6/a01502.html", "de/dc6/a01502" ],
     [ "Trimmer", "d9/df5/a01574.html", "d9/df5/a01574" ],
     [ "TrimmerImpl", "da/dcf/a01558.html", "da/dcf/a01558" ],
-    [ "TrimmingTracker", "d1/d88/a01578.html", "d1/d88/a01578" ],
+    [ "TrimmingResult", "d1/d88/a01578.html", "d1/d88/a01578" ],
     [ "VectorEntityContainer", "d5/dd0/a01438.html", "d5/dd0/a01438" ],
     [ "LocalGeometryTag", "d7/d40/a00236.html#a732e3f39cf34394d88364942fc6b941f", [
       [ "InParameterSpace", "d7/d40/a00236.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e", null ],
       [ "InReferenceElement", "d7/d40/a00236.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723", null ]
     ] ],
+    [ "giveEdgeIdx", "d7/d40/a00236.html#ac0c0553909835cafcba24fbe196685f6", null ],
     [ "operator!=", "d7/d40/a00236.html#ac274492bbfe7e60de735f1bb58fdf172", null ],
     [ "operator<", "d7/d40/a00236.html#ad60258d3c3cf850f549bd14af49382bb", null ],
     [ "operator<=", "d7/d40/a00236.html#a7ac6998daef47f3ba10679c00bf49ae8", null ],
     [ "operator==", "d7/d40/a00236.html#ad780ed3ffc28d55054058aa0707015c9", null ],
     [ "operator>", "d7/d40/a00236.html#a0b06cf2e6c68b3f5e927015dc7ef6b6e", null ],
     [ "operator>=", "d7/d40/a00236.html#a2a9fbc56f49089cd4a4d98b0e98cf465", null ],
-    [ "trimRectangle", "d7/d40/a00236.html#a0d52365f08611631d9e3c06223b32ea0", null ]
+    [ "trimElementImpl", "d7/d40/a00236.html#a8faaef1c1f65b627360c8fe2744a432e", null ]
 ];

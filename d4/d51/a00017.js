@@ -1,11 +1,7 @@
 var a00017 =
 [
-    [ "Dune::IGANEW::MultiDimensionalNet< netdim, ElementType, Container >", "dc/d42/a01674.html", "dc/d42/a01674" ],
-    [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "d6/d26/a01678.html", "d6/d26/a01678" ],
-    [ "dot", "d4/d51/a00017.html#aec86687240a124712c5daf95ff566abb", null ],
-    [ "MultiDimensionalNet", "d4/d51/a00017.html#a4549270737e222aedcbf2721e08b3d06", null ],
-    [ "operator*", "d4/d51/a00017.html#a3f6e129217a58dc89862cc33b12f8885", null ],
-    [ "operator*", "d4/d51/a00017.html#a33cc687d08f824af43e22f0d3eb68473", null ],
-    [ "operator-", "d4/d51/a00017.html#a1864570b0dc1ce2ff4a3140a27211792", null ],
-    [ "operator/", "d4/d51/a00017.html#a010894b51f31c1163c47566396c4c13e", null ]
+    [ "Dune::IGANEW::PatchGridLevelGridViewTraits< GridImp >", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
+    [ "Dune::IGANEW::PatchGridLevelGridView< GridImp >", "d6/d1e/a01234.html", "d6/d1e/a01234" ],
+    [ "Dune::IGANEW::PatchGridLeafGridViewTraits< GridImp >", "d7/d04/a01246.html", "d7/d04/a01246" ],
+    [ "Dune::IGANEW::PatchGridLeafGridView< GridImp >", "d8/ddf/a01238.html", "d8/ddf/a01238" ]
 ];

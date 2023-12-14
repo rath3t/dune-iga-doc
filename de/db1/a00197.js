@@ -1,5 +1,4 @@
 var a00197 =
 [
-    [ "IGAGrid", "de/db1/a00197.html#af93cff67f8b7e3e20822b05262c82751", null ],
-    [ "grid_registry", "de/db1/a00197.html#a49a8630210f89f42b665afd341205e8d", null ]
+    [ "boundaryPatch", "de/db1/a00197.html#adca8f900f932f6673b01a1bff6ef60ac", null ]
 ];

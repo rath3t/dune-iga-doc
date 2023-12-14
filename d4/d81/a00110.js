@@ -1,7 +1,7 @@
 var a00110 =
 [
-    [ "Dune::IGANEW::PatchGridLevelGridViewTraits< GridImp >", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
-    [ "Dune::IGANEW::PatchGridLevelGridView< GridImp >", "d6/d1e/a01234.html", "d6/d1e/a01234" ],
-    [ "Dune::IGANEW::PatchGridLeafGridViewTraits< GridImp >", "d7/d04/a01246.html", "d7/d04/a01246" ],
-    [ "Dune::IGANEW::PatchGridLeafGridView< GridImp >", "d8/ddf/a01238.html", "d8/ddf/a01238" ]
+    [ "Dune::IGANEW::Splines::BsplineBasis< ScalarType_ >", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
+    [ "createUniqueKnotSpans", "d4/d81/a00110.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "findSpan", "d4/d81/a00110.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "d4/d81/a00110.html#a67facdaecd7f3c339ece70971f8a8f92", null ]
 ];

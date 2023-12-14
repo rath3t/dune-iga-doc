@@ -1,7 +1,12 @@
 var a00104 =
 [
-    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "d4/d5d/a01202.html", "d4/d5d/a01202" ],
-    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d2/da6/a01210.html", "d2/da6/a01210" ],
-    [ "referenceElement", "d0/dc2/a00104.html#a14501a764d945ffb9fd15254ab7da335", null ],
-    [ "referenceElement", "d0/dc2/a00104.html#aa8ba61178990a88b88ab09dfc698d54b", null ]
+    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d1/df4/a01422.html", "d1/df4/a01422" ],
+    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "dc/de6/a01426.html", "dc/de6/a01426" ],
+    [ "degreeElevate", "d0/dc2/a00104.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "d0/dc2/a00104.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "d0/dc2/a00104.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "generateRefinedKnots", "d0/dc2/a00104.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "d0/dc2/a00104.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "d0/dc2/a00104.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
+    [ "netOfSpan", "d0/dc2/a00104.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];

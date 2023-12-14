@@ -1,5 +1,5 @@
 var a00047 =
 [
-    [ "makeCircularArc", "d6/d2d/a00047.html#a000e49612164d2b6609e00015a7da1b8", null ],
-    [ "makeCircularArc2D", "d6/d2d/a00047.html#af2e971c8404f8415030e1ae459761540", null ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d8/df1/a01414.html", "d8/df1/a01414" ],
+    [ "forEachUntrimmedBoundaryDOF", "d6/d2d/a00047.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
 ];

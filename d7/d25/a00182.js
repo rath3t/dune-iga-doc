@@ -1,4 +1,6 @@
 var a00182 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet< GridImp >", "d8/d22/a01446.html", "d8/d22/a01446" ]
+    [ "Reader", "d7/d25/a00182.html#a1ef280a2762fbf1b3a46535ade3f8172", [
+      [ "json", "d7/d25/a00182.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
+    ] ]
 ];

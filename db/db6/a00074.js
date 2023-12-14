@@ -1,6 +1,9 @@
 var a00074 =
 [
-    [ "Dune::IGA::Boundary", "da/d61/a01350.html", "da/d61/a01350" ],
-    [ "Dune::IGA::TrimData", "d7/dc4/a01354.html", "d7/dc4/a01354" ],
-    [ "BoundaryLoop", "db/db6/a00074.html#ac852dd8efef6c18283ca22735cb02696", null ]
+    [ "Dune::IGANEW::ControlPoint< VT >", "d4/d8a/a01062.html", "d4/d8a/a01062" ],
+    [ "operator*", "db/db6/a00074.html#a3f232585a065fb77fc7443359eda7b95", null ],
+    [ "operator*", "db/db6/a00074.html#aab23834de62fd10b103b27e062dccfbd", null ],
+    [ "operator+", "db/db6/a00074.html#a33477ec847c0f90f5090046a585d3488", null ],
+    [ "operator-", "db/db6/a00074.html#aade6853aaa9cc5602813449a1b566ec4", null ],
+    [ "operator-", "db/db6/a00074.html#a124862a808b0cd8eee23b3960c456f83", null ]
 ];

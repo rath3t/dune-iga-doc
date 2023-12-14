@@ -1,4 +1,4 @@
 var a00092 =
 [
-    [ "Dune::IGANEW::PatchGridGeometry< mydim, coorddim, GridImp >", "de/d7e/a01222.html", "de/d7e/a01222" ]
+    [ "findIntersectionCurveAndLine", "d1/dc1/a00092.html#acbab55bc9467ca289ad446c860004a7a", null ]
 ];

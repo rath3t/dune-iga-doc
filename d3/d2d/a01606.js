@@ -1,9 +1,14 @@
 var a01606 =
 [
-    [ "IdType", "d3/d2d/a01606.html#ab65943bece9a4f96052869c1c22a86a2", null ],
-    [ "PatchGridLocalIdSet", "d3/d2d/a01606.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
-    [ "id", "d3/d2d/a01606.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
-    [ "subId", "d3/d2d/a01606.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
-    [ "update", "d3/d2d/a01606.html#af62b1ae58fd567949b09551702ecdcb6", null ],
-    [ "grid_", "d3/d2d/a01606.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
+    [ "Types", "d3/d2d/a01606.html#a630b3b92b6c3f96ca20c0fe174aab211", null ],
+    [ "PatchGridLeafIndexSet", "d3/d2d/a01606.html#a147729ee771ed8102b33de79b5c5a5ed", null ],
+    [ "contains", "d3/d2d/a01606.html#a1ff26b2030f1195fa8bbad67492151c2", null ],
+    [ "index", "d3/d2d/a01606.html#a519456cdcd608ea7de7fbd2eedb7e191", null ],
+    [ "size", "d3/d2d/a01606.html#a8b540b763863f7b6bd15ced9b7d5b1c2", null ],
+    [ "size", "d3/d2d/a01606.html#acb5c7b9736e8fd41a372d620e1a1d821", null ],
+    [ "subIndex", "d3/d2d/a01606.html#a25286e0fae26c1527bdd43fd2e063c0b", null ],
+    [ "types", "d3/d2d/a01606.html#a2afe4429cff876b7d5117e9e4bdef473", null ],
+    [ "update", "d3/d2d/a01606.html#aff716eea7ea5c79d5a5c753afda454e0", null ],
+    [ "dim", "d3/d2d/a01606.html#a1171c8f071400678f74439ace6b55133", null ],
+    [ "grid_", "d3/d2d/a01606.html#ad32e6d968b965e18f6d36ca59105a6d0", null ]
 ];

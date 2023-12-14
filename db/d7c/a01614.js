@@ -1,9 +1,9 @@
 var a01614 =
 [
-    [ "Intersection", "db/d7c/a01614.html#ad537080779a8a7938759c789dd57dd23", null ],
-    [ "PatchGridLevelIntersectionIterator", "db/d7c/a01614.html#a7f7d1ccec68ffe86594e4409f5d66102", null ],
-    [ "PatchGridLevelIntersectionIterator", "db/d7c/a01614.html#a795c92b7a262e89fba6f7853b10e5870", null ],
-    [ "dereference", "db/d7c/a01614.html#acfcd54405318b68671c1979158ac60f1", null ],
-    [ "equals", "db/d7c/a01614.html#a943c28bc295060e770ede04d60c8d45e", null ],
-    [ "increment", "db/d7c/a01614.html#a9793e3cdb7cd606d0a1f73ff812c08c1", null ]
+    [ "IdType", "db/d7c/a01614.html#ab65943bece9a4f96052869c1c22a86a2", null ],
+    [ "PatchGridLocalIdSet", "db/d7c/a01614.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
+    [ "id", "db/d7c/a01614.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
+    [ "subId", "db/d7c/a01614.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
+    [ "update", "db/d7c/a01614.html#af62b1ae58fd567949b09551702ecdcb6", null ],
+    [ "grid_", "db/d7c/a01614.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
 ];

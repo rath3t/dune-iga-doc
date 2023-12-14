@@ -1,5 +1,4 @@
 var a00176 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "de/dc6/a01502.html", "de/dc6/a01502" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "db/d57/a01506.html", "db/d57/a01506" ]
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "dc/d42/a01674.html", "dc/d42/a01674" ]
 ];
