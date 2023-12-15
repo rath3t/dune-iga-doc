@@ -12,5 +12,5 @@ var a01566 =
     [ "PatchTrimData", "d1/d9b/a01566.html#aa9aef7803f0e3457056f2cf0fec6498b", null ],
     [ "TrimmedParameterSpaceLeafIntersection", "d1/d9b/a01566.html#a28b8b0681948533d955c6f9b8f2c248c", null ],
     [ "TrimmedParameterSpaceLevelIntersection", "d1/d9b/a01566.html#a3cfabec8892eb3ab14c52c4903c99e62", null ],
-    [ "TrimmingCurve", "d1/d9b/a01566.html#a77cdabc9a9e97408f481b5ad8876f5d8", null ]
+    [ "TrimmingCurve", "d1/d9b/a01566.html#a605bd3a83e981e978a98d7b323f30bc0", null ]
 ];

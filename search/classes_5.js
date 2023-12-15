@@ -9,5 +9,5 @@ var searchData=
   ['hasentityiterator_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_6',['hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../d4/da7/a01102.html',1,'Dune::Capabilities']]],
   ['hash_3c_20dune_3a_3aiganew_3a_3adefaulttrim_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; &gt;',['../da/d0a/a01526.html',1,'std']]],
   ['hostgridaccess_8',['HostGridAccess',['../d8/d7b/a01478.html',1,'Dune::IGANEW::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../d9/d2e/a01194.html',1,'Dune::IGANEW::HostGridAccess&lt; Grid &gt;'],['../d8/d75/a01666.html',1,'Dune::IGANEW::Trim::HostGridAccess&lt; Grid &gt;']]],
-  ['hostvertex_9',['HostVertex',['../d0/d21/a01582.html',1,'Dune::IGANEW::DefaultTrim::TrimmingResult']]]
+  ['hostvertex_9',['HostVertex',['../d0/d21/a01582.html',1,'Dune::IGANEW::DefaultTrim::ClippingResult']]]
 ];

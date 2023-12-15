@@ -32,7 +32,7 @@ var searchData=
   ['hostlevelintersection_29',['HostLevelIntersection',['../d1/d9b/a01566.html#a1b30b00d6647a9d357414e7732699ae9',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits']]],
   ['hostortrimmed_30',['HostOrTrimmed',['../da/da6/a01522.html#af37d7e0ce257bc811e6d6002335f512f',1,'Dune::IGANEW::DefaultTrim::IdType']]],
   ['hostparameterspacegridentity_31',['HostParameterSpaceGridEntity',['../d5/d75/a01570.html#aab4cb632ef129529c8bc5f5c3a9bcf66',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
-  ['hostvertex_32',['HostVertex',['../d0/d21/a01582.html',1,'Dune::IGANEW::DefaultTrim::TrimmingResult']]],
+  ['hostvertex_32',['HostVertex',['../d0/d21/a01582.html',1,'Dune::IGANEW::DefaultTrim::ClippingResult']]],
   ['hypersurfbegin_33',['hyperSurfBegin',['../dd/d08/a01682.html#a9722a77ba05269bc6fc6d86d3baed285',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['hypersurfend_34',['hyperSurfEnd',['../dd/d08/a01682.html#aa44cdf11cabb8f75b093b2b6c9cd917e',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['patchgrid_2ehh_35',['patchgrid.hh',['../d0/d9d/a03289.html',1,'']]],

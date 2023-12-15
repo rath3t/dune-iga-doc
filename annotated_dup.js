@@ -56,6 +56,7 @@ var annotated_dup =
       ] ],
       [ "IGANEW", "d5/d0b/a00220.html", [
         [ "DefaultTrim", "d7/d40/a00236.html", [
+          [ "ClippingResult", "d1/d88/a01578.html", "d1/d88/a01578" ],
           [ "ElementTrimData", "d1/de7/a01434.html", null ],
           [ "ElementTrimDataContainerImpl", "d7/d1d/a01554.html", null ],
           [ "ElementTrimDataImpl", "d8/daf/a01550.html", null ],
@@ -83,7 +84,6 @@ var annotated_dup =
           [ "TrimmedReferenceElement", "de/dc6/a01502.html", "de/dc6/a01502" ],
           [ "Trimmer", "d9/df5/a01574.html", "d9/df5/a01574" ],
           [ "TrimmerImpl", "da/dcf/a01558.html", "da/dcf/a01558" ],
-          [ "TrimmingResult", "d1/d88/a01578.html", "d1/d88/a01578" ],
           [ "VectorEntityContainer", "d5/dd0/a01438.html", "d5/dd0/a01438" ]
         ] ],
         [ "GeometryKernel", "d0/d24/a00222.html", [

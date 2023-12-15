@@ -11,6 +11,7 @@ var hierarchy =
     [ "Dune::IGANEW::Splines::BsplineBasis< ScalarType_ >", "d4/d3c/a01418.html", null ],
     [ "Dune::Capabilities::canCommunicate< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d6/d40/a01114.html", null ],
     [ "Dune::Capabilities::canCommunicate< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d1/d3d/a01110.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::ClippingResult", "d1/d88/a01578.html", null ],
     [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d5/d75/a01570.html", null ],
     [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "db/d57/a01506.html", null ],
     [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d9/dbc/a01662.html", null ],
@@ -71,7 +72,7 @@ var hierarchy =
     [ "Dune::IGANEW::DefaultTrim::HostGridAccess< Grid >", "d8/d7b/a01478.html", null ],
     [ "Dune::IGANEW::HostGridAccess< Grid >", "d9/d2e/a01194.html", null ],
     [ "Dune::IGANEW::Trim::HostGridAccess< Grid >", "d8/d75/a01666.html", null ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmingResult::HostVertex", "d0/d21/a01582.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::ClippingResult::HostVertex", "d0/d21/a01582.html", null ],
     [ "Dune::IGA::Ibra::IbraBase", "d0/d00/a01286.html", [
       [ "Dune::IGA::Ibra::IbraNURBSData< 1, 2 >", "dc/ded/a01290.html", null ],
       [ "Dune::IGA::Ibra::Brep< worldDim >", "d9/de6/a01314.html", null ],
@@ -115,7 +116,7 @@ var hierarchy =
     [ "Dune::IGANEW::MultiDimensionalNet< dim, ControlPointType >", "dd/d08/a01682.html", null ],
     [ "Dune::IGANEW::MultiDimensionalNet< dim, ScalarType >", "dd/d08/a01682.html", null ],
     [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "d0/d31/a01686.html", null ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmingResult::NewVertex", "d2/d2f/a01586.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::ClippingResult::NewVertex", "d2/d2f/a01586.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d1/df4/a01422.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< mydimension, ctype >", "d1/df4/a01422.html", null ],
     [ "Dune::IGANEW::Splines::Nurbs< mydimension, double >", "d1/df4/a01422.html", null ],
@@ -184,7 +185,6 @@ var hierarchy =
     [ "Dune::IGANEW::IdentityTrim::TrimmerImpl< dim, dimworld, ScalarType >", "d1/d73/a01654.html", null ],
     [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d1/d9b/a01566.html", null ],
     [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d9/d79/a01658.html", null ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmingResult", "d1/d88/a01578.html", null ],
     [ "std::true_type", null, [
       [ "is_instantiation_of< Template, Template< Args... > >", "d4/d8e/a01694.html", null ]
     ] ],

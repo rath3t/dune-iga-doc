@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: trimrectangle.hh File Reference</title>
+<title>dune-iga: clipelementrectangle.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,7 +95,7 @@ $(document).ready(function(){initNavTree('d1/d88/a00128.html','../../'); initRes
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">trimrectangle.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">clipelementrectangle.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;clipper2/clipper.h&gt;</code><br />
@@ -105,11 +105,11 @@ $(document).ready(function(){initNavTree('d1/d88/a00128.html','../../'); initRes
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d88/a01578.html">Dune::IGANEW::DefaultTrim::TrimmingResult</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d88/a01578.html">Dune::IGANEW::DefaultTrim::ClippingResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d21/a01582.html">Dune::IGANEW::DefaultTrim::TrimmingResult::HostVertex</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d21/a01582.html">Dune::IGANEW::DefaultTrim::ClippingResult::HostVertex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2f/a01586.html">Dune::IGANEW::DefaultTrim::TrimmingResult::NewVertex</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d2f/a01586.html">Dune::IGANEW::DefaultTrim::ClippingResult::NewVertex</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -123,17 +123,19 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac0c0553909835cafcba24fbe196685f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#ac0c0553909835cafcba24fbe196685f6">Dune::IGANEW::DefaultTrim::giveEdgeIdx</a> (int e1, int e2)</td></tr>
-<tr class="separator:ac0c0553909835cafcba24fbe196685f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8faaef1c1f65b627360c8fe2744a432e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a8faaef1c1f65b627360c8fe2744a432e">Dune::IGANEW::DefaultTrim::trimElementImpl</a> (Clipper2Lib::PathD &amp;eleRect, Clipper2Lib::PathsD &amp;trimmingCurves)</td></tr>
-<tr class="separator:a8faaef1c1f65b627360c8fe2744a432e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a982e8c5980c08a13db8562ca1883e6b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a982e8c5980c08a13db8562ca1883e6b0">Dune::IGANEW::DefaultTrim::giveEdgeIdx</a> (const std::size_t e1, const std::size_t e2)</td></tr>
+<tr class="separator:a982e8c5980c08a13db8562ca1883e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0e693152bf118f2a7892a10345f42108"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a0e693152bf118f2a7892a10345f42108">Dune::IGANEW::DefaultTrim::goesIn</a> (const std::size_t e1, const std::size_t e2)</td></tr>
+<tr class="separator:a0e693152bf118f2a7892a10345f42108"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84b5565bb909f9bc4bc8252ea046b777"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a84b5565bb909f9bc4bc8252ea046b777">Dune::IGANEW::DefaultTrim::clipElementRectangle</a> (Clipper2Lib::PathD &amp;eleRect, Clipper2Lib::PathsD &amp;trimmingCurves)</td></tr>
+<tr class="separator:a84b5565bb909f9bc4bc8252ea046b777"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../dir_75403dd546d989c4e56d84af3932dae7.html">trimmingutils</a></li><li class="navelem"><a class="el" href="../../d1/d88/a00128.html">trimrectangle.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../dir_75403dd546d989c4e56d84af3932dae7.html">trimmingutils</a></li><li class="navelem"><a class="el" href="../../d1/d88/a00128.html">clipelementrectangle.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

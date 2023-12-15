@@ -121,22 +121,23 @@ $(document).ready(function(){initNavTree('dc/dc1/a03307_source.html','../../'); 
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a3654d5f046a1d4bb25d69767d5f9721a">   38</a></span>    <a class="code hl_function" href="../../d3/da3/a01450.html#a3654d5f046a1d4bb25d69767d5f9721a">PatchGridEntitySeed</a>() = <span class="keywordflow">default</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a2e9d1ebe81ef6ea1c3caacb7fef7771f">   46</a></span>    <span class="keyword">explicit</span> <a class="code hl_function" href="../../d3/da3/a01450.html#a2e9d1ebe81ef6ea1c3caacb7fef7771f">PatchGridEntitySeed</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d3/da3/a01450.html#a948c104448d8b48d1b97e2230211275e">EntityImp</a>&amp; ent)</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        : lvl_(ent.getHostEntity().entityInfo_.lvl), indexInLvlStorage_{ent.getHostEntity().entityInfo_.indexInLvlStorage} {}</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// const ParameterSpaceGridEntitySeed&amp; hostEntitySeed() const { return hostEntitySeed_; }</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#adcee67777da34feecbfba5e164852986">   57</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/da3/a01450.html#adcee67777da34feecbfba5e164852986">isValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> indexInLvlStorage_ != -1; }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>   <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keyword">auto</span> data()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::make_pair(lvl_, indexInLvlStorage_); }</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordtype">int</span> lvl_;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">int</span> indexInLvlStorage_{-1};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  };</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span><span class="comment">// #define DUNE_IDENTITY_GRID_ENTITY_SEED_HH</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        : lvl_(ent.getHostEntity().entityInfo_.lvl),</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>          indexInLvlStorage_{ent.getHostEntity().entityInfo_.indexInLvlStorage} {}</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="comment">// const ParameterSpaceGridEntitySeed&amp; hostEntitySeed() const { return hostEntitySeed_; }</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#adcee67777da34feecbfba5e164852986">   58</a></span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/da3/a01450.html#adcee67777da34feecbfba5e164852986">isValid</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> indexInLvlStorage_ != -1; }</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">auto</span> data()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> std::make_pair(lvl_, indexInLvlStorage_); }</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordtype">int</span> lvl_;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordtype">int</span> indexInLvlStorage_{-1};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  };</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="comment">// #define DUNE_IDENTITY_GRID_ENTITY_SEED_HH</span></div>
 <div class="ttc" id="aa00236_html"><div class="ttname"><a href="../../d7/d40/a00236.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createlevel.hh:4</div></div>
 <div class="ttc" id="aa01450_html"><div class="ttname"><a href="../../d3/da3/a01450.html">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed</a></div><div class="ttdoc">The EntitySeed class provides the minimal information needed to restore an Entity using the grid.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:20</div></div>
 <div class="ttc" id="aa01450_html_a036089004fd73ddd900077b7ba2f97f7"><div class="ttname"><a href="../../d3/da3/a01450.html#a036089004fd73ddd900077b7ba2f97f7">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::Trimmer</a></div><div class="ttdeci">friend Trimmer</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:23</div></div>
@@ -148,7 +149,7 @@ $(document).ready(function(){initNavTree('dc/dc1/a03307_source.html','../../'); 
 <div class="ttc" id="aa01450_html_a948c104448d8b48d1b97e2230211275e"><div class="ttname"><a href="../../d3/da3/a01450.html#a948c104448d8b48d1b97e2230211275e">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::EntityImp</a></div><div class="ttdeci">typename Trimmer::TrimmerTraits::template Codim&lt; codim &gt;::EntityImp EntityImp</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:25</div></div>
 <div class="ttc" id="aa01450_html_ab98bb70f62ddacdbe665ac5961130790"><div class="ttname"><a href="../../d3/da3/a01450.html#ab98bb70f62ddacdbe665ac5961130790">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::EntityInfo</a></div><div class="ttdeci">typename Trimmer::TrimmerTraits::template Codim&lt; codim &gt;::EntityInfo EntityInfo</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:30</div></div>
 <div class="ttc" id="aa01450_html_ab9dcfac06e5516f019d5f691946db1ea"><div class="ttname"><a href="../../d3/da3/a01450.html#ab9dcfac06e5516f019d5f691946db1ea">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::codimension</a></div><div class="ttdeci">static constexpr int codimension</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:33</div></div>
-<div class="ttc" id="aa01450_html_adcee67777da34feecbfba5e164852986"><div class="ttname"><a href="../../d3/da3/a01450.html#adcee67777da34feecbfba5e164852986">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdoc">Get stored ParameterSpaceGridEntitySeed.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:57</div></div>
+<div class="ttc" id="aa01450_html_adcee67777da34feecbfba5e164852986"><div class="ttname"><a href="../../d3/da3/a01450.html#adcee67777da34feecbfba5e164852986">Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdoc">Get stored ParameterSpaceGridEntitySeed.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridentityseed.hh:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

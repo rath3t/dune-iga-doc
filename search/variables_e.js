@@ -8,5 +8,5 @@ var searchData=
   ['patchtrimdata_5f_5',['patchTrimData_',['../d5/d32/a01214.html#a27e10a93ce6496bd9cb01b7ee663d983',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
   ['pathsamples_6',['pathSamples',['../da/dab/a01362.html#aecdaffbb3146705cddb9d4f2811af9e4',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
   ['prebasis_5f_7',['preBasis_',['../d4/d22/a01250.html#a06f8490ebbc69f81b9d91be5648450f4',1,'Dune::Functions::NurbsLocalFiniteElement::preBasis_()'],['../d7/d73/a01266.html#a011283ce1b47daddcff10caadb8defcf',1,'Dune::Functions::NurbsNode::preBasis_()']]],
-  ['pt_8',['pt',['../d2/d2f/a01586.html#acae961f60aa0a419c68ead0b73649392',1,'Dune::IGANEW::DefaultTrim::TrimmingResult::NewVertex']]]
+  ['pt_8',['pt',['../d0/d21/a01582.html#aa32ee8c9dcf3b184c841599a0558ed43',1,'Dune::IGANEW::DefaultTrim::ClippingResult::HostVertex::pt()'],['../d2/d2f/a01586.html#a4a2d78747a6bf003b42c768e1cd3bfdf',1,'Dune::IGANEW::DefaultTrim::ClippingResult::NewVertex::pt()']]]
 ];

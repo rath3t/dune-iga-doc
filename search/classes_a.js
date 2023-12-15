@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['newvertex_0',['NewVertex',['../d2/d2f/a01586.html',1,'Dune::IGANEW::DefaultTrim::TrimmingResult']]],
+  ['newvertex_0',['NewVertex',['../d2/d2f/a01586.html',1,'Dune::IGANEW::DefaultTrim::ClippingResult']]],
   ['nurbs_1',['Nurbs',['../d1/df4/a01422.html',1,'Dune::IGANEW::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d5/da6/a01698.html',1,'iga.basis.Nurbs']]],
   ['nurbs_3c_20mydimension_2c_20ctype_20_3e_2',['Nurbs&lt; mydimension, ctype &gt;',['../d1/df4/a01422.html',1,'Dune::IGANEW::Splines']]],
   ['nurbs_3c_20mydimension_2c_20double_20_3e_3',['Nurbs&lt; mydimension, double &gt;',['../d1/df4/a01422.html',1,'Dune::IGANEW::Splines']]],
