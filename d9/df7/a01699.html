@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::Concept::Vector Concept Reference</title>
+<title>dune-iga: Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,28 +91,148 @@ $(document).ready(function(){initNavTree('d9/df7/a01699.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Dune::IGANEW::Concept::Vector Concept Reference</div></div>
+  <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
+<a href="../../d9/d49/a01696.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d2/dd0/a03283_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</code></p>
-<h2 class="groupheader">Concept definition</h2>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> VectorType&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d9/df7/a01699.html">Dune::IGANEW::Concept::Vector</a> =  <span class="keyword">requires</span>(VectorType v, <span class="keywordtype">double</span> a, <span class="keywordtype">int</span> index) {</div>
-<div class="line">    <span class="keyword">typename</span> VectorType::value_type;</div>
-<div class="line">    { v[index] } -&gt; std::same_as&lt;typename VectorType::value_type&amp;&gt;;</div>
-<div class="line">    { v += v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
-<div class="line">    { v -= v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
-<div class="line">    { v *= a } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
-<div class="line">    { v /= a } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
-<div class="line">  }</div>
-<div class="ttc" id="aa01699_html"><div class="ttname"><a href="../../d9/df7/a01699.html">Dune::IGANEW::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:13</div></div>
-</div><!-- fragment --></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="../../d4/d63/a03459_source.html">dune/iga/trimmer/identitytrimmer/trimmer.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a83d75e7a65ed39456a70f5d283cd2081"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/a01699.html#a83d75e7a65ed39456a70f5d283cd2081">LocalParameterSpaceGeometry</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt; codim &gt;::Geometry</td></tr>
+<tr class="separator:a83d75e7a65ed39456a70f5d283cd2081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02c097e5662806c9400d511c27a98e8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/a01699.html#a02c097e5662806c9400d511c27a98e8c">LocalGeometry</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt; codim &gt;::LocalGeometry</td></tr>
+<tr class="separator:a02c097e5662806c9400d511c27a98e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a699b6048608eee9d9c24fb95e46e2513"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/a01699.html#a699b6048608eee9d9c24fb95e46e2513">ParameterSpaceGridEntity</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt; codim &gt;::Entity</td></tr>
+<tr class="separator:a699b6048608eee9d9c24fb95e46e2513"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7c5c4b482190493042510628e076e4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/a01699.html#ac7c5c4b482190493042510628e076e4a">ParameterSpaceGridEntitySeed</a> = typename ParameterSpaceGrid::Traits::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt; codim &gt;::EntitySeed</td></tr>
+<tr class="separator:ac7c5c4b482190493042510628e076e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fd2630081f2b954a06c9546485bb21a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/a01699.html#a3fd2630081f2b954a06c9546485bb21a">EntityImp</a> = <a class="el" href="../../da/d1f/a01203.html">PatchGridEntity</a>&lt; codim, dim, const <a class="el" href="../../dc/d70/a01187.html#a88ffd9727851a73a5309568562ce69a8">Grid</a> &gt;</td></tr>
+<tr class="separator:a3fd2630081f2b954a06c9546485bb21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae8fcb6a37ecb71b7595a651bd4b6d70a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df7/a01699.html#ae8fcb6a37ecb71b7595a651bd4b6d70a">EntitySeedImp</a> = <a class="el" href="../../d0/da4/a01631.html">PatchGridEntitySeed</a>&lt; codim, const <a class="el" href="../../dc/d70/a01187.html#a88ffd9727851a73a5309568562ce69a8">Grid</a> &gt;</td></tr>
+<tr class="separator:ae8fcb6a37ecb71b7595a651bd4b6d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a3fd2630081f2b954a06c9546485bb21a" name="a3fd2630081f2b954a06c9546485bb21a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fd2630081f2b954a06c9546485bb21a">&#9670;&nbsp;</a></span>EntityImp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d70/a01187.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::EntityImp =  <a class="el" href="../../da/d1f/a01203.html">PatchGridEntity</a>&lt;codim, dim, const <a class="el" href="../../dc/d70/a01187.html#a88ffd9727851a73a5309568562ce69a8">Grid</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae8fcb6a37ecb71b7595a651bd4b6d70a" name="ae8fcb6a37ecb71b7595a651bd4b6d70a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae8fcb6a37ecb71b7595a651bd4b6d70a">&#9670;&nbsp;</a></span>EntitySeedImp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d70/a01187.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::EntitySeedImp =  <a class="el" href="../../d0/da4/a01631.html">PatchGridEntitySeed</a>&lt;codim, const <a class="el" href="../../dc/d70/a01187.html#a88ffd9727851a73a5309568562ce69a8">Grid</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a02c097e5662806c9400d511c27a98e8c" name="a02c097e5662806c9400d511c27a98e8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02c097e5662806c9400d511c27a98e8c">&#9670;&nbsp;</a></span>LocalGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d70/a01187.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::LocalGeometry =  typename ParameterSpaceGrid::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt;codim&gt;::LocalGeometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83d75e7a65ed39456a70f5d283cd2081" name="a83d75e7a65ed39456a70f5d283cd2081"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83d75e7a65ed39456a70f5d283cd2081">&#9670;&nbsp;</a></span>LocalParameterSpaceGeometry</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d70/a01187.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::LocalParameterSpaceGeometry =  typename ParameterSpaceGrid::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt;codim&gt;::Geometry</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a699b6048608eee9d9c24fb95e46e2513" name="a699b6048608eee9d9c24fb95e46e2513"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a699b6048608eee9d9c24fb95e46e2513">&#9670;&nbsp;</a></span>ParameterSpaceGridEntity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d70/a01187.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::ParameterSpaceGridEntity =  typename ParameterSpaceGrid::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt;codim&gt;::Entity</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac7c5c4b482190493042510628e076e4a" name="ac7c5c4b482190493042510628e076e4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7c5c4b482190493042510628e076e4a">&#9670;&nbsp;</a></span>ParameterSpaceGridEntitySeed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../dc/d70/a01187.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::ParameterSpaceGridEntitySeed =  typename ParameterSpaceGrid::Traits::template <a class="el" href="../../d9/df7/a01699.html">Codim</a>&lt;codim&gt;::EntitySeed</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="../../d4/d63/a03459_source.html">identitytrimmer/trimmer.hh</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dd/df3/a00219.html">Dune</a></li><li class="navelem"><a class="el" href="../../d5/d0b/a00220.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../dc/d98/a00225.html">Concept</a></li><li class="navelem"><a class="el" href="../../d9/df7/a01699.html">Vector</a></li>
+    <li class="navelem"><a class="el" href="../../dd/df3/a00219.html">Dune</a></li><li class="navelem"><a class="el" href="../../d5/d0b/a00220.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../de/dc2/a00228.html">IdentityTrim</a></li><li class="navelem"><a class="el" href="../../dc/d70/a01187.html">PatchGridFamily</a></li><li class="navelem"><a class="el" href="../../dc/dc8/a01695.html">TrimmerTraits</a></li><li class="navelem"><a class="el" href="../../d9/df7/a01699.html">Codim</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
