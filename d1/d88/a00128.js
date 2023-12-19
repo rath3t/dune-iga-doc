@@ -1,8 +1,8 @@
 var a00128 =
 [
-    [ "Dune::IGANEW::DefaultTrim::ClippingResult", "d7/dae/a01615.html", "d7/dae/a01615" ],
-    [ "Dune::IGANEW::DefaultTrim::ClippingResult::HostVertex", "d3/deb/a01619.html", "d3/deb/a01619" ],
-    [ "Dune::IGANEW::DefaultTrim::ClippingResult::NewVertex", "d2/dcc/a01623.html", "d2/dcc/a01623" ],
+    [ "Dune::IGANEW::DefaultTrim::ClippingResult", "d3/deb/a01619.html", "d3/deb/a01619" ],
+    [ "Dune::IGANEW::DefaultTrim::ClippingResult::HostVertex", "d2/dcc/a01623.html", "d2/dcc/a01623" ],
+    [ "Dune::IGANEW::DefaultTrim::ClippingResult::NewVertex", "de/db6/a01627.html", "de/db6/a01627" ],
     [ "error_type", "d1/d88/a00128.html#acbdd41a0d532c471dbc1a527d509386b", [
       [ "clipperNotSucessfull", "d1/d88/a00128.html#acbdd41a0d532c471dbc1a527d509386badb104dac2a2b00e1468de190dc959719", null ],
       [ "malformedCurve", "d1/d88/a00128.html#acbdd41a0d532c471dbc1a527d509386baf46e975d4035bad2a1a6c614e499adbc", null ]

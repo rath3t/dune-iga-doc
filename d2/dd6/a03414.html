@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbspatchdata.hh File Reference</title>
+<title>dune-iga: patchgrid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,42 +93,54 @@ $(document).ready(function(){initNavTree('d2/dd6/a03414.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">iga/splines/nurbspatchdata.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">hierarchicpatch/patchgrid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../db/db6/a00074_source.html">dune/iga/geometrykernel/controlpoint.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d0/d89/a00071_source.html">dune/iga/utils/mdnet.hh</a>&gt;</code><br />
+
+<p>The PatchGrid class.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;map&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/d2e/a03408_source.html">concepts.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dd/dad/a00005_source.html">enums.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d46/a00002_source.html">gridcapabilities.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d2/de7/a00014_source.html">patchgridentity.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/d16/a00029_source.html">patchgridfactory.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d52/a00023_source.html">patchgridfwd.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../db/db2/a00020_source.html">patchgridgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d51/a00017_source.html">patchgridview.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d87/a00032_source.html">traits.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/parallel/communication.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/grid.hh&gt;</code><br />
 </div>
 <p><a href="../../d2/dd6/a03414_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d5e/a01467.html">Dune::IGANEW::NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that holds all data regarding the NURBS geometric structure.  <a href="../../df/d5e/a01467.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d5a/a01199.html">Dune::IGANEW::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides a NURBS grid based on a single NURBS patch.  <a href="../../d0/d5a/a01199.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:dd/df3/a00219"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df3/a00219.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d9/d01/a00227"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/a00227.html">Dune::Functions</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d5/d0b/a00220"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0b/a00220.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, std::size_t dimworld_, typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d0b/a00220.html#aee4d8d984f5b9053709e25ff2c1a6265">Dune::IGANEW::NURBSPatchData</a> (const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;knotSpansI, const MultiDimensionalNet&lt; dim, ControlPoint&lt; FieldVector&lt; ScalarType, dimworld_ &gt; &gt; &gt; &amp;controlPointsI, const std::array&lt; int, dim &gt; &amp;degreeInput) -&gt; NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</td></tr>
-<tr class="memdesc:aee4d8d984f5b9053709e25ff2c1a6265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for creating <a class="el" href="../../df/d5e/a01467.html" title="Struct that holds all data regarding the NURBS geometric structure.">NURBSPatchData</a> instances without explicitly specifying template arguments.  <a href="../../d5/d0b/a00220.html#aee4d8d984f5b9053709e25ff2c1a6265">More...</a><br /></td></tr>
-<tr class="separator:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/dc2/a00228"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html">Dune::IGANEW::IdentityTrim</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The PatchGrid class. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_479b904809ee7734e338128330b60cdb.html">splines</a></li><li class="navelem"><a class="el" href="../../d2/dd6/a03414.html">nurbspatchdata.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d2/dd6/a03414.html">patchgrid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

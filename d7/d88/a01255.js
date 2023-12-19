@@ -1,8 +1,7 @@
 var a01255 =
 [
-    [ "ControlPointType", "d7/d88/a01255.html#a842b1a126fde3fe4f6fe079de1203a99", null ],
     [ "compileKnotVectors", "d7/d88/a01255.html#ad12ab5d6f888eaabe6d509e82ae8f8df", null ],
-    [ "transformControlPoints", "d7/d88/a01255.html#ab7590963aeaebcaf44c8dc8963b14c69", null ],
+    [ "transformControlPoints", "d7/d88/a01255.html#ac6a22a5a2db9bfa2d45a7bc262f5bc5b", null ],
     [ "controlPoints", "d7/d88/a01255.html#ad4ad9311c411aee5c21fd200e053d2a9", null ],
     [ "degree", "d7/d88/a01255.html#a07805bf670c8d66de1fe43d984f33839", null ],
     [ "key", "d7/d88/a01255.html#a8061adf4c0a0398469d6e0d5eb17879d", null ],

@@ -15,6 +15,7 @@ var a01079 =
     [ "Nurbs", "d2/d4d/a01079.html#a76b9523737418f580191951835cc6eca", null ],
     [ "NurbsLocalView", "d2/d4d/a01079.html#a8fc5afe06a762b8e4d935d3ecf18df16", null ],
     [ "ParameterSpaceGeometry", "d2/d4d/a01079.html#a5955d7897f32e279b07c72a1e9060491", null ],
+    [ "PatchData", "d2/d4d/a01079.html#a6222fdc348dc6379a14efd74c096b73f", null ],
     [ "TensorProductCoordinatesType", "d2/d4d/a01079.html#ac6f8278a4a3044ba6ae480dcd0449849", null ],
     [ "Volume", "d2/d4d/a01079.html#a698b20f511bcd3df51be210cc60a24b6", null ],
     [ "NURBSPatch", "d2/d4d/a01079.html#a715a34156ff42dadb9566a7689a04fec", null ],

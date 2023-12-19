@@ -1,5 +1,6 @@
 var a03441 =
 [
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIntersectionIterator< GridImp >", "df/ddd/a01655.html", "df/ddd/a01655" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIntersectionIterator< GridImp >", "d4/dd4/a01659.html", "d4/dd4/a01659" ]
+    [ "registerControlPoint", "de/dc4/a03441.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
+    [ "registerMultiDimensionalNet", "de/dc4/a03441.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
+    [ "registerNurbsPatchData", "de/dc4/a03441.html#abb0ad571b894541ccc4722f669ce8097", null ]
 ];

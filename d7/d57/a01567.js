@@ -1,10 +1,4 @@
 var a01567 =
 [
-    [ "Empty", "d5/d10/a01571.html", null ],
-    [ "stemsFromTrim", "d7/d57/a01567.html#a47d8fb178a6adf5774ca83a29b241253", null ],
-    [ "codimension", "d7/d57/a01567.html#ad21337e8c70b3fe0c8951cba5c6c8722", null ],
-    [ "id", "d7/d57/a01567.html#a6e831446cb992b818a7178b5f44f1dea", null ],
-    [ "indexInLvlStorage", "d7/d57/a01567.html#a8632b962eb272ced708b1ca3d40df35e", null ],
-    [ "lvl", "d7/d57/a01567.html#a5c4c7c90da40c8982e201b2d4a035d40", null ],
-    [ "stemFromTrim", "d7/d57/a01567.html#aed0f83c3150c800859d8121b3effc566", null ]
+    [ "operator()", "d7/d57/a01567.html#ab82906d85d3c841351f91a2df2db3a6d", null ]
 ];

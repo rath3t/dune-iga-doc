@@ -1,5 +1,5 @@
 var a03438 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLeafIntersectionIterator< GridImp >", "d8/dd9/a01507.html", "d8/dd9/a01507" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIntersectionIterator< GridImp >", "da/d50/a01511.html", "da/d50/a01511" ]
+    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "df/d5e/a01467.html", "df/d5e/a01467" ],
+    [ "NURBSPatchData", "d6/d7f/a03438.html#aee4d8d984f5b9053709e25ff2c1a6265", null ]
 ];

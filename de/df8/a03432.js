@@ -1,6 +1,7 @@
 var a03432 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet< GridImp >", "d2/d36/a01495.html", "d2/d36/a01495" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLeafIndexSet< GridImp >", "d5/d06/a01499.html", "d5/d06/a01499" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet< GridImp >", "d6/df5/a01503.html", "d6/df5/a01503" ]
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "dc/d4b/a01359.html", "dc/d4b/a01359" ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dd/d8b/a01363.html", "dd/d8b/a01363" ],
+    [ "Dune::JSONGridFactory< Grid_ >", "dd/d86/a01367.html", "dd/d86/a01367" ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d6/d4d/a01371.html", "d6/d4d/a01371" ]
 ];
