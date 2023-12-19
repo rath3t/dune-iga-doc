@@ -139,21 +139,22 @@ $(document).ready(function(){initNavTree('db/ddf/a00164_source.html','../../'); 
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keyword">auto</span> scale = element.geometry().volume() / 10;</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">auto</span> dx1 = curve.jacobian({localLastPoint}) * scale;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        tempPath.emplace_back(lastPoint[0] + dx1[0], lastPoint[1] + dx1[1], i++);</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        i += 99 - N;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      clipPaths.push_back(tempPath);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        <span class="keyword">auto</span> dx = curve.jacobian({localLastPoint}) * scale;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        tempPath.emplace_back(lastPoint[0] + dx[0], lastPoint[1] + dx[1], i++);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        i += 99 - N;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      clipPaths.push_back(tempPath);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">auto</span> result = <a class="code hl_function" href="../../d4/d08/a00237.html#a67324e93459ae36e62970c9bdb873aa0">clipElementRectangle</a>(elementPath, clipPaths);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">auto</span> result = <a class="code hl_function" href="../../d4/d08/a00237.html#a71631a2c69259769f1e13f4f102c1f9e">clipElementRectangle</a>(elementPath, clipPaths);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
 <div class="ttc" id="aa00128_html"><div class="ttname"><a href="../../d1/d88/a00128.html">clipelementrectangle.hh</a></div></div>
 <div class="ttc" id="aa00221_html_a2630a0eab9b7e24915eeb52ca335972c"><div class="ttname"><a href="../../dd/d52/a00221.html#a2630a0eab9b7e24915eeb52ca335972c">Dune::IGANEW::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdoc">A view with N coordinates between a and b including a and b.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:76</div></div>
 <div class="ttc" id="aa00237_html"><div class="ttname"><a href="../../d4/d08/a00237.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createlevel.hh:4</div></div>
-<div class="ttc" id="aa00237_html_a67324e93459ae36e62970c9bdb873aa0"><div class="ttname"><a href="../../d4/d08/a00237.html#a67324e93459ae36e62970c9bdb873aa0">Dune::IGANEW::DefaultTrim::clipElementRectangle</a></div><div class="ttdeci">auto clipElementRectangle(Clipper2Lib::PathD &amp;eleRect, Clipper2Lib::PathsD &amp;trimmingCurves) -&gt; std::tuple&lt; TrimmingFlag, ClippingResult &gt;</div><div class="ttdef"><b>Definition:</b> clipelementrectangle.hh:82</div></div>
+<div class="ttc" id="aa00237_html_a71631a2c69259769f1e13f4f102c1f9e"><div class="ttname"><a href="../../d4/d08/a00237.html#a71631a2c69259769f1e13f4f102c1f9e">Dune::IGANEW::DefaultTrim::clipElementRectangle</a></div><div class="ttdeci">auto clipElementRectangle(Clipper2Lib::PathD &amp;eleRect, const Clipper2Lib::PathsD &amp;trimmingCurves) -&gt; std::tuple&lt; TrimmingFlag, ClippingResult &gt;</div><div class="ttdef"><b>Definition:</b> clipelementrectangle.hh:89</div></div>
 <div class="ttc" id="aa01599_html_a0136740c5ebaa42b5e528a82b2c43059"><div class="ttname"><a href="../../d9/d13/a01599.html#a0136740c5ebaa42b5e528a82b2c43059">Dune::IGANEW::DefaultTrim::TrimmerImpl::trimElement</a></div><div class="ttdeci">static auto trimElement(const typename GridFamily::TrimmerTraits::template Codim&lt; 0 &gt;::UnTrimmedHostParameterSpaceGridEntity &amp;element, const PatchTrimData &amp;trimData)</div><div class="ttdef"><b>Definition:</b> trimelement.hh:13</div></div>
 <div class="ttc" id="aa01599_html_a64be0e65208a31037a4e33b93d0a2ec4"><div class="ttname"><a href="../../d9/d13/a01599.html#a64be0e65208a31037a4e33b93d0a2ec4">Dune::IGANEW::DefaultTrim::TrimmerImpl::PatchTrimData</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::PatchTrimData PatchTrimData</div><div class="ttdoc">Patch trim data type.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:409</div></div>
 <div class="ttc" id="aa01599_html_addb7f4b76ecd8a379f996f9d6e793c68"><div class="ttname"><a href="../../d9/d13/a01599.html#addb7f4b76ecd8a379f996f9d6e793c68">Dune::IGANEW::DefaultTrim::TrimmerImpl::Codim</a></div><div class="ttdeci">typename TrimmerTraits::template Codim&lt; codim &gt; Codim</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:314</div></div>

@@ -6,6 +6,5 @@ var a01619 =
     [ "addNewVertex", "d3/deb/a01619.html#ab6e9cfd56ea5cf519449639a1bcb4e93", null ],
     [ "addOriginalVertex", "d3/deb/a01619.html#af73ee19a5b7a2cccbdaf367c593d52e3", null ],
     [ "finish", "d3/deb/a01619.html#a4b9d5be0d5cae7d1b216e5383747c7d4", null ],
-    [ "edgesVisited", "d3/deb/a01619.html#a70251f9c8f930087fd2f01ee619ac1af", null ],
-    [ "vertices", "d3/deb/a01619.html#aecec7aa4009ec746eef4c909147d00c2", null ]
+    [ "vertices_", "d3/deb/a01619.html#a930303e8d7b5c0cf5272038b94ecb9d9", null ]
 ];

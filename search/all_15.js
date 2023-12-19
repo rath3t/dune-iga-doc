@@ -7,7 +7,7 @@ var searchData=
   ['vectortype_4',['VectorType',['../de/de6/a01063.html#a5d11b15e0c758d0e23369df18d6f09a7',1,'Dune::IGANEW::ControlPoint']]],
   ['vertexsubindex_5',['vertexSubIndex',['../d5/df5/a01375.html#ae5817e582c43679fcff376da08c8671f',1,'Dune::IGA::IGARefinedGeometries']]],
   ['vertexvariant_6',['VertexVariant',['../d3/deb/a01619.html#aa1f7abb492aa8dbdda0f49cd2e4d16e2',1,'Dune::IGANEW::DefaultTrim::ClippingResult']]],
-  ['vertices_7',['vertices',['../d3/deb/a01619.html#aecec7aa4009ec746eef4c909147d00c2',1,'Dune::IGANEW::DefaultTrim::ClippingResult']]],
+  ['vertices_5f_7',['vertices_',['../d3/deb/a01619.html#a930303e8d7b5c0cf5272038b94ecb9d9',1,'Dune::IGANEW::DefaultTrim::ClippingResult']]],
   ['viewthreadsafe_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_20_3e_8',['viewThreadSafe&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;',['../db/d07/a01155.html',1,'Dune::Capabilities']]],
   ['viewthreadsafe_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_9',['viewThreadSafe&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../de/df1/a01151.html',1,'Dune::Capabilities']]],
   ['visit_10',['visit',['../d0/da4/a01631.html#a18c485da56f792d79b769f210d61de90',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::visit()'],['../d8/df7/a01711.html#a24c8f29c7ac37310691d2abe80a3a665',1,'Dune::IGANEW::Trim::IntersectionVariant::visit()'],['../df/d9a/a01715.html#a647f652d8dc9c0ff3a6d9c08864b274c',1,'Dune::IGANEW::Trim::LocalGeometryVariant::visit()']]],

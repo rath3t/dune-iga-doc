@@ -9,7 +9,7 @@ var searchData=
   ['checkinside_6',['checkInside',['../de/d1a/a01559.html#a9b7697e9429f38e008cc4749ddf22732',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometryImpl::checkInside()'],['../db/d08/a01543.html#a78437a1f7cb8176e8e3f8a76b473134e',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::checkInside()'],['../d7/ddd/a01223.html#aa78727185cd9ca6af45ea13a4042d689',1,'Dune::IGANEW::PatchGridGeometry::checkInside()'],['../d2/d49/a01067.html#a83382dced0a4bc7b309357704ffac53e',1,'Dune::IGANEW::Utilities::Domain::checkInside()'],['../db/d98/a01675.html#ab55b231abbdf2055a8f45377082a5161',1,'Dune::IGANEW::PatchGridLocalGeometry::checkInside()'],['../df/d9a/a01715.html#ad76f4eb2ef64aab40cce72b6dc68304a',1,'Dune::IGANEW::Trim::LocalGeometryVariant::checkInside()']]],
   ['clamptoboundaryandcheckifisatallboundaries_7',['clampToBoundaryAndCheckIfIsAtAllBoundaries',['../dd/d52/a00221.html#ada1286817f950d2e7a16f906473aa2b2',1,'Dune::IGANEW::Utilities']]],
   ['clamptodomain_8',['clampToDomain',['../dd/d52/a00221.html#a341a1dc953d397349b5bb0d9f39c4106',1,'Dune::IGANEW::Utilities']]],
-  ['clipelementrectangle_9',['clipElementRectangle',['../d4/d08/a00237.html#a67324e93459ae36e62970c9bdb873aa0',1,'Dune::IGANEW::DefaultTrim']]],
+  ['clipelementrectangle_9',['clipElementRectangle',['../d4/d08/a00237.html#a71631a2c69259769f1e13f4f102c1f9e',1,'Dune::IGANEW::DefaultTrim']]],
   ['clipelementrectangle_2ehh_10',['clipelementrectangle.hh',['../d1/d88/a00128.html',1,'']]],
   ['clipperpath_11',['ClipperPath',['../d6/d64/a01399.html#a22c9b12829d819756c0c9e1f6e82733a',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
   ['clipperpaths_12',['ClipperPaths',['../d6/d64/a01399.html#afd11b9c629e723e9f3000ce7c980f317',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],

@@ -8,7 +8,7 @@ var a00128 =
       [ "empty", "d1/d88/a00128.html#aaf1359ac208188453b916633540d90ebaa2e4822a98337283e39f7b60acf85ec9", null ],
       [ "trimmed", "d1/d88/a00128.html#aaf1359ac208188453b916633540d90eba853600aa75baac4ae4d3b794b574ecec", null ]
     ] ],
-    [ "clipElementRectangle", "d1/d88/a00128.html#a67324e93459ae36e62970c9bdb873aa0", null ],
+    [ "clipElementRectangle", "d1/d88/a00128.html#a71631a2c69259769f1e13f4f102c1f9e", null ],
     [ "giveEdgeIdx", "d1/d88/a00128.html#a982e8c5980c08a13db8562ca1883e6b0", null ],
     [ "goesIn", "d1/d88/a00128.html#a0e693152bf118f2a7892a10345f42108", null ],
     [ "nextEntityIdx", "d1/d88/a00128.html#a3903941178577620dfb80719aa27fdaa", null ]
