@@ -178,10 +178,11 @@ Enumerations</h2></td></tr>
 , <a class="el" href="../../d4/d08/a00237.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723">InReferenceElement</a>
  }</td></tr>
 <tr class="separator:a732e3f39cf34394d88364942fc6b941f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbdd41a0d532c471dbc1a527d509386b"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386b">error_type</a> { <a class="el" href="../../d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386badb104dac2a2b00e1468de190dc959719">clipperNotSucessfull</a>
-, <a class="el" href="../../d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386baf46e975d4035bad2a1a6c614e499adbc">malformedCurve</a>
+<tr class="memitem:aaf1359ac208188453b916633540d90eb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90eb">TrimmingFlag</a> { <a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90ebae9dc924f238fa6cc29465942875fe8f0">full</a>
+, <a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90ebaa2e4822a98337283e39f7b60acf85ec9">empty</a>
+, <a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90eba853600aa75baac4ae4d3b794b574ecec">trimmed</a>
  }</td></tr>
-<tr class="separator:acbdd41a0d532c471dbc1a527d509386b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aaf1359ac208188453b916633540d90eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
@@ -203,40 +204,16 @@ Functions</h2></td></tr>
 <tr class="memitem:ac274492bbfe7e60de735f1bb58fdf172"><td class="memTemplParams" colspan="2">template&lt;typename HostIdType &gt; </td></tr>
 <tr class="memitem:ac274492bbfe7e60de735f1bb58fdf172"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#ac274492bbfe7e60de735f1bb58fdf172">operator!=</a> (const <a class="el" href="../../d8/d6c/a01563.html">IdType</a>&lt; HostIdType &gt; &amp;lhs, const <a class="el" href="../../d8/d6c/a01563.html">IdType</a>&lt; HostIdType &gt; &amp;rhs)</td></tr>
 <tr class="separator:ac274492bbfe7e60de735f1bb58fdf172"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3903941178577620dfb80719aa27fdaa"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#a3903941178577620dfb80719aa27fdaa">nextEntityIdx</a> (const int i, const int x)</td></tr>
+<tr class="separator:a3903941178577620dfb80719aa27fdaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a982e8c5980c08a13db8562ca1883e6b0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#a982e8c5980c08a13db8562ca1883e6b0">giveEdgeIdx</a> (const std::size_t e1, const std::size_t e2)</td></tr>
 <tr class="separator:a982e8c5980c08a13db8562ca1883e6b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e693152bf118f2a7892a10345f42108"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#a0e693152bf118f2a7892a10345f42108">goesIn</a> (const std::size_t e1, const std::size_t e2)</td></tr>
 <tr class="separator:a0e693152bf118f2a7892a10345f42108"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a84b5565bb909f9bc4bc8252ea046b777"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#a84b5565bb909f9bc4bc8252ea046b777">clipElementRectangle</a> (Clipper2Lib::PathD &amp;eleRect, Clipper2Lib::PathsD &amp;trimmingCurves)</td></tr>
-<tr class="separator:a84b5565bb909f9bc4bc8252ea046b777"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67324e93459ae36e62970c9bdb873aa0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html#a67324e93459ae36e62970c9bdb873aa0">clipElementRectangle</a> (Clipper2Lib::PathD &amp;eleRect, Clipper2Lib::PathsD &amp;trimmingCurves) -&gt; std::tuple&lt; <a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90eb">TrimmingFlag</a>, <a class="el" href="../../d3/deb/a01619.html">ClippingResult</a> &gt;</td></tr>
+<tr class="separator:a67324e93459ae36e62970c9bdb873aa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="acbdd41a0d532c471dbc1a527d509386b" name="acbdd41a0d532c471dbc1a527d509386b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acbdd41a0d532c471dbc1a527d509386b">&#9670;&nbsp;</a></span>error_type</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="../../d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386b">Dune::IGANEW::DefaultTrim::error_type</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acbdd41a0d532c471dbc1a527d509386badb104dac2a2b00e1468de190dc959719" name="acbdd41a0d532c471dbc1a527d509386badb104dac2a2b00e1468de190dc959719"></a>clipperNotSucessfull&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="acbdd41a0d532c471dbc1a527d509386baf46e975d4035bad2a1a6c614e499adbc" name="acbdd41a0d532c471dbc1a527d509386baf46e975d4035bad2a1a6c614e499adbc"></a>malformedCurve&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
 <a id="a732e3f39cf34394d88364942fc6b941f" name="a732e3f39cf34394d88364942fc6b941f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a732e3f39cf34394d88364942fc6b941f">&#9670;&nbsp;</a></span>LocalGeometryTag</h2>
 
@@ -263,9 +240,36 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="aaf1359ac208188453b916633540d90eb" name="aaf1359ac208188453b916633540d90eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf1359ac208188453b916633540d90eb">&#9670;&nbsp;</a></span>TrimmingFlag</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90eb">Dune::IGANEW::DefaultTrim::TrimmingFlag</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aaf1359ac208188453b916633540d90ebae9dc924f238fa6cc29465942875fe8f0" name="aaf1359ac208188453b916633540d90ebae9dc924f238fa6cc29465942875fe8f0"></a>full&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf1359ac208188453b916633540d90ebaa2e4822a98337283e39f7b60acf85ec9" name="aaf1359ac208188453b916633540d90ebaa2e4822a98337283e39f7b60acf85ec9"></a>empty&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aaf1359ac208188453b916633540d90eba853600aa75baac4ae4d3b794b574ecec" name="aaf1359ac208188453b916633540d90eba853600aa75baac4ae4d3b794b574ecec"></a>trimmed&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a84b5565bb909f9bc4bc8252ea046b777" name="a84b5565bb909f9bc4bc8252ea046b777"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84b5565bb909f9bc4bc8252ea046b777">&#9670;&nbsp;</a></span>clipElementRectangle()</h2>
+<a id="a67324e93459ae36e62970c9bdb873aa0" name="a67324e93459ae36e62970c9bdb873aa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67324e93459ae36e62970c9bdb873aa0">&#9670;&nbsp;</a></span>clipElementRectangle()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +292,7 @@ Functions</h2></td></tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="../../d4/d08/a00237.html#aaf1359ac208188453b916633540d90eb">TrimmingFlag</a>, <a class="el" href="../../d3/deb/a01619.html">ClippingResult</a>&gt; </td>
         </tr>
       </table>
   </td>
@@ -366,6 +370,42 @@ Functions</h2></td></tr>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3903941178577620dfb80719aa27fdaa" name="a3903941178577620dfb80719aa27fdaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3903941178577620dfb80719aa27fdaa">&#9670;&nbsp;</a></span>nextEntityIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Dune::IGANEW::DefaultTrim::nextEntityIdx </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>x</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

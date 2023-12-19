@@ -29,17 +29,19 @@ var a00237 =
     [ "Trimmer", "d7/dae/a01615.html", "d7/dae/a01615" ],
     [ "TrimmerImpl", "d9/d13/a01599.html", "d9/d13/a01599" ],
     [ "VectorEntityContainer", "d7/d1d/a01475.html", "d7/d1d/a01475" ],
-    [ "error_type", "d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386b", [
-      [ "clipperNotSucessfull", "d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386badb104dac2a2b00e1468de190dc959719", null ],
-      [ "malformedCurve", "d4/d08/a00237.html#acbdd41a0d532c471dbc1a527d509386baf46e975d4035bad2a1a6c614e499adbc", null ]
-    ] ],
     [ "LocalGeometryTag", "d4/d08/a00237.html#a732e3f39cf34394d88364942fc6b941f", [
       [ "InParameterSpace", "d4/d08/a00237.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e", null ],
       [ "InReferenceElement", "d4/d08/a00237.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723", null ]
     ] ],
-    [ "clipElementRectangle", "d4/d08/a00237.html#a84b5565bb909f9bc4bc8252ea046b777", null ],
+    [ "TrimmingFlag", "d4/d08/a00237.html#aaf1359ac208188453b916633540d90eb", [
+      [ "full", "d4/d08/a00237.html#aaf1359ac208188453b916633540d90ebae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "d4/d08/a00237.html#aaf1359ac208188453b916633540d90ebaa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "d4/d08/a00237.html#aaf1359ac208188453b916633540d90eba853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ],
+    [ "clipElementRectangle", "d4/d08/a00237.html#a67324e93459ae36e62970c9bdb873aa0", null ],
     [ "giveEdgeIdx", "d4/d08/a00237.html#a982e8c5980c08a13db8562ca1883e6b0", null ],
     [ "goesIn", "d4/d08/a00237.html#a0e693152bf118f2a7892a10345f42108", null ],
+    [ "nextEntityIdx", "d4/d08/a00237.html#a3903941178577620dfb80719aa27fdaa", null ],
     [ "operator!=", "d4/d08/a00237.html#ac274492bbfe7e60de735f1bb58fdf172", null ],
     [ "operator<", "d4/d08/a00237.html#ad60258d3c3cf850f549bd14af49382bb", null ],
     [ "operator<=", "d4/d08/a00237.html#a7ac6998daef47f3ba10679c00bf49ae8", null ],

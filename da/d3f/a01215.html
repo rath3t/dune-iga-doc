@@ -112,9 +112,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4d8f2413d0c9e8c9e3c6dbfa535b632"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d3f/a01215.html#ac4d8f2413d0c9e8c9e3c6dbfa535b632">insertTrimmingCurve</a> (const <a class="el" href="../../df/d5e/a01467.html">IGANEW::NURBSPatchData</a>&lt; dim - 1, dim, ctype &gt; &amp;curve)</td></tr>
 <tr class="memdesc:ac4d8f2413d0c9e8c9e3c6dbfa535b632"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a trimming curve into the grid.  <a href="../../da/d3f/a01215.html#ac4d8f2413d0c9e8c9e3c6dbfa535b632">More...</a><br /></td></tr>
 <tr class="separator:ac4d8f2413d0c9e8c9e3c6dbfa535b632"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6cd8d49d656c4f5120fdc9613bf3448"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d3f/a01215.html#ab6cd8d49d656c4f5120fdc9613bf3448">insertJson</a> (const std::string &amp;filename)</td></tr>
-<tr class="memdesc:ab6cd8d49d656c4f5120fdc9613bf3448"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a patch into the grid.  <a href="../../da/d3f/a01215.html#ab6cd8d49d656c4f5120fdc9613bf3448">More...</a><br /></td></tr>
-<tr class="separator:ab6cd8d49d656c4f5120fdc9613bf3448"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab41ac78e4771952352467a6e25211884"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d3f/a01215.html#ab41ac78e4771952352467a6e25211884">insertJson</a> (const std::string &amp;filename, const bool trim=true, std::array&lt; int, 2 &gt; preKnotRefine={0, 0})</td></tr>
+<tr class="memdesc:ab41ac78e4771952352467a6e25211884"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a patch into the grid.  <a href="../../da/d3f/a01215.html#ab41ac78e4771952352467a6e25211884">More...</a><br /></td></tr>
+<tr class="separator:ab41ac78e4771952352467a6e25211884"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcdb7a368d4bbdb3caa4ee7576af5462"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/d5a/a01199.html">PatchGrid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d3f/a01215.html#abcdb7a368d4bbdb3caa4ee7576af5462">createGrid</a> ()</td></tr>
 <tr class="memdesc:abcdb7a368d4bbdb3caa4ee7576af5462"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize grid creation and hand over the grid.  <a href="../../da/d3f/a01215.html#abcdb7a368d4bbdb3caa4ee7576af5462">More...</a><br /></td></tr>
 <tr class="separator:abcdb7a368d4bbdb3caa4ee7576af5462"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -163,8 +163,8 @@ template&lt;int dim_, int dimworld_, template&lt; int, int, typename &gt; typena
 
 </div>
 </div>
-<a id="ab6cd8d49d656c4f5120fdc9613bf3448" name="ab6cd8d49d656c4f5120fdc9613bf3448"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab6cd8d49d656c4f5120fdc9613bf3448">&#9670;&nbsp;</a></span>insertJson()</h2>
+<a id="ab41ac78e4771952352467a6e25211884" name="ab41ac78e4771952352467a6e25211884"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab41ac78e4771952352467a6e25211884">&#9670;&nbsp;</a></span>insertJson()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -178,8 +178,24 @@ template&lt;int dim_, int dimworld_, template&lt; int, int, typename &gt; typena
           <td class="memname">void Dune::GridFactory&lt; <a class="el" href="../../d0/d5a/a01199.html">IGANEW::PatchGrid</a>&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;::insertJson </td>
           <td>(</td>
           <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>trim</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
+          <td class="paramname"><em>preKnotRefine</em> = <code>{0,&#160;0}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
