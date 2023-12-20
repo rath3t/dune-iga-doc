@@ -1,11 +1,9 @@
 var a00239 =
 [
-    [ "IGA", "d9/d21/a00240.html", [
-      [ "Reader", "d9/d21/a00240.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-        [ "json", "d9/d21/a00240.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-      ] ]
-    ] ],
-    [ "registerControlPoint", "d0/d27/a00239.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "d0/d27/a00239.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
-    [ "registerNurbsPatchData", "d0/d27/a00239.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "HostGridAccess", "de/d5c/a01708.html", null ],
+    [ "IntersectionVariant", "dc/d3e/a01712.html", "dc/d3e/a01712" ],
+    [ "LocalGeometryVariant", "d4/df6/a01716.html", "d4/df6/a01716" ],
+    [ "ParameterSpaceGridEntityVariant", "d6/daf/a01632.html", "d6/daf/a01632" ],
+    [ "referenceElement", "d0/d27/a00239.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
+    [ "referenceElement", "d0/d27/a00239.html#a58f6695142a18937094849b86976642b", null ]
 ];

@@ -9,10 +9,10 @@ var searchData=
   ['geometrykernel_6',['GeometryKernel',['../d0/d24/a00222.html',1,'Dune::IGANEW']]],
   ['ibra_7',['Ibra',['../d6/de1/a00233.html',1,'Dune::IGA::Ibra'],['../dd/d2d/a00229.html',1,'Dune::IGANEW::Ibra']]],
   ['identitytrim_8',['IdentityTrim',['../de/dc2/a00228.html',1,'Dune::IGANEW']]],
-  ['iga_9',['IGA',['../d0/d53/a00232.html',1,'Dune::IGA'],['../d9/d21/a00240.html',1,'Dune::Python::IGA']]],
+  ['iga_9',['IGA',['../d0/d53/a00232.html',1,'Dune::IGA'],['../d6/db6/a00241.html',1,'Dune::Python::IGA']]],
   ['iganew_10',['IGANEW',['../d5/d0b/a00220.html',1,'Dune']]],
-  ['python_11',['Python',['../d0/d27/a00239.html',1,'Dune']]],
+  ['python_11',['Python',['../d9/d21/a00240.html',1,'Dune']]],
   ['splines_12',['Splines',['../d3/d42/a00235.html',1,'Dune::IGANEW']]],
-  ['trim_13',['Trim',['../da/d31/a00234.html',1,'Dune::IGA::Trim'],['../da/d2e/a00238.html',1,'Dune::IGANEW::Trim']]],
+  ['trim_13',['Trim',['../da/d31/a00234.html',1,'Dune::IGA::Trim'],['../d0/d27/a00239.html',1,'Dune::IGANEW::Trim']]],
   ['utilities_14',['Utilities',['../dd/d52/a00221.html',1,'Dune::IGANEW']]]
 ];
