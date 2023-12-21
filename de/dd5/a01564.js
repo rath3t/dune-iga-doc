@@ -1,17 +1,32 @@
 var a01564 =
 [
-    [ "EntityIdType", "de/dd5/a01564.html#afe481c5254837097517abb2fabb40f30", [
-      [ "host", "de/dd5/a01564.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e", null ],
-      [ "newId", "de/dd5/a01564.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0", null ]
-    ] ],
-    [ "HostOrTrimmed", "de/dd5/a01564.html#af37d7e0ce257bc811e6d6002335f512f", [
-      [ "host", "de/dd5/a01564.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e", null ],
-      [ "trimmed", "de/dd5/a01564.html#af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ],
-    [ "operator==", "de/dd5/a01564.html#ad912e12f00f0b50c966995051948a86d", null ],
-    [ "operator<<", "de/dd5/a01564.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
-    [ "operator<<", "de/dd5/a01564.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
-    [ "entityIdType", "de/dd5/a01564.html#a3a5f12dff1e201f674486abc8e668d21", null ],
-    [ "host_or_trimmed", "de/dd5/a01564.html#aa5749045920a10fbf4aaae21c7814e99", null ],
-    [ "id", "de/dd5/a01564.html#a6483db5ee79f980bc83e175d9ea1ca34", null ]
+    [ "ctype", "de/dd5/a01564.html#a87491b48c5c83efa1672182b76c67a0a", null ],
+    [ "GeometryLocalView", "de/dd5/a01564.html#a8262bee9ce57e539ae260a3c6d0f07a7", null ],
+    [ "GlobalCoordinate", "de/dd5/a01564.html#a5e0b06882a29af0b9edec957a8c74814", null ],
+    [ "Hessian", "de/dd5/a01564.html#ab04cf69eee0107cf00197152deb6b68d", null ],
+    [ "Jacobian", "de/dd5/a01564.html#a349bb44b7d2dc4d46104863d0b687718", null ],
+    [ "JacobianInverse", "de/dd5/a01564.html#a0afca2dbe65e454b4d2bc6d304008403", null ],
+    [ "JacobianInverseTransposed", "de/dd5/a01564.html#a7d6937e090ac11fb8df3b7087598609e", null ],
+    [ "JacobianTransposed", "de/dd5/a01564.html#a9f9f5a39e9ed243f7b4fed0580306569", null ],
+    [ "LocalCoordinate", "de/dd5/a01564.html#adfa28edcbc5bdb01661b0ea7d702a2f7", null ],
+    [ "LocalCoordinateInPatch", "de/dd5/a01564.html#a4458b7594e3b2048ddd5ed88d89f709a", null ],
+    [ "PatchGeometry", "de/dd5/a01564.html#a58cfb67dcc9f60d77fcf7a18f23d0fe4", null ],
+    [ "Trimmer", "de/dd5/a01564.html#a2cf66877f87f9375d2ecf27efc1c72c4", null ],
+    [ "Volume", "de/dd5/a01564.html#a7fcb6f1ba4e14ff788ebd853610025af", null ],
+    [ "TrimmedLocalGeometryImpl", "de/dd5/a01564.html#acd726ff568d89cd7054a67322b03e765", null ],
+    [ "TrimmedLocalGeometryImpl", "de/dd5/a01564.html#ad77d59f5c41558a68e69c1c24c14e7f7", null ],
+    [ "affine", "de/dd5/a01564.html#a901667cf37900062e305e0f749e4ff99", null ],
+    [ "center", "de/dd5/a01564.html#a5b4a5bb5c7c0311588db3c8695b64af8", null ],
+    [ "checkInside", "de/dd5/a01564.html#a9b7697e9429f38e008cc4749ddf22732", null ],
+    [ "corner", "de/dd5/a01564.html#af171b2ee1435072ec5185404e8b55e30", null ],
+    [ "corners", "de/dd5/a01564.html#a04718da4cca3bc68d91549fedf51cd03", null ],
+    [ "global", "de/dd5/a01564.html#a9997267a31dbd384e168bb17e1576da0", null ],
+    [ "integrationElement", "de/dd5/a01564.html#a9b4d8f42c4c8f58973b89ae688747bed", null ],
+    [ "jacobianInverseTransposed", "de/dd5/a01564.html#a241c49ced457aa15a0979c0119c05153", null ],
+    [ "jacobianTransposed", "de/dd5/a01564.html#a56dccfe510d0fdad64a5b255ae04b7dc", null ],
+    [ "local", "de/dd5/a01564.html#a79dc39426341fc56fb811f2d38c16aa5", null ],
+    [ "type", "de/dd5/a01564.html#a4e1eb51f660948309947ce65f5f68b39", null ],
+    [ "codim", "de/dd5/a01564.html#aa8857c616c8adc195fb559757eb61890", null ],
+    [ "coorddimension", "de/dd5/a01564.html#a8e5d71ea003ae1be2deaaffbe6f91b03", null ],
+    [ "mydimension", "de/dd5/a01564.html#a4a194209f96424329b66d7c738481869", null ]
 ];

@@ -7,9 +7,9 @@ var searchData=
   ['trimdata_4',['TrimData',['../d1/dcc/a01392.html',1,'Dune::IGA']]],
   ['trimmedleafintersection_5',['TrimmedLeafIntersection',['../d4/d51/a01520.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmedlevelintersection_6',['TrimmedLevelIntersection',['../d9/d34/a01524.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedlocalgeometryimpl_7',['TrimmedLocalGeometryImpl',['../de/d89/a01560.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedparameterspacegridentity_8',['TrimmedParameterSpaceGridEntity',['../d0/db9/a01552.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmedreferenceelement_9',['TrimmedReferenceElement',['../d6/d83/a01544.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedlocalgeometryimpl_7',['TrimmedLocalGeometryImpl',['../de/dd5/a01564.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedparameterspacegridentity_8',['TrimmedParameterSpaceGridEntity',['../d7/db6/a01556.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmedreferenceelement_9',['TrimmedReferenceElement',['../da/dc7/a01548.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmer_10',['Trimmer',['../db/dad/a01616.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmerimpl_11',['TrimmerImpl',['../d4/d3f/a01600.html',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;'],['../d9/d49/a01696.html',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;']]],
   ['trimmertraits_12',['TrimmerTraits',['../db/dfd/a01608.html',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits'],['../d4/d26/a01700.html',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits']]]

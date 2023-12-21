@@ -4,7 +4,7 @@ var searchData=
   ['ibranurbsdata_1',['IbraNURBSData',['../dc/dd9/a01328.html',1,'Dune::IGA::Ibra::IbraNURBSData&lt; dim, worldDim &gt;'],['../d6/d0f/a01256.html',1,'Dune::IGANEW::Ibra::IbraNURBSData&lt; dim, worldDim &gt;']]],
   ['ibranurbsdata_3c_201_2c_202_20_3e_2',['IbraNURBSData&lt; 1, 2 &gt;',['../dc/dd9/a01328.html',1,'Dune::IGA::Ibra']]],
   ['ibrareader_3',['IbraReader',['../d9/d79/a01360.html',1,'Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;'],['../dd/d18/a01284.html',1,'Dune::IGANEW::IbraReader&lt; dim, dimworld, PatchGrid &gt;']]],
-  ['idtype_4',['IdType',['../de/dd5/a01564.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['idtype_4',['IdType',['../da/daf/a01568.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['igarefinedgeometries_5',['IGARefinedGeometries',['../d2/d29/a01376.html',1,'Dune::IGA']]],
   ['intersectionvariant_6',['IntersectionVariant',['../dc/d3e/a01712.html',1,'Dune::IGANEW::Trim']]],
   ['is_5finstantiation_5fof_7',['is_instantiation_of',['../de/d25/a01732.html',1,'']]],

@@ -56,14 +56,14 @@ var annotated_dup =
       ] ],
       [ "IGANEW", "d5/d0b/a00220.html", [
         [ "DefaultTrim", "d4/d08/a00237.html", [
-          [ "ElementTrimData", "d2/d48/a01472.html", null ],
+          [ "ElementTrimData", "d6/d83/a01544.html", null ],
           [ "ElementTrimDataContainerImpl", "dd/d70/a01596.html", null ],
-          [ "ElementTrimDataImpl", "de/d40/a01592.html", null ],
-          [ "EntityInfoImpl", "d3/d22/a01572.html", "d3/d22/a01572" ],
-          [ "EntityInfoImpl< HostIdType, 0 >", "da/dd5/a01580.html", "da/dd5/a01580" ],
+          [ "ElementTrimDataImpl", "d2/d48/a01472.html", "d2/d48/a01472" ],
+          [ "EntityInfoImpl", "db/dfd/a01576.html", "db/dfd/a01576" ],
+          [ "EntityInfoImpl< HostIdType, 0 >", "d8/d22/a01584.html", "d8/d22/a01584" ],
           [ "HostGridAccess", "db/dbf/a01516.html", null ],
-          [ "IdType", "de/dd5/a01564.html", "de/dd5/a01564" ],
-          [ "Parameter", "d7/d71/a01588.html", "d7/d71/a01588" ],
+          [ "IdType", "da/daf/a01568.html", "da/daf/a01568" ],
+          [ "Parameter", "de/d40/a01592.html", "de/d40/a01592" ],
           [ "PatchGridEntitySeed", "d2/daa/a01488.html", "d2/daa/a01488" ],
           [ "PatchGridFamily", "dc/dd2/a01604.html", "dc/dd2/a01604" ],
           [ "PatchGridGlobalIdSet", "d2/d21/a01484.html", "d2/d21/a01484" ],
@@ -78,9 +78,9 @@ var annotated_dup =
           [ "PatchTrimDataImpl", "d0/da6/a01536.html", "d0/da6/a01536" ],
           [ "TrimmedLeafIntersection", "d4/d51/a01520.html", "d4/d51/a01520" ],
           [ "TrimmedLevelIntersection", "d9/d34/a01524.html", "d9/d34/a01524" ],
-          [ "TrimmedLocalGeometryImpl", "de/d89/a01560.html", "de/d89/a01560" ],
-          [ "TrimmedParameterSpaceGridEntity", "d0/db9/a01552.html", "d0/db9/a01552" ],
-          [ "TrimmedReferenceElement", "d6/d83/a01544.html", "d6/d83/a01544" ],
+          [ "TrimmedLocalGeometryImpl", "de/dd5/a01564.html", "de/dd5/a01564" ],
+          [ "TrimmedParameterSpaceGridEntity", "d7/db6/a01556.html", "d7/db6/a01556" ],
+          [ "TrimmedReferenceElement", "da/dc7/a01548.html", "da/dc7/a01548" ],
           [ "Trimmer", "db/dad/a01616.html", "db/dad/a01616" ],
           [ "TrimmerImpl", "d4/d3f/a01600.html", "d4/d3f/a01600" ],
           [ "VectorEntityContainer", "d0/d38/a01476.html", "d0/d38/a01476" ]
@@ -165,7 +165,7 @@ var annotated_dup =
       ] ]
     ] ],
     [ "std", null, [
-      [ "hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "da/daf/a01568.html", "da/daf/a01568" ]
+      [ "hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "d3/d22/a01572.html", "d3/d22/a01572" ]
     ] ],
     [ "BoundaryPatchEnclosingVerticesPropertyTrimmed", "dd/d1c/a01452.html", "dd/d1c/a01452" ],
     [ "EnableLevelIntersectionIteratorCheck", "d6/db6/a01172.html", null ],

@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['parameter_0',['Parameter',['../d7/d71/a01588.html',1,'Dune::IGANEW::DefaultTrim::Parameter'],['../d5/d83/a01680.html',1,'Dune::IGANEW::IdentityTrim::Parameter']]],
+  ['parameter_0',['Parameter',['../de/d40/a01592.html',1,'Dune::IGANEW::DefaultTrim::Parameter'],['../d5/d83/a01680.html',1,'Dune::IGANEW::IdentityTrim::Parameter']]],
   ['parameterspacegridentityvariant_1',['ParameterSpaceGridEntityVariant',['../d6/daf/a01632.html',1,'Dune::IGANEW::Trim']]],
   ['patchgeometrylocalview_2',['PatchGeometryLocalView',['../da/db7/a01088.html',1,'Dune::IGANEW::GeometryKernel']]],
   ['patchgrid_3',['PatchGrid',['../dc/dcc/a01200.html',1,'Dune::IGANEW']]],

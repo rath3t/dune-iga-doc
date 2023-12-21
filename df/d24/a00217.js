@@ -4,7 +4,7 @@ var a00217 =
     [ "Dune::IGANEW::DefaultTrim::TrimmerImpl< dim, dimworld, ScalarType >", "d4/d3f/a01600.html", [
       [ "Codim", "d4/d3f/a01600.html#addb7f4b76ecd8a379f996f9d6e793c68", null ],
       [ "ctype", "d4/d3f/a01600.html#a1884a08954d7d0866a233f83b6dcf575", null ],
-      [ "ElementTrimData", "d4/d3f/a01600.html#a45400af337768f0233d93a506111d3d4", null ],
+      [ "ElementTrimData", "d4/d3f/a01600.html#a5d9977f24fffaa6b915cdcd2804b26c1", null ],
       [ "ElementTrimDataContainer", "d4/d3f/a01600.html#a1be85a9babe60a8d448cafaa02d623c8", null ],
       [ "Entity", "d4/d3f/a01600.html#a438dfff0ce1a5740871eb7901c6a47fb", null ],
       [ "EntityContainer", "d4/d3f/a01600.html#a7ad09c00d451131cda6eb7f3c759ba5a", null ],
@@ -45,7 +45,7 @@ var a00217 =
       [ "seed", "d4/d3f/a01600.html#a77f99bdf92367837559a917af37b5aca", null ],
       [ "setIndices", "d4/d3f/a01600.html#a1ed74086d66a0c067d44380b3112c01e", null ],
       [ "setup", "d4/d3f/a01600.html#ae5e3c889a63d9b873ec72f67e0f1aca6", null ],
-      [ "trimElement", "d4/d3f/a01600.html#a0136740c5ebaa42b5e528a82b2c43059", null ],
+      [ "trimElement", "d4/d3f/a01600.html#aefa0e5fe66d9fa37080e1f1542970419", null ],
       [ "PatchGridHierarchicIterator< const GridImp >", "d4/d3f/a01600.html#a78b6e32e67f65b0b6d1bb74f3d5b5005", null ],
       [ "PatchGridLeafIntersection< const GridImp >", "d4/d3f/a01600.html#ab8205f2aa2748b1f5eae2238bbb4a660", null ],
       [ "PatchGridLeafIterator", "d4/d3f/a01600.html#a117f9b90e2c4d7abb62f8f3cb6663fe3", null ],

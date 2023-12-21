@@ -11,5 +11,5 @@ var searchData=
   ['localindex_8',['localIndex',['../d7/d32/a01444.html#accce87872c7dfa44c89347d946664a33',1,'Dune::IGA::DomainInformation']]],
   ['localinterpolation_5f_9',['localInterpolation_',['../d7/d8d/a01288.html#a315668b19b95fb51f103beca8d66deb5',1,'Dune::Functions::NurbsLocalFiniteElement']]],
   ['loops_10',['loops',['../d5/d37/a01276.html#a094f6472e89605e71fafa767c11bf18f',1,'Dune::IGANEW::Ibra::BrepRepresentation::loops()'],['../d8/d0d/a01280.html#ad02093b5413aabb5f960e878d807b20f',1,'Dune::IGANEW::Ibra::Brep::loops()'],['../d7/d57/a01348.html#ad4fb64a1c336ee19cf8b6e725030b639',1,'Dune::IGA::Ibra::BrepRepresentation::loops()'],['../d0/d85/a01352.html#adf3a869b18a3dbec9d9d5184f41ca473',1,'Dune::IGA::Ibra::Brep::loops()']]],
-  ['lvl_11',['lvl',['../d3/d22/a01572.html#a5c4c7c90da40c8982e201b2d4a035d40',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl::lvl()'],['../da/dd5/a01580.html#a6b04064b8670a7266079bc58fe4e1a70',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;::lvl()']]]
+  ['lvl_11',['lvl',['../db/dfd/a01576.html#a5c4c7c90da40c8982e201b2d4a035d40',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl::lvl()'],['../d8/d22/a01584.html#a6b04064b8670a7266079bc58fe4e1a70',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;::lvl()']]]
 ];
