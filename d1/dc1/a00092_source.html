@@ -101,73 +101,102 @@ $(document).ready(function(){initNavTree('d1/dc1/a00092_source.html','../../'); 
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;dune/common/fvector.hh&gt;</span></div>
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d5/d0b/a00220.html">Dune::IGANEW</a> {</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType, <span class="keywordtype">int</span> dim&gt;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d5/d0b/a00220.html#acbab55bc9467ca289ad446c860004a7a">    9</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d5/d0b/a00220.html#acbab55bc9467ca289ad446c860004a7a">findIntersectionCurveAndLine</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos,</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                                    <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir, FieldVector&lt;ScalarType, dim&gt; tParameter,</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>                                    ScalarType tol = 1e-10) {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">struct </span>Line {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>      FieldVector&lt;ScalarType, dim&gt; operator()(ScalarType t) { <span class="keywordflow">return</span> pos + t * dir; }</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>      FieldVector&lt;ScalarType, dim&gt; jacobian() { <span class="keywordflow">return</span> dir; }</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span> line = Line({pos, dir});</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53">    8</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53">FindIntersectionCurveAndLineResult</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7">noSucess</a>, <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">sucess</a>, <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08">linesParallel</a></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  };</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="comment">// @todo write tests for that</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType, <span class="keywordtype">int</span> dim&gt;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d5/d0b/a00220.html#a61398af39151bf24b00ad61f26c53981">   14</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d5/d0b/a00220.html#a61398af39151bf24b00ad61f26c53981">findIntersectionCurveAndLinearLine</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos,</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>                                    <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir, FieldVector&lt;ScalarType, 2&gt; tParameter,</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>                                    ScalarType tol = 1e-10) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    assert(geoCurve.degree()[0] == 1 &amp;&amp; <span class="stringliteral">&quot;Curve has to be linear to be calling this function&quot;</span>);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">const</span> FieldVector curveDerivative       = geoCurve.jacobianTransposed(tParameter[0])[0];</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">const</span> FieldVector curvePos = geoCurve.global({geoCurve.domain()[0].front()});</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordtype">bool</span> sucess             = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> maxIterations = 1000;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">const</span> <span class="keyword">auto</span> domain = geoCurve.domain();</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    FieldVector&lt;ScalarType, 2&gt; curvePoint;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> FieldVector lineDerivative = line.jacobian();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">const</span> <span class="keyword">auto</span> energyLambda = [&amp;](<span class="keyword">auto</span>&amp; tParameter_ ) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      curvePoint                              = geoCurve.global(tParameter_[0]);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keyword">const</span> FieldVector dist                  = curvePoint - line(tParameter_[1]);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordflow">return</span>  0.5 * dist.two_norm2();</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    FieldMatrix&lt;ScalarType, dim, 2&gt; linearSystem;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    FieldVector&lt;ScalarType, dim&gt; b;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dim; i++) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      linearSystem[i][0] = curveDerivative[i];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      linearSystem[i][1] = -dir[i];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      b[i] = pos[i] - curvePos[i];</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    }</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> (FloatCmp::eq(linearSystem.determinant(), 0.0, tol))</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08">FindIntersectionCurveAndLineResult::linesParallel</a>, tParameter, geoCurve.global(tParameter[0]));</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iter = 0; iter &lt; maxIterations; ++iter) {</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keyword">const</span> FieldVector curveDerivative       = geoCurve.jacobianTransposed(tParameter[0])[0];</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keyword">const</span> FieldVector curvSecondeDerivative = geoCurve.hessian(tParameter[0])[0];</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keyword">const</span> FieldVector dist                  = curvePoint - line(tParameter[1]);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keyword">const</span> ScalarType energy =energyLambda(tParameter);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      FieldVector&lt;ScalarType, 2&gt; grad({curveDerivative * dist, -lineDerivative * dist});</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    FieldVector&lt;ScalarType, dim&gt; sol;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    linearSystem.solve(sol, b);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// Check if point is in domain</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (not geoCurve.domain()[0].checkInside(tParameter[0]))</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7">FindIntersectionCurveAndLineResult::noSucess</a>, sol, geoCurve.global(sol[0]));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">FindIntersectionCurveAndLineResult::sucess</a>, sol, geoCurve.global(sol[0]));</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      FieldMatrix&lt;ScalarType, 2&gt; Hess;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      Hess[0][0] = curveDerivative.two_norm2() + dist * curvSecondeDerivative;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      Hess[1][1] = lineDerivative.two_norm2();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      Hess[0][1] = Hess[1][0] = -curveDerivative * lineDerivative;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="comment">// Newton-Raphson update</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      FieldVector&lt;ScalarType, 2&gt; deltaT;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      Hess.solve(deltaT, grad);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      tParameter -= deltaT;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      tParameter[0]= std::clamp(tParameter[0],domain[0].left(),domain[0].right());</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType, <span class="keywordtype">int</span> dim&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d5/d0b/a00220.html#a533ba1e65466dfc728bc84b33126774f">   44</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d5/d0b/a00220.html#a533ba1e65466dfc728bc84b33126774f">findIntersectionCurveAndLine</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos,</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                                    <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir, FieldVector&lt;ScalarType, 2&gt; tParameter,</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>                                    ScalarType tol = 1e-10) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">if</span> (geoCurve.degree()[0] == 1)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../d5/d0b/a00220.html#a61398af39151bf24b00ad61f26c53981">findIntersectionCurveAndLinearLine</a>(geoCurve, pos, dir, tParameter, tol);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">struct </span>Line {</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      FieldVector&lt;ScalarType, dim&gt; operator()(ScalarType t) { <span class="keywordflow">return</span> pos + t * dir; }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      FieldVector&lt;ScalarType, dim&gt; jacobian() { <span class="keywordflow">return</span> dir; }</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (tParameter[0] == domain[0].left() or tParameter[0] == domain[0].right()) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="keywordflow">if</span>(energyLambda(tParameter)&lt;tol)</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">return</span> std::make_tuple(<span class="keyword">true</span>, tParameter, geoCurve.global(tParameter[0]));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            <span class="keywordflow">return</span> std::make_tuple(<span class="keyword">false</span>, tParameter, geoCurve.global(tParameter[0]));</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="comment">// Check for convergence</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordflow">if</span> (deltaT.two_norm() &lt; tol) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        sucess     = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        curvePoint = geoCurve.global(tParameter[0]);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      }</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">return</span> std::make_tuple(sucess, tParameter, curvePoint);</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  }</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    };</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keyword">auto</span> line = Line({pos, dir});</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <span class="keywordtype">bool</span> <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">sucess</a>             = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> maxIterations = 1000;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    FieldVector&lt;ScalarType, 2&gt; curvePoint;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">const</span> FieldVector lineDerivative = line.jacobian();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iter = 0; iter &lt; maxIterations; ++iter) {</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      curvePoint                              = geoCurve.global(tParameter[0]);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="keyword">const</span> FieldVector curveDerivative       = geoCurve.jacobianTransposed(tParameter[0])[0];</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keyword">const</span> FieldVector curvSecondeDerivative = geoCurve.hessian(tParameter[0])[0];</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keyword">const</span> FieldVector dist                  = curvePoint - line(tParameter[1]);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keyword">const</span> ScalarType energy = 0.5 * dist.two_norm2();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      FieldVector&lt;ScalarType, 2&gt; grad({curveDerivative * dist, -lineDerivative * dist});</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      FieldMatrix&lt;ScalarType, 2&gt; Hess;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      Hess[0][0] = curveDerivative.two_norm2() + dist * curvSecondeDerivative;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>      Hess[1][1] = lineDerivative.two_norm2();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      Hess[0][1] = Hess[1][0] = -curveDerivative * lineDerivative;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      <span class="comment">// Newton-Raphson update</span></div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      FieldVector&lt;ScalarType, 2&gt; deltaT;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>      Hess.solve(deltaT, grad);</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>      tParameter -= deltaT;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      <span class="comment">// Check for convergence</span></div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <span class="keywordflow">if</span> (deltaT.two_norm() &lt; tol) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">sucess</a>     = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        curvePoint = geoCurve.global(tParameter[0]);</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      }</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    }</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">auto</span> domain = geoCurve.domain();</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (not domain[0].checkInside(tParameter[0])) <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">sucess</a> = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">sucess</a> ? <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">FindIntersectionCurveAndLineResult::sucess</a> : <a class="code hl_enumvalue" href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7">FindIntersectionCurveAndLineResult::noSucess</a>, tParameter, curvePoint);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
 <div class="ttc" id="aa00220_html"><div class="ttname"><a href="../../d5/d0b/a00220.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa00220_html_acbab55bc9467ca289ad446c860004a7a"><div class="ttname"><a href="../../d5/d0b/a00220.html#acbab55bc9467ca289ad446c860004a7a">Dune::IGANEW::findIntersectionCurveAndLine</a></div><div class="ttdeci">auto findIntersectionCurveAndLine(const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, dim &gt; tParameter, ScalarType tol=1e-10)</div><div class="ttdef"><b>Definition:</b> findintersection.hh:9</div></div>
+<div class="ttc" id="aa00220_html_a0c625c53a5b3360578c5b05194a55a53"><div class="ttname"><a href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53">Dune::IGANEW::FindIntersectionCurveAndLineResult</a></div><div class="ttdeci">FindIntersectionCurveAndLineResult</div><div class="ttdef"><b>Definition:</b> findintersection.hh:8</div></div>
+<div class="ttc" id="aa00220_html_a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08"><div class="ttname"><a href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08">Dune::IGANEW::FindIntersectionCurveAndLineResult::linesParallel</a></div><div class="ttdeci">@ linesParallel</div></div>
+<div class="ttc" id="aa00220_html_a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f"><div class="ttname"><a href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">Dune::IGANEW::FindIntersectionCurveAndLineResult::sucess</a></div><div class="ttdeci">@ sucess</div></div>
+<div class="ttc" id="aa00220_html_a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7"><div class="ttname"><a href="../../d5/d0b/a00220.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7">Dune::IGANEW::FindIntersectionCurveAndLineResult::noSucess</a></div><div class="ttdeci">@ noSucess</div></div>
+<div class="ttc" id="aa00220_html_a533ba1e65466dfc728bc84b33126774f"><div class="ttname"><a href="../../d5/d0b/a00220.html#a533ba1e65466dfc728bc84b33126774f">Dune::IGANEW::findIntersectionCurveAndLine</a></div><div class="ttdeci">auto findIntersectionCurveAndLine(const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</div><div class="ttdef"><b>Definition:</b> findintersection.hh:44</div></div>
+<div class="ttc" id="aa00220_html_a61398af39151bf24b00ad61f26c53981"><div class="ttname"><a href="../../d5/d0b/a00220.html#a61398af39151bf24b00ad61f26c53981">Dune::IGANEW::findIntersectionCurveAndLinearLine</a></div><div class="ttdeci">auto findIntersectionCurveAndLinearLine(const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</div><div class="ttdef"><b>Definition:</b> findintersection.hh:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
