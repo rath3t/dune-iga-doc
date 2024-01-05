@@ -1,14 +1,10 @@
 var a01648 =
 [
-    [ "Types", "da/ddf/a01648.html#a630b3b92b6c3f96ca20c0fe174aab211", null ],
-    [ "PatchGridLeafIndexSet", "da/ddf/a01648.html#a147729ee771ed8102b33de79b5c5a5ed", null ],
-    [ "contains", "da/ddf/a01648.html#a1ff26b2030f1195fa8bbad67492151c2", null ],
-    [ "index", "da/ddf/a01648.html#a519456cdcd608ea7de7fbd2eedb7e191", null ],
-    [ "size", "da/ddf/a01648.html#a8b540b763863f7b6bd15ced9b7d5b1c2", null ],
-    [ "size", "da/ddf/a01648.html#acb5c7b9736e8fd41a372d620e1a1d821", null ],
-    [ "subIndex", "da/ddf/a01648.html#a25286e0fae26c1527bdd43fd2e063c0b", null ],
-    [ "types", "da/ddf/a01648.html#a2afe4429cff876b7d5117e9e4bdef473", null ],
-    [ "update", "da/ddf/a01648.html#aff716eea7ea5c79d5a5c753afda454e0", null ],
-    [ "dim", "da/ddf/a01648.html#a1171c8f071400678f74439ace6b55133", null ],
-    [ "grid_", "da/ddf/a01648.html#ad32e6d968b965e18f6d36ca59105a6d0", null ]
+    [ "Entity", "da/ddf/a01648.html#a4b2059ef412fddfe435c3eac590ae0b6", null ],
+    [ "PatchGridHierarchicIterator", "da/ddf/a01648.html#ab6d47c0d6a95c8fd8be2e0a8fd45acd5", null ],
+    [ "PatchGridHierarchicIterator", "da/ddf/a01648.html#aab215f0197a43b62215fa4078cd4f317", null ],
+    [ "dereference", "da/ddf/a01648.html#ae9a647048fca2579bf22151ee65322a5", null ],
+    [ "equals", "da/ddf/a01648.html#acafd6b9d1607f54f84c4976abc4b1c6e", null ],
+    [ "increment", "da/ddf/a01648.html#a0d62a62bdc84b59bf092288c0069e58b", null ],
+    [ "codimension", "da/ddf/a01648.html#a8c72edf409e2b1dd8dde084d998dac58", null ]
 ];

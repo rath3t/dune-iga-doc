@@ -1,9 +1,9 @@
 var a01660 =
 [
-    [ "Intersection", "d6/d5e/a01660.html#a96615d85169b563aa3b76492b4a7e797", null ],
-    [ "PatchGridLeafIntersectionIterator", "d6/d5e/a01660.html#a5381c850da02988d30c924704e1f6e05", null ],
-    [ "PatchGridLeafIntersectionIterator", "d6/d5e/a01660.html#a103d9e4dd92417c1311f741c84005248", null ],
-    [ "dereference", "d6/d5e/a01660.html#a0a573d6da346fc550b9859916ba93c64", null ],
-    [ "equals", "d6/d5e/a01660.html#a74d7a3a0c5f28884eb5390a7112b6a72", null ],
-    [ "increment", "d6/d5e/a01660.html#acce4e4259683ab365ea2a358d4f9b8dc", null ]
+    [ "IdType", "d6/d5e/a01660.html#a2009d4ac8634d95f35b80ce12ec9dc84", null ],
+    [ "PatchGridGlobalIdSet", "d6/d5e/a01660.html#ab06a92c47781f06a9ef5747b306a8319", null ],
+    [ "id", "d6/d5e/a01660.html#a456c95d1b7a1be09bdb5f686d643bc19", null ],
+    [ "subId", "d6/d5e/a01660.html#a1e3a589e86c8612e688d5fad44bc6b0f", null ],
+    [ "update", "d6/d5e/a01660.html#a304dbe28e18a6652a02a2ed3945c05e4", null ],
+    [ "grid_", "d6/d5e/a01660.html#aaa9b775fcea83822a90483ce596ecda3", null ]
 ];

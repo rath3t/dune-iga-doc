@@ -1,5 +1,5 @@
 var a00140 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "da/dc7/a01548.html", "da/dc7/a01548" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d0/db9/a01552.html", "d0/db9/a01552" ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d7/db6/a01556.html", "d7/db6/a01556" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "de/d89/a01560.html", "de/d89/a01560" ]
 ];

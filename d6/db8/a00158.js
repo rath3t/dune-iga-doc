@@ -1,5 +1,5 @@
 var a00158 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >", "d0/da6/a01536.html", "d0/da6/a01536" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >::BoundaryLoop", "d3/d4c/a01540.html", "d3/d4c/a01540" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >", "d6/d83/a01544.html", "d6/d83/a01544" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >::BoundaryLoop", "da/dc7/a01548.html", "da/dc7/a01548" ]
 ];

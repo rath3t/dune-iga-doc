@@ -1,7 +1,7 @@
 var searchData=
 [
   ['boundary_0',['Boundary',['../d0/d36/a01388.html',1,'Dune::IGA']]],
-  ['boundaryloop_1',['BoundaryLoop',['../d3/d4c/a01540.html',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]],
+  ['boundaryloop_1',['BoundaryLoop',['../da/dc7/a01548.html',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]],
   ['boundarypatchenclosingverticespropertytrimmed_2',['BoundaryPatchEnclosingVerticesPropertyTrimmed',['../dd/d1c/a01452.html',1,'']]],
   ['brep_3',['Brep',['../d0/d85/a01352.html',1,'Dune::IGA::Ibra::Brep&lt; worldDim &gt;'],['../d8/d0d/a01280.html',1,'Dune::IGANEW::Ibra::Brep&lt; worldDim &gt;']]],
   ['breploop_4',['BrepLoop',['../dc/d54/a01344.html',1,'Dune::IGA::Ibra::BrepLoop'],['../d4/d0e/a01272.html',1,'Dune::IGANEW::Ibra::BrepLoop']]],

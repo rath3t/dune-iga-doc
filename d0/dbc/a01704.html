@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::IGANEW::IdentityTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,146 +93,1375 @@ $(document).ready(function(){initNavTree('d0/dbc/a01704.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../d1/db5/a01701.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::IdentityTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt; Class Template Reference<div class="ingroups"><a class="el" href="../../df/d24/a00217.html">Trimmer</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../de/df6/a03484_source.html">dune/iga/trimmer/identitytrimmer/trimmer.hh</a>&gt;</code></p>
+<p>Trimmer struct representing a trimmer with identity trimming (no trimming at all).  
+ <a href="../../d0/dbc/a01704.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d3d/a03492_source.html">dune/iga/trimmer/identitytrimmer/trimmer.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a83d75e7a65ed39456a70f5d283cd2081"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a83d75e7a65ed39456a70f5d283cd2081">LocalParameterSpaceGeometry</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt; codim &gt;::Geometry</td></tr>
-<tr class="separator:a83d75e7a65ed39456a70f5d283cd2081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a02c097e5662806c9400d511c27a98e8c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a02c097e5662806c9400d511c27a98e8c">LocalGeometry</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt; codim &gt;::LocalGeometry</td></tr>
-<tr class="separator:a02c097e5662806c9400d511c27a98e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a699b6048608eee9d9c24fb95e46e2513"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a699b6048608eee9d9c24fb95e46e2513">ParameterSpaceGridEntity</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt; codim &gt;::Entity</td></tr>
-<tr class="separator:a699b6048608eee9d9c24fb95e46e2513"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7c5c4b482190493042510628e076e4a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#ac7c5c4b482190493042510628e076e4a">ParameterSpaceGridEntitySeed</a> = typename ParameterSpaceGrid::Traits::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt; codim &gt;::EntitySeed</td></tr>
-<tr class="separator:ac7c5c4b482190493042510628e076e4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3fd2630081f2b954a06c9546485bb21a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a3fd2630081f2b954a06c9546485bb21a">EntityImp</a> = <a class="el" href="../../d7/d5a/a01204.html">PatchGridEntity</a>&lt; codim, dim, const <a class="el" href="../../d6/d97/a01188.html#a88ffd9727851a73a5309568562ce69a8">Grid</a> &gt;</td></tr>
-<tr class="separator:a3fd2630081f2b954a06c9546485bb21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8fcb6a37ecb71b7595a651bd4b6d70a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#ae8fcb6a37ecb71b7595a651bd4b6d70a">EntitySeedImp</a> = <a class="el" href="../../dd/d40/a01636.html">PatchGridEntitySeed</a>&lt; codim, const <a class="el" href="../../d6/d97/a01188.html#a88ffd9727851a73a5309568562ce69a8">Grid</a> &gt;</td></tr>
-<tr class="separator:ae8fcb6a37ecb71b7595a651bd4b6d70a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f67432e58083ba676b4fa51b9a58e4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a32f67432e58083ba676b4fa51b9a58e4">GridFamily</a> = <a class="el" href="../../d6/d97/a01188.html">PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;</td></tr>
+<tr class="memdesc:a32f67432e58083ba676b4fa51b9a58e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scalar type for the coordinates.  <a href="../../d0/dbc/a01704.html#a32f67432e58083ba676b4fa51b9a58e4">More...</a><br /></td></tr>
+<tr class="separator:a32f67432e58083ba676b4fa51b9a58e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7c4f1eb308a526b04f8ac8831277940"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#af7c4f1eb308a526b04f8ac8831277940">PatchTrimData</a> = typename <a class="el" href="../../d6/d97/a01188.html#af74afe3091b344bc0990a2796f714ae8">GridFamily::PatchTrimData</a></td></tr>
+<tr class="separator:af7c4f1eb308a526b04f8ac8831277940"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2e015a19c657b6fe18c9da7e169056"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#aaa2e015a19c657b6fe18c9da7e169056">GridTraits</a> = typename <a class="el" href="../../d6/d97/a01188.html#af402ce83e19a44a2345ebf7ef6ac41e3">GridFamily::Traits</a></td></tr>
+<tr class="separator:aaa2e015a19c657b6fe18c9da7e169056"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b15d062e3a7b23ced1e571f3581518"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#af5b15d062e3a7b23ced1e571f3581518">TrimmerTraits</a> = typename <a class="el" href="../../de/d5c/a01708.html">GridFamily::TrimmerTraits</a></td></tr>
+<tr class="separator:af5b15d062e3a7b23ced1e571f3581518"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a605b76a7a17bd1183cf4e30be024972a"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:a605b76a7a17bd1183cf4e30be024972a"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a> = typename TrimmerTraits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; codim &gt;</td></tr>
+<tr class="separator:a605b76a7a17bd1183cf4e30be024972a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadcb3d28746b3348a1a7bae3bd665a49"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> = typename GridTraits::Grid</td></tr>
+<tr class="separator:aadcb3d28746b3348a1a7bae3bd665a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8941deb9227300b97f70d0e6c3b7bc0b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a8941deb9227300b97f70d0e6c3b7bc0b">ctype</a> = ScalarType</td></tr>
+<tr class="separator:a8941deb9227300b97f70d0e6c3b7bc0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af49d6e71c0b1f6e26e141ee732b8ba3b"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:af49d6e71c0b1f6e26e141ee732b8ba3b"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a> = typename GridFamily::Traits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; codim &gt;::Entity</td></tr>
+<tr class="separator:af49d6e71c0b1f6e26e141ee732b8ba3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbd6aaeaa2ee928a776a39d76759222d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> = typename TrimmerTraits::ParameterSpaceGrid</td></tr>
+<tr class="memdesc:abbd6aaeaa2ee928a776a39d76759222d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type of the Parametric grid.  <a href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">More...</a><br /></td></tr>
+<tr class="separator:abbd6aaeaa2ee928a776a39d76759222d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cc91665d1a0bcfcfba598828c9f937"><td class="memTemplParams" colspan="2">template&lt;int mydim&gt; </td></tr>
+<tr class="memitem:a55cc91665d1a0bcfcfba598828c9f937"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a55cc91665d1a0bcfcfba598828c9f937">ReferenceElementType</a> = typename Dune::Geo::ReferenceElements&lt; <a class="el" href="../../d0/dbc/a01704.html#a8941deb9227300b97f70d0e6c3b7bc0b">ctype</a>, <a class="el" href="../../d0/dbc/a01704.html#a3f42dc95942d77ba5575283b869af173">mydimension</a> &gt;::ReferenceElement</td></tr>
+<tr class="memdesc:a55cc91665d1a0bcfcfba598828c9f937"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference element type.  <a href="../../d0/dbc/a01704.html#a55cc91665d1a0bcfcfba598828c9f937">More...</a><br /></td></tr>
+<tr class="separator:a55cc91665d1a0bcfcfba598828c9f937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0da434b26a4e6284551e3f3253fedb85"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a0da434b26a4e6284551e3f3253fedb85">ElementTrimData</a> = <a class="el" href="../../da/dc4/a01692.html">ElementTrimDataImpl</a>&lt; ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype &gt;</td></tr>
+<tr class="memdesc:a0da434b26a4e6284551e3f3253fedb85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element trim data type.  <a href="../../d0/dbc/a01704.html#a0da434b26a4e6284551e3f3253fedb85">More...</a><br /></td></tr>
+<tr class="separator:a0da434b26a4e6284551e3f3253fedb85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0932693eb1a7f2c7e2abdd36802dd8d8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a0932693eb1a7f2c7e2abdd36802dd8d8">ElementTrimDataContainer</a> = <a class="el" href="../../d9/d49/a01696.html">ElementTrimDataContainerImpl</a>&lt; <a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> &gt;</td></tr>
+<tr class="memdesc:a0932693eb1a7f2c7e2abdd36802dd8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Container for element trim data.  <a href="../../d0/dbc/a01704.html#a0932693eb1a7f2c7e2abdd36802dd8d8">More...</a><br /></td></tr>
+<tr class="separator:a0932693eb1a7f2c7e2abdd36802dd8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a0d5307a4be2cc83035288541d0089f"><td class="memTemplParams" colspan="2">template&lt;int codim, PartitionIteratorType pitype&gt; </td></tr>
+<tr class="memitem:a1a0d5307a4be2cc83035288541d0089f"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a1a0d5307a4be2cc83035288541d0089f">ParameterSpaceLeafIterator</a> = typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; codim &gt;::template Partition&lt; pitype &gt;::LeafIterator</td></tr>
+<tr class="separator:a1a0d5307a4be2cc83035288541d0089f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e15f207246dc7483e9a589c198c47d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#af6e15f207246dc7483e9a589c198c47d">GlobalIdSet</a> = typename <a class="el" href="../../d6/d97/a01188.html#a420c5214b07fa1c612be17843d9a30af">GridFamily::GlobalIdSet</a></td></tr>
+<tr class="separator:af6e15f207246dc7483e9a589c198c47d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57a098b50fe6c182556caf43a224f198"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a57a098b50fe6c182556caf43a224f198">LocalIdSet</a> = typename <a class="el" href="../../d6/d97/a01188.html#a9d0fd59e5d0adcbaf61fe87da640fe18">GridFamily::LocalIdSet</a></td></tr>
+<tr class="separator:a57a098b50fe6c182556caf43a224f198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9629da6fd19f5eeac579af88eb5b0b2f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a9629da6fd19f5eeac579af88eb5b0b2f">LeafIndexSet</a> = typename <a class="el" href="../../d6/d97/a01188.html#af13df1b92faed7d89b2141ecb99a620d">GridFamily::LeafIndexSet</a></td></tr>
+<tr class="separator:a9629da6fd19f5eeac579af88eb5b0b2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af224b99f4b407f83886a6d07b312bfba"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#af224b99f4b407f83886a6d07b312bfba">LevelIndexSet</a> = typename <a class="el" href="../../d6/d97/a01188.html#a5a2d84ad18684727cd8bff2d51a7e852">GridFamily::LevelIndexSet</a></td></tr>
+<tr class="separator:af224b99f4b407f83886a6d07b312bfba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e07d3d25feb44686fa03086697c61e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a2e07d3d25feb44686fa03086697c61e7">EntityContainerType</a> = Empty</td></tr>
+<tr class="separator:a2e07d3d25feb44686fa03086697c61e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a72d78489fbef9022c8efda0d88b90e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a3a72d78489fbef9022c8efda0d88b90e">ParameterType</a> = <a class="el" href="../../d6/d53/a01688.html">Parameter</a></td></tr>
+<tr class="memdesc:a3a72d78489fbef9022c8efda0d88b90e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type for trimming parameters.  <a href="../../d0/dbc/a01704.html#a3a72d78489fbef9022c8efda0d88b90e">More...</a><br /></td></tr>
+<tr class="separator:a3a72d78489fbef9022c8efda0d88b90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:aa68d73f4021e8bf35cefeaed16085add"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/a01672.html">PatchGridLevelIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#aa68d73f4021e8bf35cefeaed16085add">ilevelbegin</a> (const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;ent) const</td></tr>
+<tr class="memdesc:aa68d73f4021e8bf35cefeaed16085add"><td class="mdescLeft">&#160;</td><td class="mdescRight">First level intersection.  <a href="../../d0/dbc/a01704.html#aa68d73f4021e8bf35cefeaed16085add">More...</a><br /></td></tr>
+<tr class="separator:aa68d73f4021e8bf35cefeaed16085add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b6dd8102723a562a605de4e4a6d33ed"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/d7b/a01672.html">PatchGridLevelIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a6b6dd8102723a562a605de4e4a6d33ed">ilevelend</a> (const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;ent) const</td></tr>
+<tr class="memdesc:a6b6dd8102723a562a605de4e4a6d33ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to one past the last neighbor.  <a href="../../d0/dbc/a01704.html#a6b6dd8102723a562a605de4e4a6d33ed">More...</a><br /></td></tr>
+<tr class="separator:a6b6dd8102723a562a605de4e4a6d33ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388d580238a21392b5fdb11cd49ed8a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d47/a01668.html">PatchGridLeafIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a388d580238a21392b5fdb11cd49ed8a1">ileafbegin</a> (const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;ent) const</td></tr>
+<tr class="memdesc:a388d580238a21392b5fdb11cd49ed8a1"><td class="mdescLeft">&#160;</td><td class="mdescRight">First leaf intersection.  <a href="../../d0/dbc/a01704.html#a388d580238a21392b5fdb11cd49ed8a1">More...</a><br /></td></tr>
+<tr class="separator:a388d580238a21392b5fdb11cd49ed8a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a050e868b5406e83ac3b07ae2b1ecbd4a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d47/a01668.html">PatchGridLeafIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a050e868b5406e83ac3b07ae2b1ecbd4a">ileafend</a> (const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;ent) const</td></tr>
+<tr class="memdesc:a050e868b5406e83ac3b07ae2b1ecbd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reference to one past the last leaf intersection.  <a href="../../d0/dbc/a01704.html#a050e868b5406e83ac3b07ae2b1ecbd4a">More...</a><br /></td></tr>
+<tr class="separator:a050e868b5406e83ac3b07ae2b1ecbd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af66957186302a13f93b0851b2111d640"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#af66957186302a13f93b0851b2111d640">TrimmerImpl</a> ()=default</td></tr>
+<tr class="memdesc:af66957186302a13f93b0851b2111d640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor for Trimmer.  <a href="../../d0/dbc/a01704.html#af66957186302a13f93b0851b2111d640">More...</a><br /></td></tr>
+<tr class="separator:af66957186302a13f93b0851b2111d640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69cc7be3349d6c011cad17121668d475"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a69cc7be3349d6c011cad17121668d475">createParameterSpaceGrid</a> ()</td></tr>
+<tr class="memdesc:a69cc7be3349d6c011cad17121668d475"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the parameter space grid based on the patch and trim data.  <a href="../../d0/dbc/a01704.html#a69cc7be3349d6c011cad17121668d475">More...</a><br /></td></tr>
+<tr class="separator:a69cc7be3349d6c011cad17121668d475"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8382bdef6b9b319ec6d6abb55f29c62c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a8382bdef6b9b319ec6d6abb55f29c62c">TrimmerImpl</a> (<a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &amp;grid, const std::optional&lt; typename <a class="el" href="../../d6/d97/a01188.html#af74afe3091b344bc0990a2796f714ae8">GridFamily::PatchTrimData</a> &gt; &amp;trimData)</td></tr>
+<tr class="memdesc:a8382bdef6b9b319ec6d6abb55f29c62c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for Trimmer with patch and trim data.  <a href="../../d0/dbc/a01704.html#a8382bdef6b9b319ec6d6abb55f29c62c">More...</a><br /></td></tr>
+<tr class="separator:a8382bdef6b9b319ec6d6abb55f29c62c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f85f65db7af712504171063bde1d86e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dbc/a01704.html">TrimmerImpl</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a4f85f65db7af712504171063bde1d86e">operator=</a> (<a class="el" href="../../d0/dbc/a01704.html">TrimmerImpl</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="separator:a4f85f65db7af712504171063bde1d86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab7b684147bc1b188300df598b63dae54"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#ab7b684147bc1b188300df598b63dae54">setup</a> (const <a class="el" href="../../d0/dbc/a01704.html#a3a72d78489fbef9022c8efda0d88b90e">ParameterType</a> &amp;)</td></tr>
+<tr class="memdesc:ab7b684147bc1b188300df598b63dae54"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pass parameters to the trimmer.  <a href="../../d0/dbc/a01704.html#ab7b684147bc1b188300df598b63dae54">More...</a><br /></td></tr>
+<tr class="separator:ab7b684147bc1b188300df598b63dae54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5acc02a4bb552c42bbf692ce674d7fd5"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a5acc02a4bb552c42bbf692ce674d7fd5">parameterSpaceGrid</a> () const</td></tr>
+<tr class="memdesc:a5acc02a4bb552c42bbf692ce674d7fd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a const reference to the parameter space grid.  <a href="../../d0/dbc/a01704.html#a5acc02a4bb552c42bbf692ce674d7fd5">More...</a><br /></td></tr>
+<tr class="separator:a5acc02a4bb552c42bbf692ce674d7fd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8da08c068fe905fca5b7068059462018"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a8da08c068fe905fca5b7068059462018">parameterSpaceGrid</a> ()</td></tr>
+<tr class="memdesc:a8da08c068fe905fca5b7068059462018"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get a reference to the parameter space grid.  <a href="../../d0/dbc/a01704.html#a8da08c068fe905fca5b7068059462018">More...</a><br /></td></tr>
+<tr class="separator:a8da08c068fe905fca5b7068059462018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a839f05ebb0ac4fd46b9d2f13f4ca955a"><td class="memTemplParams" colspan="2">template&lt;class EntitySeed &gt; </td></tr>
+<tr class="memitem:a839f05ebb0ac4fd46b9d2f13f4ca955a"><td class="memTemplItemLeft" align="right" valign="top">GridFamily::Traits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; EntitySeed::codimension &gt;<a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">::Entity</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a839f05ebb0ac4fd46b9d2f13f4ca955a">entity</a> (const EntitySeed &amp;<a class="el" href="../../d0/dbc/a01704.html#aa20b4cbf5906548bf5c3b70363d321c2">seed</a>) const</td></tr>
+<tr class="separator:a839f05ebb0ac4fd46b9d2f13f4ca955a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa20b4cbf5906548bf5c3b70363d321c2"><td class="memTemplParams" colspan="2">template&lt;class <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a> &gt; </td></tr>
+<tr class="memitem:aa20b4cbf5906548bf5c3b70363d321c2"><td class="memTemplItemLeft" align="right" valign="top">GridFamily::Traits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; Entity::codimension &gt;::EntitySeed&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#aa20b4cbf5906548bf5c3b70363d321c2">seed</a> (const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a> &amp;ent) const</td></tr>
+<tr class="separator:aa20b4cbf5906548bf5c3b70363d321c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6485009e52708f04c405c8c99b46cf5a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a6485009e52708f04c405c8c99b46cf5a">globalRefine</a> (int refCount)</td></tr>
+<tr class="memdesc:a6485009e52708f04c405c8c99b46cf5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Refine the grid globally.  <a href="../../d0/dbc/a01704.html#a6485009e52708f04c405c8c99b46cf5a">More...</a><br /></td></tr>
+<tr class="separator:a6485009e52708f04c405c8c99b46cf5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a75b9047d93b2b1d6fdd7293f589ef746"><td class="memTemplParams" colspan="2">template&lt;typename EntityType &gt; </td></tr>
+<tr class="memitem:a75b9047d93b2b1d6fdd7293f589ef746"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a75b9047d93b2b1d6fdd7293f589ef746">referenceElement</a> (const EntityType &amp;<a class="el" href="../../d0/dbc/a01704.html#a839f05ebb0ac4fd46b9d2f13f4ca955a">entity</a>)</td></tr>
+<tr class="memdesc:a75b9047d93b2b1d6fdd7293f589ef746"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the reference element for a given entity.  <a href="../../d0/dbc/a01704.html#a75b9047d93b2b1d6fdd7293f589ef746">More...</a><br /></td></tr>
+<tr class="separator:a75b9047d93b2b1d6fdd7293f589ef746"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a2c2f39332c1fddb3a892f782c9ab738a"><td class="memItemLeft" align="right" valign="top">friend&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a2c2f39332c1fddb3a892f782c9ab738a">GridImp</a></td></tr>
+<tr class="separator:a2c2f39332c1fddb3a892f782c9ab738a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b830a1c22d235981ff9154addb20ec"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a85b830a1c22d235981ff9154addb20ec">grid_</a></td></tr>
+<tr class="separator:a85b830a1c22d235981ff9154addb20ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:ae982da96eabc2c0448ba1a179d24eb1c"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#ae982da96eabc2c0448ba1a179d24eb1c">isValid</a> = true</td></tr>
+<tr class="separator:ae982da96eabc2c0448ba1a179d24eb1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f42dc95942d77ba5575283b869af173"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a3f42dc95942d77ba5575283b869af173">mydimension</a> = GridImp::dimension</td></tr>
+<tr class="memdesc:a3f42dc95942d77ba5575283b869af173"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension of the patch.  <a href="../../d0/dbc/a01704.html#a3f42dc95942d77ba5575283b869af173">More...</a><br /></td></tr>
+<tr class="separator:a3f42dc95942d77ba5575283b869af173"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08dc5efc228e7c417e89ace51f4e9323"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a08dc5efc228e7c417e89ace51f4e9323">dimensionworld</a> = GridImp::dimensionworld</td></tr>
+<tr class="memdesc:a08dc5efc228e7c417e89ace51f4e9323"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dimension of the world.  <a href="../../d0/dbc/a01704.html#a08dc5efc228e7c417e89ace51f4e9323">More...</a><br /></td></tr>
+<tr class="separator:a08dc5efc228e7c417e89ace51f4e9323"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add1db9dcb2e58e932db509af1c627e25"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
+<tr class="memitem:add1db9dcb2e58e932db509af1c627e25"><td class="memTemplItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#add1db9dcb2e58e932db509af1c627e25">isLocalGeometryLinear</a> = true</td></tr>
+<tr class="memdesc:add1db9dcb2e58e932db509af1c627e25"><td class="mdescLeft">&#160;</td><td class="mdescRight">boolean for the linearity of the local geometry, for the untrimmed case this is always true  <a href="../../d0/dbc/a01704.html#add1db9dcb2e58e932db509af1c627e25">More...</a><br /></td></tr>
+<tr class="separator:add1db9dcb2e58e932db509af1c627e25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99084fdae1afa36b668cb4d0a8269cfc"><td class="memItemLeft" align="right" valign="top">static constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a99084fdae1afa36b668cb4d0a8269cfc">isAlwaysTrivial</a> = true</td></tr>
+<tr class="separator:a99084fdae1afa36b668cb4d0a8269cfc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a768516d69163d2581f9bfe150e1d2f2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a768516d69163d2581f9bfe150e1d2f2a">setIndices</a> ()</td></tr>
+<tr class="memdesc:a768516d69163d2581f9bfe150e1d2f2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">compute the grid indices and ids  <a href="../../d0/dbc/a01704.html#a768516d69163d2581f9bfe150e1d2f2a">More...</a><br /></td></tr>
+<tr class="separator:a768516d69163d2581f9bfe150e1d2f2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa49953a7cb4ef5495380476284d6177d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#aa49953a7cb4ef5495380476284d6177d">maxLevel</a> () const</td></tr>
+<tr class="memdesc:aa49953a7cb4ef5495380476284d6177d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return maximum level defined in this grid.  <a href="../../d0/dbc/a01704.html#aa49953a7cb4ef5495380476284d6177d">More...</a><br /></td></tr>
+<tr class="separator:aa49953a7cb4ef5495380476284d6177d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:a7619e9b1de537b1409fcb11c9d93a958"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::unique_ptr&lt; <a class="el" href="../../d0/dbc/a01704.html#af224b99f4b407f83886a6d07b312bfba">LevelIndexSet</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a7619e9b1de537b1409fcb11c9d93a958">levelIndexSets_</a></td></tr>
+<tr class="memdesc:a7619e9b1de537b1409fcb11c9d93a958"><td class="mdescLeft">&#160;</td><td class="mdescRight">Our set of level indices.  <a href="../../d0/dbc/a01704.html#a7619e9b1de537b1409fcb11c9d93a958">More...</a><br /></td></tr>
+<tr class="separator:a7619e9b1de537b1409fcb11c9d93a958"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac965e6f775267ec4513585983dd8130a"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/dbc/a01704.html#a9629da6fd19f5eeac579af88eb5b0b2f">LeafIndexSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#ac965e6f775267ec4513585983dd8130a">leafIndexSet_</a></td></tr>
+<tr class="separator:ac965e6f775267ec4513585983dd8130a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32998a528f136b6313c20668ccbbd256"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/dbc/a01704.html#af6e15f207246dc7483e9a589c198c47d">GlobalIdSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a32998a528f136b6313c20668ccbbd256">globalIdSet_</a></td></tr>
+<tr class="separator:a32998a528f136b6313c20668ccbbd256"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab77291773b419e82ef4463990d27b8b7"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/dbc/a01704.html#a57a098b50fe6c182556caf43a224f198">LocalIdSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#ab77291773b419e82ef4463990d27b8b7">localIdSet_</a></td></tr>
+<tr class="separator:ab77291773b419e82ef4463990d27b8b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50de1794c06965d3c7ca34c0a37735e6"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dbc/a01704.html#a50de1794c06965d3c7ca34c0a37735e6">parameterSpaceGrid_</a></td></tr>
+<tr class="memdesc:a50de1794c06965d3c7ca34c0a37735e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The parameter space grid.  <a href="../../d0/dbc/a01704.html#a50de1794c06965d3c7ca34c0a37735e6">More...</a><br /></td></tr>
+<tr class="separator:a50de1794c06965d3c7ca34c0a37735e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3fd2630081f2b954a06c9546485bb21a" name="a3fd2630081f2b954a06c9546485bb21a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3fd2630081f2b954a06c9546485bb21a">&#9670;&nbsp;</a></span>EntityImp</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, int dimworld, typename ScalarType = double&gt;<br />
+class Dune::IGANEW::IdentityTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;</div><p >Trimmer struct representing a trimmer with identity trimming (no trimming at all). </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dim</td><td>Dimension of the patch. </td></tr>
+    <tr><td class="paramname">ScalarType</td><td>Scalar type for the coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a605b76a7a17bd1183cf4e30be024972a" name="a605b76a7a17bd1183cf4e30be024972a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a605b76a7a17bd1183cf4e30be024972a">&#9670;&nbsp;</a></span>Codim</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
 <div class="memtemplate">
 template&lt;int codim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/d97/a01188.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::EntityImp =  <a class="el" href="../../d7/d5a/a01204.html">PatchGridEntity</a>&lt;codim, dim, const <a class="el" href="../../d6/d97/a01188.html#a88ffd9727851a73a5309568562ce69a8">Grid</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::Codim =  typename TrimmerTraits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt;codim&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ae8fcb6a37ecb71b7595a651bd4b6d70a" name="ae8fcb6a37ecb71b7595a651bd4b6d70a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae8fcb6a37ecb71b7595a651bd4b6d70a">&#9670;&nbsp;</a></span>EntitySeedImp</h2>
+<a id="a8941deb9227300b97f70d0e6c3b7bc0b" name="a8941deb9227300b97f70d0e6c3b7bc0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8941deb9227300b97f70d0e6c3b7bc0b">&#9670;&nbsp;</a></span>ctype</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/d97/a01188.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::EntitySeedImp =  <a class="el" href="../../dd/d40/a01636.html">PatchGridEntitySeed</a>&lt;codim, const <a class="el" href="../../d6/d97/a01188.html#a88ffd9727851a73a5309568562ce69a8">Grid</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ctype =  ScalarType</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a02c097e5662806c9400d511c27a98e8c" name="a02c097e5662806c9400d511c27a98e8c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a02c097e5662806c9400d511c27a98e8c">&#9670;&nbsp;</a></span>LocalGeometry</h2>
+<a id="a0da434b26a4e6284551e3f3253fedb85" name="a0da434b26a4e6284551e3f3253fedb85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0da434b26a4e6284551e3f3253fedb85">&#9670;&nbsp;</a></span>ElementTrimData</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ElementTrimData =  <a class="el" href="../../da/dc4/a01692.html">ElementTrimDataImpl</a>&lt;ParameterSpaceGrid::dimension, typename ParameterSpaceGrid::ctype&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Element trim data type. </p>
+
+</div>
+</div>
+<a id="a0932693eb1a7f2c7e2abdd36802dd8d8" name="a0932693eb1a7f2c7e2abdd36802dd8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0932693eb1a7f2c7e2abdd36802dd8d8">&#9670;&nbsp;</a></span>ElementTrimDataContainer</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ElementTrimDataContainer =  <a class="el" href="../../d9/d49/a01696.html">ElementTrimDataContainerImpl</a>&lt;<a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Container for element trim data. </p>
+
+</div>
+</div>
+<a id="af49d6e71c0b1f6e26e141ee732b8ba3b" name="af49d6e71c0b1f6e26e141ee732b8ba3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af49d6e71c0b1f6e26e141ee732b8ba3b">&#9670;&nbsp;</a></span>Entity</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
 <div class="memtemplate">
 template&lt;int codim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/d97/a01188.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::LocalGeometry =  typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt;codim&gt;::LocalGeometry</td>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::Entity =  typename GridFamily::Traits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt;codim&gt;::Entity</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a83d75e7a65ed39456a70f5d283cd2081" name="a83d75e7a65ed39456a70f5d283cd2081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83d75e7a65ed39456a70f5d283cd2081">&#9670;&nbsp;</a></span>LocalParameterSpaceGeometry</h2>
+<a id="a2e07d3d25feb44686fa03086697c61e7" name="a2e07d3d25feb44686fa03086697c61e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e07d3d25feb44686fa03086697c61e7">&#9670;&nbsp;</a></span>EntityContainerType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/d97/a01188.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::LocalParameterSpaceGeometry =  typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt;codim&gt;::Geometry</td>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::EntityContainerType =  Empty</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a699b6048608eee9d9c24fb95e46e2513" name="a699b6048608eee9d9c24fb95e46e2513"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a699b6048608eee9d9c24fb95e46e2513">&#9670;&nbsp;</a></span>ParameterSpaceGridEntity</h2>
+<a id="af6e15f207246dc7483e9a589c198c47d" name="af6e15f207246dc7483e9a589c198c47d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e15f207246dc7483e9a589c198c47d">&#9670;&nbsp;</a></span>GlobalIdSet</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/d97/a01188.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::ParameterSpaceGridEntity =  typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt;codim&gt;::Entity</td>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::GlobalIdSet =  typename <a class="el" href="../../d6/d97/a01188.html#a420c5214b07fa1c612be17843d9a30af">GridFamily::GlobalIdSet</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac7c5c4b482190493042510628e076e4a" name="ac7c5c4b482190493042510628e076e4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7c5c4b482190493042510628e076e4a">&#9670;&nbsp;</a></span>ParameterSpaceGridEntitySeed</h2>
+<a id="a32f67432e58083ba676b4fa51b9a58e4" name="a32f67432e58083ba676b4fa51b9a58e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f67432e58083ba676b4fa51b9a58e4">&#9670;&nbsp;</a></span>GridFamily</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d6/d97/a01188.html">Dune::IGANEW::IdentityTrim::PatchGridFamily</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::Codim&lt; codim &gt;::ParameterSpaceGridEntitySeed =  typename ParameterSpaceGrid::Traits::template <a class="el" href="../../d0/dbc/a01704.html">Codim</a>&lt;codim&gt;::EntitySeed</td>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::GridFamily =  <a class="el" href="../../d6/d97/a01188.html">PatchGridFamily</a>&lt;dim, dimworld, ScalarType&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Scalar type for the coordinates. </p>
+
+</div>
+</div>
+<a id="aadcb3d28746b3348a1a7bae3bd665a49" name="aadcb3d28746b3348a1a7bae3bd665a49"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aadcb3d28746b3348a1a7bae3bd665a49">&#9670;&nbsp;</a></span>GridImp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::GridImp =  typename GridTraits::Grid</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../de/df6/a03484_source.html">identitytrimmer/trimmer.hh</a></li>
+<a id="aaa2e015a19c657b6fe18c9da7e169056" name="aaa2e015a19c657b6fe18c9da7e169056"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2e015a19c657b6fe18c9da7e169056">&#9670;&nbsp;</a></span>GridTraits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::GridTraits =  typename <a class="el" href="../../d6/d97/a01188.html#af402ce83e19a44a2345ebf7ef6ac41e3">GridFamily::Traits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a9629da6fd19f5eeac579af88eb5b0b2f" name="a9629da6fd19f5eeac579af88eb5b0b2f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9629da6fd19f5eeac579af88eb5b0b2f">&#9670;&nbsp;</a></span>LeafIndexSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::LeafIndexSet =  typename <a class="el" href="../../d6/d97/a01188.html#af13df1b92faed7d89b2141ecb99a620d">GridFamily::LeafIndexSet</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af224b99f4b407f83886a6d07b312bfba" name="af224b99f4b407f83886a6d07b312bfba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af224b99f4b407f83886a6d07b312bfba">&#9670;&nbsp;</a></span>LevelIndexSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::LevelIndexSet =  typename <a class="el" href="../../d6/d97/a01188.html#a5a2d84ad18684727cd8bff2d51a7e852">GridFamily::LevelIndexSet</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a57a098b50fe6c182556caf43a224f198" name="a57a098b50fe6c182556caf43a224f198"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57a098b50fe6c182556caf43a224f198">&#9670;&nbsp;</a></span>LocalIdSet</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::LocalIdSet =  typename <a class="el" href="../../d6/d97/a01188.html#a9d0fd59e5d0adcbaf61fe87da640fe18">GridFamily::LocalIdSet</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abbd6aaeaa2ee928a776a39d76759222d" name="abbd6aaeaa2ee928a776a39d76759222d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbd6aaeaa2ee928a776a39d76759222d">&#9670;&nbsp;</a></span>ParameterSpaceGrid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ParameterSpaceGrid =  typename TrimmerTraits::ParameterSpaceGrid</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type of the Parametric grid. </p>
+
+</div>
+</div>
+<a id="a1a0d5307a4be2cc83035288541d0089f" name="a1a0d5307a4be2cc83035288541d0089f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a0d5307a4be2cc83035288541d0089f">&#9670;&nbsp;</a></span>ParameterSpaceLeafIterator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;int codim, PartitionIteratorType pitype&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ParameterSpaceLeafIterator =  typename ParameterSpaceGrid::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt;codim&gt;::template Partition&lt;pitype&gt;::LeafIterator</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a72d78489fbef9022c8efda0d88b90e" name="a3a72d78489fbef9022c8efda0d88b90e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a72d78489fbef9022c8efda0d88b90e">&#9670;&nbsp;</a></span>ParameterType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ParameterType =  <a class="el" href="../../d6/d53/a01688.html">Parameter</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Type for trimming parameters. </p>
+
+</div>
+</div>
+<a id="af7c4f1eb308a526b04f8ac8831277940" name="af7c4f1eb308a526b04f8ac8831277940"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7c4f1eb308a526b04f8ac8831277940">&#9670;&nbsp;</a></span>PatchTrimData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::PatchTrimData =  typename <a class="el" href="../../d6/d97/a01188.html#af74afe3091b344bc0990a2796f714ae8">GridFamily::PatchTrimData</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55cc91665d1a0bcfcfba598828c9f937" name="a55cc91665d1a0bcfcfba598828c9f937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cc91665d1a0bcfcfba598828c9f937">&#9670;&nbsp;</a></span>ReferenceElementType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;int mydim&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ReferenceElementType =  typename Dune::Geo::ReferenceElements&lt;<a class="el" href="../../d0/dbc/a01704.html#a8941deb9227300b97f70d0e6c3b7bc0b">ctype</a>, <a class="el" href="../../d0/dbc/a01704.html#a3f42dc95942d77ba5575283b869af173">mydimension</a>&gt;::ReferenceElement</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Reference element type. </p>
+
+</div>
+</div>
+<a id="af5b15d062e3a7b23ced1e571f3581518" name="af5b15d062e3a7b23ced1e571f3581518"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5b15d062e3a7b23ced1e571f3581518">&#9670;&nbsp;</a></span>TrimmerTraits</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits =  typename <a class="el" href="../../de/d5c/a01708.html">GridFamily::TrimmerTraits</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="af66957186302a13f93b0851b2111d640" name="af66957186302a13f93b0851b2111d640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af66957186302a13f93b0851b2111d640">&#9670;&nbsp;</a></span>TrimmerImpl() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default constructor for Trimmer. </p>
+
+</div>
+</div>
+<a id="a8382bdef6b9b319ec6d6abb55f29c62c" name="a8382bdef6b9b319ec6d6abb55f29c62c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8382bdef6b9b319ec6d6abb55f29c62c">&#9670;&nbsp;</a></span>TrimmerImpl() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::TrimmerImpl </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &amp;&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; typename <a class="el" href="../../d6/d97/a01188.html#af74afe3091b344bc0990a2796f714ae8">GridFamily::PatchTrimData</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>trimData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for Trimmer with patch and trim data. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dimworld</td><td>Dimension of the world. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patch</td><td>NURBS patch data. </td></tr>
+    <tr><td class="paramname">trimData</td><td>Optional patch trim data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a69cc7be3349d6c011cad17121668d475" name="a69cc7be3349d6c011cad17121668d475"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69cc7be3349d6c011cad17121668d475">&#9670;&nbsp;</a></span>createParameterSpaceGrid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::createParameterSpaceGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Create the parameter space grid based on the patch and trim data. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">dimworld</td><td>Dimension of the world. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">patchData</td><td>NURBS patch data. </td></tr>
+    <tr><td class="paramname">trimData</td><td>Optional patch trim data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a839f05ebb0ac4fd46b9d2f13f4ca955a" name="a839f05ebb0ac4fd46b9d2f13f4ca955a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a839f05ebb0ac4fd46b9d2f13f4ca955a">&#9670;&nbsp;</a></span>entity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;class EntitySeed &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GridFamily::Traits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; EntitySeed::codimension &gt;<a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">::Entity</a> <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::entity </td>
+          <td>(</td>
+          <td class="paramtype">const EntitySeed &amp;&#160;</td>
+          <td class="paramname"><em>seed</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6485009e52708f04c405c8c99b46cf5a" name="a6485009e52708f04c405c8c99b46cf5a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6485009e52708f04c405c8c99b46cf5a">&#9670;&nbsp;</a></span>globalRefine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::globalRefine </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>refCount</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Refine the grid globally. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ref</td><td>Number of refinement levels. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a388d580238a21392b5fdb11cd49ed8a1" name="a388d580238a21392b5fdb11cd49ed8a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388d580238a21392b5fdb11cd49ed8a1">&#9670;&nbsp;</a></span>ileafbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d47/a01668.html">PatchGridLeafIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ileafbegin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>First leaf intersection. </p>
+
+</div>
+</div>
+<a id="a050e868b5406e83ac3b07ae2b1ecbd4a" name="a050e868b5406e83ac3b07ae2b1ecbd4a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a050e868b5406e83ac3b07ae2b1ecbd4a">&#9670;&nbsp;</a></span>ileafend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d7/d47/a01668.html">PatchGridLeafIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ileafend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reference to one past the last leaf intersection. </p>
+
+</div>
+</div>
+<a id="aa68d73f4021e8bf35cefeaed16085add" name="aa68d73f4021e8bf35cefeaed16085add"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa68d73f4021e8bf35cefeaed16085add">&#9670;&nbsp;</a></span>ilevelbegin()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d7b/a01672.html">PatchGridLevelIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ilevelbegin </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>First level intersection. </p>
+
+</div>
+</div>
+<a id="a6b6dd8102723a562a605de4e4a6d33ed" name="a6b6dd8102723a562a605de4e4a6d33ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b6dd8102723a562a605de4e4a6d33ed">&#9670;&nbsp;</a></span>ilevelend()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/d7b/a01672.html">PatchGridLevelIntersectionIterator</a>&lt; const <a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a> &gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::ilevelend </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a>&lt; 0 &gt; &amp;&#160;</td>
+          <td class="paramname"><em>ent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reference to one past the last neighbor. </p>
+
+</div>
+</div>
+<a id="aa49953a7cb4ef5495380476284d6177d" name="aa49953a7cb4ef5495380476284d6177d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa49953a7cb4ef5495380476284d6177d">&#9670;&nbsp;</a></span>maxLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::maxLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return maximum level defined in this grid. </p>
+<p >Levels are numbered 0 ... maxlevel with 0 the coarsest level. </p>
+
+</div>
+</div>
+<a id="a4f85f65db7af712504171063bde1d86e" name="a4f85f65db7af712504171063bde1d86e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f85f65db7af712504171063bde1d86e">&#9670;&nbsp;</a></span>operator=()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dbc/a01704.html">TrimmerImpl</a> &amp; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/dbc/a01704.html">TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8da08c068fe905fca5b7068059462018" name="a8da08c068fe905fca5b7068059462018"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8da08c068fe905fca5b7068059462018">&#9670;&nbsp;</a></span>parameterSpaceGrid() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> &amp; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::parameterSpaceGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a reference to the parameter space grid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Reference to the parameter space grid. </dd></dl>
+
+</div>
+</div>
+<a id="a5acc02a4bb552c42bbf692ce674d7fd5" name="a5acc02a4bb552c42bbf692ce674d7fd5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5acc02a4bb552c42bbf692ce674d7fd5">&#9670;&nbsp;</a></span>parameterSpaceGrid() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a> &amp; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::parameterSpaceGrid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get a const reference to the parameter space grid. </p>
+<dl class="section return"><dt>Returns</dt><dd>Const reference to the parameter space grid. </dd></dl>
+
+</div>
+</div>
+<a id="a75b9047d93b2b1d6fdd7293f589ef746" name="a75b9047d93b2b1d6fdd7293f589ef746"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75b9047d93b2b1d6fdd7293f589ef746">&#9670;&nbsp;</a></span>referenceElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;typename EntityType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::referenceElement </td>
+          <td>(</td>
+          <td class="paramtype">const EntityType &amp;&#160;</td>
+          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the reference element for a given entity. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">EntityType</td><td>Type of the entity. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">entity</td><td>The entity for which the reference element is requested. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Reference element for the entity. </dd></dl>
+
+</div>
+</div>
+<a id="aa20b4cbf5906548bf5c3b70363d321c2" name="aa20b4cbf5906548bf5c3b70363d321c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa20b4cbf5906548bf5c3b70363d321c2">&#9670;&nbsp;</a></span>seed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;class <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">GridFamily::Traits::template <a class="el" href="../../d0/dbc/a01704.html#a605b76a7a17bd1183cf4e30be024972a">Codim</a>&lt; Entity::codimension &gt;::EntitySeed <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::seed </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dbc/a01704.html#af49d6e71c0b1f6e26e141ee732b8ba3b">Entity</a> &amp;&#160;</td>
+          <td class="paramname"><em>ent</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a768516d69163d2581f9bfe150e1d2f2a" name="a768516d69163d2581f9bfe150e1d2f2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a768516d69163d2581f9bfe150e1d2f2a">&#9670;&nbsp;</a></span>setIndices()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::setIndices </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>compute the grid indices and ids </p>
+
+</div>
+</div>
+<a id="ab7b684147bc1b188300df598b63dae54" name="ab7b684147bc1b188300df598b63dae54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab7b684147bc1b188300df598b63dae54">&#9670;&nbsp;</a></span>setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::setup </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d0/dbc/a01704.html#a3a72d78489fbef9022c8efda0d88b90e">ParameterType</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Pass parameters to the trimmer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">par</td><td>The parameters. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a08dc5efc228e7c417e89ace51f4e9323" name="a08dc5efc228e7c417e89ace51f4e9323"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a08dc5efc228e7c417e89ace51f4e9323">&#9670;&nbsp;</a></span>dimensionworld</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::dimensionworld = GridImp::dimensionworld</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dimension of the world. </p>
+
+</div>
+</div>
+<a id="a32998a528f136b6313c20668ccbbd256" name="a32998a528f136b6313c20668ccbbd256"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32998a528f136b6313c20668ccbbd256">&#9670;&nbsp;</a></span>globalIdSet_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d0/dbc/a01704.html#af6e15f207246dc7483e9a589c198c47d">GlobalIdSet</a>&gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::globalIdSet_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../d3/dd5/a00215.html#_todo000039">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
+
+</div>
+</div>
+<a id="a85b830a1c22d235981ff9154addb20ec" name="a85b830a1c22d235981ff9154addb20ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b830a1c22d235981ff9154addb20ec">&#9670;&nbsp;</a></span>grid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d0/dbc/a01704.html#aadcb3d28746b3348a1a7bae3bd665a49">GridImp</a>* <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::grid_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2c2f39332c1fddb3a892f782c9ab738a" name="a2c2f39332c1fddb3a892f782c9ab738a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c2f39332c1fddb3a892f782c9ab738a">&#9670;&nbsp;</a></span>GridImp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">friend <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::GridImp</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99084fdae1afa36b668cb4d0a8269cfc" name="a99084fdae1afa36b668cb4d0a8269cfc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99084fdae1afa36b668cb4d0a8269cfc">&#9670;&nbsp;</a></span>isAlwaysTrivial</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::isAlwaysTrivial = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Boolean indicating if the trimming is always trivial, no trimming or simple deletion of element. </p>
+
+</div>
+</div>
+<a id="add1db9dcb2e58e932db509af1c627e25" name="add1db9dcb2e58e932db509af1c627e25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add1db9dcb2e58e932db509af1c627e25">&#9670;&nbsp;</a></span>isLocalGeometryLinear</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<div class="memtemplate">
+template&lt;int codim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::isLocalGeometryLinear = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>boolean for the linearity of the local geometry, for the untrimmed case this is always true </p>
+
+</div>
+</div>
+<a id="ae982da96eabc2c0448ba1a179d24eb1c" name="ae982da96eabc2c0448ba1a179d24eb1c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae982da96eabc2c0448ba1a179d24eb1c">&#9670;&nbsp;</a></span>isValid</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::isValid = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac965e6f775267ec4513585983dd8130a" name="ac965e6f775267ec4513585983dd8130a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac965e6f775267ec4513585983dd8130a">&#9670;&nbsp;</a></span>leafIndexSet_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d0/dbc/a01704.html#a9629da6fd19f5eeac579af88eb5b0b2f">LeafIndexSet</a>&gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::leafIndexSet_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../d3/dd5/a00215.html#_todo000038">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
+
+</div>
+</div>
+<a id="a7619e9b1de537b1409fcb11c9d93a958" name="a7619e9b1de537b1409fcb11c9d93a958"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7619e9b1de537b1409fcb11c9d93a958">&#9670;&nbsp;</a></span>levelIndexSets_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::unique_ptr&lt;<a class="el" href="../../d0/dbc/a01704.html#af224b99f4b407f83886a6d07b312bfba">LevelIndexSet</a>&gt; &gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::levelIndexSets_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Our set of level indices. </p>
+
+</div>
+</div>
+<a id="ab77291773b419e82ef4463990d27b8b7" name="ab77291773b419e82ef4463990d27b8b7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab77291773b419e82ef4463990d27b8b7">&#9670;&nbsp;</a></span>localIdSet_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d0/dbc/a01704.html#a57a098b50fe6c182556caf43a224f198">LocalIdSet</a>&gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::localIdSet_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="todo"><dt><b><a class="el" href="../../d3/dd5/a00215.html#_todo000040">Todo:</a></b></dt><dd>Please doc me ! </dd></dl>
+
+</div>
+</div>
+<a id="a3f42dc95942d77ba5575283b869af173" name="a3f42dc95942d77ba5575283b869af173"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f42dc95942d77ba5575283b869af173">&#9670;&nbsp;</a></span>mydimension</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr int <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::mydimension = GridImp::dimension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Dimension of the patch. </p>
+
+</div>
+</div>
+<a id="a50de1794c06965d3c7ca34c0a37735e6" name="a50de1794c06965d3c7ca34c0a37735e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50de1794c06965d3c7ca34c0a37735e6">&#9670;&nbsp;</a></span>parameterSpaceGrid_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="../../d0/dbc/a01704.html#abbd6aaeaa2ee928a776a39d76759222d">ParameterSpaceGrid</a>&gt; <a class="el" href="../../d0/dbc/a01704.html">Dune::IGANEW::IdentityTrim::TrimmerImpl</a>&lt; dim, dimworld, ScalarType &gt;::parameterSpaceGrid_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The parameter space grid. </p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d8/d3d/a03492_source.html">identitytrimmer/trimmer.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dd/df3/a00219.html">Dune</a></li><li class="navelem"><a class="el" href="../../d5/d0b/a00220.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../de/dc2/a00228.html">IdentityTrim</a></li><li class="navelem"><a class="el" href="../../d6/d97/a01188.html">PatchGridFamily</a></li><li class="navelem"><a class="el" href="../../d4/d26/a01700.html">TrimmerTraits</a></li><li class="navelem"><a class="el" href="../../d0/dbc/a01704.html">Codim</a></li>
+    <li class="navelem"><a class="el" href="../../dd/df3/a00219.html">Dune</a></li><li class="navelem"><a class="el" href="../../d5/d0b/a00220.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../de/dc2/a00228.html">IdentityTrim</a></li><li class="navelem"><a class="el" href="../../d0/dbc/a01704.html">TrimmerImpl</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

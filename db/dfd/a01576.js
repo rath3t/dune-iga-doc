@@ -1,10 +1,17 @@
 var a01576 =
 [
-    [ "Empty", "da/dd5/a01580.html", null ],
-    [ "stemsFromTrim", "db/dfd/a01576.html#a47d8fb178a6adf5774ca83a29b241253", null ],
-    [ "codimension", "db/dfd/a01576.html#ad21337e8c70b3fe0c8951cba5c6c8722", null ],
-    [ "id", "db/dfd/a01576.html#a6e831446cb992b818a7178b5f44f1dea", null ],
-    [ "indexInLvlStorage", "db/dfd/a01576.html#a8632b962eb272ced708b1ca3d40df35e", null ],
-    [ "lvl", "db/dfd/a01576.html#a5c4c7c90da40c8982e201b2d4a035d40", null ],
-    [ "stemFromTrim", "db/dfd/a01576.html#aed0f83c3150c800859d8121b3effc566", null ]
+    [ "EntityIdType", "db/dfd/a01576.html#afe481c5254837097517abb2fabb40f30", [
+      [ "host", "db/dfd/a01576.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e", null ],
+      [ "newId", "db/dfd/a01576.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0", null ]
+    ] ],
+    [ "HostOrTrimmed", "db/dfd/a01576.html#af37d7e0ce257bc811e6d6002335f512f", [
+      [ "host", "db/dfd/a01576.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e", null ],
+      [ "trimmed", "db/dfd/a01576.html#af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ],
+    [ "operator==", "db/dfd/a01576.html#ad912e12f00f0b50c966995051948a86d", null ],
+    [ "operator<<", "db/dfd/a01576.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
+    [ "operator<<", "db/dfd/a01576.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
+    [ "entityIdType", "db/dfd/a01576.html#a3a5f12dff1e201f674486abc8e668d21", null ],
+    [ "host_or_trimmed", "db/dfd/a01576.html#aa5749045920a10fbf4aaae21c7814e99", null ],
+    [ "id", "db/dfd/a01576.html#a6483db5ee79f980bc83e175d9ea1ca34", null ]
 ];

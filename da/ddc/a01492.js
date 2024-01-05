@@ -1,10 +1,12 @@
 var a01492 =
 [
-    [ "Entity", "da/ddc/a01492.html#ab1434eb357ae98abe03b0f16bda173a9", null ],
-    [ "PatchGridHierarchicIterator", "da/ddc/a01492.html#a1970a7e2b41e5049991bb9357f4dbfb6", null ],
-    [ "PatchGridHierarchicIterator", "da/ddc/a01492.html#af5f2e7c0e22cf47906a89b3c63746312", null ],
-    [ "dereference", "da/ddc/a01492.html#afceecc29e2e8c1515f1a2308112b2bb5", null ],
-    [ "equals", "da/ddc/a01492.html#a6235b8d2e05c1dda477d2805bd35695a", null ],
-    [ "increment", "da/ddc/a01492.html#aae09d95697c67a7f760a2b82a5f5c98d", null ],
-    [ "codimension", "da/ddc/a01492.html#a7ce99544410c8442ac40c4815e73460d", null ]
+    [ "IdType", "da/ddc/a01492.html#a4f8f69845b2003ef02276c7ba247c748", null ],
+    [ "PatchGridGlobalIdSet", "da/ddc/a01492.html#ab1ef671198844aaf6a9f87626fb67efb", null ],
+    [ "PatchGridGlobalIdSet", "da/ddc/a01492.html#a46ef04491be5831dfa0c56ffa3fa0a71", null ],
+    [ "id", "da/ddc/a01492.html#a89eac4aca5be59f3574e5cf16adf8b4f", null ],
+    [ "newFreeIndex", "da/ddc/a01492.html#aef72795731dbdd9cf208dd376a476276", null ],
+    [ "subId", "da/ddc/a01492.html#a82f66af20a0238348b8b093898791d4b", null ],
+    [ "update", "da/ddc/a01492.html#afab15d4f4e30c82632f35874f3ff75ff", null ],
+    [ "grid_", "da/ddc/a01492.html#a166f0403b0d6fa2c1ea7b2d3e5f8a567", null ],
+    [ "nextFreeIndex_", "da/ddc/a01492.html#ae4ba4ab2706240c6ef002c9373c9a51f", null ]
 ];

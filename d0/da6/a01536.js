@@ -1,8 +1,12 @@
 var a01536 =
 [
-    [ "BoundaryLoop", "d3/d4c/a01540.html", "d3/d4c/a01540" ],
-    [ "TrimmingCurve", "d0/da6/a01536.html#a8e43129977838c5c14b41d2792c94c4d", null ],
-    [ "addLoop", "d0/da6/a01536.html#adedfd6e8bb8ce1ce160de1fe00cf3a2c", null ],
-    [ "insertTrimCurve", "d0/da6/a01536.html#a8cc8578eec99ceaac36fe21f1cc04176", null ],
-    [ "loops", "d0/da6/a01536.html#a494abc3622f9c8a5e06b275828241308", null ]
+    [ "Entity", "d0/da6/a01536.html#adc68d926f24120510f809ec00aa65778", null ],
+    [ "GlobalIdSetId", "d0/da6/a01536.html#a8899dd1569bc3e313e225fa18acf2129", null ],
+    [ "PatchGridLeafIterator", "d0/da6/a01536.html#acccb8cf331993d407ea5fbbe2d7064cd", null ],
+    [ "PatchGridLeafIterator", "d0/da6/a01536.html#a17e064882955bab651d1666d78243292", null ],
+    [ "PatchGridLeafIterator", "d0/da6/a01536.html#a6bfc75857e7cd3daf9d23c1164aad6a8", null ],
+    [ "dereference", "d0/da6/a01536.html#a014c96f4304507c98ede758e251f645a", null ],
+    [ "equals", "d0/da6/a01536.html#a872d53c5081f5dba4145483d58d1c952", null ],
+    [ "increment", "d0/da6/a01536.html#a8102990bb45afad31b7d7a7240811be9", null ],
+    [ "codimension", "d0/da6/a01536.html#a78f5497d3d6cbf380dc90d2aaad19009", null ]
 ];
