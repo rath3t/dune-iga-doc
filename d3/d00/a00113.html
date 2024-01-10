@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: entityvariant.hh File Reference</title>
+<title>dune-iga: bsplinealgorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,49 +95,53 @@ $(document).ready(function(){initNavTree('d3/d00/a00113.html','../../'); initRes
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">entityvariant.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">bsplinealgorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The GridEntityVariant class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;variant&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d3/d52/a00023_source.html">dune/iga/hierarchicpatch/patchgridfwd.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;concepts&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
 </div>
 <p><a href="../../d3/d00/a00113_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d14/a01640.html">Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant&lt; codim_, TrimmerType_, HostImplementation, TrimmedImplementation &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of entities in a <a class="el" href="../../dc/dcc/a01200.html" title="Provides a NURBS grid based on a single NURBS patch.">PatchGrid</a>.  <a href="../../de/d14/a01640.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d3b/a01459.html">Dune::IGANEW::Splines::BsplineBasis&lt; ScalarType_ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One dimensional b-spline basis.  <a href="../../d6/d3b/a01459.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:dd/df3/a00219"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/df3/a00219.html">Dune</a></td></tr>
+<tr class="memitem:d0/d24/a00222"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d24/a00222.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d5/d0b/a00220"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d0b/a00220.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:dc/d28/a00223"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d28/a00223.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d0/d27/a00239"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html">Dune::IGANEW::Trim</a></td></tr>
+<tr class="memitem:da/d2e/a00238"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html">Dune::IGANEW::Splines</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a58f6695142a18937094849b86976642b"><td class="memTemplParams" colspan="2">template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename TrimmerType, template&lt; int, int, class &gt; class GridEntityVariant&gt; </td></tr>
-<tr class="memitem:a58f6695142a18937094849b86976642b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html#a58f6695142a18937094849b86976642b">Dune::IGANEW::Trim::referenceElement</a> (const GridEntityVariant&lt; cd, dim, const PatchGrid&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt; &amp;entity)</td></tr>
-<tr class="separator:a58f6695142a18937094849b86976642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4fb1b5f05f2968b3d281bd6c070b611"><td class="memTemplParams" colspan="2">template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename TrimmerType, template&lt; int, int, class &gt; class GridEntityVariant&gt; </td></tr>
-<tr class="memitem:ae4fb1b5f05f2968b3d281bd6c070b611"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html#ae4fb1b5f05f2968b3d281bd6c070b611">Dune::IGANEW::Trim::referenceElement</a> (const Entity&lt; cd, dim, const PatchGrid&lt; dim, dimworld, TrimmerType, ScalarType &gt;, GridEntityVariant &gt; &amp;entity)</td></tr>
-<tr class="separator:ae4fb1b5f05f2968b3d281bd6c070b611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html#a3f4a0936ded82e5421a36f9f4c0c114b">Dune::IGANEW::Splines::findSpan</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)</td></tr>
+<tr class="memdesc:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u.  <a href="../../da/d2e/a00238.html#a3f4a0936ded82e5421a36f9f4c0c114b">More...</a><br /></td></tr>
+<tr class="separator:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
+requires (dim2 == dim)</td></tr>
+<tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html#a67facdaecd7f3c339ece70971f8a8f92">Dune::IGANEW::Splines::findSpan</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
+<tr class="memdesc:a67facdaecd7f3c339ece70971f8a8f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as findSpan but for dim knotvectors.  <a href="../../da/d2e/a00238.html#a67facdaecd7f3c339ece70971f8a8f92">More...</a><br /></td></tr>
+<tr class="separator:a67facdaecd7f3c339ece70971f8a8f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
+<tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html#a1d7349b1373b5c83a5a5be7377985ae0">Dune::IGANEW::Splines::createUniqueKnotSpans</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans)</td></tr>
+<tr class="separator:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The GridEntityVariant class. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../d3/d00/a00113.html">entityvariant.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_479b904809ee7734e338128330b60cdb.html">splines</a></li><li class="navelem"><a class="el" href="../../d3/d00/a00113.html">bsplinealgorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

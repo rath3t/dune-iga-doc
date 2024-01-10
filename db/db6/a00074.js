@@ -1,6 +1,6 @@
 var a00074 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d9/db3/a01064.html", "d9/db3/a01064" ],
+    [ "Dune::IGANEW::ControlPoint< VT >", "d2/d49/a01067.html", "d2/d49/a01067" ],
     [ "operator*", "db/db6/a00074.html#a3f232585a065fb77fc7443359eda7b95", null ],
     [ "operator*", "db/db6/a00074.html#aab23834de62fd10b103b27e062dccfbd", null ],
     [ "operator+", "db/db6/a00074.html#a33477ec847c0f90f5090046a585d3488", null ],

@@ -1,8 +1,10 @@
 var a03495 =
 [
-    [ "iga.basis.Nurbs", "d9/d0d/a01748.html", "d9/d0d/a01748" ],
-    [ "defaultGlobalBasis", "dd/d6c/a03495.html#abe7102c803053539b7417e439b0f122f", null ],
-    [ "indexMergingStrategy", "dd/d6c/a03495.html#a1116006b529ec79e4a35a97a8614bd5e", null ],
-    [ "preBasisTypeName", "dd/d6c/a03495.html#a6b046881676017b1a2068df515deb99f", null ],
-    [ "duneFunctionsLayouts", "dd/d6c/a03495.html#a7567a58831582a87fbcc011042771efa", null ]
+    [ "Dune::IGANEW::IdentityTrim::Parameter", "d0/d54/a01691.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataImpl< mydim_, ScalarType >", "dc/dc8/a01695.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "d9/df7/a01699.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::PatchTrimDataImpl< dim, ScalarType >", "df/d12/a01703.html", null ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d1/d0d/a01191.html", "d1/d0d/a01191" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d8/df7/a01711.html", "d8/df7/a01711" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "df/d9a/a01715.html", "df/d9a/a01715" ]
 ];

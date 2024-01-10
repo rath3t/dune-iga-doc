@@ -1,4 +1,4 @@
 var a00098 =
 [
-    [ "closestPointProjectionByTrustRegion", "d1/d44/a00098.html#a5a86887937350922b04eaf5967ac33b9", null ]
+    [ "sliceCurve", "d1/d44/a00098.html#a357b3e400d2b8b28d4a377002c535783", null ]
 ];

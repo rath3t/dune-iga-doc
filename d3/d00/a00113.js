@@ -1,6 +1,7 @@
 var a00113 =
 [
-    [ "Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant< codim_, TrimmerType_, HostImplementation, TrimmedImplementation >", "de/d14/a01640.html", "de/d14/a01640" ],
-    [ "referenceElement", "d3/d00/a00113.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
-    [ "referenceElement", "d3/d00/a00113.html#a58f6695142a18937094849b86976642b", null ]
+    [ "Dune::IGANEW::Splines::BsplineBasis< ScalarType_ >", "d6/d3b/a01459.html", "d6/d3b/a01459" ],
+    [ "createUniqueKnotSpans", "d3/d00/a00113.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "findSpan", "d3/d00/a00113.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "d3/d00/a00113.html#a67facdaecd7f3c339ece70971f8a8f92", null ]
 ];
