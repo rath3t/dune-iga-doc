@@ -106,14 +106,14 @@ $(document).ready(function(){initNavTree('d5/df9/a00044_source.html','../../'); 
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>View&gt;</div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d0/d9b/a01379.html">   12</a></span>  <span class="keyword">class </span><a class="code hl_class" href="../../d0/d9b/a01379.html">IGARefinedGeometries</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d0/d9b/a01379.html#a30471b9626e57db233cde8e609ea2b29">   14</a></span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../d0/d9b/a01379.html#a30471b9626e57db233cde8e609ea2b29">dim</a> = GridView::dimension;</div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
 <div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d0/d9b/a01379.html#ae0f1b0280a151f71808caddeb0db81b5">   16</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../d0/d9b/a01379.html#ae0f1b0280a151f71808caddeb0db81b5">Element</a> = MultiLinearGeometry&lt;double, dim, dim&gt;;</div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="../../d0/d9b/a01379.html#a458043700435144746a87ae7c201e4a5">   17</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../d0/d9b/a01379.html#a458043700435144746a87ae7c201e4a5">Point</a>   = Dune::FieldVector&lt;double, dim&gt;;</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="../../d0/d9b/a01379.html#a97f546935cd4cf34b919527ec5247bbf">   18</a></span>    <span class="keyword">using </span><a class="code hl_typedef" href="../../d0/d9b/a01379.html#a97f546935cd4cf34b919527ec5247bbf">Index</a>   = std::uint64_t;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">struct </span>ElementData {</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>      std::vector&lt;Element&gt; elements;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      std::vector&lt;Point&gt; vertices;</div>
@@ -123,7 +123,7 @@ $(document).ready(function(){initNavTree('d5/df9/a00044_source.html','../../'); 
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    std::unordered_map&lt;Index, ElementData&gt; trimmedElementData_;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    ElementData cubeData{};</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>   <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">public</span>:</div>
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d0/d9b/a01379.html#a35832a135806de1935c201fb8d07a52a">   31</a></span>    <a class="code hl_function" href="../../d0/d9b/a01379.html#a35832a135806de1935c201fb8d07a52a">IGARefinedGeometries</a>(<span class="keyword">const</span> GridView&amp; gridView, <span class="keyword">const</span> <span class="keywordtype">int</span> subSampleFull, <span class="keyword">const</span> <span class="keywordtype">int</span> subSampleTrimmed) {</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      assert(subSampleFull &gt;= 0 and subSampleTrimmed &gt;= 0 &amp;&amp; <span class="stringliteral">&quot;subSamples have to be zero or positive&quot;</span>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
@@ -192,7 +192,7 @@ $(document).ready(function(){initNavTree('d5/df9/a00044_source.html','../../'); 
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keywordflow">return</span> GeometryTypes::cube(<a class="code hl_variable" href="../../d0/d9b/a01379.html#a30471b9626e57db233cde8e609ea2b29">dim</a>);</div>
 <div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    }</div>
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>   <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordtype">void</span> createCubeRefinement(<span class="keyword">const</span> <span class="keywordtype">int</span> subSample) {</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      Dune::RefinementIntervals tag{subSample + 1};</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      Dune::VirtualRefinement&lt;dim, double&gt;&amp; refinement</div>
