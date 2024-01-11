@@ -241,10 +241,13 @@ Functions</h2></td></tr>
 <tr class="memitem:a14501a764d945ffb9fd15254ab7da335"><td class="memTemplParams" colspan="2">template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamily, template&lt; int, int, class &gt; class PatchGridEntity&gt; </td></tr>
 <tr class="memitem:a14501a764d945ffb9fd15254ab7da335"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#a14501a764d945ffb9fd15254ab7da335">referenceElement</a> (const Entity&lt; cd, dim, const <a class="el" href="../../dc/db6/a01212.html">PatchGrid</a>&lt; dim, dimworld, GridFamily, ScalarType &gt;, <a class="el" href="../../d8/df3/a01216.html">PatchGridEntity</a> &gt; &amp;entity)</td></tr>
 <tr class="separator:a14501a764d945ffb9fd15254ab7da335"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98a9abffb5b3f36b7428f27ba9ec4292"><td class="memTemplParams" colspan="2">template&lt;int dimworld, typename InputStringType &gt; <br />
-requires ( std::convertible_to&lt; std::string, InputStringType&gt; or std::convertible_to&lt;InputStringType, const char*&gt;)</td></tr>
-<tr class="memitem:a98a9abffb5b3f36b7428f27ba9ec4292"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#a98a9abffb5b3f36b7428f27ba9ec4292">readJson</a> (InputStringType &amp;ibraInputFile)</td></tr>
-<tr class="separator:a98a9abffb5b3f36b7428f27ba9ec4292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abe48967cf956f798eea3f80cc1edc59e"><td class="memTemplParams" colspan="2">template&lt;int dimworld, typename InputStringType &gt; <br />
+requires ( not std::convertible_to&lt; std::string, InputStringType&gt; and not std::convertible_to&lt;InputStringType, const char*&gt;)</td></tr>
+<tr class="memitem:abe48967cf956f798eea3f80cc1edc59e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#abe48967cf956f798eea3f80cc1edc59e">readJson</a> (InputStringType &amp;ibraInputFile)</td></tr>
+<tr class="separator:abe48967cf956f798eea3f80cc1edc59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b6cf582685f1241781602bb2a0e735"><td class="memTemplParams" colspan="2">template&lt;int dimworld&gt; </td></tr>
+<tr class="memitem:a54b6cf582685f1241781602bb2a0e735"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#a54b6cf582685f1241781602bb2a0e735">readJson</a> (const std::string &amp;fileName)</td></tr>
+<tr class="separator:a54b6cf582685f1241781602bb2a0e735"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, std::size_t dimworld_, typename ScalarType  = double&gt; </td></tr>
 <tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#aee4d8d984f5b9053709e25ff2c1a6265">NURBSPatchData</a> (const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;knotSpansI, const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim, <a class="el" href="../../d6/d80/a01076.html">ControlPoint</a>&lt; FieldVector&lt; ScalarType, dimworld_ &gt; &gt; &gt; &amp;controlPointsI, const std::array&lt; int, dim &gt; &amp;degreeInput) -&gt; <a class="el" href="../../d1/d38/a01480.html">NURBSPatchData</a>&lt; dim, dimworld_, ScalarType &gt;</td></tr>
 <tr class="memdesc:aee4d8d984f5b9053709e25ff2c1a6265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for creating <a class="el" href="../../d1/d38/a01480.html" title="Struct that holds all data regarding the NURBS geometric structure.">NURBSPatchData</a> instances without explicitly specifying template arguments.  <a href="../../d0/d53/a00232.html#aee4d8d984f5b9053709e25ff2c1a6265">More...</a><br /></td></tr>
@@ -1239,14 +1242,34 @@ template&lt;Concept::Vector VectorType&gt; </div>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="a98a9abffb5b3f36b7428f27ba9ec4292" name="a98a9abffb5b3f36b7428f27ba9ec4292"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98a9abffb5b3f36b7428f27ba9ec4292">&#9670;&nbsp;</a></span>readJson()</h2>
+<a id="a54b6cf582685f1241781602bb2a0e735" name="a54b6cf582685f1241781602bb2a0e735"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54b6cf582685f1241781602bb2a0e735">&#9670;&nbsp;</a></span>readJson() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dimworld&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::readJson </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abe48967cf956f798eea3f80cc1edc59e" name="abe48967cf956f798eea3f80cc1edc59e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abe48967cf956f798eea3f80cc1edc59e">&#9670;&nbsp;</a></span>readJson() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int dimworld, typename InputStringType &gt; <br />
-requires ( std::convertible_to&lt; std::string, InputStringType&gt; or std::convertible_to&lt;InputStringType, const char*&gt;)</div>
+requires ( not std::convertible_to&lt; std::string, InputStringType&gt; and not std::convertible_to&lt;InputStringType, const char*&gt;)</div>
       <table class="memname">
         <tr>
           <td class="memname">auto Dune::IGANEW::readJson </td>
