@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: createlevel.hh Source File</title>
+<title>dune-iga: trimelement.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,303 +91,165 @@ $(document).ready(function(){initNavTree('d7/d3f/a00173_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">createlevel.hh</div></div>
+  <div class="headertitle"><div class="title">trimelement.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d7/d3f/a00173.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The Ikarus Developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d9/d21/a00240.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/d21/a00240.html">Dune::IGANEW::DefaultTrim</a> {</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="../../d3/d79/a01611.html#a6fdc5326acf825bb1e88125facf4dc3e">    7</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d79/a01611.html#a6fdc5326acf825bb1e88125facf4dc3e">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::createLevel</a>(<a class="code hl_typedef" href="../../d3/d79/a01611.html#a108c1329e0bbf7337c34ebbc8aa1474f">GridImp</a>&amp; grid, <span class="keywordtype">int</span> lvl) {</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>    <span class="keyword">using </span><a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a>                 = <span class="keyword">typename</span> GridImp::Traits::GlobalIdSet::IdType;</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <span class="keyword">using </span>EdgeHostType           = <span class="keyword">typename</span> UntrimmedParameterSpaceGrid::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;1&gt;::Entity</a>;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    <span class="keyword">using </span>EdgeGridType           = <span class="keyword">typename</span> GridImp::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;1&gt;::Entity</a>;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keyword">using </span>EleGridType            = <span class="keyword">typename</span> GridImp::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;0&gt;::Entity</a>;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">using </span>EdgeParameterSpaceType = <span class="keyword">typename</span> TrimmerTraits::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;1&gt;::ParameterSpaceGridEntity</a>;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">using </span>EleParameterSpaceType  = <span class="keyword">typename</span> TrimmerTraits::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;2&gt;::ParameterSpaceGridEntity</a>;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    entityContainer_.push_back();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span>&amp; entityContainer           = entityContainer_;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">auto</span>&amp; globalIdSet               = grid.globalIdSet_;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span> gv                         = parameterSpaceGrid_-&gt;levelGridView(lvl);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span>&amp; globalIdSetParameterSpace = parameterSpaceGrid_-&gt;globalIdSet();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : elements(gv)) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <span class="comment">// auto trimedEdges= trimCubeReferenceElement(ele,clipCurve);</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      <span class="comment">// std::cout&lt;&lt;&quot;T&quot;&lt;&lt;trimedEdges.size()&lt;&lt;std::endl;</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="comment">// for(auto v: trimedEdges)</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="comment">//   std::cout&lt;&lt;v&lt;&lt;std::endl;</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Element&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="comment">// auto elementId = globalIdSet-&gt;getStableIndex();</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> elementId = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#aa5749045920a10fbf4aaae21c7814e99">host_or_trimmed</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">IdType::HostOrTrimmed::host</a>, .id = globalIdSetParameterSpace.id(ele)};</div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;clipper2/clipper.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="../../d1/dc1/a00092.html">dune/iga/geometrykernel/findintersection.hh</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="../../d1/d44/a00098.html">dune/iga/geometrykernel/slicecurve.hh</a>&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="../../dc/dfe/a00125.html">dune/iga/trimmer/defaulttrimmer/elementtrimdata.hh</a>&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/d76/a00134.html">dune/iga/trimmer/defaulttrimmer/trimmingutils/clipelementrectangle.hh</a>&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;<a class="code" href="../../d7/d06/a00131.html">dune/iga/trimmer/defaulttrimmer/trimmingutils/trimutils.hh</a>&gt;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d9a/a00246.html">Dune::IGANEW::DefaultTrim</a> {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d6/d6d/a01617.html#aefa0e5fe66d9fa37080e1f1542970419">   15</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d6/d6d/a01617.html#aefa0e5fe66d9fa37080e1f1542970419">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::trimElement</a>(</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keyword">const</span> <span class="keyword">typename</span> GridFamily::TrimmerTraits::template <a class="code hl_typedef" href="../../d6/d6d/a01617.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;0&gt;::UnTrimmedHostParameterSpaceGridEntity</a>&amp; element,</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d6/d6d/a01617.html#a64be0e65208a31037a4e33b93d0a2ec4">PatchTrimData</a>&amp; patchTrimData) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;START &quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span> geo = element.geometry();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    std::array&lt;FieldVector&lt;double, 2&gt;, 4&gt; corners;  <span class="comment">// see dune book page 127 Figure 5.12</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    corners[0] = geo.corner(0);</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    corners[1] = geo.corner(1);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    corners[2] = geo.corner(3);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    corners[3] = geo.corner(2);</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">auto</span> [flag, result] = <a class="code hl_function" href="../../d0/d1f/a00247.html#a4f65cad383549769cbe786b60c31e479">Util::clipElementRectangle</a>(element, patchTrimData);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="comment">// Create ElementTrimData with exact intersection Points and a geometry representation of the element edges</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_struct" href="../../d1/de4/a01481.html">ElementTrimData</a> elementTrimData(flag);</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="keyword">auto</span>&amp; elementEdgeIndices   = entityContainer.globalEdgesIdOfElementsMap_[elementId];</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keyword">auto</span>&amp; elementVertexIndices = entityContainer.globalVerticesIdOfElementsMap[elementId];</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      std::set&lt;IdType&gt; elementVertexSet;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      elementVertexSet.clear();</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; intersection : intersections(gv, ele)) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        <span class="keyword">auto</span> localEdgeIndex = intersection.indexInInside();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Edge &quot;</span> &lt;&lt; localEdgeIndex &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        <span class="keyword">auto</span> edge    = intersection.inside().template subEntity&lt;1&gt;(localEdgeIndex);</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keyword">auto</span> vertex0 = intersection.inside().template subEntity&lt;2&gt;(0);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        <span class="keyword">auto</span> vertex1 = intersection.inside().template subEntity&lt;2&gt;(1);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keyword">auto</span> refEle  = Dune::ReferenceElements&lt;ctype, mydimension&gt;::cube();</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">if</span> (<span class="keyword">true</span> <span class="comment">/* untrimmed */</span>) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>          <span class="keyword">auto</span> eleParameterSpace = EleParameterSpaceType(&amp;grid, ele, elementId);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>          <span class="comment">// auto realEntity = typename EleGridType::Implementation(&amp;grid,eleParameterSpace);</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>          entityContainer.globalElementMap.insert({elementId, eleParameterSpace});</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>          <span class="keyword">auto</span> edgeId = globalIdSetParameterSpace.subId(ele, localEdgeIndex, 1);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>          <span class="comment">// IndexType id =globalIdSet-&gt;g(edgeId);</span></div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>          <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> <span class="keywordtype">id</span> = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#aa5749045920a10fbf4aaae21c7814e99">host_or_trimmed</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">IdType::HostOrTrimmed::host</a>, .id = edgeId};</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>          elementEdgeIndices.push_back(<span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>          <span class="keyword">auto</span> localVertexid0 = refEle.subEntity(localEdgeIndex, 1, 0, 2);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>          <span class="keyword">auto</span> localVertexid1 = refEle.subEntity(localEdgeIndex, 1, 1, 2);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>          <span class="keyword">auto</span> vertexId0      = globalIdSetParameterSpace.subId(ele, localVertexid0, 2);</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="keyword">auto</span> vertexId1      = globalIdSetParameterSpace.subId(ele, localVertexid1, 2);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> idVert0 = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#aa5749045920a10fbf4aaae21c7814e99">host_or_trimmed</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">IdType::HostOrTrimmed::host</a>, .id = vertexId0};</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>          <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> idVert1 = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#aa5749045920a10fbf4aaae21c7814e99">host_or_trimmed</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">IdType::HostOrTrimmed::host</a>, .id = vertexId1};</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>          elementVertexSet.insert(idVert0);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>          elementVertexSet.insert(idVert1);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          <span class="comment">// globalEdgeMap.insert({id,Edge(edge)});</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>          <span class="keyword">auto</span> paraEnt = EdgeParameterSpaceType(&amp;grid, edge, <span class="keywordtype">id</span>);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>          <span class="comment">// auto realEdge = typename EdgeGridType::Implementation(&amp;grid,paraEnt);</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>          entityContainer.globalEdgeMap.insert({id, paraEnt});</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        } <span class="keywordflow">else</span> <span class="comment">/* trimmed */</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>          <span class="keywordflow">if</span> (<span class="keyword">true</span> <span class="comment">/* edge is trimmed but has a rest on the original intersection*/</span>)</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>          <span class="comment">// if edge is trimmed but contains a part of the original intersection,</span></div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>          <span class="comment">//  then this part of the edge that belongs to the original intersection will be inserted using the id of the</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>          <span class="comment">//  host the rest of the edge will be created using a new index</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <span class="comment">// auto edgeId = globalIdSet.subId(ele,localEdgeIndex,1);</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="comment">// IndexType id =getStableIndex(edgeId);</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>            <span class="comment">// elementEdgeIndices.push_back(id);</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>            <span class="comment">// globalEdgeMap.insert({id,&quot;Part of trimmed edge is part of untrimmed edge&quot; +</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>            <span class="comment">// std::to_string(id.id.touint())}); IndexType id2 = getStableIndex(myTrimmedEdgeIndex);</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>            <span class="comment">// globalEdgeMap.insert({id2,&quot;Part of Trimmed edge with ID, that is not completely new but this part</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            <span class="comment">// is&quot;+std::to_string(myTrimmedEdgeIndex.id.touint())}); elementEdgeIndices.push_back(id);</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>            <span class="comment">//</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>            <span class="comment">// ++myTrimmedEdgeIndex.id;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">if</span> (flag != <a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) <span class="keywordflow">return</span> elementTrimData;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">/*</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="comment">     * Visitors to get  vertex properties</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="comment">     */</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">auto</span> nextEntity  = [&amp;](<span class="keyword">const</span> <span class="keywordtype">int</span> i) { <span class="keywordflow">return</span> (i + 1) % result.vertices_.size(); };</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">auto</span> isNewVertex = [](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vV) { <span class="keywordflow">return</span> std::holds_alternative&lt;Util::ClippingResult::NewVertex&gt;(vV); };</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">auto</span> getPt       = [](<span class="keyword">auto</span>&amp;&amp; vV) { <span class="keywordflow">return</span> vV.pt; };</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">auto</span> getHostIdx  = [](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vV) { <span class="keywordflow">return</span> std::get&lt;Util::ClippingResult::HostVertex&gt;(vV).hostIdx; };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">auto</span> getEdgeIdx  = [](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vV) { <span class="keywordflow">return</span> std::get&lt;Util::ClippingResult::NewVertex&gt;(vV).onEdgeIdx; };</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">auto</span> getTrimmingCurveZ</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        = [](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vV) { <span class="keywordflow">return</span> std::get&lt;Util::ClippingResult::NewVertex&gt;(vV).trimmingCurveZ; };</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">auto</span> getTrimmingCurveIdx</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        = [&amp;](<span class="keyword">auto</span>&amp; vV) -&gt; <span class="keywordtype">size_t</span> { <span class="keywordflow">return</span> <span class="keyword">static_cast&lt;</span><span class="keywordtype">size_t</span><span class="keyword">&gt;</span>(std::floor((getTrimmingCurveZ(vV) / 100) - 1)); };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">auto</span> createTrimmingCurveSlice = [&amp;](<span class="keyword">auto</span>&amp; curveIdx, <span class="keywordtype">double</span> t1, <span class="keywordtype">double</span> t2) -&gt; <a class="code hl_typedef" href="../../d6/d6d/a01617.html#a67b55fba29742df49ba63e5f24c7c233">TrimmingCurve</a> {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../dd/d2d/a00229.html#a357b3e400d2b8b28d4a377002c535783">sliceCurve</a>(patchTrimData.loops().front().curves()[curveIdx], {t1, t2});</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    };</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="comment">// Here the actual code is starting</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="comment"></span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// State</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::vector&lt;FieldVector&lt;ScalarType, dim&gt;&gt; foundVertices;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">bool</span> isOnNewEdge       = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">size_t</span> currentCurveIdx = std::numeric_limits&lt;size_t&gt;::infinity();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordtype">double</span> currentT        = std::numeric_limits&lt;double&gt;::infinity();</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> i : std::views::iota(0u, result.vertices_.size())) {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keyword">auto</span> vV1 = result.vertices_[i];</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keyword">auto</span> vV2 = result.vertices_[nextEntity(i)];</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keyword">auto</span> pt1 = std::visit(getPt, vV1);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">auto</span> pt2 = std::visit(getPt, vV2);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="comment">// First case edge is completly untrimmed</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">if</span> (!isNewVertex(vV1) and !isNewVertex(vV2)) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        elementTrimData.<a class="code hl_function" href="../../d1/de4/a01481.html#a7f59a4e26e81eba442b0d4b951e2f597">addEdge</a>(<a class="code hl_function" href="../../d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128">Util::giveEdgeIdx</a>(getHostIdx(vV1), getHostIdx(vV2)));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        foundVertices.push_back({pt2.x, pt2.y});</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      <span class="comment">// Second case edge begins on a hostVertes and ends on a newVertex</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordflow">if</span> (!isNewVertex(vV1) and isNewVertex(vV2)) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        currentCurveIdx = getTrimmingCurveIdx(vV2);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        <span class="keyword">auto</span> [tParam, curvePoint]</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>            = <a class="code hl_function" href="../../d0/d1f/a00247.html#a656f5c8e166d1df63a785af094df16bc">Util::callFindIntersection</a>(currentCurveIdx, getEdgeIdx(vV2), pt2, patchTrimData, corners);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Found: &quot;</span> &lt;&lt; curvePoint &lt;&lt; <span class="stringliteral">&quot; From Clipping: &quot;</span> &lt;&lt; pt2.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; pt2.y &lt;&lt; <span class="stringliteral">&quot; t: &quot;</span> &lt;&lt; tParam</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>                  &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>          } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<span class="keyword">false</span> <span class="comment">/* the edge is completly gone?*/</span>) {</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            <span class="comment">//</span></div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>          }</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>          <span class="comment">//</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>          <span class="comment">// IndexType id =getStableIndex(myTrimmedEdgeIndex);</span></div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>          <span class="comment">// elementEdgeIndices.push_back(id);</span></div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>          <span class="comment">// //  globalEdgeMap.insert({id,Edge(edge)});</span></div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>          <span class="comment">//</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>          <span class="comment">// globalEdgeMap.insert({getStableIndex(myTrimmedEdgeIndex),&quot;Trimmed edge with ID</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>          <span class="comment">// &quot;+std::to_string(myTrimmedEdgeIndex.id.touint())});</span></div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          <span class="comment">// ++myTrimmedEdgeIndex.id;</span></div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        <span class="comment">//  auto edgeGeo = intersection.geometry();</span></div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="comment">//  auto firstCorner = edgeGeo.corner(0);</span></div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="comment">// auto secondCorner = edgeGeo.corner(1);</span></div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">// edges[0][indexMapper(i)](edgeGeo.corner(0), pos0[1]);</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      }</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      elementVertexIndices.resize(4);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      std::ranges::copy(elementVertexSet, elementVertexIndices.begin());</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    }</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value] : entityContainer.globalEdgeMap)</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">if</span> (key.host_or_trimmed == <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">IdType::HostOrTrimmed::host</a>)</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Host: Index value: &quot;</span> &lt;&lt; key.id &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>      <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Trimmed: Index value: &quot;</span> &lt;&lt; key.id &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value_vec] : entityContainer.globalEdgesIdOfElementsMap_) {</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Host: Index value: &quot;</span> &lt;&lt; key.id &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> value : value_vec)</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; Edge:  id: &quot;</span> &lt;&lt; value.id &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    }</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [key, value_vec] : entityContainer.globalVerticesIdOfElementsMap) {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;Host: Index value: &quot;</span> &lt;&lt; key.id &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> value : value_vec)</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        std::cout &lt;&lt; <span class="stringliteral">&quot; Vertex: &quot;</span> &lt;&lt; value.id &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno"><a class="line" href="../../d3/d79/a01611.html#a485cb1ee1e97956f82a6a96df7403e7c">  128</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d3/d79/a01611.html#a485cb1ee1e97956f82a6a96df7403e7c">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::refineParameterSpaceGrid</a>(<span class="keywordtype">int</span> refCount, <span class="keywordtype">bool</span> initFlag) {</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keyword">using </span><a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> = <span class="keyword">typename</span> GridFamily::TrimmerTraits::GlobalIdSetId;</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keyword">using </span>EdgeHostType           = <span class="keyword">typename</span> UntrimmedParameterSpaceGrid::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;1&gt;::Entity</a>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keyword">using </span>EdgeGridType           = <span class="keyword">typename</span> GridImp::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;1&gt;::Entity</a>;</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keyword">using </span>EleGridType            = <span class="keyword">typename</span> GridImp::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;0&gt;::Entity</a>;</div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keyword">using </span>EdgeParameterSpaceType = <span class="keyword">typename</span> TrimmerTraits::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;1&gt;::ParameterSpaceGridEntity</a>;</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keyword">using </span>EleParameterSpaceType  = <span class="keyword">typename</span> TrimmerTraits::template <a class="code hl_typedef" href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Codim&lt;2&gt;::ParameterSpaceGridEntity</a>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> oldLevel           = untrimmedParameterSpaceGrid_-&gt;maxLevel();</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    untrimmedParameterSpaceGrid_-&gt;globalRefine(refCount);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keyword">auto</span> gvu = untrimmedParameterSpaceGrid_-&gt;leafGridView();</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>    parameterSpaceGrid_-&gt;createBegin();</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>    parameterSpaceGrid_-&gt;insertLeaf();</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    parameterSpaceGrid_-&gt;createEnd();</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    assert((initFlag and oldLevel == 0 and refCount == 0)</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>           or !initFlag &amp;&amp; <span class="stringliteral">&quot;If we initialize the grid, we untrimmedParameterSpaceGrid_ should only have one level&quot;</span>);</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="comment">// if we init we start at 0 otherwise at 1</span></div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="comment">// if the grid is refined once later this would yield int i = 1; i &lt; 2;</span></div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = !initFlag; i &lt; refCount + 1; ++i) {</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>      <span class="keyword">const</span> <span class="keywordtype">int</span> newLevel = oldLevel + i;</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>      entityContainer_.entityImps_.emplace_back();</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>      <span class="keyword">auto</span>&amp; entityContainer  = entityContainer_;</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>      <span class="keyword">auto</span>&amp; elementContainer = std::get&lt;0&gt;(entityContainer_.entityImps_.back());</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      <span class="keyword">auto</span>&amp; edgeContainer    = std::get&lt;1&gt;(entityContainer_.entityImps_.back());</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      <span class="keyword">auto</span>&amp; vertexContainer  = std::get&lt;2&gt;(entityContainer_.entityImps_.back());</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      <span class="keyword">auto</span> gv                         = parameterSpaceGrid_-&gt;levelGridView(newLevel);</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      <span class="keyword">auto</span>&amp; globalIdSetParameterSpace = parameterSpaceGrid_-&gt;globalIdSet();</div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>      <span class="keywordtype">int</span> unTrimmedElementIndex       = 0;</div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>      <span class="keywordtype">int</span> trimmedElementIndex         = 0;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>      <span class="keywordtype">int</span> edgeIndex                   = 0;</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>      <span class="keywordtype">int</span> vertexIndex                 = 0;</div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span> </div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : elements(gv)) {</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        <a class="code hl_enumeration" href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a> eleTrimFlag{<a class="code hl_enumvalue" href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>};</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>        <a class="code hl_struct" href="../../d7/d1d/a01475.html">ElementTrimData</a> eleTrimData{eleTrimFlag};</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>        <span class="keywordflow">if</span> (trimData_.has_value()) {</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>          eleTrimData = trimElement(ele, trimData_.value());</div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>          eleTrimFlag = eleTrimData.flag();</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span> </div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>          <span class="comment">// Testing Purposes</span></div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>          <span class="keyword">auto</span> resName = <span class="stringliteral">&quot;ele_&quot;</span> + std::to_string(unTrimmedElementIndex + trimmedElementIndex);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>          eleTrimData.drawResult(resName, ele.geometry());</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        }</div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span> </div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keyword">auto</span> hostId = globalIdSetParameterSpace.id(ele);</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span>        <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> elementId = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = hostId};</div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>        <span class="keywordflow">if</span> (ele.hasFather()) {</div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>          <span class="keyword">auto</span> fatherHostId = globalIdSetParameterSpace.id(ele.father());</div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>          <span class="comment">// if we know that we (the element) are untrimmed we know that our father is also untrimmed</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>          <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>) {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>            <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> fatherId = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = fatherHostId};</div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>            <span class="comment">// insert new element info</span></div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>            <a class="code hl_typedef" href="../../d3/d79/a01611.html#a2acd5125c5bdcd9b3717de45c4597d29">EntityInfo&lt;0&gt;</a> elementInfo{.indexInLvlStorage   = trimmedElementIndex + unTrimmedElementIndex,</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>                                      .unTrimmedIndexInLvl = unTrimmedElementIndex,</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>                                      .lvl                 = newLevel,</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>                                      .id                  = elementId,</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>                                      .fatherId            = std::make_optional&lt;IdType&gt;(fatherId)};</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>            ++unTrimmedElementIndex;</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>            entityContainer.idToElementInfoMap.insert({elementId, elementInfo});</div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>            elementContainer.emplace_back(grid_, ele, elementInfo);</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>            <span class="comment">// since we have a father we have to add us as his son, this can be faster, we can store in decendantIds,</span></div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>            <span class="comment">// the indexInLvlStorage and lvl, which would provide faster access</span></div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>            entityContainer.idToElementInfoMap.at(fatherId).decendantIds.push_back(elementId);</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>            entityContainer.template entity&lt;0&gt;(fatherId, newLevel - 1).entityInfo_.decendantIds.push_back(elementId);</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>          } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) {</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>            <span class="comment">// trimmed</span></div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>            ++trimmedElementIndex;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>            <span class="comment">// empty</span></div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>          }</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>        } <span class="keywordflow">else</span> <span class="comment">/* no father */</span> {</div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>          <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>) {</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>            <a class="code hl_typedef" href="../../d3/d79/a01611.html#a2acd5125c5bdcd9b3717de45c4597d29">EntityInfo&lt;0&gt;</a> elementInfo{.indexInLvlStorage   = trimmedElementIndex + unTrimmedElementIndex,</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>                                      .unTrimmedIndexInLvl = unTrimmedElementIndex,</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>                                      .lvl                 = newLevel,</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>                                      .<a class="code hl_variable" href="../../d5/d81/a01579.html#a6483db5ee79f980bc83e175d9ea1ca34">id</a>                  = elementId};</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>            elementContainer.emplace_back(grid_, ele, elementInfo);</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>            entityContainer.idToElementInfoMap.insert({elementId, elementInfo});</div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>            ++unTrimmedElementIndex;</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>          } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) {</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>            <span class="comment">// trimmed</span></div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>            ++trimmedElementIndex;</div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>            <span class="comment">// empty</span></div>
-<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>          }</div>
-<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>        }</div>
-<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>        <span class="keyword">auto</span>&amp; elementEdgeIndices   = entityContainer.globalEdgesIdOfElementsMap_[elementId];</div>
-<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>        <span class="keyword">auto</span>&amp; elementVertexIndices = entityContainer.globalVerticesIdOfElementsMap[elementId];</div>
-<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
-<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> localEdgeIndex = 0; localEdgeIndex &lt; ele.subEntities(1); ++localEdgeIndex) {</div>
-<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>          <span class="comment">// setup all edge indices for given element</span></div>
-<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span>          <span class="keywordflow">if</span> (<span class="keyword">true</span> <span class="comment">/* untrimmed */</span>) {</div>
-<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>            <span class="keyword">auto</span> hostEdgeId = globalIdSetParameterSpace.subId(ele, localEdgeIndex, 1);</div>
-<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>            <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> edgeId   = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = hostEdgeId};</div>
-<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>            elementEdgeIndices.emplace_back(edgeId);</div>
-<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span> </div>
-<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>            <span class="comment">// store vertex ids of edges, for subIndex method of indeSet</span></div>
-<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>            <span class="keyword">auto</span>&amp; edgeVertexIndices = entityContainer.globalVertexIdOfEdgesMap_[edgeId];</div>
-<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>            <span class="keywordflow">if</span> (edgeVertexIndices.size() &lt; 2)  <span class="comment">// if this edge already has two vertices we don&#39;t visit again</span></div>
-<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>            {</div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>              <span class="keyword">const</span> <span class="keyword">auto</span>&amp; cube = Dune::ReferenceElements&lt;ctype, mydimension&gt;::cube();</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>              <span class="keywordflow">for</span> (<span class="keyword">auto</span> vertexLocalIndexWRTElement : cube.subEntities(localEdgeIndex, 1, 2)) {</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>                <span class="keyword">auto</span> hostVertexId = globalIdSetParameterSpace.subId(ele, vertexLocalIndexWRTElement, 2);</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>                <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> vertexId   = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = hostVertexId};</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>                edgeVertexIndices.emplace_back(vertexId);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>              }</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>            }</div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>          }</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>        }</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span> </div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>        <span class="comment">// store vertices ids of element</span></div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> localVertexId = 0; localVertexId &lt; ele.subEntities(2); ++localVertexId) {</div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>          <span class="comment">// setup all vertex indices for given element</span></div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>          <span class="keywordflow">if</span> (<span class="keyword">true</span> <span class="comment">/* untrimmed */</span>) {</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>            <span class="keyword">auto</span> hostVertexId = globalIdSetParameterSpace.subId(ele, localVertexId, 2);</div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>            <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> vertexId   = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = hostVertexId};</div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>            elementVertexIndices.emplace_back(vertexId);</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>          }</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>        }</div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>      }</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>      <span class="comment">// save numbers of untrimmed and trimmed elements per level</span></div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>      entityContainer.numberOfTrimmedElements.push_back(trimmedElementIndex);</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>      entityContainer.numberOfUnTrimmedElements.push_back(unTrimmedElementIndex);</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; edge : edges(gv)) {</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>        <span class="keyword">auto</span> edgeHostId = globalIdSetParameterSpace.id(edge);</div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>        <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> edgeId   = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = edgeHostId};</div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>        <a class="code hl_typedef" href="../../d3/d79/a01611.html#a2acd5125c5bdcd9b3717de45c4597d29">EntityInfo&lt;1&gt;</a> edgeInfo{.indexInLvlStorage = edgeIndex++, .lvl = newLevel, .stemFromTrim = <span class="keyword">false</span>, .id = edgeId};</div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span> </div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>        entityContainer.idToEdgeInfoMap.insert({edgeId, edgeInfo});</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>        edgeContainer.emplace_back(grid_, edge, edgeInfo);</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>      }</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>      entityContainer.idToVertexInfoMap.emplace_back();</div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; vertex : vertices(gv)) {</div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>        <span class="keyword">auto</span> vertexHostId = globalIdSetParameterSpace.<a class="code hl_variable" href="../../d5/d81/a01579.html#a6483db5ee79f980bc83e175d9ea1ca34">id</a>(vertex);</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>        <a class="code hl_struct" href="../../d5/d81/a01579.html">IdType</a> vertexId   = {.<a class="code hl_variable" href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> = <a class="code hl_enumvalue" href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">IdType::EntityIdType::host</a>, .id = vertexHostId};</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>        <a class="code hl_typedef" href="../../d3/d79/a01611.html#a2acd5125c5bdcd9b3717de45c4597d29">EntityInfo&lt;2&gt;</a> vertexInfo{</div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>            .indexInLvlStorage = vertexIndex++, .lvl = newLevel, .stemFromTrim = <span class="keyword">false</span>, .id = vertexId};</div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>        entityContainer.idToVertexInfoMap.back().insert({vertexId, vertexInfo});</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>        vertexContainer.emplace_back(grid_, vertex, vertexInfo);</div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>      }</div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    }</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>  }</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
-<div class="ttc" id="aa00240_html"><div class="ttname"><a href="../../d9/d21/a00240.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createlevel.hh:5</div></div>
-<div class="ttc" id="aa00240_html_a001736eecf4ebc2f71b02cc6ed9c33d7"><div class="ttname"><a href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7">Dune::IGANEW::DefaultTrim::ElementTrimFlag</a></div><div class="ttdeci">ElementTrimFlag</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:68</div></div>
-<div class="ttc" id="aa00240_html_a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec"><div class="ttname"><a href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">Dune::IGANEW::DefaultTrim::ElementTrimFlag::trimmed</a></div><div class="ttdeci">@ trimmed</div></div>
-<div class="ttc" id="aa00240_html_a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0"><div class="ttname"><a href="../../d9/d21/a00240.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">Dune::IGANEW::DefaultTrim::ElementTrimFlag::full</a></div><div class="ttdeci">@ full</div></div>
-<div class="ttc" id="aa01475_html"><div class="ttname"><a href="../../d7/d1d/a01475.html">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl</a></div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:13</div></div>
-<div class="ttc" id="aa01579_html"><div class="ttname"><a href="../../d5/d81/a01579.html">Dune::IGANEW::DefaultTrim::IdType</a></div><div class="ttdef"><b>Definition:</b> trimmerold.hh:55</div></div>
-<div class="ttc" id="aa01579_html_a3a5f12dff1e201f674486abc8e668d21"><div class="ttname"><a href="../../d5/d81/a01579.html#a3a5f12dff1e201f674486abc8e668d21">Dune::IGANEW::DefaultTrim::IdType::entityIdType</a></div><div class="ttdeci">EntityIdType entityIdType</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:73</div></div>
-<div class="ttc" id="aa01579_html_a6483db5ee79f980bc83e175d9ea1ca34"><div class="ttname"><a href="../../d5/d81/a01579.html#a6483db5ee79f980bc83e175d9ea1ca34">Dune::IGANEW::DefaultTrim::IdType::id</a></div><div class="ttdeci">HostIdType id</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:74</div></div>
-<div class="ttc" id="aa01579_html_aa5749045920a10fbf4aaae21c7814e99"><div class="ttname"><a href="../../d5/d81/a01579.html#aa5749045920a10fbf4aaae21c7814e99">Dune::IGANEW::DefaultTrim::IdType::host_or_trimmed</a></div><div class="ttdeci">HostOrTrimmed host_or_trimmed</div><div class="ttdef"><b>Definition:</b> trimmerold.hh:57</div></div>
-<div class="ttc" id="aa01579_html_af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e"><div class="ttname"><a href="../../d5/d81/a01579.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">Dune::IGANEW::DefaultTrim::IdType::HostOrTrimmed::host</a></div><div class="ttdeci">@ host</div></div>
-<div class="ttc" id="aa01579_html_afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e"><div class="ttname"><a href="../../d5/d81/a01579.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">Dune::IGANEW::DefaultTrim::IdType::EntityIdType::host</a></div><div class="ttdeci">@ host</div></div>
-<div class="ttc" id="aa01611_html_a108c1329e0bbf7337c34ebbc8aa1474f"><div class="ttname"><a href="../../d3/d79/a01611.html#a108c1329e0bbf7337c34ebbc8aa1474f">Dune::IGANEW::DefaultTrim::TrimmerImpl::GridImp</a></div><div class="ttdeci">typename GridTraits::Grid GridImp</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:319</div></div>
-<div class="ttc" id="aa01611_html_a2acd5125c5bdcd9b3717de45c4597d29"><div class="ttname"><a href="../../d3/d79/a01611.html#a2acd5125c5bdcd9b3717de45c4597d29">Dune::IGANEW::DefaultTrim::TrimmerImpl::EntityInfo</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::template Codim&lt; cd &gt;::EntityInfo EntityInfo</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:336</div></div>
-<div class="ttc" id="aa01611_html_a485cb1ee1e97956f82a6a96df7403e7c"><div class="ttname"><a href="../../d3/d79/a01611.html#a485cb1ee1e97956f82a6a96df7403e7c">Dune::IGANEW::DefaultTrim::TrimmerImpl::refineParameterSpaceGrid</a></div><div class="ttdeci">void refineParameterSpaceGrid(int refCount, bool initFlag=false)</div><div class="ttdoc">Create the paramter grid levels.</div><div class="ttdef"><b>Definition:</b> createlevel.hh:128</div></div>
-<div class="ttc" id="aa01611_html_a6fdc5326acf825bb1e88125facf4dc3e"><div class="ttname"><a href="../../d3/d79/a01611.html#a6fdc5326acf825bb1e88125facf4dc3e">Dune::IGANEW::DefaultTrim::TrimmerImpl::createLevel</a></div><div class="ttdeci">void createLevel(GridImp &amp;grid, int lvl)</div><div class="ttdef"><b>Definition:</b> createlevel.hh:7</div></div>
-<div class="ttc" id="aa01611_html_addb7f4b76ecd8a379f996f9d6e793c68"><div class="ttname"><a href="../../d3/d79/a01611.html#addb7f4b76ecd8a379f996f9d6e793c68">Dune::IGANEW::DefaultTrim::TrimmerImpl::Codim</a></div><div class="ttdeci">typename TrimmerTraits::template Codim&lt; codim &gt; Codim</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:318</div></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>        FieldVector&lt;ScalarType, dim&gt; p</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>            = foundVertices.empty() ? FieldVector&lt;ScalarType, dim&gt;{pt1.x, pt1.y} : foundVertices.back();</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keyword">auto</span> trimmedEdge = Util::createHostGeometry&lt;TrimmingCurve&gt;(p, curvePoint);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>        elementTrimData.<a class="code hl_function" href="../../d1/de4/a01481.html#a66587331a96ee2b8cb78bc40af298b56">addEdgeHostNew</a>(getEdgeIdx(vV2), trimmedEdge, curvePoint);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        foundVertices.push_back(curvePoint);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        isOnNewEdge = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        currentT    = tParam;</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="comment">// Third case newVertex - newVertex</span></div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keywordflow">if</span> (isNewVertex(vV1), isNewVertex(vV2)) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>        assert(getTrimmingCurveIdx(vV2) == currentCurveIdx);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        <span class="keyword">auto</span> [tParam, curvePoint]</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>            = <a class="code hl_function" href="../../d0/d1f/a00247.html#a656f5c8e166d1df63a785af094df16bc">Util::callFindIntersection</a>(currentCurveIdx, getEdgeIdx(vV2), pt2, patchTrimData, corners);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Found: &quot;</span> &lt;&lt; curvePoint &lt;&lt; <span class="stringliteral">&quot; From Clipping: &quot;</span> &lt;&lt; pt2.x &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; pt2.y &lt;&lt; <span class="stringliteral">&quot; t: &quot;</span> &lt;&lt; tParam</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>                  &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keyword">auto</span> elementTrimmingCurve = createTrimmingCurveSlice(currentCurveIdx, currentT, tParam);</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        elementTrimData.<a class="code hl_function" href="../../d1/de4/a01481.html#a9cf4cc816c5e38030924d060eda14891">addEdgeNewNew</a>(elementTrimmingCurve, curvePoint);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        foundVertices.push_back(curvePoint);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        isOnNewEdge = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        currentT    = std::numeric_limits&lt;double&gt;::infinity();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      <span class="comment">// Fourth case edge begins on a newVertex and ends in a HostVertex</span></div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      <span class="keywordflow">if</span> (isNewVertex(vV1), !isNewVertex(vV2)) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keyword">auto</span> v2 = Dune::FieldVector&lt;ScalarType, dim&gt;{pt2.x, pt2.y};</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        FieldVector&lt;ScalarType, dim&gt; p;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>        <span class="keywordflow">if</span> (foundVertices.empty())</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>          std::tie(std::ignore, p)</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>              = <a class="code hl_function" href="../../d0/d1f/a00247.html#a656f5c8e166d1df63a785af094df16bc">Util::callFindIntersection</a>(getTrimmingCurveIdx(vV1), getEdgeIdx(vV1), pt1, patchTrimData, corners);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <span class="keywordflow">else</span></div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>          p = foundVertices.back();</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        <span class="keyword">auto</span> trimmedEdge = Util::createHostGeometry&lt;TrimmingCurve&gt;(p, v2);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        elementTrimData.<a class="code hl_function" href="../../d1/de4/a01481.html#a6c029e4d6b7407cdc6ae46a8ee7e60fd">addEdgeNewHost</a>(getEdgeIdx(vV1), trimmedEdge, getHostIdx(vV2));</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        foundVertices.push_back({pt2.x, pt2.y});</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      }</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span> </div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordflow">return</span> elementTrimData;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  }</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
+<div class="ttc" id="aa00092_html"><div class="ttname"><a href="../../d1/dc1/a00092.html">findintersection.hh</a></div></div>
+<div class="ttc" id="aa00098_html"><div class="ttname"><a href="../../d1/d44/a00098.html">slicecurve.hh</a></div></div>
+<div class="ttc" id="aa00125_html"><div class="ttname"><a href="../../dc/dfe/a00125.html">elementtrimdata.hh</a></div></div>
+<div class="ttc" id="aa00131_html"><div class="ttname"><a href="../../d7/d06/a00131.html">trimutils.hh</a></div></div>
+<div class="ttc" id="aa00134_html"><div class="ttname"><a href="../../de/d76/a00134.html">clipelementrectangle.hh</a></div></div>
+<div class="ttc" id="aa00229_html_a357b3e400d2b8b28d4a377002c535783"><div class="ttname"><a href="../../dd/d2d/a00229.html#a357b3e400d2b8b28d4a377002c535783">Dune::IGANEW::sliceCurve</a></div><div class="ttdeci">auto sliceCurve(const GeoCurve &amp;geoCurve, std::array&lt; ScalarType, 2 &gt; t) -&gt; GeoCurve</div><div class="ttdef"><b>Definition:</b> slicecurve.hh:66</div></div>
+<div class="ttc" id="aa00246_html"><div class="ttname"><a href="../../d4/d9a/a00246.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createlevel.hh:5</div></div>
+<div class="ttc" id="aa00246_html_a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec"><div class="ttname"><a href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">Dune::IGANEW::DefaultTrim::ElementTrimFlag::trimmed</a></div><div class="ttdeci">@ trimmed</div></div>
+<div class="ttc" id="aa00247_html_a4f65cad383549769cbe786b60c31e479"><div class="ttname"><a href="../../d0/d1f/a00247.html#a4f65cad383549769cbe786b60c31e479">Dune::IGANEW::DefaultTrim::Util::clipElementRectangle</a></div><div class="ttdeci">auto clipElementRectangle(const auto &amp;element, const auto &amp;patchTrimData) -&gt; std::tuple&lt; ElementTrimFlag, ClippingResult &gt;</div><div class="ttdef"><b>Definition:</b> clipelementrectangle.hh:21</div></div>
+<div class="ttc" id="aa00247_html_a55a9ec04149f78cad2fd07e790a81128"><div class="ttname"><a href="../../d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128">Dune::IGANEW::DefaultTrim::Util::giveEdgeIdx</a></div><div class="ttdeci">int giveEdgeIdx(const std::size_t e1, const std::size_t e2)</div><div class="ttdef"><b>Definition:</b> cliputils.hh:7</div></div>
+<div class="ttc" id="aa00247_html_a656f5c8e166d1df63a785af094df16bc"><div class="ttname"><a href="../../d0/d1f/a00247.html#a656f5c8e166d1df63a785af094df16bc">Dune::IGANEW::DefaultTrim::Util::callFindIntersection</a></div><div class="ttdeci">auto callFindIntersection(const size_t tcIdx, const int edgeIdx, const auto &amp;ip, const auto &amp;patchTrimData, const auto &amp;corners) -&gt; std::pair&lt; double, FieldVector&lt; double, 2 &gt; &gt;</div><div class="ttdef"><b>Definition:</b> trimutils.hh:35</div></div>
+<div class="ttc" id="aa01481_html"><div class="ttname"><a href="../../d1/de4/a01481.html">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl</a></div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:13</div></div>
+<div class="ttc" id="aa01481_html_a66587331a96ee2b8cb78bc40af298b56"><div class="ttname"><a href="../../d1/de4/a01481.html#a66587331a96ee2b8cb78bc40af298b56">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::addEdgeHostNew</a></div><div class="ttdeci">void addEdgeHostNew(int idx, EdgePatchGeometry &amp;geometry, Vertex &amp;v2)</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:48</div></div>
+<div class="ttc" id="aa01481_html_a6c029e4d6b7407cdc6ae46a8ee7e60fd"><div class="ttname"><a href="../../d1/de4/a01481.html#a6c029e4d6b7407cdc6ae46a8ee7e60fd">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::addEdgeNewHost</a></div><div class="ttdeci">void addEdgeNewHost(int idx, EdgePatchGeometry &amp;geometry, int v2Idx)</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:56</div></div>
+<div class="ttc" id="aa01481_html_a7f59a4e26e81eba442b0d4b951e2f597"><div class="ttname"><a href="../../d1/de4/a01481.html#a7f59a4e26e81eba442b0d4b951e2f597">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::addEdge</a></div><div class="ttdeci">void addEdge(int idx)</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:43</div></div>
+<div class="ttc" id="aa01481_html_a9cf4cc816c5e38030924d060eda14891"><div class="ttname"><a href="../../d1/de4/a01481.html#a9cf4cc816c5e38030924d060eda14891">Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::addEdgeNewNew</a></div><div class="ttdeci">void addEdgeNewNew(EdgePatchGeometry &amp;geometry, Vertex &amp;v2)</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:52</div></div>
+<div class="ttc" id="aa01617_html_a64be0e65208a31037a4e33b93d0a2ec4"><div class="ttname"><a href="../../d6/d6d/a01617.html#a64be0e65208a31037a4e33b93d0a2ec4">Dune::IGANEW::DefaultTrim::TrimmerImpl::PatchTrimData</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::PatchTrimData PatchTrimData</div><div class="ttdoc">Patch trim data type.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:412</div></div>
+<div class="ttc" id="aa01617_html_a67b55fba29742df49ba63e5f24c7c233"><div class="ttname"><a href="../../d6/d6d/a01617.html#a67b55fba29742df49ba63e5f24c7c233">Dune::IGANEW::DefaultTrim::TrimmerImpl::TrimmingCurve</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::TrimmingCurve TrimmingCurve</div><div class="ttdoc">Patch trim data type.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:413</div></div>
+<div class="ttc" id="aa01617_html_addb7f4b76ecd8a379f996f9d6e793c68"><div class="ttname"><a href="../../d6/d6d/a01617.html#addb7f4b76ecd8a379f996f9d6e793c68">Dune::IGANEW::DefaultTrim::TrimmerImpl::Codim</a></div><div class="ttdeci">typename TrimmerTraits::template Codim&lt; codim &gt; Codim</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:318</div></div>
+<div class="ttc" id="aa01617_html_aefa0e5fe66d9fa37080e1f1542970419"><div class="ttname"><a href="../../d6/d6d/a01617.html#aefa0e5fe66d9fa37080e1f1542970419">Dune::IGANEW::DefaultTrim::TrimmerImpl::trimElement</a></div><div class="ttdeci">static auto trimElement(const typename GridFamily::TrimmerTraits::template Codim&lt; 0 &gt;::UnTrimmedHostParameterSpaceGridEntity &amp;element, const PatchTrimData &amp;patchTrimData)</div><div class="ttdef"><b>Definition:</b> trimelement.hh:15</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../d7/d3f/a00173.html">createlevel.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../d7/d3f/a00173.html">trimelement.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,13 +1,16 @@
 var a00228 =
 [
-    [ "Vector", "d3/dbf/a01752.html", null ],
-    [ "ControlPoint", "d6/d72/a01753.html", null ],
-    [ "MultiplyAble", "d9/d37/a01754.html", null ],
-    [ "AddAble", "d2/d7d/a01755.html", null ],
-    [ "SubstractAble", "d5/d14/a01756.html", null ],
-    [ "MultiplyAssignAble", "db/dc0/a01757.html", null ],
-    [ "DivideAssignAble", "d9/de3/a01758.html", null ],
-    [ "DivideAble", "db/de5/a01759.html", null ],
-    [ "TrimDataContainer", "d0/d9d/a01760.html", null ],
-    [ "Trimmer", "db/db8/a01761.html", null ]
+    [ "Capabilities", "d3/d42/a00235.html", "d3/d42/a00235" ],
+    [ "Functions", "d7/d40/a00236.html", "d7/d40/a00236" ],
+    [ "IGA", "d6/db6/a00241.html", "d6/db6/a00241" ],
+    [ "IGANEW", "dd/d2d/a00229.html", "dd/d2d/a00229" ],
+    [ "Python", "de/dbc/a00249.html", "de/dbc/a00249" ],
+    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "da/d77/a01381.html", "da/d77/a01381" ],
+    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d7/d38/a01373.html", "d7/d38/a01373" ],
+    [ "EnableBoundarySegmentIndexCheck", "dc/d98/a01177.html", null ],
+    [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d3/dd3/a01185.html", null ],
+    [ "GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d8/d53/a01225.html", "d8/d53/a01225" ],
+    [ "JSONGridFactory", "d3/dea/a01377.html", "d3/dea/a01377" ],
+    [ "TensorProductCoordinates", "d2/df3/a01085.html", null ],
+    [ "YaspGrid", "dd/dee/a01081.html", null ]
 ];

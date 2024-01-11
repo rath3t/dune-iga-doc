@@ -1,11 +1,14 @@
 var searchData=
 [
-  ['adapt_0',['adapt',['../da/d1f/a01203.html#a49f62ff9101d45a9920c09c54556077f',1,'Dune::IGANEW::PatchGrid']]],
-  ['addedge_1',['addEdge',['../d7/d1d/a01475.html#a7f59a4e26e81eba442b0d4b951e2f597',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['addedgehostnew_2',['addEdgeHostNew',['../d7/d1d/a01475.html#a66587331a96ee2b8cb78bc40af298b56',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['addedgenewhost_3',['addEdgeNewHost',['../d7/d1d/a01475.html#a6c029e4d6b7407cdc6ae46a8ee7e60fd',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['addedgenewnew_4',['addEdgeNewNew',['../d7/d1d/a01475.html#a9cf4cc816c5e38030924d060eda14891',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['addloop_5',['addLoop',['../d2/df5/a01395.html#a065412a5007835e01f8b48b745fff51d',1,'Dune::IGA::TrimData::addLoop()'],['../da/ded/a01547.html#adedfd6e8bb8ce1ce160de1fe00cf3a2c',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::addLoop()']]],
-  ['affine_6',['affine',['../d6/d0d/a01091.html#ad7fa12f45a8b4078bcd818376cc86b2d',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::affine()'],['../d9/da8/a01227.html#a593a2b9143bde7fd54fed564f55b87ac',1,'Dune::IGANEW::PatchGridGeometry::affine()'],['../d4/d2c/a01575.html#a901667cf37900062e305e0f749e4ff99',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometryImpl::affine()'],['../d7/db8/a01687.html#ac0d095774cf01b990e81c75aa3f2347c',1,'Dune::IGANEW::PatchGridLocalGeometry::affine()'],['../de/d0f/a01727.html#af4169433466f726fdd6d00b065c3186b',1,'Dune::IGANEW::Trim::LocalGeometryVariant::affine()']]],
-  ['ascurve_7',['asCurve',['../d4/d41/a01267.html#abb00642c068a2ff96d8fbd05853c45bb',1,'Dune::IGANEW::Ibra::BrepTrim']]]
+  ['adapt_0',['adapt',['../de/d04/a01209.html#a49f62ff9101d45a9920c09c54556077f',1,'Dune::IGANEW::PatchGrid']]],
+  ['addedge_1',['addEdge',['../d1/de4/a01481.html#a7f59a4e26e81eba442b0d4b951e2f597',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
+  ['addedgehostnew_2',['addEdgeHostNew',['../d1/de4/a01481.html#a66587331a96ee2b8cb78bc40af298b56',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
+  ['addedgenewhost_3',['addEdgeNewHost',['../d1/de4/a01481.html#a6c029e4d6b7407cdc6ae46a8ee7e60fd',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
+  ['addedgenewnew_4',['addEdgeNewNew',['../d1/de4/a01481.html#a9cf4cc816c5e38030924d060eda14891',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
+  ['addloop_5',['addLoop',['../dc/df4/a01401.html#a065412a5007835e01f8b48b745fff51d',1,'Dune::IGA::TrimData::addLoop()'],['../de/d2c/a01553.html#adedfd6e8bb8ce1ce160de1fe00cf3a2c',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::addLoop()']]],
+  ['addnewvertex_6',['addNewVertex',['../db/d95/a01637.html#aaca4cc1b395603087a0b04c9b20c9daf',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
+  ['addoriginalvertex_7',['addOriginalVertex',['../db/d95/a01637.html#af5f99e722361af8a361db09592f543d2',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::addOriginalVertex(const Clipper2Lib::PointD &amp;pt)'],['../db/d95/a01637.html#afb027be4c6428c5c400f571e3ab32132',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::addOriginalVertex(const size_t hostIdx)']]],
+  ['affine_8',['affine',['../d1/dfa/a01097.html#ad7fa12f45a8b4078bcd818376cc86b2d',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::affine()'],['../d6/da1/a01233.html#a593a2b9143bde7fd54fed564f55b87ac',1,'Dune::IGANEW::PatchGridGeometry::affine()'],['../da/df3/a01581.html#a901667cf37900062e305e0f749e4ff99',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometryImpl::affine()'],['../dd/db4/a01693.html#ac0d095774cf01b990e81c75aa3f2347c',1,'Dune::IGANEW::PatchGridLocalGeometry::affine()'],['../d8/d9c/a01733.html#af4169433466f726fdd6d00b065c3186b',1,'Dune::IGANEW::Trim::LocalGeometryVariant::affine()']]],
+  ['approxsamepoint_9',['approxSamePoint',['../d0/d1f/a00247.html#af25f674276178276b50bf9fd5c3726dc',1,'Dune::IGANEW::DefaultTrim::Util']]],
+  ['ascurve_10',['asCurve',['../de/d85/a01273.html#abb00642c068a2ff96d8fbd05853c45bb',1,'Dune::IGANEW::Ibra::BrepTrim']]]
 ];

@@ -102,79 +102,83 @@ $(document).ready(function(){initNavTree('d1/d44/a00098_source.html','../../'); 
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="../../d3/d00/a00113.html">dune/iga/splines/bsplinealgorithms.hh</a>&gt;</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;<a class="code" href="../../df/d98/a00107.html">dune/iga/splines/nurbsalgorithms.hh</a>&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dc/d28/a00223.html">Dune::IGANEW</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d2d/a00229.html">Dune::IGANEW</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType = <span class="keyword">typename</span> GeoCurve::ctype&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../dc/d28/a00223.html#a357b3e400d2b8b28d4a377002c535783">   12</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dc/d28/a00223.html#a357b3e400d2b8b28d4a377002c535783">sliceCurve</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, std::array&lt;ScalarType, 2&gt; t) -&gt; GeoCurve {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    assert(GeoCurve::mydimension == 1);</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> findMultiplicity = [](<span class="keyword">auto</span> t_, <span class="keyword">auto</span>&amp; knotVec) {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>      <span class="keywordflow">return</span> std::ranges::count_if(knotVec, [=](<span class="keywordtype">double</span> val) { <span class="keywordflow">return</span> FloatCmp::eq(t_, val, 1e-8); });</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    };</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">auto</span>&amp; patchData = geoCurve.patchData();</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span> domain     = geoCurve.domain();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> degree     = patchData.degree[0];</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">if</span> (FloatCmp::eq(domain[0][0], t[0]) and FloatCmp::eq(domain[0][1], t[1])) <span class="keywordflow">return</span> geoCurve;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">auto</span> newPatchData      = <span class="keyword">typename</span> GeoCurve::PatchData();</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordtype">size_t</span> dropCtrptsFront = 0;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">size_t</span> dropCtrptsBack  = 0;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="comment">// Curtesy to https://github.com/pradeep-pyro/tinynurbs/blob/master/include/tinynurbs/core/modify.h</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType = <span class="keyword">typename</span> GeoCurve::ctype&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">   13</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">splitCurve</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, ScalarType u) -&gt; std::pair&lt;GeoCurve, GeoCurve&gt; {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static_assert</span>(GeoCurve::mydimension == 1);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">auto</span> knotMultiplicity = [](<span class="keyword">auto</span>&amp; knotVec, <span class="keyword">auto</span> u_) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      <span class="keywordflow">return</span> std::ranges::count_if(knotVec, [=](<span class="keywordtype">double</span> val) { <span class="keywordflow">return</span> FloatCmp::eq(u_, val, 1e-8); });</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span>&amp; patchData     = geoCurve.patchData();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> knots          = patchData.knotSpans.front();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> control_points = patchData.controlPoints.directGetAll();</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> domain         = geoCurve.domain();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">auto</span> degree         = patchData.degree[0];</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">auto</span> span = <a class="code hl_function" href="../../d6/d08/a00244.html#a3f4a0936ded82e5421a36f9f4c0c114b">Splines::findSpan</a>(degree, u, knots);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> r     = degree - knotMultiplicity(knots, u);</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">bool</span> skippedFirst = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; ++i) {</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="keywordflow">if</span> (FloatCmp::eq(domain[0][i], t[i])) {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>        skippedFirst = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::vector&lt;ScalarType&gt; newKnots(r);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    std::ranges::fill(newKnots, u);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> tmpPatchData = <a class="code hl_function" href="../../d6/d08/a00244.html#ae31d742d70844f23a725edbd89c0f31c">Splines::knotRefinement</a>(patchData, newKnots, 0);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    std::vector&lt;ScalarType&gt; tmpKnots{tmpPatchData.knotSpans.front()};</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">decltype</span>(control_points) tmpCp{tmpPatchData.controlPoints.directGetAll()};</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keyword">auto</span> span = <a class="code hl_function" href="../../da/d2e/a00238.html#a3f4a0936ded82e5421a36f9f4c0c114b">Splines::findSpan</a>(degree, t[i], patchData.knotSpans.front());</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keyword">auto</span> ks   = span - degree + 1;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keyword">auto</span> r = degree + 1 - findMultiplicity(t[i], patchData.knotSpans.front());</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      std::vector&lt;ScalarType&gt; newKnots(r);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      std::ranges::fill(newKnots, t[i]);</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      newPatchData</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>          = <a class="code hl_function" href="../../da/d2e/a00238.html#ae31d742d70844f23a725edbd89c0f31c">Splines::knotRefinement</a>(i == 0 or (i == 1 and skippedFirst) ? patchData : newPatchData, newKnots, 0);</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keyword">auto</span>&amp; newKnotSpans = newPatchData.knotSpans.front();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    std::vector&lt;ScalarType&gt; leftKnots;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> span_l = <a class="code hl_function" href="../../d6/d08/a00244.html#a3f4a0936ded82e5421a36f9f4c0c114b">Splines::findSpan</a>(degree, u, tmpKnots) + 1;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; span_l; ++i)</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      leftKnots.push_back(tmpKnots[i]);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    leftKnots.push_back(u);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    std::vector&lt;ScalarType&gt; rightKnots;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; degree + 1; ++i)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      rightKnots.push_back(u);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = span_l; i &lt; tmpKnots.size(); ++i)</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      rightKnots.push_back(tmpKnots[i]);</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keyword">auto</span> span2 = <a class="code hl_function" href="../../da/d2e/a00238.html#a3f4a0936ded82e5421a36f9f4c0c114b">Splines::findSpan</a>(degree, t[i], newKnotSpans) + 1;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">if</span> (i == 1) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">auto</span> firstNView                = std::ranges::take_view(newKnotSpans, span2);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        newPatchData.knotSpans.front() = std::vector&lt;ScalarType&gt;(firstNView.begin(), firstNView.end());</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        dropCtrptsBack                 = patchData.knotSpans.front().size() - (ks + r - 1);</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keyword">auto</span> lastNView</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            = std::ranges::subrange(std::ranges::end(newKnotSpans) - std::min&lt;long&gt;(span2, newKnotSpans.size()),</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                    std::ranges::end(newKnotSpans));</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        newPatchData.knotSpans.front() = std::vector&lt;ScalarType&gt;(lastNView.begin(), lastNView.end());</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        dropCtrptsFront                = ks + r - 1;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      }</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">decltype</span>(control_points) leftControlPoints;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> ks = span - degree + 1;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; ks + r; ++i)</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      leftControlPoints.push_back(tmpCp[i]);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keyword">decltype</span>(control_points) rightControlPoints;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = ks + r - 1; i &lt; tmpCp.size(); ++i)</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      rightControlPoints.push_back(tmpCp[i]);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">typename</span> GeoCurve::PatchData leftPatchData{</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        {leftKnots}, <span class="keyword">typename</span> GeoCurve::ControlPointNetType{leftControlPoints}, patchData.degree};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keyword">typename</span> GeoCurve::PatchData rightPatchData{</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        {rightKnots}, <span class="keyword">typename</span> GeoCurve::ControlPointNetType{rightControlPoints}, patchData.degree};</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="comment">// Get rid of excess control points</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">auto</span>&amp; controlPoints = newPatchData.controlPoints.directGetAll();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">return</span> std::make_pair(GeoCurve{leftPatchData}, GeoCurve{rightPatchData});</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">auto</span> trimmedView</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        = std::ranges::subrange(std::ranges::begin(controlPoints) + std::min(dropCtrptsFront, controlPoints.size()),</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>                                std::ranges::end(controlPoints) - std::min(dropCtrptsBack, controlPoints.size()));</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType = <span class="keyword">typename</span> GeoCurve::ctype&gt;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno"><a class="line" href="../../dd/d2d/a00229.html#a357b3e400d2b8b28d4a377002c535783">   66</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/d2d/a00229.html#a357b3e400d2b8b28d4a377002c535783">sliceCurve</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, std::array&lt;ScalarType, 2&gt; t) -&gt; GeoCurve {</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">static_assert</span>(GeoCurve::mydimension == 1);</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    newPatchData.controlPoints = <span class="keyword">typename</span> GeoCurve::ControlPointNetType(</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        std::vector&lt;typename GeoCurve::ControlPointType&gt;(trimmedView.begin(), trimmedView.end()));</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">return</span> GeoCurve(newPatchData);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">auto</span> domain = geoCurve.domain();</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordflow">if</span> (domain[0].front() == t[0] and domain[0].back() == t[1]) <span class="keywordflow">return</span> geoCurve;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (domain[0].front() == t[0]) <span class="keywordflow">return</span> std::get&lt;0&gt;(<a class="code hl_function" href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">splitCurve</a>(geoCurve, t[1]));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (domain[0].back() == t[1]) <span class="keywordflow">return</span> std::get&lt;1&gt;(<a class="code hl_function" href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">splitCurve</a>(geoCurve, t[0]));</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="keyword">auto</span> tmpCurve = std::get&lt;1&gt;(<a class="code hl_function" href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">splitCurve</a>(geoCurve, t[0]));</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="keywordflow">return</span> std::get&lt;0&gt;(<a class="code hl_function" href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">splitCurve</a>(tmpCurve, t[1]));</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
 <div class="ttc" id="aa00107_html"><div class="ttname"><a href="../../df/d98/a00107.html">nurbsalgorithms.hh</a></div></div>
 <div class="ttc" id="aa00113_html"><div class="ttname"><a href="../../d3/d00/a00113.html">bsplinealgorithms.hh</a></div></div>
-<div class="ttc" id="aa00223_html"><div class="ttname"><a href="../../dc/d28/a00223.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa00223_html_a357b3e400d2b8b28d4a377002c535783"><div class="ttname"><a href="../../dc/d28/a00223.html#a357b3e400d2b8b28d4a377002c535783">Dune::IGANEW::sliceCurve</a></div><div class="ttdeci">auto sliceCurve(const GeoCurve &amp;geoCurve, std::array&lt; ScalarType, 2 &gt; t) -&gt; GeoCurve</div><div class="ttdef"><b>Definition:</b> slicecurve.hh:12</div></div>
-<div class="ttc" id="aa00238_html_a3f4a0936ded82e5421a36f9f4c0c114b"><div class="ttname"><a href="../../da/d2e/a00238.html#a3f4a0936ded82e5421a36f9f4c0c114b">Dune::IGANEW::Splines::findSpan</a></div><div class="ttdeci">auto findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)</div><div class="ttdoc">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than...</div><div class="ttdef"><b>Definition:</b> bsplinealgorithms.hh:24</div></div>
-<div class="ttc" id="aa00238_html_ae31d742d70844f23a725edbd89c0f31c"><div class="ttname"><a href="../../da/d2e/a00238.html#ae31d742d70844f23a725edbd89c0f31c">Dune::IGANEW::Splines::knotRefinement</a></div><div class="ttdeci">auto knotRefinement(const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const std::vector&lt; double &gt; &amp;newKnots, const int refinementDirection)</div><div class="ttdoc">Perform knot refinement on a NURBS patch.</div><div class="ttdef"><b>Definition:</b> nurbsalgorithms.hh:618</div></div>
+<div class="ttc" id="aa00229_html"><div class="ttname"><a href="../../dd/d2d/a00229.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
+<div class="ttc" id="aa00229_html_a357b3e400d2b8b28d4a377002c535783"><div class="ttname"><a href="../../dd/d2d/a00229.html#a357b3e400d2b8b28d4a377002c535783">Dune::IGANEW::sliceCurve</a></div><div class="ttdeci">auto sliceCurve(const GeoCurve &amp;geoCurve, std::array&lt; ScalarType, 2 &gt; t) -&gt; GeoCurve</div><div class="ttdef"><b>Definition:</b> slicecurve.hh:66</div></div>
+<div class="ttc" id="aa00229_html_adac8c4895c4b00d8f6a51f6d0ce67f23"><div class="ttname"><a href="../../dd/d2d/a00229.html#adac8c4895c4b00d8f6a51f6d0ce67f23">Dune::IGANEW::splitCurve</a></div><div class="ttdeci">auto splitCurve(const GeoCurve &amp;geoCurve, ScalarType u) -&gt; std::pair&lt; GeoCurve, GeoCurve &gt;</div><div class="ttdef"><b>Definition:</b> slicecurve.hh:13</div></div>
+<div class="ttc" id="aa00244_html_a3f4a0936ded82e5421a36f9f4c0c114b"><div class="ttname"><a href="../../d6/d08/a00244.html#a3f4a0936ded82e5421a36f9f4c0c114b">Dune::IGANEW::Splines::findSpan</a></div><div class="ttdeci">auto findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)</div><div class="ttdoc">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than...</div><div class="ttdef"><b>Definition:</b> bsplinealgorithms.hh:24</div></div>
+<div class="ttc" id="aa00244_html_ae31d742d70844f23a725edbd89c0f31c"><div class="ttname"><a href="../../d6/d08/a00244.html#ae31d742d70844f23a725edbd89c0f31c">Dune::IGANEW::Splines::knotRefinement</a></div><div class="ttdeci">auto knotRefinement(const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const std::vector&lt; double &gt; &amp;newKnots, const int refinementDirection)</div><div class="ttdoc">Perform knot refinement on a NURBS patch.</div><div class="ttdef"><b>Definition:</b> nurbsalgorithms.hh:618</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

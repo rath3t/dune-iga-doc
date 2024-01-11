@@ -1,7 +1,7 @@
 var a00107 =
 [
-    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d7/d42/a01463.html", "d7/d42/a01463" ],
-    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "df/d5e/a01467.html", "df/d5e/a01467" ],
+    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d9/d8b/a01469.html", "d9/d8b/a01469" ],
+    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "de/d13/a01473.html", "de/d13/a01473" ],
     [ "degreeElevate", "df/d98/a00107.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
     [ "extractControlCoordinates", "df/d98/a00107.html#ac182f0a34d571d507849a1a4b8c79351", null ],
     [ "extractWeights", "df/d98/a00107.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
