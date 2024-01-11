@@ -43,7 +43,7 @@ var a01617 =
     [ "seed", "d6/d6d/a01617.html#a77f99bdf92367837559a917af37b5aca", null ],
     [ "setIndices", "d6/d6d/a01617.html#a1ed74086d66a0c067d44380b3112c01e", null ],
     [ "setup", "d6/d6d/a01617.html#ae5e3c889a63d9b873ec72f67e0f1aca6", null ],
-    [ "trimElement", "d6/d6d/a01617.html#aefa0e5fe66d9fa37080e1f1542970419", null ],
+    [ "trimElement", "d6/d6d/a01617.html#ae5a3bca12cdc7d20fdcf6ed775ed821c", null ],
     [ "PatchGridHierarchicIterator< const GridImp >", "d6/d6d/a01617.html#a78b6e32e67f65b0b6d1bb74f3d5b5005", null ],
     [ "PatchGridLeafIntersection< const GridImp >", "d6/d6d/a01617.html#ab8205f2aa2748b1f5eae2238bbb4a660", null ],
     [ "PatchGridLeafIterator", "d6/d6d/a01617.html#a117f9b90e2c4d7abb62f8f3cb6663fe3", null ],

@@ -27,7 +27,7 @@ var searchData=
   ['trimdata_5f_24',['trimData_',['../d6/d6d/a01617.html#abc07e27c81e7b174460fca212ff120e3',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
   ['trimdatatype_25',['TrimDataType',['../d6/d82/a01565.html#abb1298e6aaa5c6622c7e544bdc4528cc',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]],
   ['trimdatatypeoptionalreference_26',['TrimDataTypeOptionalReference',['../d6/d82/a01565.html#aad08b11d30157ef1b1962418a1565203',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]],
-  ['trimelement_27',['trimElement',['../d9/d6e/a01409.html#aeb71dc8dae2d0d21041c9f5a41ae5a5d',1,'Dune::IGA::Trim::NURBSPatchTrimmer::trimElement()'],['../d6/d6d/a01617.html#aefa0e5fe66d9fa37080e1f1542970419',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::trimElement()']]],
+  ['trimelement_27',['trimElement',['../d9/d6e/a01409.html#aeb71dc8dae2d0d21041c9f5a41ae5a5d',1,'Dune::IGA::Trim::NURBSPatchTrimmer::trimElement()'],['../d6/d6d/a01617.html#ae5a3bca12cdc7d20fdcf6ed775ed821c',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::trimElement()']]],
   ['trimelement_2ehh_28',['trimelement.hh',['../d7/d3f/a00173.html',1,'']]],
   ['trimmed_29',['trimmed',['../d6/db6/a00241.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGA::trimmed()'],['../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGANEW::DefaultTrim::trimmed()'],['../da/de2/a01585.html#af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec',1,'Dune::IGANEW::DefaultTrim::IdType::trimmed()']]],
   ['trimmedentity_2ehh_30',['trimmedentity.hh',['../d6/db8/a00158.html',1,'']]],
