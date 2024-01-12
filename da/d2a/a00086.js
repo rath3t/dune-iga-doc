@@ -1,4 +1,4 @@
 var a00086 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "de/d9c/a01092.html", "de/d9c/a01092" ]
+    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, TrimmerType_ >", "d1/dfa/a01097.html", "d1/dfa/a01097" ]
 ];

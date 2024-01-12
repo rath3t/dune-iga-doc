@@ -1,7 +1,11 @@
 var a00080 =
 [
-    [ "findClosestParameterSpaceCoordinate", "da/dec/a00080.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
-    [ "hessian", "da/dec/a00080.html#a7693ef58b9b466df6285facbe588e2e7", null ],
-    [ "jacobianTransposed", "da/dec/a00080.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
-    [ "position", "da/dec/a00080.html#ae7bdc51407259017c5322f80267fcc5e", null ]
+    [ "Dune::IGANEW::Utilities::Domain< ScalarType >", "d0/dd3/a01077.html", "d0/dd3/a01077" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "da/dec/a00080.html#ada1286817f950d2e7a16f906473aa2b2", null ],
+    [ "clampToDomain", "da/dec/a00080.html#a341a1dc953d397349b5bb0d9f39c4106", null ],
+    [ "linspace", "da/dec/a00080.html#a0c6fd781b9aa39c1d69699ec173cece8", null ],
+    [ "linspace", "da/dec/a00080.html#a42b0275340679a127b2576175939833f", null ],
+    [ "linspace", "da/dec/a00080.html#a2630a0eab9b7e24915eeb52ca335972c", null ],
+    [ "mapToRange", "da/dec/a00080.html#addda4c834225ccb0923b33a5f9d494b0", null ],
+    [ "splitDomainInHalf", "da/dec/a00080.html#a8a1ae4d6e29645af6fa8e60672bac908", null ]
 ];

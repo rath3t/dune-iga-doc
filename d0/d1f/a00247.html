@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::Splines Namespace Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::Util Namespace Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,112 +93,272 @@ $(document).ready(function(){initNavTree('d0/d1f/a00247.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::Splines Namespace Reference</div></div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::Util Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/df3/a01468.html">BsplineBasis</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One dimensional b-spline basis.  <a href="../../df/df3/a01468.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d48/a01472.html">Nurbs</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A <code>dim</code> dimensional NURBS class.  <a href="../../d2/d48/a01472.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d95/a01637.html">ClippingResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
-<tr class="memitem:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a3f4a0936ded82e5421a36f9f4c0c114b">findSpan</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)</td></tr>
-<tr class="memdesc:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u.  <a href="../../d0/d1f/a00247.html#a3f4a0936ded82e5421a36f9f4c0c114b">More...</a><br /></td></tr>
-<tr class="separator:a3f4a0936ded82e5421a36f9f4c0c114b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
-requires (dim2 == dim)</td></tr>
-<tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a67facdaecd7f3c339ece70971f8a8f92">findSpan</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
-<tr class="memdesc:a67facdaecd7f3c339ece70971f8a8f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as findSpan but for dim knotvectors.  <a href="../../d0/d1f/a00247.html#a67facdaecd7f3c339ece70971f8a8f92">More...</a><br /></td></tr>
-<tr class="separator:a67facdaecd7f3c339ece70971f8a8f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
-<tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a1d7349b1373b5c83a5a5be7377985ae0">createUniqueKnotSpans</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans)</td></tr>
-<tr class="separator:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2287fefbe65d5d37c50e3c953258961d"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType, std::integral auto dim&gt; </td></tr>
-<tr class="memitem:a2287fefbe65d5d37c50e3c953258961d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a2287fefbe65d5d37c50e3c953258961d">generateRefinedKnots</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans, const int dir, const int refinementLevel)</td></tr>
-<tr class="memdesc:a2287fefbe65d5d37c50e3c953258961d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generate refined knots for a specified dimension and refinement level.  <a href="../../d0/d1f/a00247.html#a2287fefbe65d5d37c50e3c953258961d">More...</a><br /></td></tr>
-<tr class="separator:a2287fefbe65d5d37c50e3c953258961d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade2df4e39e5a62f0c339ccdfd4059da3"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dim2, typename NetValueType &gt; <br />
-requires ( (std::floating_point&lt; NetValueType&gt; || Concept::Vector&lt;NetValueType&gt; || <a class="el" href="../../d3/dbf/a01752.html">is_instantiation_of</a>&lt;<a class="el" href="../../d6/d80/a01076.html">ControlPoint</a>, NetValueType&gt;::value) and (dim == dim2))</td></tr>
-<tr class="memitem:ade2df4e39e5a62f0c339ccdfd4059da3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#ade2df4e39e5a62f0c339ccdfd4059da3">netOfSpan</a> (std::array&lt; int, dim &gt; subNetStart, const std::array&lt; int, dim &gt; &amp;degree, const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim2, NetValueType &gt; &amp;net)</td></tr>
-<tr class="memdesc:ade2df4e39e5a62f0c339ccdfd4059da3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function return a copy of the subNet of a knotspan, i.e. it is used to return the weights or controlpoints defined on one element.  <a href="../../d0/d1f/a00247.html#ade2df4e39e5a62f0c339ccdfd4059da3">More...</a><br /></td></tr>
-<tr class="separator:ade2df4e39e5a62f0c339ccdfd4059da3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeef1f38b9d1b82ea122bfd436c7fa79d"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType, std::integral auto dim, std::integral auto dim2, typename NetValueType &gt; <br />
-requires ( (std::floating_point&lt; NetValueType&gt; || Concept::Vector&lt;NetValueType&gt; || <a class="el" href="../../d3/dbf/a01752.html">is_instantiation_of</a>&lt;<a class="el" href="../../d6/d80/a01076.html">ControlPoint</a>, NetValueType&gt;::value) and (dim == dim2)) (dim == dim2)</td></tr>
-<tr class="memitem:aeef1f38b9d1b82ea122bfd436c7fa79d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#aeef1f38b9d1b82ea122bfd436c7fa79d">netOfSpan</a> (const FieldVector&lt; ScalarType, dim2 &gt; &amp;u, const std::array&lt; std::vector&lt; ScalarType &gt;, dim2 &gt; &amp;knots, const std::array&lt; int, dim2 &gt; &amp;degree, const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim2, NetValueType &gt; &amp;net)</td></tr>
-<tr class="memdesc:aeef1f38b9d1b82ea122bfd436c7fa79d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as netOfSpan above but the start is searched for using the knotvector value <br  />
-  <a href="../../d0/d1f/a00247.html#aeef1f38b9d1b82ea122bfd436c7fa79d">More...</a><br /></td></tr>
-<tr class="separator:aeef1f38b9d1b82ea122bfd436c7fa79d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a4aecc29b5ea9c6afc43ec3718fd13b"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, Concept::ControlPoint ValueType&gt; </td></tr>
-<tr class="memitem:a7a4aecc29b5ea9c6afc43ec3718fd13b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a7a4aecc29b5ea9c6afc43ec3718fd13b">extractWeights</a> (const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim, ValueType &gt; &amp;cpsandWeight)</td></tr>
-<tr class="memdesc:a7a4aecc29b5ea9c6afc43ec3718fd13b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract weights from a <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> of control points and weights.  <a href="../../d0/d1f/a00247.html#a7a4aecc29b5ea9c6afc43ec3718fd13b">More...</a><br /></td></tr>
-<tr class="separator:a7a4aecc29b5ea9c6afc43ec3718fd13b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac182f0a34d571d507849a1a4b8c79351"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, Concept::ControlPoint ValueType&gt; </td></tr>
-<tr class="memitem:ac182f0a34d571d507849a1a4b8c79351"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#ac182f0a34d571d507849a1a4b8c79351">extractControlCoordinates</a> (const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim, ValueType &gt; &amp;cpsandWeight)</td></tr>
-<tr class="memdesc:ac182f0a34d571d507849a1a4b8c79351"><td class="mdescLeft">&#160;</td><td class="mdescRight">Extract control coordinates from a <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> of control points and weights.  <a href="../../d0/d1f/a00247.html#ac182f0a34d571d507849a1a4b8c79351">More...</a><br /></td></tr>
-<tr class="separator:ac182f0a34d571d507849a1a4b8c79351"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bf1897206fd2e11509730b6c925ac6b"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </td></tr>
-<tr class="memitem:a4bf1897206fd2e11509730b6c925ac6b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a4bf1897206fd2e11509730b6c925ac6b">degreeElevate</a> (const <a class="el" href="../../d1/d38/a01480.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const int elevationDirection, const int elevationFactor)</td></tr>
-<tr class="memdesc:a4bf1897206fd2e11509730b6c925ac6b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform degree elevation on a NURBS patch.  <a href="../../d0/d1f/a00247.html#a4bf1897206fd2e11509730b6c925ac6b">More...</a><br /></td></tr>
-<tr class="separator:a4bf1897206fd2e11509730b6c925ac6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae31d742d70844f23a725edbd89c0f31c"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </td></tr>
-<tr class="memitem:ae31d742d70844f23a725edbd89c0f31c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#ae31d742d70844f23a725edbd89c0f31c">knotRefinement</a> (const <a class="el" href="../../d1/d38/a01480.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const std::vector&lt; double &gt; &amp;newKnots, const int refinementDirection)</td></tr>
-<tr class="memdesc:ae31d742d70844f23a725edbd89c0f31c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform knot refinement on a NURBS patch.  <a href="../../d0/d1f/a00247.html#ae31d742d70844f23a725edbd89c0f31c">More...</a><br /></td></tr>
-<tr class="separator:ae31d742d70844f23a725edbd89c0f31c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f65cad383549769cbe786b60c31e479"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a4f65cad383549769cbe786b60c31e479">clipElementRectangle</a> (const auto &amp;element, const auto &amp;patchTrimData) -&gt; std::tuple&lt; <a class="el" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a>, <a class="el" href="../../db/d95/a01637.html">ClippingResult</a> &gt;</td></tr>
+<tr class="separator:a4f65cad383549769cbe786b60c31e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a9ec04149f78cad2fd07e790a81128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128">giveEdgeIdx</a> (const std::size_t e1, const std::size_t e2)</td></tr>
+<tr class="separator:a55a9ec04149f78cad2fd07e790a81128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57d1a76835cb88eace9dcba2644c2205"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">isHostVertex</a> (const auto &amp;pt, const auto &amp;eleRect) -&gt; std::pair&lt; bool, ptrdiff_t &gt;</td></tr>
+<tr class="separator:a57d1a76835cb88eace9dcba2644c2205"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc865208e84fedeac81a10e21b0c8eec"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#acc865208e84fedeac81a10e21b0c8eec">isPointOnLine</a> (const auto &amp;pt, const auto &amp;p1, const auto &amp;p2) -&gt; bool</td></tr>
+<tr class="separator:acc865208e84fedeac81a10e21b0c8eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25f674276178276b50bf9fd5c3726dc"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int dim&gt; </td></tr>
+<tr class="memitem:af25f674276178276b50bf9fd5c3726dc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#af25f674276178276b50bf9fd5c3726dc">approxSamePoint</a> (const Clipper2Lib::PointD &amp;pt1, const Dune::FieldVector&lt; ScalarType, dim &gt; &amp;pt2, const double prec) -&gt; bool</td></tr>
+<tr class="separator:af25f674276178276b50bf9fd5c3726dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92128ee85ce68d85f0d598c954c790eb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a92128ee85ce68d85f0d598c954c790eb">distance</a> (const Clipper2Lib::PointD &amp;p1, const auto &amp;p2) -&gt; double</td></tr>
+<tr class="separator:a92128ee85ce68d85f0d598c954c790eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36869896fb8578ef4817450532376164"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a36869896fb8578ef4817450532376164">findGoodStartingPoint</a> (const auto &amp;curve, const Clipper2Lib::PointD &amp;pt, int N=100) -&gt; double</td></tr>
+<tr class="separator:a36869896fb8578ef4817450532376164"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memTemplParams" colspan="2">template&lt;typename TrimmingCurve &gt; </td></tr>
+<tr class="memitem:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#afa8d09a2b2b61bb41dfc22fb2060a5fd">createHostGeometry</a> (auto &amp;vertex1, auto &amp;vertex2) -&gt; TrimmingCurve</td></tr>
+<tr class="separator:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a656f5c8e166d1df63a785af094df16bc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a656f5c8e166d1df63a785af094df16bc">callFindIntersection</a> (const size_t tcIdx, const int edgeIdx, const auto &amp;ip, const auto &amp;patchTrimData, const auto &amp;corners) -&gt; std::pair&lt; double, FieldVector&lt; double, 2 &gt; &gt;</td></tr>
+<tr class="separator:a656f5c8e166d1df63a785af094df16bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a16d111a10fb0652a5487a6116aeabb50"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::array&lt; int, 2 &gt;, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a16d111a10fb0652a5487a6116aeabb50">edgeLookUp</a> {std::array{0, 1}, {1, 3}, {3, 2}, {2, 0}}</td></tr>
+<tr class="separator:a16d111a10fb0652a5487a6116aeabb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00b7fac6f9fe27bb7840b5ec26bccd44"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a00b7fac6f9fe27bb7840b5ec26bccd44">toCurveIdx</a> = [](const size_t z) { return static_cast&lt;size_t&gt;(std::floor((z / 100) - 1)); }</td></tr>
+<tr class="separator:a00b7fac6f9fe27bb7840b5ec26bccd44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2980769b17a08a9c365baf8b18cca9d7"><td class="memItemLeft" align="right" valign="top">constexpr std::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a00247.html#a2980769b17a08a9c365baf8b18cca9d7">edgeDirections</a></td></tr>
+<tr class="separator:a2980769b17a08a9c365baf8b18cca9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a1d7349b1373b5c83a5a5be7377985ae0" name="a1d7349b1373b5c83a5a5be7377985ae0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d7349b1373b5c83a5a5be7377985ae0">&#9670;&nbsp;</a></span>createUniqueKnotSpans()</h2>
+<a id="af25f674276178276b50bf9fd5c3726dc" name="af25f674276178276b50bf9fd5c3726dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af25f674276178276b50bf9fd5c3726dc">&#9670;&nbsp;</a></span>approxSamePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::size_t dim, typename ScalarType &gt; </div>
+template&lt;typename ScalarType , int dim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::createUniqueKnotSpans </td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::approxSamePoint </td>
           <td>(</td>
-          <td class="paramtype">const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>knotSpans</em></td><td>)</td>
+          <td class="paramtype">const Clipper2Lib::PointD &amp;&#160;</td>
+          <td class="paramname"><em>pt1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const Dune::FieldVector&lt; ScalarType, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pt2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>prec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; bool </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a4bf1897206fd2e11509730b6c925ac6b" name="a4bf1897206fd2e11509730b6c925ac6b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4bf1897206fd2e11509730b6c925ac6b">&#9670;&nbsp;</a></span>degreeElevate()</h2>
+<a id="a656f5c8e166d1df63a785af094df16bc" name="a656f5c8e166d1df63a785af094df16bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a656f5c8e166d1df63a785af094df16bc">&#9670;&nbsp;</a></span>callFindIntersection()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::degreeElevate </td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::callFindIntersection </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d38/a01480.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>oldData</em>, </td>
+          <td class="paramtype">const size_t&#160;</td>
+          <td class="paramname"><em>tcIdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>elevationDirection</em>, </td>
+          <td class="paramname"><em>edgeIdx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>elevationFactor</em>&#160;</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>patchTrimData</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>corners</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::pair&lt;double, FieldVector&lt;double, 2&gt;&gt; </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f65cad383549769cbe786b60c31e479" name="a4f65cad383549769cbe786b60c31e479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f65cad383549769cbe786b60c31e479">&#9670;&nbsp;</a></span>clipElementRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::clipElementRectangle </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>patchTrimData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a>, <a class="el" href="../../db/d95/a01637.html">ClippingResult</a>&gt; </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa8d09a2b2b61bb41dfc22fb2060a5fd" name="afa8d09a2b2b61bb41dfc22fb2060a5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8d09a2b2b61bb41dfc22fb2060a5fd">&#9670;&nbsp;</a></span>createHostGeometry()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmingCurve &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::createHostGeometry </td>
+          <td>(</td>
+          <td class="paramtype">auto &amp;&#160;</td>
+          <td class="paramname"><em>vertex1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">auto &amp;&#160;</td>
+          <td class="paramname"><em>vertex2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; TrimmingCurve </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92128ee85ce68d85f0d598c954c790eb" name="a92128ee85ce68d85f0d598c954c790eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92128ee85ce68d85f0d598c954c790eb">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::distance </td>
+          <td>(</td>
+          <td class="paramtype">const Clipper2Lib::PointD &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; double </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a36869896fb8578ef4817450532376164" name="a36869896fb8578ef4817450532376164"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36869896fb8578ef4817450532376164">&#9670;&nbsp;</a></span>findGoodStartingPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::findGoodStartingPoint </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Clipper2Lib::PointD &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em> = <code>100</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; double </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55a9ec04149f78cad2fd07e790a81128" name="a55a9ec04149f78cad2fd07e790a81128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a9ec04149f78cad2fd07e790a81128">&#9670;&nbsp;</a></span>giveEdgeIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dune::IGANEW::DefaultTrim::Util::giveEdgeIdx </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>e1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>e2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -206,411 +366,143 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Perform degree elevation on a NURBS patch. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">dim</td><td>Dimension of the NURBS patch. </td></tr>
-    <tr><td class="paramname">dimworld</td><td>Dimension of the world. </td></tr>
-    <tr><td class="paramname">ScalarType</td><td>Type for the scalar values. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">oldData</td><td>Original NURBS patch data. </td></tr>
-    <tr><td class="paramname">elevationDirection</td><td>The direction in which the degree elevation is performed. </td></tr>
-    <tr><td class="paramname">elevationFactor</td><td>The factor by which the degree is elevated. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>NURBS patch data after degree elevation. </dd></dl>
-
 </div>
 </div>
-<a id="ac182f0a34d571d507849a1a4b8c79351" name="ac182f0a34d571d507849a1a4b8c79351"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac182f0a34d571d507849a1a4b8c79351">&#9670;&nbsp;</a></span>extractControlCoordinates()</h2>
+<a id="a57d1a76835cb88eace9dcba2644c2205" name="a57d1a76835cb88eace9dcba2644c2205"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57d1a76835cb88eace9dcba2644c2205">&#9670;&nbsp;</a></span>isHostVertex()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::integral auto dim, Concept::ControlPoint ValueType&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::extractControlCoordinates </td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isHostVertex </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim, ValueType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cpsandWeight</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Extract control coordinates from a <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> of control points and weights. </p>
-<p >This function extracts the control coordinates from a <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing control points and weights. It returns a new <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing only the control coordinates.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">dim</td><td>The dimension of the <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a>. </td></tr>
-    <tr><td class="paramname">ValueType</td><td>The type of the control points and weights. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cpsandWeight</td><td>The <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing control points and weights. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing only the control coordinates. </dd></dl>
-
-</div>
-</div>
-<a id="a7a4aecc29b5ea9c6afc43ec3718fd13b" name="a7a4aecc29b5ea9c6afc43ec3718fd13b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a4aecc29b5ea9c6afc43ec3718fd13b">&#9670;&nbsp;</a></span>extractWeights()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::integral auto dim, Concept::ControlPoint ValueType&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::extractWeights </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim, ValueType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>cpsandWeight</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Extract weights from a <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> of control points and weights. </p>
-<p >This function extracts the weights from a <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing control points and weights. It returns a new <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing only the weights.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">dim</td><td>The dimension of the <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a>. </td></tr>
-    <tr><td class="paramname">ValueType</td><td>The type of the control points and weights. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">cpsandWeight</td><td>The <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing control points and weights. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A new <a class="el" href="../../d1/d04/a01744.html" title="This is a condensed version of the proposal https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/...">MultiDimensionalNet</a> containing only the weights. </dd></dl>
-
-</div>
-</div>
-<a id="a3f4a0936ded82e5421a36f9f4c0c114b" name="a3f4a0936ded82e5421a36f9f4c0c114b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f4a0936ded82e5421a36f9f4c0c114b">&#9670;&nbsp;</a></span>findSpan() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::ranges::random_access_range Range&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::findSpan </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">typename std::remove_cvref_t&lt; Range &gt;::value_type&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Range &amp;&amp;&#160;</td>
-          <td class="paramname"><em>U</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">typename std::remove_cvref_t&lt; Range &gt;::difference_type&#160;</td>
-          <td class="paramname"><em>offset</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>eleRect</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; std::pair&lt;bool, ptrdiff_t&gt; </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Range</td><td>knotvector range </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">p</td><td>polynomial degree of the underlying spline </td></tr>
-    <tr><td class="paramname">u</td><td>span value which is searched for </td></tr>
-    <tr><td class="paramname">U</td><td>range where to search (knotvector </td></tr>
-    <tr><td class="paramname">offset</td><td>adjust range where to start searching to improve efficiency </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
-
 </div>
 </div>
-<a id="a67facdaecd7f3c339ece70971f8a8f92" name="a67facdaecd7f3c339ece70971f8a8f92"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67facdaecd7f3c339ece70971f8a8f92">&#9670;&nbsp;</a></span>findSpan() <span class="overload">[2/2]</span></h2>
+<a id="acc865208e84fedeac81a10e21b0c8eec" name="acc865208e84fedeac81a10e21b0c8eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc865208e84fedeac81a10e21b0c8eec">&#9670;&nbsp;</a></span>isPointOnLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
-requires (dim2 == dim)</div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::findSpan </td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isPointOnLine </td>
           <td>(</td>
-          <td class="paramtype">const std::array&lt; int, dim2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>p</em>, </td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const Dune::FieldVector&lt; ValueType, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>U</em>&#160;</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; bool </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Same as findSpan but for dim knotvectors. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d1f/a00247.html#a3f4a0936ded82e5421a36f9f4c0c114b" title="Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than...">findSpan</a> </dd></dl>
-
 </div>
 </div>
-<a id="a2287fefbe65d5d37c50e3c953258961d" name="a2287fefbe65d5d37c50e3c953258961d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2287fefbe65d5d37c50e3c953258961d">&#9670;&nbsp;</a></span>generateRefinedKnots()</h2>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2980769b17a08a9c365baf8b18cca9d7" name="a2980769b17a08a9c365baf8b18cca9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2980769b17a08a9c365baf8b18cca9d7">&#9670;&nbsp;</a></span>edgeDirections</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::floating_point ScalarType, std::integral auto dim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::generateRefinedKnots </td>
-          <td>(</td>
-          <td class="paramtype">const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>knotSpans</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>dir</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>refinementLevel</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">constexpr std::array Dune::IGANEW::DefaultTrim::Util::edgeDirections</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Generate refined knots for a specified dimension and refinement level. </p>
-<p >This function generates additional knots within the existing knot spans to refine the knot vector in a specified dimension. The refinement level determines the number of additional knots to be generated within each existing span.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ScalarType</td><td>The type of the knot coordinates (floating-point). </td></tr>
-    <tr><td class="paramname">dim</td><td>The dimension along which the knots are to be refined (integral). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">knotSpans</td><td>The original knot spans for each dimension. </td></tr>
-    <tr><td class="paramname">dir</td><td>The direction (dimension) along which the knots are to be refined. </td></tr>
-    <tr><td class="paramname">refinementLevel</td><td>The refinement level, determining the number of additional knots within each span. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>A vector containing the refined knots for the specified dimension. </dd></dl>
-
+<b>Initial value:</b><div class="fragment"><div class="line">{FieldVector&lt;double, 2&gt;{1.0, 0.0}, FieldVector&lt;double, 2&gt;{0, 1},</div>
+<div class="line">                                      FieldVector&lt;double, 2&gt;{-1, 0}, FieldVector&lt;double, 2&gt;{0, -1}}</div>
+</div><!-- fragment -->
 </div>
 </div>
-<a id="ae31d742d70844f23a725edbd89c0f31c" name="ae31d742d70844f23a725edbd89c0f31c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae31d742d70844f23a725edbd89c0f31c">&#9670;&nbsp;</a></span>knotRefinement()</h2>
+<a id="a16d111a10fb0652a5487a6116aeabb50" name="a16d111a10fb0652a5487a6116aeabb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d111a10fb0652a5487a6116aeabb50">&#9670;&nbsp;</a></span>edgeLookUp</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::knotRefinement </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d1/d38/a01480.html">NURBSPatchData</a>&lt; dim, dimworld, ScalarType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>oldData</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>newKnots</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>refinementDirection</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">constexpr std::array&lt;std::array&lt;int, 2&gt;, 4&gt; Dune::IGANEW::DefaultTrim::Util::edgeLookUp {std::array{0, 1}, {1, 3}, {3, 2}, {2, 0}}</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Perform knot refinement on a NURBS patch. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">dim</td><td>Dimension of the NURBS patch. </td></tr>
-    <tr><td class="paramname">dimworld</td><td>Dimension of the world. </td></tr>
-    <tr><td class="paramname">ScalarType</td><td>Type for the scalar values. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">oldData</td><td>Original NURBS patch data. </td></tr>
-    <tr><td class="paramname">newKnots</td><td>Vector of new knots to be added. </td></tr>
-    <tr><td class="paramname">refinementDirection</td><td>The direction in which the knot refinement is performed. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>NURBS patch data after knot refinement. </dd></dl>
-
 </div>
 </div>
-<a id="aeef1f38b9d1b82ea122bfd436c7fa79d" name="aeef1f38b9d1b82ea122bfd436c7fa79d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeef1f38b9d1b82ea122bfd436c7fa79d">&#9670;&nbsp;</a></span>netOfSpan() <span class="overload">[1/2]</span></h2>
+<a id="a00b7fac6f9fe27bb7840b5ec26bccd44" name="a00b7fac6f9fe27bb7840b5ec26bccd44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a00b7fac6f9fe27bb7840b5ec26bccd44">&#9670;&nbsp;</a></span>toCurveIdx</h2>
 
 <div class="memitem">
 <div class="memproto">
-<div class="memtemplate">
-template&lt;std::floating_point ScalarType, std::integral auto dim, std::integral auto dim2, typename NetValueType &gt; <br />
-requires ( (std::floating_point&lt; NetValueType&gt; || Concept::Vector&lt;NetValueType&gt; || <a class="el" href="../../d3/dbf/a01752.html">is_instantiation_of</a>&lt;<a class="el" href="../../d6/d80/a01076.html">ControlPoint</a>, NetValueType&gt;::value) and (dim == dim2)) (dim == dim2)</div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::netOfSpan </td>
-          <td>(</td>
-          <td class="paramtype">const FieldVector&lt; ScalarType, dim2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; std::vector&lt; ScalarType &gt;, dim2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>knots</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; int, dim2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>degree</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim2, NetValueType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>net</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::toCurveIdx = [](const size_t z) { return static_cast&lt;size_t&gt;(std::floor((z / 100) - 1)); }</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-<p>Same as netOfSpan above but the start is searched for using the knotvector value <br  />
- </p>
-
-</div>
-</div>
-<a id="ade2df4e39e5a62f0c339ccdfd4059da3" name="ade2df4e39e5a62f0c339ccdfd4059da3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ade2df4e39e5a62f0c339ccdfd4059da3">&#9670;&nbsp;</a></span>netOfSpan() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::integral auto dim, std::integral auto dim2, typename NetValueType &gt; <br />
-requires ( (std::floating_point&lt; NetValueType&gt; || Concept::Vector&lt;NetValueType&gt; || <a class="el" href="../../d3/dbf/a01752.html">is_instantiation_of</a>&lt;<a class="el" href="../../d6/d80/a01076.html">ControlPoint</a>, NetValueType&gt;::value) and (dim == dim2))</div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto Dune::IGANEW::Splines::netOfSpan </td>
-          <td>(</td>
-          <td class="paramtype">std::array&lt; int, dim &gt;&#160;</td>
-          <td class="paramname"><em>subNetStart</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; int, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>degree</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d1/d04/a01744.html">MultiDimensionalNet</a>&lt; dim2, NetValueType &gt; &amp;&#160;</td>
-          <td class="paramname"><em>net</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Function return a copy of the subNet of a knotspan, i.e. it is used to return the weights or controlpoints defined on one element. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">dim</td><td>dimension of the patch/net </td></tr>
-    <tr><td class="paramname">NetValueType</td><td>The type inside the net. It should be scalar for weights, Controlpoint&lt;&gt; or some vector type which satisfies Vector for the controlpoint coordinates </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">subNetStart</td><td>The start of the control point net in terms of knot span indices. From this the degree is subtracted to get the correct control point index start </td></tr>
-    <tr><td class="paramname">degree</td><td>array of degrees per direction </td></tr>
-    <tr><td class="paramname">net</td><td>the full net itself </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>subNet with the strideSizes degree+1 per direction </dd></dl>
 
 </div>
 </div>
@@ -619,7 +511,7 @@ requires ( (std::floating_point&lt; NetValueType&gt; || Concept::Vector&lt;NetVa
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../df/d17/a00231.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d53/a00232.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d0/d1f/a00247.html">Splines</a></li>
+    <li class="navelem"><a class="el" href="../../de/dc2/a00228.html">Dune</a></li><li class="navelem"><a class="el" href="../../dd/d2d/a00229.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d4/d9a/a00246.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d0/d1f/a00247.html">Util</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

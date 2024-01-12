@@ -92,43 +92,48 @@ $(document).ready(function(){initNavTree('d5/d70/a03499.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">iga/splines/nurbspatchdata.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">python/iga/nurbspatchdata.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d1/d09/a00077_source.html">dune/iga/geometrykernel/controlpoint.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../db/db6/a00074_source.html">dune/iga/utils/mdnet.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;dune/iga/controlpoint.hh&quot;</code><br />
+<code>#include &quot;dune/iga/nurbsalgorithms.hh&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/de1/a00065_source.html">dune/iga/nurbsbasis.hh</a>&quot;</code><br />
+<code>#include &quot;dune/iga/nurbspatchdata.hh&quot;</code><br />
+<code>#include &lt;dune/python/functions/globalbasis.hh&gt;</code><br />
+<code>#include &lt;dune/python/pybind11/eigen.h&gt;</code><br />
+<code>#include &lt;dune/python/pybind11/functional.h&gt;</code><br />
+<code>#include &lt;dune/python/pybind11/pybind11.h&gt;</code><br />
+<code>#include &lt;dune/python/pybind11/stl.h&gt;</code><br />
 </div>
 <p><a href="../../d5/d70/a03499_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d38/a01480.html">Dune::IGANEW::NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Struct that holds all data regarding the NURBS geometric structure.  <a href="../../d1/d38/a01480.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:df/d17/a00231"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d17/a00231.html">Dune</a></td></tr>
+<tr class="memitem:de/dc2/a00228"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d0/d53/a00232"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:de/dbc/a00249"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html">Dune::Python</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, std::size_t dimworld_, typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#aee4d8d984f5b9053709e25ff2c1a6265">Dune::IGANEW::NURBSPatchData</a> (const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;knotSpansI, const MultiDimensionalNet&lt; dim, ControlPoint&lt; FieldVector&lt; ScalarType, dimworld_ &gt; &gt; &gt; &amp;controlPointsI, const std::array&lt; int, dim &gt; &amp;degreeInput) -&gt; NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</td></tr>
-<tr class="memdesc:aee4d8d984f5b9053709e25ff2c1a6265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for creating <a class="el" href="../../d1/d38/a01480.html" title="Struct that holds all data regarding the NURBS geometric structure.">NURBSPatchData</a> instances without explicitly specifying template arguments.  <a href="../../d0/d53/a00232.html#aee4d8d984f5b9053709e25ff2c1a6265">More...</a><br /></td></tr>
-<tr class="separator:aee4d8d984f5b9053709e25ff2c1a6265"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d2b9f264b1b4229ed54df9082d5d35d"><td class="memTemplParams" colspan="2">template&lt;class ControlPoint , class... options&gt; </td></tr>
+<tr class="memitem:a5d2b9f264b1b4229ed54df9082d5d35d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#a5d2b9f264b1b4229ed54df9082d5d35d">Dune::Python::registerControlPoint</a> (pybind11::handle scope, pybind11::class_&lt; ControlPoint, options... &gt; cls)</td></tr>
+<tr class="separator:a5d2b9f264b1b4229ed54df9082d5d35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1c3e9e27b16a052696b80a7846b05eb"><td class="memTemplParams" colspan="2">template&lt;class MultiDimensionNet , class... options&gt; </td></tr>
+<tr class="memitem:ad1c3e9e27b16a052696b80a7846b05eb"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#ad1c3e9e27b16a052696b80a7846b05eb">Dune::Python::registerMultiDimensionalNet</a> (pybind11::handle scope, pybind11::class_&lt; MultiDimensionalNet, options... &gt; cls)</td></tr>
+<tr class="separator:ad1c3e9e27b16a052696b80a7846b05eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb0ad571b894541ccc4722f669ce8097"><td class="memTemplParams" colspan="2">template&lt;class NURBSPatchData , class... options&gt; </td></tr>
+<tr class="memitem:abb0ad571b894541ccc4722f669ce8097"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#abb0ad571b894541ccc4722f669ce8097">Dune::Python::registerNurbsPatchData</a> (pybind11::handle scope, pybind11::class_&lt; NURBSPatchData, options... &gt; cls)</td></tr>
+<tr class="separator:abb0ad571b894541ccc4722f669ce8097"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_479b904809ee7734e338128330b60cdb.html">splines</a></li><li class="navelem"><a class="el" href="../../d5/d70/a03499.html">nurbspatchdata.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../d5/d70/a03499.html">nurbspatchdata.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
