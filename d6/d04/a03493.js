@@ -1,11 +1,7 @@
 var a03493 =
 [
-    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d3/d07/a01301.html", "d3/d07/a01301" ],
-    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "dc/d9e/a01305.html", "dc/d9e/a01305" ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "db/d4b/a01309.html", "db/d4b/a01309" ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "dc/d8c/a01297.html", "dc/d8c/a01297" ],
-    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "dd/d43/a01193.html", "dd/d43/a01193" ],
-    [ "Dune::Functions::NurbsNode< GV >", "de/d90/a01313.html", "de/d90/a01313" ],
-    [ "nurbs", "d6/d04/a03493.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
-    [ "nurbs", "d6/d04/a03493.html#a10c3f08f7830f39c003415e65e2a0361", null ]
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "df/d0b/a01372.html", "df/d0b/a01372" ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d2/d29/a01376.html", "d2/d29/a01376" ],
+    [ "Dune::JSONGridFactory< Grid_ >", "dd/d6d/a01380.html", "dd/d6d/a01380" ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d7/dde/a01384.html", "d7/dde/a01384" ]
 ];

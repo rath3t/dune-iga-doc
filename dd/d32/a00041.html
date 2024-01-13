@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: igadatacollector.hh File Reference</title>
+<title>dune-iga: ibrajsonreader.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,25 +91,41 @@ $(document).ready(function(){initNavTree('dd/d32/a00041.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">igadatacollector.hh File Reference</div></div>
+  <div class="summary">
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">ibrajsonreader.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d5/df9/a00044_source.html">igarefinedgeometries.hh</a>&quot;</code><br />
-<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/partitionset.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/rangegenerators.hh&gt;</code><br />
-<code>#include &lt;dune/vtk/datacollectors/unstructureddatacollector.hh&gt;</code><br />
-<code>#include &lt;dune/vtk/function.hh&gt;</code><br />
-<code>#include &lt;dune/vtk/types.hh&gt;</code><br />
-<code>#include &lt;dune/vtk/utility/lagrangepoints.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;fstream&gt;</code><br />
+<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../de/df6/a03484_source.html">ibrageometry.hh</a>&quot;</code><br />
 </div>
 <p><a href="../../dd/d32/a00041_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:df/d17/a00231"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d17/a00231.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d0/d53/a00232"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html">Dune::IGANEW</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:abe48967cf956f798eea3f80cc1edc59e"><td class="memTemplParams" colspan="2">template&lt;int dimworld, typename InputStringType &gt; <br />
+requires ( not std::convertible_to&lt; std::string, InputStringType&gt; and not std::convertible_to&lt;InputStringType, const char*&gt;)</td></tr>
+<tr class="memitem:abe48967cf956f798eea3f80cc1edc59e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#abe48967cf956f798eea3f80cc1edc59e">Dune::IGANEW::readJson</a> (InputStringType &amp;ibraInputFile)</td></tr>
+<tr class="separator:abe48967cf956f798eea3f80cc1edc59e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54b6cf582685f1241781602bb2a0e735"><td class="memTemplParams" colspan="2">template&lt;int dimworld&gt; </td></tr>
+<tr class="memitem:a54b6cf582685f1241781602bb2a0e735"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d53/a00232.html#a54b6cf582685f1241781602bb2a0e735">Dune::IGANEW::readJson</a> (const std::string &amp;fileName)</td></tr>
+<tr class="separator:a54b6cf582685f1241781602bb2a0e735"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_6a67ce012f0e7d7f20bfc6d5cc3e1475.html">oldStuff</a></li><li class="navelem"><a class="el" href="../../dir_9b75971e75a3e7381b24095f71781733.html">io</a></li><li class="navelem"><a class="el" href="../../dd/d32/a00041.html">igadatacollector.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li><li class="navelem"><a class="el" href="../../dd/d32/a00041.html">ibrajsonreader.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

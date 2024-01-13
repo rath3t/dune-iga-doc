@@ -1,9 +1,11 @@
 var a00074 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d9/d7c/a01073.html", "d9/d7c/a01073" ],
-    [ "operator*", "db/db6/a00074.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "db/db6/a00074.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "db/db6/a00074.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "db/db6/a00074.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "db/db6/a00074.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "Dune::IGANEW::MultiDimensionalNet< netdim, ElementType, Container >", "d1/d04/a01744.html", "d1/d04/a01744" ],
+    [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "d9/d0d/a01748.html", "d9/d0d/a01748" ],
+    [ "dot", "db/db6/a00074.html#aec86687240a124712c5daf95ff566abb", null ],
+    [ "MultiDimensionalNet", "db/db6/a00074.html#a4549270737e222aedcbf2721e08b3d06", null ],
+    [ "operator*", "db/db6/a00074.html#a3f6e129217a58dc89862cc33b12f8885", null ],
+    [ "operator*", "db/db6/a00074.html#a33cc687d08f824af43e22f0d3eb68473", null ],
+    [ "operator-", "db/db6/a00074.html#a1864570b0dc1ce2ff4a3140a27211792", null ],
+    [ "operator/", "db/db6/a00074.html#a010894b51f31c1163c47566396c4c13e", null ]
 ];
