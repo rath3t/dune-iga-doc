@@ -1,25 +1,15 @@
 var a00244 =
 [
-    [ "Ibra", "d6/d22/a00245.html", "d6/d22/a00245" ],
-    [ "Trim", "d4/d9a/a00246.html", "d4/d9a/a00246" ],
-    [ "Boundary", "dc/d35/a01400.html", "dc/d35/a01400" ],
-    [ "DomainInformation", "d4/d98/a01456.html", "d4/d98/a01456" ],
-    [ "GridBoundarySegment", "d2/d2f/a01460.html", "d2/d2f/a01460" ],
-    [ "IbraReader", "df/d0b/a01372.html", "df/d0b/a01372" ],
-    [ "IGARefinedGeometries", "d0/d36/a01388.html", "d0/d36/a01388" ],
-    [ "NURBSGrid", "dd/d0c/a01368.html", null ],
-    [ "TransformToSpan", "dd/d1c/a01452.html", "dd/d1c/a01452" ],
-    [ "TrimData", "d2/d82/a01404.html", "d2/d82/a01404" ],
-    [ "BoundaryLoop", "d6/d08/a00244.html#ac852dd8efef6c18283ca22735cb02696", null ],
-    [ "DomainType", "d6/d08/a00244.html#a25585768c010972feb9ad3e744e16623", null ],
-    [ "ElementTrimFlag", "d6/d08/a00244.html#a34b2741ab599082a80dacc40c6e5069b", [
-      [ "full", "d6/d08/a00244.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "d6/d08/a00244.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "d6/d08/a00244.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ],
-    [ "calculateBoundaryLoopLength", "d6/d08/a00244.html#ad53d9d1af502406661ebe6320753c429", null ],
-    [ "determineCurvedBoundaries", "d6/d08/a00244.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
-    [ "fillQuadratureRuleImpl", "d6/d08/a00244.html#a023d3c0845a496b2eedca5b359b49964", null ],
-    [ "splitBoundariesImpl", "d6/d08/a00244.html#ad66112982ac256c7f15589dec5fcce68", null ],
-    [ "triangulate", "d6/d08/a00244.html#ab8e1d89240e3480112457535ab40b620", null ]
+    [ "BsplineBasis", "d4/dfd/a01465.html", "d4/dfd/a01465" ],
+    [ "Nurbs", "d9/d8b/a01469.html", "d9/d8b/a01469" ],
+    [ "createUniqueKnotSpans", "d6/d08/a00244.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "d6/d08/a00244.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "d6/d08/a00244.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "d6/d08/a00244.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "d6/d08/a00244.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "d6/d08/a00244.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "d6/d08/a00244.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "d6/d08/a00244.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "d6/d08/a00244.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
+    [ "netOfSpan", "d6/d08/a00244.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];

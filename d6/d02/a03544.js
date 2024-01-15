@@ -1,10 +1,5 @@
 var a03544 =
 [
-    [ "Dune::IGANEW::IdentityTrim::Parameter", "d4/d26/a01700.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataImpl< mydim_, ScalarType >", "d0/dbc/a01704.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "de/d5c/a01708.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchTrimDataImpl< dim, ScalarType >", "dc/d3e/a01712.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >", "dc/dcc/a01200.html", "dc/dcc/a01200" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "da/d0e/a01720.html", "da/d0e/a01720" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d3/d4c/a01724.html", "d3/d4c/a01724" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLeafIntersectionIterator< GridImp >", "db/de9/a01525.html", "db/de9/a01525" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIntersectionIterator< GridImp >", "db/dce/a01529.html", "db/dce/a01529" ]
 ];

@@ -1,4 +1,4 @@
 var a00185 =
 [
-    [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d9/d49/a01696.html", "d9/d49/a01696" ]
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "df/d2e/a01737.html", "df/d2e/a01737" ]
 ];

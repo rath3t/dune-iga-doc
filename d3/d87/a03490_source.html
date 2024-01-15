@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: ibrareader.hh Source File</title>
+<title>dune-iga: concepts.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('d3/d87/a03490_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">io/ibrareader.hh</div></div>
+  <div class="headertitle"><div class="title">hierarchicpatch/concepts.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d3/d87/a03490.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
@@ -99,104 +99,77 @@ $(document).ready(function(){initNavTree('d3/d87/a03490_source.html','../../'); 
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;nlohmann/json.hpp&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;<a class="code" href="../../de/d67/a03487.html">ibrageometry.hh</a>&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;<a class="code" href="../../dd/d32/a00041.html">ibrajsonreader.hh</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/grid/concepts/geometry.hh&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="../../da/dec/a00080.html">dune/iga/geometrykernel/geohelper.hh</a>&gt;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../da/d31/a00234.html">   10</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../da/d31/a00234.html">Dune::IGANEW::Concept</a> {</div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d53/a00232.html">Dune::IGANEW</a> {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> PatchGr<span class="keywordtype">id</span>&gt;</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../d4/d64/a01296.html">   15</a></span>  <span class="keyword">requires</span>(dim == 2) &amp;&amp; (dimworld == 2 || dimworld == 3) &amp;&amp; (dim &lt;= dimworld) <span class="keyword">class</span> <a class="code hl_class" href="../../d4/d64/a01296.html">IbraReader</a> {</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">using </span>GridFamily    = <span class="keyword">typename</span> <a class="code hl_typedef" href="../../dc/db6/a01212.html#af7a3cbd9db679a5e73704bfe9eaee20a">PatchGrid::GridFamily</a>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">using </span><a class="code hl_struct" href="../../d1/d38/a01480.html">PatchData</a>     = <a class="code hl_struct" href="../../d1/d38/a01480.html">NURBSPatchData&lt;dim, dimworld, typename GridFamily::ctype&gt;</a>;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>PatchTrimData = <span class="keyword">typename</span> GridFamily::TrimmerTraits::PatchTrimData;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">using </span>TrimmingCurve = <span class="keyword">typename</span> GridFamily::TrimmerTraits::TrimmingCurve;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">using </span>ControlPointType    = <span class="keyword">typename</span> <a class="code hl_struct" href="../../d6/d80/a01076.html">PatchData::ControlPointType</a>;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">using </span>ControlPointNetType = <span class="keyword">typename</span> <a class="code hl_class" href="../../d1/d04/a01744.html">PatchData::ControlPointNetType</a>;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">public</span>:</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d4/d64/a01296.html#a7751120f5ee287eaed14728396bd01d7">   27</a></span> <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../d4/d64/a01296.html#a7751120f5ee287eaed14728396bd01d7">read</a>(<span class="keyword">const</span> std::string&amp; fileName,</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                                                                                         <span class="keyword">const</span> <span class="keywordtype">bool</span> trim</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                                                                                         = <span class="keyword">true</span>,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                                                                                         std::array&lt;<span class="keywordtype">int</span>,</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                                                                                                    2&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>                                                                                                             preKnotRefine</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>                                                                                                         = {0, 0}) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <a class="code hl_struct" href="../../d8/d7a/a01292.html">Ibra::Brep</a> brep = readJson&lt;dimworld&gt;(fileName);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="comment">// Each surface in a brep is one Patch, as for now only one brep is supported in NURBSGrid</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      assert(brep.<a class="code hl_variable" href="../../d8/d7a/a01292.html#a9b212409e86466050d4e12dcf06194e6">surfaces</a>.size() == 1);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;IbraReader successfully read in 1 patch with &quot;</span> &lt;&lt; brep.<a class="code hl_variable" href="../../d8/d7a/a01292.html#af19f62b66735603e13a8f1d68930a3b0">trims</a>.size() &lt;&lt; <span class="stringliteral">&quot; edges.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="comment">// Reader has done its job, now NURBSGrid can be constructed</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <a class="code hl_struct" href="../../dc/dd9/a01268.html">Ibra::Surface&lt;dimworld&gt;</a> _surface                     = brep.<a class="code hl_variable" href="../../d8/d7a/a01292.html#a9b212409e86466050d4e12dcf06194e6">surfaces</a>[0];</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keyword">const</span> std::array&lt;std::vector&lt;double&gt;, dim&gt; knotSpans = _surface.<a class="code hl_function" href="../../dc/dd9/a01268.html#ad12ab5d6f888eaabe6d509e82ae8f8df">compileKnotVectors</a>();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keyword">const</span> std::vector&lt;std::vector&lt;ControlPointType&gt;&gt; controlPoints</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>          = _surface.template transformControlPoints&lt;ControlPointType&gt;();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      std::array&lt;int, dim&gt; dimsize = _surface.<a class="code hl_variable" href="../../dc/dd9/a01268.html#aa85e99325b805008cb7d93e1361460c5">n_controlPoints</a>;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keyword">auto</span> controlNet = ControlPointNetType(dimsize, controlPoints);</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      PatchData _patchData{knotSpans, controlNet, _surface.<a class="code hl_variable" href="../../dc/dd9/a01268.html#a07805bf670c8d66de1fe43d984f33839">degree</a>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> VectorType&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../dd/d40/a01762.html">   13</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dd/d40/a01762.html">Vector</a> = <span class="keyword">requires</span>(VectorType v, <span class="keywordtype">double</span> a, <span class="keywordtype">int</span> index) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">typename</span> VectorType::value_type;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    { v[index] } -&gt; std::same_as&lt;typename VectorType::value_type&amp;&gt;;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    { v += v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    { v -= v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    { v *= a } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    { v /= a } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  };</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> ControlPo<span class="keywordtype">int</span>Type&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../d9/d27/a01763.html">   25</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d9/d27/a01763.html">ControlPoint</a> = <a class="code hl_concept" href="../../dd/d40/a01762.html">Vector&lt;typename ControlPointType::VectorType&gt;</a> &amp;&amp; <span class="keyword">requires</span>(ControlPointType cp) {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">typename</span> ControlPointType::VectorType;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">typename</span> ControlPointType::VectorType::value_type;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    { cp.p } -&gt; std::same_as&lt;typename ControlPointType::VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    { cp.w } -&gt; std::same_as&lt;typename ControlPointType::VectorType::value_type&amp;&gt;;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  };</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../dc/d51/a01764.html">   33</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../dc/d51/a01764.html">MultiplyAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    x* y;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../df/d7b/a01765.html">   38</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../df/d7b/a01765.html">AddAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    x + y;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  };</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d0/d79/a01766.html">   43</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d0/d79/a01766.html">SubstractAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    x - y;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  };</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../d1/dab/a01767.html">   48</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d1/dab/a01767.html">MultiplyAssignAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    x *= y;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  };</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// Optional preKnot refinement</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> i : std::views::iota(0, dim)) {</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">if</span> (preKnotRefine[i] &gt; 0) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>          <span class="keyword">auto</span> newKnots = <a class="code hl_function" href="../../d0/d1f/a00247.html#a2287fefbe65d5d37c50e3c953258961d">Splines::generateRefinedKnots</a>(knotSpans, i, preKnotRefine[i]);</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          _patchData    = <a class="code hl_function" href="../../d0/d1f/a00247.html#ae31d742d70844f23a725edbd89c0f31c">Splines::knotRefinement</a>(_patchData, newKnots, i);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      }</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      PatchTrimData trimData{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keywordflow">if</span> (trim) constructTrimmingCurves(brep, trimData);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="keywordflow">return</span> std::make_tuple(_patchData, trimData);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">private</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="keyword">static</span> <span class="keywordtype">void</span> constructTrimmingCurves(<span class="keyword">const</span> Ibra::Brep&lt;dimworld&gt;&amp; brep, PatchTrimData&amp; trimData) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keyword">const</span> std::vector&lt;Ibra::BrepLoop&gt; loops = brep.loops;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      assert(!loops.empty() &amp;&amp; <span class="stringliteral">&quot;Only one boundary loop is currently supported&quot;</span>);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; <span class="keyword">const</span> Ibra::BrepLoop&amp; loop : loops) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        trimData.addLoop();</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> Ibra::BrepTrim&amp; trim : loop.trims)</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          trimData.insertTrimCurve(trim.asCurve&lt;TrimmingCurve&gt;(), i);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        i++;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  };</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
-<div class="ttc" id="aa00041_html"><div class="ttname"><a href="../../dd/d32/a00041.html">ibrajsonreader.hh</a></div></div>
-<div class="ttc" id="aa00232_html"><div class="ttname"><a href="../../d0/d53/a00232.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa00247_html_a2287fefbe65d5d37c50e3c953258961d"><div class="ttname"><a href="../../d0/d1f/a00247.html#a2287fefbe65d5d37c50e3c953258961d">Dune::IGANEW::Splines::generateRefinedKnots</a></div><div class="ttdeci">auto generateRefinedKnots(const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans, const int dir, const int refinementLevel)</div><div class="ttdoc">Generate refined knots for a specified dimension and refinement level.</div><div class="ttdef"><b>Definition:</b> nurbsalgorithms.hh:64</div></div>
-<div class="ttc" id="aa00247_html_ae31d742d70844f23a725edbd89c0f31c"><div class="ttname"><a href="../../d0/d1f/a00247.html#ae31d742d70844f23a725edbd89c0f31c">Dune::IGANEW::Splines::knotRefinement</a></div><div class="ttdeci">auto knotRefinement(const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const std::vector&lt; double &gt; &amp;newKnots, const int refinementDirection)</div><div class="ttdoc">Perform knot refinement on a NURBS patch.</div><div class="ttdef"><b>Definition:</b> nurbsalgorithms.hh:618</div></div>
-<div class="ttc" id="aa01076_html"><div class="ttname"><a href="../../d6/d80/a01076.html">Dune::IGANEW::ControlPoint</a></div><div class="ttdoc">Represents a NURBS control point.</div><div class="ttdef"><b>Definition:</b> controlpoint.hh:19</div></div>
-<div class="ttc" id="aa01212_html_af7a3cbd9db679a5e73704bfe9eaee20a"><div class="ttname"><a href="../../dc/db6/a01212.html#af7a3cbd9db679a5e73704bfe9eaee20a">Dune::IGANEW::PatchGrid::GridFamily</a></div><div class="ttdeci">GridFamily_&lt; dim, dimworld, ScalarType &gt; GridFamily</div><div class="ttdoc">type of the used GridFamily for this grid</div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:94</div></div>
-<div class="ttc" id="aa01268_html"><div class="ttname"><a href="../../dc/dd9/a01268.html">Dune::IGANEW::Ibra::IbraNURBSData</a></div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:46</div></div>
-<div class="ttc" id="aa01268_html_a07805bf670c8d66de1fe43d984f33839"><div class="ttname"><a href="../../dc/dd9/a01268.html#a07805bf670c8d66de1fe43d984f33839">Dune::IGANEW::Ibra::IbraNURBSData::degree</a></div><div class="ttdeci">std::array&lt; int, dim &gt; degree</div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:47</div></div>
-<div class="ttc" id="aa01268_html_aa85e99325b805008cb7d93e1361460c5"><div class="ttname"><a href="../../dc/dd9/a01268.html#aa85e99325b805008cb7d93e1361460c5">Dune::IGANEW::Ibra::IbraNURBSData::n_controlPoints</a></div><div class="ttdeci">std::array&lt; int, dim &gt; n_controlPoints</div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:48</div></div>
-<div class="ttc" id="aa01268_html_ad12ab5d6f888eaabe6d509e82ae8f8df"><div class="ttname"><a href="../../dc/dd9/a01268.html#ad12ab5d6f888eaabe6d509e82ae8f8df">Dune::IGANEW::Ibra::IbraNURBSData::compileKnotVectors</a></div><div class="ttdeci">std::array&lt; std::vector&lt; double &gt;, dim &gt; compileKnotVectors() const</div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:76</div></div>
-<div class="ttc" id="aa01292_html"><div class="ttname"><a href="../../d8/d7a/a01292.html">Dune::IGANEW::Ibra::Brep</a></div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:175</div></div>
-<div class="ttc" id="aa01292_html_a9b212409e86466050d4e12dcf06194e6"><div class="ttname"><a href="../../d8/d7a/a01292.html#a9b212409e86466050d4e12dcf06194e6">Dune::IGANEW::Ibra::Brep::surfaces</a></div><div class="ttdeci">std::vector&lt; SurfaceType &gt; surfaces</div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:178</div></div>
-<div class="ttc" id="aa01292_html_af19f62b66735603e13a8f1d68930a3b0"><div class="ttname"><a href="../../d8/d7a/a01292.html#af19f62b66735603e13a8f1d68930a3b0">Dune::IGANEW::Ibra::Brep::trims</a></div><div class="ttdeci">std::vector&lt; BrepTrim &gt; trims</div><div class="ttdef"><b>Definition:</b> io/ibrageometry.hh:180</div></div>
-<div class="ttc" id="aa01296_html"><div class="ttname"><a href="../../d4/d64/a01296.html">Dune::IGANEW::IbraReader</a></div><div class="ttdef"><b>Definition:</b> io/ibrareader.hh:15</div></div>
-<div class="ttc" id="aa01296_html_a7751120f5ee287eaed14728396bd01d7"><div class="ttname"><a href="../../d4/d64/a01296.html#a7751120f5ee287eaed14728396bd01d7">Dune::IGANEW::IbraReader::read</a></div><div class="ttdeci">static auto read(const std::string &amp;fileName, const bool trim=true, std::array&lt; int, 2 &gt; preKnotRefine={0, 0})</div><div class="ttdef"><b>Definition:</b> io/ibrareader.hh:27</div></div>
-<div class="ttc" id="aa01480_html"><div class="ttname"><a href="../../d1/d38/a01480.html">Dune::IGANEW::NURBSPatchData</a></div><div class="ttdoc">Struct that holds all data regarding the NURBS geometric structure.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:19</div></div>
-<div class="ttc" id="aa01744_html"><div class="ttname"><a href="../../d1/d04/a01744.html">Dune::IGANEW::MultiDimensionalNet&lt; dim, ControlPointType &gt;</a></div></div>
-<div class="ttc" id="aa03487_html"><div class="ttname"><a href="../../de/d67/a03487.html">ibrageometry.hh</a></div></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../de/dda/a01768.html">   53</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../de/dda/a01768.html">DivideAssignAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    x /= y;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  };</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno"><a class="line" href="../../d7/d6d/a01769.html">   58</a></span>  <span class="keyword">concept </span><a class="code hl_concept" href="../../d7/d6d/a01769.html">DivideAble</a> = <span class="keyword">requires</span>(L x, R y) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    x / y;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  };</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}  <span class="comment">// namespace Dune::IGANEW::Concept</span></div>
+<div class="ttc" id="aa00080_html"><div class="ttname"><a href="../../da/dec/a00080.html">geohelper.hh</a></div></div>
+<div class="ttc" id="aa00234_html"><div class="ttname"><a href="../../da/d31/a00234.html">Dune::IGANEW::Concept</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:10</div></div>
+<div class="ttc" id="aa01762_html"><div class="ttname"><a href="../../dd/d40/a01762.html">Dune::IGANEW::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:13</div></div>
+<div class="ttc" id="aa01763_html"><div class="ttname"><a href="../../d9/d27/a01763.html">Dune::IGANEW::Concept::ControlPoint</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:25</div></div>
+<div class="ttc" id="aa01764_html"><div class="ttname"><a href="../../dc/d51/a01764.html">Dune::IGANEW::Concept::MultiplyAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:33</div></div>
+<div class="ttc" id="aa01765_html"><div class="ttname"><a href="../../df/d7b/a01765.html">Dune::IGANEW::Concept::AddAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:38</div></div>
+<div class="ttc" id="aa01766_html"><div class="ttname"><a href="../../d0/d79/a01766.html">Dune::IGANEW::Concept::SubstractAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:43</div></div>
+<div class="ttc" id="aa01767_html"><div class="ttname"><a href="../../d1/dab/a01767.html">Dune::IGANEW::Concept::MultiplyAssignAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:48</div></div>
+<div class="ttc" id="aa01768_html"><div class="ttname"><a href="../../de/dda/a01768.html">Dune::IGANEW::Concept::DivideAssignAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:53</div></div>
+<div class="ttc" id="aa01769_html"><div class="ttname"><a href="../../d7/d6d/a01769.html">Dune::IGANEW::Concept::DivideAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:58</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li><li class="navelem"><a class="el" href="../../d3/d87/a03490.html">ibrareader.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d3/d87/a03490.html">concepts.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

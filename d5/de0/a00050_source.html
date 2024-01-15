@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: igahelpers.hh Source File</title>
+<title>dune-iga: fillquadraturerule.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,84 +91,58 @@ $(document).ready(function(){initNavTree('d5/de0/a00050_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">igahelpers.hh</div></div>
+  <div class="headertitle"><div class="title">fillquadraturerule.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d5/de0/a00050.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/common/bitsetvector.hh&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;dune/geometry/referenceelements.hh&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>View, <span class="keywordtype">int</span> ncomp = 1&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../db/d8b/a01464.html">   11</a></span><span class="keyword">class </span><a class="code hl_class" href="../../db/d8b/a01464.html">BoundaryPatchEnclosingVerticesPropertyTrimmed</a> {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> GridView::IndexSet IndexSet;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> dim = GridView::dimension;</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../db/d8b/a01464.html#a5fd0163b3e0e45b1b23f036029bddd58">   16</a></span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> GridView::Intersection <a class="code hl_typedef" href="../../db/d8b/a01464.html#a5fd0163b3e0e45b1b23f036029bddd58">Intersection</a>;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../db/d8b/a01464.html#a01647e7b3cf283823fb657ad8df0e93c">   20</a></span>  <a class="code hl_function" href="../../db/d8b/a01464.html#a01647e7b3cf283823fb657ad8df0e93c">BoundaryPatchEnclosingVerticesPropertyTrimmed</a>(<span class="keyword">const</span> GridView&amp; gridView, <span class="keyword">const</span> Dune::BitSetVector&lt;ncomp&gt;&amp; vertices)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      : indexSet_(gridView.indexSet()), vertices_(vertices) {}</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../db/d8b/a01464.html#ab0f5730b4be1b146ef68589bc1954ed7">   25</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../db/d8b/a01464.html#ab0f5730b4be1b146ef68589bc1954ed7">operator()</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../db/d8b/a01464.html#a5fd0163b3e0e45b1b23f036029bddd58">Intersection</a>&amp; i)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keyword">const</span> <span class="keyword">auto</span> inside  = i.inside();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordtype">int</span> localFaceIndex = i.indexInInside();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> (inside.impl().isTrimmed()) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;dune/geometry/quadraturerules.hh&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/db6/a00241.html">Dune::IGA</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> SubGr<span class="keywordtype">id</span>Type, <span class="keywordtype">int</span> dim&gt;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d6/db6/a00241.html#a023d3c0845a496b2eedca5b359b49964">    9</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d6/db6/a00241.html#a023d3c0845a496b2eedca5b359b49964">fillQuadratureRuleImpl</a>(Dune::QuadratureRule&lt;double, dim&gt;&amp; vector, <span class="keyword">const</span> SubGridType&amp; subGrid, <span class="keywordtype">int</span> order,</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                              <span class="keyword">const</span> QuadratureType::Enum qt = QuadratureType::GaussLegendre) {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    vector.clear();</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; subElement : subGrid.elements_) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; rule = Dune::QuadratureRules&lt;double, dim&gt;::rule(subElement.type(), order, qt);</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> ip : rule) {</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        <span class="keyword">auto</span> globalInSpan = subElement.global(ip.position());</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>        vector.emplace_back(globalInSpan, ip.weight() * subElement.integrationElement(ip.position()));</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keywordflow">if</span> (qt != QuadratureType::Enum::GaussLobatto) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">struct </span>Comparator {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> Dune::FieldVector&lt;double, 2&gt;&amp; p1, <span class="keyword">const</span> Dune::FieldVector&lt;double, 2&gt;&amp; p2)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">if</span> (p1[0] &lt; p2[0]) <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>        <span class="keywordflow">if</span> (p1[0] &gt; p2[0]) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        <span class="keywordflow">return</span> p1[1] &lt; p2[1];</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      };</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    };</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    std::map&lt;Dune::FieldVector&lt;double, 2&gt;, double, Comparator&gt; uniquePoints;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">auto</span> refElement = Dune::ReferenceElements&lt;double, dim&gt;::general(inside.type());</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="comment">// Get global node ids</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">int</span> n = refElement.size(localFaceIndex, 1, dim);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; gp : vector) {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keyword">auto</span> [it, success] = uniquePoints.try_emplace(gp.position(), gp.weight());</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keywordflow">if</span> (not success) it-&gt;second += gp.weight();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    }</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="comment">// Using ReferenceElement::subEntity is OK here, because we loop</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="comment">// over all subEntities (i.e. sub-vertices) and just return false</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// if _any_ of them is not marked.</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ii = 0; ii &lt; n; ii++) {</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="keywordtype">int</span> localVertexIndex = refElement.subEntity(localFaceIndex, 1, ii, dim);</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordflow">if</span> (not(vertices_[indexSet_.subIndex(inside, localVertexIndex, dim)].any())) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    }</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  }</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keyword">const</span> IndexSet&amp; indexSet_;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">const</span> Dune::BitSetVector&lt;ncomp&gt;&amp; vertices_;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d27/a00239.html">Dune::Functions</a> {</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keyword">template</span> &lt;<span class="keyword">class</span> Basis, <span class="keyword">class</span> F&gt;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d0/d27/a00239.html#a8ce90ea47d11d38bdb1e3b675db93a18">   54</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/d27/a00239.html#a8ce90ea47d11d38bdb1e3b675db93a18">forEachUntrimmedBoundaryDOF</a>(<span class="keyword">const</span> Basis&amp; basis, F&amp;&amp; f) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keyword">auto</span> localView       = basis.localView();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keyword">auto</span> seDOFs          = subEntityDOFs(basis);</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; gridView = basis.gridView();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; element : elements(gridView))</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">if</span> (element.hasBoundaryIntersections() and not element.impl().isTrimmed()) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        localView.bind(element);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; intersection : intersections(gridView, element))</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          <span class="keywordflow">if</span> (intersection.boundary())</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            <span class="keywordflow">for</span> (<span class="keyword">auto</span> localIndex : seDOFs.bind(localView, intersection))</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>              f(localIndex, localView, intersection);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      }</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}  <span class="comment">// namespace Dune::Functions</span></div>
-<div class="ttc" id="aa00239_html"><div class="ttname"><a href="../../d0/d27/a00239.html">Dune::Functions</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:28</div></div>
-<div class="ttc" id="aa00239_html_a8ce90ea47d11d38bdb1e3b675db93a18"><div class="ttname"><a href="../../d0/d27/a00239.html#a8ce90ea47d11d38bdb1e3b675db93a18">Dune::Functions::forEachUntrimmedBoundaryDOF</a></div><div class="ttdeci">void forEachUntrimmedBoundaryDOF(const Basis &amp;basis, F &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:54</div></div>
-<div class="ttc" id="aa01464_html"><div class="ttname"><a href="../../db/d8b/a01464.html">BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div><div class="ttdef"><b>Definition:</b> igahelpers.hh:11</div></div>
-<div class="ttc" id="aa01464_html_a01647e7b3cf283823fb657ad8df0e93c"><div class="ttname"><a href="../../db/d8b/a01464.html#a01647e7b3cf283823fb657ad8df0e93c">BoundaryPatchEnclosingVerticesPropertyTrimmed::BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div><div class="ttdeci">BoundaryPatchEnclosingVerticesPropertyTrimmed(const GridView &amp;gridView, const Dune::BitSetVector&lt; ncomp &gt; &amp;vertices)</div><div class="ttdoc">Create property from a marker vector.</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:20</div></div>
-<div class="ttc" id="aa01464_html_a5fd0163b3e0e45b1b23f036029bddd58"><div class="ttname"><a href="../../db/d8b/a01464.html#a5fd0163b3e0e45b1b23f036029bddd58">BoundaryPatchEnclosingVerticesPropertyTrimmed::Intersection</a></div><div class="ttdeci">GridView::Intersection Intersection</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:16</div></div>
-<div class="ttc" id="aa01464_html_ab0f5730b4be1b146ef68589bc1954ed7"><div class="ttname"><a href="../../db/d8b/a01464.html#ab0f5730b4be1b146ef68589bc1954ed7">BoundaryPatchEnclosingVerticesPropertyTrimmed::operator()</a></div><div class="ttdeci">bool operator()(const Intersection &amp;i) const</div><div class="ttdoc">Check if intersection is enclosed by vertices in the vector.</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:25</div></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    vector.clear();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; [pos, weight] : uniquePoints) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      vector.emplace_back(pos, weight);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>}  <span class="comment">// namespace Dune::IGA</span></div>
+<div class="ttc" id="aa00241_html"><div class="ttname"><a href="../../d6/db6/a00241.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> oldStuff/io/ibra/ibrageometry.hh:16</div></div>
+<div class="ttc" id="aa00241_html_a023d3c0845a496b2eedca5b359b49964"><div class="ttname"><a href="../../d6/db6/a00241.html#a023d3c0845a496b2eedca5b359b49964">Dune::IGA::fillQuadratureRuleImpl</a></div><div class="ttdeci">void fillQuadratureRuleImpl(Dune::QuadratureRule&lt; double, dim &gt; &amp;vector, const SubGridType &amp;subGrid, int order, const QuadratureType::Enum qt=QuadratureType::GaussLegendre)</div><div class="ttdef"><b>Definition:</b> fillquadraturerule.hh:9</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_6a67ce012f0e7d7f20bfc6d5cc3e1475.html">oldStuff</a></li><li class="navelem"><a class="el" href="../../dir_7af1e02f86413c26f02286b955739dcd.html">utils</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">igahelpers.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_6a67ce012f0e7d7f20bfc6d5cc3e1475.html">oldStuff</a></li><li class="navelem"><a class="el" href="../../dir_7af1e02f86413c26f02286b955739dcd.html">utils</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">fillquadraturerule.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

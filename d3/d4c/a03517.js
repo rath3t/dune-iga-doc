@@ -1,6 +1,11 @@
 var a03517 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet< GridImp >", "db/dbf/a01516.html", "db/dbf/a01516" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLeafIndexSet< GridImp >", "d4/d51/a01520.html", "d4/d51/a01520" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet< GridImp >", "d9/d34/a01524.html", "d9/d34/a01524" ]
+    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d3/d07/a01301.html", "d3/d07/a01301" ],
+    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "dc/d9e/a01305.html", "dc/d9e/a01305" ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "db/d4b/a01309.html", "db/d4b/a01309" ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "dc/d8c/a01297.html", "dc/d8c/a01297" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "dd/d43/a01193.html", "dd/d43/a01193" ],
+    [ "Dune::Functions::NurbsNode< GV >", "de/d90/a01313.html", "de/d90/a01313" ],
+    [ "nurbs", "d3/d4c/a03517.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
+    [ "nurbs", "d3/d4c/a03517.html#a10c3f08f7830f39c003415e65e2a0361", null ]
 ];
