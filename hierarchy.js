@@ -161,7 +161,7 @@ var hierarchy =
     [ "Dune::IGANEW::DefaultTrim::Parameter", "d5/d84/a01612.html", null ],
     [ "Dune::IGANEW::IdentityTrim::Parameter", "d4/d26/a01700.html", null ],
     [ "Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant< codim_, TrimmerType_, HostImplementation, TrimmedImplementation >", "d0/dc0/a01652.html", null ],
-    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, TrimmerType_ >", "d3/dbd/a01100.html", null ],
+    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, TrimmerType_, LocalParameterSpaceGeometry >", "d3/dbd/a01100.html", null ],
     [ "Dune::IGANEW::DefaultTrim::PatchGridEntitySeed< codim, GridImp >", "d0/deb/a01508.html", null ],
     [ "Dune::IGANEW::IdentityTrim::PatchGridEntitySeed< codim, GridImp >", "d5/d8d/a01656.html", null ],
     [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >", "de/df9/a01624.html", null ],

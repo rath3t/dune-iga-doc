@@ -4,7 +4,7 @@ var a01092 =
     [ "ControlPointNetType", "de/d9c/a01092.html#a468816eac362cc2655b381f3d25e5ffd", null ],
     [ "ControlPointType", "de/d9c/a01092.html#a382b3bb6e973e4e2e582ecc6d2ecd6f4", null ],
     [ "ctype", "de/d9c/a01092.html#afe1540da26e3ac319cbb2965e1b8d6f8", null ],
-    [ "GeometryLocalView", "de/d9c/a01092.html#a96268ef7a93b40d4c73b9bac0b746924", null ],
+    [ "GeometryLocalView", "de/d9c/a01092.html#a0b9dcff137bd5d21d2dff0223858edd3", null ],
     [ "GlobalCoordinate", "de/d9c/a01092.html#a2c31b7818240d90c415c146c4409a52e", null ],
     [ "Hessian", "de/d9c/a01092.html#a7a08b1313e9df7edeb0575148d806df1", null ],
     [ "Jacobian", "de/d9c/a01092.html#acf973e588defd30743bc24f5dac133cc", null ],
@@ -34,7 +34,7 @@ var a01092 =
     [ "jacobian", "de/d9c/a01092.html#a77aa916f8539b71d1c9c104c92360fe7", null ],
     [ "jacobianTransposed", "de/d9c/a01092.html#a02bdfa1a2455fa7da3ab4b3fbb7f34f5", null ],
     [ "local", "de/d9c/a01092.html#a92a8a724cf6554714e11c7f15518d2b1", null ],
-    [ "localView", "de/d9c/a01092.html#a1920e6aa3d1cd838b94938a8ebfa340d", null ],
+    [ "localView", "de/d9c/a01092.html#a7b26ee8a1b2c982f941a0a95c7bb3177", null ],
     [ "numberOfControlPoints", "de/d9c/a01092.html#a1985a91990f91c8da9c9c6ed7219f59e", null ],
     [ "numberOfSpans", "de/d9c/a01092.html#a8f9312ecd7c63b710485a087e570811c", null ],
     [ "patchData", "de/d9c/a01092.html#a774988b3688480f79deefe9177d23b23", null ],
@@ -43,7 +43,7 @@ var a01092 =
     [ "uniqueKnotVector", "de/d9c/a01092.html#a854b46f824f70ca2fa44584c634671d9", null ],
     [ "volume", "de/d9c/a01092.html#a51608259c110bc32da401244999271e6", null ],
     [ "zeroFirstAndSecondDerivativeOfPosition", "de/d9c/a01092.html#afc7794edc49f2371471e260dbbeceda0", null ],
-    [ "PatchGeometryLocalView", "de/d9c/a01092.html#a0864647d14f35017a1da819f8bc69250", null ],
+    [ "PatchGeometryLocalView", "de/d9c/a01092.html#a645be3023d334b8890554bd09898a939", null ],
     [ "mydimension", "de/d9c/a01092.html#a06037363d30a70eba4b98f590f81a637", null ],
     [ "worlddimension", "de/d9c/a01092.html#a173616658bc7f0db6836a9dda983afa3", null ]
 ];
