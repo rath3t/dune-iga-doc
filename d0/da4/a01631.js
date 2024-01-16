@@ -38,6 +38,7 @@ var a01631 =
     [ "operator=", "d0/da4/a01631.html#ae6fa9e5ac60c1950cb058dbbbfe701f5", null ],
     [ "parameterSpaceGrid", "d0/da4/a01631.html#a5ab1ade74817ca6108f95f207e8f0c21", null ],
     [ "parameterSpaceGrid", "d0/da4/a01631.html#a2adbc1d3ee6de78fee63dd0ff8a24a83", null ],
+    [ "patchTrimData", "d0/da4/a01631.html#ac1e6470920642379bf89775e39538fe2", null ],
     [ "referenceElement", "d0/da4/a01631.html#a9cd70a2ccaed2f9cc04aecdb045acbcd", null ],
     [ "refineParameterSpaceGrid", "d0/da4/a01631.html#a485cb1ee1e97956f82a6a96df7403e7c", null ],
     [ "seed", "d0/da4/a01631.html#a77f99bdf92367837559a917af37b5aca", null ],
