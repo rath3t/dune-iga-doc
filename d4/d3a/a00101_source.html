@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: closestpointprojection.hh Source File</title>
+<title>dune-iga: makecirculararc.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,141 +91,112 @@ $(document).ready(function(){initNavTree('d4/d3a/a00101_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">closestpointprojection.hh</div></div>
+  <div class="headertitle"><div class="title">makecirculararc.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d4/d3a/a00101.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/common/fmatrix.hh&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;dune/common/fvector.hh&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;dune/common/transpose.hh&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../dd/d2d/a00229.html">Dune::IGANEW</a> {</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Geo&gt;  <span class="comment">// @todo add concept, HJ: maybe add custom return type instead of tuple</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../dd/d2d/a00229.html#a5a86887937350922b04eaf5967ac33b9">   29</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../dd/d2d/a00229.html#a5a86887937350922b04eaf5967ac33b9">closestPointProjectionByTrustRegion</a>(<span class="keyword">const</span> Geo&amp; geo, <span class="keyword">auto</span>&amp; point,</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>                                           <span class="keyword">const</span> std::optional&lt;typename Geo::LocalCoordinate&gt;&amp; start = std::nullopt)</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      -&gt; std::tuple&lt;typename Geo::LocalCoordinate, typename Geo::ctype, typename Geo::ctype, typename Geo::ctype&gt;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">requires</span>(Geo::mydimension == 1 or Geo::mydimension == 2) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">using </span>ctype              = <span class="keyword">typename</span> Geo::ctype;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> dim = Geo::mydimension;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">auto</span> energy              = [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; uL) {</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keyword">auto</span> pointOnCurve = geo.global(uL);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="keyword">auto</span> dist         = pointOnCurve - point;</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">return</span> 0.5 * dist.two_norm2();</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    };</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keyword">auto</span> energyGradAndHess = [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; uL) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keyword">auto</span> [pointOnCurve, J, H] = geo.zeroFirstAndSecondDerivativeOfPosition(uL);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keyword">auto</span> dist                 = pointOnCurve - point;</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      Dune::FieldVector&lt;ctype, dim&gt; g;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      J.mv(dist, g);</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      Dune::FieldMatrix&lt;ctype, dim*(dim + 1) / 2, 1&gt; dfdxideta;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      H.mv(dist, dfdxideta);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      Dune::FieldMatrix&lt;ctype, dim, dim&gt; HV = J * Dune::transpose(J);</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; dim; ++i)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        HV[i][i] += dfdxideta[i];</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (dim == 2) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        HV[0][1] += dfdxideta[2];</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        HV[1][0] += dfdxideta[2];</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      }</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">return</span> std::make_tuple(0.5 * dist.two_norm2(), g, HV);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    };</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keyword">auto</span> isPositiveDefiniteInDirection = [](<span class="keyword">auto</span>&amp;&amp; H, <span class="keyword">auto</span>&amp;&amp; du) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      std::remove_cvref_t&lt;<span class="keyword">decltype</span>(du)&gt; tmp;</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      H.mv(du, tmp);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keyword">auto</span> kappa = du * tmp;</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordflow">return</span> kappa &gt; 0.0;</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    };</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordtype">int</span> maxiter = 100;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="comment">// start with mid-point if nothing else is given</span></div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    Dune::FieldVector&lt;ctype, dim&gt; u = start ? start.value() : geo.domainMidPoint();</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    ctype tol = ctype(16) * std::numeric_limits&lt;ctype&gt;::epsilon();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    ctype Rnorm;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keyword">auto</span> domain = geo.domain();</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="keywordtype">double</span> domainFractionFactor = 4;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    ctype domainFraction        = 1;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; dim; ++j)</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>      domainFraction *= domain[j].size();</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    domainFraction /= domainFractionFactor;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordtype">int</span> i;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <span class="keyword">auto</span> [oldEnergy, R, H] = energyGradAndHess(u);</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    ctype energyVal        = oldEnergy;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    ctype r                = oldEnergy;</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span> (i = 0; i &lt; maxiter; ++i) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      FieldVector&lt;ctype, dim&gt; du;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      H.solve(du, -R);</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="comment">// if the increment is too large, we tend to overshoot, thus, we limit it to a fraction of the total domain</span></div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      ctype duNorm = du.two_norm();</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">if</span> (duNorm &gt; domainFraction) du *= domainFraction / duNorm;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      <span class="keyword">const</span> <span class="keywordtype">bool</span> isPositiveDef = isPositiveDefiniteInDirection(H, du);</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keyword">auto</span> uold                = u;</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      oldEnergy                = energy(u);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      u += du;</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>      <span class="keywordflow">if</span> (<a class="code hl_function" href="../../d1/da8/a00230.html#ada1286817f950d2e7a16f906473aa2b2">Utilities::clampToBoundaryAndCheckIfIsAtAllBoundaries</a>(u, domain)) <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordtype">int</span> testSteps = 20;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; testSteps; ++j) {</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        energyVal = energy(u);</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> (energyVal &gt; oldEnergy and duNorm &gt; 1e-8) {  <span class="comment">// we directly accept very small steps</span></div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>          u                 = uold;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>          ctype scaleFactor = Dune::power(2.0, j + 1);</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>          <span class="comment">// If our new step didn&#39;t move in an energy-decreasing direction, we have to modify</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>          <span class="keywordflow">if</span> (isPositiveDef) {</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            <span class="comment">// If our model m(du)= oldEnergy+ dot(R,du) + 0.5*(du^T*H*du) has a positive curvature du^T*Hessian*du, we</span></div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="comment">// got</span></div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>            <span class="comment">//  as du the minimizer of the parabola. Since we got energy increase, our model is bad in comparison to</span></div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>            <span class="comment">//  the real energy(u). Thus, we decrease our step size and hope for the best, at least in some (small)</span></div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="comment">//  neighborhood our model is good</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            u += du / scaleFactor;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>          } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            <span class="comment">// If our model is not positive definite (a downward parabola), using du is useless, since it is at the</span></div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="comment">// maximizer of m(du)</span></div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>            <span class="comment">//  (classical Newton method results, since it only finds the stationary point)</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>            <span class="comment">//  Thus, we go in the opposite direction, since we know that we go downward the model m(du) and again</span></div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>            <span class="comment">//  check for real energy decrease</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>            u -= du / scaleFactor;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>          }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>        } <span class="keywordflow">else</span></div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>          <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>        <span class="keywordflow">if</span> (j == testSteps - 1) DUNE_THROW(Dune::MathError, <span class="stringliteral">&quot;We couldn&#39;t find an energy decreasing direction&quot;</span>);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      }</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>      std::tie(oldEnergy, R, H) = energyGradAndHess(u);</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      Rnorm = R.two_norm();</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>      <span class="keywordflow">if</span> (Rnorm &lt; tol) <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    }</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="comment">// clamp again to boundary</span></div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> j = 0; j &lt; dim; ++j)</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      u[j] = <a class="code hl_function" href="../../d1/da8/a00230.html#a341a1dc953d397349b5bb0d9f39c4106">clampToDomain</a>(u[j], domain[j]);</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> std::make_tuple(u, Rnorm, energyVal, (geo.global(u) - point).two_norm());</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  }</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
-<div class="ttc" id="aa00229_html"><div class="ttname"><a href="../../dd/d2d/a00229.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
-<div class="ttc" id="aa00229_html_a5a86887937350922b04eaf5967ac33b9"><div class="ttname"><a href="../../dd/d2d/a00229.html#a5a86887937350922b04eaf5967ac33b9">Dune::IGANEW::closestPointProjectionByTrustRegion</a></div><div class="ttdeci">auto closestPointProjectionByTrustRegion(const Geo &amp;geo, auto &amp;point, const std::optional&lt; typename Geo::LocalCoordinate &gt; &amp;start=std::nullopt) -&gt; std::tuple&lt; typename Geo::LocalCoordinate, typename Geo::ctype, typename Geo::ctype, typename Geo::ctype &gt; requires(Geo::mydimension==1 or Geo::mydimension==2)</div><div class="ttdoc">Finds the closest point projection on a NURBS curve or surface by trust region method.</div><div class="ttdef"><b>Definition:</b> closestpointprojection.hh:29</div></div>
-<div class="ttc" id="aa00230_html_a341a1dc953d397349b5bb0d9f39c4106"><div class="ttname"><a href="../../d1/da8/a00230.html#a341a1dc953d397349b5bb0d9f39c4106">Dune::IGANEW::Utilities::clampToDomain</a></div><div class="ttdeci">auto &amp; clampToDomain(T &amp;val, const Domain&lt; T &gt; &amp;dom)</div><div class="ttdoc">Clamps the given value to the specified domain.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:119</div></div>
-<div class="ttc" id="aa00230_html_ada1286817f950d2e7a16f906473aa2b2"><div class="ttname"><a href="../../d1/da8/a00230.html#ada1286817f950d2e7a16f906473aa2b2">Dune::IGANEW::Utilities::clampToBoundaryAndCheckIfIsAtAllBoundaries</a></div><div class="ttdeci">bool clampToBoundaryAndCheckIfIsAtAllBoundaries(FieldVector&lt; ScalarType, dim &gt; &amp;x, const std::array&lt; Domain&lt; ScalarType &gt;, dim2 &gt; &amp;domain={})</div><div class="ttdoc">Clamps the given array of domains to the boundary and checks if it is at all boundaries.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:54</div></div>
+<a href="../../d4/d3a/a00101.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The Ikarus Developers mueller@ibb.uni-stuttgart.de</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;<a class="code" href="../../d9/d77/a00095.html">dune/iga/geometrykernel/basealgorithms.hh</a>&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="../../d9/d68/a03658.html">dune/iga/splines/nurbspatchdata.hh</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d3/d42/a00235.html">Dune::IGANEW</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="comment">// @todo Alex quote algo from NURBS book</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="comment"></span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> ScalarType = <span class="keywordtype">double</span>&gt;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d3/d42/a00235.html#a000e49612164d2b6609e00015a7da1b8">   34</a></span>  <a class="code hl_struct" href="../../d2/dc4/a01483.html">NURBSPatchData&lt;1, 3, ScalarType&gt;</a> <a class="code hl_function" href="../../d3/d42/a00235.html#a000e49612164d2b6609e00015a7da1b8">makeCircularArc</a>(<span class="keyword">const</span> ScalarType radius = 1.0, <span class="keyword">const</span> ScalarType startAngle = 0.0,</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>                                                   ScalarType endAngle                            = 360.0,</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                                   <span class="keyword">const</span> Dune::FieldVector&lt;ScalarType, 3&gt;&amp; origin = {0, 0, 0},</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                                   <span class="keyword">const</span> Dune::FieldVector&lt;ScalarType, 3&gt;&amp; X      = {1, 0, 0},</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>                                                   <span class="keyword">const</span> Dune::FieldVector&lt;ScalarType, 3&gt;&amp; Y      = {0, 1, 0}) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keyword">using </span>GlobalCoordinateType = <span class="keyword">typename</span> <a class="code hl_typedef" href="../../d2/dc4/a01483.html#a51ab1704f2ced939d707f5c8a5394c55">NURBSPatchData&lt;1, 3, ScalarType&gt;::GlobalCoordinateType</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keyword">const</span> <span class="keyword">auto</span> pi              = std::numbers::pi_v&lt;ScalarType&gt;;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">if</span> (endAngle &lt; startAngle) endAngle += 360.0;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keyword">const</span> ScalarType theta = endAngle - startAngle;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> narcs        = std::ceil(theta / 90);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">typename</span> <a class="code hl_typedef" href="../../d2/dc4/a01483.html#a034cb04c4735d7dcb5615574e19a6f63">NURBSPatchData&lt;1, 3, ScalarType&gt;::ControlPointNetType</a> circleCPs(2 * narcs + 1);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">const</span> ScalarType dtheta  = theta / narcs * pi / 180;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> n              = 2 * narcs;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">const</span> ScalarType w1      = cos(dtheta / 2.0);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    GlobalCoordinateType PO  = origin + radius * cos(startAngle) * X + radius * sin(startAngle) * Y;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    GlobalCoordinateType TO  = -sin(startAngle) * X + cos(startAngle) * Y;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    circleCPs.directGet(0).p = PO;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    ScalarType angle         = startAngle;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> index = 0, i = 0; i &lt; narcs; ++i) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      angle += dtheta;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keyword">const</span> GlobalCoordinateType P2    = origin + radius * cos(angle) * X + radius * sin(angle) * Y;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      circleCPs.directGet(index + 2).p = P2;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">const</span> GlobalCoordinateType T2    = -sin(angle) * X + cos(angle) * Y;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keyword">const</span> GlobalCoordinateType P1    = <a class="code hl_function" href="../../d3/d42/a00235.html#a92a605959c76f4613b72045bd4fdbf5c">intersect3DLines</a>(PO, TO, P2, T2);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      circleCPs.directGet(index + 1)   = {.p = P1, .w = w1};</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      index += 2;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="keywordflow">if</span> (i &lt; narcs - 1) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        PO = P2;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        TO = T2;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keyword">auto</span> knotVec = std::array&lt;std::vector&lt;double&gt;, 1&gt;{};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keyword">auto</span>&amp; U      = knotVec[0];</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    U.resize(2 * (narcs + 2));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (narcs == 1) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (narcs == 2) {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>      U[3] = U[4] = 1.0 / 2.0;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (narcs == 3) {</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>      U[3] = U[4] = 1.0 / 3.0;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      U[5] = U[6] = 2.0 / 3.0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      U[3] = U[4] = 1.0 / 4.0;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      U[5] = U[6] = 2.0 / 4.0;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>      U[7] = U[8] = 3.0 / 4.0;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    std::ranges::fill_n(U.begin(), 3, 0.0);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    std::ranges::fill_n(std::ranges::reverse_view(U).begin(), 3, 1.0);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> NURBSPatchData&lt;1, 3, ScalarType&gt;(knotVec, circleCPs, {2});</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">float</span>ing_po<span class="keywordtype">int</span> ScalarType = <span class="keywordtype">double</span>&gt;</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d3/d42/a00235.html#af2e971c8404f8415030e1ae459761540">  110</a></span>  <a class="code hl_struct" href="../../d2/dc4/a01483.html">NURBSPatchData&lt;1, 2, ScalarType&gt;</a> <a class="code hl_function" href="../../d3/d42/a00235.html#af2e971c8404f8415030e1ae459761540">makeCircularArc2D</a>(<span class="keyword">const</span> ScalarType radius = 1.0, <span class="keyword">const</span> ScalarType startAngle = 0.0,</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>                                                     ScalarType endAngle                            = 360.0,</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>                                                     <span class="keyword">const</span> Dune::FieldVector&lt;ScalarType, 2&gt;&amp; origin = {0, 0}) {</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keyword">using </span>GlobalCoordinateType = <span class="keyword">typename</span> <a class="code hl_typedef" href="../../d2/dc4/a01483.html#a51ab1704f2ced939d707f5c8a5394c55">NURBSPatchData&lt;1, 2, ScalarType&gt;::GlobalCoordinateType</a>;</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keyword">const</span> <span class="keyword">auto</span> pi              = std::numbers::pi_v&lt;ScalarType&gt;;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    Dune::FieldVector&lt;ScalarType, 3&gt; origin3D;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    origin3D[0] = origin[0];</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    origin3D[1] = origin[1];</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">auto</span> arc3D  = <a class="code hl_function" href="../../d3/d42/a00235.html#a000e49612164d2b6609e00015a7da1b8">makeCircularArc</a>(radius, startAngle, endAngle, origin3D);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keyword">typename</span> <a class="code hl_typedef" href="../../d2/dc4/a01483.html#a034cb04c4735d7dcb5615574e19a6f63">NURBSPatchData&lt;1, 2, ScalarType&gt;::ControlPointNetType</a> arc2DCPs(arc3D.controlPoints.size());</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keyword">using </span><a class="code hl_function" href="../../dc/d6a/a00261.html#a87eb600529940f01930f93b69fb57771">ControlPoint</a> = <span class="keyword">typename</span> <a class="code hl_struct" href="../../d2/d4d/a01079.html">Dune::IGANEW::NURBSPatchData&lt;1, 2, ScalarType&gt;::ControlPointType</a>;</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <a class="code hl_function" href="../../d4/d08/a00237.html#a32f8f310c48c22247e2072bd76abc0fb">std::ranges::transform</a>(arc3D.controlPoints.directGetAll(), std::begin(arc2DCPs.directGetAll()), [](<span class="keyword">auto</span>&amp; cp3d) {</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>      return ControlPoint({.p = {cp3d.p[0], cp3d.p[1]}, .w = cp3d.w});</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    });</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> NURBSPatchData&lt;1, 2, ScalarType&gt;(arc3D.knotSpans, arc2DCPs, {2});</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace Dune::IGANEW</span></div>
+<div class="ttc" id="aa00095_html"><div class="ttname"><a href="../../d9/d77/a00095.html">basealgorithms.hh</a></div></div>
+<div class="ttc" id="aa00235_html"><div class="ttname"><a href="../../d3/d42/a00235.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:6</div></div>
+<div class="ttc" id="aa00235_html_a000e49612164d2b6609e00015a7da1b8"><div class="ttname"><a href="../../d3/d42/a00235.html#a000e49612164d2b6609e00015a7da1b8">Dune::IGANEW::makeCircularArc</a></div><div class="ttdeci">NURBSPatchData&lt; 1, 3, ScalarType &gt; makeCircularArc(const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;origin={0, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;X={1, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;Y={0, 1, 0})</div><div class="ttdoc">Create a circular arc as a NURBS patch with customizable options.</div><div class="ttdef"><b>Definition:</b> makecirculararc.hh:34</div></div>
+<div class="ttc" id="aa00235_html_a92a605959c76f4613b72045bd4fdbf5c"><div class="ttname"><a href="../../d3/d42/a00235.html#a92a605959c76f4613b72045bd4fdbf5c">Dune::IGANEW::intersect3DLines</a></div><div class="ttdeci">VectorType intersect3DLines(const VectorType basepoint1, const VectorType direction1, const VectorType basepoint2, const VectorType direction2)</div><div class="ttdoc">Finds the intersection point of two 3D lines.</div><div class="ttdef"><b>Definition:</b> basealgorithms.hh:65</div></div>
+<div class="ttc" id="aa00235_html_af2e971c8404f8415030e1ae459761540"><div class="ttname"><a href="../../d3/d42/a00235.html#af2e971c8404f8415030e1ae459761540">Dune::IGANEW::makeCircularArc2D</a></div><div class="ttdeci">NURBSPatchData&lt; 1, 2, ScalarType &gt; makeCircularArc2D(const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 2 &gt; &amp;origin={0, 0})</div><div class="ttdoc">Create a circular arc as a NURBS patch with customizable options.</div><div class="ttdef"><b>Definition:</b> makecirculararc.hh:110</div></div>
+<div class="ttc" id="aa00237_html_a32f8f310c48c22247e2072bd76abc0fb"><div class="ttname"><a href="../../d4/d08/a00237.html#a32f8f310c48c22247e2072bd76abc0fb">Dune::IGANEW::GeometryKernel::transform</a></div><div class="ttdeci">auto transform(const NURBSPatch&lt; dim_, dimworld_, ScalarType &gt; &amp;patch, const std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt; &amp;newDomain=std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt;{})</div><div class="ttdef"><b>Definition:</b> nurbspatchtransform.hh:7</div></div>
+<div class="ttc" id="aa00261_html_a87eb600529940f01930f93b69fb57771"><div class="ttname"><a href="../../dc/d6a/a00261.html#a87eb600529940f01930f93b69fb57771">iga._nurbspatchdata.ControlPoint</a></div><div class="ttdeci">def ControlPoint(coords, weight=1)</div><div class="ttdef"><b>Definition:</b> _nurbspatchdata.py:8</div></div>
+<div class="ttc" id="aa01079_html"><div class="ttname"><a href="../../d2/d4d/a01079.html">Dune::IGANEW::ControlPoint</a></div><div class="ttdoc">Represents a NURBS control point.</div><div class="ttdef"><b>Definition:</b> controlpoint.hh:19</div></div>
+<div class="ttc" id="aa01483_html"><div class="ttname"><a href="../../d2/dc4/a01483.html">Dune::IGANEW::NURBSPatchData</a></div><div class="ttdoc">Struct that holds all data regarding the NURBS geometric structure.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:19</div></div>
+<div class="ttc" id="aa01483_html_a034cb04c4735d7dcb5615574e19a6f63"><div class="ttname"><a href="../../d2/dc4/a01483.html#a034cb04c4735d7dcb5615574e19a6f63">Dune::IGANEW::NURBSPatchData::ControlPointNetType</a></div><div class="ttdeci">MultiDimensionalNet&lt; dim, ControlPointType &gt; ControlPointNetType</div><div class="ttdoc">Type for the net of control points.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:24</div></div>
+<div class="ttc" id="aa01483_html_a51ab1704f2ced939d707f5c8a5394c55"><div class="ttname"><a href="../../d2/dc4/a01483.html#a51ab1704f2ced939d707f5c8a5394c55">Dune::IGANEW::NURBSPatchData::GlobalCoordinateType</a></div><div class="ttdeci">FieldVector&lt; ScalarType, dimworld &gt; GlobalCoordinateType</div><div class="ttdoc">Type for global coordinates.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:22</div></div>
+<div class="ttc" id="aa03658_html"><div class="ttname"><a href="../../d9/d68/a03658.html">nurbspatchdata.hh</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d4/d3a/a00101.html">closestpointprojection.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d4/d3a/a00101.html">makecirculararc.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

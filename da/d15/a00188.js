@@ -1,4 +1,4 @@
 var a00188 =
 [
-    [ "Dune::IGANEW::Trim::IntersectionVariant< TrimmerType_, Implementations >", "d0/d4e/a01741.html", "d0/d4e/a01741" ]
+    [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d8/df7/a01711.html", "d8/df7/a01711" ]
 ];

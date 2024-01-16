@@ -1,15 +1,31 @@
 var a00244 =
 [
-    [ "BsplineBasis", "d4/dfd/a01465.html", "d4/dfd/a01465" ],
-    [ "Nurbs", "d9/d8b/a01469.html", "d9/d8b/a01469" ],
-    [ "createUniqueKnotSpans", "d6/d08/a00244.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
-    [ "degreeElevate", "d6/d08/a00244.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
-    [ "extractControlCoordinates", "d6/d08/a00244.html#ac182f0a34d571d507849a1a4b8c79351", null ],
-    [ "extractWeights", "d6/d08/a00244.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
-    [ "findSpan", "d6/d08/a00244.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
-    [ "findSpan", "d6/d08/a00244.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
-    [ "generateRefinedKnots", "d6/d08/a00244.html#a2287fefbe65d5d37c50e3c953258961d", null ],
-    [ "knotRefinement", "d6/d08/a00244.html#ae31d742d70844f23a725edbd89c0f31c", null ],
-    [ "netOfSpan", "d6/d08/a00244.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
-    [ "netOfSpan", "d6/d08/a00244.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
+    [ "Brep", "d2/d68/a01295.html", "d2/d68/a01295" ],
+    [ "BrepLoop", "d7/da4/a01287.html", "d7/da4/a01287" ],
+    [ "BrepLoopRepresentation", "d5/da7/a01283.html", "d5/da7/a01283" ],
+    [ "BrepRepresentation", "d4/da0/a01291.html", "d4/da0/a01291" ],
+    [ "BrepTrim", "d9/de7/a01279.html", "d9/de7/a01279" ],
+    [ "BrepTrimRepresentation", "d3/d42/a01275.html", "d3/d42/a01275" ],
+    [ "IbraBase", "d4/d41/a01267.html", "d4/d41/a01267" ],
+    [ "IbraNURBSData", "dd/d39/a01271.html", "dd/d39/a01271" ],
+    [ "Curve", "d6/d08/a00244.html#a4e800b03f9be491ce907b374a258d7b8", null ],
+    [ "Curve2D", "d6/d08/a00244.html#a713215b1dbf3951771e852520ff6fba5", null ],
+    [ "json", "d6/d08/a00244.html#ae97220b37fe16f1d6123c073e6783292", null ],
+    [ "Surface", "d6/d08/a00244.html#a270740ebeb882b3af48771bcf8a63400", null ],
+    [ "Type", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1", [
+      [ "NurbsCurveGeometry2D", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1a0a8408e2aed07683d35cfb8580243e96", null ],
+      [ "NurbsSurfaceGeometry3D", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1ad2cddd985c5c59bf17e533e6c5663c86", null ],
+      [ "BrepLoopType", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1a0c8f92fa844816c1a1b9b129767adf11", null ],
+      [ "BrepTrimType", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1a80d7ba3cc995b56293d36c6ccd63e2a9", null ],
+      [ "BrepType", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1a7f7af7af38461929855440ccd1eb29d4", null ],
+      [ "NoType", "d6/d08/a00244.html#a68040d1ccd6b249ad326be22a366c1e1a9080fd7a5f0af44b585bb21b62d8b283", null ]
+    ] ],
+    [ "from_json", "d6/d08/a00244.html#ab71d206988647f0a273c4bca3bae1739", null ],
+    [ "from_json", "d6/d08/a00244.html#a346ab99589aa762b8b1fe8412a21251d", null ],
+    [ "from_json", "d6/d08/a00244.html#a9d3707fe92452e63533a15fb8b237efb", null ],
+    [ "from_json", "d6/d08/a00244.html#ac4253930554300f5f4c0eb25d8dd2671", null ],
+    [ "from_json", "d6/d08/a00244.html#a3dadb8d4167863630dc346e5dc7e3403", null ],
+    [ "from_json", "d6/d08/a00244.html#a0474e553c4993273d5ee25d9c7e8e969", null ],
+    [ "getGenerics", "d6/d08/a00244.html#a6fabc4595670aced0f05bbf26b14b31c", null ],
+    [ "typeForTypeString", "d6/d08/a00244.html#a74f5e9e18972aa5d44a503573266579a", null ]
 ];

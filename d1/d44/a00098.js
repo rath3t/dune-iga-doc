@@ -1,5 +1,10 @@
 var a00098 =
 [
-    [ "sliceCurve", "d1/d44/a00098.html#a357b3e400d2b8b28d4a377002c535783", null ],
-    [ "splitCurve", "d1/d44/a00098.html#adac8c4895c4b00d8f6a51f6d0ce67f23", null ]
+    [ "FindIntersectionCurveAndLineResult", "d1/d44/a00098.html#a0c625c53a5b3360578c5b05194a55a53", [
+      [ "noSucess", "d1/d44/a00098.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7", null ],
+      [ "sucess", "d1/d44/a00098.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f", null ],
+      [ "linesParallel", "d1/d44/a00098.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08", null ]
+    ] ],
+    [ "findIntersectionCurveAndLine", "d1/d44/a00098.html#a533ba1e65466dfc728bc84b33126774f", null ],
+    [ "findIntersectionLinearCurveAndLine", "d1/d44/a00098.html#a09dc18d735ed41e5456a6bb4a9cdfb41", null ]
 ];

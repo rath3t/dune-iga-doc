@@ -1,17 +1,25 @@
 var a00247 =
 [
-    [ "ClippingResult", "d7/d53/a01645.html", "d7/d53/a01645" ],
-    [ "approxSamePoint", "d0/d1f/a00247.html#a8a48376718a0fecf272f5c45b240f217", null ],
-    [ "callFindIntersection", "d0/d1f/a00247.html#a3dfc85c6e3a8d476528c5f1d588f0d0d", null ],
-    [ "clipElementRectangle", "d0/d1f/a00247.html#a4f65cad383549769cbe786b60c31e479", null ],
-    [ "createHostGeometry", "d0/d1f/a00247.html#afa8d09a2b2b61bb41dfc22fb2060a5fd", null ],
-    [ "createTrimmingCurveSlice", "d0/d1f/a00247.html#a4160dac0cdcae55fca83559856c4a45a", null ],
-    [ "distance", "d0/d1f/a00247.html#a92128ee85ce68d85f0d598c954c790eb", null ],
-    [ "findGoodStartingPoint", "d0/d1f/a00247.html#a36869896fb8578ef4817450532376164", null ],
-    [ "giveEdgeIdx", "d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128", null ],
-    [ "isHostVertex", "d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205", null ],
-    [ "isPointOnLine", "d0/d1f/a00247.html#acc865208e84fedeac81a10e21b0c8eec", null ],
-    [ "edgeDirections", "d0/d1f/a00247.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
-    [ "edgeLookUp", "d0/d1f/a00247.html#a16d111a10fb0652a5487a6116aeabb50", null ],
-    [ "vIdxMapping", "d0/d1f/a00247.html#a81f0d3ca15611911cda046a092044765", null ]
+    [ "Ibra", "dd/dd7/a00248.html", "dd/dd7/a00248" ],
+    [ "Trim", "de/dbc/a00249.html", "de/dbc/a00249" ],
+    [ "Boundary", "da/d06/a01403.html", "da/d06/a01403" ],
+    [ "DomainInformation", "d6/d3b/a01459.html", "d6/d3b/a01459" ],
+    [ "GridBoundarySegment", "d7/d42/a01463.html", "d7/d42/a01463" ],
+    [ "IbraReader", "d5/df5/a01375.html", "d5/df5/a01375" ],
+    [ "IGARefinedGeometries", "dc/dbc/a01391.html", "dc/dbc/a01391" ],
+    [ "NURBSGrid", "d6/d4d/a01371.html", null ],
+    [ "TransformToSpan", "df/dc5/a01455.html", "df/dc5/a01455" ],
+    [ "TrimData", "d8/d31/a01407.html", "d8/d31/a01407" ],
+    [ "BoundaryLoop", "d0/d1f/a00247.html#ac852dd8efef6c18283ca22735cb02696", null ],
+    [ "DomainType", "d0/d1f/a00247.html#a25585768c010972feb9ad3e744e16623", null ],
+    [ "ElementTrimFlag", "d0/d1f/a00247.html#a34b2741ab599082a80dacc40c6e5069b", [
+      [ "full", "d0/d1f/a00247.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "d0/d1f/a00247.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "d0/d1f/a00247.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ],
+    [ "calculateBoundaryLoopLength", "d0/d1f/a00247.html#ad53d9d1af502406661ebe6320753c429", null ],
+    [ "determineCurvedBoundaries", "d0/d1f/a00247.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
+    [ "fillQuadratureRuleImpl", "d0/d1f/a00247.html#a023d3c0845a496b2eedca5b359b49964", null ],
+    [ "splitBoundariesImpl", "d0/d1f/a00247.html#ad66112982ac256c7f15589dec5fcce68", null ],
+    [ "triangulate", "d0/d1f/a00247.html#ab8e1d89240e3480112457535ab40b620", null ]
 ];
