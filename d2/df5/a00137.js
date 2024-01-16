@@ -1,8 +1,9 @@
 var a00137 =
 [
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult", "d0/d90/a01641.html", "d0/d90/a01641" ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::HostVertex", "d7/d53/a01645.html", "d7/d53/a01645" ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::NewVertex", "dc/d87/a01649.html", "dc/d87/a01649" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult", "d7/d53/a01645.html", "d7/d53/a01645" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::HostVertex", "dc/d87/a01649.html", "dc/d87/a01649" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::NewVertex", "d1/d03/a01653.html", "d1/d03/a01653" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::InsideVertex", "d3/d21/a01657.html", "d3/d21/a01657" ],
     [ "giveEdgeIdx", "d2/df5/a00137.html#a55a9ec04149f78cad2fd07e790a81128", null ],
     [ "isHostVertex", "d2/df5/a00137.html#a57d1a76835cb88eace9dcba2644c2205", null ],
     [ "isPointOnLine", "d2/df5/a00137.html#acc865208e84fedeac81a10e21b0c8eec", null ],

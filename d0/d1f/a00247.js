@@ -1,10 +1,11 @@
 var a00247 =
 [
-    [ "ClippingResult", "d0/d90/a01641.html", "d0/d90/a01641" ],
+    [ "ClippingResult", "d7/d53/a01645.html", "d7/d53/a01645" ],
     [ "approxSamePoint", "d0/d1f/a00247.html#a8a48376718a0fecf272f5c45b240f217", null ],
     [ "callFindIntersection", "d0/d1f/a00247.html#a3dfc85c6e3a8d476528c5f1d588f0d0d", null ],
     [ "clipElementRectangle", "d0/d1f/a00247.html#a4f65cad383549769cbe786b60c31e479", null ],
     [ "createHostGeometry", "d0/d1f/a00247.html#afa8d09a2b2b61bb41dfc22fb2060a5fd", null ],
+    [ "createTrimmingCurveSlice", "d0/d1f/a00247.html#a4160dac0cdcae55fca83559856c4a45a", null ],
     [ "distance", "d0/d1f/a00247.html#a92128ee85ce68d85f0d598c954c790eb", null ],
     [ "findGoodStartingPoint", "d0/d1f/a00247.html#a36869896fb8578ef4817450532376164", null ],
     [ "giveEdgeIdx", "d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128", null ],

@@ -1,11 +1,7 @@
 var a01657 =
 [
-    [ "ParameterSpaceGridEntity", "d3/d21/a01657.html#a00f5f5908de91bcd5f6fa990a11db12b", null ],
-    [ "ParameterSpaceGridEntitySeed", "d3/d21/a01657.html#afa9302168f619fd78f4632588e830349", null ],
-    [ "Trimmer", "d3/d21/a01657.html#a701adce7c7607ae75e204687c1288482", null ],
-    [ "PatchGridEntitySeed", "d3/d21/a01657.html#a2c694dc438e381ea6b2190601ef914cf", null ],
-    [ "PatchGridEntitySeed", "d3/d21/a01657.html#a168ba76a579e2b3ed336b3cfde09dac6", null ],
-    [ "hostEntitySeed", "d3/d21/a01657.html#ad6b3ae8fa4f3a00418c80f1cc141e651", null ],
-    [ "isValid", "d3/d21/a01657.html#a4acd79d380235ff11c9566c602445b15", null ],
-    [ "codimension", "d3/d21/a01657.html#ab7101982ea5b33b584dfafb99d9c02e4", null ]
+    [ "curveIdxI", "d3/d21/a01657.html#a2f9aa0bc5f6e136e95e5ecf611343f3a", null ],
+    [ "curveIdxJ", "d3/d21/a01657.html#aa66f937ee9e643de018e903a9319dd84", null ],
+    [ "loopIdx", "d3/d21/a01657.html#a598207ce8bbd191ede8976577ce03891", null ],
+    [ "pt", "d3/d21/a01657.html#a5663ea7853b9c12d0dac4d1761171d78", null ]
 ];

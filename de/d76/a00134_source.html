@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('de/d76/a00134_source.html','../../'); 
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      -&gt; std::tuple&lt;ElementTrimFlag, ClippingResult&gt; {</div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using namespace </span>Clipper2Lib;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span> eleGeo                      = element.geometry();</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span> eleGeo = element.geometry();</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    PathD eleRect;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> i : std::views::iota(0u, 4u)) {</div>
@@ -130,14 +130,14 @@ $(document).ready(function(){initNavTree('de/d76/a00134_source.html','../../'); 
 <div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="comment">// First determine if element is trimmed</span></div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> <span class="keyword">auto</span> intersectResult = Intersect({eleRect}, trimmingCurves, FillRule::NonZero, 8);</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> (intersectResult.empty()) <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9">ElementTrimFlag::empty</a>, <a class="code hl_struct" href="../../d0/d90/a01641.html">ClippingResult</a>{eleRect});</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">if</span> (intersectResult.empty()) <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9">ElementTrimFlag::empty</a>, <a class="code hl_struct" href="../../d7/d53/a01645.html">ClippingResult</a>{eleRect});</div>
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keywordflow">if</span> (isFullElement(intersectResult.front())) {</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>, <a class="code hl_struct" href="../../d0/d90/a01641.html">ClippingResult</a>{eleRect});</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>, <a class="code hl_struct" href="../../d7/d53/a01645.html">ClippingResult</a>{eleRect});</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    }</div>
 <div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
 <div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="comment">// Element is trimmed</span></div>
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    ClipperD clipper(8);</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="../../d0/d90/a01641.html">ClippingResult</a> result(eleRect);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <a class="code hl_struct" href="../../d7/d53/a01645.html">ClippingResult</a> result(eleRect);</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">auto</span> checkParallel = [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; curve, <span class="keyword">const</span> <span class="keywordtype">int</span> edgeIndex) -&gt; <span class="keywordtype">bool</span> {</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordflow">return</span> curve.degree().front() == 1</div>
@@ -158,64 +158,71 @@ $(document).ready(function(){initNavTree('de/d76/a00134_source.html','../../'); 
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          <span class="keywordflow">if</span> (e1bot.z &gt; 3) <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>          if (<span class="keyword">auto</span> [isHost, idx] = <a class="code hl_function" href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">isHostVertex</a>(pt, eleRect); isHost) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            result.<a class="code hl_function" href="../../d0/d90/a01641.html#af5f99e722361af8a361db09592f543d2">addOriginalVertex</a>(idx);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>            result.<a class="code hl_function" href="../../d7/d53/a01645.html#af5f99e722361af8a361db09592f543d2">addOriginalVertex</a>(idx);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>            <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>          }</div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>          <span class="keyword">const</span> <span class="keyword">auto</span> edgeIdx  = <a class="code hl_function" href="../../d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128">giveEdgeIdx</a>(e1bot.z, e1top.z);</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>          <span class="keyword">const</span> <span class="keyword">auto</span> curveZ   = e2bot.z;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>          <span class="keyword">const</span> <span class="keyword">auto</span> edgeIdx = <a class="code hl_function" href="../../d0/d1f/a00247.html#a55a9ec04149f78cad2fd07e790a81128">giveEdgeIdx</a>(e1bot.z, e1top.z);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>          <span class="keyword">const</span> <span class="keyword">auto</span> curveZ  = e2bot.z;</div>
 <div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
 <div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>          <span class="comment">// Now check that we don&#39;t have a parallel intersection</span></div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          <span class="keywordflow">if</span> (checkParallel(patchTrimData.getCurve(curveZ), edgeIdx))</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>          result.<a class="code hl_function" href="../../d0/d90/a01641.html#aaca4cc1b395603087a0b04c9b20c9daf">addNewVertex</a>(edgeIdx, pt, curveZ);</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        });</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    PathsD resultClosedPaths{};</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    PathsD resultOpenPaths{};</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    clipper.AddClip(trimmingCurves);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    clipper.AddSubject({eleRect});</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    clipper.Execute(ClipType::Intersection, FillRule::NonZero, resultClosedPaths, resultOpenPaths);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pt : resultClosedPaths.front()) {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="keywordflow">if</span> (<span class="keyword">auto</span> [isHost, idx] = <a class="code hl_function" href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">isHostVertex</a>(pt, eleRect); isHost) result.<a class="code hl_function" href="../../d0/d90/a01641.html#af5f99e722361af8a361db09592f543d2">addOriginalVertex</a>(idx);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    }</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="comment">// Add startpoints of trimming curves to the vertices if they are on one of the element edges</span></div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> cI = 0; cI &lt; patchTrimData.loops().front().curves().size(); ++cI) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; curve = patchTrimData.loops().front().curves()[cI];</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; ++i) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>        <span class="keyword">auto</span> pt = curve.corner(i);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        PointD ptClipper{pt[0], pt[1]};</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        <span class="keywordflow">if</span> (<span class="keyword">auto</span> [isHost, idx] = <a class="code hl_function" href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">isHostVertex</a>(ptClipper, eleRect); isHost)</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>          result.<a class="code hl_function" href="../../d0/d90/a01641.html#af5f99e722361af8a361db09592f543d2">addOriginalVertex</a>(idx);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>          <span class="keywordflow">if</span> (checkParallel(patchTrimData.getCurve(curveZ), edgeIdx)) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>          result.<a class="code hl_function" href="../../d7/d53/a01645.html#aaca4cc1b395603087a0b04c9b20c9daf">addNewVertex</a>(edgeIdx, pt, curveZ);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        });</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    PathsD resultClosedPaths{};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    PathsD resultOpenPaths{};</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    clipper.AddClip(trimmingCurves);</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    clipper.AddSubject({eleRect});</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    clipper.Execute(ClipType::Intersection, FillRule::NonZero, resultClosedPaths, resultOpenPaths);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pt : resultClosedPaths.front()) {</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      <span class="keywordflow">if</span> (<span class="keyword">auto</span> [isHost, idx] = <a class="code hl_function" href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">isHostVertex</a>(pt, eleRect); isHost) result.<a class="code hl_function" href="../../d7/d53/a01645.html#af5f99e722361af8a361db09592f543d2">addOriginalVertex</a>(idx);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="comment">// Now we have to check for points inside the elements</span></div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; pt : patchTrimData.getPointsInPatch(0)) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">if</span> (<span class="keyword">const</span> PointD cp{pt.pt[0], pt.pt[1]}; PointInPolygon(cp, eleRect) == PointInPolygonResult::IsInside) {</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        result.<a class="code hl_function" href="../../d7/d53/a01645.html#a7121652ae955c7891ff244158979b860">addInsideVertex</a>(cp, pt.curveIdxI, pt.curveIdxJ, 0);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>      }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="comment">// Add startpoints of trimming curves to the vertices if they are on one of the element edges</span></div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// \todo not exactly sure but i think this only has to check the outer boundary loop</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> cI = 0; cI &lt; patchTrimData.loops().front().curves().size(); ++cI) {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; curve = patchTrimData.loops().front().curves()[cI];</div>
 <div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> e = 0; e &lt; <a class="code hl_variable" href="../../d0/d1f/a00247.html#a16d111a10fb0652a5487a6116aeabb50">edgeLookUp</a>.size(); ++e) {</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>          <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; edgeIdx = <a class="code hl_variable" href="../../d0/d1f/a00247.html#a16d111a10fb0652a5487a6116aeabb50">edgeLookUp</a>[e];</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <a class="code hl_function" href="../../d0/d1f/a00247.html#acc865208e84fedeac81a10e21b0c8eec">isPointOnLine</a>(pt, eleGeo.corner(edgeIdx.front()), eleGeo.corner(edgeIdx.back()))</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>              &amp;&amp; !checkParallel(curve, e)) {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>            <span class="comment">// \todo this needs to be done more generically</span></div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> newIdx = i == 0 ? (cI + 1) * patchTrimData.getSplitter() : (cI + 1) * patchTrimData.getSplitter() + patchTrimData.getSplitter() - 1;</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>            result.<a class="code hl_function" href="../../d0/d90/a01641.html#aaca4cc1b395603087a0b04c9b20c9daf">addNewVertex</a>(e, ptClipper, newIdx);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>          }</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        }</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      }</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    }</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    result.<a class="code hl_function" href="../../d0/d90/a01641.html#af1a0dd437cf31c54fc64492d81f34faf">finish</a>();</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// While developing</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    result.<a class="code hl_function" href="../../d0/d90/a01641.html#a5aff2519bf178a33e915f1e207dc2bc8">report</a>();</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>, result);</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim::Util</span></div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; 2; ++i) {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">auto</span> pt = curve.corner(i);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>        PointD ptClipper{pt[0], pt[1]};</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordflow">if</span> (<span class="keyword">auto</span> [isHost, idx] = <a class="code hl_function" href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">isHostVertex</a>(ptClipper, eleRect); isHost) result.<a class="code hl_function" href="../../d7/d53/a01645.html#af5f99e722361af8a361db09592f543d2">addOriginalVertex</a>(idx);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        <span class="keywordflow">for</span> (<span class="keyword">auto</span> e = 0; e &lt; <a class="code hl_variable" href="../../d0/d1f/a00247.html#a16d111a10fb0652a5487a6116aeabb50">edgeLookUp</a>.size(); ++e) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>          <span class="keywordflow">if</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; edgeIdx = <a class="code hl_variable" href="../../d0/d1f/a00247.html#a16d111a10fb0652a5487a6116aeabb50">edgeLookUp</a>[e];</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>              <a class="code hl_function" href="../../d0/d1f/a00247.html#acc865208e84fedeac81a10e21b0c8eec">isPointOnLine</a>(pt, eleGeo.corner(edgeIdx.front()), eleGeo.corner(edgeIdx.back()))</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>              &amp;&amp; !checkParallel(curve, e)) {</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>            <span class="comment">// \todo this needs to be done more generically</span></div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>            <span class="keyword">const</span> <span class="keywordtype">size_t</span> newIdx = i == 0 ? (cI + 1) * patchTrimData.getSplitter()</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>                                         : (cI + 1) * patchTrimData.getSplitter() + patchTrimData.getSplitter() - 1;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>            result.<a class="code hl_function" href="../../d7/d53/a01645.html#aaca4cc1b395603087a0b04c9b20c9daf">addNewVertex</a>(e, ptClipper, newIdx);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>          }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        }</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      }</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    }</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span> </div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    result.<a class="code hl_function" href="../../d7/d53/a01645.html#af1a0dd437cf31c54fc64492d81f34faf">finish</a>();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="comment">// While developing</span></div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    result.<a class="code hl_function" href="../../d7/d53/a01645.html#a5aff2519bf178a33e915f1e207dc2bc8">report</a>();</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../d4/d9a/a00246.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>, result);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  }</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>}  <span class="comment">// namespace Dune::IGANEW::DefaultTrim::Util</span></div>
 <div class="ttc" id="aa00092_html"><div class="ttname"><a href="../../d1/dc1/a00092.html">findintersection.hh</a></div></div>
 <div class="ttc" id="aa00137_html"><div class="ttname"><a href="../../d2/df5/a00137.html">cliputils.hh</a></div></div>
 <div class="ttc" id="aa00229_html_a09dc18d735ed41e5456a6bb4a9cdfb41"><div class="ttname"><a href="../../dd/d2d/a00229.html#a09dc18d735ed41e5456a6bb4a9cdfb41">Dune::IGANEW::findIntersectionLinearCurveAndLine</a></div><div class="ttdeci">auto findIntersectionLinearCurveAndLine(const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</div><div class="ttdef"><b>Definition:</b> findintersection.hh:11</div></div>
@@ -231,11 +238,12 @@ $(document).ready(function(){initNavTree('de/d76/a00134_source.html','../../'); 
 <div class="ttc" id="aa00247_html_a57d1a76835cb88eace9dcba2644c2205"><div class="ttname"><a href="../../d0/d1f/a00247.html#a57d1a76835cb88eace9dcba2644c2205">Dune::IGANEW::DefaultTrim::Util::isHostVertex</a></div><div class="ttdeci">auto isHostVertex(const auto &amp;pt, const auto &amp;eleRect) -&gt; std::pair&lt; bool, ptrdiff_t &gt;</div><div class="ttdef"><b>Definition:</b> cliputils.hh:21</div></div>
 <div class="ttc" id="aa00247_html_a81f0d3ca15611911cda046a092044765"><div class="ttname"><a href="../../d0/d1f/a00247.html#a81f0d3ca15611911cda046a092044765">Dune::IGANEW::DefaultTrim::Util::vIdxMapping</a></div><div class="ttdeci">constexpr std::array vIdxMapping</div><div class="ttdef"><b>Definition:</b> cliputils.hh:19</div></div>
 <div class="ttc" id="aa00247_html_acc865208e84fedeac81a10e21b0c8eec"><div class="ttname"><a href="../../d0/d1f/a00247.html#acc865208e84fedeac81a10e21b0c8eec">Dune::IGANEW::DefaultTrim::Util::isPointOnLine</a></div><div class="ttdeci">auto isPointOnLine(const auto &amp;pt, const auto &amp;p1, const auto &amp;p2) -&gt; bool</div><div class="ttdef"><b>Definition:</b> cliputils.hh:28</div></div>
-<div class="ttc" id="aa01641_html"><div class="ttname"><a href="../../d0/d90/a01641.html">Dune::IGANEW::DefaultTrim::Util::ClippingResult</a></div><div class="ttdef"><b>Definition:</b> cliputils.hh:51</div></div>
-<div class="ttc" id="aa01641_html_a5aff2519bf178a33e915f1e207dc2bc8"><div class="ttname"><a href="../../d0/d90/a01641.html#a5aff2519bf178a33e915f1e207dc2bc8">Dune::IGANEW::DefaultTrim::Util::ClippingResult::report</a></div><div class="ttdeci">void report() const</div><div class="ttdef"><b>Definition:</b> cliputils.hh:143</div></div>
-<div class="ttc" id="aa01641_html_aaca4cc1b395603087a0b04c9b20c9daf"><div class="ttname"><a href="../../d0/d90/a01641.html#aaca4cc1b395603087a0b04c9b20c9daf">Dune::IGANEW::DefaultTrim::Util::ClippingResult::addNewVertex</a></div><div class="ttdeci">void addNewVertex(const int edgeIdx, const Clipper2Lib::PointD &amp;pt, const size_t trimmingCurveZ)</div><div class="ttdef"><b>Definition:</b> cliputils.hh:95</div></div>
-<div class="ttc" id="aa01641_html_af1a0dd437cf31c54fc64492d81f34faf"><div class="ttname"><a href="../../d0/d90/a01641.html#af1a0dd437cf31c54fc64492d81f34faf">Dune::IGANEW::DefaultTrim::Util::ClippingResult::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> cliputils.hh:99</div></div>
-<div class="ttc" id="aa01641_html_af5f99e722361af8a361db09592f543d2"><div class="ttname"><a href="../../d0/d90/a01641.html#af5f99e722361af8a361db09592f543d2">Dune::IGANEW::DefaultTrim::Util::ClippingResult::addOriginalVertex</a></div><div class="ttdeci">void addOriginalVertex(const Clipper2Lib::PointD &amp;pt)</div><div class="ttdef"><b>Definition:</b> cliputils.hh:85</div></div>
+<div class="ttc" id="aa01645_html"><div class="ttname"><a href="../../d7/d53/a01645.html">Dune::IGANEW::DefaultTrim::Util::ClippingResult</a></div><div class="ttdef"><b>Definition:</b> cliputils.hh:51</div></div>
+<div class="ttc" id="aa01645_html_a5aff2519bf178a33e915f1e207dc2bc8"><div class="ttname"><a href="../../d7/d53/a01645.html#a5aff2519bf178a33e915f1e207dc2bc8">Dune::IGANEW::DefaultTrim::Util::ClippingResult::report</a></div><div class="ttdeci">void report() const</div><div class="ttdef"><b>Definition:</b> cliputils.hh:151</div></div>
+<div class="ttc" id="aa01645_html_a7121652ae955c7891ff244158979b860"><div class="ttname"><a href="../../d7/d53/a01645.html#a7121652ae955c7891ff244158979b860">Dune::IGANEW::DefaultTrim::Util::ClippingResult::addInsideVertex</a></div><div class="ttdeci">void addInsideVertex(const Clipper2Lib::PointD &amp;pt, const size_t curveIndexI, const size_t curveIndexJ, size_t loopIdx)</div><div class="ttdef"><b>Definition:</b> cliputils.hh:104</div></div>
+<div class="ttc" id="aa01645_html_aaca4cc1b395603087a0b04c9b20c9daf"><div class="ttname"><a href="../../d7/d53/a01645.html#aaca4cc1b395603087a0b04c9b20c9daf">Dune::IGANEW::DefaultTrim::Util::ClippingResult::addNewVertex</a></div><div class="ttdeci">void addNewVertex(const int edgeIdx, const Clipper2Lib::PointD &amp;pt, const size_t trimmingCurveZ)</div><div class="ttdef"><b>Definition:</b> cliputils.hh:101</div></div>
+<div class="ttc" id="aa01645_html_af1a0dd437cf31c54fc64492d81f34faf"><div class="ttname"><a href="../../d7/d53/a01645.html#af1a0dd437cf31c54fc64492d81f34faf">Dune::IGANEW::DefaultTrim::Util::ClippingResult::finish</a></div><div class="ttdeci">void finish()</div><div class="ttdef"><b>Definition:</b> cliputils.hh:108</div></div>
+<div class="ttc" id="aa01645_html_af5f99e722361af8a361db09592f543d2"><div class="ttname"><a href="../../d7/d53/a01645.html#af5f99e722361af8a361db09592f543d2">Dune::IGANEW::DefaultTrim::Util::ClippingResult::addOriginalVertex</a></div><div class="ttdeci">void addOriginalVertex(const Clipper2Lib::PointD &amp;pt)</div><div class="ttdef"><b>Definition:</b> cliputils.hh:91</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

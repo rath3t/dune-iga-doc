@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::Concept::Trimmer Concept Reference</title>
+<title>dune-iga: Dune::IGANEW::Concept::ControlPoint Concept Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,58 +91,25 @@ $(document).ready(function(){initNavTree('d7/d02/a01771.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Dune::IGANEW::Concept::Trimmer Concept Reference<div class="ingroups"><a class="el" href="../../dc/d55/a00226.html">Trimmer</a></div></div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::Concept::ControlPoint Concept Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Concept representing a Trimmer class.  
-<a href="../../d7/d02/a01771.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="../../d6/d04/a03493_source.html">dune/iga/trimmer/concepts.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d3/d7f/a03522_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</code></p>
 <h2 class="groupheader">Concept definition</h2>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d7/d02/a01771.html">Dune::IGANEW::Concept::Trimmer</a> =  T::isValid and <span class="keyword">requires</span>(T trimmer, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param,</div>
-<div class="line">                                            <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData,</div>
-<div class="line">                                            <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData,</div>
-<div class="line">                                            <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
-<div class="line">    { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
-<div class="line">    <span class="keyword">typename</span> T::ctype;</div>
-<div class="line">    <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
-<div class="line">    <span class="keyword">typename</span> T::ParameterType;</div>
-<div class="line">    <span class="keyword">typename</span> T::ElementTrimData;</div>
-<div class="line">    <span class="keyword">typename</span> T::PatchTrimData;</div>
-<div class="line"> </div>
-<div class="line">    T();  </div>
-<div class="line"> </div>
-<div class="line">    { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line">    { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"> </div>
-<div class="line">    </div>
-<div class="line">    </div>
-<div class="line">    </div>
-<div class="line"> </div>
-<div class="line">    { <span class="keyword">typename</span> T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</div>
-<div class="line"> </div>
-<div class="line">    </div>
-<div class="line">    </div>
-<div class="line">    </div>
-<div class="line"> </div>
-<div class="line">    { trimmer.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"> </div>
-<div class="line">    { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line">    { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line"> </div>
-<div class="line">    { trimmer.setup(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"> </div>
-<div class="line">    </div>
-<div class="line">    </div>
-<div class="line">  } and Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;</div>
-<div class="ttc" id="aa01771_html"><div class="ttname"><a href="../../d7/d02/a01771.html">Dune::IGANEW::Concept::Trimmer</a></div><div class="ttdoc">Concept representing a Trimmer class.</div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:19</div></div>
+<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ControlPo<span class="keywordtype">int</span>Type&gt;</div>
+<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d7/d02/a01771.html">Dune::IGANEW::Concept::ControlPoint</a> =  <a class="code hl_concept" href="../../d4/dfe/a01770.html">Vector&lt;typename ControlPointType::VectorType&gt;</a> &amp;&amp; <span class="keyword">requires</span>(ControlPointType cp) {</div>
+<div class="line">    <span class="keyword">typename</span> ControlPointType::VectorType;</div>
+<div class="line">    <span class="keyword">typename</span> ControlPointType::VectorType::value_type;</div>
+<div class="line">    { cp.p } -&gt; std::same_as&lt;typename ControlPointType::VectorType&amp;&gt;;</div>
+<div class="line">    { cp.w } -&gt; std::same_as&lt;typename ControlPointType::VectorType::value_type&amp;&gt;;</div>
+<div class="line">  }</div>
+<div class="ttc" id="aa01770_html"><div class="ttname"><a href="../../d4/dfe/a01770.html">Dune::IGANEW::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:13</div></div>
+<div class="ttc" id="aa01771_html"><div class="ttname"><a href="../../d7/d02/a01771.html">Dune::IGANEW::Concept::ControlPoint</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:25</div></div>
 </div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Concept representing a Trimmer class. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
+<div class="textblock"><dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>Type to be checked for conformity to the Trimmer concept. </td></tr>
+    <tr><td class="paramname">ControlPointType</td><td></td></tr>
   </table>
   </dd>
 </dl>
@@ -151,7 +118,7 @@ $(document).ready(function(){initNavTree('d7/d02/a01771.html','../../'); initRes
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../de/dc2/a00228.html">Dune</a></li><li class="navelem"><a class="el" href="../../dd/d2d/a00229.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../da/d31/a00234.html">Concept</a></li><li class="navelem"><a class="el" href="../../d7/d02/a01771.html">Trimmer</a></li>
+    <li class="navelem"><a class="el" href="../../de/dc2/a00228.html">Dune</a></li><li class="navelem"><a class="el" href="../../dd/d2d/a00229.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../da/d31/a00234.html">Concept</a></li><li class="navelem"><a class="el" href="../../d7/d02/a01771.html">ControlPoint</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
