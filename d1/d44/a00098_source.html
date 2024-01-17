@@ -143,7 +143,7 @@ $(document).ready(function(){initNavTree('d1/d44/a00098_source.html','../../'); 
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">struct </span>Line {</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      FieldVector&lt;ScalarType, dim&gt; operator()(ScalarType t) { <span class="keywordflow">return</span> pos + t * dir; }</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      FieldVector&lt;ScalarType, dim&gt; jacobian() { <span class="keywordflow">return</span> dir; }</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; jacobian() { <span class="keywordflow">return</span> dir; }</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; pos;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; dir;</div>
@@ -156,7 +156,7 @@ $(document).ready(function(){initNavTree('d1/d44/a00098_source.html','../../'); 
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    FieldVector&lt;ScalarType, 2&gt; curvePoint;</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keyword">auto</span> domain = geoCurve.domain();</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">const</span> FieldVector lineDerivative = line.jacobian();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">const</span> FieldVector&lt;ScalarType, dim&gt;&amp; lineDerivative = line.jacobian();</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> iter = 0; iter &lt; maxIterations; ++iter) {</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      curvePoint                              = geoCurve.global(tParameter[0]);</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keyword">const</span> FieldVector curveDerivative       = geoCurve.jacobianTransposed(tParameter[0])[0];</div>
