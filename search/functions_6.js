@@ -8,7 +8,7 @@ var searchData=
   ['findintersectioncurveandline_5',['findIntersectionCurveAndLine',['../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f',1,'Dune::IGANEW']]],
   ['findintersectionlinearcurveandline_6',['findIntersectionLinearCurveAndLine',['../d3/d42/a00235.html#a09dc18d735ed41e5456a6bb4a9cdfb41',1,'Dune::IGANEW']]],
   ['findspan_7',['findSpan',['../d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92',1,'Dune::IGANEW::Splines::findSpan(const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)'],['../d0/da7/a00250.html#a3f4a0936ded82e5421a36f9f4c0c114b',1,'Dune::IGANEW::Splines::findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)']]],
-  ['finish_8',['finish',['../d5/de9/a01651.html#af1a0dd437cf31c54fc64492d81f34faf',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
+  ['finish_8',['finish',['../d5/de9/a01651.html#aff746367287cba561449a425dbddaeff',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
   ['finiteelement_9',['finiteElement',['../d1/d72/a01319.html#a30eee42a1d363fb03bd25f7b35d15920',1,'Dune::Functions::NurbsNode::finiteElement() const'],['../d1/d72/a01319.html#a30eee42a1d363fb03bd25f7b35d15920',1,'Dune::Functions::NurbsNode::finiteElement() const']]],
   ['flag_10',['flag',['../dc/d47/a01487.html#a006e273eedd292defb7e0594949a42b1',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
   ['foreachuntrimmedboundarydof_11',['forEachUntrimmedBoundaryDOF',['../d2/dc8/a00242.html#a8ce90ea47d11d38bdb1e3b675db93a18',1,'Dune::Functions']]],

@@ -15,7 +15,7 @@ var a01487 =
     [ "addEdgeNewNew", "dc/d47/a01487.html#a6bfe560a9cf279570ca62f60944d98e3", null ],
     [ "addEdgeNewNewOnHost", "dc/d47/a01487.html#a94cee0e29a9db103a188e796476dba3f", null ],
     [ "checkInside", "dc/d47/a01487.html#ae205d167319d424b402c009216ff8a03", null ],
-    [ "drawResult", "dc/d47/a01487.html#afe27ac676dbab093f4d99d045743b05b", null ],
+    [ "drawResult", "dc/d47/a01487.html#abb89a7079e8d8887d046bbdbea2f19d1", null ],
     [ "edges", "dc/d47/a01487.html#ac7cf476a486d95521670602ffc2648ed", null ],
     [ "finalize", "dc/d47/a01487.html#abcec2b93b965ae105eefa8a3bf6072a3", null ],
     [ "flag", "dc/d47/a01487.html#a006e273eedd292defb7e0594949a42b1", null ],

@@ -39,7 +39,7 @@ var searchData=
   ['domainmidpoint_36',['domainMidPoint',['../d9/d10/a01103.html#a5f6512e8a3a8fdd61a53571dd79b7544',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::domainMidPoint()'],['../de/d6d/a01095.html#aefb9e657006dcd7792292f8d49c802a7',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::domainMidPoint()']]],
   ['domaintype_37',['DomainType',['../da/d06/a01403.html#a34497333a209c96c14414d9f89fe7603',1,'Dune::IGA::Boundary::DomainType()'],['../d0/d1f/a00247.html#a25585768c010972feb9ad3e744e16623',1,'Dune::IGA::DomainType()']]],
   ['dot_38',['dot',['../d3/d42/a00235.html#aec86687240a124712c5daf95ff566abb',1,'Dune::IGANEW']]],
-  ['drawresult_39',['drawResult',['../dc/d47/a01487.html#afe27ac676dbab093f4d99d045743b05b',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
+  ['drawresult_39',['drawResult',['../dc/d47/a01487.html#abb89a7079e8d8887d046bbdbea2f19d1',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
   ['dummy_40',['dummy',['../d2/dcc/a01623.html#af7263dad9c09022418bd93c5985c5b11',1,'Dune::IGANEW::DefaultTrim::Parameter']]],
   ['dummyempty_41',['DummyEmpty',['../d4/d2c/a01327.html',1,'Dune::Functions::NurbsPreBasis']]],
   ['dune_42',['Dune',['../da/d31/a00234.html',1,'']]],

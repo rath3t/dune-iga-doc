@@ -18,5 +18,5 @@ var searchData=
   ['domaininformation_15',['DomainInformation',['../d6/d3b/a01459.html#a937582ba90c62c75deccf426346f87ae',1,'Dune::IGA::DomainInformation']]],
   ['domainmidpoint_16',['domainMidPoint',['../de/d6d/a01095.html#aefb9e657006dcd7792292f8d49c802a7',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::domainMidPoint()'],['../d9/d10/a01103.html#a5f6512e8a3a8fdd61a53571dd79b7544',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::domainMidPoint()']]],
   ['dot_17',['dot',['../d3/d42/a00235.html#aec86687240a124712c5daf95ff566abb',1,'Dune::IGANEW']]],
-  ['drawresult_18',['drawResult',['../dc/d47/a01487.html#afe27ac676dbab093f4d99d045743b05b',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]]
+  ['drawresult_18',['drawResult',['../dc/d47/a01487.html#abb89a7079e8d8887d046bbdbea2f19d1',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]]
 ];

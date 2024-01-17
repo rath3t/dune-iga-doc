@@ -104,18 +104,18 @@ $(document).ready(function(){initNavTree('d0/dc2/a00104_source.html','../../'); 
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d3/d42/a00235.html">Dune::IGANEW</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="comment">// Curtesy to https://github.com/pradeep-pyro/tinynurbs/blob/master/include/tinynurbs/core/modify.h</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="comment">// Inspired by https://github.com/pradeep-pyro/tinynurbs/blob/master/include/tinynurbs/core/modify.h</span></div>
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> GeoCurve, <span class="keyword">typename</span> ScalarType = <span class="keyword">typename</span> GeoCurve::ctype&gt;</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d3/d42/a00235.html#adac8c4895c4b00d8f6a51f6d0ce67f23">   13</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d3/d42/a00235.html#adac8c4895c4b00d8f6a51f6d0ce67f23">splitCurve</a>(<span class="keyword">const</span> GeoCurve&amp; geoCurve, ScalarType u) -&gt; std::pair&lt;GeoCurve, GeoCurve&gt; {</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keyword">static_assert</span>(GeoCurve::mydimension == 1);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keyword">auto</span> knotMultiplicity = [](<span class="keyword">auto</span>&amp; knotVec, <span class="keyword">auto</span> u_) {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      <span class="keywordflow">return</span> std::ranges::count_if(knotVec, [=](<span class="keywordtype">double</span> val) { <span class="keywordflow">return</span> FloatCmp::eq(u_, val, 1e-8); });</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    };</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">auto</span>&amp; patchData     = geoCurve.patchData();</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span> knots          = patchData.knotSpans.front();</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> control_points = patchData.controlPoints.directGetAll();</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">using </span>ControlPointType = <span class="keyword">typename</span> GeoCurve::ControlPointType;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keyword">auto</span> knotMultiplicity = [](<span class="keyword">auto</span>&amp; knotVec, <span class="keyword">auto</span> u_) {</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      <span class="keywordflow">return</span> std::ranges::count_if(knotVec, [=](<span class="keywordtype">double</span> val) { <span class="keywordflow">return</span> FloatCmp::eq(u_, val, 1e-8); });</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    };</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">auto</span>&amp; patchData     = geoCurve.patchData();</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <span class="keyword">auto</span> knots          = patchData.knotSpans.front();</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">auto</span> domain         = geoCurve.domain();</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">auto</span> degree         = patchData.degree[0];</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
@@ -142,12 +142,12 @@ $(document).ready(function(){initNavTree('d0/dc2/a00104_source.html','../../'); 
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="comment">// append the rest of the old knots as they are</span></div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    rightKnots.insert(rightKnots.end(), std::next(tmpKnots.begin(), span_l), tmpKnots.end());</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keyword">decltype</span>(control_points) leftControlPoints;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    std::vector&lt;ControlPointType&gt; leftControlPoints;</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> ks = span - degree + 1;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="comment">// add all controlpoints that live left of u, which is the range [0,ks+r[ of controlpoints</span></div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    leftControlPoints.insert(leftControlPoints.end(), tmpCp.begin(), std::next(tmpCp.begin(), ks + r));</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keyword">decltype</span>(control_points) rightControlPoints;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>     std::vector&lt;ControlPointType&gt; rightControlPoints;</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="comment">// add all controlpoints that live right of u, which is the range [ks+r-1,end[ of controlpoints</span></div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    rightControlPoints.insert(rightControlPoints.end(), std::next(tmpCp.begin(), ks + r - 1), tmpCp.end());</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
