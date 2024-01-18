@@ -56,6 +56,6 @@ var a00235 =
     [ "readJson", "d3/d42/a00235.html#abe48967cf956f798eea3f80cc1edc59e", null ],
     [ "referenceElement", "d3/d42/a00235.html#a14501a764d945ffb9fd15254ab7da335", null ],
     [ "referenceElement", "d3/d42/a00235.html#aa8ba61178990a88b88ab09dfc698d54b", null ],
-    [ "sliceCurve", "d3/d42/a00235.html#a357b3e400d2b8b28d4a377002c535783", null ],
-    [ "splitCurve", "d3/d42/a00235.html#adac8c4895c4b00d8f6a51f6d0ce67f23", null ]
+    [ "sliceCurve", "d3/d42/a00235.html#abfc77ae77e0b94352c95be9f7743ba82", null ],
+    [ "splitCurve", "d3/d42/a00235.html#a9d1ef665e00560598f9eecf853c6187b", null ]
 ];

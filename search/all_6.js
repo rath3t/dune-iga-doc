@@ -7,7 +7,7 @@ var searchData=
   ['fillquadratureruleimpl_4',['fillQuadratureRuleImpl',['../d0/d1f/a00247.html#a023d3c0845a496b2eedca5b359b49964',1,'Dune::IGA']]],
   ['finalize_5',['finalize',['../dc/d47/a01487.html#abcec2b93b965ae105eefa8a3bf6072a3',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
   ['findclosestparameterspacecoordinate_6',['findClosestParameterSpaceCoordinate',['../d4/d08/a00237.html#a85b42ae7d7cb1ba7149c382655ce96ea',1,'Dune::IGANEW::GeometryKernel']]],
-  ['findgoodstartingpoint_7',['findGoodStartingPoint',['../d0/d3e/a00253.html#a36869896fb8578ef4817450532376164',1,'Dune::IGANEW::DefaultTrim::Util']]],
+  ['findgoodstartingpoint_7',['findGoodStartingPoint',['../d0/d3e/a00253.html#a870b9a152ad4ff41a8be202c6d04b7a5',1,'Dune::IGANEW::DefaultTrim::Util']]],
   ['findintersection_2ehh_8',['findintersection.hh',['../d1/d44/a00098.html',1,'']]],
   ['findintersectioncurveandline_9',['findIntersectionCurveAndLine',['../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f',1,'Dune::IGANEW']]],
   ['findintersectioncurveandlineresult_10',['FindIntersectionCurveAndLineResult',['../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53',1,'Dune::IGANEW']]],

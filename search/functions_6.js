@@ -4,7 +4,7 @@ var searchData=
   ['fillquadratureruleimpl_1',['fillQuadratureRuleImpl',['../d0/d1f/a00247.html#a023d3c0845a496b2eedca5b359b49964',1,'Dune::IGA']]],
   ['finalize_2',['finalize',['../dc/d47/a01487.html#abcec2b93b965ae105eefa8a3bf6072a3',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
   ['findclosestparameterspacecoordinate_3',['findClosestParameterSpaceCoordinate',['../d4/d08/a00237.html#a85b42ae7d7cb1ba7149c382655ce96ea',1,'Dune::IGANEW::GeometryKernel']]],
-  ['findgoodstartingpoint_4',['findGoodStartingPoint',['../d0/d3e/a00253.html#a36869896fb8578ef4817450532376164',1,'Dune::IGANEW::DefaultTrim::Util']]],
+  ['findgoodstartingpoint_4',['findGoodStartingPoint',['../d0/d3e/a00253.html#a870b9a152ad4ff41a8be202c6d04b7a5',1,'Dune::IGANEW::DefaultTrim::Util']]],
   ['findintersectioncurveandline_5',['findIntersectionCurveAndLine',['../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f',1,'Dune::IGANEW']]],
   ['findintersectionlinearcurveandline_6',['findIntersectionLinearCurveAndLine',['../d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836',1,'Dune::IGANEW']]],
   ['findspan_7',['findSpan',['../d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92',1,'Dune::IGANEW::Splines::findSpan(const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)'],['../d0/da7/a00250.html#a3f4a0936ded82e5421a36f9f4c0c114b',1,'Dune::IGANEW::Splines::findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)']]],

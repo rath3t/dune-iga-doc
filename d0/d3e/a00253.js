@@ -7,7 +7,7 @@ var a00253 =
     [ "createHostGeometry", "d0/d3e/a00253.html#afa8d09a2b2b61bb41dfc22fb2060a5fd", null ],
     [ "createTrimmingCurveSlice", "d0/d3e/a00253.html#a4160dac0cdcae55fca83559856c4a45a", null ],
     [ "distance", "d0/d3e/a00253.html#a92128ee85ce68d85f0d598c954c790eb", null ],
-    [ "findGoodStartingPoint", "d0/d3e/a00253.html#a36869896fb8578ef4817450532376164", null ],
+    [ "findGoodStartingPoint", "d0/d3e/a00253.html#a870b9a152ad4ff41a8be202c6d04b7a5", null ],
     [ "giveEdgeIdx", "d0/d3e/a00253.html#a55a9ec04149f78cad2fd07e790a81128", null ],
     [ "isHostVertex", "d0/d3e/a00253.html#a57d1a76835cb88eace9dcba2644c2205", null ],
     [ "isPointOnLine", "d0/d3e/a00253.html#acc865208e84fedeac81a10e21b0c8eec", null ],
