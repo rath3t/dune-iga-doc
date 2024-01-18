@@ -10,6 +10,7 @@ var a00250 =
     [ "findSpan", "d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
     [ "generateRefinedKnots", "d0/da7/a00250.html#a2287fefbe65d5d37c50e3c953258961d", null ],
     [ "knotRefinement", "d0/da7/a00250.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "multiplicity", "d0/da7/a00250.html#a88473945faf4f3ad3a83f3491faf0782", null ],
     [ "netOfSpan", "d0/da7/a00250.html#aeef1f38b9d1b82ea122bfd436c7fa79d", null ],
     [ "netOfSpan", "d0/da7/a00250.html#ade2df4e39e5a62f0c339ccdfd4059da3", null ]
 ];

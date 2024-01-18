@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['concepts_2ehh_0',['concepts.hh',['../d0/db0/a03631.html',1,'']]],
-  ['patchgridintersections_2ehh_1',['patchgridintersections.hh',['../dc/d8f/a03640.html',1,'']]],
+  ['concepts_2ehh_0',['concepts.hh',['../dc/d58/a03633.html',1,'']]],
+  ['patchgridintersections_2ehh_1',['patchgridintersections.hh',['../dc/dd9/a03642.html',1,'']]],
   ['tensorgrid_2',['TensorGrid',['../de/d70/a01415.html#a09e1f768583f5f18b9df7a3cd45c16ee',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
   ['tensorgridelementgeometry_3',['TensorGridElementGeometry',['../de/d70/a01415.html#afcfb0ddb8c77470f4752282a63ac9f3d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
   ['tensorgridview_4',['TensorGridView',['../de/d70/a01415.html#a6c3707db6a3e9570c04c0115b3991fcb',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],

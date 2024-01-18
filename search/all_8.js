@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['concepts_2ehh_0',['concepts.hh',['../db/d88/a03628.html',1,'']]],
+  ['concepts_2ehh_0',['concepts.hh',['../d6/d81/a03630.html',1,'']]],
   ['hasbackuprestorefacilities_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_20_3e_1',['hasBackupRestoreFacilities&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;',['../db/d07/a01155.html',1,'Dune::Capabilities']]],
   ['hasbackuprestorefacilities_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2',['hasBackupRestoreFacilities&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../de/df1/a01151.html',1,'Dune::Capabilities']]],
   ['hasentity_3',['hasEntity',['../dd/d2d/a01635.html#ad027c21681782961ebf495441edbcab3',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::hasEntity()'],['../da/d1f/a01203.html#a4f8af8d592799620b57d2c324298c582',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily::hasEntity()']]],
@@ -41,6 +41,6 @@ var searchData=
   ['hostvertex_38',['HostVertex',['../df/ddd/a01655.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
   ['hypersurfbegin_39',['hyperSurfBegin',['../db/de5/a01759.html#a9722a77ba05269bc6fc6d86d3baed285',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['hypersurfend_40',['hyperSurfEnd',['../db/de5/a01759.html#aa44cdf11cabb8f75b093b2b6c9cd917e',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['patchgrid_2ehh_41',['patchgrid.hh',['../dc/d12/a03634.html',1,'']]],
-  ['patchgridintersections_2ehh_42',['patchgridintersections.hh',['../d3/d63/a03637.html',1,'']]]
+  ['patchgrid_2ehh_41',['patchgrid.hh',['../da/d9f/a03636.html',1,'']]],
+  ['patchgridintersections_2ehh_42',['patchgridintersections.hh',['../d1/d7b/a03639.html',1,'']]]
 ];

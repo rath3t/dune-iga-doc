@@ -61,29 +61,30 @@ var NAVTREE =
         [ "Functions", "globals_func.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ]
+    ] ],
+    [ "Examples", "examples.html", "examples" ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d0/da4/a01631.html#a52c46cc93c877f3e72d49a2739a6b520",
-"d2/d34/a01679.html#a9809d324c58725b2ed8a34c3d920b019",
-"d3/d52/a00023.html",
-"d5/d06/a01499.html#a33d1b5e35b28ace1439ae7cbcdd8b66c",
-"d5/df4/a01551.html#a014c96f4304507c98ede758e251f645a",
-"d6/d91/a01587.html#acb8199fa2ea09e3d34591e3d843f5a85",
-"d7/dae/a01615.html#af91d9cf1ede62893a52ba6fa894d3c65",
-"d8/db0/a01243.html#ad11105ab118891774a7c4342daae1ded",
-"d9/d27/a01763.html#a1b46c1132b41bb080b0e89bb0bad98a1",
-"da/d1f/a01203.html#a742361744838ed5f9b9282fe92b00c38",
-"da/ded/a01547.html#aea7971ce548c8739dee18298685cfa3f",
-"db/de5/a01759.html#a90654f523471f48e6e68cf5fccd2cd69",
-"dc/dc8/a01695.html#a103d9e4dd92417c1311f741c84005248",
-"dd/d8d/a01667.html#af00692815c5c9bca1326262f473e950d",
+"d0/da4/a01631.html#a532db45b327726fd239dabdc6bbbe1ec",
+"d2/d34/a01679.html#a79067a14b6dd1ea0dbee03fc5cab3a60",
+"d3/da4/a01343.html#a171156a04b856a610d8c9fc00ef9f649",
+"d5/d06/a01499.html#a692929a809ce2d889ac3423c5aed29e4",
+"d5/df4/a01551.html#acccb8cf331993d407ea5fbbe2d7064cd",
+"d6/d91/a01587.html#afac684cbe3ba02019603d53720af8b99",
+"d7/db4/a01747.html#a038aae3e5ff9d567cd96ed3d9324646d",
+"d8/db0/a01243.html#af8c3bdd69d2d2cd3a998ed97e59e35c1",
+"d9/d40/a01387.html",
+"da/d1f/a01203.html#af74afe3091b344bc0990a2796f714ae8",
+"db/d08/a01543.html#a3ea4416f2e210d907b98dc1c6894507f",
+"db/de5/a01759.html#a985c3138d8d4a5773b45557fa1e5dcb4",
+"dc/dc8/a01695.html#a5381c850da02988d30c924704e1f6e05",
+"dd/d95/a01247.html",
 "de/d70/a01415.html#a0a4b9dacafd634c66043ea047fed6b66",
-"dir_d2a3c23294a1b1015b1b8e8721ddded8.html"
+"dir_a36cfeabe5614d71e4137cf818df6e31.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

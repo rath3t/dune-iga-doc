@@ -118,6 +118,9 @@ requires (dim2 == dim)</td></tr>
 <tr class="memitem:a67facdaecd7f3c339ece70971f8a8f92"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92">findSpan</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
 <tr class="memdesc:a67facdaecd7f3c339ece70971f8a8f92"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as findSpan but for dim knotvectors.  <a href="../../d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92">More...</a><br /></td></tr>
 <tr class="separator:a67facdaecd7f3c339ece70971f8a8f92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88473945faf4f3ad3a83f3491faf0782"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a88473945faf4f3ad3a83f3491faf0782"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/da7/a00250.html#a88473945faf4f3ad3a83f3491faf0782">multiplicity</a> (Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::value_type u)</td></tr>
+<tr class="separator:a88473945faf4f3ad3a83f3491faf0782"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
 <tr class="memitem:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/da7/a00250.html#a1d7349b1373b5c83a5a5be7377985ae0">createUniqueKnotSpans</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans)</td></tr>
 <tr class="separator:a1d7349b1373b5c83a5a5be7377985ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,6 +174,8 @@ template&lt;std::size_t dim, typename ScalarType &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../de/dc3/a01787.html#a11">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -354,12 +359,14 @@ template&lt;std::ranges::random_access_range Range&gt; </div>
   <table class="params">
     <tr><td class="paramname">p</td><td>polynomial degree of the underlying spline </td></tr>
     <tr><td class="paramname">u</td><td>span value which is searched for </td></tr>
-    <tr><td class="paramname">U</td><td>range where to search (knotvector </td></tr>
+    <tr><td class="paramname">U</td><td>range where to search </td></tr>
     <tr><td class="paramname">offset</td><td>adjust range where to start searching to improve efficiency </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../de/dc3/a01787.html#a1">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
 
 </div>
 </div>
@@ -510,6 +517,38 @@ template&lt;std::integral auto dim, std::integral auto dimworld, typename Scalar
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>NURBS patch data after knot refinement. </dd></dl>
+
+</div>
+</div>
+<a id="a88473945faf4f3ad3a83f3491faf0782" name="a88473945faf4f3ad3a83f3491faf0782"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88473945faf4f3ad3a83f3491faf0782">&#9670;&nbsp;</a></span>multiplicity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::ranges::random_access_range Range&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::Splines::multiplicity </td>
+          <td>(</td>
+          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramname"><em>U</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">typename std::remove_cvref_t&lt; Range &gt;::value_type&#160;</td>
+          <td class="paramname"><em>u</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../de/dc3/a01787.html#a0">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
 
 </div>
 </div>
