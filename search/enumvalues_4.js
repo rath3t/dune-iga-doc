@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['inparameterspace_0',['InParameterSpace',['../dc/ded/a00252.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e',1,'Dune::IGANEW::DefaultTrim']]],
-  ['inreferenceelement_1',['InReferenceElement',['../dc/ded/a00252.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723',1,'Dune::IGANEW::DefaultTrim']]]
+  ['host_0',['host',['../d9/d13/a01599.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e',1,'Dune::IGANEW::DefaultTrim::IdType::host()'],['../d9/d13/a01599.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e',1,'Dune::IGANEW::DefaultTrim::IdType::host()']]]
 ];

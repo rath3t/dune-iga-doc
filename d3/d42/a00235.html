@@ -171,9 +171,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0c625c53a5b3360578c5b05194a55a53"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53">FindIntersectionCurveAndLineResult</a> { <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7">noSucess</a>
-, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">sucess</a>
-, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08">linesParallel</a>
+<tr class="memitem:a0c625c53a5b3360578c5b05194a55a53"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53">FindIntersectionCurveAndLineResult</a> { <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aff8d48ba74b051ac230fb0c28ae11984">disjoint</a>
+, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aea228c391b72961cc1370e2d66442d86">intersect</a>
+, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53a48920c071f6a5c97ae3739be64630697">parallel</a>
  }</td></tr>
 <tr class="separator:a0c625c53a5b3360578c5b05194a55a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -211,9 +211,10 @@ Functions</h2></td></tr>
 <tr class="memitem:a124862a808b0cd8eee23b3960c456f83"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d2/d4d/a01079.html">ControlPoint</a>&lt; VectorType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a124862a808b0cd8eee23b3960c456f83">operator-</a> (const <a class="el" href="../../d2/d4d/a01079.html">ControlPoint</a>&lt; VectorType &gt; &amp;cpL, const <a class="el" href="../../d2/d4d/a01079.html">ControlPoint</a>&lt; VectorType &gt; &amp;cpR)</td></tr>
 <tr class="memdesc:a124862a808b0cd8eee23b3960c456f83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Subtracts the coordinates and the weight of two control points.  <a href="../../d3/d42/a00235.html#a124862a808b0cd8eee23b3960c456f83">More...</a><br /></td></tr>
 <tr class="separator:a124862a808b0cd8eee23b3960c456f83"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09dc18d735ed41e5456a6bb4a9cdfb41"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </td></tr>
-<tr class="memitem:a09dc18d735ed41e5456a6bb4a9cdfb41"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a09dc18d735ed41e5456a6bb4a9cdfb41">findIntersectionLinearCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
-<tr class="separator:a09dc18d735ed41e5456a6bb4a9cdfb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337c8ba4001f6d4d07f1e11a65147836"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; <br />
+requires (dim == 2)</td></tr>
+<tr class="memitem:a337c8ba4001f6d4d07f1e11a65147836"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836">findIntersectionLinearCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
+<tr class="separator:a337c8ba4001f6d4d07f1e11a65147836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a533ba1e65466dfc728bc84b33126774f"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </td></tr>
 <tr class="memitem:a533ba1e65466dfc728bc84b33126774f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f">findIntersectionCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
 <tr class="separator:a533ba1e65466dfc728bc84b33126774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -297,9 +298,9 @@ requires Concept::DivideAble&lt;lValueType, rValueType&gt;</td></tr>
 </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7" name="a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7"></a>noSucess&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f" name="a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f"></a>sucess&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08" name="a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08"></a>linesParallel&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0c625c53a5b3360578c5b05194a55a53aff8d48ba74b051ac230fb0c28ae11984" name="a0c625c53a5b3360578c5b05194a55a53aff8d48ba74b051ac230fb0c28ae11984"></a>disjoint&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c625c53a5b3360578c5b05194a55a53aea228c391b72961cc1370e2d66442d86" name="a0c625c53a5b3360578c5b05194a55a53aea228c391b72961cc1370e2d66442d86"></a>intersect&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0c625c53a5b3360578c5b05194a55a53a48920c071f6a5c97ae3739be64630697" name="a0c625c53a5b3360578c5b05194a55a53a48920c071f6a5c97ae3739be64630697"></a>parallel&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -445,13 +446,14 @@ template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </div>
 
 </div>
 </div>
-<a id="a09dc18d735ed41e5456a6bb4a9cdfb41" name="a09dc18d735ed41e5456a6bb4a9cdfb41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09dc18d735ed41e5456a6bb4a9cdfb41">&#9670;&nbsp;</a></span>findIntersectionLinearCurveAndLine()</h2>
+<a id="a337c8ba4001f6d4d07f1e11a65147836" name="a337c8ba4001f6d4d07f1e11a65147836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a337c8ba4001f6d4d07f1e11a65147836">&#9670;&nbsp;</a></span>findIntersectionLinearCurveAndLine()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </div>
+template&lt;typename GeoCurve , typename ScalarType , int dim&gt; <br />
+requires (dim == 2)</div>
       <table class="memname">
         <tr>
           <td class="memname">auto Dune::IGANEW::findIntersectionLinearCurveAndLine </td>

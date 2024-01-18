@@ -28,14 +28,14 @@ var a00235 =
     [ "PatchGridLevelIntersection", "dd/d95/a01247.html", "dd/d95/a01247" ],
     [ "PatchGridLocalGeometry", "d8/df7/a01711.html", "d8/df7/a01711" ],
     [ "FindIntersectionCurveAndLineResult", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53", [
-      [ "noSucess", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7", null ],
-      [ "sucess", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f", null ],
-      [ "linesParallel", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08", null ]
+      [ "disjoint", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aff8d48ba74b051ac230fb0c28ae11984", null ],
+      [ "intersect", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aea228c391b72961cc1370e2d66442d86", null ],
+      [ "parallel", "d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53a48920c071f6a5c97ae3739be64630697", null ]
     ] ],
     [ "closestPointProjectionByTrustRegion", "d3/d42/a00235.html#a5a86887937350922b04eaf5967ac33b9", null ],
     [ "dot", "d3/d42/a00235.html#aec86687240a124712c5daf95ff566abb", null ],
     [ "findIntersectionCurveAndLine", "d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f", null ],
-    [ "findIntersectionLinearCurveAndLine", "d3/d42/a00235.html#a09dc18d735ed41e5456a6bb4a9cdfb41", null ],
+    [ "findIntersectionLinearCurveAndLine", "d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836", null ],
     [ "intersect3DLines", "d3/d42/a00235.html#a92a605959c76f4613b72045bd4fdbf5c", null ],
     [ "makeCircularArc", "d3/d42/a00235.html#a000e49612164d2b6609e00015a7da1b8", null ],
     [ "makeCircularArc2D", "d3/d42/a00235.html#af2e971c8404f8415030e1ae459761540", null ],

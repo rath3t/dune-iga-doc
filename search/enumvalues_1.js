@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empty_0',['empty',['../d0/d1f/a00247.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9',1,'Dune::IGA::empty()'],['../dc/ded/a00252.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9',1,'Dune::IGANEW::DefaultTrim::empty()']]]
+  ['disjoint_0',['disjoint',['../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aff8d48ba74b051ac230fb0c28ae11984',1,'Dune::IGANEW']]]
 ];

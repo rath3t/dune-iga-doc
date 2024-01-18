@@ -58,7 +58,8 @@ var NAVTREE =
       [ "File List", "files.html", "files_dup" ],
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
+        [ "Functions", "globals_func.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ]
   ] ]
@@ -68,21 +69,21 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d0/da4/a01631.html#a52c46cc93c877f3e72d49a2739a6b520",
-"d2/d34/a01679.html#aa948b7141d47e8589150426c040e1187",
-"d3/d63/a03637.html",
-"d5/d06/a01499.html#a47edfc0dfed1d559860857aebabdc9dc",
-"d5/df4/a01551.html#a17e064882955bab651d1666d78243292",
-"d6/d91/a01587.html#ad2bdc25c2823c49c740701e21f749451",
-"d7/dae/a01615.html#afedf80f655d9b417968d336cd7d11fc2",
-"d8/db0/a01243.html#ae7e6808020e3c99ecab46509334fbaab",
-"d9/d2e/a00056.html",
-"da/d1f/a01203.html#a88ffd9727851a73a5309568562ce69a8",
-"db/d07/a01155.html",
-"db/de5/a01759.html#a9722a77ba05269bc6fc6d86d3baed285",
-"dc/dc8/a01695.html#a74d7a3a0c5f28884eb5390a7112b6a72",
-"dd/d95/a01247.html#a07bfb0a09ab027c70831a0fd99a74664",
-"de/d70/a01415.html#a1c75635fc3cc57d877911d580f414c3e",
-"dir_e68e8157741866f444e17edd764ebbae.html"
+"d2/d34/a01679.html#a9809d324c58725b2ed8a34c3d920b019",
+"d3/d52/a00023.html",
+"d5/d06/a01499.html#a33d1b5e35b28ace1439ae7cbcdd8b66c",
+"d5/df4/a01551.html#a014c96f4304507c98ede758e251f645a",
+"d6/d91/a01587.html#acb8199fa2ea09e3d34591e3d843f5a85",
+"d7/dae/a01615.html#af91d9cf1ede62893a52ba6fa894d3c65",
+"d8/db0/a01243.html#ad11105ab118891774a7c4342daae1ded",
+"d9/d27/a01763.html#a1b46c1132b41bb080b0e89bb0bad98a1",
+"da/d1f/a01203.html#a742361744838ed5f9b9282fe92b00c38",
+"da/ded/a01547.html#aea7971ce548c8739dee18298685cfa3f",
+"db/de5/a01759.html#a90654f523471f48e6e68cf5fccd2cd69",
+"dc/dc8/a01695.html#a103d9e4dd92417c1311f741c84005248",
+"dd/d8d/a01667.html#af00692815c5c9bca1326262f473e950d",
+"de/d70/a01415.html#a0a4b9dacafd634c66043ea047fed6b66",
+"dir_d2a3c23294a1b1015b1b8e8721ddded8.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

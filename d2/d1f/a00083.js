@@ -9,5 +9,6 @@ var a00083 =
     [ "mapToRange", "d2/d1f/a00083.html#a6b48e47a84d5e67509b5d6b512933245", null ],
     [ "mapToRange", "d2/d1f/a00083.html#a04ac9c71c72215ada13cdc92a31d96ba", null ],
     [ "mapToRange", "d2/d1f/a00083.html#addda4c834225ccb0923b33a5f9d494b0", null ],
+    [ "mapToRangeFromZeroToOne", "d2/d1f/a00083.html#aa702762865e719e68a197ce63a446b33", null ],
     [ "splitDomainInHalf", "d2/d1f/a00083.html#a8a1ae4d6e29645af6fa8e60672bac908", null ]
 ];

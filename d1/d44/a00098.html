@@ -93,6 +93,7 @@ $(document).ready(function(){initNavTree('d1/d44/a00098.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
+<a href="#define-members">Macros</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">findintersection.hh File Reference</div></div>
@@ -110,23 +111,44 @@ Namespaces</h2></td></tr>
 <tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae4bc7cdc5e53b7a5a31910e968d7ef0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d44/a00098.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b">DUNE_FMatrix_WITH_CHECKING</a></td></tr>
+<tr class="separator:ae4bc7cdc5e53b7a5a31910e968d7ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a0c625c53a5b3360578c5b05194a55a53"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53">Dune::IGANEW::FindIntersectionCurveAndLineResult</a> { <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53af932a6b37467016e6dbd0d3ed241d3e7">Dune::IGANEW::noSucess</a>
-, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aaae10292f3eef0f0329ef2c9dd7a6c7f">Dune::IGANEW::sucess</a>
-, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53a1555bbeabd836b199a928fc64a0c3b08">Dune::IGANEW::linesParallel</a>
+<tr class="memitem:a0c625c53a5b3360578c5b05194a55a53"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53">Dune::IGANEW::FindIntersectionCurveAndLineResult</a> { <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aff8d48ba74b051ac230fb0c28ae11984">Dune::IGANEW::disjoint</a>
+, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53aea228c391b72961cc1370e2d66442d86">Dune::IGANEW::intersect</a>
+, <a class="el" href="../../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53a48920c071f6a5c97ae3739be64630697">Dune::IGANEW::parallel</a>
  }</td></tr>
 <tr class="separator:a0c625c53a5b3360578c5b05194a55a53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a09dc18d735ed41e5456a6bb4a9cdfb41"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </td></tr>
-<tr class="memitem:a09dc18d735ed41e5456a6bb4a9cdfb41"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a09dc18d735ed41e5456a6bb4a9cdfb41">Dune::IGANEW::findIntersectionLinearCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
-<tr class="separator:a09dc18d735ed41e5456a6bb4a9cdfb41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a337c8ba4001f6d4d07f1e11a65147836"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; <br />
+requires (dim == 2)</td></tr>
+<tr class="memitem:a337c8ba4001f6d4d07f1e11a65147836"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836">Dune::IGANEW::findIntersectionLinearCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
+<tr class="separator:a337c8ba4001f6d4d07f1e11a65147836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a533ba1e65466dfc728bc84b33126774f"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </td></tr>
 <tr class="memitem:a533ba1e65466dfc728bc84b33126774f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f">Dune::IGANEW::findIntersectionCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
 <tr class="separator:a533ba1e65466dfc728bc84b33126774f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="ae4bc7cdc5e53b7a5a31910e968d7ef0b" name="ae4bc7cdc5e53b7a5a31910e968d7ef0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4bc7cdc5e53b7a5a31910e968d7ef0b">&#9670;&nbsp;</a></span>DUNE_FMatrix_WITH_CHECKING</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DUNE_FMatrix_WITH_CHECKING</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

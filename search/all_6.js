@@ -11,7 +11,7 @@ var searchData=
   ['findintersection_2ehh_8',['findintersection.hh',['../d1/d44/a00098.html',1,'']]],
   ['findintersectioncurveandline_9',['findIntersectionCurveAndLine',['../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f',1,'Dune::IGANEW']]],
   ['findintersectioncurveandlineresult_10',['FindIntersectionCurveAndLineResult',['../d3/d42/a00235.html#a0c625c53a5b3360578c5b05194a55a53',1,'Dune::IGANEW']]],
-  ['findintersectionlinearcurveandline_11',['findIntersectionLinearCurveAndLine',['../d3/d42/a00235.html#a09dc18d735ed41e5456a6bb4a9cdfb41',1,'Dune::IGANEW']]],
+  ['findintersectionlinearcurveandline_11',['findIntersectionLinearCurveAndLine',['../d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836',1,'Dune::IGANEW']]],
   ['findspan_12',['findSpan',['../d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92',1,'Dune::IGANEW::Splines::findSpan(const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)'],['../d0/da7/a00250.html#a3f4a0936ded82e5421a36f9f4c0c114b',1,'Dune::IGANEW::Splines::findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)']]],
   ['finish_13',['finish',['../d5/de9/a01651.html#aff746367287cba561449a425dbddaeff',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
   ['finiteelement_14',['FiniteElement',['../d1/d72/a01319.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode::FiniteElement()'],['../d1/d72/a01319.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode::FiniteElement()']]],
