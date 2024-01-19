@@ -93,7 +93,8 @@ $(document).ready(function(){initNavTree('d2/df5/a00137.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">trimutils.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -128,6 +129,27 @@ Functions</h2></td></tr>
 <tr class="separator:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ec98aeae9dd9815cc7a6c9178f24a64"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#a3ec98aeae9dd9815cc7a6c9178f24a64">Dune::IGANEW::DefaultTrim::Util::callFindIntersection</a> (const auto &amp;curvePatchGeo, int edgeIdx, const auto &amp;ip, const auto &amp;corners) -&gt; std::pair&lt; double, FieldVector&lt; double, 2 &gt; &gt;</td></tr>
 <tr class="separator:a3ec98aeae9dd9815cc7a6c9178f24a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a1a54c6ef09c20e25c079f1f4f50448f4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#a1a54c6ef09c20e25c079f1f4f50448f4">Dune::IGANEW::DefaultTrim::Util::isNewVertex</a> = [](const auto&amp; vV) { return std::holds_alternative&lt;ClippingResult::NewVertex&gt;(vV); }</td></tr>
+<tr class="separator:a1a54c6ef09c20e25c079f1f4f50448f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9270ca0dc9d6ee454558643f179d94"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#a3c9270ca0dc9d6ee454558643f179d94">Dune::IGANEW::DefaultTrim::Util::isHostVertex</a> = [](const auto&amp; vV) { return std::holds_alternative&lt;ClippingResult::HostVertex&gt;(vV); }</td></tr>
+<tr class="separator:a3c9270ca0dc9d6ee454558643f179d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c65c348665122f3bef6f17cf0b570e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#aa0c65c348665122f3bef6f17cf0b570e">Dune::IGANEW::DefaultTrim::Util::isInsideVertex</a> = [](const auto&amp; vV) { return std::holds_alternative&lt;ClippingResult::InsideVertex&gt;(vV); }</td></tr>
+<tr class="separator:aa0c65c348665122f3bef6f17cf0b570e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935041761462f099c0da9020c3963055"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#a935041761462f099c0da9020c3963055">Dune::IGANEW::DefaultTrim::Util::getPt</a> = [](auto&amp;&amp; vV) { return vV.pt; }</td></tr>
+<tr class="separator:a935041761462f099c0da9020c3963055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6ad54f54dd14c3668aa129f0bf53b0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#aac6ad54f54dd14c3668aa129f0bf53b0">Dune::IGANEW::DefaultTrim::Util::getHostIdx</a> = [](const auto&amp; vV) { return std::get&lt;ClippingResult::HostVertex&gt;(vV).hostIdx; }</td></tr>
+<tr class="separator:aac6ad54f54dd14c3668aa129f0bf53b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cf3ee45579a10ac4967b7c6eef12f6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#a55cf3ee45579a10ac4967b7c6eef12f6">Dune::IGANEW::DefaultTrim::Util::getEdgeIdx</a> = [](const auto&amp; vV) { return std::get&lt;ClippingResult::NewVertex&gt;(vV).onEdgeIdx; }</td></tr>
+<tr class="separator:a55cf3ee45579a10ac4967b7c6eef12f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6435d50cbb951d883fc6c781ccaf9ce"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#af6435d50cbb951d883fc6c781ccaf9ce">Dune::IGANEW::DefaultTrim::Util::getCurveI</a> = [](const auto&amp; vV) {return std::get&lt;ClippingResult::InsideVertex&gt;(vV).curveIdxI; }</td></tr>
+<tr class="separator:af6435d50cbb951d883fc6c781ccaf9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac833ba896079ec350aaa818a63522afd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#ac833ba896079ec350aaa818a63522afd">Dune::IGANEW::DefaultTrim::Util::getCurveJ</a> = [](const auto&amp; vV) {return std::get&lt;ClippingResult::InsideVertex&gt;(vV).curveIdxJ; }</td></tr>
+<tr class="separator:ac833ba896079ec350aaa818a63522afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04fcdb0841a754fefe2fc99bb9876d9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d3e/a00253.html#aa04fcdb0841a754fefe2fc99bb9876d9">Dune::IGANEW::DefaultTrim::Util::getLoopIdx</a> = [](const auto&amp; vV) {return std::get&lt;ClippingResult::InsideVertex&gt;(vV).loopIdx; }</td></tr>
+<tr class="separator:aa04fcdb0841a754fefe2fc99bb9876d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
