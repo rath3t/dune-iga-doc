@@ -1,9 +1,14 @@
 var a01687 =
 [
-    [ "IdType", "d7/db8/a01687.html#a2009d4ac8634d95f35b80ce12ec9dc84", null ],
-    [ "PatchGridGlobalIdSet", "d7/db8/a01687.html#ab06a92c47781f06a9ef5747b306a8319", null ],
-    [ "id", "d7/db8/a01687.html#a456c95d1b7a1be09bdb5f686d643bc19", null ],
-    [ "subId", "d7/db8/a01687.html#a1e3a589e86c8612e688d5fad44bc6b0f", null ],
-    [ "update", "d7/db8/a01687.html#a304dbe28e18a6652a02a2ed3945c05e4", null ],
-    [ "grid_", "d7/db8/a01687.html#aaa9b775fcea83822a90483ce596ecda3", null ]
+    [ "Types", "d7/db8/a01687.html#a630b3b92b6c3f96ca20c0fe174aab211", null ],
+    [ "PatchGridLeafIndexSet", "d7/db8/a01687.html#a147729ee771ed8102b33de79b5c5a5ed", null ],
+    [ "contains", "d7/db8/a01687.html#a1ff26b2030f1195fa8bbad67492151c2", null ],
+    [ "index", "d7/db8/a01687.html#a519456cdcd608ea7de7fbd2eedb7e191", null ],
+    [ "size", "d7/db8/a01687.html#a8b540b763863f7b6bd15ced9b7d5b1c2", null ],
+    [ "size", "d7/db8/a01687.html#acb5c7b9736e8fd41a372d620e1a1d821", null ],
+    [ "subIndex", "d7/db8/a01687.html#a25286e0fae26c1527bdd43fd2e063c0b", null ],
+    [ "types", "d7/db8/a01687.html#a2afe4429cff876b7d5117e9e4bdef473", null ],
+    [ "update", "d7/db8/a01687.html#aff716eea7ea5c79d5a5c753afda454e0", null ],
+    [ "dim", "d7/db8/a01687.html#a1171c8f071400678f74439ace6b55133", null ],
+    [ "grid_", "d7/db8/a01687.html#ad32e6d968b965e18f6d36ca59105a6d0", null ]
 ];

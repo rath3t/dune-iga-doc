@@ -1,5 +1,6 @@
 var a01095 =
 [
+    [ "ConnectionResult", "d6/dbc/a01099.html", "d6/dbc/a01099" ],
     [ "ControlPointCoordinateNetType", "de/d6d/a01095.html#ab2496ed36f3ecc7e92dce3d8f5991cd2", null ],
     [ "ControlPointNetType", "de/d6d/a01095.html#a468816eac362cc2655b381f3d25e5ffd", null ],
     [ "ControlPointType", "de/d6d/a01095.html#a382b3bb6e973e4e2e582ecc6d2ecd6f4", null ],
@@ -32,6 +33,7 @@ var a01095 =
     [ "global", "de/d6d/a01095.html#a67a9dc507419f4356b413a49c83a05b2", null ],
     [ "hessian", "de/d6d/a01095.html#aee23e7a6568f8d7253faa32776952eff", null ],
     [ "integrationElement", "de/d6d/a01095.html#ab6edcccddb45dc68524f67e60ac9ad4b", null ],
+    [ "isConnectedAtBoundary", "de/d6d/a01095.html#a67102350b5dbc4591cf8b72ab10019d4", null ],
     [ "jacobian", "de/d6d/a01095.html#a77aa916f8539b71d1c9c104c92360fe7", null ],
     [ "jacobianInverse", "de/d6d/a01095.html#a713a7303881de2eed2bba03aec1a3e82", null ],
     [ "jacobianInverseTransposed", "de/d6d/a01095.html#a07a9f13a9f8f8d683a898275c483839c", null ],

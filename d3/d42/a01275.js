@@ -1,8 +1,13 @@
 var a01275 =
 [
-    [ "domain", "d3/d42/a01275.html#a76afc9a7de97fdc7225c4d86f9ed3b1b", null ],
-    [ "geometry", "d3/d42/a01275.html#adf9e102ea8ec44a63d9a2e51186b8b60", null ],
+    [ "compileKnotVectors", "d3/d42/a01275.html#ad12ab5d6f888eaabe6d509e82ae8f8df", null ],
+    [ "transformControlPoints", "d3/d42/a01275.html#ac6a22a5a2db9bfa2d45a7bc262f5bc5b", null ],
+    [ "controlPoints", "d3/d42/a01275.html#ad4ad9311c411aee5c21fd200e053d2a9", null ],
+    [ "degree", "d3/d42/a01275.html#a07805bf670c8d66de1fe43d984f33839", null ],
     [ "key", "d3/d42/a01275.html#a8061adf4c0a0398469d6e0d5eb17879d", null ],
+    [ "knots", "d3/d42/a01275.html#a59cb53151ac4ce6b98dd63150423c235", null ],
+    [ "n_controlPoints", "d3/d42/a01275.html#aa85e99325b805008cb7d93e1361460c5", null ],
     [ "type", "d3/d42/a01275.html#a642986b37e38b25d90c0317c52b97c9c", null ],
-    [ "typeString", "d3/d42/a01275.html#a3bc2b8ce8b887a5476845145dec45335", null ]
+    [ "typeString", "d3/d42/a01275.html#a3bc2b8ce8b887a5476845145dec45335", null ],
+    [ "weights", "d3/d42/a01275.html#a5803c5f7dcd0efd515e2624815eb0c85", null ]
 ];

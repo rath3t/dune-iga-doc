@@ -1,9 +1,9 @@
 var a01739 =
 [
-    [ "EntityImp", "d1/d46/a01739.html#a3fd2630081f2b954a06c9546485bb21a", null ],
-    [ "EntitySeedImp", "d1/d46/a01739.html#ae8fcb6a37ecb71b7595a651bd4b6d70a", null ],
-    [ "LocalGeometry", "d1/d46/a01739.html#a02c097e5662806c9400d511c27a98e8c", null ],
-    [ "LocalParameterSpaceGeometry", "d1/d46/a01739.html#a83d75e7a65ed39456a70f5d283cd2081", null ],
-    [ "ParameterSpaceGridEntity", "d1/d46/a01739.html#a699b6048608eee9d9c24fb95e46e2513", null ],
-    [ "ParameterSpaceGridEntitySeed", "d1/d46/a01739.html#ac7c5c4b482190493042510628e076e4a", null ]
+    [ "Codim", "d5/d34/a01743.html", "d5/d34/a01743" ],
+    [ "ParameterSpaceGrid", "d1/d46/a01739.html#aaccd1d9f45acb548d0fc6562a4021b62", null ],
+    [ "ParameterSpaceLeafIntersection", "d1/d46/a01739.html#a12c9f672c58846177d6939e854b27882", null ],
+    [ "ParameterSpaceLevelIntersection", "d1/d46/a01739.html#a284dd9ad6ed6e9badd9e32f304d14856", null ],
+    [ "ParameterType", "d1/d46/a01739.html#aece869944d81c0ac5a00c1c69dc7a000", null ],
+    [ "PatchTrimData", "d1/d46/a01739.html#ac6e7fb508d226786cae3668768104982", null ]
 ];

@@ -1,6 +1,6 @@
 var a01567 =
 [
-    [ "curveIdxI", "d7/d57/a01567.html#a3147e803ef764f8647e4f3d66a9bd8be", null ],
-    [ "curveIdxJ", "d7/d57/a01567.html#a4a86ff7663c0e145b3a2477edd9edf70", null ],
-    [ "pt", "d7/d57/a01567.html#a0955af02eeffcddf82a3ff7a484074eb", null ]
+    [ "curves", "d7/d57/a01567.html#a37c3d86e99a4e3ab50b27d20f301b27c", null ],
+    [ "insertTrimCurve", "d7/d57/a01567.html#a4fa901eb469125bfd28ba8ffe8c6a069", null ],
+    [ "size", "d7/d57/a01567.html#a8a8e2a00ba3708521156d437bacc213c", null ]
 ];

@@ -1,7 +1,6 @@
 var a01663 =
 [
-    [ "curveIdxI", "dd/d38/a01663.html#a2f9aa0bc5f6e136e95e5ecf611343f3a", null ],
-    [ "curveIdxJ", "dd/d38/a01663.html#aa66f937ee9e643de018e903a9319dd84", null ],
-    [ "loopIdx", "dd/d38/a01663.html#a598207ce8bbd191ede8976577ce03891", null ],
-    [ "pt", "dd/d38/a01663.html#a5663ea7853b9c12d0dac4d1761171d78", null ]
+    [ "onEdgeIdx", "dd/d38/a01663.html#ae3d4556a71a419410626ba1eb9985a28", null ],
+    [ "pt", "dd/d38/a01663.html#a049ec85a6b38e5018ff921c59fcd559e", null ],
+    [ "trimmingCurveZ", "dd/d38/a01663.html#ad2b455741ed839133e55b9518e82f2e7", null ]
 ];

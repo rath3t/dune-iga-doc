@@ -1,9 +1,15 @@
 var a01527 =
 [
-    [ "IdType", "d8/d8c/a01527.html#a636bf4f46b0c4bebc968c543849ca7c3", null ],
-    [ "PatchGridLocalIdSet", "d8/d8c/a01527.html#af62206ea32f5daf84948103f938671f7", null ],
-    [ "id", "d8/d8c/a01527.html#aecb92c3d2012aa550fbd1a845e82d531", null ],
-    [ "subId", "d8/d8c/a01527.html#a4a1161af0952b9de278a047b589998bd", null ],
-    [ "update", "d8/d8c/a01527.html#a3614ca9c54b70a54addbced7225ab1c1", null ],
-    [ "grid_", "d8/d8c/a01527.html#a8f38f551bb4d8d1807983cf2a35c7437", null ]
+    [ "GeoTypes", "d8/d8c/a01527.html#a812ae1a964eddb41475c63ce6744ac24", null ],
+    [ "GridFamily", "d8/d8c/a01527.html#aedb05c61a250f974abcea63f8bca2f84", null ],
+    [ "PatchGridLeafIndexSet", "d8/d8c/a01527.html#adde3823c7332ec64b1b6b668a472ca1d", null ],
+    [ "contains", "d8/d8c/a01527.html#a7c88ce3229986496e0e82b0e987b9422", null ],
+    [ "index", "d8/d8c/a01527.html#a58c84c4b8bbfb3f869436c8776fd5949", null ],
+    [ "size", "d8/d8c/a01527.html#a1885904f544cdbe5066a59e60713b96f", null ],
+    [ "size", "d8/d8c/a01527.html#a401fe79046d91eaff52fa7d5843b1178", null ],
+    [ "subIndex", "d8/d8c/a01527.html#acc46aadb3140de699b45fdab2bda01a1", null ],
+    [ "types", "d8/d8c/a01527.html#ac9ad9a3ee647f735c45cbe29708117ae", null ],
+    [ "update", "d8/d8c/a01527.html#a6352d6ef3cd59fdf58d091cf9ec2e83d", null ],
+    [ "dim", "d8/d8c/a01527.html#a41bdd66a82f618ce3eb1816443899cdc", null ],
+    [ "grid_", "d8/d8c/a01527.html#afb322caada85f24dcb8b4b75b2a39c22", null ]
 ];

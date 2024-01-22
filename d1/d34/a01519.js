@@ -1,16 +1,10 @@
 var a01519 =
 [
-    [ "GeoTypes", "d1/d34/a01519.html#a9b7de15402e39a2016a99166d9220de2", null ],
-    [ "GridFamily", "d1/d34/a01519.html#aac9cbb4ff0fa3f81e7304ce1804e13f8", null ],
-    [ "HostGrid", "d1/d34/a01519.html#a58fb99ef39eadd7a6828912da56ac889", null ],
-    [ "contains", "d1/d34/a01519.html#a3263fb62b9e118e88a730a5c6ba4af58", null ],
-    [ "index", "d1/d34/a01519.html#aa014b14b7a2e4ffa47aab3890dd7fcb8", null ],
-    [ "size", "d1/d34/a01519.html#a7c9f7993354df5526a457f43e3b35713", null ],
-    [ "size", "d1/d34/a01519.html#aa5605aef69e5816b095ded42d3361380", null ],
-    [ "subIndex", "d1/d34/a01519.html#ab1464b9712cff92cbe79395c2ebd0fca", null ],
-    [ "types", "d1/d34/a01519.html#a3b43c24da8bc20c61e3f8768fcbaa572", null ],
-    [ "update", "d1/d34/a01519.html#a28b12bee5e6cbc53b3244d42fb7027e0", null ],
-    [ "dim", "d1/d34/a01519.html#a7e76ba5f87ef59c4641b23ac127b59fb", null ],
-    [ "grid_", "d1/d34/a01519.html#ac6d51be8d3b4fc88bb0b4639e3b4f853", null ],
-    [ "level_", "d1/d34/a01519.html#a40d3c98d5a4b1a0167707cdb8b709e23", null ]
+    [ "Entity", "d1/d34/a01519.html#ab1434eb357ae98abe03b0f16bda173a9", null ],
+    [ "PatchGridHierarchicIterator", "d1/d34/a01519.html#a1970a7e2b41e5049991bb9357f4dbfb6", null ],
+    [ "PatchGridHierarchicIterator", "d1/d34/a01519.html#af5f2e7c0e22cf47906a89b3c63746312", null ],
+    [ "dereference", "d1/d34/a01519.html#afceecc29e2e8c1515f1a2308112b2bb5", null ],
+    [ "equals", "d1/d34/a01519.html#a6235b8d2e05c1dda477d2805bd35695a", null ],
+    [ "increment", "d1/d34/a01519.html#aae09d95697c67a7f760a2b82a5f5c98d", null ],
+    [ "codimension", "d1/d34/a01519.html#a7ce99544410c8442ac40c4815e73460d", null ]
 ];

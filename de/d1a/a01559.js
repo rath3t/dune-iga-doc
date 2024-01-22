@@ -1,19 +1,14 @@
 var a01559 =
 [
-    [ "BoundaryLoop", "d8/d6c/a01563.html", "d8/d6c/a01563" ],
-    [ "CurveManager", "d5/d10/a01571.html", "d5/d10/a01571" ],
-    [ "PointInPatch", "d7/d57/a01567.html", "d7/d57/a01567" ],
-    [ "ctype", "de/d1a/a01559.html#a9f610f641d490e958d76d4bcc76abe06", null ],
-    [ "ParameterType", "de/d1a/a01559.html#a4f2c9e7880899cf28f92ea797e453f1c", null ],
-    [ "TrimmingCurve", "de/d1a/a01559.html#a8e43129977838c5c14b41d2792c94c4d", null ],
-    [ "addLoop", "de/d1a/a01559.html#adedfd6e8bb8ce1ce160de1fe00cf3a2c", null ],
-    [ "clipperLoops", "de/d1a/a01559.html#a02c7e7d55aa44ef51a788fb368f5dbfb", null ],
-    [ "getCurve", "de/d1a/a01559.html#afde402cf0de29c24311b8c9ba7eb5551", null ],
-    [ "getCurve", "de/d1a/a01559.html#a274947f41f7a1984b1e0a158ee21ad46", null ],
-    [ "getIndices", "de/d1a/a01559.html#accafbc61d21cb4a2c1e33da711396d6b", null ],
-    [ "getPointsInPatch", "de/d1a/a01559.html#aaec9a34972ec2a10358da82fa008297b", null ],
-    [ "getSplitter", "de/d1a/a01559.html#ab901e22f12e678dec98d526dc85fa6be", null ],
-    [ "insertTrimCurve", "de/d1a/a01559.html#a8cc8578eec99ceaac36fe21f1cc04176", null ],
-    [ "loops", "de/d1a/a01559.html#a494abc3622f9c8a5e06b275828241308", null ],
-    [ "prepare", "de/d1a/a01559.html#a7336116f174a10520f09b66586b516e5", null ]
+    [ "ElementTrimData", "de/d1a/a01559.html#a31f4c08063a065896534616b7568a989", null ],
+    [ "Entity", "de/d1a/a01559.html#aeaaa17e28a86d35d580a4fee70e1adc7", null ],
+    [ "GlobalIdSetId", "de/d1a/a01559.html#a652466c4798e25ccd1ac93beeac582e8", null ],
+    [ "ParameterSpaceGridEntity", "de/d1a/a01559.html#ae54900d8bd2d89e605b3807a592d1b07", null ],
+    [ "PatchGridLevelIterator", "de/d1a/a01559.html#aa0afc3b691334eabc027d19d2705c7c6", null ],
+    [ "PatchGridLevelIterator", "de/d1a/a01559.html#ab5dacc72b1517862a0c9bad42a514186", null ],
+    [ "PatchGridLevelIterator", "de/d1a/a01559.html#ad949a3f0cc889d65ef64febf3d034349", null ],
+    [ "dereference", "de/d1a/a01559.html#aaf9dbda00bc11fe1e4505176788ed6a1", null ],
+    [ "equals", "de/d1a/a01559.html#a4039cb0b8ea0726bd3146238c0fc03a1", null ],
+    [ "increment", "de/d1a/a01559.html#a9fb260e871fb4d2fd39d6952893780bd", null ],
+    [ "codimension", "de/d1a/a01559.html#a70a0acef050e96b40242a34f8020a53f", null ]
 ];

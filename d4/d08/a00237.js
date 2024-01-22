@@ -1,7 +1,7 @@
 var a00237 =
 [
     [ "NURBSPatch", "de/d6d/a01095.html", "de/d6d/a01095" ],
-    [ "PatchGeometryLocalView", "d9/d10/a01103.html", "d9/d10/a01103" ],
+    [ "PatchGeometryLocalView", "de/d4a/a01107.html", "de/d4a/a01107" ],
     [ "findClosestParameterSpaceCoordinate", "d4/d08/a00237.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
     [ "hessian", "d4/d08/a00237.html#a7693ef58b9b466df6285facbe588e2e7", null ],
     [ "jacobianTransposed", "d4/d08/a00237.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
