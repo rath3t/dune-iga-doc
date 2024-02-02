@@ -1,6 +1,7 @@
 var a00197 =
 [
-    [ "Reader", "de/db1/a00197.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-      [ "json", "de/db1/a00197.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-    ] ]
+    [ "findClosestParameterSpaceCoordinate", "de/db1/a00197.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
+    [ "hessian", "de/db1/a00197.html#a7693ef58b9b466df6285facbe588e2e7", null ],
+    [ "jacobianTransposed", "de/db1/a00197.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
+    [ "position", "de/db1/a00197.html#ae7bdc51407259017c5322f80267fcc5e", null ]
 ];

@@ -1,4 +1,4 @@
 var a03671 =
 [
-    [ "Dune::IGANEW::IbraReader< dim, dimworld, PatchGrid >", "d6/d07/a01303.html", "d6/d07/a01303" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIterator< codim, pitype, GridImp >", "de/d89/a01560.html", "de/d89/a01560" ]
 ];

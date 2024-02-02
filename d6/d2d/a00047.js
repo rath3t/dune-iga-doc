@@ -1,4 +1,4 @@
 var a00047 =
 [
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d2/df5/a01395.html", "d2/df5/a01395" ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "dd/d70/a01596.html", "dd/d70/a01596" ]
 ];

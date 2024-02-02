@@ -1,11 +1,20 @@
 var a03677 =
 [
-    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "de/d69/a01311.html", "de/d69/a01311" ],
-    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "d2/d8e/a01315.html", "d2/d8e/a01315" ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d1/d72/a01319.html", "d1/d72/a01319" ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d2/d4c/a01307.html", "d2/d4c/a01307" ],
-    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "da/d1f/a01203.html", "da/d1f/a01203" ],
-    [ "Dune::Functions::NurbsNode< GV >", "db/da8/a01323.html", "db/da8/a01323" ],
-    [ "nurbs", "d4/d78/a03677.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
-    [ "nurbs", "d4/d78/a03677.html#a10c3f08f7830f39c003415e65e2a0361", null ]
+    [ "std::hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "d5/d84/a01612.html", "d5/d84/a01612" ],
+    [ "Dune::IGANEW::DefaultTrim::IdType< HostIdType >", "db/dfd/a01608.html", "db/dfd/a01608" ],
+    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< HostIdType, codim >", "db/dad/a01616.html", "db/dad/a01616" ],
+    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< HostIdType, codim >::Empty", "da/df2/a01620.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< HostIdType, 0 >", "de/df9/a01624.html", "de/df9/a01624" ],
+    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< HostIdType, 0 >::Empty", "dd/deb/a01628.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::Parameter", "d6/daf/a01632.html", "d6/daf/a01632" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "dd/d40/a01636.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d3/d3e/a01644.html", "d3/d3e/a01644" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "da/ddf/a01648.html", "da/ddf/a01648" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d0/dc0/a01652.html", "d0/dc0/a01652" ],
+    [ "operator!=", "d4/d78/a03677.html#ac274492bbfe7e60de735f1bb58fdf172", null ],
+    [ "operator<", "d4/d78/a03677.html#ad60258d3c3cf850f549bd14af49382bb", null ],
+    [ "operator<=", "d4/d78/a03677.html#a7ac6998daef47f3ba10679c00bf49ae8", null ],
+    [ "operator==", "d4/d78/a03677.html#ad780ed3ffc28d55054058aa0707015c9", null ],
+    [ "operator>", "d4/d78/a03677.html#a0b06cf2e6c68b3f5e927015dc7ef6b6e", null ],
+    [ "operator>=", "d4/d78/a03677.html#a2a9fbc56f49089cd4a4d98b0e98cf465", null ]
 ];

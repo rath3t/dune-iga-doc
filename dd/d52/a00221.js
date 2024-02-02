@@ -1,7 +1,7 @@
 var a00221 =
 [
-    [ "makeCircularArc", "dd/d52/a00221.html#a22eb6b54ecd977addcf9b5da165613e8", null ],
-    [ "makeSurfaceOfRevolution", "dd/d52/a00221.html#a5884657662741f0cb1233206aaccdd64", null ],
-    [ "runCircularArc", "dd/d52/a00221.html#a4435c22c355c8f50239394e8452069db", null ],
-    [ "runSurfaceOfRevolution", "dd/d52/a00221.html#a050e71892f002f5250de3c7b3155c942", null ]
+    [ "ControlPoint", "dd/d52/a00221.html#a87eb600529940f01930f93b69fb57771", null ],
+    [ "ControlPointNet", "dd/d52/a00221.html#a0aaa76ef36eaaaab6f75a00d73e7af7d", null ],
+    [ "NurbsPatchData", "dd/d52/a00221.html#a2e79a7a839b0ea0ebef0ad1ce581dd72", null ],
+    [ "NurbsPatchDataDefault", "dd/d52/a00221.html#a27a76c3c944053aa8fea7ee072860187", null ]
 ];

@@ -1,7 +1,6 @@
 var a00080 =
 [
-    [ "findClosestParameterSpaceCoordinate", "da/dec/a00080.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
-    [ "hessian", "da/dec/a00080.html#a7693ef58b9b466df6285facbe588e2e7", null ],
-    [ "jacobianTransposed", "da/dec/a00080.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
-    [ "position", "da/dec/a00080.html#ae7bdc51407259017c5322f80267fcc5e", null ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d8/d22/a01584.html", "d8/d22/a01584" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d7/d71/a01588.html", "d7/d71/a01588" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "de/d40/a01592.html", "de/d40/a01592" ]
 ];

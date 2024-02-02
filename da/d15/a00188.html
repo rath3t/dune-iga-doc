@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: patchgridlocalgeometry.hh File Reference</title>
+<title>dune-iga: basealgorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,42 +92,39 @@ $(document).ready(function(){initNavTree('da/d15/a00188.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">patchgridlocalgeometry.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">basealgorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>The PatchGridLocalGeometry class and its specializations.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
-<code>#include &lt;dune/grid/common/geometry.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../da/d2a/a00086_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d8/d33/a03629_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&quot;</code><br />
 </div>
 <p><a href="../../da/d15/a00188_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d9a/a01715.html">Dune::IGANEW::PatchGridLocalGeometry&lt; mydim, coorddim, GridImp &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class describes entities in the 0..1 space if untrimmed this is in the cube, for the untrimmed case this is simply a wrapper around the Yasp grid local geometry.  <a href="../../df/d9a/a01715.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:ac5771e572de1611b27eb788b95d1efec"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:ac5771e572de1611b27eb788b95d1efec"><td class="memTemplItemLeft" align="right" valign="top">VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#ac5771e572de1611b27eb788b95d1efec">Dune::IGANEW::projectPointOntoLine</a> (const VectorType basepoint, const VectorType direction, const VectorType point)</td></tr>
+<tr class="memdesc:ac5771e572de1611b27eb788b95d1efec"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects a point onto a line defined by a basepoint and direction.  <a href="../../d3/d42/a00235.html#ac5771e572de1611b27eb788b95d1efec">More...</a><br /></td></tr>
+<tr class="separator:ac5771e572de1611b27eb788b95d1efec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a605959c76f4613b72045bd4fdbf5c"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
+<tr class="memitem:a92a605959c76f4613b72045bd4fdbf5c"><td class="memTemplItemLeft" align="right" valign="top">VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a92a605959c76f4613b72045bd4fdbf5c">Dune::IGANEW::intersect3DLines</a> (const VectorType basepoint1, const VectorType direction1, const VectorType basepoint2, const VectorType direction2)</td></tr>
+<tr class="memdesc:a92a605959c76f4613b72045bd4fdbf5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection point of two 3D lines.  <a href="../../d3/d42/a00235.html#a92a605959c76f4613b72045bd4fdbf5c">More...</a><br /></td></tr>
+<tr class="separator:a92a605959c76f4613b72045bd4fdbf5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The PatchGridLocalGeometry class and its specializations. </p>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_aa3557bd66a6784b3b9e663253e8d0ba.html">identitytrimmer</a></li><li class="navelem"><a class="el" href="../../da/d15/a00188.html">patchgridlocalgeometry.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../da/d15/a00188.html">basealgorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

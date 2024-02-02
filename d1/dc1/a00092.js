@@ -1,4 +1,4 @@
 var a00092 =
 [
-    [ "Dune::IGANEW::GeometryKernel::PatchGeometryLocalView< codim, PatchGeometry, TrimmerType_, LocalParameterSpaceGeometry >", "de/d4a/a01107.html", "de/d4a/a01107" ]
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "d0/d9d/a01760.html", "d0/d9d/a01760" ]
 ];

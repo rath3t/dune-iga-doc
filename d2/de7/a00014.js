@@ -1,7 +1,11 @@
 var a00014 =
 [
-    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "d7/ddd/a01223.html", "d7/ddd/a01223" ],
-    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d0/d88/a01231.html", "d0/d88/a01231" ],
-    [ "referenceElement", "d2/de7/a00014.html#a14501a764d945ffb9fd15254ab7da335", null ],
-    [ "referenceElement", "d2/de7/a00014.html#aa8ba61178990a88b88ab09dfc698d54b", null ]
+    [ "Dune::IGANEW::MultiDimensionalNet< netdim, ElementType, Container >", "de/dda/a01768.html", "de/dda/a01768" ],
+    [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "dd/d20/a01772.html", "dd/d20/a01772" ],
+    [ "dot", "d2/de7/a00014.html#aec86687240a124712c5daf95ff566abb", null ],
+    [ "MultiDimensionalNet", "d2/de7/a00014.html#a4549270737e222aedcbf2721e08b3d06", null ],
+    [ "operator*", "d2/de7/a00014.html#a3f6e129217a58dc89862cc33b12f8885", null ],
+    [ "operator*", "d2/de7/a00014.html#a33cc687d08f824af43e22f0d3eb68473", null ],
+    [ "operator-", "d2/de7/a00014.html#a1864570b0dc1ce2ff4a3140a27211792", null ],
+    [ "operator/", "d2/de7/a00014.html#a010894b51f31c1163c47566396c4c13e", null ]
 ];

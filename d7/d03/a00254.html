@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::Trim Namespace Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::Util Namespace Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,70 +93,666 @@ $(document).ready(function(){initNavTree('d7/d03/a00254.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::Trim Namespace Reference</div></div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::Util Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/db4/a01747.html">HostGridAccess</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/db3/a01751.html">IntersectionVariant</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">An intersection with a leaf neighbor elementMesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element!  <a href="../../d5/db3/a01751.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7d/a01755.html">LocalGeometryVariant</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01671.html">ParameterSpaceGridEntityVariant</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementation of entities in a <a class="el" href="../../d5/d39/a01219.html" title="Provides a NURBS grid based on a single NURBS patch.">PatchGrid</a>.  <a href="../../d4/d3c/a01671.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d5e/a01660.html">ClippingResult</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a58f6695142a18937094849b86976642b"><td class="memTemplParams" colspan="2">template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename TrimmerType, template&lt; int, int, class &gt; class GridEntityVariant&gt; </td></tr>
-<tr class="memitem:a58f6695142a18937094849b86976642b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a58f6695142a18937094849b86976642b">referenceElement</a> (const GridEntityVariant&lt; cd, dim, const <a class="el" href="../../d5/d39/a01219.html">PatchGrid</a>&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt; &amp;entity)</td></tr>
-<tr class="separator:a58f6695142a18937094849b86976642b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4fb1b5f05f2968b3d281bd6c070b611"><td class="memTemplParams" colspan="2">template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename TrimmerType, template&lt; int, int, class &gt; class GridEntityVariant&gt; </td></tr>
-<tr class="memitem:ae4fb1b5f05f2968b3d281bd6c070b611"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#ae4fb1b5f05f2968b3d281bd6c070b611">referenceElement</a> (const Entity&lt; cd, dim, const <a class="el" href="../../d5/d39/a01219.html">PatchGrid</a>&lt; dim, dimworld, TrimmerType, ScalarType &gt;, GridEntityVariant &gt; &amp;entity)</td></tr>
-<tr class="separator:ae4fb1b5f05f2968b3d281bd6c070b611"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f65cad383549769cbe786b60c31e479"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a4f65cad383549769cbe786b60c31e479">clipElementRectangle</a> (const auto &amp;element, const auto &amp;patchTrimData) -&gt; std::tuple&lt; <a class="el" href="../../dc/ded/a00252.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a>, <a class="el" href="../../d6/d5e/a01660.html">ClippingResult</a> &gt;</td></tr>
+<tr class="separator:a4f65cad383549769cbe786b60c31e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a9ec04149f78cad2fd07e790a81128"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a55a9ec04149f78cad2fd07e790a81128">giveEdgeIdx</a> (const std::size_t e1, const std::size_t e2)</td></tr>
+<tr class="separator:a55a9ec04149f78cad2fd07e790a81128"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63be6569afc287df64dcdf64d4eb9853"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a63be6569afc287df64dcdf64d4eb9853">isCornerVertex</a> (const auto &amp;pt, const auto &amp;eleRect) -&gt; std::pair&lt; bool, ptrdiff_t &gt;</td></tr>
+<tr class="separator:a63be6569afc287df64dcdf64d4eb9853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc865208e84fedeac81a10e21b0c8eec"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#acc865208e84fedeac81a10e21b0c8eec">isPointOnLine</a> (const auto &amp;pt, const auto &amp;p1, const auto &amp;p2) -&gt; bool</td></tr>
+<tr class="separator:acc865208e84fedeac81a10e21b0c8eec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a48376718a0fecf272f5c45b240f217"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int dim&gt; </td></tr>
+<tr class="memitem:a8a48376718a0fecf272f5c45b240f217"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a8a48376718a0fecf272f5c45b240f217">approxSamePoint</a> (const Clipper2Lib::PointD &amp;pt1, const FieldVector&lt; ScalarType, dim &gt; &amp;pt2, const double prec) -&gt; bool</td></tr>
+<tr class="separator:a8a48376718a0fecf272f5c45b240f217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92128ee85ce68d85f0d598c954c790eb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a92128ee85ce68d85f0d598c954c790eb">distance</a> (const Clipper2Lib::PointD &amp;p1, const auto &amp;p2) -&gt; double</td></tr>
+<tr class="separator:a92128ee85ce68d85f0d598c954c790eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870b9a152ad4ff41a8be202c6d04b7a5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a870b9a152ad4ff41a8be202c6d04b7a5">findGoodStartingPoint</a> (const auto &amp;curve, const Clipper2Lib::PointD &amp;pt, int N=200) -&gt; double</td></tr>
+<tr class="separator:a870b9a152ad4ff41a8be202c6d04b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4160dac0cdcae55fca83559856c4a45a"><td class="memTemplParams" colspan="2">template&lt;typename TrimmingCurve &gt; </td></tr>
+<tr class="memitem:a4160dac0cdcae55fca83559856c4a45a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a4160dac0cdcae55fca83559856c4a45a">createTrimmingCurveSlice</a> (const TrimmingCurve &amp;curve, double t1, double t2) -&gt; TrimmingCurve</td></tr>
+<tr class="separator:a4160dac0cdcae55fca83559856c4a45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memTemplParams" colspan="2">template&lt;typename TrimmingCurve &gt; </td></tr>
+<tr class="memitem:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#afa8d09a2b2b61bb41dfc22fb2060a5fd">createHostGeometry</a> (auto &amp;vertex1, auto &amp;vertex2) -&gt; TrimmingCurve</td></tr>
+<tr class="separator:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec98aeae9dd9815cc7a6c9178f24a64"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a3ec98aeae9dd9815cc7a6c9178f24a64">callFindIntersection</a> (const auto &amp;curvePatchGeo, int edgeIdx, const auto &amp;ip, const auto &amp;corners) -&gt; std::pair&lt; double, FieldVector&lt; double, 2 &gt; &gt;</td></tr>
+<tr class="separator:a3ec98aeae9dd9815cc7a6c9178f24a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a2980769b17a08a9c365baf8b18cca9d7"><td class="memItemLeft" align="right" valign="top">constexpr std::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a2980769b17a08a9c365baf8b18cca9d7">edgeDirections</a></td></tr>
+<tr class="separator:a2980769b17a08a9c365baf8b18cca9d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16d111a10fb0652a5487a6116aeabb50"><td class="memItemLeft" align="right" valign="top">constexpr std::array&lt; std::array&lt; int, 2 &gt;, 4 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a16d111a10fb0652a5487a6116aeabb50">edgeLookUp</a> {std::array{0, 1}, {1, 3}, {3, 2}, {2, 0}}</td></tr>
+<tr class="separator:a16d111a10fb0652a5487a6116aeabb50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1af143e66845c6b725ae850a95388115"><td class="memItemLeft" align="right" valign="top">constexpr std::array&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a1af143e66845c6b725ae850a95388115">vertexIndexMapping</a> = {0u, 1u, 3u, 2u}</td></tr>
+<tr class="separator:a1af143e66845c6b725ae850a95388115"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a54c6ef09c20e25c079f1f4f50448f4"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a1a54c6ef09c20e25c079f1f4f50448f4">isNewVertex</a> = [](const auto&amp; vV) { return std::holds_alternative&lt;<a class="el" href="../../d7/d47/a01668.html">ClippingResult::NewVertex</a>&gt;(vV); }</td></tr>
+<tr class="separator:a1a54c6ef09c20e25c079f1f4f50448f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c9270ca0dc9d6ee454558643f179d94"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a3c9270ca0dc9d6ee454558643f179d94">isHostVertex</a> = [](const auto&amp; vV) { return std::holds_alternative&lt;<a class="el" href="../../dc/d71/a01664.html">ClippingResult::HostVertex</a>&gt;(vV); }</td></tr>
+<tr class="separator:a3c9270ca0dc9d6ee454558643f179d94"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0c65c348665122f3bef6f17cf0b570e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#aa0c65c348665122f3bef6f17cf0b570e">isInsideVertex</a> = [](const auto&amp; vV) { return std::holds_alternative&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV); }</td></tr>
+<tr class="separator:aa0c65c348665122f3bef6f17cf0b570e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935041761462f099c0da9020c3963055"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a935041761462f099c0da9020c3963055">getPt</a> = [](auto&amp;&amp; vV) { return vV.pt; }</td></tr>
+<tr class="separator:a935041761462f099c0da9020c3963055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac6ad54f54dd14c3668aa129f0bf53b0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#aac6ad54f54dd14c3668aa129f0bf53b0">getHostIdx</a> = [](const auto&amp; vV) { return std::get&lt;<a class="el" href="../../dc/d71/a01664.html">ClippingResult::HostVertex</a>&gt;(vV).hostIdx; }</td></tr>
+<tr class="separator:aac6ad54f54dd14c3668aa129f0bf53b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55cf3ee45579a10ac4967b7c6eef12f6"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a55cf3ee45579a10ac4967b7c6eef12f6">getEdgeIdx</a> = [](const auto&amp; vV) { return std::get&lt;<a class="el" href="../../d7/d47/a01668.html">ClippingResult::NewVertex</a>&gt;(vV).onEdgeIdx; }</td></tr>
+<tr class="separator:a55cf3ee45579a10ac4967b7c6eef12f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6435d50cbb951d883fc6c781ccaf9ce"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#af6435d50cbb951d883fc6c781ccaf9ce">getCurveI</a> = [](const auto&amp; vV) {return std::get&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV).curveIdxI; }</td></tr>
+<tr class="separator:af6435d50cbb951d883fc6c781ccaf9ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac833ba896079ec350aaa818a63522afd"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#ac833ba896079ec350aaa818a63522afd">getCurveJ</a> = [](const auto&amp; vV) {return std::get&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV).curveIdxJ; }</td></tr>
+<tr class="separator:ac833ba896079ec350aaa818a63522afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04fcdb0841a754fefe2fc99bb9876d9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#aa04fcdb0841a754fefe2fc99bb9876d9">getLoopIdx</a> = [](const auto&amp; vV) {return std::get&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV).loopIdx; }</td></tr>
+<tr class="separator:aa04fcdb0841a754fefe2fc99bb9876d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ae4fb1b5f05f2968b3d281bd6c070b611" name="ae4fb1b5f05f2968b3d281bd6c070b611"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4fb1b5f05f2968b3d281bd6c070b611">&#9670;&nbsp;</a></span>referenceElement() <span class="overload">[1/2]</span></h2>
+<a id="a8a48376718a0fecf272f5c45b240f217" name="a8a48376718a0fecf272f5c45b240f217"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a48376718a0fecf272f5c45b240f217">&#9670;&nbsp;</a></span>approxSamePoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename TrimmerType, template&lt; int, int, class &gt; class GridEntityVariant&gt; </div>
+template&lt;typename ScalarType , int dim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Trim::referenceElement </td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::approxSamePoint </td>
           <td>(</td>
-          <td class="paramtype">const Entity&lt; cd, dim, const <a class="el" href="../../d5/d39/a01219.html">PatchGrid</a>&lt; dim, dimworld, TrimmerType, ScalarType &gt;, GridEntityVariant &gt; &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td class="paramtype">const Clipper2Lib::PointD &amp;&#160;</td>
+          <td class="paramname"><em>pt1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const FieldVector&lt; ScalarType, dim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>pt2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>prec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; bool </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a58f6695142a18937094849b86976642b" name="a58f6695142a18937094849b86976642b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58f6695142a18937094849b86976642b">&#9670;&nbsp;</a></span>referenceElement() <span class="overload">[2/2]</span></h2>
+<a id="a3ec98aeae9dd9815cc7a6c9178f24a64" name="a3ec98aeae9dd9815cc7a6c9178f24a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ec98aeae9dd9815cc7a6c9178f24a64">&#9670;&nbsp;</a></span>callFindIntersection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::callFindIntersection </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>curvePatchGeo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>edgeIdx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>ip</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>corners</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::pair&lt;double, FieldVector&lt;double, 2&gt;&gt; </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4f65cad383549769cbe786b60c31e479" name="a4f65cad383549769cbe786b60c31e479"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f65cad383549769cbe786b60c31e479">&#9670;&nbsp;</a></span>clipElementRectangle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::clipElementRectangle </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>patchTrimData</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;<a class="el" href="../../dc/ded/a00252.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a>, <a class="el" href="../../d6/d5e/a01660.html">ClippingResult</a>&gt; </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa8d09a2b2b61bb41dfc22fb2060a5fd" name="afa8d09a2b2b61bb41dfc22fb2060a5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa8d09a2b2b61bb41dfc22fb2060a5fd">&#9670;&nbsp;</a></span>createHostGeometry()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename TrimmerType, template&lt; int, int, class &gt; class GridEntityVariant&gt; </div>
+template&lt;typename TrimmingCurve &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Trim::referenceElement </td>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::createHostGeometry </td>
           <td>(</td>
-          <td class="paramtype">const GridEntityVariant&lt; cd, dim, const <a class="el" href="../../d5/d39/a01219.html">PatchGrid</a>&lt; dim, dimworld, TrimmerType, ScalarType &gt; &gt; &amp;&#160;</td>
-          <td class="paramname"><em>entity</em></td><td>)</td>
+          <td class="paramtype">auto &amp;&#160;</td>
+          <td class="paramname"><em>vertex1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">auto &amp;&#160;</td>
+          <td class="paramname"><em>vertex2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; TrimmingCurve </td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4160dac0cdcae55fca83559856c4a45a" name="a4160dac0cdcae55fca83559856c4a45a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4160dac0cdcae55fca83559856c4a45a">&#9670;&nbsp;</a></span>createTrimmingCurveSlice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename TrimmingCurve &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::createTrimmingCurveSlice </td>
+          <td>(</td>
+          <td class="paramtype">const TrimmingCurve &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>t2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; TrimmingCurve </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a92128ee85ce68d85f0d598c954c790eb" name="a92128ee85ce68d85f0d598c954c790eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92128ee85ce68d85f0d598c954c790eb">&#9670;&nbsp;</a></span>distance()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::distance </td>
+          <td>(</td>
+          <td class="paramtype">const Clipper2Lib::PointD &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; double </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../d3/d92/a01796.html#a2">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a870b9a152ad4ff41a8be202c6d04b7a5" name="a870b9a152ad4ff41a8be202c6d04b7a5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870b9a152ad4ff41a8be202c6d04b7a5">&#9670;&nbsp;</a></span>findGoodStartingPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::findGoodStartingPoint </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>curve</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Clipper2Lib::PointD &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>N</em> = <code>200</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; double </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55a9ec04149f78cad2fd07e790a81128" name="a55a9ec04149f78cad2fd07e790a81128"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a9ec04149f78cad2fd07e790a81128">&#9670;&nbsp;</a></span>giveEdgeIdx()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Dune::IGANEW::DefaultTrim::Util::giveEdgeIdx </td>
+          <td>(</td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>e1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::size_t&#160;</td>
+          <td class="paramname"><em>e2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a63be6569afc287df64dcdf64d4eb9853" name="a63be6569afc287df64dcdf64d4eb9853"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63be6569afc287df64dcdf64d4eb9853">&#9670;&nbsp;</a></span>isCornerVertex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isCornerVertex </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>eleRect</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::pair&lt;bool, ptrdiff_t&gt; </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acc865208e84fedeac81a10e21b0c8eec" name="acc865208e84fedeac81a10e21b0c8eec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc865208e84fedeac81a10e21b0c8eec">&#9670;&nbsp;</a></span>isPointOnLine()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isPointOnLine </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>pt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>p1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>p2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; bool </td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a2980769b17a08a9c365baf8b18cca9d7" name="a2980769b17a08a9c365baf8b18cca9d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2980769b17a08a9c365baf8b18cca9d7">&#9670;&nbsp;</a></span>edgeDirections</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array Dune::IGANEW::DefaultTrim::Util::edgeDirections</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{FieldVector&lt;double, 2&gt;{1.0, 0.0}, FieldVector&lt;double, 2&gt;{0, 1},</div>
+<div class="line">                                      FieldVector&lt;double, 2&gt;{-1, 0}, FieldVector&lt;double, 2&gt;{0, -1}}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a16d111a10fb0652a5487a6116aeabb50" name="a16d111a10fb0652a5487a6116aeabb50"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16d111a10fb0652a5487a6116aeabb50">&#9670;&nbsp;</a></span>edgeLookUp</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array&lt;std::array&lt;int, 2&gt;, 4&gt; Dune::IGANEW::DefaultTrim::Util::edgeLookUp {std::array{0, 1}, {1, 3}, {3, 2}, {2, 0}}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af6435d50cbb951d883fc6c781ccaf9ce" name="af6435d50cbb951d883fc6c781ccaf9ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6435d50cbb951d883fc6c781ccaf9ce">&#9670;&nbsp;</a></span>getCurveI</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::getCurveI = [](const auto&amp; vV) {return std::get&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV).curveIdxI; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac833ba896079ec350aaa818a63522afd" name="ac833ba896079ec350aaa818a63522afd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac833ba896079ec350aaa818a63522afd">&#9670;&nbsp;</a></span>getCurveJ</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::getCurveJ = [](const auto&amp; vV) {return std::get&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV).curveIdxJ; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a55cf3ee45579a10ac4967b7c6eef12f6" name="a55cf3ee45579a10ac4967b7c6eef12f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55cf3ee45579a10ac4967b7c6eef12f6">&#9670;&nbsp;</a></span>getEdgeIdx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::getEdgeIdx = [](const auto&amp; vV) { return std::get&lt;<a class="el" href="../../d7/d47/a01668.html">ClippingResult::NewVertex</a>&gt;(vV).onEdgeIdx; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aac6ad54f54dd14c3668aa129f0bf53b0" name="aac6ad54f54dd14c3668aa129f0bf53b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac6ad54f54dd14c3668aa129f0bf53b0">&#9670;&nbsp;</a></span>getHostIdx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::getHostIdx = [](const auto&amp; vV) { return std::get&lt;<a class="el" href="../../dc/d71/a01664.html">ClippingResult::HostVertex</a>&gt;(vV).hostIdx; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa04fcdb0841a754fefe2fc99bb9876d9" name="aa04fcdb0841a754fefe2fc99bb9876d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04fcdb0841a754fefe2fc99bb9876d9">&#9670;&nbsp;</a></span>getLoopIdx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::getLoopIdx = [](const auto&amp; vV) {return std::get&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV).loopIdx; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a935041761462f099c0da9020c3963055" name="a935041761462f099c0da9020c3963055"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935041761462f099c0da9020c3963055">&#9670;&nbsp;</a></span>getPt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::getPt = [](auto&amp;&amp; vV) { return vV.pt; }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3c9270ca0dc9d6ee454558643f179d94" name="a3c9270ca0dc9d6ee454558643f179d94"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c9270ca0dc9d6ee454558643f179d94">&#9670;&nbsp;</a></span>isHostVertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isHostVertex = [](const auto&amp; vV) { return std::holds_alternative&lt;<a class="el" href="../../dc/d71/a01664.html">ClippingResult::HostVertex</a>&gt;(vV); }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa0c65c348665122f3bef6f17cf0b570e" name="aa0c65c348665122f3bef6f17cf0b570e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0c65c348665122f3bef6f17cf0b570e">&#9670;&nbsp;</a></span>isInsideVertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isInsideVertex = [](const auto&amp; vV) { return std::holds_alternative&lt;<a class="el" href="../../d2/d7b/a01672.html">ClippingResult::InsideVertex</a>&gt;(vV); }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1a54c6ef09c20e25c079f1f4f50448f4" name="a1a54c6ef09c20e25c079f1f4f50448f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a54c6ef09c20e25c079f1f4f50448f4">&#9670;&nbsp;</a></span>isNewVertex</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto Dune::IGANEW::DefaultTrim::Util::isNewVertex = [](const auto&amp; vV) { return std::holds_alternative&lt;<a class="el" href="../../d7/d47/a01668.html">ClippingResult::NewVertex</a>&gt;(vV); }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1af143e66845c6b725ae850a95388115" name="a1af143e66845c6b725ae850a95388115"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af143e66845c6b725ae850a95388115">&#9670;&nbsp;</a></span>vertexIndexMapping</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::array Dune::IGANEW::DefaultTrim::Util::vertexIndexMapping = {0u, 1u, 3u, 2u}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -166,7 +762,7 @@ template&lt;int cd, int dim, int dimworld, typename ScalarType , template&lt; in
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../da/d31/a00234.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/d42/a00235.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d03/a00254.html">Trim</a></li>
+    <li class="navelem"><a class="el" href="../../da/d31/a00234.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/d42/a00235.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../dc/ded/a00252.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d7/d03/a00254.html">Util</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

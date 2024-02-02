@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hostortrimmed_0',['HostOrTrimmed',['../db/d51/a01603.html#af37d7e0ce257bc811e6d6002335f512f',1,'Dune::IGANEW::DefaultTrim::IdType']]]
+  ['intersectioncurveandline_0',['IntersectionCurveAndLine',['../d3/d42/a00235.html#a21ad9f3f2161548e10add5e90e558761',1,'Dune::IGANEW']]]
 ];

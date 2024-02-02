@@ -1,5 +1,11 @@
 var a00050 =
 [
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "dd/d15/a01471.html", "dd/d15/a01471" ],
-    [ "forEachUntrimmedBoundaryDOF", "d5/de0/a00050.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >", "da/ddc/a01492.html", "da/ddc/a01492" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "d1/dde/a01496.html", "d1/dde/a01496" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "de/d65/a01500.html", "de/d65/a01500" ],
+    [ "ElementTrimFlag", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7", [
+      [ "full", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ]
 ];

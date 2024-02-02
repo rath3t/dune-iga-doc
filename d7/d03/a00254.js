@@ -1,9 +1,26 @@
 var a00254 =
 [
-    [ "HostGridAccess", "d7/db4/a01747.html", null ],
-    [ "IntersectionVariant", "d5/db3/a01751.html", "d5/db3/a01751" ],
-    [ "LocalGeometryVariant", "d2/d7d/a01755.html", "d2/d7d/a01755" ],
-    [ "ParameterSpaceGridEntityVariant", "d4/d3c/a01671.html", "d4/d3c/a01671" ],
-    [ "referenceElement", "d7/d03/a00254.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
-    [ "referenceElement", "d7/d03/a00254.html#a58f6695142a18937094849b86976642b", null ]
+    [ "ClippingResult", "d6/d5e/a01660.html", "d6/d5e/a01660" ],
+    [ "approxSamePoint", "d7/d03/a00254.html#a8a48376718a0fecf272f5c45b240f217", null ],
+    [ "callFindIntersection", "d7/d03/a00254.html#a3ec98aeae9dd9815cc7a6c9178f24a64", null ],
+    [ "clipElementRectangle", "d7/d03/a00254.html#a4f65cad383549769cbe786b60c31e479", null ],
+    [ "createHostGeometry", "d7/d03/a00254.html#afa8d09a2b2b61bb41dfc22fb2060a5fd", null ],
+    [ "createTrimmingCurveSlice", "d7/d03/a00254.html#a4160dac0cdcae55fca83559856c4a45a", null ],
+    [ "distance", "d7/d03/a00254.html#a92128ee85ce68d85f0d598c954c790eb", null ],
+    [ "findGoodStartingPoint", "d7/d03/a00254.html#a870b9a152ad4ff41a8be202c6d04b7a5", null ],
+    [ "giveEdgeIdx", "d7/d03/a00254.html#a55a9ec04149f78cad2fd07e790a81128", null ],
+    [ "isCornerVertex", "d7/d03/a00254.html#a63be6569afc287df64dcdf64d4eb9853", null ],
+    [ "isPointOnLine", "d7/d03/a00254.html#acc865208e84fedeac81a10e21b0c8eec", null ],
+    [ "edgeDirections", "d7/d03/a00254.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
+    [ "edgeLookUp", "d7/d03/a00254.html#a16d111a10fb0652a5487a6116aeabb50", null ],
+    [ "getCurveI", "d7/d03/a00254.html#af6435d50cbb951d883fc6c781ccaf9ce", null ],
+    [ "getCurveJ", "d7/d03/a00254.html#ac833ba896079ec350aaa818a63522afd", null ],
+    [ "getEdgeIdx", "d7/d03/a00254.html#a55cf3ee45579a10ac4967b7c6eef12f6", null ],
+    [ "getHostIdx", "d7/d03/a00254.html#aac6ad54f54dd14c3668aa129f0bf53b0", null ],
+    [ "getLoopIdx", "d7/d03/a00254.html#aa04fcdb0841a754fefe2fc99bb9876d9", null ],
+    [ "getPt", "d7/d03/a00254.html#a935041761462f099c0da9020c3963055", null ],
+    [ "isHostVertex", "d7/d03/a00254.html#a3c9270ca0dc9d6ee454558643f179d94", null ],
+    [ "isInsideVertex", "d7/d03/a00254.html#aa0c65c348665122f3bef6f17cf0b570e", null ],
+    [ "isNewVertex", "d7/d03/a00254.html#a1a54c6ef09c20e25c079f1f4f50448f4", null ],
+    [ "vertexIndexMapping", "d7/d03/a00254.html#a1af143e66845c6b725ae850a95388115", null ]
 ];

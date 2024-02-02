@@ -7,6 +7,6 @@ var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
     [ "splines", "dir_479b904809ee7734e338128330b60cdb.html", "dir_479b904809ee7734e338128330b60cdb" ],
     [ "trimmer", "dir_7d0c370ab440c4b4f78419bfc8c93eb8.html", "dir_7d0c370ab440c4b4f78419bfc8c93eb8" ],
     [ "utils", "dir_054fedf05f142c88b967e78541d2ed3d.html", "dir_054fedf05f142c88b967e78541d2ed3d" ],
-    [ "nurbsbasis.hh", "da/d24/a00068.html", "da/d24/a00068" ],
-    [ "patchgrid.hh", "d6/d5b/a00026.html", null ]
+    [ "nurbsbasis.hh", "d5/db1/a00140.html", "d5/db1/a00140" ],
+    [ "patchgrid.hh", "dc/dfe/a00125.html", null ]
 ];
