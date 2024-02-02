@@ -10,7 +10,6 @@ var a01576 =
     [ "getCurve", "db/dfd/a01576.html#a274947f41f7a1984b1e0a158ee21ad46", null ],
     [ "getIndices", "db/dfd/a01576.html#accafbc61d21cb4a2c1e33da711396d6b", null ],
     [ "getPointsInPatch", "db/dfd/a01576.html#a62ce1d68f56f460b71bbc2ea75a95817", null ],
-    [ "getSplitter", "db/dfd/a01576.html#ab901e22f12e678dec98d526dc85fa6be", null ],
     [ "getZValue", "db/dfd/a01576.html#a2e314b188f07f094ad302d45920cb147", null ],
     [ "insertTrimCurve", "db/dfd/a01576.html#a8cc8578eec99ceaac36fe21f1cc04176", null ],
     [ "loops", "db/dfd/a01576.html#a494abc3622f9c8a5e06b275828241308", null ],

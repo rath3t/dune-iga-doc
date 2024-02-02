@@ -26,7 +26,6 @@ var a01640 =
     [ "UntrimmedParameterSpaceGrid", "de/d14/a01640.html#add2110be96fc5f5198839b01a2944ffa", null ],
     [ "TrimmerImpl", "de/d14/a01640.html#aa52d3329c20c413f7013e3bf2d5327bf", null ],
     [ "TrimmerImpl", "de/d14/a01640.html#a06180e4024275ea96734129c729e631a", null ],
-    [ "createLevel", "de/d14/a01640.html#a6fdc5326acf825bb1e88125facf4dc3e", null ],
     [ "createParameterSpaceGrid", "de/d14/a01640.html#afb35fb6daf013f5e48714286b6182e50", null ],
     [ "entity", "de/d14/a01640.html#ae4ffe7dc8ebc14be30e8322409bfc2f1", null ],
     [ "globalRefine", "de/d14/a01640.html#a6820011c137c501220622792ca87dfd6", null ],
