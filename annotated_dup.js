@@ -87,7 +87,7 @@ var annotated_dup =
           [ "TrimmerImpl", "de/d14/a01640.html", "de/d14/a01640" ],
           [ "VectorEntityContainer", "dd/d05/a01504.html", "dd/d05/a01504" ]
         ] ],
-        [ "GeometryKernel", "d4/d08/a00237.html", [
+        [ "GeometryKernel", "d7/d40/a00236.html", [
           [ "NURBSPatch", "d2/d20/a01096.html", "d2/d20/a01096" ],
           [ "PatchGeometryLocalView", "d2/dd7/a01108.html", "d2/dd7/a01108" ]
         ] ],
@@ -129,7 +129,7 @@ var annotated_dup =
           [ "LocalGeometryVariant", "d0/d9d/a01760.html", "d0/d9d/a01760" ],
           [ "ParameterSpaceGridEntityVariant", "de/d3e/a01676.html", "de/d3e/a01676" ]
         ] ],
-        [ "Utilities", "d7/d40/a00236.html", [
+        [ "Utilities", "d4/d08/a00237.html", [
           [ "Domain", "da/d93/a01084.html", "da/d93/a01084" ]
         ] ],
         [ "ControlPoint", "d9/d67/a01080.html", "d9/d67/a01080" ],

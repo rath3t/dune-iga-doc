@@ -45,12 +45,12 @@ var searchData=
   ['dummyempty_42',['DummyEmpty',['../d9/d45/a01332.html',1,'Dune::Functions::NurbsPreBasis']]],
   ['dune_43',['Dune',['../da/d31/a00234.html',1,'']]],
   ['dune_2diga_20documentation_44',['dune-iga documentation',['../index.html',1,'']]],
-  ['dune_5ffmatrix_5fwith_5fchecking_45',['DUNE_FMatrix_WITH_CHECKING',['../d5/dcb/a00170.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b',1,'findintersection.hh']]],
+  ['dune_5ffmatrix_5fwith_5fchecking_45',['DUNE_FMatrix_WITH_CHECKING',['../d4/d3e/a00116.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b',1,'findintersection.hh']]],
   ['dunefunctionslayouts_46',['duneFunctionsLayouts',['../df/da9/a00263.html#a7567a58831582a87fbcc011042771efa',1,'iga::basis']]],
   ['dynamicmatrixtype_47',['DynamicMatrixType',['../d0/d38/a01476.html#a4a52ec217c49c83363832cf1e3dd2423',1,'Dune::IGANEW::Splines::BsplineBasis::DynamicMatrixType()'],['../d1/d38/a01480.html#ada61f5d711fe8694da88b4376b573e27',1,'Dune::IGANEW::Splines::Nurbs::DynamicMatrixType()']]],
   ['dynamicvectortype_48',['DynamicVectorType',['../d1/d38/a01480.html#a49d7f330fa9fe4978d25046d0eb0d30c',1,'Dune::IGANEW::Splines::Nurbs::DynamicVectorType()'],['../d0/d38/a01476.html#af74a694339766e819d3ece940960e508',1,'Dune::IGANEW::Splines::BsplineBasis::DynamicVectorType()']]],
   ['functions_49',['Functions',['../d2/dc8/a00242.html',1,'Dune']]],
-  ['geometrykernel_50',['GeometryKernel',['../d4/d08/a00237.html',1,'Dune::IGANEW']]],
+  ['geometrykernel_50',['GeometryKernel',['../d7/d40/a00236.html',1,'Dune::IGANEW']]],
   ['ibra_51',['Ibra',['../dd/dd7/a00248.html',1,'Dune::IGA::Ibra'],['../d6/d08/a00244.html',1,'Dune::IGANEW::Ibra']]],
   ['identitytrim_52',['IdentityTrim',['../d6/d82/a00243.html',1,'Dune::IGANEW']]],
   ['iga_53',['IGA',['../d0/d1f/a00247.html',1,'Dune::IGA'],['../d9/d39/a00257.html',1,'Dune::Python::IGA']]],
@@ -71,6 +71,6 @@ var searchData=
   ['trimmer_68',['Trimmer',['../d5/dec/a01794.html',1,'Dune::IGANEW::Concept']]],
   ['trimmer_2ehh_69',['trimmer.hh',['../d4/d78/a03677.html',1,'']]],
   ['util_70',['Util',['../d7/d03/a00254.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['utilities_71',['Utilities',['../d7/d40/a00236.html',1,'Dune::IGANEW']]],
+  ['utilities_71',['Utilities',['../d4/d08/a00237.html',1,'Dune::IGANEW']]],
   ['vector_72',['Vector',['../d7/d10/a01785.html',1,'Dune::IGANEW::Concept']]]
 ];

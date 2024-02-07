@@ -1,11 +1,12 @@
 var a00050 =
 [
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >", "da/ddc/a01492.html", "da/ddc/a01492" ],
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "d1/dde/a01496.html", "d1/dde/a01496" ],
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "de/d65/a01500.html", "de/d65/a01500" ],
-    [ "ElementTrimFlag", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7", [
-      [ "full", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "d5/de0/a00050.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ]
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult", "d6/d5e/a01660.html", "d6/d5e/a01660" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::HostVertex", "dc/d71/a01664.html", "dc/d71/a01664" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::NewVertex", "d7/d47/a01668.html", "d7/d47/a01668" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::InsideVertex", "d2/d7b/a01672.html", "d2/d7b/a01672" ],
+    [ "giveEdgeIdx", "d5/de0/a00050.html#a55a9ec04149f78cad2fd07e790a81128", null ],
+    [ "isCornerVertex", "d5/de0/a00050.html#a63be6569afc287df64dcdf64d4eb9853", null ],
+    [ "edgeDirections", "d5/de0/a00050.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
+    [ "edgeLookUp", "d5/de0/a00050.html#a16d111a10fb0652a5487a6116aeabb50", null ],
+    [ "vertexIndexMapping", "d5/de0/a00050.html#a1af143e66845c6b725ae850a95388115", null ]
 ];

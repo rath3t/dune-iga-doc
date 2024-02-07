@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: boundarypatch.hh Source File</title>
+<title>dune-iga: gridenums.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,56 +91,25 @@ $(document).ready(function(){initNavTree('dd/dad/a00005_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">boundarypatch.hh</div></div>
+  <div class="headertitle"><div class="title">gridenums.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../dd/dad/a00005.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if HAVE_DUNE_FUFEM</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#  include &quot;dune/iga/utils/igahelpers.hh&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d0/def/a00256.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/d39/a00257.html">Dune::Python::IGA</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a1ef280a2762fbf1b3a46535ade3f8172">    6</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d9/d39/a00257.html#a1ef280a2762fbf1b3a46535ade3f8172">Reader</a> { json };</div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#  include &lt;dune/fufem/boundarypatch.hh&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#  include &lt;dune/python/pybind11/eigen.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#  include &lt;dune/python/pybind11/functional.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#  include &lt;dune/python/pybind11/pybind11.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#  include &lt;dune/python/pybind11/stl.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">namespace </span>Dune::IGA::Python {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="comment">// Python wrapper for the FVAssembler C++ class</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">template</span> &lt;<span class="keyword">class </span>BoundaryPatch, <span class="keyword">class</span>... options&gt;</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">void</span> registerBoundaryPatch(pybind11::handle scope, pybind11::class_&lt;BoundaryPatch, options...&gt; cls) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">using </span>pybind11::operator<span class="stringliteral">&quot;&quot;</span>_a;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">using </span>GridView = <span class="keyword">typename</span> BoundaryPatch::GridView;</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    cls.def(pybind11::init([](<span class="keyword">const</span> GridView&amp; gv, Eigen::Ref&lt;Eigen::VectorX&lt;bool&gt;&gt; vec) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>              Dune::BitSetVector&lt;1&gt; bitSetVector;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>              bitSetVector.resize(vec.size());</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>              for (<span class="keywordtype">size_t</span> i = 0; i &lt; vec.size(); ++i)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                bitSetVector[i] = vec[i];</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>              BoundaryPatch* neumannBoundary = <span class="keyword">new</span> BoundaryPatch(gv);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>              <span class="comment">// create property for insertion by vertex vector</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>              <a class="code hl_class" href="../../d2/d48/a01472.html">BoundaryPatchEnclosingVerticesPropertyTrimmed&lt;GridView, 1&gt;</a> prop(gv, bitSetVector);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>              neumannBoundary-&gt;insertFacesByProperty(prop);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>              <span class="keywordflow">return</span> neumannBoundary;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            }),</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>            pybind11::keep_alive&lt;1, 2&gt;(), pybind11::keep_alive&lt;1, 3&gt;());</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}  <span class="comment">// namespace Dune::IGA::Python</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa01472_html"><div class="ttname"><a href="../../d2/d48/a01472.html">BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div><div class="ttdef"><b>Definition:</b> igahelpers.hh:11</div></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}  <span class="comment">// namespace Dune::Python::IGA</span></div>
+<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">Dune::Python::IGA</a></div><div class="ttdef"><b>Definition:</b> gridenums.hh:5</div></div>
+<div class="ttc" id="aa00257_html_a1ef280a2762fbf1b3a46535ade3f8172"><div class="ttname"><a href="../../d9/d39/a00257.html#a1ef280a2762fbf1b3a46535ade3f8172">Dune::Python::IGA::Reader</a></div><div class="ttdeci">Reader</div><div class="ttdef"><b>Definition:</b> gridenums.hh:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../dd/dad/a00005.html">boundarypatch.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../dd/dad/a00005.html">gridenums.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

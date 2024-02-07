@@ -3,7 +3,7 @@ var searchData=
   ['father_0',['father',['../dd/d70/a01596.html#a0ddf7c2ccb89954f7281a8b9764eb922',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::father()'],['../de/d3e/a01676.html#a45879adebe1e05a500a5f2e95131729f',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::father()'],['../d0/d67/a01232.html#ae6371a3ed4bd6a00b23d4fff4c519789',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::father()']]],
   ['fillquadratureruleimpl_1',['fillQuadratureRuleImpl',['../d0/d1f/a00247.html#a023d3c0845a496b2eedca5b359b49964',1,'Dune::IGA']]],
   ['finalize_2',['finalize',['../da/ddc/a01492.html#abcec2b93b965ae105eefa8a3bf6072a3',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['findclosestparameterspacecoordinate_3',['findClosestParameterSpaceCoordinate',['../d4/d08/a00237.html#a85b42ae7d7cb1ba7149c382655ce96ea',1,'Dune::IGANEW::GeometryKernel']]],
+  ['findclosestparameterspacecoordinate_3',['findClosestParameterSpaceCoordinate',['../d7/d40/a00236.html#a85b42ae7d7cb1ba7149c382655ce96ea',1,'Dune::IGANEW::GeometryKernel']]],
   ['findgoodstartingpoint_4',['findGoodStartingPoint',['../d7/d03/a00254.html#a870b9a152ad4ff41a8be202c6d04b7a5',1,'Dune::IGANEW::DefaultTrim::Util']]],
   ['findintersectioncurveandline_5',['findIntersectionCurveAndLine',['../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f',1,'Dune::IGANEW']]],
   ['findintersectionlinearcurveandline_6',['findIntersectionLinearCurveAndLine',['../d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836',1,'Dune::IGANEW']]],

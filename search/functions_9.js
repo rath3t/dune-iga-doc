@@ -30,6 +30,6 @@ var searchData=
   ['isconnectedatboundary_27',['isConnectedAtBoundary',['../d2/d20/a01096.html#a67102350b5dbc4591cf8b72ab10019d4',1,'Dune::IGANEW::GeometryKernel::NURBSPatch']]],
   ['iscornervertex_28',['isCornerVertex',['../d7/d03/a00254.html#a63be6569afc287df64dcdf64d4eb9853',1,'Dune::IGANEW::DefaultTrim::Util']]],
   ['isleaf_29',['isLeaf',['../d0/d67/a01232.html#aa6fc8838f382fe2ba9018f3202434b4f',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::isLeaf()'],['../dd/d70/a01596.html#ad2bdc25c2823c49c740701e21f749451',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::isLeaf()'],['../de/d3e/a01676.html#a2542d640734a589bb1edaf8feecb75a2',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::isLeaf()']]],
-  ['ispointonline_30',['isPointOnLine',['../d7/d03/a00254.html#acc865208e84fedeac81a10e21b0c8eec',1,'Dune::IGANEW::DefaultTrim::Util']]],
+  ['ispointonlinesegment_30',['isPointOnLineSegment',['../d7/d40/a00236.html#a6876a380ff49e968adf928cfb5a8ef44',1,'Dune::IGANEW::GeometryKernel']]],
   ['isvalid_31',['isValid',['../db/dbf/a01516.html#adcee67777da34feecbfba5e164852986',1,'Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::isValid()'],['../d5/d83/a01680.html#a4acd79d380235ff11c9566c602445b15',1,'Dune::IGANEW::IdentityTrim::PatchGridEntitySeed::isValid()'],['../de/dda/a01768.html#a0ef0ec8d7ebc29ac35548e2275df68c7',1,'Dune::IGANEW::MultiDimensionalNet::isValid()']]]
 ];

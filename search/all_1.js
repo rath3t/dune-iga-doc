@@ -11,6 +11,7 @@ var searchData=
   ['addnewvertex_8',['addNewVertex',['../d6/d5e/a01660.html#aaca4cc1b395603087a0b04c9b20c9daf',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
   ['addoriginalvertex_9',['addOriginalVertex',['../d6/d5e/a01660.html#af5f99e722361af8a361db09592f543d2',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::addOriginalVertex(const Clipper2Lib::PointD &amp;pt)'],['../d6/d5e/a01660.html#afb027be4c6428c5c400f571e3ab32132',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::addOriginalVertex(const size_t hostIdx)']]],
   ['affine_10',['affine',['../d2/d20/a01096.html#a072bbe21d0b73e440b7f6c3c17892156',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::affine()'],['../d2/dd7/a01108.html#a2d4541923084a1b4dd0a3a893ecc1db5',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::affine()'],['../d4/dd5/a01244.html#a593a2b9143bde7fd54fed564f55b87ac',1,'Dune::IGANEW::PatchGridGeometry::affine()'],['../dc/dd2/a01604.html#a901667cf37900062e305e0f749e4ff99',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometryImpl::affine()'],['../da/d0e/a01720.html#ac0d095774cf01b990e81c75aa3f2347c',1,'Dune::IGANEW::PatchGridLocalGeometry::affine()'],['../d0/d9d/a01760.html#af4169433466f726fdd6d00b065c3186b',1,'Dune::IGANEW::Trim::LocalGeometryVariant::affine()']]],
-  ['approxsamepoint_11',['approxSamePoint',['../d7/d03/a00254.html#a8a48376718a0fecf272f5c45b240f217',1,'Dune::IGANEW::DefaultTrim::Util']]],
-  ['ascurve_12',['asCurve',['../dd/d18/a01284.html#abb00642c068a2ff96d8fbd05853c45bb',1,'Dune::IGANEW::Ibra::BrepTrim']]]
+  ['algorithms_2ehh_11',['algorithms.hh',['../de/d76/a00134.html',1,'']]],
+  ['approxsamepoint_12',['approxSamePoint',['../d7/d03/a00254.html#a8a48376718a0fecf272f5c45b240f217',1,'Dune::IGANEW::DefaultTrim::Util']]],
+  ['ascurve_13',['asCurve',['../dd/d18/a01284.html#abb00642c068a2ff96d8fbd05853c45bb',1,'Dune::IGANEW::Ibra::BrepTrim']]]
 ];

@@ -1,7 +1,10 @@
 var a00197 =
 [
-    [ "findClosestParameterSpaceCoordinate", "de/db1/a00197.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
-    [ "hessian", "de/db1/a00197.html#a7693ef58b9b466df6285facbe588e2e7", null ],
-    [ "jacobianTransposed", "de/db1/a00197.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
-    [ "position", "de/db1/a00197.html#ae7bdc51407259017c5322f80267fcc5e", null ]
+    [ "Dune::IGA::Trim::ElementBoundaries", "d5/dec/a01416.html", "d5/dec/a01416" ],
+    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "d0/d05/a01420.html", "d0/d05/a01420" ],
+    [ "ElementTrimFlag", "de/db1/a00197.html#a34b2741ab599082a80dacc40c6e5069b", [
+      [ "full", "de/db1/a00197.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "de/db1/a00197.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "de/db1/a00197.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ]
 ];

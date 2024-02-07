@@ -6,6 +6,6 @@ var dir_aa3557bd66a6784b3b9e663253e8d0ba =
     [ "identitytrimmer/patchgridintersectioniterator.hh", "d7/df2/a03656.html", "d7/df2/a03656" ],
     [ "identitytrimmer/patchgridleafiterator.hh", "d9/d9a/a03668.html", "d9/d9a/a03668" ],
     [ "identitytrimmer/patchgridleveliterator.hh", "d0/d1e/a03674.html", "d0/d1e/a03674" ],
-    [ "patchgridlocalgeometry.hh", "d1/d44/a00098.html", "d1/d44/a00098" ],
+    [ "patchgridlocalgeometry.hh", "da/dec/a00080.html", "da/dec/a00080" ],
     [ "identitytrimmer/trimmer.hh", "df/d98/a03680.html", "df/d98/a03680" ]
 ];

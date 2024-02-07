@@ -1,5 +1,6 @@
 var a00056 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >", "db/dfd/a01576.html", "db/dfd/a01576" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >::CurveManager", "da/dd5/a01580.html", "da/dd5/a01580" ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d8/d22/a01584.html", "d8/d22/a01584" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d7/d71/a01588.html", "d7/d71/a01588" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "de/d40/a01592.html", "de/d40/a01592" ]
 ];

@@ -10,7 +10,6 @@ var a00254 =
     [ "findGoodStartingPoint", "d7/d03/a00254.html#a870b9a152ad4ff41a8be202c6d04b7a5", null ],
     [ "giveEdgeIdx", "d7/d03/a00254.html#a55a9ec04149f78cad2fd07e790a81128", null ],
     [ "isCornerVertex", "d7/d03/a00254.html#a63be6569afc287df64dcdf64d4eb9853", null ],
-    [ "isPointOnLine", "d7/d03/a00254.html#acc865208e84fedeac81a10e21b0c8eec", null ],
     [ "edgeDirections", "d7/d03/a00254.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
     [ "edgeLookUp", "d7/d03/a00254.html#a16d111a10fb0652a5487a6116aeabb50", null ],
     [ "getCurveI", "d7/d03/a00254.html#af6435d50cbb951d883fc6c781ccaf9ce", null ],

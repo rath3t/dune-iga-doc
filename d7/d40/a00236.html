@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::Utilities Namespace Reference</title>
+<title>dune-iga: Dune::IGANEW::GeometryKernel Namespace Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,78 +94,65 @@ $(document).ready(function(){initNavTree('d7/d40/a00236.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::Utilities Namespace Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::GeometryKernel Namespace Reference</div></div>
 </div><!--header-->
 <div class="contents">
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d93/a01084.html">Domain</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small wrapper class that represents a one-dimensional closed domain.  <a href="../../da/d93/a01084.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d20/a01096.html">NURBSPatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d2/d20/a01096.html" title="NURBSPatch class representing a Non-Uniform Rational B-Spline patch.">NURBSPatch</a> class representing a Non-Uniform Rational B-Spline patch.  <a href="../../d2/d20/a01096.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dd7/a01108.html">PatchGeometryLocalView</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a local view of a patch geometry.  <a href="../../d2/dd7/a01108.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ada1286817f950d2e7a16f906473aa2b2"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int dim, size_t dim2&gt; <br />
-requires (dim == dim2)</td></tr>
-<tr class="memitem:ada1286817f950d2e7a16f906473aa2b2"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#ada1286817f950d2e7a16f906473aa2b2">clampToBoundaryAndCheckIfIsAtAllBoundaries</a> (FieldVector&lt; ScalarType, dim &gt; &amp;x, const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; ScalarType &gt;, dim2 &gt; &amp;domain={})</td></tr>
-<tr class="memdesc:ada1286817f950d2e7a16f906473aa2b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the given array of domains to the boundary and checks if it is at all boundaries.  <a href="../../d7/d40/a00236.html#ada1286817f950d2e7a16f906473aa2b2">More...</a><br /></td></tr>
-<tr class="separator:ada1286817f950d2e7a16f906473aa2b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2630a0eab9b7e24915eeb52ca335972c"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a2630a0eab9b7e24915eeb52ca335972c"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a2630a0eab9b7e24915eeb52ca335972c">linspace</a> (T a, T b, unsigned int N)</td></tr>
-<tr class="memdesc:a2630a0eab9b7e24915eeb52ca335972c"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view with N coordinates between a and b including a and b.  <a href="../../d7/d40/a00236.html#a2630a0eab9b7e24915eeb52ca335972c">More...</a><br /></td></tr>
-<tr class="separator:a2630a0eab9b7e24915eeb52ca335972c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42b0275340679a127b2576175939833f"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a42b0275340679a127b2576175939833f"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a42b0275340679a127b2576175939833f">linspace</a> (std::array&lt; T, 2 &gt; ab, unsigned int N)</td></tr>
-<tr class="separator:a42b0275340679a127b2576175939833f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c6fd781b9aa39c1d69699ec173cece8"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a0c6fd781b9aa39c1d69699ec173cece8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a0c6fd781b9aa39c1d69699ec173cece8">linspace</a> (<a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; ab, unsigned int N)</td></tr>
-<tr class="separator:a0c6fd781b9aa39c1d69699ec173cece8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a341a1dc953d397349b5bb0d9f39c4106"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
-<tr class="memitem:a341a1dc953d397349b5bb0d9f39c4106"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a341a1dc953d397349b5bb0d9f39c4106">clampToDomain</a> (T &amp;val, const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;dom)</td></tr>
-<tr class="memdesc:a341a1dc953d397349b5bb0d9f39c4106"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the given value to the specified domain.  <a href="../../d7/d40/a00236.html#a341a1dc953d397349b5bb0d9f39c4106">More...</a><br /></td></tr>
-<tr class="separator:a341a1dc953d397349b5bb0d9f39c4106"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:addda4c834225ccb0923b33a5f9d494b0"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:addda4c834225ccb0923b33a5f9d494b0"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#addda4c834225ccb0923b33a5f9d494b0">mapToRange</a> (T value, const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;input, const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;output)</td></tr>
-<tr class="memdesc:addda4c834225ccb0923b33a5f9d494b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value from one domain to another.  <a href="../../d7/d40/a00236.html#addda4c834225ccb0923b33a5f9d494b0">More...</a><br /></td></tr>
-<tr class="separator:addda4c834225ccb0923b33a5f9d494b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa702762865e719e68a197ce63a446b33"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:aa702762865e719e68a197ce63a446b33"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#aa702762865e719e68a197ce63a446b33">mapToRangeFromZeroToOne</a> (T value, const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;output)</td></tr>
-<tr class="memdesc:aa702762865e719e68a197ce63a446b33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value from the domain [0,1] to another.  <a href="../../d7/d40/a00236.html#aa702762865e719e68a197ce63a446b33">More...</a><br /></td></tr>
-<tr class="separator:aa702762865e719e68a197ce63a446b33"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b48e47a84d5e67509b5d6b512933245"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T, int size&gt; </td></tr>
-<tr class="memitem:a6b48e47a84d5e67509b5d6b512933245"><td class="memTemplItemLeft" align="right" valign="top">Dune::FieldVector&lt; T, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a6b48e47a84d5e67509b5d6b512933245">mapToRange</a> (const Dune::FieldVector&lt; T, size &gt; &amp;value, const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size &gt; &amp;input, const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size &gt; &amp;output)</td></tr>
-<tr class="memdesc:a6b48e47a84d5e67509b5d6b512933245"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value from one domain to another.  <a href="../../d7/d40/a00236.html#a6b48e47a84d5e67509b5d6b512933245">More...</a><br /></td></tr>
-<tr class="separator:a6b48e47a84d5e67509b5d6b512933245"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04ac9c71c72215ada13cdc92a31d96ba"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T, int size, size_t size2&gt; </td></tr>
-<tr class="memitem:a04ac9c71c72215ada13cdc92a31d96ba"><td class="memTemplItemLeft" align="right" valign="top">Dune::FieldVector&lt; T, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a04ac9c71c72215ada13cdc92a31d96ba">mapToRange</a> (const Dune::FieldVector&lt; T, size &gt; &amp;value, const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size2 &gt; &amp;input, const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size2 &gt; &amp;output)</td></tr>
-<tr class="separator:a04ac9c71c72215ada13cdc92a31d96ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a1ae4d6e29645af6fa8e60672bac908"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
-<tr class="memitem:a8a1ae4d6e29645af6fa8e60672bac908"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a8a1ae4d6e29645af6fa8e60672bac908">splitDomainInHalf</a> (const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;domain)</td></tr>
-<tr class="memdesc:a8a1ae4d6e29645af6fa8e60672bac908"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a domain into two halves.  <a href="../../d7/d40/a00236.html#a8a1ae4d6e29645af6fa8e60672bac908">More...</a><br /></td></tr>
-<tr class="separator:a8a1ae4d6e29645af6fa8e60672bac908"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="memTemplParams" colspan="2">template&lt;typename Geometry &gt; </td></tr>
+<tr class="memitem:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="memTemplItemLeft" align="right" valign="top">Geometry::LocalCoordinate&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a85b42ae7d7cb1ba7149c382655ce96ea">findClosestParameterSpaceCoordinate</a> (const Geometry &amp;geo, const typename Geometry::GlobalCoordinate &amp;global)</td></tr>
+<tr class="memdesc:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the parameter space coordinate corresponding to a given global coordinate on a geometry.  <a href="../../d7/d40/a00236.html#a85b42ae7d7cb1ba7149c382655ce96ea">More...</a><br /></td></tr>
+<tr class="separator:a85b42ae7d7cb1ba7149c382655ce96ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7693ef58b9b466df6285facbe588e2e7"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a7693ef58b9b466df6285facbe588e2e7"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a7693ef58b9b466df6285facbe588e2e7">hessian</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:a7693ef58b9b466df6285facbe588e2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Hessian matrix of a NURBS geometry at a specified local coordinate.  <a href="../../d7/d40/a00236.html#a7693ef58b9b466df6285facbe588e2e7">More...</a><br /></td></tr>
+<tr class="separator:a7693ef58b9b466df6285facbe588e2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558ed80fd1396cbfe7c36ad505937a52"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a558ed80fd1396cbfe7c36ad505937a52"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a558ed80fd1396cbfe7c36ad505937a52">jacobianTransposed</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:a558ed80fd1396cbfe7c36ad505937a52"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the transposed Jacobian matrix of a NURBS geometry at a specified local coordinate.  <a href="../../d7/d40/a00236.html#a558ed80fd1396cbfe7c36ad505937a52">More...</a><br /></td></tr>
+<tr class="separator:a558ed80fd1396cbfe7c36ad505937a52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7bdc51407259017c5322f80267fcc5e"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:ae7bdc51407259017c5322f80267fcc5e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#ae7bdc51407259017c5322f80267fcc5e">position</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:ae7bdc51407259017c5322f80267fcc5e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the global position of a NURBS geometry at a specified local coordinate.  <a href="../../d7/d40/a00236.html#ae7bdc51407259017c5322f80267fcc5e">More...</a><br /></td></tr>
+<tr class="separator:ae7bdc51407259017c5322f80267fcc5e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6876a380ff49e968adf928cfb5a8ef44"><td class="memTemplParams" colspan="2">template&lt;typename Coordinate , std::floating_point Tolerance = double_t&gt; </td></tr>
+<tr class="memitem:a6876a380ff49e968adf928cfb5a8ef44"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a6876a380ff49e968adf928cfb5a8ef44">isPointOnLineSegment</a> (const Coordinate &amp;p, const Coordinate &amp;linePoint0, const Coordinate &amp;linePoint1, Tolerance tol=1e-6) -&gt; bool</td></tr>
+<tr class="memdesc:a6876a380ff49e968adf928cfb5a8ef44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a point lies on a line defined by two other points with a specified tolerance.  <a href="../../d7/d40/a00236.html#a6876a380ff49e968adf928cfb5a8ef44">More...</a><br /></td></tr>
+<tr class="separator:a6876a380ff49e968adf928cfb5a8ef44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32f8f310c48c22247e2072bd76abc0fb"><td class="memTemplParams" colspan="2">template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:a32f8f310c48c22247e2072bd76abc0fb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a32f8f310c48c22247e2072bd76abc0fb">transform</a> (const <a class="el" href="../../d2/d20/a01096.html">NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt; &amp;patch, const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Utilities::Domain</a>&lt; double &gt;, dim_ &gt; &amp;newDomain=std::array&lt; <a class="el" href="../../da/d93/a01084.html">Utilities::Domain</a>&lt; double &gt;, dim_ &gt;{})</td></tr>
+<tr class="separator:a32f8f310c48c22247e2072bd76abc0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="ada1286817f950d2e7a16f906473aa2b2" name="ada1286817f950d2e7a16f906473aa2b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada1286817f950d2e7a16f906473aa2b2">&#9670;&nbsp;</a></span>clampToBoundaryAndCheckIfIsAtAllBoundaries()</h2>
+<a id="a85b42ae7d7cb1ba7149c382655ce96ea" name="a85b42ae7d7cb1ba7149c382655ce96ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85b42ae7d7cb1ba7149c382655ce96ea">&#9670;&nbsp;</a></span>findClosestParameterSpaceCoordinate()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ScalarType , int dim, size_t dim2&gt; <br />
-requires (dim == dim2)</div>
+template&lt;typename Geometry &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">bool Dune::IGANEW::Utilities::clampToBoundaryAndCheckIfIsAtAllBoundaries </td>
+          <td class="memname">Geometry::LocalCoordinate Dune::IGANEW::GeometryKernel::findClosestParameterSpaceCoordinate </td>
           <td>(</td>
-          <td class="paramtype">FieldVector&lt; ScalarType, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>x</em>, </td>
+          <td class="paramtype">const Geometry &amp;&#160;</td>
+          <td class="paramname"><em>geo</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; ScalarType &gt;, dim2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>domain</em> = <code>{}</code>&#160;</td>
+          <td class="paramtype">const typename Geometry::GlobalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>global</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -175,45 +162,65 @@ requires (dim == dim2)</div>
       </table>
 </div><div class="memdoc">
 
-<p>Clamps the given array of domains to the boundary and checks if it is at all boundaries. </p>
+<p>Computes the parameter space coordinate corresponding to a given global coordinate on a geometry. </p>
+<p >This function calculates the parameter space coordinate for a given global coordinate on a geometry. It uses different strategies based on the dimensionality of the geometry and whether it is a parametric or non-parametric case.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">ScalarType</td><td>Type of the coordinates </td></tr>
-    <tr><td class="paramname">dim</td><td>dimension of the domain array cube </td></tr>
-    <tr><td class="paramname">dim2</td><td>only a dummy dim due to the size_t and int size mismatch for FieldVector and std::array </td></tr>
+    <tr><td class="paramname">Geometry</td><td>The geometry type representing the shape. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">x</td><td>The FieldVector that should be clamped and checked </td></tr>
-    <tr><td class="paramname">domain</td><td>The cuboid domain array </td></tr>
+    <tr><td class="paramname">geo</td><td>The geometry object. </td></tr>
+    <tr><td class="paramname">global</td><td>The global coordinate for which the parameter space coordinate is computed. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Boolean if x is at all boundaries </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The parameter space coordinate corresponding to the global coordinate. If the jacobian is not invertable std::numeric_limits&lt;ctype&gt;::max() is returned as local coordinates.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The geometry type must provide appropriate member functions and traits:<ul>
+<li><code>Geometry::mydimension</code>: The dimensionality of the parameter space.</li>
+<li><code>Geometry::worlddimension</code>: The dimensionality of the world space.</li>
+<li><code>Geometry::ctype</code>: The type for numerical computations.</li>
+<li><code>Geometry::LocalCoordinate</code>: The type representing a point in the parameter space.</li>
+<li><code>Geometry::GlobalCoordinate</code>: The type representing a point in the world space.</li>
+<li><code>Geometry::MatrixHelper</code>: A helper class providing matrix operations.</li>
+</ul>
+</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">Dune::MathError</td><td>if the trust region method fails to find an energy-decreasing direction. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
-<a id="a341a1dc953d397349b5bb0d9f39c4106" name="a341a1dc953d397349b5bb0d9f39c4106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a341a1dc953d397349b5bb0d9f39c4106">&#9670;&nbsp;</a></span>clampToDomain()</h2>
+<a id="a7693ef58b9b466df6285facbe588e2e7" name="a7693ef58b9b466df6285facbe588e2e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7693ef58b9b466df6285facbe588e2e7">&#9670;&nbsp;</a></span>hessian()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename T &gt; </div>
+template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto &amp; Dune::IGANEW::Utilities::clampToDomain </td>
+          <td class="memname">auto Dune::IGANEW::GeometryKernel::hessian </td>
           <td>(</td>
-          <td class="paramtype">T &amp;&#160;</td>
-          <td class="paramname"><em>val</em>, </td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>local</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>dom</em>&#160;</td>
+          <td class="paramtype">const NurbsLocalView &amp;&#160;</td>
+          <td class="paramname"><em>nurbsLocalView</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const ControlPointCoordinateNetType &amp;&#160;</td>
+          <td class="paramname"><em>localControlPointNet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -223,228 +230,116 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Clamps the given value to the specified domain. </p>
-<p >This function ensures that the given value is within the specified domain bounds. If the value is outside the domain, it is adjusted to the nearest boundary.</p>
+<p>Computes the Hessian matrix of a NURBS geometry at a specified local coordinate. </p>
+<p >The Hessian matrix represents the second-order partial derivatives of the basis functions with respect to the local coordinates. The computation is based on the given local coordinate, NURBS local view, and the net of control points' coordinates.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The type of the value and domain boundaries. </td></tr>
+    <tr><td class="paramname">LocalCoordinate</td><td>The type representing a point in the local coordinate space. </td></tr>
+    <tr><td class="paramname">NurbsLocalView</td><td>The type providing access to NURBS basis functions and derivatives. </td></tr>
+    <tr><td class="paramname">ControlPointCoordinateNetType</td><td>The type representing the coordinates of control points. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">val</td><td>The value to be clamped to the domain. </td></tr>
-    <tr><td class="paramname">dom</td><td>The domain representing the valid range for the value. </td></tr>
+    <tr><td class="paramname">local</td><td>The local coordinate at which the Hessian is computed. </td></tr>
+    <tr><td class="paramname">nurbsLocalView</td><td>The NURBS local view providing basis function derivatives. </td></tr>
+    <tr><td class="paramname">localControlPointNet</td><td>The net of control points' coordinates. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A reference to the clamped value.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>The domain boundaries are inclusive.</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> domain(0.0, 100.0);</div>
-<div class="line"><span class="keywordtype">double</span> value = 120.0;</div>
-<div class="line"><a class="code hl_function" href="../../d7/d40/a00236.html#a341a1dc953d397349b5bb0d9f39c4106">clampToDomain</a>(value, domain); <span class="comment">// value is now 100.0</span></div>
-<div class="ttc" id="aa00236_html_a341a1dc953d397349b5bb0d9f39c4106"><div class="ttname"><a href="../../d7/d40/a00236.html#a341a1dc953d397349b5bb0d9f39c4106">Dune::IGANEW::Utilities::clampToDomain</a></div><div class="ttdeci">auto &amp; clampToDomain(T &amp;val, const Domain&lt; T &gt; &amp;dom)</div><div class="ttdoc">Clamps the given value to the specified domain.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:121</div></div>
-<div class="ttc" id="aa01084_html"><div class="ttname"><a href="../../da/d93/a01084.html">Dune::IGANEW::Utilities::Domain&lt; double &gt;</a></div></div>
-</div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>The Hessian matrix at the specified local coordinate.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>NurbsLocalView::basisFunctionDerivatives </dd></dl>
+
 </div>
 </div>
-<a id="a0c6fd781b9aa39c1d69699ec173cece8" name="a0c6fd781b9aa39c1d69699ec173cece8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c6fd781b9aa39c1d69699ec173cece8">&#9670;&nbsp;</a></span>linspace() <span class="overload">[1/3]</span></h2>
+<a id="a6876a380ff49e968adf928cfb5a8ef44" name="a6876a380ff49e968adf928cfb5a8ef44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6876a380ff49e968adf928cfb5a8ef44">&#9670;&nbsp;</a></span>isPointOnLineSegment()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::floating_point T&gt; </div>
+template&lt;typename Coordinate , std::floating_point Tolerance = double_t&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">auto Dune::IGANEW::Utilities::linspace </td>
+          <td class="memname">auto Dune::IGANEW::GeometryKernel::isPointOnLineSegment </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;&#160;</td>
-          <td class="paramname"><em>ab</em>, </td>
+          <td class="paramtype">const Coordinate &amp;&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
+          <td class="paramtype">const Coordinate &amp;&#160;</td>
+          <td class="paramname"><em>linePoint0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Coordinate &amp;&#160;</td>
+          <td class="paramname"><em>linePoint1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Tolerance&#160;</td>
+          <td class="paramname"><em>tol</em> = <code>1e-6</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> -&gt; bool </td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-</div>
-</div>
-<a id="a42b0275340679a127b2576175939833f" name="a42b0275340679a127b2576175939833f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42b0275340679a127b2576175939833f">&#9670;&nbsp;</a></span>linspace() <span class="overload">[2/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::floating_point T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto Dune::IGANEW::Utilities::linspace </td>
-          <td>(</td>
-          <td class="paramtype">std::array&lt; T, 2 &gt;&#160;</td>
-          <td class="paramname"><em>ab</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2630a0eab9b7e24915eeb52ca335972c" name="a2630a0eab9b7e24915eeb52ca335972c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2630a0eab9b7e24915eeb52ca335972c">&#9670;&nbsp;</a></span>linspace() <span class="overload">[3/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::floating_point T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">auto Dune::IGANEW::Utilities::linspace </td>
-          <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>N</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A view with N coordinates between a and b including a and b. </p>
-<p >The algorithm makes sure a and b appear exaclty as given in the returned view </p><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>the type of the coordinates </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">a</td><td>left border of the linspace </td></tr>
-    <tr><td class="paramname">b</td><td>right border of the linspace </td></tr>
-    <tr><td class="paramname">N</td><td>number of return coordinates </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>view of the the N coordinates </dd></dl>
-
-</div>
-</div>
-<a id="a6b48e47a84d5e67509b5d6b512933245" name="a6b48e47a84d5e67509b5d6b512933245"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b48e47a84d5e67509b5d6b512933245">&#9670;&nbsp;</a></span>mapToRange() <span class="overload">[1/3]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::floating_point T, int size&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::FieldVector&lt; T, size &gt; Dune::IGANEW::Utilities::mapToRange </td>
-          <td>(</td>
-          <td class="paramtype">const Dune::FieldVector&lt; T, size &gt; &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Maps a value from one domain to another. </p>
-<p >This function maps a value from the input domain to the corresponding value in the output domain. It linearly scales and shifts the input value to fit within the output domain.</p>
+<p>Checks if a point lies on a line defined by two other points with a specified tolerance. </p>
+<p >This function determines if a given point, specified by the local coordinates 'pt', lies on the line defined by two other points 'p1' and 'p2'. It uses the slope formula to check if the points are collinear and then verifies if the given point lies on the line within the specified tolerance.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The floating-point type of the value and domains (e.g., double). </td></tr>
+    <tr><td class="paramname">Coordinate</td><td>Type representing the local coordinates of points. </td></tr>
+    <tr><td class="paramname">Tolerance</td><td>Type representing the tolerance for comparing coordinates.</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value to be mapped from the input domain to the output domain. </td></tr>
-    <tr><td class="paramname">input</td><td>The domain representing the range of the input value. </td></tr>
-    <tr><td class="paramname">output</td><td>The domain representing the desired range for the output value. </td></tr>
+    <tr><td class="paramname">p</td><td>The point to check. </td></tr>
+    <tr><td class="paramname">linePoint0</td><td>First point defining the line. </td></tr>
+    <tr><td class="paramname">linePoint1</td><td>Second point defining the line. </td></tr>
+    <tr><td class="paramname">tol</td><td>Tolerance for comparing coordinates. Default is 1e-6.</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The mapped value within the output domain.</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> inputDomain(0.0, 1.0);</div>
-<div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> outputDomain(10.0, 20.0);</div>
-<div class="line"><span class="keywordtype">double</span> inputValue = 0.5;</div>
-<div class="line"><span class="keywordtype">double</span> mappedValue = <a class="code hl_function" href="../../d7/d40/a00236.html#addda4c834225ccb0923b33a5f9d494b0">mapToRange</a>(inputValue, inputDomain, outputDomain); <span class="comment">// mappedValue is now 15.0</span></div>
-<div class="ttc" id="aa00236_html_addda4c834225ccb0923b33a5f9d494b0"><div class="ttname"><a href="../../d7/d40/a00236.html#addda4c834225ccb0923b33a5f9d494b0">Dune::IGANEW::Utilities::mapToRange</a></div><div class="ttdeci">T mapToRange(T value, const Domain&lt; T &gt; &amp;input, const Domain&lt; T &gt; &amp;output)</div><div class="ttdoc">Maps a value from one domain to another.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:147</div></div>
-</div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>bool - True if the point lies on the line, false otherwise. </dd></dl>
+
 </div>
 </div>
-<a id="a04ac9c71c72215ada13cdc92a31d96ba" name="a04ac9c71c72215ada13cdc92a31d96ba"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04ac9c71c72215ada13cdc92a31d96ba">&#9670;&nbsp;</a></span>mapToRange() <span class="overload">[2/3]</span></h2>
+<a id="a558ed80fd1396cbfe7c36ad505937a52" name="a558ed80fd1396cbfe7c36ad505937a52"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558ed80fd1396cbfe7c36ad505937a52">&#9670;&nbsp;</a></span>jacobianTransposed()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::floating_point T, int size, size_t size2&gt; </div>
+template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">Dune::FieldVector&lt; T, size &gt; Dune::IGANEW::Utilities::mapToRange </td>
+          <td class="memname">auto Dune::IGANEW::GeometryKernel::jacobianTransposed </td>
           <td>(</td>
-          <td class="paramtype">const Dune::FieldVector&lt; T, size &gt; &amp;&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>local</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
+          <td class="paramtype">const NurbsLocalView &amp;&#160;</td>
+          <td class="paramname"><em>nurbsLocalView</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, size2 &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramtype">const ControlPointCoordinateNetType &amp;&#160;</td>
+          <td class="paramname"><em>localControlPointNet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -454,33 +349,53 @@ template&lt;std::floating_point T, int size, size_t size2&gt; </div>
       </table>
 </div><div class="memdoc">
 
+<p>Computes the transposed Jacobian matrix of a NURBS geometry at a specified local coordinate. </p>
+<p >The transposed Jacobian matrix represents the first-order partial derivatives of the basis functions with respect to the local coordinates, transposed for use in geometry transformations. The computation is based on the given local coordinate, NURBS local view, and the net of control points' coordinates.</p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">LocalCoordinate</td><td>The type representing a point in the local coordinate space. </td></tr>
+    <tr><td class="paramname">NurbsLocalView</td><td>The type providing access to NURBS basis functions and derivatives. </td></tr>
+    <tr><td class="paramname">ControlPointCoordinateNetType</td><td>The type representing the coordinates of control points. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">local</td><td>The local coordinate at which the transposed Jacobian is computed. </td></tr>
+    <tr><td class="paramname">nurbsLocalView</td><td>The NURBS local view providing basis function derivatives. </td></tr>
+    <tr><td class="paramname">localControlPointNet</td><td>The net of control points' coordinates. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The transposed Jacobian matrix at the specified local coordinate. </dd></dl>
+
 </div>
 </div>
-<a id="addda4c834225ccb0923b33a5f9d494b0" name="addda4c834225ccb0923b33a5f9d494b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#addda4c834225ccb0923b33a5f9d494b0">&#9670;&nbsp;</a></span>mapToRange() <span class="overload">[3/3]</span></h2>
+<a id="ae7bdc51407259017c5322f80267fcc5e" name="ae7bdc51407259017c5322f80267fcc5e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7bdc51407259017c5322f80267fcc5e">&#9670;&nbsp;</a></span>position()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::floating_point T&gt; </div>
+template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T Dune::IGANEW::Utilities::mapToRange </td>
+          <td class="memname">auto Dune::IGANEW::GeometryKernel::position </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramtype">const LocalCoordinate &amp;&#160;</td>
+          <td class="paramname"><em>local</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>input</em>, </td>
+          <td class="paramtype">const NurbsLocalView &amp;&#160;</td>
+          <td class="paramname"><em>nurbsLocalView</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramtype">const ControlPointCoordinateNetType &amp;&#160;</td>
+          <td class="paramname"><em>localControlPointNet</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -490,49 +405,47 @@ template&lt;std::floating_point T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Maps a value from one domain to another. </p>
-<p >This function maps a value from the input domain to the corresponding value in the output domain. It linearly scales and shifts the input value to fit within the output domain.</p>
+<p>Computes the global position of a NURBS geometry at a specified local coordinate. </p>
+<p >This function calculates the global position of a NURBS geometry at a given local coordinate. The computation is based on the NURBS basis functions evaluated at the local coordinate and the net of control points' coordinates.</p>
 <dl class="tparams"><dt>Template Parameters</dt><dd>
   <table class="tparams">
-    <tr><td class="paramname">T</td><td>The floating-point type of the value and domains (e.g., double). </td></tr>
+    <tr><td class="paramname">LocalCoordinate</td><td>The type representing a point in the local coordinate space. </td></tr>
+    <tr><td class="paramname">NurbsLocalView</td><td>The type providing access to NURBS basis functions. </td></tr>
+    <tr><td class="paramname">ControlPointCoordinateNetType</td><td>The type representing the coordinates of control points. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td>The value to be mapped from the input domain to the output domain. </td></tr>
-    <tr><td class="paramname">input</td><td>The domain representing the range of the input value. </td></tr>
-    <tr><td class="paramname">output</td><td>The domain representing the desired range for the output value. </td></tr>
+    <tr><td class="paramname">local</td><td>The local coordinate at which the global position is computed. </td></tr>
+    <tr><td class="paramname">nurbsLocalView</td><td>The NURBS local view providing basis functions. </td></tr>
+    <tr><td class="paramname">localControlPointNet</td><td>The net of control points' coordinates. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>The mapped value within the output domain.</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> inputDomain(0.0, 1.0);</div>
-<div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> outputDomain(10.0, 20.0);</div>
-<div class="line"><span class="keywordtype">double</span> inputValue = 0.5;</div>
-<div class="line"><span class="keywordtype">double</span> mappedValue = <a class="code hl_function" href="../../d7/d40/a00236.html#addda4c834225ccb0923b33a5f9d494b0">mapToRange</a>(inputValue, inputDomain, outputDomain); <span class="comment">// mappedValue is now 15.0</span></div>
-</div><!-- fragment --> 
+<dl class="section return"><dt>Returns</dt><dd>The global position at the specified local coordinate. </dd></dl>
+
 </div>
 </div>
-<a id="aa702762865e719e68a197ce63a446b33" name="aa702762865e719e68a197ce63a446b33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa702762865e719e68a197ce63a446b33">&#9670;&nbsp;</a></span>mapToRangeFromZeroToOne()</h2>
+<a id="a32f8f310c48c22247e2072bd76abc0fb" name="a32f8f310c48c22247e2072bd76abc0fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32f8f310c48c22247e2072bd76abc0fb">&#9670;&nbsp;</a></span>transform()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;std::floating_point T&gt; </div>
+template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">T Dune::IGANEW::Utilities::mapToRangeFromZeroToOne </td>
+          <td class="memname">auto Dune::IGANEW::GeometryKernel::transform </td>
           <td>(</td>
-          <td class="paramtype">T&#160;</td>
-          <td class="paramname"><em>value</em>, </td>
+          <td class="paramtype">const <a class="el" href="../../d2/d20/a01096.html">NURBSPatch</a>&lt; dim_, dimworld_, ScalarType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>patch</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>output</em>&#160;</td>
+          <td class="paramtype">const std::array&lt; <a class="el" href="../../da/d93/a01084.html">Utilities::Domain</a>&lt; double &gt;, dim_ &gt; &amp;&#160;</td>
+          <td class="paramname"><em>newDomain</em> = <code>std::array&lt;<a class="el" href="../../da/d93/a01084.html">Utilities::Domain</a>&lt;double&gt;,&#160;dim_&gt;{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -542,68 +455,6 @@ template&lt;std::floating_point T&gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Maps a value from the domain [0,1] to another. </p>
-<p >This function maps a value from the input domain to the corresponding value in the output domain. It linearly scales and shifts the input value to fit within the output domain.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The floating-point type of the value and domains (e.g., double). </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">value</td><td>The value to be mapped from the input domain to the output domain. </td></tr>
-    <tr><td class="paramname">output</td><td>The domain representing the desired range for the output value. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>The mapped value within the output domain.</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> inputDomain(0.0, 1.0);</div>
-<div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> outputDomain(10.0, 20.0);</div>
-<div class="line"><span class="keywordtype">double</span> inputValue = 0.5;</div>
-<div class="line"><span class="keywordtype">double</span> mappedValue = <a class="code hl_function" href="../../d7/d40/a00236.html#addda4c834225ccb0923b33a5f9d494b0">mapToRange</a>(inputValue, inputDomain, outputDomain); <span class="comment">// mappedValue is now 15.0</span></div>
-</div><!-- fragment --> 
-</div>
-</div>
-<a id="a8a1ae4d6e29645af6fa8e60672bac908" name="a8a1ae4d6e29645af6fa8e60672bac908"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a1ae4d6e29645af6fa8e60672bac908">&#9670;&nbsp;</a></span>splitDomainInHalf()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;std::floating_point T&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt; <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt;, 2 &gt; Dune::IGANEW::Utilities::splitDomainInHalf </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../da/d93/a01084.html">Domain</a>&lt; T &gt; &amp;&#160;</td>
-          <td class="paramname"><em>domain</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Splits a domain into two halves. </p>
-<p >This function takes a domain and splits it into two halves along its midpoint. It returns an array containing two domains representing the left and right halves.</p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>The floating-point type of the domain. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">domain</td><td>The domain to be split. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>An array containing two domains representing the left and right halves.</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><a class="code hl_class" href="../../da/d93/a01084.html">Domain&lt;double&gt;</a> originalDomain(0.0, 10.0);</div>
-<div class="line"><span class="keyword">auto</span> splitDomains = <a class="code hl_function" href="../../d7/d40/a00236.html#a8a1ae4d6e29645af6fa8e60672bac908">splitDomainInHalf</a>(originalDomain);</div>
-<div class="line"><span class="comment">// splitDomains[0] represents the left half: {0.0, 5.0}</span></div>
-<div class="line"><span class="comment">// splitDomains[1] represents the right half: {5.0, 10.0}</span></div>
-<div class="ttc" id="aa00236_html_a8a1ae4d6e29645af6fa8e60672bac908"><div class="ttname"><a href="../../d7/d40/a00236.html#a8a1ae4d6e29645af6fa8e60672bac908">Dune::IGANEW::Utilities::splitDomainInHalf</a></div><div class="ttdeci">std::array&lt; Domain&lt; T &gt;, 2 &gt; splitDomainInHalf(const Domain&lt; T &gt; &amp;domain)</div><div class="ttdoc">Splits a domain into two halves.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:234</div></div>
-</div><!-- fragment --> 
 </div>
 </div>
 </div><!-- contents -->
@@ -611,7 +462,7 @@ template&lt;std::floating_point T&gt; </div>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../da/d31/a00234.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/d42/a00235.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Utilities</a></li>
+    <li class="navelem"><a class="el" href="../../da/d31/a00234.html">Dune</a></li><li class="navelem"><a class="el" href="../../d3/d42/a00235.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">GeometryKernel</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

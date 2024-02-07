@@ -26,12 +26,12 @@ var searchData=
   ['patchgridlocalidset_23',['PatchGridLocalIdSet',['../dc/d0c/a01532.html#af62206ea32f5daf84948103f938671f7',1,'Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet::PatchGridLocalIdSet()'],['../d4/d26/a01700.html#a2d857914699ab7a2217d0f05973ecc8f',1,'Dune::IGANEW::IdentityTrim::PatchGridLocalIdSet::PatchGridLocalIdSet()']]],
   ['patchtrimdata_24',['patchTrimData',['../de/d14/a01640.html#ac1e6470920642379bf89775e39538fe2',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
   ['path_25',['path',['../df/d84/a01408.html#a2f45c9d99983a0038a5dcebd3aebb111',1,'Dune::IGA::Boundary']]],
-  ['position_26',['position',['../d8/d22/a01584.html#a94db7a14fc4a55e2974cc73a8a3bc30b',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::position()'],['../d4/d08/a00237.html#ae7bdc51407259017c5322f80267fcc5e',1,'Dune::IGANEW::GeometryKernel::position()']]],
+  ['position_26',['position',['../d8/d22/a01584.html#a94db7a14fc4a55e2974cc73a8a3bc30b',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::position()'],['../d7/d40/a00236.html#ae7bdc51407259017c5322f80267fcc5e',1,'Dune::IGANEW::GeometryKernel::position()']]],
   ['postadapt_27',['postAdapt',['../db/d42/a01220.html#ab13c2a9d3d6c29e6549988aad2b076f7',1,'Dune::IGANEW::PatchGrid']]],
   ['preadapt_28',['preAdapt',['../db/d42/a01220.html#a698e72383907a6c8a3fe3d073d725804',1,'Dune::IGANEW::PatchGrid']]],
   ['prebasistypename_29',['preBasisTypeName',['../df/da9/a00263.html#a6b046881676017b1a2068df515deb99f',1,'iga::basis']]],
   ['prepare_30',['prepare',['../db/dfd/a01576.html#a7336116f174a10520f09b66586b516e5',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]],
   ['preparefortrim_31',['prepareForTrim',['../d7/d5a/a01204.html#a0669c8063a410aa9aa8157099ab75c77',1,'Dune::Functions::NurbsPreBasis']]],
   ['projectpointontoline_32',['projectPointOntoLine',['../d3/d42/a00235.html#ac5771e572de1611b27eb788b95d1efec',1,'Dune::IGANEW']]],
-  ['pybind11_5fmodule_33',['PYBIND11_MODULE',['../dc/d9a/a00218.html#a07648032c5f154e5c22f2da60aa32601',1,'_iga.cc']]]
+  ['pybind11_5fmodule_33',['PYBIND11_MODULE',['../dd/dc1/a00212.html#a07648032c5f154e5c22f2da60aa32601',1,'_iga.cc']]]
 ];

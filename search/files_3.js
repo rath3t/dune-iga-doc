@@ -1,10 +1,8 @@
 var searchData=
 [
-  ['patchgridentityseed_2ehh_0',['patchgridentityseed.hh',['../dc/d6c/a03635.html',1,'']]],
-  ['patchgridhierarchiciterator_2ehh_1',['patchgridhierarchiciterator.hh',['../da/d3b/a03641.html',1,'']]],
-  ['patchgridindexsets_2ehh_2',['patchgridindexsets.hh',['../d4/dc4/a03647.html',1,'']]],
-  ['patchgridintersectioniterator_2ehh_3',['patchgridintersectioniterator.hh',['../dc/d0b/a03653.html',1,'']]],
-  ['patchgridleafiterator_2ehh_4',['patchgridleafiterator.hh',['../d1/df9/a03665.html',1,'']]],
-  ['patchgridleveliterator_2ehh_5',['patchgridleveliterator.hh',['../d0/ded/a03671.html',1,'']]],
-  ['trimmer_2ehh_6',['trimmer.hh',['../d4/d78/a03677.html',1,'']]]
+  ['clipelementrectangle_2ehh_0',['clipelementrectangle.hh',['../d6/d2d/a00047.html',1,'']]],
+  ['cliputils_2ehh_1',['cliputils.hh',['../d5/de0/a00050.html',1,'']]],
+  ['closestpointprojection_2ehh_2',['closestpointprojection.hh',['../df/d98/a00107.html',1,'']]],
+  ['controlpoint_2ehh_3',['controlpoint.hh',['../d1/d88/a00128.html',1,'']]],
+  ['createlevel_2ehh_4',['createlevel.hh',['../d2/de7/a00014.html',1,'']]]
 ];
