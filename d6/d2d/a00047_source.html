@@ -119,7 +119,7 @@ $(document).ready(function(){initNavTree('d6/d2d/a00047_source.html','../../'); 
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    PathD eleRect;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> vertexIndex : Dune::range(numberOfCorners)) {</div>
 <div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keyword">auto</span> corner = eleGeo.corner(<a class="code hl_variable" href="../../d7/d03/a00254.html#a1af143e66845c6b725ae850a95388115">vertexIndexMapping</a>[vertexIndex]);</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      eleRect.emplace_back(corner[0], corner[1], vertexIndex);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      eleRect.emplace_back(corner[0], corner[1], vertexIndex+1);</div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">const</span> <span class="keyword">auto</span>&amp; trimmingCurves = patchTrimData.clipperLoops();</div>
@@ -139,8 +139,8 @@ $(document).ready(function(){initNavTree('d6/d2d/a00047_source.html','../../'); 
 <div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    clipper.SetZCallback([&amp;](<span class="keyword">const</span> PointD&amp; rectangleFirstPoint, <span class="keyword">const</span> PointD&amp; rectangleSecondPoint,</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                             <span class="keyword">const</span> PointD&amp; firstTrimmingCurvePoint, <span class="keyword">const</span> PointD&amp; secondTrimmingCurvePoint,</div>
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>                             <span class="keyword">const</span> PointD&amp; intersectionPoint) {</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      assert(rectangleFirstPoint.z &lt; 4 &amp;&amp; <span class="stringliteral">&quot;Intersection should only occur with the rectangle edges&quot;</span>);</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      assert(rectangleSecondPoint.z &lt; 4 &amp;&amp; <span class="stringliteral">&quot;Intersection should only occur with the rectangle edges&quot;</span>);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      assert(rectangleFirstPoint.z&gt; 0 and rectangleFirstPoint.z &lt; 5 &amp;&amp; <span class="stringliteral">&quot;Intersection should only occur with the rectangle edges&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      assert(rectangleSecondPoint.z&gt; 0 and rectangleSecondPoint.z &lt; 5 &amp;&amp; <span class="stringliteral">&quot;Intersection should only occur with the rectangle edges&quot;</span>);</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keyword">const</span> <span class="keyword">auto</span> [isHost, idx] = <a class="code hl_function" href="../../d7/d03/a00254.html#a63be6569afc287df64dcdf64d4eb9853">isCornerVertex</a>(intersectionPoint, eleRect);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="keywordflow">if</span> (isHost) {</div>
@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('d6/d2d/a00047_source.html','../../'); 
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        <span class="keywordflow">return</span>;</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      }</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">const</span> <span class="keyword">auto</span> edgeIdx = <a class="code hl_function" href="../../d7/d03/a00254.html#a55a9ec04149f78cad2fd07e790a81128">giveEdgeIdx</a>(rectangleFirstPoint.z, rectangleSecondPoint.z);</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">const</span> <span class="keyword">auto</span> edgeIdx = <a class="code hl_function" href="../../d7/d03/a00254.html#a55a9ec04149f78cad2fd07e790a81128">giveEdgeIdx</a>(rectangleFirstPoint.z-1, rectangleSecondPoint.z-1);</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keyword">auto</span> firstTrimmingCurveIndices = patchTrimData.getIndices(firstTrimmingCurvePoint.z);</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <span class="keyword">auto</span> secondTrimmingCurveIndices = patchTrimData.getIndices(secondTrimmingCurvePoint.z);</div>
@@ -186,7 +186,7 @@ $(document).ready(function(){initNavTree('d6/d2d/a00047_source.html','../../'); 
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">auto</span> isFullElement</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>        = [&amp;](<span class="keyword">const</span> <span class="keyword">auto</span>&amp; clippedEdges) {</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          <span class="keywordflow">return</span> clippedEdges.size()==4 and (clippedEdges[0].z &lt; 4 and clippedEdges[1].z &lt;4 and clippedEdges[2].z &lt;4 and clippedEdges[3].z &lt;4);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>          <span class="keywordflow">return</span> clippedEdges.size()==4 and (clippedEdges[0].z &lt; 5 and clippedEdges[1].z &lt;5 and clippedEdges[2].z &lt;5 and clippedEdges[3].z &lt;5);</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>        };</div>
 <div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span> </div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">if</span> (resultClosedPaths.empty()) <span class="keywordflow">return</span> std::make_tuple(<a class="code hl_enumvalue" href="../../dc/ded/a00252.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9">ElementTrimFlag::empty</a>, <a class="code hl_struct" href="../../dc/d71/a01664.html">ClippingResult</a>{eleRect});</div>
