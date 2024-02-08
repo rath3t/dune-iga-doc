@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['father_0',['father',['../dd/d70/a01596.html#a0ddf7c2ccb89954f7281a8b9764eb922',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::father()'],['../de/d3e/a01676.html#a45879adebe1e05a500a5f2e95131729f',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::father()'],['../d0/d67/a01232.html#ae6371a3ed4bd6a00b23d4fff4c519789',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::father()']]],
+  ['father_0',['father',['../d4/d3f/a01600.html#a0ddf7c2ccb89954f7281a8b9764eb922',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::father()'],['../d5/d83/a01680.html#a45879adebe1e05a500a5f2e95131729f',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::father()'],['../d0/d67/a01232.html#ae6371a3ed4bd6a00b23d4fff4c519789',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::father()']]],
   ['fillquadratureruleimpl_1',['fillQuadratureRuleImpl',['../d0/d1f/a00247.html#a023d3c0845a496b2eedca5b359b49964',1,'Dune::IGA']]],
   ['finalize_2',['finalize',['../da/ddc/a01492.html#abcec2b93b965ae105eefa8a3bf6072a3',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
   ['findclosestparameterspacecoordinate_3',['findClosestParameterSpaceCoordinate',['../d7/d40/a00236.html#a85b42ae7d7cb1ba7149c382655ce96ea',1,'Dune::IGANEW::GeometryKernel']]],
@@ -8,7 +8,7 @@ var searchData=
   ['findintersectioncurveandline_5',['findIntersectionCurveAndLine',['../d3/d42/a00235.html#a533ba1e65466dfc728bc84b33126774f',1,'Dune::IGANEW']]],
   ['findintersectionlinearcurveandline_6',['findIntersectionLinearCurveAndLine',['../d3/d42/a00235.html#a337c8ba4001f6d4d07f1e11a65147836',1,'Dune::IGANEW']]],
   ['findspan_7',['findSpan',['../d0/da7/a00250.html#a67facdaecd7f3c339ece70971f8a8f92',1,'Dune::IGANEW::Splines::findSpan(const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)'],['../d0/da7/a00250.html#a3f4a0936ded82e5421a36f9f4c0c114b',1,'Dune::IGANEW::Splines::findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)']]],
-  ['finish_8',['finish',['../d6/d5e/a01660.html#aff746367287cba561449a425dbddaeff',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
+  ['finish_8',['finish',['../dc/d71/a01664.html#aff746367287cba561449a425dbddaeff',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
   ['finiteelement_9',['finiteElement',['../d5/d53/a01324.html#a30eee42a1d363fb03bd25f7b35d15920',1,'Dune::Functions::NurbsNode::finiteElement() const'],['../d5/d53/a01324.html#a30eee42a1d363fb03bd25f7b35d15920',1,'Dune::Functions::NurbsNode::finiteElement() const']]],
   ['flag_10',['flag',['../da/ddc/a01492.html#a006e273eedd292defb7e0594949a42b1',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
   ['foreachuntrimmedboundarydof_11',['forEachUntrimmedBoundaryDOF',['../d2/dc8/a00242.html#a8ce90ea47d11d38bdb1e3b675db93a18',1,'Dune::Functions']]],

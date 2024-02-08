@@ -1,11 +1,9 @@
 var a01712 =
 [
-    [ "Entity", "dc/d3e/a01712.html#af62f308e9ff4e50e36c6e0e11a0aabb9", null ],
-    [ "PatchGridLeafIterator", "dc/d3e/a01712.html#a3ab9121199ad39f25a5b96bb1e7b7549", null ],
-    [ "PatchGridLeafIterator", "dc/d3e/a01712.html#a4cbe510f48940fa4dc256b381a305416", null ],
-    [ "PatchGridLeafIterator", "dc/d3e/a01712.html#a80694cb7ae3bc5d3f1a29617593ab34e", null ],
-    [ "dereference", "dc/d3e/a01712.html#a62480de05c6747d2a48a5d25371e76e4", null ],
-    [ "equals", "dc/d3e/a01712.html#a12345c09c63033e313ee0347630bb9d7", null ],
-    [ "increment", "dc/d3e/a01712.html#a895033132ef87acd9c21523f55abab81", null ],
-    [ "codimension", "dc/d3e/a01712.html#a0dba8f297c9168fe1783fb5dd1475378", null ]
+    [ "Intersection", "dc/d3e/a01712.html#ad537080779a8a7938759c789dd57dd23", null ],
+    [ "PatchGridLevelIntersectionIterator", "dc/d3e/a01712.html#a7f7d1ccec68ffe86594e4409f5d66102", null ],
+    [ "PatchGridLevelIntersectionIterator", "dc/d3e/a01712.html#a795c92b7a262e89fba6f7853b10e5870", null ],
+    [ "dereference", "dc/d3e/a01712.html#acfcd54405318b68671c1979158ac60f1", null ],
+    [ "equals", "dc/d3e/a01712.html#a943c28bc295060e770ede04d60c8d45e", null ],
+    [ "increment", "dc/d3e/a01712.html#a9793e3cdb7cd606d0a1f73ff812c08c1", null ]
 ];
