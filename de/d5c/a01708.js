@@ -1,9 +1,9 @@
 var a01708 =
 [
-    [ "Intersection", "de/d5c/a01708.html#a96615d85169b563aa3b76492b4a7e797", null ],
-    [ "PatchGridLeafIntersectionIterator", "de/d5c/a01708.html#a5381c850da02988d30c924704e1f6e05", null ],
-    [ "PatchGridLeafIntersectionIterator", "de/d5c/a01708.html#a103d9e4dd92417c1311f741c84005248", null ],
-    [ "dereference", "de/d5c/a01708.html#a0a573d6da346fc550b9859916ba93c64", null ],
-    [ "equals", "de/d5c/a01708.html#a74d7a3a0c5f28884eb5390a7112b6a72", null ],
-    [ "increment", "de/d5c/a01708.html#acce4e4259683ab365ea2a358d4f9b8dc", null ]
+    [ "IdType", "de/d5c/a01708.html#ab65943bece9a4f96052869c1c22a86a2", null ],
+    [ "PatchGridLocalIdSet", "de/d5c/a01708.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
+    [ "id", "de/d5c/a01708.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
+    [ "subId", "de/d5c/a01708.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
+    [ "update", "de/d5c/a01708.html#af62b1ae58fd567949b09551702ecdcb6", null ],
+    [ "grid_", "de/d5c/a01708.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
 ];
