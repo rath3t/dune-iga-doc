@@ -10,7 +10,7 @@ var searchData=
   ['localidset_5f_7',['localIdSet_',['../d3/d3e/a01644.html#a633b46b0bca7cc91079548d604c556fc',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::localIdSet_()'],['../d9/d0d/a01748.html#ab77291773b419e82ef4463990d27b8b7',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::localIdSet_()']]],
   ['localindex_8',['localIndex',['../db/d8b/a01464.html#accce87872c7dfa44c89347d946664a33',1,'Dune::IGA::DomainInformation']]],
   ['localinterpolation_5f_9',['localInterpolation_',['../d1/d56/a01308.html#a315668b19b95fb51f103beca8d66deb5',1,'Dune::Functions::NurbsLocalFiniteElement']]],
-  ['loopidx_10',['loopIdx',['../d5/d83/a01680.html#ac6ecf014b9adbcd4886f50104fdae9a6',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertex']]],
+  ['loopidx_10',['loopIdx',['../d5/d83/a01680.html#a6680ab06bd930289ccde7eaf649f2313',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl']]],
   ['loops_11',['loops',['../d4/d64/a01296.html#a094f6472e89605e71fafa767c11bf18f',1,'Dune::IGANEW::Ibra::BrepRepresentation::loops()'],['../d8/dc5/a01300.html#ad02093b5413aabb5f960e878d807b20f',1,'Dune::IGANEW::Ibra::Brep::loops()'],['../dd/d0c/a01368.html#ad4fb64a1c336ee19cf8b6e725030b639',1,'Dune::IGA::Ibra::BrepRepresentation::loops()'],['../df/d0b/a01372.html#adf3a869b18a3dbec9d9d5184f41ca473',1,'Dune::IGA::Ibra::Brep::loops()']]],
   ['lvl_12',['lvl',['../da/df2/a01620.html#a5c4c7c90da40c8982e201b2d4a035d40',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl::lvl()'],['../dd/deb/a01628.html#a6b04064b8670a7266079bc58fe4e1a70',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;::lvl()']]]
 ];

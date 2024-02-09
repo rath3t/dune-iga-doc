@@ -12,14 +12,5 @@ var a00254 =
     [ "isCornerVertex", "d7/d03/a00254.html#a63be6569afc287df64dcdf64d4eb9853", null ],
     [ "edgeDirections", "d7/d03/a00254.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
     [ "edgeLookUp", "d7/d03/a00254.html#a16d111a10fb0652a5487a6116aeabb50", null ],
-    [ "getCurveI", "d7/d03/a00254.html#af6435d50cbb951d883fc6c781ccaf9ce", null ],
-    [ "getCurveJ", "d7/d03/a00254.html#ac833ba896079ec350aaa818a63522afd", null ],
-    [ "getEdgeIdx", "d7/d03/a00254.html#a55cf3ee45579a10ac4967b7c6eef12f6", null ],
-    [ "getHostIdx", "d7/d03/a00254.html#aac6ad54f54dd14c3668aa129f0bf53b0", null ],
-    [ "getLoopIdx", "d7/d03/a00254.html#aa04fcdb0841a754fefe2fc99bb9876d9", null ],
-    [ "getPt", "d7/d03/a00254.html#a935041761462f099c0da9020c3963055", null ],
-    [ "isHostVertex", "d7/d03/a00254.html#a3c9270ca0dc9d6ee454558643f179d94", null ],
-    [ "isInsideVertex", "d7/d03/a00254.html#aa0c65c348665122f3bef6f17cf0b570e", null ],
-    [ "isNewVertex", "d7/d03/a00254.html#a1a54c6ef09c20e25c079f1f4f50448f4", null ],
     [ "vertexIndexMapping", "d7/d03/a00254.html#a1af143e66845c6b725ae850a95388115", null ]
 ];

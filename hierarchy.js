@@ -113,7 +113,7 @@ var hierarchy =
       [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIndexSet< GridImp >", "d4/d26/a01700.html", null ],
       [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet< GridImp >", "d9/d49/a01696.html", null ]
     ] ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertex", "d5/d83/a01680.html", null ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl", "d5/d83/a01680.html", null ],
     [ "Dune::IGANEW::Trim::IntersectionVariant< TrimmerType_, Implementations >", "dc/d51/a01764.html", null ],
     [ "Dune::Capabilities::isCartesian< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d1/d35/a01184.html", null ],
     [ "Dune::Capabilities::isCartesian< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "dd/d75/a01180.html", null ],

@@ -6,7 +6,7 @@ var searchData=
   ['ibrareader_3',['IbraReader',['../dd/d6d/a01380.html',1,'Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;'],['../d6/dae/a01304.html',1,'Dune::IGANEW::IbraReader&lt; dim, dimworld, PatchGrid &gt;']]],
   ['idtype_4',['IdType',['../d5/d84/a01612.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['igarefinedgeometries_5',['IGARefinedGeometries',['../d9/d45/a01396.html',1,'Dune::IGA']]],
-  ['insidevertex_6',['InsideVertex',['../d5/d83/a01680.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
+  ['insideverteximpl_6',['InsideVertexImpl',['../d5/d83/a01680.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['intersectionvariant_7',['IntersectionVariant',['../dc/d51/a01764.html',1,'Dune::IGANEW::Trim']]],
   ['is_5finstantiation_5fof_8',['is_instantiation_of',['../d6/d3d/a01784.html',1,'']]],
   ['is_5finstantiation_5fof_3c_20template_2c_20template_3c_20args_2e_2e_2e_20_3e_20_3e_9',['is_instantiation_of&lt; Template, Template&lt; Args... &gt; &gt;',['../d4/d77/a01788.html',1,'']]],

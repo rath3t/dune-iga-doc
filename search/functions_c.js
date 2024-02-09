@@ -18,5 +18,6 @@ var searchData=
   ['localkey_15',['localKey',['../d4/d49/a01316.html#adf5a802caa3f9bf1b909336121dea33c',1,'Dune::Functions::NurbsLocalCoefficients::localKey(std::size_t i) const'],['../d4/d49/a01316.html#adf5a802caa3f9bf1b909336121dea33c',1,'Dune::Functions::NurbsLocalCoefficients::localKey(std::size_t i) const']]],
   ['localview_16',['LocalView',['../d2/d21/a01484.html#acf5aea0dd285e89d4bf778c5579b6167',1,'Dune::IGANEW::Splines::Nurbs::LocalView::LocalView()=default'],['../d2/d21/a01484.html#a97ef03909afc7396be42415c4a98ab37',1,'Dune::IGANEW::Splines::Nurbs::LocalView::LocalView(const Nurbs &amp;nurbs)']]],
   ['localview_17',['localView',['../d2/d20/a01096.html#a7b26ee8a1b2c982f941a0a95c7bb3177',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::localView()'],['../d1/d38/a01480.html#a198d0f6e05cbd1b08cbc72b1322eb271',1,'Dune::IGANEW::Splines::Nurbs::localView()']]],
-  ['loops_18',['loops',['../da/dd5/a01580.html#a494abc3622f9c8a5e06b275828241308',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]]
+  ['loop_18',['loop',['../d7/d47/a01668.html#ad4477339d0fcf33bfbe182bd369acd73',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
+  ['loops_19',['loops',['../da/dd5/a01580.html#a494abc3622f9c8a5e06b275828241308',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]]
 ];

@@ -66,8 +66,8 @@ var searchData=
   ['curve2d_63',['Curve2D',['../dd/dd7/a00248.html#a5132b3c85560bd2a027d66843db5e3bf',1,'Dune::IGA::Ibra::Curve2D()'],['../d6/d08/a00244.html#a713215b1dbf3951771e852520ff6fba5',1,'Dune::IGANEW::Ibra::Curve2D()']]],
   ['curve_5fgeometries_5f2d_64',['curve_geometries_2d',['../d4/d64/a01296.html#aa6e869760bc95c02005c3e94e7049fe2',1,'Dune::IGANEW::Ibra::BrepRepresentation::curve_geometries_2d()'],['../dd/d0c/a01368.html#af742ef59082640c3d941c8c617cea6fb',1,'Dune::IGA::Ibra::BrepRepresentation::curve_geometries_2d()']]],
   ['curvegeometry_65',['CurveGeometry',['../d0/d05/a01420.html#a1c75635fc3cc57d877911d580f414c3e',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['curveidxi_66',['curveIdxI',['../d5/d83/a01680.html#a7c8f4cacae2a1805ba9a7f2f9f440077',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertex']]],
-  ['curveidxj_67',['curveIdxJ',['../d5/d83/a01680.html#a19f83543f76561cd721a5378dee43d9d',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertex']]],
+  ['curveidxi_66',['curveIdxI',['../d5/d83/a01680.html#aeaad74df2c0f3e94b7ae802e0d73736c',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl']]],
+  ['curveidxj_67',['curveIdxJ',['../d5/d83/a01680.html#a6f55a47837357f8451af2b048831cb9f',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl']]],
   ['curvemanager_68',['CurveManager',['../d8/d22/a01584.html',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]],
   ['curves2d_69',['curves2D',['../df/d0b/a01372.html#a6d2f5ea6a78344635f5e08872bd07804',1,'Dune::IGA::Ibra::Brep::curves2D()'],['../d8/dc5/a01300.html#a536bfcad2e91db72dddc4830b205b775',1,'Dune::IGANEW::Ibra::Brep::curves2D()']]]
 ];
