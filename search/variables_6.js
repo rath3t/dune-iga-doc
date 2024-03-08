@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['hasentity_0',['hasEntity',['../da/ddf/a01648.html#ad027c21681782961ebf495441edbcab3',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::hasEntity()'],['../d9/d31/a01208.html#a4f8af8d592799620b57d2c324298c582',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily::hasEntity()']]],
-  ['hasentityiterator_1',['hasEntityIterator',['../da/ddf/a01648.html#aad8207dd00e633fbac0238c37a2c6444',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::hasEntityIterator()'],['../d9/d31/a01208.html#a4988e75218e9b2f9169df068ca2d1299',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily::hasEntityIterator()']]],
-  ['hashostentity_2',['hasHostEntity',['../da/ddf/a01648.html#a1285b0e582ff50c71c2ac13402c2c950',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::hasHostEntity()'],['../d9/d31/a01208.html#afafe86856c7bc04b06538a720209ddb3',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily::hasHostEntity()']]],
-  ['host_5for_5ftrimmed_3',['host_or_trimmed',['../d5/d84/a01612.html#aa5749045920a10fbf4aaae21c7814e99',1,'Dune::IGANEW::DefaultTrim::IdType']]],
-  ['hostidx_4',['hostIdx',['../d2/d7b/a01672.html#adc0dcab64eb0ba31acdf936faced7e7f',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::HostVertexImpl']]],
-  ['hostintersection_5f_5',['hostIntersection_',['../da/dc7/a01548.html#ab068c40d5e59f99aa6e3c3fa19474ab1',1,'Dune::IGANEW::DefaultTrim::TrimmedLeafIntersection::hostIntersection_()'],['../d0/db9/a01552.html#a737e1e6456aebe166bec7887a57ec0e6',1,'Dune::IGANEW::DefaultTrim::TrimmedLevelIntersection::hostIntersection_()']]]
+  ['idset_5f_0',['idSet_',['../dd/d7a/a00990.html#a812c8226e0351361f780ec3df1181c62',1,'Dune::IGA::NURBSGrid']]],
+  ['indexmap_5f_1',['indexMap_',['../d0/d2b/a01010.html#a90e3a8e72b603367b1ba87ed69011c82',1,'Dune::Vtk::DiscontinuousIgaDataCollector::indexMap_()'],['../de/d41/a01030.html#abcaf716a4faecc6bf4127a91a2b4c416',1,'Dune::Functions::NurbsPreBasis::indexMap_()']]],
+  ['indexset_5f_2',['indexSet_',['../dd/d7a/a00990.html#a916a632a13310ca395d1e35fbb859d6d',1,'Dune::IGA::NURBSGrid']]],
+  ['indices_5f_3',['indices_',['../d4/d5d/a01202.html#a59b9b6319b351827f6a45c1dc154ef01',1,'Dune::IGA::TrimmedSubGrid']]],
+  ['innerboundaries_4',['innerBoundaries',['../df/db5/a01158.html#a9ca88159d168b3842d724432008ad816',1,'Dune::IGA::Trim::ElementBoundaries']]],
+  ['isbound_5',['isBound',['../de/d02/a01026.html#a2e9ecefd3d1a91c0d053accc92f96035',1,'Dune::Functions::NurbsLocalFiniteElement']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hostortrimmed_0',['HostOrTrimmed',['../d5/d84/a01612.html#af37d7e0ce257bc811e6d6002335f512f',1,'Dune::IGANEW::DefaultTrim::IdType']]]
+  ['reader_0',['Reader',['../d6/db3/a00130.html#a1ef280a2762fbf1b3a46535ade3f8172',1,'Dune::Python::IGA']]]
 ];

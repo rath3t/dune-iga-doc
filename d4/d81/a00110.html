@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbspatchtransform.hh File Reference</title>
+<title>dune-iga: grid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -91,37 +84,25 @@ $(document).ready(function(){initNavTree('d4/d81/a00110.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">nurbspatchtransform.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">grid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d5/db1/a00140_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d0/dc2/a00104_source.html">dune/python/iga/gridenums.hh</a>&quot;</code><br />
+<code>#include &lt;<a class="el" href="../../d1/d09/a00077_source.html">dune/iga/io/ibra/ibrareader.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../df/d03/a00062_source.html">dune/iga/nurbsgrid.hh</a>&gt;</code><br />
+<code>#include &lt;dune/python/common/typeregistry.hh&gt;</code><br />
+<code>#include &lt;dune/python/grid/capabilities.hh&gt;</code><br />
+<code>#include &lt;dune/python/grid/enums.hh&gt;</code><br />
+<code>#include &lt;dune/python/grid/hierarchical.hh&gt;</code><br />
+<code>#include &lt;dune/python/pybind11/pybind11.h&gt;</code><br />
 </div>
 <p><a href="../../d4/d81/a00110_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune::IGANEW</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7/d40/a00236"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html">Dune::IGANEW::GeometryKernel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a32f8f310c48c22247e2072bd76abc0fb"><td class="memTemplParams" colspan="2">template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:a32f8f310c48c22247e2072bd76abc0fb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a32f8f310c48c22247e2072bd76abc0fb">Dune::IGANEW::GeometryKernel::transform</a> (const NURBSPatch&lt; dim_, dimworld_, ScalarType &gt; &amp;patch, const std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt; &amp;newDomain=std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt;{})</td></tr>
-<tr class="separator:a32f8f310c48c22247e2072bd76abc0fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d4/d81/a00110.html">nurbspatchtransform.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../d4/d81/a00110.html">grid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

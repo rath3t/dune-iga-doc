@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['hessian_0',['Hessian',['../d2/d20/a01096.html#a7a08b1313e9df7edeb0575148d806df1',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::Hessian()'],['../d2/dd7/a01108.html#a9077658083f703980b8f29df51a17291',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::Hessian()'],['../d4/dd5/a01244.html#a9c70ce8f0fce6a8f1da7ec5f468d43e5',1,'Dune::IGANEW::PatchGridGeometry::Hessian()'],['../db/dfd/a01608.html#ab04cf69eee0107cf00197152deb6b68d',1,'Dune::IGANEW::DefaultTrim::TrimmedLocalGeometryImpl::Hessian()'],['../df/de0/a01728.html#a6d86a57ccdd8c1da68f9a0eb235eb33a',1,'Dune::IGANEW::PatchGridLocalGeometry::Hessian()']]],
-  ['hierarchiciterator_1',['HierarchicIterator',['../d0/d67/a01232.html#a6972e3c8f0201e292aefa027df6de231',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::HierarchicIterator()'],['../da/ddf/a01648.html#abb5fd53710093b5515cd70ded5465ccf',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::HierarchicIterator()'],['../d9/d31/a01208.html#a7d2aac0a12948deb67ed3ee62d4eb010',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily::HierarchicIterator()']]],
-  ['hostentity_2',['HostEntity',['../da/ddc/a01492.html#a5799aa605821514d8e3187b48e9474f0',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['hostgrid_3',['HostGrid',['../d9/d34/a01524.html#a58fb99ef39eadd7a6828912da56ac889',1,'Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet::HostGrid()'],['../d9/d49/a01696.html#a4172cb3084650b89b300de72b9f436d4',1,'Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet::HostGrid()']]],
-  ['hostidtype_4',['HostIdType',['../d0/dc0/a01652.html#acb75cd5dd00bddc2c344e87d3f70f18b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::HostIdType()'],['../d6/d5e/a01660.html#a59ef4f9ce5f718431907dd9ffdaffda6',1,'Dune::IGANEW::DefaultTrim::Trimmer::HostIdType()']]],
-  ['hostleafintersection_5',['HostLeafIntersection',['../d0/dc0/a01652.html#a089d73aa9079baecb1058dcaf1f226c1',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits']]],
-  ['hostlevelintersection_6',['HostLevelIntersection',['../d0/dc0/a01652.html#a1b30b00d6647a9d357414e7732699ae9',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits']]],
-  ['hostparameterspacegridentity_7',['HostParameterSpaceGridEntity',['../d5/d8d/a01656.html#aab4cb632ef129529c8bc5f5c3a9bcf66',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]]
+  ['hessian_0',['Hessian',['../d5/d4c/a01058.html#a6a06a62665c2a32aa4142181097d87e8',1,'Dune::IGA::NURBSGeometry']]],
+  ['hierarchiciterator_1',['HierarchicIterator',['../d7/df7/a01074.html#a8a2761be01e84cab4cfca1dbb96f1ec1',1,'Dune::IGA::NURBSGridEntity&lt; 0, dim, GridImpl &gt;::HierarchicIterator()'],['../d6/dea/a01094.html#a0cddf5c098c2b3921fa183671d110f69',1,'NurbsGridTraits::HierarchicIterator()']]]
 ];

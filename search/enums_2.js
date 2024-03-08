@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['intersectioncurveandline_0',['IntersectionCurveAndLine',['../d3/d42/a00235.html#a21ad9f3f2161548e10add5e90e558761',1,'Dune::IGANEW']]]
+  ['type_0',['Type',['../d8/dfa/a00121.html#a7e1d9b847ff31435dac790c39d02451f',1,'Dune::IGA::Ibra']]]
 ];

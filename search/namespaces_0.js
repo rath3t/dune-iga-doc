@@ -1,19 +1,13 @@
 var searchData=
 [
-  ['basisfactory_0',['BasisFactory',['../d6/d22/a00245.html',1,'Dune::Functions']]],
-  ['capabilities_1',['Capabilities',['../d6/db6/a00241.html',1,'Dune']]],
-  ['concept_2',['Concept',['../d9/d21/a00240.html',1,'Dune::IGANEW']]],
-  ['defaulttrim_3',['DefaultTrim',['../dc/ded/a00252.html',1,'Dune::IGANEW']]],
-  ['dune_4',['Dune',['../da/d31/a00234.html',1,'']]],
-  ['functions_5',['Functions',['../d2/dc8/a00242.html',1,'Dune']]],
-  ['geometrykernel_6',['GeometryKernel',['../d7/d40/a00236.html',1,'Dune::IGANEW']]],
-  ['ibra_7',['Ibra',['../dd/dd7/a00248.html',1,'Dune::IGA::Ibra'],['../d6/d08/a00244.html',1,'Dune::IGANEW::Ibra']]],
-  ['identitytrim_8',['IdentityTrim',['../d6/d82/a00243.html',1,'Dune::IGANEW']]],
-  ['iga_9',['IGA',['../d0/d1f/a00247.html',1,'Dune::IGA'],['../d9/d39/a00257.html',1,'Dune::Python::IGA']]],
-  ['iganew_10',['IGANEW',['../d3/d42/a00235.html',1,'Dune']]],
-  ['python_11',['Python',['../d0/def/a00256.html',1,'Dune']]],
-  ['splines_12',['Splines',['../d0/da7/a00250.html',1,'Dune::IGANEW']]],
-  ['trim_13',['Trim',['../de/dbc/a00249.html',1,'Dune::IGA::Trim'],['../d4/d04/a00255.html',1,'Dune::IGANEW::Trim']]],
-  ['util_14',['Util',['../d7/d03/a00254.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['utilities_15',['Utilities',['../d4/d08/a00237.html',1,'Dune::IGANEW']]]
+  ['basisfactory_0',['BasisFactory',['../dc/dfe/a00125.html',1,'Dune::Functions']]],
+  ['concept_1',['Concept',['../d1/d88/a00128.html',1,'Dune::IGA']]],
+  ['dune_2',['Dune',['../d8/d87/a00118.html',1,'']]],
+  ['functions_3',['Functions',['../da/d72/a00124.html',1,'Dune']]],
+  ['ibra_4',['Ibra',['../d8/dfa/a00121.html',1,'Dune::IGA']]],
+  ['iga_5',['IGA',['../df/d6a/a00119.html',1,'Dune::IGA'],['../d6/db3/a00130.html',1,'Dune::Python::IGA']]],
+  ['python_6',['Python',['../d9/d47/a00129.html',1,'Dune']]],
+  ['trim_7',['Trim',['../df/dcd/a00127.html',1,'Dune::IGA']]],
+  ['utilities_8',['Utilities',['../d4/d98/a00120.html',1,'Dune::IGA']]],
+  ['vtk_9',['Vtk',['../df/dc8/a00122.html',1,'Dune']]]
 ];

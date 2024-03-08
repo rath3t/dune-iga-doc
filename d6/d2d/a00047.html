@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: clipelementrectangle.hh File Reference</title>
+<title>dune-iga: bsplinealgorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -92,41 +85,62 @@ $(document).ready(function(){initNavTree('d6/d2d/a00047.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">clipelementrectangle.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">bsplinealgorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;clipper2/clipper.h&gt;</code><br />
-<code>#include &lt;variant&gt;</code><br />
-<code>#include &quot;<a class="el" href="../../d5/de0/a00050_source.html">cliputils.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;concepts&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d52/a00023_source.html">dune/iga/utils/concepts.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
 <code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/d3e/a00116_source.html">dune/iga/geometrykernel/findintersection.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d6/d2d/a00047_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d40/a00946.html">Dune::IGA::BsplineBasis1D&lt; ScalarType_ &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One dimensional b-spline basis.  <a href="../../da/d40/a00946.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune</a></td></tr>
+<tr class="memitem:d8/d87/a00118"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/a00118.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune::IGANEW</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:dc/ded/a00252"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/ded/a00252.html">Dune::IGANEW::DefaultTrim</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7/d03/a00254"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html">Dune::IGANEW::DefaultTrim::Util</a></td></tr>
+<tr class="memitem:df/d6a/a00119"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4f65cad383549769cbe786b60c31e479"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d03/a00254.html#a4f65cad383549769cbe786b60c31e479">Dune::IGANEW::DefaultTrim::Util::clipElementRectangle</a> (const auto &amp;element, const auto &amp;patchTrimData) -&gt; std::tuple&lt; ElementTrimFlag, ClippingResult &gt;</td></tr>
-<tr class="separator:a4f65cad383549769cbe786b60c31e479"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38d1fb2831ca0dbfa925c4858576a99b"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a38d1fb2831ca0dbfa925c4858576a99b"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a38d1fb2831ca0dbfa925c4858576a99b">Dune::IGA::findSpanCorrected</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, int offset=0)</td></tr>
+<tr class="memdesc:a38d1fb2831ca0dbfa925c4858576a99b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u -p+1-times- returned -p+1-times-.  <a href="../../df/d6a/a00119.html#a38d1fb2831ca0dbfa925c4858576a99b">More...</a><br /></td></tr>
+<tr class="separator:a38d1fb2831ca0dbfa925c4858576a99b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a554d684e12126174010f2a98d8136a3d"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a554d684e12126174010f2a98d8136a3d"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a554d684e12126174010f2a98d8136a3d">Dune::IGA::findSpanUncorrected</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, int offset=0)</td></tr>
+<tr class="separator:a554d684e12126174010f2a98d8136a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac18a8662488d7f3817b559d81efcc445"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
+requires (dim2 == dim)</td></tr>
+<tr class="memitem:ac18a8662488d7f3817b559d81efcc445"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#ac18a8662488d7f3817b559d81efcc445">Dune::IGA::findSpanCorrected</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
+<tr class="memdesc:ac18a8662488d7f3817b559d81efcc445"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="../../df/d6a/a00119.html#a38d1fb2831ca0dbfa925c4858576a99b" title="Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than...">findSpanCorrected()</a> but for dim - knotvectors <br  />
+  <a href="../../df/d6a/a00119.html#ac18a8662488d7f3817b559d81efcc445">More...</a><br /></td></tr>
+<tr class="separator:ac18a8662488d7f3817b559d81efcc445"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5fe5465b190549a27424a17e79029ace"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
+requires (dim2 == dim)</td></tr>
+<tr class="memitem:a5fe5465b190549a27424a17e79029ace"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a5fe5465b190549a27424a17e79029ace">Dune::IGA::findSpanUncorrected</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
+<tr class="memdesc:a5fe5465b190549a27424a17e79029ace"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="../../df/d6a/a00119.html#a554d684e12126174010f2a98d8136a3d">findSpanUncorrected()</a> but for dim - knotvectors <br  />
+  <a href="../../df/d6a/a00119.html#a5fe5465b190549a27424a17e79029ace">More...</a><br /></td></tr>
+<tr class="separator:a5fe5465b190549a27424a17e79029ace"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../dir_75403dd546d989c4e56d84af3932dae7.html">trimmingutils</a></li><li class="navelem"><a class="el" href="../../d6/d2d/a00047.html">clipelementrectangle.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d6/d2d/a00047.html">bsplinealgorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

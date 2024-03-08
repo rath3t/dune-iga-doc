@@ -1,7 +1,19 @@
 var searchData=
 [
-  ['geohelper_2ehh_0',['geohelper.hh',['../dc/dfe/a00125.html',1,'']]],
-  ['grid_2ehh_1',['grid.hh',['../d7/d46/a00002.html',1,'']]],
-  ['gridcapabilities_2ehh_2',['gridcapabilities.hh',['../d6/db8/a00158.html',1,'']]],
-  ['gridenums_2ehh_3',['gridenums.hh',['../dd/dad/a00005.html',1,'']]]
+  ['nurbsalgorithms_2ehh_0',['nurbsalgorithms.hh',['../da/d24/a00068.html',1,'']]],
+  ['nurbsbasis_2ehh_1',['nurbsbasis.hh',['../d7/d46/a00002.html',1,'']]],
+  ['nurbsgeometry_2ehh_2',['nurbsgeometry.hh',['../d5/df9/a00044.html',1,'']]],
+  ['nurbsgrid_2ehh_3',['nurbsgrid.hh',['../df/d03/a00062.html',1,'']]],
+  ['nurbsgridentity_2ehh_4',['nurbsgridentity.hh',['../de/de1/a00065.html',1,'']]],
+  ['nurbsgridindexsets_2ehh_5',['nurbsgridindexsets.hh',['../d1/d44/a00098.html',1,'']]],
+  ['nurbsgridleafiterator_2ehh_6',['nurbsgridleafiterator.hh',['../dd/d32/a00041.html',1,'']]],
+  ['nurbsgridtraits_2ehh_7',['nurbsgridtraits.hh',['../d0/d89/a00071.html',1,'']]],
+  ['nurbsidset_2ehh_8',['nurbsidset.hh',['../d3/d8b/a00059.html',1,'']]],
+  ['nurbsintersection_2ehh_9',['nurbsintersection.hh',['../d8/d41/a00038.html',1,'']]],
+  ['nurbsleafgridview_2ehh_10',['nurbsleafgridview.hh',['../dd/dad/a00005.html',1,'']]],
+  ['nurbslocalgeometry_2ehh_11',['nurbslocalgeometry.hh',['../d9/d77/a00095.html',1,'']]],
+  ['nurbspatch_2ehh_12',['nurbspatch.hh',['../db/dab/a00089.html',1,'']]],
+  ['nurbspatchgeometry_2ehh_13',['nurbspatchgeometry.hh',['../d9/d2e/a00056.html',1,'']]],
+  ['nurbstrimboundary_2ehh_14',['nurbstrimboundary.hh',['../d4/d51/a00017.html',1,'']]],
+  ['nurbstrimmer_2ehh_15',['nurbstrimmer.hh',['../d2/de7/a00014.html',1,'']]]
 ];

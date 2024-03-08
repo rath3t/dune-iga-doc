@@ -1,11 +1,9 @@
 var a00101 =
 [
-    [ "Dune::IGANEW::MultiDimensionalNet< netdim, ElementType, Container >", "dd/d00/a01776.html", "dd/d00/a01776" ],
-    [ "Dune::IGANEW::MultiDimensionalNetIndex< netdim >", "d0/dce/a01780.html", "d0/dce/a01780" ],
-    [ "dot", "d4/d3a/a00101.html#aec86687240a124712c5daf95ff566abb", null ],
-    [ "MultiDimensionalNet", "d4/d3a/a00101.html#a4549270737e222aedcbf2721e08b3d06", null ],
-    [ "operator*", "d4/d3a/a00101.html#a3f6e129217a58dc89862cc33b12f8885", null ],
-    [ "operator*", "d4/d3a/a00101.html#a33cc687d08f824af43e22f0d3eb68473", null ],
-    [ "operator-", "d4/d3a/a00101.html#a1864570b0dc1ce2ff4a3140a27211792", null ],
-    [ "operator/", "d4/d3a/a00101.html#a010894b51f31c1163c47566396c4c13e", null ]
+    [ "Dune::IGA::ControlPoint< VT >", "df/d39/a00950.html", "df/d39/a00950" ],
+    [ "operator*", "d4/d3a/a00101.html#a89768292715310b5f770da3658c84a73", null ],
+    [ "operator*", "d4/d3a/a00101.html#a3b3404cd6766af872a3bd7a3efbdfbb7", null ],
+    [ "operator+", "d4/d3a/a00101.html#ab9a55402086df77d594e7c5a6cf05fa7", null ],
+    [ "operator-", "d4/d3a/a00101.html#a30e9a9595254e0a0ef37a8014ea2b1c6", null ],
+    [ "operator-", "d4/d3a/a00101.html#a7e68af86ba6edc7bb6eecc3debace414", null ]
 ];

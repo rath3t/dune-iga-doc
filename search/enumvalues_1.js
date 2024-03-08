@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['disjoint_0',['disjoint',['../d3/d42/a00235.html#a21ad9f3f2161548e10add5e90e558761aff8d48ba74b051ac230fb0c28ae11984',1,'Dune::IGANEW']]]
+  ['empty_0',['empty',['../df/d6a/a00119.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9',1,'Dune::IGA']]]
 ];

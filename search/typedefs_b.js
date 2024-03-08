@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['node_0',['Node',['../d7/d5a/a01204.html#a92687205867b4a7ab813913a6bddbae0',1,'Dune::Functions::NurbsPreBasis::Node()'],['../d7/d5a/a01204.html#a92687205867b4a7ab813913a6bddbae0',1,'Dune::Functions::NurbsPreBasis::Node()']]],
-  ['normalvector_1',['NormalVector',['../da/de0/a01248.html#ae9cd5abd8df4334dc4d00aa3f1164c3c',1,'Dune::IGANEW::PatchGridLeafIntersection::NormalVector()'],['../d0/d33/a01252.html#a86583379bffa4094c27aebbd41d860f3',1,'Dune::IGANEW::PatchGridLevelIntersection::NormalVector()'],['../da/dc7/a01548.html#a3def2b3a1eccb28dd4a1d6ce5612562c',1,'Dune::IGANEW::DefaultTrim::TrimmedLeafIntersection::NormalVector()'],['../d0/db9/a01552.html#a4a2db92cb41b28d4cc95f269a5c886ca',1,'Dune::IGANEW::DefaultTrim::TrimmedLevelIntersection::NormalVector()']]],
-  ['nurbs_2',['Nurbs',['../d2/d20/a01096.html#a76b9523737418f580191951835cc6eca',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::Nurbs()'],['../d2/dd7/a01108.html#a8607964bdc20de42b3237db18707cbec',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::Nurbs()']]],
-  ['nurbsbasis_3',['NurbsBasis',['../d2/dc8/a00242.html#a4e3cfaeb5308fbfa024b5ec8085912d1',1,'Dune::Functions']]],
-  ['nurbslocalview_4',['NurbsLocalView',['../d2/d20/a01096.html#a8fc5afe06a762b8e4d935d3ecf18df16',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::NurbsLocalView()'],['../d2/dd7/a01108.html#a0920109d968d6898aaaf0c78f482efbd',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::NurbsLocalView()']]]
+  ['patchdata_0',['PatchData',['../d4/dd0/a00994.html#ac5a13cf5d977000274c321869942cc52',1,'Dune::IGA::IbraReader::PatchData()'],['../d2/d7b/a01150.html#af76416410208288f6548c1d726bf37dd',1,'Dune::IGA::Boundary::PatchData()']]],
+  ['point_1',['Point',['../d0/d56/a01014.html#a458043700435144746a87ae7c201e4a5',1,'Dune::IGA::IGARefinedGeometries::Point()'],['../d2/d7b/a01150.html#add43ef27f7d5c9bf7e9b5083b84cb5c3',1,'Dune::IGA::Boundary::Point()'],['../d4/d13/a01162.html#a0a4b9dacafd634c66043ea047fed6b66',1,'Dune::IGA::Trim::NURBSPatchTrimmer::Point()'],['../d4/d5d/a01202.html#a2d5a17e8f71a34ac9ba492f2b441a536',1,'Dune::IGA::TrimmedSubGrid::Point()']]],
+  ['pointset_2',['PointSet',['../d0/d2b/a01010.html#ada1e06e4d2fe8194d01d2abf4f52b8ea',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]]
 ];

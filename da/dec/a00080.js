@@ -1,4 +1,4 @@
 var a00080 =
 [
-    [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "df/de0/a01728.html", "df/de0/a01728" ]
+    [ "Dune::Vtk::DiscontinuousIgaDataCollector< GridView >", "d0/d2b/a01010.html", "d0/d2b/a01010" ]
 ];

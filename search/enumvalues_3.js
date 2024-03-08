@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['full_0',['full',['../d0/d1f/a00247.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0',1,'Dune::IGA::full()'],['../dc/ded/a00252.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0',1,'Dune::IGANEW::DefaultTrim::full()']]]
+  ['json_0',['json',['../d6/db3/a00130.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54',1,'Dune::Python::IGA']]]
 ];

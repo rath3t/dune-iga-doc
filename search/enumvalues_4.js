@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['host_0',['host',['../d5/d84/a01612.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e',1,'Dune::IGANEW::DefaultTrim::IdType::host()'],['../d5/d84/a01612.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e',1,'Dune::IGANEW::DefaultTrim::IdType::host()']]]
+  ['notype_0',['NoType',['../d8/dfa/a00121.html#a7e1d9b847ff31435dac790c39d02451fa7605933166d0cfdbd2af7bd1522c0b74',1,'Dune::IGA::Ibra']]],
+  ['nurbscurvegeometry2d_1',['NurbsCurveGeometry2D',['../d8/dfa/a00121.html#a7e1d9b847ff31435dac790c39d02451fa9dc5fac3529c3d8438040dac00d68d0f',1,'Dune::IGA::Ibra']]],
+  ['nurbssurfacegeometry3d_2',['NurbsSurfaceGeometry3D',['../d8/dfa/a00121.html#a7e1d9b847ff31435dac790c39d02451fadbcd2df59919078c8999bcf4522f3a0f',1,'Dune::IGA::Ibra']]]
 ];

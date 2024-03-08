@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['matrixhelper_0',['MatrixHelper',['../d2/d20/a01096.html#a0f948783d54a5f2f81586b756065bd25',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::MatrixHelper()'],['../d2/dd7/a01108.html#afba9d9d883f133c17ebbe7279f5ab3ea',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::MatrixHelper()']]]
+  ['node_0',['Node',['../de/d41/a01030.html#a92687205867b4a7ab813913a6bddbae0',1,'Dune::Functions::NurbsPreBasis']]],
+  ['nurbsbasis_1',['NurbsBasis',['../da/d72/a00124.html#a4e3cfaeb5308fbfa024b5ec8085912d1',1,'Dune::Functions']]],
+  ['nurbspatchdatatype_2',['NURBSPatchDataType',['../dd/d7a/a00990.html#a6646d70d41a63bef989e22f4cc5f611a',1,'Dune::IGA::NURBSGrid']]]
 ];

@@ -1,20 +1,6 @@
 var searchData=
 [
-  ['id_0',['id',['../d5/d84/a01612.html#a6483db5ee79f980bc83e175d9ea1ca34',1,'Dune::IGANEW::DefaultTrim::IdType::id()'],['../da/df2/a01620.html#a6e831446cb992b818a7178b5f44f1dea',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl::id()'],['../dd/deb/a01628.html#afedf80f655d9b417968d336cd7d11fc2',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;::id()'],['../d0/deb/a01508.html#affa616d0583f64f40d8d09ddcfa231f0',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer::StringAndIndex::id()']]],
-  ['idtoedgeinfomap_1',['idToEdgeInfoMap',['../dd/d05/a01504.html#ace7ee3ecbf72b6be71ed0abc62f1985e',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['idtoelementinfomap_2',['idToElementInfoMap',['../dd/d05/a01504.html#a960a6c561ba1bf70678a3ae87f37698f',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['idtovertexinfomap_3',['idToVertexInfoMap',['../dd/d05/a01504.html#a0abb70127811f0814d305b8116ae7535',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['idx_4',['idx',['../d1/dde/a01496.html#af5a80435612c1fc90b0a850f28f0b3cc',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::VertexInfo::idx()'],['../de/d65/a01500.html#ad43929b21c1ab86f6916ce783679cfa6',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::EdgeInfo::idx()']]],
-  ['impl_5f_5',['impl_',['../d2/d71/a01684.html#a0c4eab26b85c2897a7f240bc77fbbdce',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant']]],
-  ['indexinlvlstorage_6',['indexInLvlStorage',['../da/df2/a01620.html#a8632b962eb272ced708b1ca3d40df35e',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl::indexInLvlStorage()'],['../dd/deb/a01628.html#a6ef4fd917241bc827d4701e24365e695',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; HostIdType, 0 &gt;::indexInLvlStorage()']]],
-  ['indexmap_5f_7',['indexMap_',['../d7/d5a/a01204.html#a119f358f55085b5ee0ddccbb9653cf64',1,'Dune::Functions::NurbsPreBasis::indexMap_()'],['../d7/d5a/a01204.html#abcaf716a4faecc6bf4127a91a2b4c416',1,'Dune::Functions::NurbsPreBasis::indexMap_()']]],
-  ['indexoffset_8',['indexOffSet',['../d8/d22/a01584.html#a3216a6d4d58aa5c46871b2ddf7d24a39',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::CurveManager']]],
-  ['innerboundaries_9',['innerBoundaries',['../d5/dec/a01416.html#a9ca88159d168b3842d724432008ad816',1,'Dune::IGA::Trim::ElementBoundaries']]],
-  ['isalwaystrivial_10',['isAlwaysTrivial',['../d3/d3e/a01644.html#aad7d434974cd5617c2b39f056c2166ab',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::isAlwaysTrivial()'],['../d6/d5e/a01660.html#a19d448d86567774f1bbaf473cb2c35cf',1,'Dune::IGANEW::DefaultTrim::Trimmer::isAlwaysTrivial()'],['../d9/d0d/a01748.html#a99084fdae1afa36b668cb4d0a8269cfc',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::isAlwaysTrivial()']]],
-  ['isbound_11',['isBound',['../d1/d56/a01308.html#a2e9ecefd3d1a91c0d053accc92f96035',1,'Dune::Functions::NurbsLocalFiniteElement']]],
-  ['isconnected_12',['isConnected',['../d3/dbd/a01100.html#a1cd6d8bae99cc041405a7c3c3f302456',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::ConnectionResult']]],
-  ['ishost_13',['isHost',['../d1/dde/a01496.html#a64629d8da22a27ccf67af08159e24fa4',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::VertexInfo::isHost()'],['../de/d65/a01500.html#a02b7ec34c74635fc1ed7ba715dbe6870',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::EdgeInfo::isHost()']]],
-  ['islocalgeometrylinear_14',['isLocalGeometryLinear',['../d3/d3e/a01644.html#afae9c6f8d7c0ee1fe4e25ca9107b7ae3',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::isLocalGeometryLinear()'],['../d6/d5e/a01660.html#ae0b542b47298c81254625ee9ec5cd97d',1,'Dune::IGANEW::DefaultTrim::Trimmer::isLocalGeometryLinear()'],['../d9/d0d/a01748.html#add1db9dcb2e58e932db509af1c627e25',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::isLocalGeometryLinear()']]],
-  ['istrimmed_15',['isTrimmed',['../de/d65/a01500.html#ac535a8b834884c4796d0af8986d3a409',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::EdgeInfo']]],
-  ['isvalid_16',['isValid',['../d3/d3e/a01644.html#ab4ea78f75b39a41886e433d0adfb1ce3',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::isValid()'],['../d9/d0d/a01748.html#ae982da96eabc2c0448ba1a179d24eb1c',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::isValid()']]]
+  ['key_0',['key',['../df/d9c/a00958.html#ad3bff32c80e0b2c0c66f696da22af6a3',1,'Dune::IGA::Ibra::IbraBase']]],
+  ['knots_1',['knots',['../df/d88/a00962.html#a957ffc4bab5a49b687d8d302938a364c',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['knotspans_2',['knotSpans',['../d3/ddc/a01142.html#a28f83a6b5630d77034a17d61eb024a54',1,'Dune::IGA::NURBSPatchData']]]
 ];

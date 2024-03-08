@@ -1,5 +1,6 @@
 var a00104 =
 [
-    [ "is_instantiation_of< Template, T >", "d6/d3d/a01784.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "d4/d77/a01788.html", null ]
+    [ "Reader", "d0/dc2/a00104.html#a1ef280a2762fbf1b3a46535ade3f8172", [
+      [ "json", "d0/dc2/a00104.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
+    ] ]
 ];

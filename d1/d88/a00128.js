@@ -1,9 +1,13 @@
 var a00128 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d9/d67/a01080.html", "d9/d67/a01080" ],
-    [ "operator*", "d1/d88/a00128.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "d1/d88/a00128.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "d1/d88/a00128.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "d1/d88/a00128.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "d1/d88/a00128.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "Vector", "d7/dbf/a01239.html", null ],
+    [ "ControlPoint", "d5/d6e/a01240.html", null ],
+    [ "MultiplyAble", "d3/d07/a01241.html", null ],
+    [ "AddAble", "d7/dc5/a01242.html", null ],
+    [ "SubstractAble", "d8/db0/a01243.html", null ],
+    [ "MultiplyAssignAble", "d4/dd5/a01244.html", null ],
+    [ "DivideAssignAble", "d1/d31/a01245.html", null ],
+    [ "DivideAble", "d7/d04/a01246.html", null ],
+    [ "NurbsGeometry", "dd/d95/a01247.html", null ],
+    [ "This", "da/de0/a01248.html", null ]
 ];

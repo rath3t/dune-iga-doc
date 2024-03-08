@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: typetraits.hh Source File</title>
+<title>dune-iga: gridenums.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -91,26 +84,25 @@ $(document).ready(function(){initNavTree('d0/dc2/a00104_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">typetraits.hh</div></div>
+  <div class="headertitle"><div class="title">gridenums.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d0/dc2/a00104.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>...&gt; <span class="keyword">class </span>Template, <span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="../../d6/d3d/a01784.html">    7</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d6/d3d/a01784.html">is_instantiation_of</a> : std::false_type {};</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">template</span> &lt;<span class="keyword">typename</span>...&gt; <span class="keyword">class </span>Template, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d4/d77/a01788.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d6/d3d/a01784.html">is_instantiation_of</a>&lt;Template, Template&lt;Args...&gt; &gt; : std::true_type {};</div>
-<div class="ttc" id="aa01784_html"><div class="ttname"><a href="../../d6/d3d/a01784.html">is_instantiation_of</a></div><div class="ttdef"><b>Definition:</b> typetraits.hh:7</div></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="../../d9/d47/a00129.html">    5</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/db3/a00130.html">Dune::Python::IGA</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="../../d6/db3/a00130.html#a1ef280a2762fbf1b3a46535ade3f8172">    6</a></span>  <span class="keyword">enum class</span> <a class="code hl_enumeration" href="../../d6/db3/a00130.html#a1ef280a2762fbf1b3a46535ade3f8172">Reader</a> { json };</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>}  <span class="comment">// namespace Dune::Python::IGA</span></div>
+<div class="ttc" id="aa00130_html"><div class="ttname"><a href="../../d6/db3/a00130.html">Dune::Python::IGA</a></div><div class="ttdef"><b>Definition:</b> gridenums.hh:5</div></div>
+<div class="ttc" id="aa00130_html_a1ef280a2762fbf1b3a46535ade3f8172"><div class="ttname"><a href="../../d6/db3/a00130.html#a1ef280a2762fbf1b3a46535ade3f8172">Dune::Python::IGA::Reader</a></div><div class="ttdeci">Reader</div><div class="ttdef"><b>Definition:</b> gridenums.hh:6</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_054fedf05f142c88b967e78541d2ed3d.html">utils</a></li><li class="navelem"><a class="el" href="../../d0/dc2/a00104.html">typetraits.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../d0/dc2/a00104.html">gridenums.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
