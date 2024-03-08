@@ -53,7 +53,7 @@ var searchData=
   ['nurbsleafgridview_2ehh_50',['nurbsleafgridview.hh',['../dd/dad/a00005.html',1,'']]],
   ['nurbsleafgridview_3c_20const_20dune_3a_3aiga_3a_3anurbsgrid_20_3e_51',['NURBSLeafGridView&lt; const Dune::IGA::NURBSGrid &gt;',['../db/d1e/a01126.html',1,'Dune::IGA']]],
   ['nurbsleafgridviewtraits_52',['NurbsLeafGridViewTraits',['../d6/d40/a01114.html',1,'Dune::IGA']]],
-  ['nurbslocalbasis_53',['NurbsLocalBasis',['../de/d91/a01034.html',1,'Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;'],['../de/d91/a01034.html#a04697d3b6fd637d03c4207a611e6560d',1,'Dune::Functions::NurbsLocalBasis::NurbsLocalBasis()']]],
+  ['nurbslocalbasis_53',['NurbsLocalBasis',['../de/d91/a01034.html',1,'Dune::Functions::NurbsLocalBasis&lt; GV, R &gt;'],['../de/d91/a01034.html#ad119ff60c7cbee7b6629d14495ae1049',1,'Dune::Functions::NurbsLocalBasis::NurbsLocalBasis()']]],
   ['nurbslocalbasis_3c_20gv_2c_20double_20_3e_54',['NurbsLocalBasis&lt; GV, double &gt;',['../de/d91/a01034.html',1,'Dune::Functions']]],
   ['nurbslocalcoefficients_55',['NurbsLocalCoefficients',['../d4/dbc/a01038.html',1,'Dune::Functions']]],
   ['nurbslocalfiniteelement_56',['NurbsLocalFiniteElement',['../de/d02/a01026.html',1,'Dune::Functions::NurbsLocalFiniteElement&lt; GV, R &gt;'],['../de/d02/a01026.html#af9a0e84df8545f34e979a84ecd0ac1fc',1,'Dune::Functions::NurbsLocalFiniteElement::NurbsLocalFiniteElement(const NurbsPreBasis&lt; GV, R &gt; &amp;preBasis)'],['../de/d02/a01026.html#a609ff853577297d1a0ead1e280ee7e1c',1,'Dune::Functions::NurbsLocalFiniteElement::NurbsLocalFiniteElement(const NurbsLocalFiniteElement &amp;other)']]],
