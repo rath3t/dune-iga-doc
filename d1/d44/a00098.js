@@ -1,4 +1,4 @@
 var a00098 =
 [
-    [ "Dune::IGA::NURBSGridLeafIndexSet< GridImpl >", "db/dba/a01078.html", "db/dba/a01078" ]
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "de/dda/a01768.html", "de/dda/a01768" ]
 ];

@@ -1,9 +1,11 @@
 var a00062 =
 [
-    [ "Dune::IGA::EntitySeedStruct< cd, GridImpl >", "d4/d8a/a01062.html", "d4/d8a/a01062" ],
-    [ "Dune::IGA::NURBSGrid< dim, dimworld, ScalarType >", "dd/d7a/a00990.html", "dd/d7a/a00990" ],
-    [ "Dune::IGA::NurbsGridFamily< dim, dimworld, ScalarType >", "d0/dfb/a01066.html", "d0/dfb/a01066" ],
-    [ "gridEntityTupleGenerator", "df/d03/a00062.html#ab372b8b34cfa334f8e7767bacec8170a", null ],
-    [ "leafGridView", "df/d03/a00062.html#a8571f4f13050af2bf0d0f9ac38132765", null ],
-    [ "levelGridView", "df/d03/a00062.html#a335f93275773dac8911e330abef913a8", null ]
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >", "da/ddc/a01492.html", "da/ddc/a01492" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "d1/dde/a01496.html", "d1/dde/a01496" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "de/d65/a01500.html", "de/d65/a01500" ],
+    [ "ElementTrimFlag", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7", [
+      [ "full", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ]
 ];

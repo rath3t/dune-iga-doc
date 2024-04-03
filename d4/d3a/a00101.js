@@ -1,9 +1,12 @@
 var a00101 =
 [
-    [ "Dune::IGA::ControlPoint< VT >", "df/d39/a00950.html", "df/d39/a00950" ],
-    [ "operator*", "d4/d3a/a00101.html#a89768292715310b5f770da3658c84a73", null ],
-    [ "operator*", "d4/d3a/a00101.html#a3b3404cd6766af872a3bd7a3efbdfbb7", null ],
-    [ "operator+", "d4/d3a/a00101.html#ab9a55402086df77d594e7c5a6cf05fa7", null ],
-    [ "operator-", "d4/d3a/a00101.html#a30e9a9595254e0a0ef37a8014ea2b1c6", null ],
-    [ "operator-", "d4/d3a/a00101.html#a7e68af86ba6edc7bb6eecc3debace414", null ]
+    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d1/d38/a01480.html", "d1/d38/a01480" ],
+    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "d2/d21/a01484.html", "d2/d21/a01484" ],
+    [ "degreeElevate", "d4/d3a/a00101.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "d4/d3a/a00101.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "d4/d3a/a00101.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "generateRefinedKnots", "d4/d3a/a00101.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "d4/d3a/a00101.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "netOfSpan", "d4/d3a/a00101.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
+    [ "netOfSpan", "d4/d3a/a00101.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
 ];

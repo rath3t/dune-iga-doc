@@ -1,13 +1,13 @@
 var a00068 =
 [
-    [ "Dune::IGA::Nurbs< dim, ScalarType_ >", "d1/dd8/a01022.html", "d1/dd8/a01022" ],
-    [ "degreeElevate", "da/d24/a00068.html#a6f1ede550b5e459f413e960a999f25a2", null ],
-    [ "extractControlCoordinates", "da/d24/a00068.html#ae69f4e15f2e768387a5034f021325614", null ],
-    [ "extractWeights", "da/d24/a00068.html#a1ab46c78ab2f2ec50f81f90ed2ac2c57", null ],
-    [ "generateRefinedKnots", "da/d24/a00068.html#a6bf8c0c51afc7176fc90bc962b6325e3", null ],
-    [ "knotRefinement", "da/d24/a00068.html#ad0c595e4d7ef91c299d7f7fb1e3f4a7f", null ],
-    [ "makeCircularArc", "da/d24/a00068.html#a1eeaa4b0827547b46fa451ae2a522dac", null ],
-    [ "makeSurfaceOfRevolution", "da/d24/a00068.html#a16fe995511a81303451229eb2a5b7646", null ],
-    [ "netOfSpan", "da/d24/a00068.html#a79d76dbe4e2128adbb02832419716592", null ],
-    [ "netOfSpan", "da/d24/a00068.html#aab63c1e2b72ce4bc21247a1cd88ec362", null ]
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult", "dc/d71/a01664.html", "dc/d71/a01664" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex", "d7/d47/a01668.html", "d7/d47/a01668" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::HostVertexImpl", "d2/d7b/a01672.html", "d2/d7b/a01672" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl", "de/d3e/a01676.html", "de/d3e/a01676" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl", "d5/d83/a01680.html", "d5/d83/a01680" ],
+    [ "giveEdgeIdx", "da/d24/a00068.html#a55a9ec04149f78cad2fd07e790a81128", null ],
+    [ "isCornerVertex", "da/d24/a00068.html#a63be6569afc287df64dcdf64d4eb9853", null ],
+    [ "edgeDirections", "da/d24/a00068.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
+    [ "edgeLookUp", "da/d24/a00068.html#a16d111a10fb0652a5487a6116aeabb50", null ],
+    [ "vertexIndexMapping", "da/d24/a00068.html#a1af143e66845c6b725ae850a95388115", null ]
 ];

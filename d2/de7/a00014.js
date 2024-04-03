@@ -1,10 +1,15 @@
 var a00014 =
 [
-    [ "Dune::IGA::Trim::ElementBoundaries", "df/db5/a01158.html", "df/db5/a01158" ],
-    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "d4/d13/a01162.html", "d4/d13/a01162" ],
-    [ "ElementTrimFlag", "d2/de7/a00014.html#a34b2741ab599082a80dacc40c6e5069b", [
-      [ "full", "d2/de7/a00014.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "d2/de7/a00014.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "d2/de7/a00014.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ]
+    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d7/d41/a01312.html", "d7/d41/a01312" ],
+    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "d4/d49/a01316.html", "d4/d49/a01316" ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "df/dec/a01320.html", "df/dec/a01320" ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d1/d56/a01308.html", "d1/d56/a01308" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "d7/d5a/a01204.html", "d7/d5a/a01204" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >::DummyEmpty", "d9/d45/a01332.html", null ],
+    [ "Dune::Functions::NurbsNode< GV >", "d5/d53/a01324.html", "d5/d53/a01324" ],
+    [ "NurbsBasis", "d2/de7/a00014.html#a4e3cfaeb5308fbfa024b5ec8085912d1", null ],
+    [ "degreeElevate", "d2/de7/a00014.html#a8251927b1f371553dd15f9a42033b3bb", null ],
+    [ "nurbs", "d2/de7/a00014.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
+    [ "nurbs", "d2/de7/a00014.html#a31785bfc560a56b1ed5f0ae7b722ea37", null ],
+    [ "nurbs", "d2/de7/a00014.html#ad3edb7290cf6964618e46ba73da0e9ce", null ]
 ];

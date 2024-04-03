@@ -1,7 +1,6 @@
 var a00077 =
 [
-    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d4/dd0/a00994.html", "d4/dd0/a00994" ],
-    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d9a/a00998.html", "d9/d9a/a00998" ],
-    [ "Dune::JSONGridFactory< Grid_ >", "d2/dd5/a01002.html", "d2/dd5/a01002" ],
-    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/d81/a01006.html", "dc/d81/a01006" ]
+    [ "Dune::IGANEW::DefaultTrim::Parameter", "dd/d40/a01636.html", "dd/d40/a01636" ],
+    [ "Dune::IGANEW::DefaultTrim::IdType< HostIdType >", "d5/d84/a01612.html", "d5/d84/a01612" ],
+    [ "operator<", "d1/d09/a00077.html#ad60258d3c3cf850f549bd14af49382bb", null ]
 ];

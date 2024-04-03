@@ -1,6 +1,8 @@
 var a00104 =
 [
-    [ "Reader", "d0/dc2/a00104.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-      [ "json", "d0/dc2/a00104.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-    ] ]
+    [ "Dune::IGANEW::Splines::BsplineBasis< ScalarType_ >", "d0/d38/a01476.html", "d0/d38/a01476" ],
+    [ "createUniqueKnotSpans", "d0/dc2/a00104.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "findSpan", "d0/dc2/a00104.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "d0/dc2/a00104.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "multiplicity", "d0/dc2/a00104.html#a88473945faf4f3ad3a83f3491faf0782", null ]
 ];
