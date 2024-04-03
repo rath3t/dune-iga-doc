@@ -15,7 +15,7 @@ var a01220 =
     [ "degreeElevate", "db/d42/a01220.html#a0917a5f9ad0efb1030cc1d0e2c2d6ffe", null ],
     [ "degreeElevateOnAllLevels", "db/d42/a01220.html#a9db22ac9864cfd7b53eb2193527d0460", null ],
     [ "entity", "db/d42/a01220.html#a2d457c07b37f3fb5152f03340812785d", null ],
-    [ "getHostEntity", "db/d42/a01220.html#ad813123f0f356f5ed4abccff8087c779", null ],
+    [ "getHostEntity", "db/d42/a01220.html#af4f29442517e201dfa74fa83680bb4b2", null ],
     [ "getMark", "db/d42/a01220.html#af8764211d74a3288c548851606e4e3d7", null ],
     [ "ghostSize", "db/d42/a01220.html#aab69923b905f2f0ee815602572dc98dc", null ],
     [ "ghostSize", "db/d42/a01220.html#a9c187ce458995bb1dc03a8ebd57be115", null ],

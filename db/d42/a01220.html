@@ -271,11 +271,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0c7e86a92b4fc70de71ded8354bd461c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a074d812e3680e453e28f2a890e865ae7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d42/a01220.html#aaeed896fd519e449e047b50373f73533">ParameterSpaceGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d42/a01220.html#a074d812e3680e453e28f2a890e865ae7">parameterSpaceGrid</a> ()</td></tr>
 <tr class="separator:a074d812e3680e453e28f2a890e865ae7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad813123f0f356f5ed4abccff8087c779"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
-requires const</td></tr>
-<tr class="memitem:ad813123f0f356f5ed4abccff8087c779"><td class="memTemplItemLeft" align="right" valign="top">GridFamily::template hasHostEntity&lt; codim &gt; GridFamily::TrimmerTraits::template Codim&lt; codim &gt;::ParameterSpaceGridEntity &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d42/a01220.html#ad813123f0f356f5ed4abccff8087c779">getHostEntity</a> (const typename Traits::template Codim&lt; codim &gt;::Entity &amp;e) const</td></tr>
-<tr class="memdesc:ad813123f0f356f5ed4abccff8087c779"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hostgrid entity encapsulated in given <a class="el" href="../../db/d42/a01220.html" title="Provides a NURBS grid based on a single NURBS patch.">PatchGrid</a> entity.  <a href="../../db/d42/a01220.html#ad813123f0f356f5ed4abccff8087c779">More...</a><br /></td></tr>
-<tr class="separator:ad813123f0f356f5ed4abccff8087c779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4f29442517e201dfa74fa83680bb4b2"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
+requires (GridFamily::template hasHostEntity&lt;codim&gt;)</td></tr>
+<tr class="memitem:af4f29442517e201dfa74fa83680bb4b2"><td class="memTemplItemLeft" align="right" valign="top">const GridFamily::TrimmerTraits::template Codim&lt; codim &gt;::ParameterSpaceGridEntity &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/d42/a01220.html#af4f29442517e201dfa74fa83680bb4b2">getHostEntity</a> (const typename Traits::template Codim&lt; codim &gt;::Entity &amp;e) const</td></tr>
+<tr class="memdesc:af4f29442517e201dfa74fa83680bb4b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the hostgrid entity encapsulated in given <a class="el" href="../../db/d42/a01220.html" title="Provides a NURBS grid based on a single NURBS patch.">PatchGrid</a> entity.  <a href="../../db/d42/a01220.html#af4f29442517e201dfa74fa83680bb4b2">More...</a><br /></td></tr>
+<tr class="separator:af4f29442517e201dfa74fa83680bb4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a966177b89632af4b5196bdabad4f869f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d42/a01220.html#a966177b89632af4b5196bdabad4f869f">untrimmedElementNumbers</a> (int lvl) const</td></tr>
 <tr class="separator:a966177b89632af4b5196bdabad4f869f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08a7b0378ee770c7f4801a34c7273602"><td class="memItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d42/a01220.html#a08a7b0378ee770c7f4801a34c7273602">trimmer</a> () const</td></tr>
@@ -772,8 +772,8 @@ template&lt;class EntitySeed &gt; </div>
 
 </div>
 </div>
-<a id="ad813123f0f356f5ed4abccff8087c779" name="ad813123f0f356f5ed4abccff8087c779"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad813123f0f356f5ed4abccff8087c779">&#9670;&nbsp;</a></span>getHostEntity()</h2>
+<a id="af4f29442517e201dfa74fa83680bb4b2" name="af4f29442517e201dfa74fa83680bb4b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af4f29442517e201dfa74fa83680bb4b2">&#9670;&nbsp;</a></span>getHostEntity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -781,13 +781,13 @@ template&lt;class EntitySeed &gt; </div>
 template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename GridFamily_ = IdentityTrim::PatchGridFamily, typename ScalarType  = double&gt; </div>
 <div class="memtemplate">
 template&lt;int codim&gt; <br />
-requires const</div>
+requires (GridFamily::template hasHostEntity&lt;codim&gt;)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GridFamily::template hasHostEntity&lt; codim &gt; GridFamily::TrimmerTraits::template Codim&lt; codim &gt;::ParameterSpaceGridEntity &amp; <a class="el" href="../../db/d42/a01220.html">Dune::IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt;::getHostEntity </td>
+          <td class="memname">const GridFamily::TrimmerTraits::template Codim&lt; codim &gt;::ParameterSpaceGridEntity &amp; <a class="el" href="../../db/d42/a01220.html">Dune::IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt;::getHostEntity </td>
           <td>(</td>
           <td class="paramtype">const typename Traits::template Codim&lt; codim &gt;::Entity &amp;&#160;</td>
           <td class="paramname"><em>e</em></td><td>)</td>
