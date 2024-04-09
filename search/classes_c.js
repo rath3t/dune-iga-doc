@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['stringandindex_0',['StringAndIndex',['../d0/deb/a01508.html',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['subentityrangeimpl_1',['SubEntityRangeImpl',['../dd/d70/a01596.html',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
+  ['stringandindex_0',['StringAndIndex',['../da/d50/a01511.html',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
+  ['subentityrangeimpl_1',['SubEntityRangeImpl',['../d9/d13/a01599.html',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
 ];

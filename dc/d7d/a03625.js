@@ -1,4 +1,4 @@
 var a03625 =
 [
-    [ "Dune::IGANEW::IbraReader< dim, dimworld, PatchGrid >", "d6/dae/a01304.html", "d6/dae/a01304" ]
+    [ "Dune::IGANEW::Concept::TrimDataContainer", "dc/dec/a01804.html", null ]
 ];

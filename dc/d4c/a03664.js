@@ -1,7 +1,6 @@
 var a03664 =
 [
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet< GridImp >", "d9/d49/a01696.html", "d9/d49/a01696" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIndexSet< GridImp >", "d4/d26/a01700.html", "d4/d26/a01700" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridGlobalIdSet< GridImp >", "d0/dbc/a01704.html", "d0/dbc/a01704" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLocalIdSet< GridImp >", "de/d5c/a01708.html", "de/d5c/a01708" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet< GridImp >", "d8/d8c/a01527.html", "d8/d8c/a01527" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLeafIndexSet< GridImp >", "d4/d62/a01531.html", "d4/d62/a01531" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet< GridImp >", "dc/d93/a01535.html", "dc/d93/a01535" ]
 ];

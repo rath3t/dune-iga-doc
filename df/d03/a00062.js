@@ -1,11 +1,7 @@
 var a00062 =
 [
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >", "da/ddc/a01492.html", "da/ddc/a01492" ],
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "d1/dde/a01496.html", "d1/dde/a01496" ],
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "de/d65/a01500.html", "de/d65/a01500" ],
-    [ "ElementTrimFlag", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7", [
-      [ "full", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ]
+    [ "Dune::IGANEW::PatchGridLevelGridViewTraits< GridImp >", "d4/d41/a01267.html", "d4/d41/a01267" ],
+    [ "Dune::IGANEW::PatchGridLevelGridView< GridImp >", "dd/d42/a01259.html", "dd/d42/a01259" ],
+    [ "Dune::IGANEW::PatchGridLeafGridViewTraits< GridImp >", "dd/d39/a01271.html", "dd/d39/a01271" ],
+    [ "Dune::IGANEW::PatchGridLeafGridView< GridImp >", "de/dcb/a01263.html", "de/dcb/a01263" ]
 ];

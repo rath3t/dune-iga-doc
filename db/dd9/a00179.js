@@ -1,5 +1,6 @@
 var a00179 =
 [
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d2/d48/a01472.html", "d2/d48/a01472" ],
-    [ "forEachUntrimmedBoundaryDOF", "db/dd9/a00179.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "dc/d42/a01591.html", "dc/d42/a01591" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "dc/dbf/a01595.html", "dc/dbf/a01595" ],
+    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "d9/d13/a01599.html", "d9/d13/a01599" ]
 ];

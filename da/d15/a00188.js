@@ -1,4 +1,4 @@
 var a00188 =
 [
-    [ "Dune::GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d8/d2b/a01236.html", "d8/d2b/a01236" ]
+    [ "clipElementRectangle", "da/d15/a00188.html#a4f65cad383549769cbe786b60c31e479", null ]
 ];

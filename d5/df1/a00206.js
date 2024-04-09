@@ -1,4 +1,4 @@
 var a00206 =
 [
-    [ "registry", "d5/df1/a00206.html#a692469dff5d684126efb9a24e2905bd4", null ]
+    [ "Dune::IGANEW::Trim::LocalGeometryVariant< TrimmerType_, Implementations >", "d7/d02/a01771.html", "d7/d02/a01771" ]
 ];

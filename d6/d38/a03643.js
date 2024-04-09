@@ -1,5 +1,4 @@
 var a03643 =
 [
-    [ "Dune::IGANEW::PatchGridLeafIntersection< GridImp >", "da/de0/a01248.html", "da/de0/a01248" ],
-    [ "Dune::IGANEW::PatchGridLevelIntersection< GridImp >", "d0/d33/a01252.html", "d0/d33/a01252" ]
+    [ "Dune::IGANEW::IbraReader< dim, dimworld, PatchGrid >", "d2/d4c/a01307.html", "d2/d4c/a01307" ]
 ];

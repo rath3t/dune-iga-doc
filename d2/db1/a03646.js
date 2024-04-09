@@ -1,5 +1,7 @@
 var a03646 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedLeafIntersection< GridImp >", "da/dc7/a01548.html", "da/dc7/a01548" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedLevelIntersection< GridImp >", "d0/db9/a01552.html", "d0/db9/a01552" ]
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "de/dfe/a01383.html", "de/dfe/a01383" ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d40/a01387.html", "d9/d40/a01387" ],
+    [ "Dune::JSONGridFactory< Grid_ >", "dc/dbc/a01391.html", "dc/dbc/a01391" ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d2/df5/a01395.html", "d2/df5/a01395" ]
 ];

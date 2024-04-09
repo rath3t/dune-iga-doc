@@ -1,6 +1,5 @@
 var a03694 =
 [
-    [ "registerControlPoint", "d0/d76/a03694.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "d0/d76/a03694.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
-    [ "registerNurbsPatchData", "d0/d76/a03694.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "Dune::IGANEW::NURBSPatchData< dim, dimworld_, ScalarType >", "d7/d03/a01491.html", "d7/d03/a01491" ],
+    [ "NURBSPatchData", "d0/d76/a03694.html#aee4d8d984f5b9053709e25ff2c1a6265", null ]
 ];

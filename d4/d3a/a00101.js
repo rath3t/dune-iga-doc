@@ -1,12 +1,11 @@
 var a00101 =
 [
-    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d1/d38/a01480.html", "d1/d38/a01480" ],
-    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "d2/d21/a01484.html", "d2/d21/a01484" ],
-    [ "degreeElevate", "d4/d3a/a00101.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
-    [ "extractControlCoordinates", "d4/d3a/a00101.html#ac182f0a34d571d507849a1a4b8c79351", null ],
-    [ "extractWeights", "d4/d3a/a00101.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
-    [ "generateRefinedKnots", "d4/d3a/a00101.html#a2287fefbe65d5d37c50e3c953258961d", null ],
-    [ "knotRefinement", "d4/d3a/a00101.html#ae31d742d70844f23a725edbd89c0f31c", null ],
-    [ "netOfSpan", "d4/d3a/a00101.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
-    [ "netOfSpan", "d4/d3a/a00101.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
+    [ "DUNE_FMatrix_WITH_CHECKING", "d4/d3a/a00101.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b", null ],
+    [ "IntersectionCurveAndLine", "d4/d3a/a00101.html#a21ad9f3f2161548e10add5e90e558761", [
+      [ "disjoint", "d4/d3a/a00101.html#a21ad9f3f2161548e10add5e90e558761aff8d48ba74b051ac230fb0c28ae11984", null ],
+      [ "intersect", "d4/d3a/a00101.html#a21ad9f3f2161548e10add5e90e558761aea228c391b72961cc1370e2d66442d86", null ],
+      [ "parallel", "d4/d3a/a00101.html#a21ad9f3f2161548e10add5e90e558761a48920c071f6a5c97ae3739be64630697", null ]
+    ] ],
+    [ "findIntersectionCurveAndLine", "d4/d3a/a00101.html#a533ba1e65466dfc728bc84b33126774f", null ],
+    [ "findIntersectionLinearCurveAndLine", "d4/d3a/a00101.html#a337c8ba4001f6d4d07f1e11a65147836", null ]
 ];

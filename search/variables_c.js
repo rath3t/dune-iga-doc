@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['n_5fcontrolpoints_0',['n_controlPoints',['../d5/d37/a01276.html#aa85e99325b805008cb7d93e1361460c5',1,'Dune::IGANEW::Ibra::IbraNURBSData::n_controlPoints()'],['../d7/d57/a01348.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData::n_controlPoints()']]],
-  ['netdim_1',['netDim',['../dd/d00/a01776.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['nextfreeindex_5f_2',['nextFreeIndex_',['../dc/d57/a01512.html#ae4ba4ab2706240c6ef002c9373c9a51f',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],
-  ['numberofsecondderivatives_3',['numberOfSecondDerivatives',['../d2/dd7/a01108.html#adf75cdd10698f5cd203be258e738d0a0',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
-  ['numberoftrimmedelements_4',['numberOfTrimmedElements',['../dd/d05/a01504.html#afebb5c66ccada770c4ecfe72e6e4e9a2',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['numberofuntrimmedelements_5',['numberOfUnTrimmedElements',['../dd/d05/a01504.html#ac5540bea9ea6f3d118347fd2b6812d35',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['nurbs_5f_6',['nurbs_',['../d2/d21/a01484.html#ae04565bbc9dbeed2c5d3f7a1606fdd5d',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
-  ['nurbsgeometry_7',['nurbsGeometry',['../df/d84/a01408.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../d9/de7/a01279.html#aa85e99325b805008cb7d93e1361460c5',1,'Dune::IGANEW::Ibra::IbraNURBSData::n_controlPoints()'],['../d1/dcd/a01351.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData::n_controlPoints()']]],
+  ['netdim_1',['netDim',['../d5/df4/a01779.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
+  ['nextfreeindex_5f_2',['nextFreeIndex_',['../d2/de0/a01515.html#ae4ba4ab2706240c6ef002c9373c9a51f',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],
+  ['numberofsecondderivatives_3',['numberOfSecondDerivatives',['../d3/de1/a01111.html#adf75cdd10698f5cd203be258e738d0a0',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
+  ['numberoftrimmedelements_4',['numberOfTrimmedElements',['../d8/dd9/a01507.html#afebb5c66ccada770c4ecfe72e6e4e9a2',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
+  ['numberofuntrimmedelements_5',['numberOfUnTrimmedElements',['../d8/dd9/a01507.html#ac5540bea9ea6f3d118347fd2b6812d35',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
+  ['nurbs_5f_6',['nurbs_',['../dc/d47/a01487.html#ae04565bbc9dbeed2c5d3f7a1606fdd5d',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
+  ['nurbsgeometry_7',['nurbsGeometry',['../db/d99/a01411.html#a85d08f0c88343e089fbd909354aabc03',1,'Dune::IGA::Boundary']]]
 ];
