@@ -46,6 +46,7 @@ var a00235 =
       [ "setParameters", "d6/df0/a01647.html#aad6dc313a72347fe906568dac6d72d40", null ],
       [ "setup", "d6/df0/a01647.html#ab0ed053803d054d1d7de0a2354133267", null ],
       [ "trimElement", "d6/df0/a01647.html#ae5a3bca12cdc7d20fdcf6ed775ed821c", null ],
+      [ "trimElements", "d6/df0/a01647.html#adc32841814a4e83bf7654c50c0da2b32", null ],
       [ "update", "d6/df0/a01647.html#a7f78fb02b500000c0d85aa3d2b31c14c", null ],
       [ "PatchGridHierarchicIterator< const GridImp >", "d6/df0/a01647.html#a78b6e32e67f65b0b6d1bb74f3d5b5005", null ],
       [ "PatchGridLeafIntersection< const GridImp >", "d6/df0/a01647.html#ab8205f2aa2748b1f5eae2238bbb4a660", null ],

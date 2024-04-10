@@ -34,6 +34,7 @@ var a00238 =
     ] ],
     [ "closestPointProjectionByTrustRegion", "da/d2e/a00238.html#a5a86887937350922b04eaf5967ac33b9", null ],
     [ "dot", "da/d2e/a00238.html#aec86687240a124712c5daf95ff566abb", null ],
+    [ "drawGrid", "da/d2e/a00238.html#ac7d23e2e128c80ae3866b2636f1de33f", null ],
     [ "findIntersectionCurveAndLine", "da/d2e/a00238.html#a533ba1e65466dfc728bc84b33126774f", null ],
     [ "findIntersectionLinearCurveAndLine", "da/d2e/a00238.html#a337c8ba4001f6d4d07f1e11a65147836", null ],
     [ "intersect3DLines", "da/d2e/a00238.html#a92a605959c76f4613b72045bd4fdbf5c", null ],
