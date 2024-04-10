@@ -16,8 +16,8 @@ var searchData=
   ['localidset_13',['localIdSet',['../d7/ddd/a01223.html#a622327e139ba0cd2920d6c98b55501eb',1,'Dune::IGANEW::PatchGrid']]],
   ['localinterpolation_14',['localInterpolation',['../de/d69/a01311.html#af81c002fe6cd71c2b5d5e7d6c3db553f',1,'Dune::Functions::NurbsLocalFiniteElement::localInterpolation() const'],['../de/d69/a01311.html#af81c002fe6cd71c2b5d5e7d6c3db553f',1,'Dune::Functions::NurbsLocalFiniteElement::localInterpolation() const']]],
   ['localkey_15',['localKey',['../d1/d72/a01319.html#adf5a802caa3f9bf1b909336121dea33c',1,'Dune::Functions::NurbsLocalCoefficients::localKey(std::size_t i) const'],['../d1/d72/a01319.html#adf5a802caa3f9bf1b909336121dea33c',1,'Dune::Functions::NurbsLocalCoefficients::localKey(std::size_t i) const']]],
-  ['localview_16',['localView',['../d6/dbc/a01099.html#a7b26ee8a1b2c982f941a0a95c7bb3177',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::localView()'],['../d2/dc4/a01483.html#a198d0f6e05cbd1b08cbc72b1322eb271',1,'Dune::IGANEW::Splines::Nurbs::localView()']]],
-  ['localview_17',['LocalView',['../dc/d47/a01487.html#acf5aea0dd285e89d4bf778c5579b6167',1,'Dune::IGANEW::Splines::Nurbs::LocalView::LocalView()=default'],['../dc/d47/a01487.html#a97ef03909afc7396be42415c4a98ab37',1,'Dune::IGANEW::Splines::Nurbs::LocalView::LocalView(const Nurbs &amp;nurbs)']]],
+  ['localview_16',['LocalView',['../dc/d47/a01487.html#acf5aea0dd285e89d4bf778c5579b6167',1,'Dune::IGANEW::Splines::Nurbs::LocalView::LocalView()=default'],['../dc/d47/a01487.html#a97ef03909afc7396be42415c4a98ab37',1,'Dune::IGANEW::Splines::Nurbs::LocalView::LocalView(const Nurbs &amp;nurbs)']]],
+  ['localview_17',['localView',['../d6/dbc/a01099.html#a7b26ee8a1b2c982f941a0a95c7bb3177',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::localView()'],['../d2/dc4/a01483.html#a198d0f6e05cbd1b08cbc72b1322eb271',1,'Dune::IGANEW::Splines::Nurbs::localView()']]],
   ['loop_18',['loop',['../d4/d3c/a01671.html#ad4477339d0fcf33bfbe182bd369acd73',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['loops_19',['loops',['../d9/d1b/a01583.html#a494abc3622f9c8a5e06b275828241308',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]]
 ];

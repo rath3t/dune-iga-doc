@@ -27,6 +27,7 @@ var a01099 =
     [ "center", "d6/dbc/a01099.html#a8861494e54d23922a5f7a5e734d64076", null ],
     [ "corner", "d6/dbc/a01099.html#a5b0acbb3bafd33158fe5bf6f1eb02018", null ],
     [ "corners", "d6/dbc/a01099.html#a160823d9e885676db1350f3f1b9c7850", null ],
+    [ "curveLength", "d6/dbc/a01099.html#a81a448ffe31c58fb6b99ccb55fb17790", null ],
     [ "degree", "d6/dbc/a01099.html#a55a2d56e2133a971343f2d58ec809ab3", null ],
     [ "domain", "d6/dbc/a01099.html#aec261ed75005ecce6cb9ec63b7ce7283", null ],
     [ "domainMidPoint", "d6/dbc/a01099.html#aefb9e657006dcd7792292f8d49c802a7", null ],

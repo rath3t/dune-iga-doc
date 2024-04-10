@@ -109,13 +109,16 @@ $(document).ready(function(){initNavTree('d1/dc1/a00092_source.html','../../'); 
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>    <span class="keyword">auto</span> eleTrimDatas = trimmer.trimElements();</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
 <div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>    <span class="keyword">auto</span> figure = matplot::figure(<span class="keyword">true</span>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; eleTrimData : eleTrimDatas)</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      eleTrimData.drawResult(<span class="stringliteral">&quot;resName&quot;</span>, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    figure-&gt;size(1000, 1000);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    matplot::save(file_name, <span class="stringliteral">&quot;gif&quot;</span>);</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  }</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; eleTrimData : eleTrimDatas)</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>      eleTrimData.drawResult(<span class="stringliteral">&quot;resName&quot;</span>, <span class="keyword">false</span>, <span class="keyword">false</span>);</div>
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    matplot::save(file_name, <span class="stringliteral">&quot;gif&quot;</span>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  }</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>}</div>
 <div class="ttc" id="aa00238_html"><div class="ttname"><a href="../../da/d2e/a00238.html">Dune::IGANEW</a></div><div class="ttdef"><b>Definition:</b> algorithms.hh:8</div></div>
 <div class="ttc" id="aa00238_html_ac7d23e2e128c80ae3866b2636f1de33f"><div class="ttname"><a href="../../da/d2e/a00238.html#ac7d23e2e128c80ae3866b2636f1de33f">Dune::IGANEW::drawGrid</a></div><div class="ttdeci">void drawGrid(PatchGrid *grid, std::string &amp;&amp;file_name)</div><div class="ttdef"><b>Definition:</b> griddrawer.hh:11</div></div>
 <div class="ttc" id="aa01223_html"><div class="ttname"><a href="../../d7/ddd/a01223.html">Dune::IGANEW::PatchGrid</a></div><div class="ttdoc">Provides a NURBS grid based on a single NURBS patch.</div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:83</div></div>
