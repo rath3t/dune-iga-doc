@@ -8,6 +8,7 @@ var a00191 =
     [ "giveEdgeIdx", "d9/dd0/a00191.html#a55a9ec04149f78cad2fd07e790a81128", null ],
     [ "isCornerVertex", "d9/dd0/a00191.html#a63be6569afc287df64dcdf64d4eb9853", null ],
     [ "edgeDirections", "d9/dd0/a00191.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
+    [ "edgeIndexMapping", "d9/dd0/a00191.html#ac7e1eb84b57061650b4b4c90078df1dd", null ],
     [ "edgeLookUp", "d9/dd0/a00191.html#a16d111a10fb0652a5487a6116aeabb50", null ],
     [ "vertexIndexMapping", "d9/dd0/a00191.html#a1af143e66845c6b725ae850a95388115", null ]
 ];

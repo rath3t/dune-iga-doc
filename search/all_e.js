@@ -6,7 +6,7 @@ var searchData=
   ['netdim_3',['netDim',['../d5/df4/a01779.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['netofspan_4',['netOfSpan',['../d0/d3e/a00253.html#a2b11d7a37a27ce3c1fd6b45ad3309642',1,'Dune::IGANEW::Splines::netOfSpan(const FieldVector&lt; ScalarType, dim2 &gt; &amp;u, const std::array&lt; std::vector&lt; ScalarType &gt;, dim2 &gt; &amp;knots, const std::array&lt; int, dim2 &gt; &amp;degree, const MultiDimensionalNet&lt; dim2, NetValueType &gt; &amp;net)'],['../d0/d3e/a00253.html#a218f66b186e84e496dcb7d698d6bc1a8',1,'Dune::IGANEW::Splines::netOfSpan(std::array&lt; int, dim &gt; subNetStart, const std::array&lt; int, dim &gt; &amp;degree, const MultiDimensionalNet&lt; dim2, NetValueType &gt; &amp;net)']]],
   ['newfreeindex_5',['newFreeIndex',['../d2/de0/a01515.html#aef72795731dbdd9cf208dd376a476276',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],
-  ['newid_6',['newId',['../d7/dae/a01615.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0',1,'Dune::IGANEW::DefaultTrim::IdType']]],
+  ['newid_6',['newId',['../d7/dae/a01615.html#aa58fa9de2f0b123e55d6d552f99bd8d3a6c02b5bcb9b148d7b3321dfdb2ba85a0',1,'Dune::IGANEW::DefaultTrim::IdType']]],
   ['newvertex_7',['NewVertex',['../d4/d3c/a01671.html#abc4ff0ba6fda2880397a95c0aa4c384e',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['newverteximpl_8',['NewVertexImpl',['../d2/d34/a01679.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['nextfreeindex_5f_9',['nextFreeIndex_',['../d2/de0/a01515.html#ae4ba4ab2706240c6ef002c9373c9a51f',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet']]],

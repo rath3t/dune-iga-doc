@@ -1,8 +1,8 @@
 var a01615 =
 [
-    [ "EntityIdType", "d7/dae/a01615.html#afe481c5254837097517abb2fabb40f30", [
-      [ "host", "d7/dae/a01615.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e", null ],
-      [ "newId", "d7/dae/a01615.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0", null ]
+    [ "EntityIdType", "d7/dae/a01615.html#aa58fa9de2f0b123e55d6d552f99bd8d3", [
+      [ "host", "d7/dae/a01615.html#aa58fa9de2f0b123e55d6d552f99bd8d3a67b3dba8bc6778101892eb77249db32e", null ],
+      [ "newId", "d7/dae/a01615.html#aa58fa9de2f0b123e55d6d552f99bd8d3a6c02b5bcb9b148d7b3321dfdb2ba85a0", null ]
     ] ],
     [ "HostOrTrimmed", "d7/dae/a01615.html#af37d7e0ce257bc811e6d6002335f512f", [
       [ "host", "d7/dae/a01615.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e", null ],
