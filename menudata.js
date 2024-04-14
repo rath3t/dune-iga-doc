@@ -104,6 +104,7 @@ var menudata={children:[
 {text:"u",url:"functions_u.html#index_u"},
 {text:"v",url:"functions_v.html#index_v"},
 {text:"w",url:"functions_w.html#index_w"},
+{text:"y",url:"functions_y.html#index_y"},
 {text:"z",url:"functions_z.html#index_z"},
 {text:"~",url:"functions_~.html#index__7E"}]},
 {text:"Functions",url:"functions_func.html",children:[
@@ -170,7 +171,8 @@ var menudata={children:[
 {text:"s",url:"functions_type_s.html#index_s"},
 {text:"t",url:"functions_type_t.html#index_t"},
 {text:"u",url:"functions_type_u.html#index_u"},
-{text:"v",url:"functions_type_v.html#index_v"}]},
+{text:"v",url:"functions_type_v.html#index_v"},
+{text:"y",url:"functions_type_y.html#index_y"}]},
 {text:"Enumerations",url:"functions_enum.html"},
 {text:"Related Functions",url:"functions_rela.html"}]}]},
 {text:"Files",url:"files.html",children:[

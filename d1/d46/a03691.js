@@ -1,10 +1,8 @@
 var a03691 =
 [
-    [ "Dune::IGANEW::IdentityTrim::Parameter", "d6/d2e/a01735.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataImpl< mydim_, ScalarType >", "d1/d46/a01739.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "d5/d34/a01743.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchTrimDataImpl< dim, ScalarType >", "d7/db4/a01747.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d1/d34/a01211.html", "d1/d34/a01211" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d2/d7d/a01755.html", "d2/d7d/a01755" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "db/de5/a01759.html", "db/de5/a01759" ]
+    [ "iga.basis.Nurbs", "db/d4b/a01786.html", "db/d4b/a01786" ],
+    [ "defaultGlobalBasis", "d1/d46/a03691.html#abe7102c803053539b7417e439b0f122f", null ],
+    [ "indexMergingStrategy", "d1/d46/a03691.html#a1116006b529ec79e4a35a97a8614bd5e", null ],
+    [ "preBasisTypeName", "d1/d46/a03691.html#a6b046881676017b1a2068df515deb99f", null ],
+    [ "duneFunctionsLayouts", "d1/d46/a03691.html#a7567a58831582a87fbcc011042771efa", null ]
 ];

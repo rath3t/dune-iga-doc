@@ -1,6 +1,6 @@
 var a00122 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d6/d9a/a01083.html", "d6/d9a/a01083" ],
+    [ "Dune::IGANEW::ControlPoint< VT >", "d9/df5/a01086.html", "d9/df5/a01086" ],
     [ "operator*", "df/dc8/a00122.html#a3f232585a065fb77fc7443359eda7b95", null ],
     [ "operator*", "df/dc8/a00122.html#aab23834de62fd10b103b27e062dccfbd", null ],
     [ "operator+", "df/dc8/a00122.html#a33477ec847c0f90f5090046a585d3488", null ],

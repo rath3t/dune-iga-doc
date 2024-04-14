@@ -1,4 +1,4 @@
 var a03643 =
 [
-    [ "Dune::IGANEW::IbraReader< dim, dimworld, PatchGrid >", "d2/d4c/a01307.html", "d2/d4c/a01307" ]
+    [ "Dune::IGANEW::DefaultTrim::PatchGridEntitySeed< codim, GridImp >", "da/da6/a01522.html", "da/da6/a01522" ]
 ];
