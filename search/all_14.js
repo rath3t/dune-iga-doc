@@ -7,7 +7,7 @@ var searchData=
   ['unknown_4',['Unknown',['../d8/df1/a01414.html#a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e',1,'Dune::IGA::Boundary']]],
   ['untrimmedelementnumbers_5',['untrimmedElementNumbers',['../dd/d9e/a01226.html#a966177b89632af4b5196bdabad4f869f',1,'Dune::IGANEW::PatchGrid::untrimmedElementNumbers()'],['../d3/d53/a01262.html#a000e8b4ecae84ed3d670b70e9f0714a6',1,'Dune::IGANEW::PatchGridLevelGridView::untrimmedElementNumbers()'],['../d7/d73/a01266.html#a84b2ac5a7d3b5d8907b68c1d83e06a2b',1,'Dune::IGANEW::PatchGridLeafGridView::untrimmedElementNumbers()']]],
   ['untrimmedhostentity_6',['untrimmedHostEntity',['../d6/d26/a01678.html#abdad5094715069391e6362e719902ca2',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant']]],
-  ['untrimmedindexinlvl_7',['unTrimmedIndexInLvl',['../d3/d33/a01630.html#a935bb83bf879dcb5cab7ade74635a76a',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; GridImpl, 0 &gt;']]],
+  ['untrimmedindexinlvl_7',['unTrimmedIndexInLvl',['../d3/d33/a01630.html#a63679f645ee9a9b1f8a2a25f4beac05c',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; GridImpl, 0 &gt;']]],
   ['untrimmedlocalgeometry_8',['UntrimmedLocalGeometry',['../d9/d3b/a01650.html#a7fe768a69bbdba5999198466ab317f1b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
   ['untrimmedparameterspacegeometry_9',['UntrimmedParameterSpaceGeometry',['../d9/d3b/a01650.html#a8fb925ab6c15aa87906a35caeab15f8b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
   ['untrimmedparameterspacegrid_10',['UntrimmedParameterSpaceGrid',['../dd/d55/a01638.html#add2110be96fc5f5198839b01a2944ffa',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],

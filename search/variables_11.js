@@ -4,7 +4,7 @@ var searchData=
   ['transformer_1',['transformer',['../df/d2f/a01474.html#a733cce276905bfda67c91594b7200be9',1,'Dune::IGA::GridBoundarySegment']]],
   ['trimcurves_2',['trimCurves',['../d7/dc5/a01242.html#aadc62eb5c71ed50e648aa92c9ec66701',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
   ['trimdata_5f_3',['trimData_',['../dd/d55/a01638.html#abc07e27c81e7b174460fca212ff120e3',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
-  ['trimmedindexinlvl_4',['trimmedIndexInLvl',['../d3/d33/a01630.html#a34cd2a30cc3a19395de7f4002efd9d0b',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; GridImpl, 0 &gt;']]],
+  ['trimmedindexinlvl_4',['trimmedIndexInLvl',['../d3/d33/a01630.html#ac12f51c2c1178abf94bd1f125f563df1',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; GridImpl, 0 &gt;']]],
   ['trimmer_5',['Trimmer',['../dd/d9e/a01226.html#aec36ae5e314bf5c4ae3b5829485bac6b',1,'Dune::IGANEW::PatchGrid::Trimmer()'],['../da/da6/a01522.html#a036089004fd73ddd900077b7ba2f97f7',1,'Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::Trimmer()']]],
   ['trimmingcurvez_6',['trimmingCurveZ',['../de/df6/a01670.html#aa1c516b288a5064880263e840bf2d1f3',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl']]],
   ['trimprecision_7',['trimPrecision',['../d4/d99/a01634.html#adb8d6845cc381c10e0816f48ac3e9f5f',1,'Dune::IGANEW::DefaultTrim::Parameter']]],

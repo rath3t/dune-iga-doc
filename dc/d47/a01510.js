@@ -26,6 +26,7 @@ var a01510 =
     [ "makeEntityImpsImpl_", "dc/d47/a01510.html#a7d2347850d646158b2e4433c8648366d", null ],
     [ "size", "dc/d47/a01510.html#aa6c6e5e64ff927b2ebbdf2f0ca7535b1", null ],
     [ "size", "dc/d47/a01510.html#ae9b3aa15a9cf2490fbc65efc70927133", null ],
+    [ "sizeOfInfos", "dc/d47/a01510.html#a8629b81edbdb865827a6a7ba8f33aa91", null ],
     [ "subId", "dc/d47/a01510.html#aa461148fc03b2d4ffbbaf523f44a814d", null ],
     [ "subIndexFromId", "dc/d47/a01510.html#a26f751aacdaeb7dcd0cf4545bd1b7006", null ],
     [ "types", "dc/d47/a01510.html#a315673087901d3aebc5a97f077d111f6", null ],

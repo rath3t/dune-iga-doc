@@ -8,9 +8,9 @@ var a01630 =
     [ "fatherId", "d3/d33/a01630.html#ad4c3a163b10ad68cba55dc9b189b8dd8", null ],
     [ "hostSeed", "d3/d33/a01630.html#a9ce5b73ea1f8353b16b0302f3dcc91b3", null ],
     [ "id", "d3/d33/a01630.html#a5e001e7ff3ad534b3facbc3f15a0c6ce", null ],
-    [ "indexInLvlStorage", "d3/d33/a01630.html#a9592bbf647af6856b69b4fbe39c90175", null ],
+    [ "indexInLvlStorage", "d3/d33/a01630.html#a23563d37f05ec7d0d0a4319aa8b7acfa", null ],
     [ "lvl", "d3/d33/a01630.html#ac67410b3be79853b1ca25658e276f194", null ],
     [ "stemFromTrim", "d3/d33/a01630.html#a440a48c7ff3fd420c65dffd9ed9b2923", null ],
-    [ "trimmedIndexInLvl", "d3/d33/a01630.html#a34cd2a30cc3a19395de7f4002efd9d0b", null ],
-    [ "unTrimmedIndexInLvl", "d3/d33/a01630.html#a935bb83bf879dcb5cab7ade74635a76a", null ]
+    [ "trimmedIndexInLvl", "d3/d33/a01630.html#ac12f51c2c1178abf94bd1f125f563df1", null ],
+    [ "unTrimmedIndexInLvl", "d3/d33/a01630.html#a63679f645ee9a9b1f8a2a25f4beac05c", null ]
 ];
