@@ -1,16 +1,5 @@
 var a01630 =
 [
-    [ "EntitySeedType", "d3/d33/a01630.html#a90e063898d7fe5d4e57d69c0366853ad", null ],
-    [ "HostIdType", "d3/d33/a01630.html#a8dc60b3e6c9a97b28115ba5f5736a188", null ],
-    [ "stemsFromTrim", "d3/d33/a01630.html#a7245a0d4309a4fd4b56a71b7a9967343", null ],
-    [ "codimension", "d3/d33/a01630.html#af5d35de9727eba271aabf431a7925d0e", null ],
-    [ "decendantIds", "d3/d33/a01630.html#ae50ec50a95c3e067c12c008c4a641927", null ],
-    [ "fatherId", "d3/d33/a01630.html#ad4c3a163b10ad68cba55dc9b189b8dd8", null ],
-    [ "hostSeed", "d3/d33/a01630.html#a9ce5b73ea1f8353b16b0302f3dcc91b3", null ],
-    [ "id", "d3/d33/a01630.html#a5e001e7ff3ad534b3facbc3f15a0c6ce", null ],
-    [ "indexInLvlStorage", "d3/d33/a01630.html#a23563d37f05ec7d0d0a4319aa8b7acfa", null ],
-    [ "lvl", "d3/d33/a01630.html#ac67410b3be79853b1ca25658e276f194", null ],
-    [ "stemFromTrim", "d3/d33/a01630.html#a440a48c7ff3fd420c65dffd9ed9b2923", null ],
-    [ "trimmedIndexInLvl", "d3/d33/a01630.html#ac12f51c2c1178abf94bd1f125f563df1", null ],
-    [ "unTrimmedIndexInLvl", "d3/d33/a01630.html#a63679f645ee9a9b1f8a2a25f4beac05c", null ]
+    [ "geometry", "d3/d33/a01630.html#ac8f32f8ef5ba18ab0ce03e369849fa1f", null ],
+    [ "indexOfInsideElementinLvl", "d3/d33/a01630.html#adb193e91ede4657722e59a646e0a1319", null ]
 ];

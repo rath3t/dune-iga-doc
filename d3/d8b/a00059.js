@@ -1,7 +1,6 @@
 var a00059 =
 [
-    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "d0/d58/a01230.html", "d0/d58/a01230" ],
-    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "d8/ddf/a01238.html", "d8/ddf/a01238" ],
-    [ "referenceElement", "d3/d8b/a00059.html#a14501a764d945ffb9fd15254ab7da335", null ],
-    [ "referenceElement", "d3/d8b/a00059.html#aa8ba61178990a88b88ab09dfc698d54b", null ]
+    [ "Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant< codim_, TrimmerType_, HostImplementation, TrimmedImplementation >", "dd/d08/a01682.html", "dd/d08/a01682" ],
+    [ "referenceElement", "d3/d8b/a00059.html#ae4fb1b5f05f2968b3d281bd6c070b611", null ],
+    [ "referenceElement", "d3/d8b/a00059.html#a58f6695142a18937094849b86976642b", null ]
 ];

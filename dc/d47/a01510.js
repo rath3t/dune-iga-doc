@@ -40,5 +40,6 @@ var a01510 =
     [ "idToElementInfoMap", "dc/d47/a01510.html#a960a6c561ba1bf70678a3ae87f37698f", null ],
     [ "idToVertexInfoMap", "dc/d47/a01510.html#a0abb70127811f0814d305b8116ae7535", null ],
     [ "numberOfTrimmedElements", "dc/d47/a01510.html#afebb5c66ccada770c4ecfe72e6e4e9a2", null ],
-    [ "numberOfUnTrimmedElements", "dc/d47/a01510.html#ac5540bea9ea6f3d118347fd2b6812d35", null ]
+    [ "numberOfUnTrimmedElements", "dc/d47/a01510.html#ac5540bea9ea6f3d118347fd2b6812d35", null ],
+    [ "trimmedVertexIds_", "dc/d47/a01510.html#affe1d64eabb652978b60ba44523a92c3", null ]
 ];

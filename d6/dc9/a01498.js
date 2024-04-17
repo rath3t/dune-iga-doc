@@ -8,6 +8,10 @@ var a01498 =
     [ "GridFamily", "d6/dc9/a01498.html#a310259ec9ed6c518144d93ed039e7349", null ],
     [ "HostEntity", "d6/dc9/a01498.html#a5799aa605821514d8e3187b48e9474f0", null ],
     [ "Vertex", "d6/dc9/a01498.html#ab209a4d06f0b6a279d17cbefb6ef4195", null ],
+    [ "TrimmedHostEdgeDirection", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2", [
+      [ "HostNew", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2abe33564458f2a42122e0d3c8d93dffda", null ],
+      [ "NewHost", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2a296c2ef3b88a7d6b3d7309b5944234e1", null ]
+    ] ],
     [ "ElementTrimDataImpl", "d6/dc9/a01498.html#abccd5183a3f62bd9ac83dfa64ae0ec47", null ],
     [ "addEdge", "d6/dc9/a01498.html#a7fd293d1aa2652089627efcd3586c879", null ],
     [ "addEdgeHostNew", "d6/dc9/a01498.html#a6c2e1ab440455999712050d6a547c897", null ],

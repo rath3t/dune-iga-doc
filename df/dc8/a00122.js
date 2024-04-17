@@ -1,9 +1,5 @@
 var a00122 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d9/df5/a01086.html", "d9/df5/a01086" ],
-    [ "operator*", "df/dc8/a00122.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "df/dc8/a00122.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "df/dc8/a00122.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "df/dc8/a00122.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "df/dc8/a00122.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >", "dc/d47/a01510.html", "dc/d47/a01510" ],
+    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >::StringAndIndex", "d7/d22/a01514.html", "d7/d22/a01514" ]
 ];

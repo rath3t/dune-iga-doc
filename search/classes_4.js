@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['gridboundarysegment_0',['GridBoundarySegment',['../df/d2f/a01474.html',1,'Dune::IGA']]],
-  ['gridfactory_3c_20iganew_3a_3apatchgrid_3c_20dim_5f_2c_20dimworld_5f_2c_20trimmertype_5f_2c_20scalartype_20_3e_20_3e_1',['GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;',['../d7/dc5/a01242.html',1,'Dune']]]
+  ['geometrymap_0',['GeometryMap',['../d3/d33/a01630.html',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl']]],
+  ['gridboundarysegment_1',['GridBoundarySegment',['../df/d2f/a01474.html',1,'Dune::IGA']]],
+  ['gridfactory_3c_20iganew_3a_3apatchgrid_3c_20dim_5f_2c_20dimworld_5f_2c_20trimmertype_5f_2c_20scalartype_20_3e_20_3e_2',['GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;',['../d7/dc5/a01242.html',1,'Dune']]]
 ];

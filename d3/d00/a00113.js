@@ -1,5 +1,4 @@
 var a00113 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d4/da7/a01102.html", "d4/da7/a01102" ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "da/d4e/a01106.html", "da/d4e/a01106" ]
+    [ "isSameEdgeGeometry", "d3/d00/a00113.html#acd8131a99898be8ffb23c69c7fbfcac2", null ]
 ];

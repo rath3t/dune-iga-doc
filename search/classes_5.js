@@ -8,6 +8,6 @@ var searchData=
   ['hasentityiterator_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2c_20codim_20_3e_5',['hasEntityIterator&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;, codim &gt;',['../dd/de2/a01134.html',1,'Dune::Capabilities']]],
   ['hasentityiterator_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_6',['hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../d0/d61/a01130.html',1,'Dune::Capabilities']]],
   ['hash_3c_20dune_3a_3aiganew_3a_3adefaulttrim_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; &gt;',['../d1/d3a/a01622.html',1,'std']]],
-  ['hostgridaccess_8',['HostGridAccess',['../d8/daf/a01550.html',1,'Dune::IGANEW::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../de/d7e/a01222.html',1,'Dune::IGANEW::HostGridAccess&lt; Grid &gt;'],['../d9/d37/a01754.html',1,'Dune::IGANEW::Trim::HostGridAccess&lt; Grid &gt;']]],
-  ['hostverteximpl_9',['HostVertexImpl',['../d8/d75/a01666.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]]
+  ['hostgridaccess_8',['HostGridAccess',['../d8/daf/a01550.html',1,'Dune::IGANEW::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../de/d7e/a01222.html',1,'Dune::IGANEW::HostGridAccess&lt; Grid &gt;'],['../d9/de3/a01758.html',1,'Dune::IGANEW::Trim::HostGridAccess&lt; Grid &gt;']]],
+  ['hostverteximpl_9',['HostVertexImpl',['../de/df6/a01670.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]]
 ];

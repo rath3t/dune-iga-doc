@@ -14,6 +14,6 @@ var searchData=
   ['python_11',['Python',['../d9/d8d/a00262.html',1,'Dune']]],
   ['splines_12',['Splines',['../d0/def/a00256.html',1,'Dune::IGANEW']]],
   ['trim_13',['Trim',['../d4/d04/a00255.html',1,'Dune::IGA::Trim'],['../dc/d6a/a00261.html',1,'Dune::IGANEW::Trim']]],
-  ['util_14',['Util',['../dd/dd7/a00260.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['util_14',['Util',['../d0/d2f/a00259.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['utilities_15',['Utilities',['../d6/d82/a00243.html',1,'Dune::IGANEW']]]
 ];

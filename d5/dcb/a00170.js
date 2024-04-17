@@ -1,8 +1,9 @@
 var a00170 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedLocalGeometryImpl< mydim, coorddim, GridImp, localGeometryTag >", "db/d7c/a01614.html", "db/d7c/a01614" ],
-    [ "LocalGeometryTag", "d5/dcb/a00170.html#a732e3f39cf34394d88364942fc6b941f", [
-      [ "InParameterSpace", "d5/dcb/a00170.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e", null ],
-      [ "InReferenceElement", "d5/dcb/a00170.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723", null ]
-    ] ]
+    [ "Dune::IGANEW::ControlPoint< VT >", "d9/df5/a01086.html", "d9/df5/a01086" ],
+    [ "operator*", "d5/dcb/a00170.html#a3f232585a065fb77fc7443359eda7b95", null ],
+    [ "operator*", "d5/dcb/a00170.html#aab23834de62fd10b103b27e062dccfbd", null ],
+    [ "operator+", "d5/dcb/a00170.html#a33477ec847c0f90f5090046a585d3488", null ],
+    [ "operator-", "d5/dcb/a00170.html#aade6853aaa9cc5602813449a1b566ec4", null ],
+    [ "operator-", "d5/dcb/a00170.html#a124862a808b0cd8eee23b3960c456f83", null ]
 ];

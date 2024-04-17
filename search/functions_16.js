@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wasrefined_0',['wasRefined',['../d8/ddf/a01238.html#abec2fbf817b010250fd6412ea79e3724',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::wasRefined()'],['../d3/d2d/a01606.html#a7b35c3dd789aa97fde07778bc9ca7abc',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::wasRefined()'],['../d6/d26/a01678.html#a1e2da18d7bc37ec4441465073fd61cf7',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::wasRefined()']]]
+  ['wasrefined_0',['wasRefined',['../d8/ddf/a01238.html#abec2fbf817b010250fd6412ea79e3724',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::wasRefined()'],['../d3/d2d/a01606.html#a7b35c3dd789aa97fde07778bc9ca7abc',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::wasRefined()'],['../dd/d08/a01682.html#a1e2da18d7bc37ec4441465073fd61cf7',1,'Dune::IGANEW::Trim::ParameterSpaceGridEntityVariant::wasRefined()']]]
 ];

@@ -1,4 +1,4 @@
 var a00203 =
 [
-    [ "Dune::IGANEW::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d5/d29/a01722.html", "d5/d29/a01722" ]
+    [ "closestPointProjectionByTrustRegion", "de/d79/a00203.html#a5a86887937350922b04eaf5967ac33b9", null ]
 ];
