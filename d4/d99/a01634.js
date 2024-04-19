@@ -1,16 +1,17 @@
 var a01634 =
 [
-    [ "EntitySeedType", "d4/d99/a01634.html#aac9c74eb06cfc5e64bc422efbce850f8", null ],
-    [ "HostIdType", "d4/d99/a01634.html#a960d25104211d038850afe5bf62cb7df", null ],
-    [ "stemsFromTrim", "d4/d99/a01634.html#abe118f003d5bd38c950b2196c857a5f2", null ],
-    [ "codimension", "d4/d99/a01634.html#a7752f851a6d9aa40ddac959e61d5150d", null ],
-    [ "decendantIds", "d4/d99/a01634.html#a402963210ad881ba2b41562f5032ca0e", null ],
-    [ "fatherId", "d4/d99/a01634.html#a8f3cbbb96cf4c5b5a5511ea8539b58c0", null ],
-    [ "hostSeed", "d4/d99/a01634.html#a802fe66447f70d08f1941650b24bafaa", null ],
-    [ "id", "d4/d99/a01634.html#a5f4b4c609e4c7dbe8547ce942a993fa7", null ],
-    [ "indexInLvlStorage", "d4/d99/a01634.html#aa8898c957f9c63795abce3aa73c0b516", null ],
-    [ "lvl", "d4/d99/a01634.html#a42d8cffd5de73e93efc20fa1dba805ff", null ],
-    [ "stemFromTrim", "d4/d99/a01634.html#a4992156b83a87799c8307684b3ac7573", null ],
-    [ "trimmedIndexInLvl", "d4/d99/a01634.html#a7f075267874aedf5802f5a4c0bc3e24f", null ],
-    [ "unTrimmedIndexInLvl", "d4/d99/a01634.html#abc459d498e361babc5fe92dadec30bdb", null ]
+    [ "GeometryMap", "dd/d55/a01638.html", "dd/d55/a01638" ],
+    [ "EntitySeedType", "d4/d99/a01634.html#a3b0de6ae88acad9c20f9d2a79b1e9ef6", null ],
+    [ "HostIdType", "d4/d99/a01634.html#a434ebc80ee729101faf74f6e0fa31d63", null ],
+    [ "TrimInfo", "d4/d99/a01634.html#a325747c00713ffbcc945aad7bede94b6", null ],
+    [ "TrimmedEntityGeometry", "d4/d99/a01634.html#a2c15ae3ab4265404a0f2ce461c5adab1", null ],
+    [ "stemsFromTrim", "d4/d99/a01634.html#a9523fce9813e72937b9e33e8f3541c76", null ],
+    [ "codimension", "d4/d99/a01634.html#a799f4ac3b3f2b83cde8e4b9082b03b1b", null ],
+    [ "hostSeed", "d4/d99/a01634.html#a3648060fdddab1ba88cd48cf532eb844", null ],
+    [ "id", "d4/d99/a01634.html#a33a544f43537f28a79b40bb3378de61a", null ],
+    [ "indexInLvlStorage", "d4/d99/a01634.html#aee95ac77a72474e48c4857ea2b1d6638", null ],
+    [ "lvl", "d4/d99/a01634.html#af7091325f863afaf91ef52ce359ee85b", null ],
+    [ "stemFromTrim", "d4/d99/a01634.html#a029dd55944204b0f74b170bb55ce7cf4", null ],
+    [ "trimInfo", "d4/d99/a01634.html#acacb1792e0ff4e068936999d7e9f8650", null ],
+    [ "trimmedEntityGeometries", "d4/d99/a01634.html#a28257d4280f25a84744979ca39923ed0", null ]
 ];

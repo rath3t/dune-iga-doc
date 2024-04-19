@@ -31,6 +31,7 @@ var a01510 =
     [ "subIndexFromId", "dc/d47/a01510.html#a26f751aacdaeb7dcd0cf4545bd1b7006", null ],
     [ "types", "dc/d47/a01510.html#a315673087901d3aebc5a97f077d111f6", null ],
     [ "dimensionworld", "dc/d47/a01510.html#a8ffb0ca00b641b94b611686f2c53bb4c", null ],
+    [ "edgeCount", "dc/d47/a01510.html#a04843a391ac0e59464a0d098d0dfac7f", null ],
     [ "entityImps_", "dc/d47/a01510.html#a6f79753315def0895c5fdeee31c790f3", null ],
     [ "globalEdgesIdOfElementsMap_", "dc/d47/a01510.html#a47edfc0dfed1d559860857aebabdc9dc", null ],
     [ "globalVertexIdOfEdgesMap_", "dc/d47/a01510.html#a65c1914ec5f966299400c894ef7a6603", null ],
@@ -41,5 +42,6 @@ var a01510 =
     [ "idToVertexInfoMap", "dc/d47/a01510.html#a0abb70127811f0814d305b8116ae7535", null ],
     [ "numberOfTrimmedElements", "dc/d47/a01510.html#afebb5c66ccada770c4ecfe72e6e4e9a2", null ],
     [ "numberOfUnTrimmedElements", "dc/d47/a01510.html#ac5540bea9ea6f3d118347fd2b6812d35", null ],
-    [ "trimmedVertexIds_", "dc/d47/a01510.html#affe1d64eabb652978b60ba44523a92c3", null ]
+    [ "trimmedVertexIds_", "dc/d47/a01510.html#a51136003460376db352758ac6a120488", null ],
+    [ "vertexCount", "dc/d47/a01510.html#aa574cdcc63686dda8d54f63063bcb45d", null ]
 ];

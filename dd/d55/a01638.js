@@ -1,6 +1,5 @@
 var a01638 =
 [
-    [ "dummy", "dd/d55/a01638.html#af7263dad9c09022418bd93c5985c5b11", null ],
-    [ "splitter", "dd/d55/a01638.html#a8d04fa108590070c7eda6336bf50c2dc", null ],
-    [ "trimPrecision", "dd/d55/a01638.html#adb8d6845cc381c10e0816f48ac3e9f5f", null ]
+    [ "geometry", "dd/d55/a01638.html#a0ff95044a22ec7580a754de4ffd64a2a", null ],
+    [ "indexOfInsideElementinLvl", "dd/d55/a01638.html#aa4e119f0c242429d7451407aac9db0c5", null ]
 ];

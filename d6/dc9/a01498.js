@@ -10,7 +10,8 @@ var a01498 =
     [ "Vertex", "d6/dc9/a01498.html#ab209a4d06f0b6a279d17cbefb6ef4195", null ],
     [ "TrimmedHostEdgeDirection", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2", [
       [ "HostNew", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2abe33564458f2a42122e0d3c8d93dffda", null ],
-      [ "NewHost", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2a296c2ef3b88a7d6b3d7309b5944234e1", null ]
+      [ "NewHost", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2a296c2ef3b88a7d6b3d7309b5944234e1", null ],
+      [ "NewNew", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2a40222a1e4c02da18256918e21ebf80c1", null ]
     ] ],
     [ "ElementTrimDataImpl", "d6/dc9/a01498.html#abccd5183a3f62bd9ac83dfa64ae0ec47", null ],
     [ "addEdge", "d6/dc9/a01498.html#a7fd293d1aa2652089627efcd3586c879", null ],

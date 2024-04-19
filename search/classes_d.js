@@ -10,7 +10,7 @@ var searchData=
   ['trimmedlocalgeometryimpl_7',['TrimmedLocalGeometryImpl',['../db/d7c/a01614.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmedparameterspacegridentity_8',['TrimmedParameterSpaceGridEntity',['../d3/d2d/a01606.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['trimmedreferenceelement_9',['TrimmedReferenceElement',['../dc/def/a01594.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmer_10',['Trimmer',['../d9/d79/a01658.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['trimmerimpl_11',['TrimmerImpl',['../d7/d94/a01642.html',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;'],['../d5/dfa/a01746.html',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;']]],
-  ['trimmertraits_12',['TrimmerTraits',['../d9/d3b/a01650.html',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits'],['../dc/d3a/a01750.html',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits']]]
+  ['trimmer_10',['Trimmer',['../d8/d75/a01666.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['trimmerimpl_11',['TrimmerImpl',['../d9/d3b/a01650.html',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;'],['../d9/d37/a01754.html',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl&lt; dim, dimworld, ScalarType &gt;']]],
+  ['trimmertraits_12',['TrimmerTraits',['../d9/d79/a01658.html',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits'],['../d9/de3/a01758.html',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits']]]
 ];
