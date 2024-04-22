@@ -1,9 +1,14 @@
 var a01718 =
 [
-    [ "Intersection", "db/d7f/a01718.html#a96615d85169b563aa3b76492b4a7e797", null ],
-    [ "PatchGridLeafIntersectionIterator", "db/d7f/a01718.html#a5381c850da02988d30c924704e1f6e05", null ],
-    [ "PatchGridLeafIntersectionIterator", "db/d7f/a01718.html#a103d9e4dd92417c1311f741c84005248", null ],
-    [ "dereference", "db/d7f/a01718.html#a0a573d6da346fc550b9859916ba93c64", null ],
-    [ "equals", "db/d7f/a01718.html#a74d7a3a0c5f28884eb5390a7112b6a72", null ],
-    [ "increment", "db/d7f/a01718.html#acce4e4259683ab365ea2a358d4f9b8dc", null ]
+    [ "Types", "db/d7f/a01718.html#a630b3b92b6c3f96ca20c0fe174aab211", null ],
+    [ "PatchGridLeafIndexSet", "db/d7f/a01718.html#a147729ee771ed8102b33de79b5c5a5ed", null ],
+    [ "contains", "db/d7f/a01718.html#a1ff26b2030f1195fa8bbad67492151c2", null ],
+    [ "index", "db/d7f/a01718.html#a519456cdcd608ea7de7fbd2eedb7e191", null ],
+    [ "size", "db/d7f/a01718.html#a8b540b763863f7b6bd15ced9b7d5b1c2", null ],
+    [ "size", "db/d7f/a01718.html#acb5c7b9736e8fd41a372d620e1a1d821", null ],
+    [ "subIndex", "db/d7f/a01718.html#a25286e0fae26c1527bdd43fd2e063c0b", null ],
+    [ "types", "db/d7f/a01718.html#a2afe4429cff876b7d5117e9e4bdef473", null ],
+    [ "update", "db/d7f/a01718.html#aff716eea7ea5c79d5a5c753afda454e0", null ],
+    [ "dim", "db/d7f/a01718.html#a1171c8f071400678f74439ace6b55133", null ],
+    [ "grid_", "db/d7f/a01718.html#ad32e6d968b965e18f6d36ca59105a6d0", null ]
 ];

@@ -1,14 +1,11 @@
 var a01706 =
 [
-    [ "Types", "db/dbe/a01706.html#a630b3b92b6c3f96ca20c0fe174aab211", null ],
-    [ "PatchGridLeafIndexSet", "db/dbe/a01706.html#a147729ee771ed8102b33de79b5c5a5ed", null ],
-    [ "contains", "db/dbe/a01706.html#a1ff26b2030f1195fa8bbad67492151c2", null ],
-    [ "index", "db/dbe/a01706.html#a519456cdcd608ea7de7fbd2eedb7e191", null ],
-    [ "size", "db/dbe/a01706.html#a8b540b763863f7b6bd15ced9b7d5b1c2", null ],
-    [ "size", "db/dbe/a01706.html#acb5c7b9736e8fd41a372d620e1a1d821", null ],
-    [ "subIndex", "db/dbe/a01706.html#a25286e0fae26c1527bdd43fd2e063c0b", null ],
-    [ "types", "db/dbe/a01706.html#a2afe4429cff876b7d5117e9e4bdef473", null ],
-    [ "update", "db/dbe/a01706.html#aff716eea7ea5c79d5a5c753afda454e0", null ],
-    [ "dim", "db/dbe/a01706.html#a1171c8f071400678f74439ace6b55133", null ],
-    [ "grid_", "db/dbe/a01706.html#ad32e6d968b965e18f6d36ca59105a6d0", null ]
+    [ "ParameterSpaceGridEntity", "db/dbe/a01706.html#a00f5f5908de91bcd5f6fa990a11db12b", null ],
+    [ "ParameterSpaceGridEntitySeed", "db/dbe/a01706.html#afa9302168f619fd78f4632588e830349", null ],
+    [ "Trimmer", "db/dbe/a01706.html#a701adce7c7607ae75e204687c1288482", null ],
+    [ "PatchGridEntitySeed", "db/dbe/a01706.html#a2c694dc438e381ea6b2190601ef914cf", null ],
+    [ "PatchGridEntitySeed", "db/dbe/a01706.html#a168ba76a579e2b3ed336b3cfde09dac6", null ],
+    [ "hostEntitySeed", "db/dbe/a01706.html#ad6b3ae8fa4f3a00418c80f1cc141e651", null ],
+    [ "isValid", "db/dbe/a01706.html#a4acd79d380235ff11c9566c602445b15", null ],
+    [ "codimension", "db/dbe/a01706.html#ab7101982ea5b33b584dfafb99d9c02e4", null ]
 ];

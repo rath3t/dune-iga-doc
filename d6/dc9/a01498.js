@@ -14,6 +14,7 @@ var a01498 =
       [ "NewNew", "d6/dc9/a01498.html#aa0a167ec79a5d7276d4513da706a1aa2a40222a1e4c02da18256918e21ebf80c1", null ]
     ] ],
     [ "ElementTrimDataImpl", "d6/dc9/a01498.html#abccd5183a3f62bd9ac83dfa64ae0ec47", null ],
+    [ "ElementTrimDataImpl", "d6/dc9/a01498.html#a46cdc6417062b79599ccf0e15333a544", null ],
     [ "addEdge", "d6/dc9/a01498.html#a7fd293d1aa2652089627efcd3586c879", null ],
     [ "addEdgeHostNew", "d6/dc9/a01498.html#a6c2e1ab440455999712050d6a547c897", null ],
     [ "addEdgeNewHost", "d6/dc9/a01498.html#ab114e77fdc7264e2d096a765616d19ab", null ],
@@ -25,6 +26,8 @@ var a01498 =
     [ "finalize", "d6/dc9/a01498.html#abcec2b93b965ae105eefa8a3bf6072a3", null ],
     [ "flag", "d6/dc9/a01498.html#a006e273eedd292defb7e0594949a42b1", null ],
     [ "hostEntity", "d6/dc9/a01498.html#aaf42baf8161241fe4958fca45d03b3aa", null ],
+    [ "size", "d6/dc9/a01498.html#aa22e331225b3aceb8005cdac252613b5", null ],
+    [ "vertex", "d6/dc9/a01498.html#ac2def62397ee515cae3ab75d87c9ad9e", null ],
     [ "vertices", "d6/dc9/a01498.html#ad9eaf90122bd35dc573bc612e0418de1", null ],
     [ "volume", "d6/dc9/a01498.html#a1ba194b2c2c6b96da9e54f8b5cafc7dd", null ],
     [ "dim", "d6/dc9/a01498.html#adeedd6dbfa59b5ed5446a3d201fac0ce", null ],

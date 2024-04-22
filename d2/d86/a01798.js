@@ -1,6 +1,8 @@
 var a01798 =
 [
-    [ "__init__", "d2/d86/a01798.html#ae3fe0416d11b39a78e81705f2a908143", null ],
-    [ "__repr__", "d2/d86/a01798.html#a7e51c24af5841629d3154aac5ea249fe", null ],
-    [ "dimRange", "d2/d86/a01798.html#a590b25812f71f443cf8cbdd0eb00b338", null ]
+    [ "MultiDimensionalNetIndex", "d2/d86/a01798.html#a07bde1e4d2c1949cb416b624bdf72767", null ],
+    [ "directToMultiIndex", "d2/d86/a01798.html#a8821b3ef72e566daff7ad20071f4514a", null ],
+    [ "directToMultiIndex", "d2/d86/a01798.html#a1af055fa6ad1a7cdf6b50b3b29f33040", null ],
+    [ "index", "d2/d86/a01798.html#a0c37d6ecb435bf22a32dba0a0b0155ff", null ],
+    [ "size", "d2/d86/a01798.html#a1b46c1132b41bb080b0e89bb0bad98a1", null ]
 ];

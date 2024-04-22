@@ -1,10 +1,10 @@
 var a00083 =
 [
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult", "de/df6/a01670.html", "de/df6/a01670" ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex", "dc/d42/a01674.html", "dc/d42/a01674" ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::HostVertexImpl", "d6/d26/a01678.html", "d6/d26/a01678" ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl", "dd/d08/a01682.html", "dd/d08/a01682" ],
-    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl", "d0/d31/a01686.html", "d0/d31/a01686" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult", "dd/d08/a01682.html", "dd/d08/a01682" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex", "d0/d31/a01686.html", "d0/d31/a01686" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::HostVertexImpl", "d6/d01/a01690.html", "d6/d01/a01690" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl", "d4/d8e/a01694.html", "d4/d8e/a01694" ],
+    [ "Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl", "d5/da6/a01698.html", "d5/da6/a01698" ],
     [ "giveEdgeIdx", "d2/d1f/a00083.html#a55a9ec04149f78cad2fd07e790a81128", null ],
     [ "isCornerVertex", "d2/d1f/a00083.html#a63be6569afc287df64dcdf64d4eb9853", null ],
     [ "edgeDirections", "d2/d1f/a00083.html#a2980769b17a08a9c365baf8b18cca9d7", null ],

@@ -104,83 +104,81 @@ $(document).ready(function(){initNavTree('d1/d44/a00098_source.html','../../'); 
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d7/d2f/a00258.html">Dune::IGANEW::DefaultTrim</a> {</div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d9/d3b/a01650.html#a485cb1ee1e97956f82a6a96df7403e7c">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d3b/a01650.html#a485cb1ee1e97956f82a6a96df7403e7c">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::refineParameterSpaceGrid</a>(<span class="keywordtype">int</span> refCount, <span class="keywordtype">bool</span> initFlag) {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> oldLevel           = untrimmedParameterSpaceGrid_-&gt;maxLevel();</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  untrimmedParameterSpaceGrid_-&gt;globalRefine(refCount);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keyword">auto</span> gvu = untrimmedParameterSpaceGrid_-&gt;leafGridView();</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  parameterSpaceGrid_-&gt;createBegin();</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  parameterSpaceGrid_-&gt;insertLeaf();</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  parameterSpaceGrid_-&gt;createEnd();</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  assert((initFlag and oldLevel == 0 and refCount == 0) or</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>         !initFlag &amp;&amp; <span class="stringliteral">&quot;If we initialize the grid, the untrimmedParameterSpaceGrid_ should only have one level&quot;</span>);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="comment">// if we init we start at 0 otherwise at 1</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="comment">// if the grid is refined once later this would yield int i = 1; i &lt; 2;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = !initFlag; i &lt; refCount + 1; ++i) {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> newLevel = oldLevel + i;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    entityContainer_.entityImps_.emplace_back();</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span>&amp; entityContainer  = entityContainer_;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">auto</span> gv                         = parameterSpaceGrid_-&gt;levelGridView(newLevel);</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span>&amp; globalIdSetParameterSpace = parameterSpaceGrid_-&gt;globalIdSet();</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> unTrimmedElementIndex       = 0;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> trimmedElementIndex         = 0;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d9/dbc/a01662.html#a485cb1ee1e97956f82a6a96df7403e7c">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/dbc/a01662.html#a485cb1ee1e97956f82a6a96df7403e7c">TrimmerImpl&lt;dim, dimworld, ScalarType&gt;::refineParameterSpaceGrid</a>(<span class="keywordtype">int</span> refCount, <span class="keywordtype">bool</span> initFlag) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> oldLevel = untrimmedParameterSpaceGrid_-&gt;maxLevel();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  untrimmedParameterSpaceGrid_-&gt;globalRefine(refCount);</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="comment">// auto gvu = untrimmedParameterSpaceGrid_-&gt;leafGridView();</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  parameterSpaceGrid_-&gt;createBegin();</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  parameterSpaceGrid_-&gt;insertLeaf();</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  parameterSpaceGrid_-&gt;createEnd();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  assert((initFlag and oldLevel == 0 and refCount == 0) or</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>         !initFlag &amp;&amp; <span class="stringliteral">&quot;If we initialize the grid, the untrimmedParameterSpaceGrid_ should only have one level&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// if we init we start at 0 otherwise at 1</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="comment">// if the grid is refined once later this would yield int i = 1; i &lt; 2;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = !initFlag; i &lt; refCount + 1; ++i) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> newLevel = oldLevel + i;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    entityContainer_.entityImps_.emplace_back();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span> gv                            = parameterSpaceGrid_-&gt;levelGridView(newLevel);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keyword">auto</span>&amp; globalIdSetParameterSpace    = parameterSpaceGrid_-&gt;globalIdSet();</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> unTrimmedElementIndex = 0;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> trimmedElementIndex   = 0;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">auto</span> indices = [&amp;]() { <span class="keywordflow">return</span> std::make_tuple(unTrimmedElementIndex, trimmedElementIndex, newLevel); };</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span> indices = [&amp;]() { <span class="keywordflow">return</span> std::make_tuple(unTrimmedElementIndex, trimmedElementIndex, newLevel); };</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keyword">auto</span>&amp; indexSet              = gv.indexSet();</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keyword">const</span> <span class="keyword">auto</span> elementTrimDatas = trimElements(newLevel);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    entityContainer.idToVertexInfoMap.emplace_back();</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    entityContainer_.trimmedVertexIds_.emplace_back();</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    entityContainer_.edgeCount.emplace_back(gv.size(1));</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    entityContainer_.vertexCount.emplace_back(gv.size(2));</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : elements(gv)) {</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/d3b/a01650.html#a26057c9c6d3e8a701c82f33c672351c9">ElementTrimData</a>&amp; eleTrimData = elementTrimDatas[indexSet.index(ele)];</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keyword">const</span> <a class="code hl_enumeration" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a> eleTrimFlag = eleTrimData.flag();</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="comment">// For now we are exiting if ele is empty</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9">ElementTrimFlag::empty</a>)</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keywordflow">continue</span>;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// The elementID stays persistent, it doenst matter if ele is trimmed or not (for now)</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <a class="code hl_typedef" href="../../d9/d3b/a01650.html#ab7a1808ec3c27d9664e8d5b6d62de78b">GlobalIdType</a> elementId = makeElementID(ele);</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="comment">// Father detection is done in createAndSaveElementInfo</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>) {</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>        createAndSaveElementInfo(indices(), ele, <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        ++unTrimmedElementIndex;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        createAndSaveElementInfo(indices(), ele, <span class="keyword">true</span>);</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        ++trimmedElementIndex;</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      }</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keyword">auto</span>&amp; indexSet              = gv.indexSet();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keyword">const</span> <span class="keyword">auto</span> elementTrimDatas = trimElements(newLevel);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    entityContainer_.idToVertexInfoMap.emplace_back();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    entityContainer_.trimmedVertexIds_.emplace_back();</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    entityContainer_.edgeCount.emplace_back(gv.size(1));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    entityContainer_.vertexCount.emplace_back(gv.size(2));</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : elements(gv)) {</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d9/dbc/a01662.html#a26057c9c6d3e8a701c82f33c672351c9">ElementTrimData</a>&amp; eleTrimData = elementTrimDatas[indexSet.index(ele)];</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="keyword">const</span> <a class="code hl_enumeration" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7">ElementTrimFlag</a> eleTrimFlag  = eleTrimData.flag();</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="comment">// For now we are exiting if ele is empty</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9">ElementTrimFlag::empty</a>)</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      <span class="comment">// The elementID stays persistent, it doenst matter if ele is trimmed or not (for now)</span></div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      <a class="code hl_typedef" href="../../d9/dbc/a01662.html#ab7a1808ec3c27d9664e8d5b6d62de78b">GlobalIdType</a> elementId = makeElementID(ele);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="comment">// Father detection is done in createAndSaveElementInfo</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>) {</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        createAndSaveElementInfo(indices(), ele, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        ++unTrimmedElementIndex;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        createAndSaveElementInfo(indices(), ele, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        ++trimmedElementIndex;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      }</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      <span class="comment">// ******************* Now sub entitities, collect all ids of subentities  ************************</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="comment">// ******************* Now sub entitities, collect all ids of subentities  ************************</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      collectElementEdges(newLevel, ele, eleTrimData);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      collectElementVertices(newLevel, ele, eleTrimData);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// save numbers of untrimmed and trimmed elements per level</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    entityContainer.numberOfTrimmedElements.push_back(trimmedElementIndex);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    entityContainer.numberOfUnTrimmedElements.push_back(unTrimmedElementIndex);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">// Add a new level for vertices</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    createSubEntities(newLevel);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  }</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>}</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>} <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      collectElementEdges(newLevel, ele, eleTrimData);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      collectElementVertices(newLevel, ele, eleTrimData);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    }</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="comment">// save numbers of untrimmed and trimmed elements per level</span></div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    entityContainer_.numberOfTrimmedElements.push_back(trimmedElementIndex);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    entityContainer_.numberOfUnTrimmedElements.push_back(unTrimmedElementIndex);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    createElements(newLevel, elementTrimDatas);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    createSubEntities(newLevel);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>} <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
 <div class="ttc" id="aa00062_html"><div class="ttname"><a href="../../df/d03/a00062.html">elementtrimdata.hh</a></div></div>
 <div class="ttc" id="aa00258_html"><div class="ttname"><a href="../../d7/d2f/a00258.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createentities.hh:10</div></div>
 <div class="ttc" id="aa00258_html_a001736eecf4ebc2f71b02cc6ed9c33d7"><div class="ttname"><a href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7">Dune::IGANEW::DefaultTrim::ElementTrimFlag</a></div><div class="ttdeci">ElementTrimFlag</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:17</div></div>
 <div class="ttc" id="aa00258_html_a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec"><div class="ttname"><a href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec">Dune::IGANEW::DefaultTrim::ElementTrimFlag::trimmed</a></div><div class="ttdeci">@ trimmed</div></div>
 <div class="ttc" id="aa00258_html_a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9"><div class="ttname"><a href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9">Dune::IGANEW::DefaultTrim::ElementTrimFlag::empty</a></div><div class="ttdeci">@ empty</div></div>
 <div class="ttc" id="aa00258_html_a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0"><div class="ttname"><a href="../../d7/d2f/a00258.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0">Dune::IGANEW::DefaultTrim::ElementTrimFlag::full</a></div><div class="ttdeci">@ full</div></div>
-<div class="ttc" id="aa01650_html_a26057c9c6d3e8a701c82f33c672351c9"><div class="ttname"><a href="../../d9/d3b/a01650.html#a26057c9c6d3e8a701c82f33c672351c9">Dune::IGANEW::DefaultTrim::TrimmerImpl::ElementTrimData</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::ElementTrimData ElementTrimData</div><div class="ttdoc">Element trim data type.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:467</div></div>
-<div class="ttc" id="aa01650_html_a485cb1ee1e97956f82a6a96df7403e7c"><div class="ttname"><a href="../../d9/d3b/a01650.html#a485cb1ee1e97956f82a6a96df7403e7c">Dune::IGANEW::DefaultTrim::TrimmerImpl::refineParameterSpaceGrid</a></div><div class="ttdeci">void refineParameterSpaceGrid(int refCount, bool initFlag=false)</div><div class="ttdef"><b>Definition:</b> createlevel.hh:11</div></div>
-<div class="ttc" id="aa01650_html_ab7a1808ec3c27d9664e8d5b6d62de78b"><div class="ttname"><a href="../../d9/d3b/a01650.html#ab7a1808ec3c27d9664e8d5b6d62de78b">Dune::IGANEW::DefaultTrim::TrimmerImpl::GlobalIdType</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::GlobalIdSetId GlobalIdType</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:486</div></div>
+<div class="ttc" id="aa01662_html_a26057c9c6d3e8a701c82f33c672351c9"><div class="ttname"><a href="../../d9/dbc/a01662.html#a26057c9c6d3e8a701c82f33c672351c9">Dune::IGANEW::DefaultTrim::TrimmerImpl::ElementTrimData</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::ElementTrimData ElementTrimData</div><div class="ttdoc">Element trim data type.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:476</div></div>
+<div class="ttc" id="aa01662_html_a485cb1ee1e97956f82a6a96df7403e7c"><div class="ttname"><a href="../../d9/dbc/a01662.html#a485cb1ee1e97956f82a6a96df7403e7c">Dune::IGANEW::DefaultTrim::TrimmerImpl::refineParameterSpaceGrid</a></div><div class="ttdeci">void refineParameterSpaceGrid(int refCount, bool initFlag=false)</div><div class="ttdef"><b>Definition:</b> createlevel.hh:11</div></div>
+<div class="ttc" id="aa01662_html_ab7a1808ec3c27d9664e8d5b6d62de78b"><div class="ttname"><a href="../../d9/dbc/a01662.html#ab7a1808ec3c27d9664e8d5b6d62de78b">Dune::IGANEW::DefaultTrim::TrimmerImpl::GlobalIdType</a></div><div class="ttdeci">typename GridFamily::TrimmerTraits::GlobalIdSetId GlobalIdType</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/trimmer.hh:495</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

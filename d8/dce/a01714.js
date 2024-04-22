@@ -1,9 +1,15 @@
 var a01714 =
 [
-    [ "IdType", "d8/dce/a01714.html#ab65943bece9a4f96052869c1c22a86a2", null ],
-    [ "PatchGridLocalIdSet", "d8/dce/a01714.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
-    [ "id", "d8/dce/a01714.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
-    [ "subId", "d8/dce/a01714.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
-    [ "update", "d8/dce/a01714.html#af62b1ae58fd567949b09551702ecdcb6", null ],
-    [ "grid_", "d8/dce/a01714.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
+    [ "HostGrid", "d8/dce/a01714.html#a4172cb3084650b89b300de72b9f436d4", null ],
+    [ "Types", "d8/dce/a01714.html#ab20e088c15288d34b0bc4b020f78b12d", null ],
+    [ "contains", "d8/dce/a01714.html#a4767b41d1d3767891ebee883fd08b57f", null ],
+    [ "index", "d8/dce/a01714.html#a70e4e9f6f7388a16ee1269754a9aa7f8", null ],
+    [ "size", "d8/dce/a01714.html#a8a6fc7cfa87174df1619460696bda63e", null ],
+    [ "size", "d8/dce/a01714.html#ae12f643df8dad2bc03d1e033bfb0a97c", null ],
+    [ "subIndex", "d8/dce/a01714.html#aa948b7141d47e8589150426c040e1187", null ],
+    [ "types", "d8/dce/a01714.html#a9809d324c58725b2ed8a34c3d920b019", null ],
+    [ "update", "d8/dce/a01714.html#a030e8cb5f792cbec202c600bd0f18926", null ],
+    [ "dim", "d8/dce/a01714.html#a79067a14b6dd1ea0dbee03fc5cab3a60", null ],
+    [ "grid_", "d8/dce/a01714.html#a19fc48a7e50d65dad200a105854a3dc5", null ],
+    [ "level_", "d8/dce/a01714.html#abbbaf138c14bb44e167d9f314bd7b932", null ]
 ];

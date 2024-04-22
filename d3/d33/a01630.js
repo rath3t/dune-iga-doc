@@ -1,14 +1,18 @@
 var a01630 =
 [
-    [ "EntitySeedType", "d3/d33/a01630.html#a8890551f6b7dd633c0e726d9f004a6f7", null ],
-    [ "HostIdType", "d3/d33/a01630.html#af47ca76d99c81d882d3ed1151b2e25df", null ],
-    [ "TrimInfo", "d3/d33/a01630.html#a89f27b25bec586400a232613e2ef61e7", null ],
-    [ "stemsFromTrim", "d3/d33/a01630.html#a42a62054ac1d60bd9fbe18b5099af6c0", null ],
-    [ "codimension", "d3/d33/a01630.html#ac48cd616f14311c17013a47bea526388", null ],
-    [ "hostSeed", "d3/d33/a01630.html#acab74fedea32904b15b4468919cd5714", null ],
-    [ "id", "d3/d33/a01630.html#af8aa6d69ec1035bf3138caf493a14574", null ],
-    [ "indexInLvlStorage", "d3/d33/a01630.html#a82ab1d0c5728a55f83850070e69cc8e9", null ],
-    [ "lvl", "d3/d33/a01630.html#a9e1d18de3d5b7b3f6062d0ef66647112", null ],
-    [ "stemFromTrim", "d3/d33/a01630.html#ad6df47311e98c9b3be40575c062cda22", null ],
-    [ "trimInfo", "d3/d33/a01630.html#a287d0bcb5949ca409f7436bbc85b4d38", null ]
+    [ "EntityIdType", "d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30", [
+      [ "host", "d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e", null ],
+      [ "newId", "d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0", null ]
+    ] ],
+    [ "HostOrTrimmed", "d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512f", [
+      [ "host", "d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e", null ],
+      [ "trimmed", "d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ],
+    [ "operator==", "d3/d33/a01630.html#ad912e12f00f0b50c966995051948a86d", null ],
+    [ "operator<<", "d3/d33/a01630.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
+    [ "operator<<", "d3/d33/a01630.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
+    [ "entityIdType", "d3/d33/a01630.html#a3a5f12dff1e201f674486abc8e668d21", null ],
+    [ "host_or_trimmed", "d3/d33/a01630.html#aa5749045920a10fbf4aaae21c7814e99", null ],
+    [ "hostId", "d3/d33/a01630.html#a6fac67dc97fc8b2fc1861a950538d381", null ],
+    [ "id", "d3/d33/a01630.html#a6483db5ee79f980bc83e175d9ea1ca34", null ]
 ];

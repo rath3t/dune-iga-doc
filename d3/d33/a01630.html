@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,113 +95,114 @@ $(document).ready(function(){initNavTree('d3/d33/a01630.html','../../'); initRes
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../de/db6/a01627.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d1/dfb/a03775_source.html">dune/iga/trimmer/defaulttrimmer/trimmer.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d6/d8b/a03791_source.html">dune/iga/trimmer/defaulttrimmer/trimmer.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:af47ca76d99c81d882d3ed1151b2e25df"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#af47ca76d99c81d882d3ed1151b2e25df">HostIdType</a> = typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType</td></tr>
-<tr class="separator:af47ca76d99c81d882d3ed1151b2e25df"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8890551f6b7dd633c0e726d9f004a6f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a8890551f6b7dd633c0e726d9f004a6f7">EntitySeedType</a> = typename Traits::ParameterSpaceGrid::template Codim&lt; <a class="el" href="../../d3/d33/a01630.html#ac48cd616f14311c17013a47bea526388">codimension</a> &gt;::Entity::EntitySeed</td></tr>
-<tr class="separator:a8890551f6b7dd633c0e726d9f004a6f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89f27b25bec586400a232613e2ef61e7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a89f27b25bec586400a232613e2ef61e7">TrimInfo</a> = typename Traits::ElementTrimData::VertexInfo</td></tr>
-<tr class="separator:a89f27b25bec586400a232613e2ef61e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe481c5254837097517abb2fabb40f30"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30">EntityIdType</a> { <a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">host</a>
+, <a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0">newId</a>
+ }</td></tr>
+<tr class="separator:afe481c5254837097517abb2fabb40f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37d7e0ce257bc811e6d6002335f512f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512f">HostOrTrimmed</a> { <a class="el" href="../../d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e">host</a>
+, <a class="el" href="../../d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec">trimmed</a>
+ }</td></tr>
+<tr class="separator:af37d7e0ce257bc811e6d6002335f512f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a42a62054ac1d60bd9fbe18b5099af6c0"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a42a62054ac1d60bd9fbe18b5099af6c0">stemsFromTrim</a> () const</td></tr>
-<tr class="separator:a42a62054ac1d60bd9fbe18b5099af6c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad912e12f00f0b50c966995051948a86d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#ad912e12f00f0b50c966995051948a86d">operator==</a> (const <a class="el" href="../../d3/d33/a01630.html">IdType</a> &amp;other) const</td></tr>
+<tr class="separator:ad912e12f00f0b50c966995051948a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:a82ab1d0c5728a55f83850070e69cc8e9"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a82ab1d0c5728a55f83850070e69cc8e9">indexInLvlStorage</a> {std::numeric_limits&lt;unsigned int&gt;::max()}</td></tr>
-<tr class="separator:a82ab1d0c5728a55f83850070e69cc8e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e1d18de3d5b7b3f6062d0ef66647112"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a9e1d18de3d5b7b3f6062d0ef66647112">lvl</a> {}</td></tr>
-<tr class="separator:a9e1d18de3d5b7b3f6062d0ef66647112"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6df47311e98c9b3be40575c062cda22"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#ad6df47311e98c9b3be40575c062cda22">stemFromTrim</a> {false}</td></tr>
-<tr class="separator:ad6df47311e98c9b3be40575c062cda22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8aa6d69ec1035bf3138caf493a14574"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d9/d6a/a01618.html">IdType</a>&lt; <a class="el" href="../../d3/d33/a01630.html#af47ca76d99c81d882d3ed1151b2e25df">HostIdType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#af8aa6d69ec1035bf3138caf493a14574">id</a></td></tr>
-<tr class="separator:af8aa6d69ec1035bf3138caf493a14574"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acab74fedea32904b15b4468919cd5714"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d33/a01630.html#a8890551f6b7dd633c0e726d9f004a6f7">EntitySeedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#acab74fedea32904b15b4468919cd5714">hostSeed</a> {}</td></tr>
-<tr class="separator:acab74fedea32904b15b4468919cd5714"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a287d0bcb5949ca409f7436bbc85b4d38"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d3/d33/a01630.html#a89f27b25bec586400a232613e2ef61e7">TrimInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a287d0bcb5949ca409f7436bbc85b4d38">trimInfo</a> {}</td></tr>
-<tr class="separator:a287d0bcb5949ca409f7436bbc85b4d38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:ac48cd616f14311c17013a47bea526388"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#ac48cd616f14311c17013a47bea526388">codimension</a> = 2</td></tr>
-<tr class="separator:ac48cd616f14311c17013a47bea526388"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a5f12dff1e201f674486abc8e668d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30">EntityIdType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> {<a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">EntityIdType::host</a>}</td></tr>
+<tr class="separator:a3a5f12dff1e201f674486abc8e668d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6483db5ee79f980bc83e175d9ea1ca34"><td class="memItemLeft" align="right" valign="top">HostIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a6483db5ee79f980bc83e175d9ea1ca34">id</a> {}</td></tr>
+<tr class="separator:a6483db5ee79f980bc83e175d9ea1ca34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fac67dc97fc8b2fc1861a950538d381"><td class="memItemLeft" align="right" valign="top">std::optional&lt; HostIdType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#a6fac67dc97fc8b2fc1861a950538d381">hostId</a> {}</td></tr>
+<tr class="separator:a6fac67dc97fc8b2fc1861a950538d381"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5749045920a10fbf4aaae21c7814e99"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512f">HostOrTrimmed</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d33/a01630.html#aa5749045920a10fbf4aaae21c7814e99">host_or_trimmed</a></td></tr>
+<tr class="separator:aa5749045920a10fbf4aaae21c7814e99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a8890551f6b7dd633c0e726d9f004a6f7" name="a8890551f6b7dd633c0e726d9f004a6f7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8890551f6b7dd633c0e726d9f004a6f7">&#9670;&nbsp;</a></span>EntitySeedType</h2>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="afe481c5254837097517abb2fabb40f30" name="afe481c5254837097517abb2fabb40f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe481c5254837097517abb2fabb40f30">&#9670;&nbsp;</a></span>EntityIdType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::EntitySeedType =  typename Traits::ParameterSpaceGrid::template Codim&lt;<a class="el" href="../../d3/d33/a01630.html#ac48cd616f14311c17013a47bea526388">codimension</a>&gt;::Entity::EntitySeed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af47ca76d99c81d882d3ed1151b2e25df" name="af47ca76d99c81d882d3ed1151b2e25df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af47ca76d99c81d882d3ed1151b2e25df">&#9670;&nbsp;</a></span>HostIdType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::HostIdType =  typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a89f27b25bec586400a232613e2ef61e7" name="a89f27b25bec586400a232613e2ef61e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a89f27b25bec586400a232613e2ef61e7">&#9670;&nbsp;</a></span>TrimInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::TrimInfo =  typename Traits::ElementTrimData::VertexInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a42a62054ac1d60bd9fbe18b5099af6c0" name="a42a62054ac1d60bd9fbe18b5099af6c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42a62054ac1d60bd9fbe18b5099af6c0">&#9670;&nbsp;</a></span>stemsFromTrim()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename HostIdType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::stemsFromTrim </td>
+          <td class="memname">enum class <a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30">Dune::IGANEW::DefaultTrim::IdType::EntityIdType</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e" name="afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e"></a>host&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0" name="afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0"></a>newId&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<a id="af37d7e0ce257bc811e6d6002335f512f" name="af37d7e0ce257bc811e6d6002335f512f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af37d7e0ce257bc811e6d6002335f512f">&#9670;&nbsp;</a></span>HostOrTrimmed</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename HostIdType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512f">Dune::IGANEW::DefaultTrim::IdType::HostOrTrimmed</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e" name="af37d7e0ce257bc811e6d6002335f512fa67b3dba8bc6778101892eb77249db32e"></a>host&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec" name="af37d7e0ce257bc811e6d6002335f512fa853600aa75baac4ae4d3b794b574ecec"></a>trimmed&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad912e12f00f0b50c966995051948a86d" name="ad912e12f00f0b50c966995051948a86d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad912e12f00f0b50c966995051948a86d">&#9670;&nbsp;</a></span>operator==()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename HostIdType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d3/d33/a01630.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::operator== </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const <a class="el" href="../../d3/d33/a01630.html">IdType</a>&lt; HostIdType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
@@ -215,135 +216,80 @@ template&lt;typename Traits &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ac48cd616f14311c17013a47bea526388" name="ac48cd616f14311c17013a47bea526388"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac48cd616f14311c17013a47bea526388">&#9670;&nbsp;</a></span>codimension</h2>
+<a id="a3a5f12dff1e201f674486abc8e668d21" name="a3a5f12dff1e201f674486abc8e668d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5f12dff1e201f674486abc8e668d21">&#9670;&nbsp;</a></span>entityIdType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename HostIdType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::codimension = 2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acab74fedea32904b15b4468919cd5714" name="acab74fedea32904b15b4468919cd5714"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acab74fedea32904b15b4468919cd5714">&#9670;&nbsp;</a></span>hostSeed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d3/d33/a01630.html#a8890551f6b7dd633c0e726d9f004a6f7">EntitySeedType</a> <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::hostSeed {}</td>
+          <td class="memname"><a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30">EntityIdType</a> <a class="el" href="../../d3/d33/a01630.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::entityIdType {<a class="el" href="../../d3/d33/a01630.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">EntityIdType::host</a>}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af8aa6d69ec1035bf3138caf493a14574" name="af8aa6d69ec1035bf3138caf493a14574"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8aa6d69ec1035bf3138caf493a14574">&#9670;&nbsp;</a></span>id</h2>
+<a id="aa5749045920a10fbf4aaae21c7814e99" name="aa5749045920a10fbf4aaae21c7814e99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5749045920a10fbf4aaae21c7814e99">&#9670;&nbsp;</a></span>host_or_trimmed</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename HostIdType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d9/d6a/a01618.html">IdType</a>&lt;<a class="el" href="../../d3/d33/a01630.html#af47ca76d99c81d882d3ed1151b2e25df">HostIdType</a>&gt; <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::id</td>
+          <td class="memname"><a class="el" href="../../d3/d33/a01630.html#af37d7e0ce257bc811e6d6002335f512f">HostOrTrimmed</a> <a class="el" href="../../d3/d33/a01630.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::host_or_trimmed</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a82ab1d0c5728a55f83850070e69cc8e9" name="a82ab1d0c5728a55f83850070e69cc8e9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82ab1d0c5728a55f83850070e69cc8e9">&#9670;&nbsp;</a></span>indexInLvlStorage</h2>
+<a id="a6fac67dc97fc8b2fc1861a950538d381" name="a6fac67dc97fc8b2fc1861a950538d381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fac67dc97fc8b2fc1861a950538d381">&#9670;&nbsp;</a></span>hostId</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename HostIdType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::indexInLvlStorage {std::numeric_limits&lt;unsigned int&gt;::max()}</td>
+          <td class="memname">std::optional&lt;HostIdType&gt; <a class="el" href="../../d3/d33/a01630.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::hostId {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a9e1d18de3d5b7b3f6062d0ef66647112" name="a9e1d18de3d5b7b3f6062d0ef66647112"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9e1d18de3d5b7b3f6062d0ef66647112">&#9670;&nbsp;</a></span>lvl</h2>
+<a id="a6483db5ee79f980bc83e175d9ea1ca34" name="a6483db5ee79f980bc83e175d9ea1ca34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6483db5ee79f980bc83e175d9ea1ca34">&#9670;&nbsp;</a></span>id</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename HostIdType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">int <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::lvl {}</td>
+          <td class="memname">HostIdType <a class="el" href="../../d3/d33/a01630.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::id {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad6df47311e98c9b3be40575c062cda22" name="ad6df47311e98c9b3be40575c062cda22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6df47311e98c9b3be40575c062cda22">&#9670;&nbsp;</a></span>stemFromTrim</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::stemFromTrim {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a287d0bcb5949ca409f7436bbc85b4d38" name="a287d0bcb5949ca409f7436bbc85b4d38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a287d0bcb5949ca409f7436bbc85b4d38">&#9670;&nbsp;</a></span>trimInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt;<a class="el" href="../../d3/d33/a01630.html#a89f27b25bec586400a232613e2ef61e7">TrimInfo</a>&gt; <a class="el" href="../../dd/d90/a01626.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 2 &gt;::trimInfo {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d1/dfb/a03775_source.html">defaulttrimmer/trimmer.hh</a></li>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="../../d6/d8b/a03791_source.html">defaulttrimmer/trimmer.hh</a></li>
+<li><a class="el" href="../../d4/d3a/a00101_source.html">trimmerold.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d9/d21/a00240.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/db6/a00241.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d2f/a00258.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d3/d33/a01630.html">EntityInfoImpl&lt; Traits, 2 &gt;</a></li>
+    <li class="navelem"><a class="el" href="../../d9/d21/a00240.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/db6/a00241.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d2f/a00258.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d3/d33/a01630.html">IdType</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

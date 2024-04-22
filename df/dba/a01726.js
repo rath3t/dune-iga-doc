@@ -1,11 +1,9 @@
 var a01726 =
 [
-    [ "Entity", "df/dba/a01726.html#af62f308e9ff4e50e36c6e0e11a0aabb9", null ],
-    [ "PatchGridLeafIterator", "df/dba/a01726.html#a3ab9121199ad39f25a5b96bb1e7b7549", null ],
-    [ "PatchGridLeafIterator", "df/dba/a01726.html#a4cbe510f48940fa4dc256b381a305416", null ],
-    [ "PatchGridLeafIterator", "df/dba/a01726.html#a80694cb7ae3bc5d3f1a29617593ab34e", null ],
-    [ "dereference", "df/dba/a01726.html#a62480de05c6747d2a48a5d25371e76e4", null ],
-    [ "equals", "df/dba/a01726.html#a12345c09c63033e313ee0347630bb9d7", null ],
-    [ "increment", "df/dba/a01726.html#a895033132ef87acd9c21523f55abab81", null ],
-    [ "codimension", "df/dba/a01726.html#a0dba8f297c9168fe1783fb5dd1475378", null ]
+    [ "IdType", "df/dba/a01726.html#ab65943bece9a4f96052869c1c22a86a2", null ],
+    [ "PatchGridLocalIdSet", "df/dba/a01726.html#a2d857914699ab7a2217d0f05973ecc8f", null ],
+    [ "id", "df/dba/a01726.html#a751da8fd8d6c8eb1166c8ff620c4ac59", null ],
+    [ "subId", "df/dba/a01726.html#a826ab45e5b002b1ea6d8d60193ffc747", null ],
+    [ "update", "df/dba/a01726.html#af62b1ae58fd567949b09551702ecdcb6", null ],
+    [ "grid_", "df/dba/a01726.html#a82b9190439718ebdb6d3bd585d93d2d9", null ]
 ];
