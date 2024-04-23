@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localgeometrytag_0',['LocalGeometryTag',['../d7/d2f/a00258.html#a732e3f39cf34394d88364942fc6b941f',1,'Dune::IGANEW::DefaultTrim']]]
+  ['reader_0',['Reader',['../dd/dd7/a00260.html#a1ef280a2762fbf1b3a46535ade3f8172',1,'Dune::Python::IGA']]]
 ];

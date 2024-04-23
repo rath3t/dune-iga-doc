@@ -1,8 +1,5 @@
 var a00188 =
 [
-    [ "findClosestParameterSpaceCoordinate", "da/d15/a00188.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
-    [ "hessian", "da/d15/a00188.html#a7693ef58b9b466df6285facbe588e2e7", null ],
-    [ "isPointOnLineSegment", "da/d15/a00188.html#a6876a380ff49e968adf928cfb5a8ef44", null ],
-    [ "jacobianTransposed", "da/d15/a00188.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
-    [ "position", "da/d15/a00188.html#ae7bdc51407259017c5322f80267fcc5e", null ]
+    [ "makeCircularArc", "da/d15/a00188.html#a000e49612164d2b6609e00015a7da1b8", null ],
+    [ "makeCircularArc2D", "da/d15/a00188.html#af2e971c8404f8415030e1ae459761540", null ]
 ];

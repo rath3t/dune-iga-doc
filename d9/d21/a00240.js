@@ -1,16 +1,14 @@
 var a00240 =
 [
-    [ "Capabilities", "d0/d1f/a00247.html", "d0/d1f/a00247" ],
-    [ "Functions", "dd/dd7/a00248.html", "dd/dd7/a00248" ],
-    [ "IGA", "d0/d3e/a00253.html", "d0/d3e/a00253" ],
-    [ "IGANEW", "d6/db6/a00241.html", "d6/db6/a00241" ],
-    [ "Python", "d9/d8d/a00262.html", "d9/d8d/a00262" ],
-    [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "da/de3/a01398.html", "da/de3/a01398" ],
-    [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d5/d8e/a01390.html", "d5/d8e/a01390" ],
-    [ "EnableBoundarySegmentIndexCheck", "d9/d2e/a01194.html", null ],
-    [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d4/d5d/a01202.html", null ],
-    [ "GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
-    [ "JSONGridFactory", "d6/d2f/a01394.html", "d6/d2f/a01394" ],
-    [ "TensorProductCoordinates", "d5/d17/a01098.html", null ],
-    [ "YaspGrid", "d6/dea/a01094.html", null ]
+    [ "Domain", "d0/d1f/a01087.html", "d0/d1f/a01087" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d9/d21/a00240.html#ada1286817f950d2e7a16f906473aa2b2", null ],
+    [ "clampToDomain", "d9/d21/a00240.html#a341a1dc953d397349b5bb0d9f39c4106", null ],
+    [ "linspace", "d9/d21/a00240.html#a0c6fd781b9aa39c1d69699ec173cece8", null ],
+    [ "linspace", "d9/d21/a00240.html#a42b0275340679a127b2576175939833f", null ],
+    [ "linspace", "d9/d21/a00240.html#a2630a0eab9b7e24915eeb52ca335972c", null ],
+    [ "mapToRange", "d9/d21/a00240.html#a6b48e47a84d5e67509b5d6b512933245", null ],
+    [ "mapToRange", "d9/d21/a00240.html#a04ac9c71c72215ada13cdc92a31d96ba", null ],
+    [ "mapToRange", "d9/d21/a00240.html#addda4c834225ccb0923b33a5f9d494b0", null ],
+    [ "mapToRangeFromZeroToOne", "d9/d21/a00240.html#aa702762865e719e68a197ce63a446b33", null ],
+    [ "splitDomainInHalf", "d9/d21/a00240.html#a8a1ae4d6e29645af6fa8e60672bac908", null ]
 ];

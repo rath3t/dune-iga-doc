@@ -1,12 +1,12 @@
 var searchData=
 [
-  ['boundary_0',['Boundary',['../d8/df1/a01414.html',1,'Dune::IGA']]],
-  ['boundarypatchenclosingverticespropertytrimmed_1',['BoundaryPatchEnclosingVerticesPropertyTrimmed',['../d8/d7b/a01478.html',1,'']]],
-  ['brep_2',['Brep',['../db/d74/a01378.html',1,'Dune::IGA::Ibra::Brep&lt; worldDim &gt;'],['../d7/d8c/a01306.html',1,'Dune::IGANEW::Ibra::Brep&lt; worldDim &gt;']]],
-  ['breploop_3',['BrepLoop',['../d8/dbe/a01370.html',1,'Dune::IGA::Ibra::BrepLoop'],['../d4/d34/a01298.html',1,'Dune::IGANEW::Ibra::BrepLoop']]],
-  ['breplooprepresentation_4',['BrepLoopRepresentation',['../d6/dfe/a01366.html',1,'Dune::IGA::Ibra::BrepLoopRepresentation'],['../d7/d88/a01294.html',1,'Dune::IGANEW::Ibra::BrepLoopRepresentation']]],
-  ['breprepresentation_5',['BrepRepresentation',['../d2/dff/a01374.html',1,'Dune::IGA::Ibra::BrepRepresentation'],['../dc/de0/a01302.html',1,'Dune::IGANEW::Ibra::BrepRepresentation']]],
-  ['breptrim_6',['BrepTrim',['../da/dab/a01362.html',1,'Dune::IGA::Ibra::BrepTrim'],['../dc/ded/a01290.html',1,'Dune::IGANEW::Ibra::BrepTrim']]],
-  ['breptrimrepresentation_7',['BrepTrimRepresentation',['../de/d5c/a01358.html',1,'Dune::IGA::Ibra::BrepTrimRepresentation'],['../d0/d00/a01286.html',1,'Dune::IGANEW::Ibra::BrepTrimRepresentation']]],
-  ['bsplinebasis_8',['BsplineBasis',['../da/d36/a01482.html',1,'Dune::IGANEW::Splines']]]
+  ['boundary_0',['Boundary',['../db/d99/a01411.html',1,'Dune::IGA']]],
+  ['boundarypatchenclosingverticespropertytrimmed_1',['BoundaryPatchEnclosingVerticesPropertyTrimmed',['../d7/d1d/a01475.html',1,'']]],
+  ['brep_2',['Brep',['../d5/df5/a01375.html',1,'Dune::IGA::Ibra::Brep&lt; worldDim &gt;'],['../d6/d07/a01303.html',1,'Dune::IGANEW::Ibra::Brep&lt; worldDim &gt;']]],
+  ['breploop_3',['BrepLoop',['../dd/d86/a01367.html',1,'Dune::IGA::Ibra::BrepLoop'],['../d2/d68/a01295.html',1,'Dune::IGANEW::Ibra::BrepLoop']]],
+  ['breplooprepresentation_4',['BrepLoopRepresentation',['../dd/d8b/a01363.html',1,'Dune::IGA::Ibra::BrepLoopRepresentation'],['../d4/da0/a01291.html',1,'Dune::IGANEW::Ibra::BrepLoopRepresentation']]],
+  ['breprepresentation_5',['BrepRepresentation',['../d6/d4d/a01371.html',1,'Dune::IGA::Ibra::BrepRepresentation'],['../d8/d38/a01299.html',1,'Dune::IGANEW::Ibra::BrepRepresentation']]],
+  ['breptrim_6',['BrepTrim',['../dc/d4b/a01359.html',1,'Dune::IGA::Ibra::BrepTrim'],['../d7/da4/a01287.html',1,'Dune::IGANEW::Ibra::BrepTrim']]],
+  ['breptrimrepresentation_7',['BrepTrimRepresentation',['../d8/d4e/a01355.html',1,'Dune::IGA::Ibra::BrepTrimRepresentation'],['../d5/da7/a01283.html',1,'Dune::IGANEW::Ibra::BrepTrimRepresentation']]],
+  ['bsplinebasis_8',['BsplineBasis',['../da/d1e/a01479.html',1,'Dune::IGANEW::Splines']]]
 ];

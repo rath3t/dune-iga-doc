@@ -1,5 +1,50 @@
 var a00255 =
 [
-    [ "ElementBoundaries", "d1/df4/a01422.html", "d1/df4/a01422" ],
-    [ "NURBSPatchTrimmer", "dc/de6/a01426.html", "dc/de6/a01426" ]
+    [ "Util", "d0/def/a00256.html", "d0/def/a00256" ],
+    [ "ElementTrimDataImpl", "d2/d36/a01495.html", "d2/d36/a01495" ],
+    [ "EntityInfoImpl", "dd/d2d/a01635.html", null ],
+    [ "EntityInfoImpl< Traits, 0 >", "d5/de9/a01651.html", "d5/de9/a01651" ],
+    [ "EntityInfoImpl< Traits, 1 >", "d4/d49/a01643.html", "d4/d49/a01643" ],
+    [ "EntityInfoImpl< Traits, 2 >", "db/dca/a01639.html", "db/dca/a01639" ],
+    [ "HostGridAccess", "da/ded/a01547.html", null ],
+    [ "IdType", "de/db6/a01627.html", "de/db6/a01627" ],
+    [ "Parameter", "df/ddd/a01655.html", "df/ddd/a01655" ],
+    [ "PatchGridEntitySeed", "d1/d34/a01519.html", "d1/d34/a01519" ],
+    [ "PatchGridFamily", "dd/d38/a01663.html", "dd/d38/a01663" ],
+    [ "PatchGridGlobalIdSet", "d2/de0/a01515.html", "d2/de0/a01515" ],
+    [ "PatchGridHierarchicIterator", "db/d8e/a01523.html", "db/d8e/a01523" ],
+    [ "PatchGridLeafIndexSet", "d4/d62/a01531.html", "d4/d62/a01531" ],
+    [ "PatchGridLeafIntersectionIterator", "d9/d80/a01539.html", "d9/d80/a01539" ],
+    [ "PatchGridLeafIterator", "de/d1a/a01559.html", "de/d1a/a01559" ],
+    [ "PatchGridLevelIndexSet", "d8/d8c/a01527.html", "d8/d8c/a01527" ],
+    [ "PatchGridLevelIntersectionIterator", "db/d08/a01543.html", "db/d08/a01543" ],
+    [ "PatchGridLevelIterator", "d8/d6c/a01563.html", "d8/d6c/a01563" ],
+    [ "PatchGridLocalIdSet", "dc/d93/a01535.html", "dc/d93/a01535" ],
+    [ "PatchTrimDataImpl", "d9/d1b/a01583.html", "d9/d1b/a01583" ],
+    [ "Transformations", "dc/dc8/a01695.html", "dc/dc8/a01695" ],
+    [ "TrimmedLeafIntersection", "d5/df4/a01551.html", "d5/df4/a01551" ],
+    [ "TrimmedLevelIntersection", "d6/dd7/a01555.html", "d6/dd7/a01555" ],
+    [ "TrimmedLocalGeometryImpl", "d3/d79/a01611.html", null ],
+    [ "TrimmedLocalGeometryImpl< 0, coorddim, GridImp, localGeometryTag >", "d2/dcc/a01623.html", "d2/dcc/a01623" ],
+    [ "TrimmedLocalGeometryImpl< 1, coorddim, GridImp, localGeometryTag >", "d3/deb/a01619.html", "d3/deb/a01619" ],
+    [ "TrimmedLocalGeometryImpl< 2, coorddim, GridImp, localGeometryTag >", "d7/dae/a01615.html", "d7/dae/a01615" ],
+    [ "TrimmedParameterSpaceGridEntity", "db/d51/a01603.html", "db/d51/a01603" ],
+    [ "TrimmedReferenceElement", "dc/d42/a01591.html", "dc/d42/a01591" ],
+    [ "TrimmerImpl", "d4/dd4/a01659.html", "d4/dd4/a01659" ],
+    [ "VectorEntityContainer", "d8/dd9/a01507.html", "d8/dd9/a01507" ],
+    [ "ElementTrimFlag", "d4/d04/a00255.html#a001736eecf4ebc2f71b02cc6ed9c33d7", [
+      [ "full", "d4/d04/a00255.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "d4/d04/a00255.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "d4/d04/a00255.html#a001736eecf4ebc2f71b02cc6ed9c33d7a853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ],
+    [ "LocalGeometryTag", "d4/d04/a00255.html#a732e3f39cf34394d88364942fc6b941f", [
+      [ "InParameterSpace", "d4/d04/a00255.html#a732e3f39cf34394d88364942fc6b941fa8a1271beadae7821c36d87fc0c4e480e", null ],
+      [ "InReferenceElement", "d4/d04/a00255.html#a732e3f39cf34394d88364942fc6b941fac387cd45b20325cc986016334e9dd723", null ]
+    ] ],
+    [ "operator!=", "d4/d04/a00255.html#ac274492bbfe7e60de735f1bb58fdf172", null ],
+    [ "operator<", "d4/d04/a00255.html#ad60258d3c3cf850f549bd14af49382bb", null ],
+    [ "operator<=", "d4/d04/a00255.html#a7ac6998daef47f3ba10679c00bf49ae8", null ],
+    [ "operator==", "d4/d04/a00255.html#ad780ed3ffc28d55054058aa0707015c9", null ],
+    [ "operator>", "d4/d04/a00255.html#a0b06cf2e6c68b3f5e927015dc7ef6b6e", null ],
+    [ "operator>=", "d4/d04/a00255.html#a2a9fbc56f49089cd4a4d98b0e98cf465", null ]
 ];

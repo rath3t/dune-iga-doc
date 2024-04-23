@@ -1,31 +1,25 @@
 var a00250 =
 [
-    [ "Brep", "d7/d8c/a01306.html", "d7/d8c/a01306" ],
-    [ "BrepLoop", "d4/d34/a01298.html", "d4/d34/a01298" ],
-    [ "BrepLoopRepresentation", "d7/d88/a01294.html", "d7/d88/a01294" ],
-    [ "BrepRepresentation", "dc/de0/a01302.html", "dc/de0/a01302" ],
-    [ "BrepTrim", "dc/ded/a01290.html", "dc/ded/a01290" ],
-    [ "BrepTrimRepresentation", "d0/d00/a01286.html", "d0/d00/a01286" ],
-    [ "IbraBase", "d4/d10/a01278.html", "d4/d10/a01278" ],
-    [ "IbraNURBSData", "d8/d17/a01282.html", "d8/d17/a01282" ],
-    [ "Curve", "d0/da7/a00250.html#a4e800b03f9be491ce907b374a258d7b8", null ],
-    [ "Curve2D", "d0/da7/a00250.html#a713215b1dbf3951771e852520ff6fba5", null ],
-    [ "json", "d0/da7/a00250.html#ae97220b37fe16f1d6123c073e6783292", null ],
-    [ "Surface", "d0/da7/a00250.html#a270740ebeb882b3af48771bcf8a63400", null ],
-    [ "Type", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1", [
-      [ "NurbsCurveGeometry2D", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1a0a8408e2aed07683d35cfb8580243e96", null ],
-      [ "NurbsSurfaceGeometry3D", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1ad2cddd985c5c59bf17e533e6c5663c86", null ],
-      [ "BrepLoopType", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1a0c8f92fa844816c1a1b9b129767adf11", null ],
-      [ "BrepTrimType", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1a80d7ba3cc995b56293d36c6ccd63e2a9", null ],
-      [ "BrepType", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1a7f7af7af38461929855440ccd1eb29d4", null ],
-      [ "NoType", "d0/da7/a00250.html#a68040d1ccd6b249ad326be22a366c1e1a9080fd7a5f0af44b585bb21b62d8b283", null ]
+    [ "Ibra", "d3/d1a/a00251.html", "d3/d1a/a00251" ],
+    [ "Trim", "dc/ded/a00252.html", "dc/ded/a00252" ],
+    [ "Boundary", "db/d99/a01411.html", "db/d99/a01411" ],
+    [ "DomainInformation", "df/d5e/a01467.html", "df/d5e/a01467" ],
+    [ "GridBoundarySegment", "dd/d15/a01471.html", "dd/d15/a01471" ],
+    [ "IbraReader", "de/dfe/a01383.html", "de/dfe/a01383" ],
+    [ "IGARefinedGeometries", "d6/d64/a01399.html", "d6/d64/a01399" ],
+    [ "NURBSGrid", "d0/d9b/a01379.html", null ],
+    [ "TransformToSpan", "d7/d42/a01463.html", "d7/d42/a01463" ],
+    [ "TrimData", "de/d70/a01415.html", "de/d70/a01415" ],
+    [ "BoundaryLoop", "d0/da7/a00250.html#ac852dd8efef6c18283ca22735cb02696", null ],
+    [ "DomainType", "d0/da7/a00250.html#a25585768c010972feb9ad3e744e16623", null ],
+    [ "ElementTrimFlag", "d0/da7/a00250.html#a34b2741ab599082a80dacc40c6e5069b", [
+      [ "full", "d0/da7/a00250.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "d0/da7/a00250.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "d0/da7/a00250.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
     ] ],
-    [ "from_json", "d0/da7/a00250.html#ab71d206988647f0a273c4bca3bae1739", null ],
-    [ "from_json", "d0/da7/a00250.html#a346ab99589aa762b8b1fe8412a21251d", null ],
-    [ "from_json", "d0/da7/a00250.html#a9d3707fe92452e63533a15fb8b237efb", null ],
-    [ "from_json", "d0/da7/a00250.html#ac4253930554300f5f4c0eb25d8dd2671", null ],
-    [ "from_json", "d0/da7/a00250.html#a3dadb8d4167863630dc346e5dc7e3403", null ],
-    [ "from_json", "d0/da7/a00250.html#a0474e553c4993273d5ee25d9c7e8e969", null ],
-    [ "getGenerics", "d0/da7/a00250.html#a6fabc4595670aced0f05bbf26b14b31c", null ],
-    [ "typeForTypeString", "d0/da7/a00250.html#a74f5e9e18972aa5d44a503573266579a", null ]
+    [ "calculateBoundaryLoopLength", "d0/da7/a00250.html#ad53d9d1af502406661ebe6320753c429", null ],
+    [ "determineCurvedBoundaries", "d0/da7/a00250.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
+    [ "fillQuadratureRuleImpl", "d0/da7/a00250.html#a023d3c0845a496b2eedca5b359b49964", null ],
+    [ "splitBoundariesImpl", "d0/da7/a00250.html#ad66112982ac256c7f15589dec5fcce68", null ],
+    [ "triangulate", "d0/da7/a00250.html#ab8e1d89240e3480112457535ab40b620", null ]
 ];

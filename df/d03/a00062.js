@@ -1,8 +1,8 @@
 var a00062 =
 [
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >", "d6/dc9/a01498.html", "d6/dc9/a01498" ],
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "de/dc6/a01502.html", "de/dc6/a01502" ],
-    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "db/d57/a01506.html", "db/d57/a01506" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >", "d2/d36/a01495.html", "d2/d36/a01495" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "d5/d06/a01499.html", "d5/d06/a01499" ],
+    [ "Dune::IGANEW::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "d6/df5/a01503.html", "d6/df5/a01503" ],
     [ "ElementTrimFlag", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7", [
       [ "full", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7ae9dc924f238fa6cc29465942875fe8f0", null ],
       [ "empty", "df/d03/a00062.html#a001736eecf4ebc2f71b02cc6ed9c33d7aa2e4822a98337283e39f7b60acf85ec9", null ],
