@@ -1,5 +1,4 @@
 var a00252 =
 [
-    [ "ElementBoundaries", "d0/d7d/a01419.html", "d0/d7d/a01419" ],
-    [ "NURBSPatchTrimmer", "d9/ddc/a01423.html", "d9/ddc/a01423" ]
+    [ "LocalGeometryVariant", "d3/dac/a01777.html", "d3/dac/a01777" ]
 ];

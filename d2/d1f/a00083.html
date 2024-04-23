@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: indextransformations.hh File Reference</title>
+<title>dune-iga: trimutils.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,35 +92,56 @@ $(document).ready(function(){initNavTree('d2/d1f/a00083.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">indextransformations.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">trimutils.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
+<div class="textblock"><code>#include &lt;clipper2/clipper.core.h&gt;</code><br />
+<code>#include &lt;ranges&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/de9/a00176_source.html">dune/iga/geometrykernel/findintersection.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d15/a00188_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dec/a00080_source.html">dune/iga/trimmer/defaulttrimmer/trimmingutils/cliputils.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../db/ddf/a00164_source.html">dune/iga/geometrykernel/geohelper.hh</a>&gt;</code><br />
+</div>
 <p><a href="../../d2/d1f/a00083_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dc8/a01695.html">Dune::IGANEW::DefaultTrim::Transformations</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../dc/dc8/a01695.html" title="Transformations for vertex and edge indices between Trimmer Notation and Dune Notation.">Transformations</a> for vertex and edge indices between Trimmer Notation and <a class="el" href="../../d4/d08/a00237.html">Dune</a> Notation.  <a href="../../dc/dc8/a01695.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d4/d08/a00237"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html">Dune</a></td></tr>
+<tr class="memitem:d1/da8/a00230"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/da8/a00230.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/d2e/a00238"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html">Dune::IGANEW</a></td></tr>
+<tr class="memitem:df/d17/a00231"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d17/a00231.html">Dune::IGANEW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d4/d04/a00255"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d04/a00255.html">Dune::IGANEW::DefaultTrim</a></td></tr>
+<tr class="memitem:dd/dd7/a00248"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dd7/a00248.html">Dune::IGANEW::DefaultTrim</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:de/dbc/a00249"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html">Dune::IGANEW::DefaultTrim::Util</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a8a48376718a0fecf272f5c45b240f217"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int dim&gt; </td></tr>
+<tr class="memitem:a8a48376718a0fecf272f5c45b240f217"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#a8a48376718a0fecf272f5c45b240f217">Dune::IGANEW::DefaultTrim::Util::approxSamePoint</a> (const Clipper2Lib::PointD &amp;pt1, const FieldVector&lt; ScalarType, dim &gt; &amp;pt2, const double prec) -&gt; bool</td></tr>
+<tr class="separator:a8a48376718a0fecf272f5c45b240f217"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92128ee85ce68d85f0d598c954c790eb"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#a92128ee85ce68d85f0d598c954c790eb">Dune::IGANEW::DefaultTrim::Util::distance</a> (const Clipper2Lib::PointD &amp;p1, const auto &amp;p2) -&gt; double</td></tr>
+<tr class="separator:a92128ee85ce68d85f0d598c954c790eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870b9a152ad4ff41a8be202c6d04b7a5"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#a870b9a152ad4ff41a8be202c6d04b7a5">Dune::IGANEW::DefaultTrim::Util::findGoodStartingPoint</a> (const auto &amp;curve, const Clipper2Lib::PointD &amp;pt, int N=200) -&gt; double</td></tr>
+<tr class="separator:a870b9a152ad4ff41a8be202c6d04b7a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4160dac0cdcae55fca83559856c4a45a"><td class="memTemplParams" colspan="2">template&lt;typename TrimmingCurve &gt; </td></tr>
+<tr class="memitem:a4160dac0cdcae55fca83559856c4a45a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#a4160dac0cdcae55fca83559856c4a45a">Dune::IGANEW::DefaultTrim::Util::createTrimmingCurveSlice</a> (const TrimmingCurve &amp;curve, double t1, double t2) -&gt; TrimmingCurve</td></tr>
+<tr class="separator:a4160dac0cdcae55fca83559856c4a45a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memTemplParams" colspan="2">template&lt;typename TrimmingCurve &gt; </td></tr>
+<tr class="memitem:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#afa8d09a2b2b61bb41dfc22fb2060a5fd">Dune::IGANEW::DefaultTrim::Util::createHostGeometry</a> (auto &amp;vertex1, auto &amp;vertex2) -&gt; TrimmingCurve</td></tr>
+<tr class="separator:afa8d09a2b2b61bb41dfc22fb2060a5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ec98aeae9dd9815cc7a6c9178f24a64"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dbc/a00249.html#a3ec98aeae9dd9815cc7a6c9178f24a64">Dune::IGANEW::DefaultTrim::Util::callFindIntersection</a> (const auto &amp;curvePatchGeo, int edgeIdx, const auto &amp;ip, const auto &amp;corners) -&gt; std::pair&lt; double, FieldVector&lt; double, 2 &gt; &gt;</td></tr>
+<tr class="separator:a3ec98aeae9dd9815cc7a6c9178f24a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../dir_75403dd546d989c4e56d84af3932dae7.html">trimmingutils</a></li><li class="navelem"><a class="el" href="../../d2/d1f/a00083.html">indextransformations.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_7d0c370ab440c4b4f78419bfc8c93eb8.html">trimmer</a></li><li class="navelem"><a class="el" href="../../dir_265321845ed2650d675b22a94b62262d.html">defaulttrimmer</a></li><li class="navelem"><a class="el" href="../../dir_75403dd546d989c4e56d84af3932dae7.html">trimmingutils</a></li><li class="navelem"><a class="el" href="../../d2/d1f/a00083.html">trimutils.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

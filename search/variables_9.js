@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['key_0',['key',['../d3/d42/a01275.html#a8061adf4c0a0398469d6e0d5eb17879d',1,'Dune::IGANEW::Ibra::IbraBase::key()'],['../df/d96/a01347.html#ad3bff32c80e0b2c0c66f696da22af6a3',1,'Dune::IGA::Ibra::IbraBase::key()']]],
-  ['knots_1',['knots',['../d9/de7/a01279.html#a59cb53151ac4ce6b98dd63150423c235',1,'Dune::IGANEW::Ibra::IbraNURBSData::knots()'],['../d1/dcd/a01351.html#a957ffc4bab5a49b687d8d302938a364c',1,'Dune::IGA::Ibra::IbraNURBSData::knots()']]],
-  ['knotspans_2',['knotSpans',['../d7/d03/a01491.html#ac3ae0d508de8bcc031da26a4578c979b',1,'Dune::IGANEW::NURBSPatchData']]]
+  ['key_0',['key',['../d6/d16/a01269.html#a8061adf4c0a0398469d6e0d5eb17879d',1,'Dune::IGANEW::Ibra::IbraBase::key()'],['../de/da0/a01341.html#ad3bff32c80e0b2c0c66f696da22af6a3',1,'Dune::IGA::Ibra::IbraBase::key()']]],
+  ['knots_1',['knots',['../de/d85/a01273.html#a59cb53151ac4ce6b98dd63150423c235',1,'Dune::IGANEW::Ibra::IbraNURBSData::knots()'],['../d4/deb/a01345.html#a957ffc4bab5a49b687d8d302938a364c',1,'Dune::IGA::Ibra::IbraNURBSData::knots()']]],
+  ['knotspans_2',['knotSpans',['../d4/d39/a01485.html#ac3ae0d508de8bcc031da26a4578c979b',1,'Dune::IGANEW::NURBSPatchData']]]
 ];

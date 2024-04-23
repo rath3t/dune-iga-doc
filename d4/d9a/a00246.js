@@ -1,19 +1,16 @@
 var a00246 =
 [
-    [ "ElementTrimDataContainerImpl", "d2/d7d/a01755.html", null ],
-    [ "ElementTrimDataImpl", "d5/db3/a01751.html", null ],
-    [ "Parameter", "d7/db4/a01747.html", null ],
-    [ "PatchGridEntitySeed", "df/d12/a01703.html", "df/d12/a01703" ],
-    [ "PatchGridFamily", "d1/d34/a01211.html", "d1/d34/a01211" ],
-    [ "PatchGridGlobalIdSet", "d6/d56/a01719.html", "d6/d56/a01719" ],
-    [ "PatchGridHierarchicIterator", "d0/d42/a01707.html", "d0/d42/a01707" ],
-    [ "PatchGridLeafIndexSet", "df/d9a/a01715.html", "df/d9a/a01715" ],
-    [ "PatchGridLeafIntersectionIterator", "de/d0f/a01727.html", "de/d0f/a01727" ],
-    [ "PatchGridLeafIterator", "d6/d2e/a01735.html", "d6/d2e/a01735" ],
-    [ "PatchGridLevelIndexSet", "d8/df7/a01711.html", "d8/df7/a01711" ],
-    [ "PatchGridLevelIntersectionIterator", "df/dd2/a01731.html", "df/dd2/a01731" ],
-    [ "PatchGridLevelIterator", "d1/d46/a01739.html", "d1/d46/a01739" ],
-    [ "PatchGridLocalIdSet", "dc/de8/a01723.html", "dc/de8/a01723" ],
-    [ "PatchTrimDataImpl", "db/de5/a01759.html", null ],
-    [ "TrimmerImpl", "d9/d27/a01763.html", "d9/d27/a01763" ]
+    [ "BsplineBasis", "de/d13/a01473.html", "de/d13/a01473" ],
+    [ "Nurbs", "d8/d67/a01477.html", "d8/d67/a01477" ],
+    [ "createUniqueKnotSpans", "d4/d9a/a00246.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "d4/d9a/a00246.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "d4/d9a/a00246.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "d4/d9a/a00246.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "d4/d9a/a00246.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "d4/d9a/a00246.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "d4/d9a/a00246.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "d4/d9a/a00246.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "multiplicity", "d4/d9a/a00246.html#a88473945faf4f3ad3a83f3491faf0782", null ],
+    [ "netOfSpan", "d4/d9a/a00246.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
+    [ "netOfSpan", "d4/d9a/a00246.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
 ];

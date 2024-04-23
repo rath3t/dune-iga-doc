@@ -26,8 +26,7 @@ var NAVTREE =
 [
   [ "dune-iga", "index.html", [
     [ "dune-iga documentation", "index.html", null ],
-    [ "Todo List", "d6/de1/a00233.html", null ],
-    [ "Deprecated List", "da/d31/a00234.html", null ],
+    [ "Todo List", "d9/d01/a00227.html", null ],
     [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -69,23 +68,22 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/d78/a03714.html#a5140df8b1bf39d0c73f6d853a2ec4c87",
-"d2/d36/a01495.html#a6bfe560a9cf279570ca62f60944d98e3",
-"d3/d1a/a00251.html#a114df0930f2de87f7f66670c512deb21",
-"d4/d29/a01817.html",
-"d4/dd4/a01659.html#ae6fa9e5ac60c1950cb058dbbbfe701f5",
-"d5/de9/a00176.html#a92a605959c76f4613b72045bd4fdbf5c",
-"d6/d56/a01719.html",
-"d6/df2/a01175.html",
-"d7/dbf/a01239.html#a091978d3fdb924528c33bc53a6afe137",
-"d8/d8c/a01527.html#ab1464b9712cff92cbe79395c2ebd0fca",
-"d9/d40/a01387.html#aa6e2a1e176ef9c5147340022ef1c2175",
-"da/d2a/a00086.html#ac7e1eb84b57061650b4b4c90078df1dd",
-"db/d99/a01411.html#a2f45c9d99983a0038a5dcebd3aebb111",
-"dc/dc2/a01251.html#a22466467a2ab3b42f1332f32e3d1074b",
-"dd/d95/a01247.html#a593a2b9143bde7fd54fed564f55b87ac",
-"de/d70/a01415.html#a44d0aac398da6d55ce5476a765a019ab",
-"functions_e.html"
+"d1/d17/a01369.html#ad3bff32c80e0b2c0c66f696da22af6a3",
+"d2/d49/a01561.html",
+"d3/d21/a01657.html#a402963210ad881ba2b41562f5032ca0e",
+"d3/dac/a01777.html#ae11de60be6c1361b341a6a93f8c98d9b",
+"d5/d75/a01605.html#a89bcb6e2bf0e4d06b14c5f2d2aed89a7",
+"d7/d10/a01785.html#a182c42fba1abde12f3e494ada430d2ed",
+"d8/d02/a01149.html",
+"d9/d5c/a01321.html#a850cd42307ee6518e28a4c76e43d35c4",
+"da/d19/a01217.html#a4ff63733d4607f69aee64a13bd4c8575",
+"db/d1c/a01229.html#a31bfd22ae686aa18bf6ff634c4125c31",
+"db/dce/a01529.html#a636bf4f46b0c4bebc968c543849ca7c3",
+"dc/d9e/a01305.html#a315668b19b95fb51f103beca8d66deb5",
+"dd/dda/a01621.html#a1d60eb7840b4384272c82af1fd00e0c0",
+"de/d1d/a01105.html#a15e4511c88bc86682bbebee7b23108cb",
+"de/daf/a01417.html#a6c3707db6a3e9570c04c0115b3991fcb",
+"df/d2e/a01737.html#a895033132ef87acd9c21523f55abab81"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

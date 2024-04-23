@@ -1,14 +1,31 @@
 var a00240 =
 [
-    [ "Domain", "d0/d1f/a01087.html", "d0/d1f/a01087" ],
-    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d9/d21/a00240.html#ada1286817f950d2e7a16f906473aa2b2", null ],
-    [ "clampToDomain", "d9/d21/a00240.html#a341a1dc953d397349b5bb0d9f39c4106", null ],
-    [ "linspace", "d9/d21/a00240.html#a0c6fd781b9aa39c1d69699ec173cece8", null ],
-    [ "linspace", "d9/d21/a00240.html#a42b0275340679a127b2576175939833f", null ],
-    [ "linspace", "d9/d21/a00240.html#a2630a0eab9b7e24915eeb52ca335972c", null ],
-    [ "mapToRange", "d9/d21/a00240.html#a6b48e47a84d5e67509b5d6b512933245", null ],
-    [ "mapToRange", "d9/d21/a00240.html#a04ac9c71c72215ada13cdc92a31d96ba", null ],
-    [ "mapToRange", "d9/d21/a00240.html#addda4c834225ccb0923b33a5f9d494b0", null ],
-    [ "mapToRangeFromZeroToOne", "d9/d21/a00240.html#aa702762865e719e68a197ce63a446b33", null ],
-    [ "splitDomainInHalf", "d9/d21/a00240.html#a8a1ae4d6e29645af6fa8e60672bac908", null ]
+    [ "Brep", "dc/d8c/a01297.html", "dc/d8c/a01297" ],
+    [ "BrepLoop", "d9/dda/a01289.html", "d9/dda/a01289" ],
+    [ "BrepLoopRepresentation", "d1/d1a/a01285.html", "d1/d1a/a01285" ],
+    [ "BrepRepresentation", "dc/dd5/a01293.html", "dc/dd5/a01293" ],
+    [ "BrepTrim", "d5/d6f/a01281.html", "d5/d6f/a01281" ],
+    [ "BrepTrimRepresentation", "d2/d1d/a01277.html", "d2/d1d/a01277" ],
+    [ "IbraBase", "d6/d16/a01269.html", "d6/d16/a01269" ],
+    [ "IbraNURBSData", "de/d85/a01273.html", "de/d85/a01273" ],
+    [ "Curve", "d9/d21/a00240.html#a4e800b03f9be491ce907b374a258d7b8", null ],
+    [ "Curve2D", "d9/d21/a00240.html#a713215b1dbf3951771e852520ff6fba5", null ],
+    [ "json", "d9/d21/a00240.html#ae97220b37fe16f1d6123c073e6783292", null ],
+    [ "Surface", "d9/d21/a00240.html#a270740ebeb882b3af48771bcf8a63400", null ],
+    [ "Type", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1", [
+      [ "NurbsCurveGeometry2D", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1a0a8408e2aed07683d35cfb8580243e96", null ],
+      [ "NurbsSurfaceGeometry3D", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1ad2cddd985c5c59bf17e533e6c5663c86", null ],
+      [ "BrepLoopType", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1a0c8f92fa844816c1a1b9b129767adf11", null ],
+      [ "BrepTrimType", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1a80d7ba3cc995b56293d36c6ccd63e2a9", null ],
+      [ "BrepType", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1a7f7af7af38461929855440ccd1eb29d4", null ],
+      [ "NoType", "d9/d21/a00240.html#a68040d1ccd6b249ad326be22a366c1e1a9080fd7a5f0af44b585bb21b62d8b283", null ]
+    ] ],
+    [ "from_json", "d9/d21/a00240.html#ab71d206988647f0a273c4bca3bae1739", null ],
+    [ "from_json", "d9/d21/a00240.html#a346ab99589aa762b8b1fe8412a21251d", null ],
+    [ "from_json", "d9/d21/a00240.html#a9d3707fe92452e63533a15fb8b237efb", null ],
+    [ "from_json", "d9/d21/a00240.html#ac4253930554300f5f4c0eb25d8dd2671", null ],
+    [ "from_json", "d9/d21/a00240.html#a3dadb8d4167863630dc346e5dc7e3403", null ],
+    [ "from_json", "d9/d21/a00240.html#a0474e553c4993273d5ee25d9c7e8e969", null ],
+    [ "getGenerics", "d9/d21/a00240.html#a6fabc4595670aced0f05bbf26b14b31c", null ],
+    [ "typeForTypeString", "d9/d21/a00240.html#a74f5e9e18972aa5d44a503573266579a", null ]
 ];

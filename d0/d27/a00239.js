@@ -1,11 +1,19 @@
 var a00239 =
 [
-    [ "NURBSPatch", "d6/dbc/a01099.html", "d6/dbc/a01099" ],
-    [ "PatchGeometryLocalView", "d3/de1/a01111.html", "d3/de1/a01111" ],
-    [ "findClosestParameterSpaceCoordinate", "d0/d27/a00239.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
-    [ "hessian", "d0/d27/a00239.html#a7693ef58b9b466df6285facbe588e2e7", null ],
-    [ "isPointOnLineSegment", "d0/d27/a00239.html#a6876a380ff49e968adf928cfb5a8ef44", null ],
-    [ "jacobianTransposed", "d0/d27/a00239.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
-    [ "position", "d0/d27/a00239.html#ae7bdc51407259017c5322f80267fcc5e", null ],
-    [ "transform", "d0/d27/a00239.html#a32f8f310c48c22247e2072bd76abc0fb", null ]
+    [ "ElementTrimDataContainerImpl", "db/dc0/a01757.html", null ],
+    [ "ElementTrimDataImpl", "d6/d72/a01753.html", null ],
+    [ "Parameter", "d5/d77/a01749.html", null ],
+    [ "PatchGridEntitySeed", "d9/dc5/a01705.html", "d9/dc5/a01705" ],
+    [ "PatchGridFamily", "de/d61/a01205.html", "de/d61/a01205" ],
+    [ "PatchGridGlobalIdSet", "db/d66/a01721.html", "db/d66/a01721" ],
+    [ "PatchGridHierarchicIterator", "d1/da7/a01709.html", "d1/da7/a01709" ],
+    [ "PatchGridLeafIndexSet", "dd/ddb/a01717.html", "dd/ddb/a01717" ],
+    [ "PatchGridLeafIntersectionIterator", "d2/d70/a01729.html", "d2/d70/a01729" ],
+    [ "PatchGridLeafIterator", "df/d2e/a01737.html", "df/d2e/a01737" ],
+    [ "PatchGridLevelIndexSet", "d2/d0c/a01713.html", "d2/d0c/a01713" ],
+    [ "PatchGridLevelIntersectionIterator", "d8/d9c/a01733.html", "d8/d9c/a01733" ],
+    [ "PatchGridLevelIterator", "d0/d4e/a01741.html", "d0/d4e/a01741" ],
+    [ "PatchGridLocalIdSet", "d3/d5e/a01725.html", "d3/d5e/a01725" ],
+    [ "PatchTrimDataImpl", "db/db8/a01761.html", null ],
+    [ "TrimmerImpl", "df/d7b/a01765.html", "df/d7b/a01765" ]
 ];

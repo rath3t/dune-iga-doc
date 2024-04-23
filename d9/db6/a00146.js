@@ -1,7 +1,7 @@
 var a00146 =
 [
-    [ "Dune::IGANEW::PatchGridLevelGridViewTraits< GridImp >", "d4/d41/a01267.html", "d4/d41/a01267" ],
-    [ "Dune::IGANEW::PatchGridLevelGridView< GridImp >", "dd/d42/a01259.html", "dd/d42/a01259" ],
-    [ "Dune::IGANEW::PatchGridLeafGridViewTraits< GridImp >", "dd/d39/a01271.html", "dd/d39/a01271" ],
-    [ "Dune::IGANEW::PatchGridLeafGridView< GridImp >", "de/dcb/a01263.html", "de/dcb/a01263" ]
+    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "dd/d3f/a01221.html", "dd/d3f/a01221" ],
+    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "db/d1c/a01229.html", "db/d1c/a01229" ],
+    [ "referenceElement", "d9/db6/a00146.html#a14501a764d945ffb9fd15254ab7da335", null ],
+    [ "referenceElement", "d9/db6/a00146.html#aa8ba61178990a88b88ab09dfc698d54b", null ]
 ];

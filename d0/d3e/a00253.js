@@ -1,16 +1,11 @@
 var a00253 =
 [
-    [ "BsplineBasis", "da/d1e/a01479.html", "da/d1e/a01479" ],
-    [ "Nurbs", "d2/dc4/a01483.html", "d2/dc4/a01483" ],
-    [ "createUniqueKnotSpans", "d0/d3e/a00253.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
-    [ "degreeElevate", "d0/d3e/a00253.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
-    [ "extractControlCoordinates", "d0/d3e/a00253.html#ac182f0a34d571d507849a1a4b8c79351", null ],
-    [ "extractWeights", "d0/d3e/a00253.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
-    [ "findSpan", "d0/d3e/a00253.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
-    [ "findSpan", "d0/d3e/a00253.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
-    [ "generateRefinedKnots", "d0/d3e/a00253.html#a2287fefbe65d5d37c50e3c953258961d", null ],
-    [ "knotRefinement", "d0/d3e/a00253.html#ae31d742d70844f23a725edbd89c0f31c", null ],
-    [ "multiplicity", "d0/d3e/a00253.html#a88473945faf4f3ad3a83f3491faf0782", null ],
-    [ "netOfSpan", "d0/d3e/a00253.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
-    [ "netOfSpan", "d0/d3e/a00253.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
+    [ "IGA", "d7/d03/a00254.html", [
+      [ "Reader", "d7/d03/a00254.html#a1ef280a2762fbf1b3a46535ade3f8172", [
+        [ "json", "d7/d03/a00254.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
+      ] ]
+    ] ],
+    [ "registerControlPoint", "d0/d3e/a00253.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
+    [ "registerMultiDimensionalNet", "d0/d3e/a00253.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
+    [ "registerNurbsPatchData", "d0/d3e/a00253.html#abb0ad571b894541ccc4722f669ce8097", null ]
 ];
