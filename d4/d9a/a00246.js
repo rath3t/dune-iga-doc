@@ -1,7 +1,7 @@
 var a00246 =
 [
-    [ "BsplineBasis", "de/d13/a01473.html", "de/d13/a01473" ],
-    [ "Nurbs", "d8/d67/a01477.html", "d8/d67/a01477" ],
+    [ "BsplineBasis", "df/d2f/a01474.html", "df/d2f/a01474" ],
+    [ "Nurbs", "d8/d7b/a01478.html", "d8/d7b/a01478" ],
     [ "createUniqueKnotSpans", "d4/d9a/a00246.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
     [ "degreeElevate", "d4/d9a/a00246.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
     [ "extractControlCoordinates", "d4/d9a/a00246.html#ac182f0a34d571d507849a1a4b8c79351", null ],

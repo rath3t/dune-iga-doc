@@ -1,7 +1,7 @@
 var a00232 =
 [
-    [ "NURBSPatch", "de/d1c/a01093.html", "de/d1c/a01093" ],
-    [ "PatchGeometryLocalView", "de/d1d/a01105.html", "de/d1d/a01105" ],
+    [ "NURBSPatch", "d6/dea/a01094.html", "d6/dea/a01094" ],
+    [ "PatchGeometryLocalView", "da/d4e/a01106.html", "da/d4e/a01106" ],
     [ "findClosestParameterSpaceCoordinate", "d0/d53/a00232.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
     [ "hessian", "d0/d53/a00232.html#a7693ef58b9b466df6285facbe588e2e7", null ],
     [ "isPointOnLineSegment", "d0/d53/a00232.html#a6876a380ff49e968adf928cfb5a8ef44", null ],

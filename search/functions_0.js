@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['_5f_5finit_5f_5f_0',['__init__',['../d2/d42/a01801.html#ae3fe0416d11b39a78e81705f2a908143',1,'iga::basis::Nurbs']]],
-  ['_5f_5frepr_5f_5f_1',['__repr__',['../d2/d42/a01801.html#a7e51c24af5841629d3154aac5ea249fe',1,'iga::basis::Nurbs']]]
+  ['_5f_5finit_5f_5f_0',['__init__',['../d4/d56/a01818.html#ae3fe0416d11b39a78e81705f2a908143',1,'iga::basis::Nurbs']]],
+  ['_5f_5frepr_5f_5f_1',['__repr__',['../d4/d56/a01818.html#a7e51c24af5841629d3154aac5ea249fe',1,'iga::basis::Nurbs']]]
 ];
