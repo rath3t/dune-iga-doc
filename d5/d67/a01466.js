@@ -1,7 +1,6 @@
 var a01466 =
 [
-    [ "GridBoundarySegment", "d5/d67/a01466.html#a931cd2b24140d6f0e06fe80195e64113", null ],
-    [ "operator()", "d5/d67/a01466.html#a81c90fc90abea7ffb98ebc12a39de3c8", null ],
-    [ "boundary", "d5/d67/a01466.html#a21384cf84ced50fd4b017ffd48791e53", null ],
-    [ "transformer", "d5/d67/a01466.html#a733cce276905bfda67c91594b7200be9", null ]
+    [ "DomainInformation", "d5/d67/a01466.html#a937582ba90c62c75deccf426346f87ae", null ],
+    [ "domain", "d5/d67/a01466.html#ac96b9acfb53ef9eea0a8978894d1e924", null ],
+    [ "localIndex", "d5/d67/a01466.html#accce87872c7dfa44c89347d946664a33", null ]
 ];

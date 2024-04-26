@@ -4,5 +4,5 @@ var searchData=
   ['rank_5ftype_1',['rank_type',['../dd/ddc/a01802.html#acb27654a31d4a7e8145a2475a17c8268',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['reference_2',['reference',['../dd/ddc/a01802.html#ae69d57d074f1677cdfa098bdec36ae96',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['referenceelementtype_3',['ReferenceElementType',['../d6/d01/a01690.html#a92ff62c6da60742bccdd38f0a375a235',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::ReferenceElementType()'],['../dd/d08/a01682.html#a54260291cbbf6040defbff7b40ab0ff7',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::ReferenceElementType()'],['../dd/dec/a01782.html#a55cc91665d1a0bcfcfba598828c9f937',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::ReferenceElementType()']]],
-  ['rowfixedmatrix_4',['RowFixedMatrix',['../df/d2f/a01474.html#a51302978bd8a25671dea53201a0bf53b',1,'Dune::IGANEW::Splines::BsplineBasis']]]
+  ['rowfixedmatrix_4',['RowFixedMatrix',['../d8/d7b/a01478.html#a51302978bd8a25671dea53201a0bf53b',1,'Dune::IGANEW::Splines::BsplineBasis']]]
 ];

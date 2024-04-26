@@ -1,10 +1,9 @@
 var a01358 =
 [
-    [ "StringVector", "de/d5c/a01358.html#ab30c877d0fe57bf5b97555be6b5d2559", null ],
-    [ "brep", "de/d5c/a01358.html#aa2343de3ad19b0f0a47a0b65a9b6f28c", null ],
-    [ "face", "de/d5c/a01358.html#ab7ab7da83e436cfb042b22cbbd692e74", null ],
+    [ "BrepTrim", "de/d5c/a01358.html#ae0e39b86949b3e44bd8606e85c5cedfc", null ],
+    [ "domain", "de/d5c/a01358.html#ac05e18a4978427a2c6ee000b0e53ca3d", null ],
+    [ "geometry", "de/d5c/a01358.html#a4c3f4372e1a46cb6d01a65cb897bbfce", null ],
     [ "key", "de/d5c/a01358.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "trims", "de/d5c/a01358.html#a61a53e394317f3844be719ad7cfdd240", null ],
     [ "type", "de/d5c/a01358.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
     [ "typeString", "de/d5c/a01358.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
 ];

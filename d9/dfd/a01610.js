@@ -1,8 +1,17 @@
 var a01610 =
 [
-    [ "idx_t", "d9/dfd/a01610.html#ab165f921faa2379141966677c92ccfa6", null ],
-    [ "addLoop", "d9/dfd/a01610.html#ad3f3b1526715f9807791d82369924cda", null ],
-    [ "getIndices", "d9/dfd/a01610.html#a6e04055268f24db0a5c8aed136a80d93", null ],
-    [ "getZValue", "d9/dfd/a01610.html#ac896a78cf4d62d3344e2873abef34cd8", null ],
-    [ "indexOffSet", "d9/dfd/a01610.html#a3216a6d4d58aa5c46871b2ddf7d24a39", null ]
+    [ "CurveManager", "db/d7c/a01614.html", "db/d7c/a01614" ],
+    [ "ctype", "d9/dfd/a01610.html#a9f610f641d490e958d76d4bcc76abe06", null ],
+    [ "ParameterType", "d9/dfd/a01610.html#a4f2c9e7880899cf28f92ea797e453f1c", null ],
+    [ "TrimmingCurve", "d9/dfd/a01610.html#a8e43129977838c5c14b41d2792c94c4d", null ],
+    [ "addLoop", "d9/dfd/a01610.html#adedfd6e8bb8ce1ce160de1fe00cf3a2c", null ],
+    [ "clipperLoops", "d9/dfd/a01610.html#a02c7e7d55aa44ef51a788fb368f5dbfb", null ],
+    [ "getCurve", "d9/dfd/a01610.html#a7a09672f02be582de37ad93e78b4cb1c", null ],
+    [ "getCurve", "d9/dfd/a01610.html#a274947f41f7a1984b1e0a158ee21ad46", null ],
+    [ "getIndices", "d9/dfd/a01610.html#a43e4237359c1ad6a14178ad3dce98d34", null ],
+    [ "getPointsInPatch", "d9/dfd/a01610.html#a62ce1d68f56f460b71bbc2ea75a95817", null ],
+    [ "getZValue", "d9/dfd/a01610.html#a9a301632e1f5216a9ba0fdf1559981dc", null ],
+    [ "insertTrimCurve", "d9/dfd/a01610.html#a8cc8578eec99ceaac36fe21f1cc04176", null ],
+    [ "loops", "d9/dfd/a01610.html#a494abc3622f9c8a5e06b275828241308", null ],
+    [ "prepare", "d9/dfd/a01610.html#a7336116f174a10520f09b66586b516e5", null ]
 ];

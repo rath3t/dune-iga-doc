@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['ibrabase_0',['IbraBase',['../d5/da0/a01342.html',1,'Dune::IGA::Ibra::IbraBase'],['../da/d00/a01270.html',1,'Dune::IGANEW::Ibra::IbraBase']]],
-  ['ibranurbsdata_1',['IbraNURBSData',['../d9/de4/a01346.html',1,'Dune::IGA::Ibra::IbraNURBSData&lt; dim, worldDim &gt;'],['../de/d33/a01274.html',1,'Dune::IGANEW::Ibra::IbraNURBSData&lt; dim, worldDim &gt;']]],
-  ['ibranurbsdata_3c_201_2c_202_20_3e_2',['IbraNURBSData&lt; 1, 2 &gt;',['../d9/de4/a01346.html',1,'Dune::IGA::Ibra']]],
-  ['ibrareader_3',['IbraReader',['../db/d74/a01378.html',1,'Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;'],['../dc/de0/a01302.html',1,'Dune::IGANEW::IbraReader&lt; dim, dimworld, PatchGrid &gt;']]],
+  ['ibrabase_0',['IbraBase',['../d9/de4/a01346.html',1,'Dune::IGA::Ibra::IbraBase'],['../de/d33/a01274.html',1,'Dune::IGANEW::Ibra::IbraBase']]],
+  ['ibranurbsdata_1',['IbraNURBSData',['../da/d61/a01350.html',1,'Dune::IGA::Ibra::IbraNURBSData&lt; dim, worldDim &gt;'],['../d4/d10/a01278.html',1,'Dune::IGANEW::Ibra::IbraNURBSData&lt; dim, worldDim &gt;']]],
+  ['ibranurbsdata_3c_201_2c_202_20_3e_2',['IbraNURBSData&lt; 1, 2 &gt;',['../da/d61/a01350.html',1,'Dune::IGA::Ibra']]],
+  ['ibrareader_3',['IbraReader',['../de/d9d/a01382.html',1,'Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt;'],['../d7/d8c/a01306.html',1,'Dune::IGANEW::IbraReader&lt; dim, dimworld, PatchGrid &gt;']]],
   ['idtype_4',['IdType',['../d9/d3b/a01650.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['igarefinedgeometries_5',['IGARefinedGeometries',['../d6/d2f/a01394.html',1,'Dune::IGA']]],
+  ['igarefinedgeometries_5',['IGARefinedGeometries',['../da/de3/a01398.html',1,'Dune::IGA']]],
   ['insideverteximpl_6',['InsideVertexImpl',['../d8/dce/a01714.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['is_5finstantiation_5fof_7',['is_instantiation_of',['../df/d3a/a01810.html',1,'']]],
   ['is_5finstantiation_5fof_3c_20template_2c_20template_3c_20args_2e_2e_2e_20_3e_20_3e_8',['is_instantiation_of&lt; Template, Template&lt; Args... &gt; &gt;',['../d6/dfc/a01814.html',1,'']]],

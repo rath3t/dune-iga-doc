@@ -1,10 +1,10 @@
 var searchData=
 [
-  ['edgeinfo_0',['EdgeInfo',['../d6/dc9/a01498.html',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['elementboundaries_1',['ElementBoundaries',['../d8/df1/a01414.html',1,'Dune::IGA::Trim']]],
+  ['edgeinfo_0',['EdgeInfo',['../de/dc6/a01502.html',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
+  ['elementboundaries_1',['ElementBoundaries',['../d4/d3c/a01418.html',1,'Dune::IGA::Trim']]],
   ['elementtrimdatacontainerimpl_2',['ElementTrimDataContainerImpl',['../d9/d02/a01774.html',1,'Dune::IGANEW::IdentityTrim']]],
-  ['elementtrimdataimpl_3',['ElementTrimDataImpl',['../de/d3c/a01490.html',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl&lt; Grid &gt;'],['../d4/dfe/a01770.html',1,'Dune::IGANEW::IdentityTrim::ElementTrimDataImpl&lt; mydim_, ScalarType &gt;']]],
-  ['elementtrimdataimpl_3c_20gridimp_20_3e_4',['ElementTrimDataImpl&lt; GridImp &gt;',['../de/d3c/a01490.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['elementtrimdataimpl_3',['ElementTrimDataImpl',['../d6/d51/a01494.html',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl&lt; Grid &gt;'],['../d4/dfe/a01770.html',1,'Dune::IGANEW::IdentityTrim::ElementTrimDataImpl&lt; mydim_, ScalarType &gt;']]],
+  ['elementtrimdataimpl_3c_20gridimp_20_3e_4',['ElementTrimDataImpl&lt; GridImp &gt;',['../d6/d51/a01494.html',1,'Dune::IGANEW::DefaultTrim']]],
   ['enableboundarysegmentindexcheck_5',['EnableBoundarySegmentIndexCheck',['../d9/dbb/a01186.html',1,'Dune']]],
   ['enableboundarysegmentindexcheck_3c_20dune_3a_3aiganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_6',['EnableBoundarySegmentIndexCheck&lt; Dune::IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../d9/d2e/a01194.html',1,'Dune']]],
   ['enablelevelintersectioniteratorcheck_7',['EnableLevelIntersectionIteratorCheck',['../dc/d19/a01190.html',1,'']]],

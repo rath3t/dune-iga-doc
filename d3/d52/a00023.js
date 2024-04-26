@@ -1,8 +1,8 @@
 var a00023 =
 [
-    [ "Dune::IGA::TransformToSpan< dim >", "d7/dd1/a01458.html", "d7/dd1/a01458" ],
-    [ "Dune::IGA::DomainInformation", "de/d36/a01462.html", "de/d36/a01462" ],
-    [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "d5/d67/a01466.html", "d5/d67/a01466" ],
+    [ "Dune::IGA::TransformToSpan< dim >", "de/d36/a01462.html", "de/d36/a01462" ],
+    [ "Dune::IGA::DomainInformation", "d5/d67/a01466.html", "d5/d67/a01466" ],
+    [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "d0/da4/a01470.html", "d0/da4/a01470" ],
     [ "DomainType", "d3/d52/a00023.html#a25585768c010972feb9ad3e744e16623", null ],
     [ "calculateBoundaryLoopLength", "d3/d52/a00023.html#ad53d9d1af502406661ebe6320753c429", null ],
     [ "determineCurvedBoundaries", "d3/d52/a00023.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],

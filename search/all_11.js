@@ -2,7 +2,7 @@ var searchData=
 [
   ['r_0',['R',['../d4/d5d/a01202.html#ab1f3514ea58617b8ae2a5368d47d627e',1,'Dune::Functions::NurbsPreBasis::R()'],['../d4/d5d/a01202.html#ab1f3514ea58617b8ae2a5368d47d627e',1,'Dune::Functions::NurbsPreBasis::R()']]],
   ['rank_5ftype_1',['rank_type',['../dd/ddc/a01802.html#acb27654a31d4a7e8145a2475a17c8268',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['read_2',['read',['../dc/de0/a01302.html#a7751120f5ee287eaed14728396bd01d7',1,'Dune::IGANEW::IbraReader::read()'],['../db/d74/a01378.html#a00f99434abd8039a53dc9f1e1927a42d',1,'Dune::IGA::IbraReader::read(const std::string &amp;fileName, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})'],['../db/d74/a01378.html#ac4f683de38a5acfa58551bd84c9463a5',1,'Dune::IGA::IbraReader::read(InputStringType &amp;ibraInputFile, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})']]],
+  ['read_2',['read',['../d7/d8c/a01306.html#afd4d31523b51cf0b5ede087236294803',1,'Dune::IGANEW::IbraReader::read()'],['../de/d9d/a01382.html#a00f99434abd8039a53dc9f1e1927a42d',1,'Dune::IGA::IbraReader::read(const std::string &amp;fileName, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})'],['../de/d9d/a01382.html#ac4f683de38a5acfa58551bd84c9463a5',1,'Dune::IGA::IbraReader::read(InputStringType &amp;ibraInputFile, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})']]],
   ['reader_3',['Reader',['../d4/d04/a00255.html#a1ef280a2762fbf1b3a46535ade3f8172',1,'Dune::Python::IGA']]],
   ['readjson_4',['readJson',['../df/d17/a00231.html#a54b6cf582685f1241781602bb2a0e735',1,'Dune::IGANEW::readJson(const std::string &amp;fileName)'],['../df/d17/a00231.html#a976a0e749c3c774a078748e1830e42b9',1,'Dune::IGANEW::readJson(InputStringType &amp;ibraInputFile)']]],
   ['reference_5',['reference',['../dd/ddc/a01802.html#ae69d57d074f1677cdfa098bdec36ae96',1,'Dune::IGANEW::MultiDimensionalNet']]],
@@ -10,8 +10,8 @@ var searchData=
   ['referenceelement_2ehh_7',['referenceelement.hh',['../d4/d81/a00110.html',1,'']]],
   ['referenceelementtype_8',['ReferenceElementType',['../d6/d01/a01690.html#a92ff62c6da60742bccdd38f0a375a235',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::ReferenceElementType()'],['../dd/d08/a01682.html#a54260291cbbf6040defbff7b40ab0ff7',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::ReferenceElementType()'],['../dd/dec/a01782.html#a55cc91665d1a0bcfcfba598828c9f937',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::ReferenceElementType()']]],
   ['refineparameterspacegrid_9',['refineParameterSpaceGrid',['../dd/d08/a01682.html#a485cb1ee1e97956f82a6a96df7403e7c',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
-  ['refinestepsforhalf_10',['refineStepsForHalf',['../de/d9d/a01382.html#af2a9314095155eef4a78c2d2946bb65d',1,'Dune::DGFGridInfo&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;']]],
-  ['refineweight_11',['refineWeight',['../de/d9d/a01382.html#aa6e2a1e176ef9c5147340022ef1c2175',1,'Dune::DGFGridInfo&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;']]],
+  ['refinestepsforhalf_10',['refineStepsForHalf',['../d3/deb/a01386.html#af2a9314095155eef4a78c2d2946bb65d',1,'Dune::DGFGridInfo&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;']]],
+  ['refineweight_11',['refineWeight',['../d3/deb/a01386.html#aa6e2a1e176ef9c5147340022ef1c2175',1,'Dune::DGFGridInfo&lt; Dune::IGA::NURBSGrid&lt; gridDim, worldDim, ScalarType &gt; &gt;']]],
   ['registercontrolpoint_12',['registerControlPoint',['../d7/d03/a00254.html#a5d2b9f264b1b4229ed54df9082d5d35d',1,'Dune::Python']]],
   ['registermultidimensionalnet_13',['registerMultiDimensionalNet',['../d7/d03/a00254.html#ad1c3e9e27b16a052696b80a7846b05eb',1,'Dune::Python']]],
   ['registernurbspatchdata_14',['registerNurbsPatchData',['../d7/d03/a00254.html#abb0ad571b894541ccc4722f669ce8097',1,'Dune::Python']]],
@@ -19,7 +19,7 @@ var searchData=
   ['report_16',['report',['../d5/da6/a01698.html#a5aff2519bf178a33e915f1e207dc2bc8',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult']]],
   ['resize_17',['resize',['../dd/ddc/a01802.html#a08268ba2ec76c75133c247e1ba250f96',1,'Dune::IGANEW::MultiDimensionalNet']]],
   ['right_18',['right',['../dd/df1/a01082.html#a8fd7ec26c729c036c83cbd4280b6de1c',1,'Dune::IGANEW::Utilities::Domain::right() const'],['../dd/df1/a01082.html#a32c4ce902788d5345a4e9bad9595bb05',1,'Dune::IGANEW::Utilities::Domain::right()']]],
-  ['rowfixedmatrix_19',['RowFixedMatrix',['../df/d2f/a01474.html#a51302978bd8a25671dea53201a0bf53b',1,'Dune::IGANEW::Splines::BsplineBasis']]],
+  ['rowfixedmatrix_19',['RowFixedMatrix',['../d8/d7b/a01478.html#a51302978bd8a25671dea53201a0bf53b',1,'Dune::IGANEW::Splines::BsplineBasis']]],
   ['runcirculararc_20',['runCircularArc',['../d0/d2f/a00259.html#a4435c22c355c8f50239394e8452069db',1,'iga::_nurbsalgorithms']]],
   ['runsurfaceofrevolution_21',['runSurfaceOfRevolution',['../d0/d2f/a00259.html#a050e71892f002f5250de3c7b3155c942',1,'iga::_nurbsalgorithms']]]
 ];
