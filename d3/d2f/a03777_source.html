@@ -144,43 +144,27 @@ $(document).ready(function(){initNavTree('d3/d2f/a03777_source.html','../../'); 
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="comment">// dereferencing</span></div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../dc/def/a01594.html#aaf9dbda00bc11fe1e4505176788ed6a1">   62</a></span>  <a class="code hl_typedef" href="../../dc/def/a01594.html#aeaaa17e28a86d35d580a4fee70e1adc7">Entity</a> <a class="code hl_function" href="../../dc/def/a01594.html#aaf9dbda00bc11fe1e4505176788ed6a1">dereference</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (codim == 0) {</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="comment">// auto parameterSpaceEntity= ParameterSpaceGridEntity{patchGrid_, *parameterSpaceLevelIterator,id_};</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>      <span class="keyword">auto</span> realEntity = <span class="keyword">typename</span> Entity::Implementation{patchGrid_, *parameterSpaceLevelIterator};</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>      <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../dc/def/a01594.html#aeaaa17e28a86d35d580a4fee70e1adc7">Entity</a>{std::move(realEntity)};</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    } <span class="keywordflow">else</span> <span class="comment">/* if(id_.elementState==GlobalIdSetId::ElementState::full)// subentity is untrimmed */</span> {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="comment">// auto parameterSpaceEntity= ParameterSpaceGridEntity{patchGrid_,*parameterSpaceLevelIterator,id_};</span></div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keyword">auto</span> realEntity = <span class="keyword">typename</span> Entity::Implementation{patchGrid_, *parameterSpaceLevelIterator};</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../dc/def/a01594.html#aeaaa17e28a86d35d580a4fee70e1adc7">Entity</a>{std::move(realEntity)};</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    }</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    <span class="comment">// else {</span></div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <span class="comment">//   DUNE_THROW(NotImplemented,&quot;This is doing the wrong thing&quot;);</span></div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>    <span class="comment">//   // auto parameterSpaceEntity=</span></div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="comment">//   ParameterSpaceGridEntity{patchGrid_,id_,ElementTrimData(),parameterSpaceLevelIterator-&gt;level()};</span></div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="comment">//   // auto realEntity= typename Entity::Implementation{patchGrid_,std::move(parameterSpaceEntity)};</span></div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    <span class="comment">//   //</span></div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">//   // return Entity{std::move(realEntity)};</span></div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// }</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="comment">// equality</span></div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="../../dc/def/a01594.html#a4039cb0b8ea0726bd3146238c0fc03a1">   84</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/def/a01594.html#a4039cb0b8ea0726bd3146238c0fc03a1">equals</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/def/a01594.html">PatchGridLevelIterator</a>&amp; i)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <span class="keywordflow">return</span> parameterSpaceLevelIterator == i.parameterSpaceLevelIterator;</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  <span class="keyword">const</span> GridImp* patchGrid_;</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">typename</span> GridImp::GridFamily::TrimmerTraits::GlobalIdSetId id_;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  IteratorImpl parameterSpaceLevelIterator;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>};</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>} <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">auto</span> realEntity = <span class="keyword">typename</span> Entity::Implementation{patchGrid_, *parameterSpaceLevelIterator};</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">return</span> <a class="code hl_typedef" href="../../dc/def/a01594.html#aeaaa17e28a86d35d580a4fee70e1adc7">Entity</a>{std::move(realEntity)};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="comment">// equality</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../dc/def/a01594.html#a4039cb0b8ea0726bd3146238c0fc03a1">   68</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../dc/def/a01594.html#a4039cb0b8ea0726bd3146238c0fc03a1">equals</a>(<span class="keyword">const</span> <a class="code hl_class" href="../../dc/def/a01594.html">PatchGridLevelIterator</a>&amp; i)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    <span class="keywordflow">return</span> parameterSpaceLevelIterator == i.parameterSpaceLevelIterator;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span> </div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">const</span> GridImp* patchGrid_;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">typename</span> GridImp::GridFamily::TrimmerTraits::GlobalIdSetId id_;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  IteratorImpl parameterSpaceLevelIterator;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>};</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>} <span class="comment">// namespace Dune::IGANEW::DefaultTrim</span></div>
 <div class="ttc" id="aa00248_html"><div class="ttname"><a href="../../dd/dd7/a00248.html">Dune::IGANEW::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createentities.hh:10</div></div>
 <div class="ttc" id="aa01594_html"><div class="ttname"><a href="../../dc/def/a01594.html">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator</a></div><div class="ttdoc">Iterator over all entities of a given codimension and level of a grid.</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:19</div></div>
 <div class="ttc" id="aa01594_html_a31f4c08063a065896534616b7568a989"><div class="ttname"><a href="../../dc/def/a01594.html#a31f4c08063a065896534616b7568a989">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator::ElementTrimData</a></div><div class="ttdeci">typename GridImp::Trimmer::ElementTrimData ElementTrimData</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:59</div></div>
-<div class="ttc" id="aa01594_html_a4039cb0b8ea0726bd3146238c0fc03a1"><div class="ttname"><a href="../../dc/def/a01594.html#a4039cb0b8ea0726bd3146238c0fc03a1">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator::equals</a></div><div class="ttdeci">bool equals(const PatchGridLevelIterator &amp;i) const</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:84</div></div>
+<div class="ttc" id="aa01594_html_a4039cb0b8ea0726bd3146238c0fc03a1"><div class="ttname"><a href="../../dc/def/a01594.html#a4039cb0b8ea0726bd3146238c0fc03a1">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator::equals</a></div><div class="ttdeci">bool equals(const PatchGridLevelIterator &amp;i) const</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:68</div></div>
 <div class="ttc" id="aa01594_html_a652466c4798e25ccd1ac93beeac582e8"><div class="ttname"><a href="../../dc/def/a01594.html#a652466c4798e25ccd1ac93beeac582e8">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator::GlobalIdSetId</a></div><div class="ttdeci">typename GridImp::GridFamily::TrimmerTraits::GlobalIdSetId GlobalIdSetId</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:58</div></div>
 <div class="ttc" id="aa01594_html_a70a0acef050e96b40242a34f8020a53f"><div class="ttname"><a href="../../dc/def/a01594.html#a70a0acef050e96b40242a34f8020a53f">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator::codimension</a></div><div class="ttdeci">static constexpr int codimension</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:26</div></div>
 <div class="ttc" id="aa01594_html_a9fb260e871fb4d2fd39d6952893780bd"><div class="ttname"><a href="../../dc/def/a01594.html#a9fb260e871fb4d2fd39d6952893780bd">Dune::IGANEW::DefaultTrim::PatchGridLevelIterator::increment</a></div><div class="ttdeci">void increment()</div><div class="ttdef"><b>Definition:</b> defaulttrimmer/patchgridleveliterator.hh:55</div></div>

@@ -3,6 +3,7 @@ var a01678 =
     [ "EntitySeedType", "d6/d26/a01678.html#a0cd9cfbb1e608429f06d2dcada7a6d75", null ],
     [ "HostIdType", "d6/d26/a01678.html#a960d25104211d038850afe5bf62cb7df", null ],
     [ "isTrimmed", "d6/d26/a01678.html#ac5396318009c318cc9b4e5d83f0ae9b2", null ],
+    [ "isValid", "d6/d26/a01678.html#a47af27f271fd66c76d497eab75ab1832", null ],
     [ "codimension", "d6/d26/a01678.html#a7752f851a6d9aa40ddac959e61d5150d", null ],
     [ "decendantIds", "d6/d26/a01678.html#a402963210ad881ba2b41562f5032ca0e", null ],
     [ "fatherId", "d6/d26/a01678.html#a8f3cbbb96cf4c5b5a5511ea8539b58c0", null ],

@@ -8,6 +8,7 @@ var a01670 =
     [ "geometryForIdx", "de/df6/a01670.html#aafdf0b635599fd0f6512c90af373f0c9", null ],
     [ "isTrimmed", "de/df6/a01670.html#aec55a019cd1404ede8bb289d5b56a7c9", null ],
     [ "isTrimmedHost", "de/df6/a01670.html#aa498e81b21ac870e350bc808f0541414", null ],
+    [ "isValid", "de/df6/a01670.html#ad912d964614b58bb6bfb66b202b14713", null ],
     [ "otherGeometryForIdx", "de/df6/a01670.html#a6591944db610610d9d4b2356d6ba34bf", null ],
     [ "codimension", "de/df6/a01670.html#a799f4ac3b3f2b83cde8e4b9082b03b1b", null ],
     [ "hostSeed", "de/df6/a01670.html#a3648060fdddab1ba88cd48cf532eb844", null ],
