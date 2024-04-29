@@ -1,4 +1,4 @@
 var a03732 =
 [
-    [ "Dune::IGANEW::IdentityTrim::PatchGridEntitySeed< codim, GridImp >", "d5/d29/a01722.html", "d5/d29/a01722" ]
+    [ "Dune::IGANEW::PatchGrid< dim, dimworld, GridFamily_, ScalarType >", "d8/d15/a01218.html", "d8/d15/a01218" ]
 ];

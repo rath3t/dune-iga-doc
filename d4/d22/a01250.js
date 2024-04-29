@@ -26,7 +26,7 @@ var a01250 =
     [ "outside", "d4/d22/a01250.html#a6bb0620607d7f30595f9253aa70a4a28", null ],
     [ "type", "d4/d22/a01250.html#a2480ef177623c394351d4dd2ae900c89", null ],
     [ "unitOuterNormal", "d4/d22/a01250.html#af8c5d60fd5612daabc862c9044d1d81e", null ],
-    [ "HostGridAccess< typename std::remove_const< GridImp >::type >", "d4/d22/a01250.html#a22466467a2ab3b42f1332f32e3d1074b", null ],
+    [ "HostGridAccess< std::remove_const_t< GridImp > >", "d4/d22/a01250.html#a82eb6e2cd1e6491ad8c5fa3f01582081", null ],
     [ "dim", "d4/d22/a01250.html#aeda2b3a5bf101158f17235b413f28682", null ],
     [ "dimworld", "d4/d22/a01250.html#ae3edf7e64e47b1ce57f9d7388bb971a9", null ],
     [ "mydim", "d4/d22/a01250.html#ae53a05bceac65d9702fd144918e4c1ff", null ]

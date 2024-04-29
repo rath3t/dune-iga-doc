@@ -7,7 +7,7 @@ var searchData=
   ['hasentity_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_4',['hasEntity&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../d6/d40/a01114.html',1,'Dune::Capabilities']]],
   ['hasentityiterator_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iganew_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2c_20codim_20_3e_5',['hasEntityIterator&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGANEW::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;, codim &gt;',['../db/d1e/a01126.html',1,'Dune::Capabilities']]],
   ['hasentityiterator_3c_20iganew_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_6',['hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../db/d32/a01122.html',1,'Dune::Capabilities']]],
-  ['hash_3c_20dune_3a_3aiganew_3a_3adefaulttrim_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; &gt;',['../d1/d73/a01654.html',1,'std']]],
-  ['hostgridaccess_8',['HostGridAccess',['../da/dcf/a01558.html',1,'Dune::IGANEW::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../d5/d32/a01214.html',1,'Dune::IGANEW::HostGridAccess&lt; Grid &gt;']]],
-  ['hostverteximpl_9',['HostVertexImpl',['../db/dbe/a01706.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]]
+  ['hash_3c_20dune_3a_3aiganew_3a_3adefaulttrim_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; &gt;',['../d9/d79/a01658.html',1,'std']]],
+  ['hostgridaccess_8',['HostGridAccess',['../d2/dc1/a01562.html',1,'Dune::IGANEW::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../d5/d32/a01214.html',1,'Dune::IGANEW::HostGridAccess&lt; Grid &gt;']]],
+  ['hostverteximpl_9',['HostVertexImpl',['../d6/d9a/a01710.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]]
 ];

@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['newverteximpl_0',['NewVertexImpl',['../d6/d9a/a01710.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
-  ['nurbs_1',['Nurbs',['../da/d36/a01482.html',1,'Dune::IGANEW::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d4/d56/a01818.html',1,'iga.basis.Nurbs']]],
+  ['newverteximpl_0',['NewVertexImpl',['../d8/dce/a01714.html',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex']]],
+  ['nurbs_1',['Nurbs',['../da/d36/a01482.html',1,'Dune::IGANEW::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d1/dba/a01822.html',1,'iga.basis.Nurbs']]],
   ['nurbs_3c_20mydimension_2c_20ctype_20_3e_2',['Nurbs&lt; mydimension, ctype &gt;',['../da/d36/a01482.html',1,'Dune::IGANEW::Splines']]],
   ['nurbs_3c_20mydimension_2c_20double_20_3e_3',['Nurbs&lt; mydimension, double &gt;',['../da/d36/a01482.html',1,'Dune::IGANEW::Splines']]],
   ['nurbsgrid_4',['NURBSGrid',['../db/d74/a01378.html',1,'Dune::IGA']]],

@@ -43,6 +43,7 @@ var a01094 =
     [ "localView", "d6/dea/a01094.html#a7b26ee8a1b2c982f941a0a95c7bb3177", null ],
     [ "numberOfControlPoints", "d6/dea/a01094.html#a1985a91990f91c8da9c9c6ed7219f59e", null ],
     [ "numberOfSpans", "d6/dea/a01094.html#a8f9312ecd7c63b710485a087e570811c", null ],
+    [ "operator==", "d6/dea/a01094.html#a722e1a3f2ed4a7f288b089d229269510", null ],
     [ "patchData", "d6/dea/a01094.html#a774988b3688480f79deefe9177d23b23", null ],
     [ "patchData", "d6/dea/a01094.html#a9957f7bf50ec3960c1d1793d1778705c", null ],
     [ "type", "d6/dea/a01094.html#a865962205c7091fb854a95d51f147103", null ],

@@ -1,8 +1,8 @@
 var searchData=
 [
   ['w_0',['w',['../db/dba/a01078.html#af47e8eebddde805b8884bf9e4271b77f',1,'Dune::IGANEW::ControlPoint']]],
-  ['wasrefined_1',['wasRefined',['../d0/d58/a01230.html#abec2fbf817b010250fd6412ea79e3724',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::wasRefined()'],['../d3/d33/a01630.html#a7b35c3dd789aa97fde07778bc9ca7abc',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::wasRefined()']]],
+  ['wasrefined_1',['wasRefined',['../d0/d58/a01230.html#abec2fbf817b010250fd6412ea79e3724',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::wasRefined()'],['../d4/d99/a01634.html#a7b35c3dd789aa97fde07778bc9ca7abc',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::wasRefined()']]],
   ['weights_2',['weights',['../d4/d10/a01278.html#a5803c5f7dcd0efd515e2624815eb0c85',1,'Dune::IGANEW::Ibra::IbraNURBSData::weights()'],['../da/d61/a01350.html#a274e1d6a8d0b93d7c5b5230e2b4f6f65',1,'Dune::IGA::Ibra::IbraNURBSData::weights()']]],
-  ['worlddim_3',['worldDim',['../d5/d8e/a01390.html#ac5d1cecc6f5c369ad6c489d026a47fb1',1,'Dune::JSONGridFactory::worldDim()'],['../d8/d01/a01410.html#ac71eeeb486349846c4010f447e03132a',1,'Dune::IGA::Boundary::worldDim()'],['../d0/d31/a01686.html#a1e4f06bb01657b6aa066243f21f5d994',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::worldDim()']]],
+  ['worlddim_3',['worldDim',['../d5/d8e/a01390.html#ac5d1cecc6f5c369ad6c489d026a47fb1',1,'Dune::JSONGridFactory::worldDim()'],['../d8/d01/a01410.html#ac71eeeb486349846c4010f447e03132a',1,'Dune::IGA::Boundary::worldDim()'],['../d6/d01/a01690.html#a1e4f06bb01657b6aa066243f21f5d994',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::worldDim()']]],
   ['worlddimension_4',['worlddimension',['../d6/dea/a01094.html#a173616658bc7f0db6836a9dda983afa3',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::worlddimension()'],['../da/d4e/a01106.html#a30cebd407caa66fca978cd7154d15b22',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::worlddimension()'],['../d7/dc5/a01242.html#af8b34998247a284b92d835c3cec7c7aa',1,'Dune::IGANEW::PatchGridGeometry::worlddimension()']]]
 ];

@@ -1,4 +1,4 @@
 var a03738 =
 [
-    [ "Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator< GridImp >", "df/dba/a01726.html", "df/dba/a01726" ]
+    [ "Dune::IGANEW::Concept::TrimDataContainer", "d0/db3/a01831.html", null ]
 ];
