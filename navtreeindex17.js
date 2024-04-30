@@ -1,7 +1,5 @@
 var NAVTREEINDEX17 =
 {
-"functions_type_j.html":[5,3,3,8],
-"functions_type_l.html":[5,3,3,9],
 "functions_type_m.html":[5,3,3,10],
 "functions_type_n.html":[5,3,3,11],
 "functions_type_p.html":[5,3,3,12],

@@ -210,9 +210,9 @@ $(document).ready(function(){initNavTree('da/d38/a03786_source.html','../../'); 
 <div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">// Here returned element is in GLOBAL coordinates of the element where iteration started.</span></div>
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    Geometry geometry()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="comment">// @todo trim this will be wrong as soon as the intersection geometry has a special geoemtry</span></div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <span class="keyword">auto</span> geo = <span class="keyword">typename</span> Geometry::Implementation(</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>          parameterSpaceIntersection_.geometry(),</div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>          patchGridGeometry().<span class="keyword">template</span> localView&lt;1, typename GridImp::Trimmer&gt;());</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <span class="keyword">auto</span> geo =</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>          <span class="keyword">typename</span> Geometry::Implementation(parameterSpaceIntersection_.geometry(),</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>                                            patchGridGeometry().<span class="keyword">template</span> localView&lt;1, typename GridImp::Trimmer&gt;());</div>
 <div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      <span class="keywordflow">return</span> Geometry(geo);</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    }</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
@@ -255,7 +255,7 @@ $(document).ready(function(){initNavTree('da/d38/a03786_source.html','../../'); 
 <div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>  <span class="keyword">private</span>:</div>
 <div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    <span class="keyword">auto</span>&amp; patchGridGeometry()<span class="keyword"> const </span>{</div>
 <div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>      <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (type_ == IntersectionType::Leaf)</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span>  patchGrid_-&gt;patchGeometryAtBack();</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>        <span class="keywordflow">return</span> patchGrid_-&gt;patchGeometryAtBack();</div>
 <div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>      <span class="keywordflow">else</span></div>
 <div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>        <span class="keywordflow">return</span> patchGrid_-&gt;patchGeometry(inside().level());</div>
 <div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>    }</div>

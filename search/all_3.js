@@ -58,7 +58,7 @@ var searchData=
   ['createentities_2ehh_55',['createentities.hh',['../df/d98/a00107.html',1,'']]],
   ['creategrid_56',['createGrid',['../d7/dbf/a01239.html#a13a3a5b7333e8d840cbc9160e9eedd72',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
   ['createhostgeometry_57',['createHostGeometry',['../dc/ded/a00252.html#afa8d09a2b2b61bb41dfc22fb2060a5fd',1,'Dune::IGANEW::DefaultTrim::Util']]],
-  ['createintegrationrule_58',['createIntegrationRule',['../db/d8e/a01523.html#a319e8c0fc2dc085291cedceafe1032f2',1,'Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator']]],
+  ['createintegrationrule_58',['createIntegrationRule',['../db/d8e/a01523.html#a4105b9321481ab2a017b7a5c067c721b',1,'Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator']]],
   ['createlevel_2ehh_59',['createlevel.hh',['../d9/d77/a00095.html',1,'']]],
   ['createparameterspacegrid_60',['createParameterSpaceGrid',['../df/d5b/a01807.html#a69cc7be3349d6c011cad17121668d475',1,'Dune::IGANEW::IdentityTrim::TrimmerImpl::createParameterSpaceGrid()'],['../d0/d42/a01707.html#afb35fb6daf013f5e48714286b6182e50',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl::createParameterSpaceGrid()']]],
   ['createsubentities_61',['createSubEntities',['../d0/d42/a01707.html#a452ebe0f6b73e73ef2aba96d17f44f62',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
