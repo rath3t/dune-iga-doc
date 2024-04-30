@@ -1,7 +1,11 @@
 var a03756 =
 [
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet< GridImp >", "d0/d1f/a01734.html", "d0/d1f/a01734" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIndexSet< GridImp >", "d5/d10/a01738.html", "d5/d10/a01738" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridGlobalIdSet< GridImp >", "d1/dd5/a01742.html", "d1/dd5/a01742" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridLocalIdSet< GridImp >", "d5/dfa/a01746.html", "d5/dfa/a01746" ]
+    [ "Dune::IGANEW::Concept::Vector", "d2/dbd/a01844.html", null ],
+    [ "Dune::IGANEW::Concept::ControlPoint", "da/d8c/a01845.html", null ],
+    [ "Dune::IGANEW::Concept::MultiplyAble", "d4/df4/a01846.html", null ],
+    [ "Dune::IGANEW::Concept::AddAble", "d3/d19/a01847.html", null ],
+    [ "Dune::IGANEW::Concept::SubstractAble", "da/d4b/a01848.html", null ],
+    [ "Dune::IGANEW::Concept::MultiplyAssignAble", "db/dd4/a01849.html", null ],
+    [ "Dune::IGANEW::Concept::DivideAssignAble", "da/d18/a01850.html", null ],
+    [ "Dune::IGANEW::Concept::DivideAble", "d2/d3e/a01851.html", null ]
 ];

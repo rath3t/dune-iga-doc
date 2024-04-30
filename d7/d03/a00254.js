@@ -1,11 +1,5 @@
 var a00254 =
 [
-    [ "IGA", "d4/d04/a00255.html", [
-      [ "Reader", "d4/d04/a00255.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-        [ "json", "d4/d04/a00255.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-      ] ]
-    ] ],
-    [ "registerControlPoint", "d7/d03/a00254.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "d7/d03/a00254.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
-    [ "registerNurbsPatchData", "d7/d03/a00254.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "nth< 0, Dune::FieldVector< T, 2 > >", "d4/d62/a01531.html", "d4/d62/a01531" ],
+    [ "nth< 1, Dune::FieldVector< T, 2 > >", "dc/d93/a01535.html", "dc/d93/a01535" ]
 ];

@@ -1,4 +1,11 @@
 var a03750 =
 [
-    [ "Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator< GridImp >", "de/db5/a01730.html", "de/db5/a01730" ]
+    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d1/d72/a01319.html", "d1/d72/a01319" ],
+    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "db/da8/a01323.html", "db/da8/a01323" ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d4/d2c/a01327.html", "d4/d2c/a01327" ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d2/d8e/a01315.html", "d2/d8e/a01315" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "d5/dad/a01207.html", "d5/dad/a01207" ],
+    [ "Dune::Functions::NurbsNode< GV >", "dc/d8e/a01331.html", "dc/d8e/a01331" ],
+    [ "nurbs", "d2/d17/a03750.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
+    [ "nurbs", "d2/d17/a03750.html#a10c3f08f7830f39c003415e65e2a0361", null ]
 ];

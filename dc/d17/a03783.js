@@ -1,20 +1,5 @@
 var a03783 =
 [
-    [ "std::hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "d9/d79/a01658.html", "d9/d79/a01658" ],
-    [ "Dune::IGANEW::DefaultTrim::IdType< HostIdType >", "d1/d73/a01654.html", "d1/d73/a01654" ],
-    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< Traits, codim >", "d9/dbc/a01662.html", null ],
-    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< Traits, 2 >", "d8/d75/a01666.html", "d8/d75/a01666" ],
-    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< Traits, 1 >", "de/df6/a01670.html", "de/df6/a01670" ],
-    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< Traits, 1 >::GeometryMap", "dc/d42/a01674.html", "dc/d42/a01674" ],
-    [ "Dune::IGANEW::DefaultTrim::EntityInfoImpl< Traits, 0 >", "d6/d26/a01678.html", "d6/d26/a01678" ],
-    [ "Dune::IGANEW::DefaultTrim::Parameter", "dd/d08/a01682.html", "dd/d08/a01682" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d6/d01/a01690.html", "d6/d01/a01690" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d4/d8e/a01694.html", "d4/d8e/a01694" ],
-    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d5/da6/a01698.html", "d5/da6/a01698" ],
-    [ "operator!=", "dc/d17/a03783.html#ac274492bbfe7e60de735f1bb58fdf172", null ],
-    [ "operator<", "dc/d17/a03783.html#ad60258d3c3cf850f549bd14af49382bb", null ],
-    [ "operator<=", "dc/d17/a03783.html#a7ac6998daef47f3ba10679c00bf49ae8", null ],
-    [ "operator==", "dc/d17/a03783.html#ad780ed3ffc28d55054058aa0707015c9", null ],
-    [ "operator>", "dc/d17/a03783.html#a0b06cf2e6c68b3f5e927015dc7ef6b6e", null ],
-    [ "operator>=", "dc/d17/a03783.html#a2a9fbc56f49089cd4a4d98b0e98cf465", null ]
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLeafIntersectionIterator< GridImp >", "d7/d02/a01771.html", "d7/d02/a01771" ],
+    [ "Dune::IGANEW::IdentityTrim::PatchGridLevelIntersectionIterator< GridImp >", "d1/d6b/a01775.html", "d1/d6b/a01775" ]
 ];

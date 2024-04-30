@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['untrimmedlocalgeometry_0',['UntrimmedLocalGeometry',['../d5/da6/a01698.html#a7fe768a69bbdba5999198466ab317f1b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
-  ['untrimmedparameterspacegeometry_1',['UntrimmedParameterSpaceGeometry',['../d5/da6/a01698.html#a8fb925ab6c15aa87906a35caeab15f8b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
-  ['untrimmedparameterspacegrid_2',['UntrimmedParameterSpaceGrid',['../d0/d31/a01686.html#add2110be96fc5f5198839b01a2944ffa',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]]
+  ['untrimmedlocalgeometry_0',['UntrimmedLocalGeometry',['../d6/d56/a01719.html#a7fe768a69bbdba5999198466ab317f1b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
+  ['untrimmedparameterspacegeometry_1',['UntrimmedParameterSpaceGeometry',['../d6/d56/a01719.html#a8fb925ab6c15aa87906a35caeab15f8b',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits::Codim']]],
+  ['untrimmedparameterspacegrid_2',['UntrimmedParameterSpaceGrid',['../d0/d42/a01707.html#add2110be96fc5f5198839b01a2944ffa',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]]
 ];

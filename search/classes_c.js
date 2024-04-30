@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['stringandindex_0',['StringAndIndex',['../dc/d47/a01510.html',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['subentityrangeimpl_1',['SubEntityRangeImpl',['../d3/d33/a01630.html',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
+  ['simplexintegrationrulegenerator_0',['SimplexIntegrationRuleGenerator',['../db/d8e/a01523.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['stringandindex_1',['StringAndIndex',['../d2/de0/a01515.html',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
+  ['subentityrangeimpl_2',['SubEntityRangeImpl',['../d5/de9/a01651.html',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
 ];
