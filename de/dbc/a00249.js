@@ -1,16 +1,25 @@
 var a00249 =
 [
-    [ "BsplineBasis", "d2/dc4/a01483.html", "d2/dc4/a01483" ],
-    [ "Nurbs", "dc/d47/a01487.html", "dc/d47/a01487" ],
-    [ "createUniqueKnotSpans", "de/dbc/a00249.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
-    [ "degreeElevate", "de/dbc/a00249.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
-    [ "extractControlCoordinates", "de/dbc/a00249.html#ac182f0a34d571d507849a1a4b8c79351", null ],
-    [ "extractWeights", "de/dbc/a00249.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
-    [ "findSpan", "de/dbc/a00249.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
-    [ "findSpan", "de/dbc/a00249.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
-    [ "generateRefinedKnots", "de/dbc/a00249.html#a2287fefbe65d5d37c50e3c953258961d", null ],
-    [ "knotRefinement", "de/dbc/a00249.html#ae31d742d70844f23a725edbd89c0f31c", null ],
-    [ "multiplicity", "de/dbc/a00249.html#a88473945faf4f3ad3a83f3491faf0782", null ],
-    [ "netOfSpan", "de/dbc/a00249.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
-    [ "netOfSpan", "de/dbc/a00249.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
+    [ "Ibra", "d0/da7/a00250.html", "d0/da7/a00250" ],
+    [ "Trim", "d3/d1a/a00251.html", "d3/d1a/a00251" ],
+    [ "Boundary", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
+    [ "DomainInformation", "df/d2f/a01474.html", "df/d2f/a01474" ],
+    [ "GridBoundarySegment", "d8/d7b/a01478.html", "d8/d7b/a01478" ],
+    [ "IbraReader", "d5/d8e/a01390.html", "d5/d8e/a01390" ],
+    [ "IGARefinedGeometries", "dc/d25/a01406.html", "dc/d25/a01406" ],
+    [ "NURBSGrid", "d3/deb/a01386.html", null ],
+    [ "TransformToSpan", "d0/da4/a01470.html", "d0/da4/a01470" ],
+    [ "TrimData", "d1/df4/a01422.html", "d1/df4/a01422" ],
+    [ "BoundaryLoop", "de/dbc/a00249.html#ac852dd8efef6c18283ca22735cb02696", null ],
+    [ "DomainType", "de/dbc/a00249.html#a25585768c010972feb9ad3e744e16623", null ],
+    [ "ElementTrimFlag", "de/dbc/a00249.html#a34b2741ab599082a80dacc40c6e5069b", [
+      [ "full", "de/dbc/a00249.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "de/dbc/a00249.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "de/dbc/a00249.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ],
+    [ "calculateBoundaryLoopLength", "de/dbc/a00249.html#ad53d9d1af502406661ebe6320753c429", null ],
+    [ "determineCurvedBoundaries", "de/dbc/a00249.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
+    [ "fillQuadratureRuleImpl", "de/dbc/a00249.html#a023d3c0845a496b2eedca5b359b49964", null ],
+    [ "splitBoundariesImpl", "de/dbc/a00249.html#ad66112982ac256c7f15589dec5fcce68", null ],
+    [ "triangulate", "de/dbc/a00249.html#ab8e1d89240e3480112457535ab40b620", null ]
 ];

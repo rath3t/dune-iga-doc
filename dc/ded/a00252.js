@@ -1,19 +1,16 @@
 var a00252 =
 [
-    [ "ClippingResult", "dc/de8/a01723.html", "dc/de8/a01723" ],
-    [ "approxSamePoint", "dc/ded/a00252.html#a8a48376718a0fecf272f5c45b240f217", null ],
-    [ "callFindIntersection", "dc/ded/a00252.html#a3ec98aeae9dd9815cc7a6c9178f24a64", null ],
-    [ "clipElementRectangle", "dc/ded/a00252.html#a4f65cad383549769cbe786b60c31e479", null ],
-    [ "createHostGeometry", "dc/ded/a00252.html#afa8d09a2b2b61bb41dfc22fb2060a5fd", null ],
-    [ "createTrimmingCurveSlice", "dc/ded/a00252.html#a4160dac0cdcae55fca83559856c4a45a", null ],
-    [ "distance", "dc/ded/a00252.html#a92128ee85ce68d85f0d598c954c790eb", null ],
-    [ "findGoodStartingPoint", "dc/ded/a00252.html#a870b9a152ad4ff41a8be202c6d04b7a5", null ],
-    [ "giveEdgeIdx", "dc/ded/a00252.html#a55a9ec04149f78cad2fd07e790a81128", null ],
-    [ "isCornerVertex", "dc/ded/a00252.html#a63be6569afc287df64dcdf64d4eb9853", null ],
-    [ "isSameEdgeGeometry", "dc/ded/a00252.html#a412f41ae71e2d99e1d237bd7ee0d508f", null ],
-    [ "sameCorner", "dc/ded/a00252.html#a7256dac55c557d9d9006b0747faf9d03", null ],
-    [ "edgeDirections", "dc/ded/a00252.html#a2980769b17a08a9c365baf8b18cca9d7", null ],
-    [ "edgeIndexMapping", "dc/ded/a00252.html#ac7e1eb84b57061650b4b4c90078df1dd", null ],
-    [ "edgeLookUp", "dc/ded/a00252.html#a16d111a10fb0652a5487a6116aeabb50", null ],
-    [ "vertexIndexMapping", "dc/ded/a00252.html#a1af143e66845c6b725ae850a95388115", null ]
+    [ "BsplineBasis", "d0/d34/a01486.html", "d0/d34/a01486" ],
+    [ "Nurbs", "de/d3c/a01490.html", "de/d3c/a01490" ],
+    [ "createUniqueKnotSpans", "dc/ded/a00252.html#a1d7349b1373b5c83a5a5be7377985ae0", null ],
+    [ "degreeElevate", "dc/ded/a00252.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
+    [ "extractControlCoordinates", "dc/ded/a00252.html#ac182f0a34d571d507849a1a4b8c79351", null ],
+    [ "extractWeights", "dc/ded/a00252.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
+    [ "findSpan", "dc/ded/a00252.html#a3f4a0936ded82e5421a36f9f4c0c114b", null ],
+    [ "findSpan", "dc/ded/a00252.html#a67facdaecd7f3c339ece70971f8a8f92", null ],
+    [ "generateRefinedKnots", "dc/ded/a00252.html#a2287fefbe65d5d37c50e3c953258961d", null ],
+    [ "knotRefinement", "dc/ded/a00252.html#ae31d742d70844f23a725edbd89c0f31c", null ],
+    [ "multiplicity", "dc/ded/a00252.html#a88473945faf4f3ad3a83f3491faf0782", null ],
+    [ "netOfSpan", "dc/ded/a00252.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
+    [ "netOfSpan", "dc/ded/a00252.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
 ];

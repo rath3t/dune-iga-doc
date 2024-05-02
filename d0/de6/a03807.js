@@ -1,10 +1,15 @@
 var a03807 =
 [
-    [ "Dune::IGANEW::IdentityTrim::Parameter", "d1/dea/a01791.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataImpl< mydim_, ScalarType >", "d1/df0/a01795.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "d5/d12/a01799.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchTrimDataImpl< dim, ScalarType >", "d3/dfd/a01803.html", null ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d1/d34/a01211.html", "d1/d34/a01211" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d2/d31/a01811.html", "d2/d31/a01811" ],
-    [ "Dune::IGANEW::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d8/dce/a01815.html", "d8/dce/a01815" ]
+    [ "std::hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "de/d05/a01702.html", "de/d05/a01702" ],
+    [ "Dune::IGANEW::DefaultTrim::IdType< HostIdType >", "da/da6/a01522.html", "da/da6/a01522" ],
+    [ "Dune::IGANEW::DefaultTrim::Parameter", "db/dbe/a01706.html", "db/dbe/a01706" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d8/dce/a01714.html", "d8/dce/a01714" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "db/d7f/a01718.html", "db/d7f/a01718" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "d5/d29/a01722.html", "d5/d29/a01722" ],
+    [ "operator!=", "d0/de6/a03807.html#ac274492bbfe7e60de735f1bb58fdf172", null ],
+    [ "operator<", "d0/de6/a03807.html#ad60258d3c3cf850f549bd14af49382bb", null ],
+    [ "operator<=", "d0/de6/a03807.html#a7ac6998daef47f3ba10679c00bf49ae8", null ],
+    [ "operator==", "d0/de6/a03807.html#ad780ed3ffc28d55054058aa0707015c9", null ],
+    [ "operator>", "d0/de6/a03807.html#a0b06cf2e6c68b3f5e927015dc7ef6b6e", null ],
+    [ "operator>=", "d0/de6/a03807.html#a2a9fbc56f49089cd4a4d98b0e98cf465", null ]
 ];

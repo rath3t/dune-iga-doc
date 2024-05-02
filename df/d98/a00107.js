@@ -1,5 +1,5 @@
 var a00107 =
 [
-    [ "isSameEdgeGeometry", "df/d98/a00107.html#a412f41ae71e2d99e1d237bd7ee0d508f", null ],
-    [ "sameCorner", "df/d98/a00107.html#a7256dac55c557d9d9006b0747faf9d03", null ]
+    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >", "d9/dbc/a01662.html", "d9/dbc/a01662" ],
+    [ "Dune::IGANEW::DefaultTrim::PatchTrimDataImpl< GridImp >::CurveManager", "d8/d75/a01666.html", "d8/d75/a01666" ]
 ];

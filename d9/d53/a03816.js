@@ -1,8 +1,6 @@
 var a03816 =
 [
-    [ "iga.basis.Nurbs", "d9/d75/a01843.html", "d9/d75/a01843" ],
-    [ "defaultGlobalBasis", "d9/d53/a03816.html#abe7102c803053539b7417e439b0f122f", null ],
-    [ "indexMergingStrategy", "d9/d53/a03816.html#a1116006b529ec79e4a35a97a8614bd5e", null ],
-    [ "preBasisTypeName", "d9/d53/a03816.html#a6b046881676017b1a2068df515deb99f", null ],
-    [ "duneFunctionsLayouts", "d9/d53/a03816.html#a7567a58831582a87fbcc011042771efa", null ]
+    [ "registerControlPoint", "d9/d53/a03816.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
+    [ "registerMultiDimensionalNet", "d9/d53/a03816.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
+    [ "registerNurbsPatchData", "d9/d53/a03816.html#abb0ad571b894541ccc4722f669ce8097", null ]
 ];

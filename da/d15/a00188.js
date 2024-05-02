@@ -1,5 +1,5 @@
 var a00188 =
 [
-    [ "sliceCurve", "da/d15/a00188.html#abfc77ae77e0b94352c95be9f7743ba82", null ],
-    [ "splitCurve", "da/d15/a00188.html#a9d1ef665e00560598f9eecf853c6187b", null ]
+    [ "makeCircularArc", "da/d15/a00188.html#a000e49612164d2b6609e00015a7da1b8", null ],
+    [ "makeCircularArc2D", "da/d15/a00188.html#af2e971c8404f8415030e1ae459761540", null ]
 ];

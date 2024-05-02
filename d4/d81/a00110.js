@@ -1,6 +1,5 @@
 var a00110 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d4/d49/a01643.html", "d4/d49/a01643" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d6/df0/a01647.html", "d6/df0/a01647" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "d5/de9/a01651.html", "d5/de9/a01651" ]
+    [ "isSameEdgeGeometry", "d4/d81/a00110.html#a412f41ae71e2d99e1d237bd7ee0d508f", null ],
+    [ "sameCorner", "d4/d81/a00110.html#a47cd53a1e314811204ecd9bcbf6c95f1", null ]
 ];
