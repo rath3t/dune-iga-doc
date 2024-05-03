@@ -1,9 +1,11 @@
 var a00167 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d9/df5/a01086.html", "d9/df5/a01086" ],
-    [ "operator*", "dc/de6/a00167.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "dc/de6/a00167.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "dc/de6/a00167.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "dc/de6/a00167.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "dc/de6/a00167.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "DUNE_FMatrix_WITH_CHECKING", "dc/de6/a00167.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b", null ],
+    [ "IntersectionCurveAndLine", "dc/de6/a00167.html#a21ad9f3f2161548e10add5e90e558761", [
+      [ "disjoint", "dc/de6/a00167.html#a21ad9f3f2161548e10add5e90e558761aff8d48ba74b051ac230fb0c28ae11984", null ],
+      [ "intersect", "dc/de6/a00167.html#a21ad9f3f2161548e10add5e90e558761aea228c391b72961cc1370e2d66442d86", null ],
+      [ "parallel", "dc/de6/a00167.html#a21ad9f3f2161548e10add5e90e558761a48920c071f6a5c97ae3739be64630697", null ]
+    ] ],
+    [ "findIntersectionCurveAndLine", "dc/de6/a00167.html#a533ba1e65466dfc728bc84b33126774f", null ],
+    [ "findIntersectionLinearCurveAndLine", "dc/de6/a00167.html#a337c8ba4001f6d4d07f1e11a65147836", null ]
 ];

@@ -1,5 +1,7 @@
 var a00137 =
 [
-    [ "is_instantiation_of< Template, T >", "db/d09/a01838.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "db/d5a/a01842.html", null ]
+    [ "Dune::IGANEW::PatchGridEntity< codim, dim, GridImp >", "d5/d32/a01214.html", "d5/d32/a01214" ],
+    [ "Dune::IGANEW::PatchGridEntity< 0, dim, GridImp >", "de/d7e/a01222.html", "de/d7e/a01222" ],
+    [ "referenceElement", "d2/df5/a00137.html#a14501a764d945ffb9fd15254ab7da335", null ],
+    [ "referenceElement", "d2/df5/a00137.html#aa8ba61178990a88b88ab09dfc698d54b", null ]
 ];

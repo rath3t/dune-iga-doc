@@ -1,185 +1,164 @@
 var annotated_dup =
 [
-    [ "Dune", "d7/d40/a00236.html", [
-      [ "Capabilities", "d6/d82/a00243.html", [
-        [ "canCommunicate< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d3/ddc/a01142.html", "d3/ddc/a01142" ],
-        [ "canCommunicate< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d0/d39/a01138.html", "d0/d39/a01138" ],
-        [ "hasBackupRestoreFacilities< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dc/dee/a01166.html", "dc/dee/a01166" ],
-        [ "hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d4/d13/a01162.html", "d4/d13/a01162" ],
-        [ "hasEntity< const Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "db/d1e/a01126.html", "db/d1e/a01126" ],
-        [ "hasEntity< const IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "dd/d09/a01118.html", "dd/d09/a01118" ],
-        [ "hasEntity< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "db/d32/a01122.html", "db/d32/a01122" ],
-        [ "hasEntityIterator< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "dd/de2/a01134.html", "dd/de2/a01134" ],
-        [ "hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d0/d61/a01130.html", "d0/d61/a01130" ],
-        [ "isCartesian< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dc/d19/a01190.html", "dc/d19/a01190" ],
-        [ "isCartesian< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d9/dbb/a01186.html", "d9/dbb/a01186" ],
-        [ "isLeafwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "df/db5/a01158.html", "df/db5/a01158" ],
-        [ "isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d5/d16/a01154.html", "d5/d16/a01154" ],
-        [ "isLevelwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d2/d7b/a01150.html", "d2/d7b/a01150" ],
-        [ "isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d07/a01146.html", "de/d07/a01146" ],
-        [ "threadSafe< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "da/dfb/a01174.html", "da/dfb/a01174" ],
-        [ "threadSafe< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d3/dc7/a01170.html", "d3/dc7/a01170" ],
-        [ "viewThreadSafe< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dd/de9/a01182.html", "dd/de9/a01182" ],
-        [ "viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d8/d11/a01178.html", "d8/d11/a01178" ]
+    [ "Dune", "dd/d52/a00221.html", [
+      [ "Capabilities", "de/dc2/a00228.html", [
+        [ "canCommunicate< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "db/d1e/a01126.html", "db/d1e/a01126" ],
+        [ "canCommunicate< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "db/d32/a01122.html", "db/d32/a01122" ],
+        [ "hasBackupRestoreFacilities< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d2/d7b/a01150.html", "d2/d7b/a01150" ],
+        [ "hasBackupRestoreFacilities< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d07/a01146.html", "de/d07/a01146" ],
+        [ "hasEntity< const Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d1/d3d/a01110.html", "d1/d3d/a01110" ],
+        [ "hasEntity< const IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d4/da7/a01102.html", "d4/da7/a01102" ],
+        [ "hasEntity< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "da/d4e/a01106.html", "da/d4e/a01106" ],
+        [ "hasEntityIterator< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "dd/d09/a01118.html", "dd/d09/a01118" ],
+        [ "hasEntityIterator< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d6/d40/a01114.html", "d6/d40/a01114" ],
+        [ "isCartesian< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "da/dfb/a01174.html", "da/dfb/a01174" ],
+        [ "isCartesian< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d3/dc7/a01170.html", "d3/dc7/a01170" ],
+        [ "isLeafwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d3/ddc/a01142.html", "d3/ddc/a01142" ],
+        [ "isLeafwiseConforming< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d0/d39/a01138.html", "d0/d39/a01138" ],
+        [ "isLevelwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dd/de2/a01134.html", "dd/de2/a01134" ],
+        [ "isLevelwiseConforming< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d0/d61/a01130.html", "d0/d61/a01130" ],
+        [ "threadSafe< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "df/db5/a01158.html", "df/db5/a01158" ],
+        [ "threadSafe< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d5/d16/a01154.html", "d5/d16/a01154" ],
+        [ "viewThreadSafe< Dune::Grid< dim, dimworld, ScalarType, IGANEW::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dc/dee/a01166.html", "dc/dee/a01166" ],
+        [ "viewThreadSafe< IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d4/d13/a01162.html", "d4/d13/a01162" ]
       ] ],
-      [ "Functions", "d6/d08/a00244.html", [
-        [ "NurbsLocalBasis", "d5/df4/a01322.html", "d5/df4/a01322" ],
-        [ "NurbsLocalCoefficients", "d1/d54/a01326.html", "d1/d54/a01326" ],
-        [ "NurbsLocalFiniteElement", "d6/dfa/a01318.html", "d6/dfa/a01318" ],
-        [ "NurbsLocalInterpolation", "d5/d78/a01330.html", "d5/d78/a01330" ],
-        [ "NurbsNode", "d4/dd1/a01334.html", "d4/dd1/a01334" ],
-        [ "NurbsPreBasis", "d2/da6/a01210.html", "d2/da6/a01210" ]
+      [ "Functions", "dd/d2d/a00229.html", [
+        [ "NurbsLocalBasis", "d6/dfa/a01318.html", "d6/dfa/a01318" ],
+        [ "NurbsLocalCoefficients", "d5/df4/a01322.html", "d5/df4/a01322" ],
+        [ "NurbsLocalFiniteElement", "d9/de6/a01314.html", "d9/de6/a01314" ],
+        [ "NurbsLocalInterpolation", "d1/d54/a01326.html", "d1/d54/a01326" ],
+        [ "NurbsNode", "d5/d78/a01330.html", "d5/d78/a01330" ],
+        [ "NurbsPreBasis", "d9/d2e/a01194.html", "d9/d2e/a01194" ]
       ] ],
-      [ "IGA", "de/dbc/a00249.html", [
-        [ "Ibra", "d0/da7/a00250.html", [
-          [ "Brep", "de/d9d/a01382.html", "de/d9d/a01382" ],
-          [ "BrepLoop", "d2/dff/a01374.html", "d2/dff/a01374" ],
-          [ "BrepLoopRepresentation", "d8/dbe/a01370.html", "d8/dbe/a01370" ],
-          [ "BrepRepresentation", "db/d74/a01378.html", "db/d74/a01378" ],
-          [ "BrepTrim", "d6/dfe/a01366.html", "d6/dfe/a01366" ],
-          [ "BrepTrimRepresentation", "da/dab/a01362.html", "da/dab/a01362" ],
-          [ "IbraBase", "d7/dc4/a01354.html", "d7/dc4/a01354" ],
-          [ "IbraNURBSData", "de/d5c/a01358.html", "de/d5c/a01358" ]
-        ] ],
-        [ "Trim", "d3/d1a/a00251.html", [
-          [ "ElementBoundaries", "dc/de6/a01426.html", "dc/de6/a01426" ],
-          [ "NURBSPatchTrimmer", "d8/dd0/a01430.html", "d8/dd0/a01430" ]
-        ] ],
-        [ "Boundary", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
-        [ "DomainInformation", "df/d2f/a01474.html", "df/d2f/a01474" ],
-        [ "GridBoundarySegment", "d8/d7b/a01478.html", "d8/d7b/a01478" ],
-        [ "IbraReader", "d5/d8e/a01390.html", "d5/d8e/a01390" ],
-        [ "IGARefinedGeometries", "dc/d25/a01406.html", "dc/d25/a01406" ],
-        [ "NURBSGrid", "d3/deb/a01386.html", null ],
-        [ "TransformToSpan", "d0/da4/a01470.html", "d0/da4/a01470" ],
-        [ "TrimData", "d1/df4/a01422.html", "d1/df4/a01422" ]
+      [ "IGA", "d6/de1/a00233.html", [
+        [ "IGARefinedGeometries", "d7/d8c/a01306.html", "d7/d8c/a01306" ]
       ] ],
-      [ "IGANEW", "d4/d08/a00237.html", [
-        [ "DefaultTrim", "d7/d03/a00254.html", [
-          [ "Util", "d4/d04/a00255.html", [
-            [ "ClippingResult", "df/dba/a01726.html", "df/dba/a01726" ]
+      [ "IGANEW", "d0/d24/a00222.html", [
+        [ "DefaultTrim", "da/d2e/a00238.html", [
+          [ "Util", "d0/d27/a00239.html", [
+            [ "ClippingResult", "dc/def/a01594.html", "dc/def/a01594" ]
           ] ],
-          [ "ElementTrimDataImpl", "de/dc6/a01502.html", "de/dc6/a01502" ],
-          [ "EntityInfoImpl", "da/d0a/a01526.html", null ],
-          [ "EntityInfoImpl< Traits, 0 >", "d6/d02/a01542.html", "d6/d02/a01542" ],
-          [ "EntityInfoImpl< Traits, 1 >", "dc/d2d/a01534.html", "dc/d2d/a01534" ],
-          [ "EntityInfoImpl< Traits, 2 >", "d7/d90/a01530.html", "d7/d90/a01530" ],
-          [ "HostGridAccess", "d9/dfd/a01610.html", null ],
-          [ "IdType", "da/da6/a01522.html", "da/da6/a01522" ],
-          [ "Parameter", "db/dbe/a01706.html", "db/dbe/a01706" ],
-          [ "PatchGridEntitySeed", "d1/d9b/a01566.html", "d1/d9b/a01566" ],
-          [ "PatchGridFamily", "d8/dce/a01714.html", "d8/dce/a01714" ],
-          [ "PatchGridGlobalIdSet", "d9/da1/a01546.html", "d9/da1/a01546" ],
-          [ "PatchGridHierarchicIterator", "d5/d75/a01570.html", "d5/d75/a01570" ],
-          [ "PatchGridLeafIndexSet", "d0/d21/a01582.html", "d0/d21/a01582" ],
-          [ "PatchGridLeafIntersectionIterator", "d5/dcf/a01602.html", "d5/dcf/a01602" ],
-          [ "PatchGridLeafIterator", "dd/d55/a01638.html", "dd/d55/a01638" ],
-          [ "PatchGridLevelIndexSet", "d1/d88/a01578.html", "d1/d88/a01578" ],
-          [ "PatchGridLevelIntersectionIterator", "d3/d2d/a01606.html", "d3/d2d/a01606" ],
-          [ "PatchGridLevelIterator", "d7/d94/a01642.html", "d7/d94/a01642" ],
-          [ "PatchGridLocalIdSet", "d2/d2f/a01586.html", "d2/d2f/a01586" ],
-          [ "PatchTrimDataImpl", "d9/dbc/a01662.html", "d9/dbc/a01662" ],
-          [ "SimplexIntegrationRuleGenerator", "d8/daf/a01550.html", "d8/daf/a01550" ],
-          [ "Transformations", "d5/dfa/a01746.html", "d5/dfa/a01746" ],
-          [ "TrimmedLeafIntersection", "d3/d33/a01630.html", "d3/d33/a01630" ],
-          [ "TrimmedLevelIntersection", "d4/d99/a01634.html", "d4/d99/a01634" ],
-          [ "TrimmedLocalGeometryImpl", "d0/d31/a01686.html", null ],
-          [ "TrimmedLocalGeometryImpl< 0, coorddim, GridImp, localGeometryTag >", "d5/da6/a01698.html", "d5/da6/a01698" ],
-          [ "TrimmedLocalGeometryImpl< 1, coorddim, GridImp, localGeometryTag >", "d4/d8e/a01694.html", "d4/d8e/a01694" ],
-          [ "TrimmedLocalGeometryImpl< 2, coorddim, GridImp, localGeometryTag >", "d6/d01/a01690.html", "d6/d01/a01690" ],
-          [ "TrimmedParameterSpaceGridEntity", "dd/d08/a01682.html", "dd/d08/a01682" ],
-          [ "TrimmedReferenceElement", "de/df6/a01670.html", "de/df6/a01670" ],
-          [ "TrimmerImpl", "d6/d9a/a01710.html", "d6/d9a/a01710" ],
-          [ "VectorEntityContainer", "d7/d22/a01514.html", "d7/d22/a01514" ]
+          [ "ElementTrimDataImpl", "d8/dbe/a01370.html", "d8/dbe/a01370" ],
+          [ "EntityInfoImpl", "d6/d2f/a01394.html", null ],
+          [ "EntityInfoImpl< Traits, 0 >", "d8/d01/a01410.html", "d8/d01/a01410" ],
+          [ "EntityInfoImpl< Traits, 1 >", "d0/dc7/a01402.html", "d0/dc7/a01402" ],
+          [ "EntityInfoImpl< Traits, 2 >", "da/de3/a01398.html", "da/de3/a01398" ],
+          [ "HostGridAccess", "d8/d7b/a01478.html", null ],
+          [ "IdType", "d5/d8e/a01390.html", "d5/d8e/a01390" ],
+          [ "Parameter", "d9/df5/a01574.html", "d9/df5/a01574" ],
+          [ "PatchGridEntitySeed", "d1/de7/a01434.html", "d1/de7/a01434" ],
+          [ "PatchGridFamily", "d0/d21/a01582.html", "d0/d21/a01582" ],
+          [ "PatchGridGlobalIdSet", "d8/df1/a01414.html", "d8/df1/a01414" ],
+          [ "PatchGridHierarchicIterator", "d5/dd0/a01438.html", "d5/dd0/a01438" ],
+          [ "PatchGridLeafIndexSet", "d3/da3/a01450.html", "d3/da3/a01450" ],
+          [ "PatchGridLeafIntersectionIterator", "d0/da4/a01470.html", "d0/da4/a01470" ],
+          [ "PatchGridLeafIterator", "db/d57/a01506.html", "db/d57/a01506" ],
+          [ "PatchGridLevelIndexSet", "d8/d22/a01446.html", "d8/d22/a01446" ],
+          [ "PatchGridLevelIntersectionIterator", "df/d2f/a01474.html", "df/d2f/a01474" ],
+          [ "PatchGridLevelIterator", "dc/d47/a01510.html", "dc/d47/a01510" ],
+          [ "PatchGridLocalIdSet", "da/df6/a01454.html", "da/df6/a01454" ],
+          [ "PatchTrimDataImpl", "d7/d90/a01530.html", "d7/d90/a01530" ],
+          [ "SimplexIntegrationRuleGenerator", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
+          [ "Transformations", "db/d7c/a01614.html", "db/d7c/a01614" ],
+          [ "TrimmedLeafIntersection", "d6/dc9/a01498.html", "d6/dc9/a01498" ],
+          [ "TrimmedLevelIntersection", "de/dc6/a01502.html", "de/dc6/a01502" ],
+          [ "TrimmedLocalGeometryImpl", "d7/d1d/a01554.html", null ],
+          [ "TrimmedLocalGeometryImpl< 0, coorddim, GridImp, localGeometryTag >", "d1/d9b/a01566.html", "d1/d9b/a01566" ],
+          [ "TrimmedLocalGeometryImpl< 1, coorddim, GridImp, localGeometryTag >", "d2/dc1/a01562.html", "d2/dc1/a01562" ],
+          [ "TrimmedLocalGeometryImpl< 2, coorddim, GridImp, localGeometryTag >", "da/dcf/a01558.html", "da/dcf/a01558" ],
+          [ "TrimmedParameterSpaceGridEntity", "d8/daf/a01550.html", "d8/daf/a01550" ],
+          [ "TrimmedReferenceElement", "d7/def/a01538.html", "d7/def/a01538" ],
+          [ "TrimmerImpl", "d1/d88/a01578.html", "d1/d88/a01578" ],
+          [ "VectorEntityContainer", "de/d9d/a01382.html", "de/d9d/a01382" ]
         ] ],
-        [ "GeometryKernel", "da/d2e/a00238.html", [
-          [ "NURBSPatch", "d4/da7/a01102.html", "d4/da7/a01102" ],
-          [ "PatchGeometryLocalView", "d6/d40/a01114.html", "d6/d40/a01114" ]
+        [ "GeometryKernel", "dc/d28/a00223.html", [
+          [ "NURBSPatch", "d9/df5/a01086.html", "d9/df5/a01086" ],
+          [ "PatchGeometryLocalView", "d5/d17/a01098.html", "d5/d17/a01098" ]
         ] ],
-        [ "Ibra", "d4/d9a/a00246.html", [
-          [ "Brep", "da/d79/a01310.html", "da/d79/a01310" ],
-          [ "BrepLoop", "dc/de0/a01302.html", "dc/de0/a01302" ],
-          [ "BrepLoopRepresentation", "d4/d34/a01298.html", "d4/d34/a01298" ],
-          [ "BrepRepresentation", "d7/d8c/a01306.html", "d7/d8c/a01306" ],
-          [ "BrepTrim", "d7/d88/a01294.html", "d7/d88/a01294" ],
-          [ "BrepTrimRepresentation", "dc/ded/a01290.html", "dc/ded/a01290" ],
-          [ "IbraBase", "d8/d17/a01282.html", "d8/d17/a01282" ],
-          [ "IbraNURBSData", "d0/d00/a01286.html", "d0/d00/a01286" ]
+        [ "Ibra", "df/d17/a00231.html", [
+          [ "Brep", "d7/d88/a01294.html", "d7/d88/a01294" ],
+          [ "BrepLoop", "d0/d00/a01286.html", "d0/d00/a01286" ],
+          [ "BrepLoopRepresentation", "d8/d17/a01282.html", "d8/d17/a01282" ],
+          [ "BrepRepresentation", "dc/ded/a01290.html", "dc/ded/a01290" ],
+          [ "BrepTrim", "d4/d10/a01278.html", "d4/d10/a01278" ],
+          [ "BrepTrimRepresentation", "de/d33/a01274.html", "de/d33/a01274" ],
+          [ "IbraBase", "d7/d73/a01266.html", "d7/d73/a01266" ],
+          [ "IbraNURBSData", "da/d00/a01270.html", "da/d00/a01270" ]
         ] ],
-        [ "IdentityTrim", "d6/d22/a00245.html", [
-          [ "ElementTrimDataContainerImpl", "dd/ddc/a01802.html", null ],
-          [ "ElementTrimDataImpl", "d2/d86/a01798.html", null ],
-          [ "Parameter", "d5/dec/a01794.html", null ],
-          [ "PatchGridEntitySeed", "dc/d3a/a01750.html", "dc/d3a/a01750" ],
-          [ "PatchGridFamily", "d5/d32/a01214.html", "d5/d32/a01214" ],
-          [ "PatchGridGlobalIdSet", "d0/d79/a01766.html", "d0/d79/a01766" ],
-          [ "PatchGridHierarchicIterator", "d9/d37/a01754.html", "d9/d37/a01754" ],
-          [ "PatchGridLeafIndexSet", "dd/d40/a01762.html", "dd/d40/a01762" ],
-          [ "PatchGridLeafIntersectionIterator", "d9/d02/a01774.html", "d9/d02/a01774" ],
-          [ "PatchGridLeafIterator", "dd/dec/a01782.html", "dd/dec/a01782" ],
-          [ "PatchGridLevelIndexSet", "d9/de3/a01758.html", "d9/de3/a01758" ],
-          [ "PatchGridLevelIntersectionIterator", "df/d21/a01778.html", "df/d21/a01778" ],
-          [ "PatchGridLevelIterator", "db/d4b/a01786.html", "db/d4b/a01786" ],
-          [ "PatchGridLocalIdSet", "d4/dfe/a01770.html", "d4/dfe/a01770" ],
-          [ "PatchTrimDataImpl", "db/db2/a01806.html", null ],
-          [ "TrimmerImpl", "df/d3a/a01810.html", "df/d3a/a01810" ]
+        [ "IdentityTrim", "d1/da8/a00230.html", [
+          [ "ElementTrimDataContainerImpl", "de/df6/a01670.html", null ],
+          [ "ElementTrimDataImpl", "d8/d75/a01666.html", null ],
+          [ "Parameter", "d9/dbc/a01662.html", null ],
+          [ "PatchGridEntitySeed", "d9/d6a/a01618.html", "d9/d6a/a01618" ],
+          [ "PatchGridFamily", "d0/d32/a01198.html", "d0/d32/a01198" ],
+          [ "PatchGridGlobalIdSet", "d4/d99/a01634.html", "d4/d99/a01634" ],
+          [ "PatchGridHierarchicIterator", "d1/d3a/a01622.html", "d1/d3a/a01622" ],
+          [ "PatchGridLeafIndexSet", "d3/d33/a01630.html", "d3/d33/a01630" ],
+          [ "PatchGridLeafIntersectionIterator", "d7/d94/a01642.html", "d7/d94/a01642" ],
+          [ "PatchGridLeafIterator", "d9/d3b/a01650.html", "d9/d3b/a01650" ],
+          [ "PatchGridLevelIndexSet", "dd/d90/a01626.html", "dd/d90/a01626" ],
+          [ "PatchGridLevelIntersectionIterator", "df/dee/a01646.html", "df/dee/a01646" ],
+          [ "PatchGridLevelIterator", "d1/d73/a01654.html", "d1/d73/a01654" ],
+          [ "PatchGridLocalIdSet", "dd/d55/a01638.html", "dd/d55/a01638" ],
+          [ "PatchTrimDataImpl", "dc/d42/a01674.html", null ],
+          [ "TrimmerImpl", "d6/d26/a01678.html", "d6/d26/a01678" ]
         ] ],
-        [ "Splines", "dc/ded/a00252.html", [
-          [ "BsplineBasis", "d0/d34/a01486.html", "d0/d34/a01486" ],
-          [ "Nurbs", "de/d3c/a01490.html", "de/d3c/a01490" ]
+        [ "Splines", "d7/d40/a00236.html", [
+          [ "BsplineBasis", "d7/dc4/a01354.html", "d7/dc4/a01354" ],
+          [ "Nurbs", "de/d5c/a01358.html", "de/d5c/a01358" ]
         ] ],
-        [ "Trim", "dc/d6a/a00261.html", [
-          [ "LocalGeometryVariant", "d1/dba/a01822.html", "d1/dba/a01822" ]
+        [ "Trim", "d6/d22/a00245.html", [
+          [ "LocalGeometryVariant", "d6/d01/a01690.html", "d6/d01/a01690" ]
         ] ],
-        [ "Utilities", "d0/d27/a00239.html", [
-          [ "Domain", "da/d73/a01090.html", "da/d73/a01090" ]
+        [ "Utilities", "d5/ddf/a00224.html", [
+          [ "Domain", "d7/df7/a01074.html", "d7/df7/a01074" ]
         ] ],
-        [ "ControlPoint", "d9/df5/a01086.html", "d9/df5/a01086" ],
-        [ "HostGridAccess", "de/d7e/a01222.html", null ],
-        [ "IbraReader", "d9/de6/a01314.html", "d9/de6/a01314" ],
-        [ "MultiDimensionalNet", "d0/d4f/a01830.html", "d0/d4f/a01830" ],
-        [ "MultiDimensionalNetIndex", "d6/dbe/a01834.html", "d6/dbe/a01834" ],
-        [ "NURBSPatchData", "d6/dc9/a01498.html", "d6/dc9/a01498" ],
-        [ "PatchGrid", "dd/d9e/a01226.html", "dd/d9e/a01226" ],
-        [ "PatchGridEntity", "d0/d58/a01230.html", "d0/d58/a01230" ],
-        [ "PatchGridEntity< 0, dim, GridImp >", "d8/ddf/a01238.html", "d8/ddf/a01238" ],
-        [ "PatchGridFamily", "d7/d04/a01246.html", null ],
-        [ "PatchGridGeometry", "d4/d22/a01250.html", "d4/d22/a01250" ],
-        [ "PatchGridLeafGridView", "da/d00/a01270.html", "da/d00/a01270" ],
-        [ "PatchGridLeafGridViewTraits", "d4/d10/a01278.html", "d4/d10/a01278" ],
-        [ "PatchGridLeafIntersection", "da/da1/a01258.html", "da/da1/a01258" ],
-        [ "PatchGridLeafIntersectionIterator", "d6/d1e/a01234.html", null ],
-        [ "PatchGridLevelGridView", "d7/d73/a01266.html", "d7/d73/a01266" ],
-        [ "PatchGridLevelGridViewTraits", "de/d33/a01274.html", "de/d33/a01274" ],
-        [ "PatchGridLevelIntersection", "d3/d53/a01262.html", "d3/d53/a01262" ],
-        [ "PatchGridLocalGeometry", "d2/d20/a01790.html", "d2/d20/a01790" ]
+        [ "ControlPoint", "d5/d67/a01070.html", "d5/d67/a01070" ],
+        [ "HostGridAccess", "dc/d9e/a01206.html", null ],
+        [ "IbraReader", "d4/d34/a01298.html", "d4/d34/a01298" ],
+        [ "MultiDimensionalNet", "de/d05/a01702.html", "de/d05/a01702" ],
+        [ "MultiDimensionalNetIndex", "db/dbe/a01706.html", "db/dbe/a01706" ],
+        [ "NURBSPatchData", "d6/dfe/a01366.html", "d6/dfe/a01366" ],
+        [ "PatchGrid", "d2/da6/a01210.html", "d2/da6/a01210" ],
+        [ "PatchGridEntity", "d5/d32/a01214.html", "d5/d32/a01214" ],
+        [ "PatchGridEntity< 0, dim, GridImp >", "de/d7e/a01222.html", "de/d7e/a01222" ],
+        [ "PatchGridFamily", "d0/d58/a01230.html", null ],
+        [ "PatchGridGeometry", "d6/d1e/a01234.html", "d6/d1e/a01234" ],
+        [ "PatchGridLeafGridView", "dc/d83/a01254.html", "dc/d83/a01254" ],
+        [ "PatchGridLeafGridViewTraits", "d3/d53/a01262.html", "d3/d53/a01262" ],
+        [ "PatchGridLeafIntersection", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
+        [ "PatchGridLeafIntersectionIterator", "d8/d15/a01218.html", null ],
+        [ "PatchGridLevelGridView", "d4/d22/a01250.html", "d4/d22/a01250" ],
+        [ "PatchGridLevelGridViewTraits", "da/da1/a01258.html", "da/da1/a01258" ],
+        [ "PatchGridLevelIntersection", "d7/d04/a01246.html", "d7/d04/a01246" ],
+        [ "PatchGridLocalGeometry", "d9/d79/a01658.html", "d9/d79/a01658" ]
       ] ],
-      [ "DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d0/dc7/a01402.html", "d0/dc7/a01402" ],
-      [ "DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d6/d2f/a01394.html", "d6/d2f/a01394" ],
-      [ "EnableBoundarySegmentIndexCheck", "d9/d2e/a01194.html", null ],
-      [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d4/d5d/a01202.html", null ],
-      [ "GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
-      [ "JSONGridFactory", "da/de3/a01398.html", "da/de3/a01398" ],
-      [ "TensorProductCoordinates", "d5/d17/a01098.html", null ],
-      [ "YaspGrid", "d6/dea/a01094.html", null ]
+      [ "Vtk", "d0/d53/a00232.html", [
+        [ "DiscontinuousIgaDataCollector", "dc/de0/a01302.html", "dc/de0/a01302" ]
+      ] ],
+      [ "EnableBoundarySegmentIndexCheck", "d8/d11/a01178.html", null ],
+      [ "EnableBoundarySegmentIndexCheck< Dune::IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d9/dbb/a01186.html", null ],
+      [ "GridFactory< IGANEW::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "dd/d9e/a01226.html", "dd/d9e/a01226" ],
+      [ "TensorProductCoordinates", "dd/df1/a01082.html", null ],
+      [ "YaspGrid", "db/dba/a01078.html", null ]
     ] ],
-    [ "iga", "d3/dcc/a00264.html", [
-      [ "basis", "d5/d42/a00269.html", [
-        [ "Nurbs", "d4/df4/a01846.html", "d4/df4/a01846" ]
+    [ "iga", "dd/dd7/a00248.html", [
+      [ "basis", "d0/d3e/a00253.html", [
+        [ "Nurbs", "db/d7f/a01718.html", "db/d7f/a01718" ]
       ] ]
     ] ],
-    [ "mapbox", "d0/def/a00256.html", [
-      [ "util", "d9/d39/a00257.html", [
-        [ "nth< 0, Dune::FieldVector< T, 2 > >", "da/dcf/a01558.html", "da/dcf/a01558" ],
-        [ "nth< 1, Dune::FieldVector< T, 2 > >", "d2/dc1/a01562.html", "d2/dc1/a01562" ]
+    [ "mapbox", "d9/d21/a00240.html", [
+      [ "util", "d6/db6/a00241.html", [
+        [ "nth< 0, Dune::FieldVector< T, 2 > >", "dc/de6/a01426.html", "dc/de6/a01426" ],
+        [ "nth< 1, Dune::FieldVector< T, 2 > >", "d8/dd0/a01430.html", "d8/dd0/a01430" ]
       ] ]
     ] ],
     [ "std", null, [
-      [ "hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "de/d05/a01702.html", "de/d05/a01702" ]
+      [ "hash< Dune::IGANEW::DefaultTrim::IdType< HostIdType > >", "d5/d75/a01570.html", "d5/d75/a01570" ]
     ] ],
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed", "da/d36/a01482.html", "da/d36/a01482" ],
-    [ "EnableLevelIntersectionIteratorCheck", "d0/d32/a01198.html", null ],
-    [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "dc/d9e/a01206.html", "dc/d9e/a01206" ],
-    [ "is_instantiation_of", "db/d09/a01838.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "db/d5a/a01842.html", null ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed", "d4/d8e/a01694.html", "d4/d8e/a01694" ],
+    [ "EnableLevelIntersectionIteratorCheck", "dd/de9/a01182.html", null ],
+    [ "EnableLevelIntersectionIteratorCheck< Dune::IGANEW::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "dc/d19/a01190.html", "dc/d19/a01190" ],
+    [ "is_instantiation_of", "d6/d9a/a01710.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d8/dce/a01714.html", null ]
 ];

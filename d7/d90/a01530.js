@@ -1,15 +1,17 @@
 var a01530 =
 [
-    [ "EntitySeedType", "d7/d90/a01530.html#a8890551f6b7dd633c0e726d9f004a6f7", null ],
-    [ "HostIdType", "d7/d90/a01530.html#af47ca76d99c81d882d3ed1151b2e25df", null ],
-    [ "TrimInfo", "d7/d90/a01530.html#a89f27b25bec586400a232613e2ef61e7", null ],
-    [ "isTrimmed", "d7/d90/a01530.html#a912fdaea912e2479db5e4966f90fef68", null ],
-    [ "isValid", "d7/d90/a01530.html#a32ef14f82d455ae3aefa6f17d5723873", null ],
-    [ "codimension", "d7/d90/a01530.html#ac48cd616f14311c17013a47bea526388", null ],
-    [ "hostSeed", "d7/d90/a01530.html#acab74fedea32904b15b4468919cd5714", null ],
-    [ "id", "d7/d90/a01530.html#af8aa6d69ec1035bf3138caf493a14574", null ],
-    [ "indexInLvlStorage", "d7/d90/a01530.html#a82ab1d0c5728a55f83850070e69cc8e9", null ],
-    [ "lvl", "d7/d90/a01530.html#a9e1d18de3d5b7b3f6062d0ef66647112", null ],
-    [ "trimInfo", "d7/d90/a01530.html#a287d0bcb5949ca409f7436bbc85b4d38", null ],
-    [ "trimmed", "d7/d90/a01530.html#acfc6391dadbe516019c5e019d6cf8c5f", null ]
+    [ "CurveManager", "dc/d2d/a01534.html", "dc/d2d/a01534" ],
+    [ "ctype", "d7/d90/a01530.html#a9f610f641d490e958d76d4bcc76abe06", null ],
+    [ "ParameterType", "d7/d90/a01530.html#a4f2c9e7880899cf28f92ea797e453f1c", null ],
+    [ "TrimmingCurve", "d7/d90/a01530.html#a8e43129977838c5c14b41d2792c94c4d", null ],
+    [ "addLoop", "d7/d90/a01530.html#adedfd6e8bb8ce1ce160de1fe00cf3a2c", null ],
+    [ "clipperLoops", "d7/d90/a01530.html#a02c7e7d55aa44ef51a788fb368f5dbfb", null ],
+    [ "getCurve", "d7/d90/a01530.html#a7a09672f02be582de37ad93e78b4cb1c", null ],
+    [ "getCurve", "d7/d90/a01530.html#a274947f41f7a1984b1e0a158ee21ad46", null ],
+    [ "getIndices", "d7/d90/a01530.html#a43e4237359c1ad6a14178ad3dce98d34", null ],
+    [ "getPointsInPatch", "d7/d90/a01530.html#a62ce1d68f56f460b71bbc2ea75a95817", null ],
+    [ "getZValue", "d7/d90/a01530.html#a9a301632e1f5216a9ba0fdf1559981dc", null ],
+    [ "insertTrimCurve", "d7/d90/a01530.html#a8cc8578eec99ceaac36fe21f1cc04176", null ],
+    [ "loops", "d7/d90/a01530.html#a494abc3622f9c8a5e06b275828241308", null ],
+    [ "prepare", "d7/d90/a01530.html#a7336116f174a10520f09b66586b516e5", null ]
 ];

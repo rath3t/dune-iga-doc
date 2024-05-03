@@ -1,6 +1,15 @@
 var a00014 =
 [
-    [ "Dune::IGA::Boundary", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
-    [ "Dune::IGA::TrimData", "d1/df4/a01422.html", "d1/df4/a01422" ],
-    [ "BoundaryLoop", "d2/de7/a00014.html#ac852dd8efef6c18283ca22735cb02696", null ]
+    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "d6/dfa/a01318.html", "d6/dfa/a01318" ],
+    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "d5/df4/a01322.html", "d5/df4/a01322" ],
+    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d1/d54/a01326.html", "d1/d54/a01326" ],
+    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "d9/de6/a01314.html", "d9/de6/a01314" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "d9/d2e/a01194.html", "d9/d2e/a01194" ],
+    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >::DummyEmpty", "d2/d4d/a01338.html", null ],
+    [ "Dune::Functions::NurbsNode< GV >", "d5/d78/a01330.html", "d5/d78/a01330" ],
+    [ "NurbsBasis", "d2/de7/a00014.html#a4e3cfaeb5308fbfa024b5ec8085912d1", null ],
+    [ "degreeElevate", "d2/de7/a00014.html#a8251927b1f371553dd15f9a42033b3bb", null ],
+    [ "nurbs", "d2/de7/a00014.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
+    [ "nurbs", "d2/de7/a00014.html#a31785bfc560a56b1ed5f0ae7b722ea37", null ],
+    [ "nurbs", "d2/de7/a00014.html#ad3edb7290cf6964618e46ba73da0e9ce", null ]
 ];

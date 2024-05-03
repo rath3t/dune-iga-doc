@@ -1,11 +1,5 @@
 var a00182 =
 [
-    [ "DUNE_FMatrix_WITH_CHECKING", "d7/d25/a00182.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b", null ],
-    [ "IntersectionCurveAndLine", "d7/d25/a00182.html#a21ad9f3f2161548e10add5e90e558761", [
-      [ "disjoint", "d7/d25/a00182.html#a21ad9f3f2161548e10add5e90e558761aff8d48ba74b051ac230fb0c28ae11984", null ],
-      [ "intersect", "d7/d25/a00182.html#a21ad9f3f2161548e10add5e90e558761aea228c391b72961cc1370e2d66442d86", null ],
-      [ "parallel", "d7/d25/a00182.html#a21ad9f3f2161548e10add5e90e558761a48920c071f6a5c97ae3739be64630697", null ]
-    ] ],
-    [ "findIntersectionCurveAndLine", "d7/d25/a00182.html#a533ba1e65466dfc728bc84b33126774f", null ],
-    [ "findIntersectionLinearCurveAndLine", "d7/d25/a00182.html#a337c8ba4001f6d4d07f1e11a65147836", null ]
+    [ "transform", "d7/d25/a00182.html#a32f8f310c48c22247e2072bd76abc0fb", null ],
+    [ "transformToSpan", "d7/d25/a00182.html#ae67fa9708ca6ef804d1df77ef93777b4", null ]
 ];

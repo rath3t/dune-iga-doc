@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::Boundary Class Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator&lt; GridImp &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,392 +92,193 @@ $(document).ready(function(){initNavTree('d4/d3c/a01418.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../de/d70/a01415.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::Boundary Class Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator&lt; GridImp &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d2/de7/a00014_source.html">dune/iga/oldStuff/trim/nurbstrimboundary.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d1/d44/a00098_source.html">dune/iga/trimmer/defaulttrimmer/integrationrules/simplexintegrationrulegenerator.hh</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/df4/a01422.html">Parameters</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4b56bac0e58a6f15d7509de369649719"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719">EdgeOrientation</a> { <a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719a7b774effe4a349c6dd82ad4f4f21d34c">u</a>
-, <a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719a9e3669d19b675bd57058fd4664205d2a">v</a>
-, <a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
- }</td></tr>
-<tr class="separator:a4b56bac0e58a6f15d7509de369649719"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a5cfc7845251012aad992f3dc538fcd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a2a5cfc7845251012aad992f3dc538fcd">Geometry</a> = NURBSPatchGeometry&lt; <a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a> &gt;</td></tr>
-<tr class="separator:a2a5cfc7845251012aad992f3dc538fcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad8a720ae0a9f841a18ed3dae45423a54"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#ad8a720ae0a9f841a18ed3dae45423a54">ControlPointType</a> = typename Geometry::ControlPointType</td></tr>
-<tr class="separator:ad8a720ae0a9f841a18ed3dae45423a54"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86e0d26476bdb5abee642e5fd84fdec6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a86e0d26476bdb5abee642e5fd84fdec6">ControlPointNetType</a> = Dune::IGA::MultiDimensionalNet&lt; <a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#ad8a720ae0a9f841a18ed3dae45423a54">ControlPointType</a> &gt;</td></tr>
-<tr class="separator:a86e0d26476bdb5abee642e5fd84fdec6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af76416410208288f6548c1d726bf37dd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#af76416410208288f6548c1d726bf37dd">PatchData</a> = Dune::IGA::NURBSPatchData&lt; <a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a> &gt;</td></tr>
-<tr class="separator:af76416410208288f6548c1d726bf37dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add43ef27f7d5c9bf7e9b5083b84cb5c3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a> = Dune::FieldVector&lt; double, <a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a> &gt;</td></tr>
-<tr class="separator:add43ef27f7d5c9bf7e9b5083b84cb5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34497333a209c96c14414d9f89fe7603"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a34497333a209c96c14414d9f89fe7603">DomainType</a> = Utilities::Domain&lt; double &gt;</td></tr>
-<tr class="separator:a34497333a209c96c14414d9f89fe7603"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add66d188a70a00b4a2970ecedc174a58"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#add66d188a70a00b4a2970ecedc174a58">PatchElement</a> = typename GridImp::Traits::template Codim&lt; 0 &gt;::Entity</td></tr>
+<tr class="separator:add66d188a70a00b4a2970ecedc174a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b7a6dd2aed4aa95e50d4d9098034af4"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a4b7a6dd2aed4aa95e50d4d9098034af4">Point</a> = FieldVector&lt; double, <a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a> &gt;</td></tr>
+<tr class="separator:a4b7a6dd2aed4aa95e50d4d9098034af4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c1838514a879fe0da33ddc80adde624"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a6c1838514a879fe0da33ddc80adde624">Element</a> = MultiLinearGeometry&lt; double, <a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a> &gt;</td></tr>
+<tr class="separator:a6c1838514a879fe0da33ddc80adde624"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50284576e26b0fcf2585fb2f4b79333e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a50284576e26b0fcf2585fb2f4b79333e">Index</a> = std::uint64_t</td></tr>
+<tr class="separator:a50284576e26b0fcf2585fb2f4b79333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:afabe9b72bde2c59e409a760481d9bd56"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#afabe9b72bde2c59e409a760481d9bd56">Boundary</a> ()=default</td></tr>
-<tr class="separator:afabe9b72bde2c59e409a760481d9bd56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa9a7638660b87ec176495055e7112ff"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#afa9a7638660b87ec176495055e7112ff">Boundary</a> (<a class="el" href="../../d4/d3c/a01418.html#a2a5cfc7845251012aad992f3dc538fcd">Geometry</a> _nurbsGeometry, const Utilities::Domain&lt; double &gt; &amp;_domain)</td></tr>
-<tr class="separator:afa9a7638660b87ec176495055e7112ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a905bb2e2dd4db7b075770c27835bb02e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a905bb2e2dd4db7b075770c27835bb02e">Boundary</a> (<a class="el" href="../../d6/dfe/a01366.html">Ibra::BrepTrim</a> &amp;_trim)</td></tr>
-<tr class="separator:a905bb2e2dd4db7b075770c27835bb02e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41753b575530d424a7cb3a35e95bf653"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a41753b575530d424a7cb3a35e95bf653">Boundary</a> (const <a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a> &amp;a, const <a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a> &amp;b)</td></tr>
-<tr class="separator:a41753b575530d424a7cb3a35e95bf653"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6e3b4681a0cd2f791a300db1c70328c9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a6e3b4681a0cd2f791a300db1c70328c9">degree</a> () const</td></tr>
-<tr class="separator:a6e3b4681a0cd2f791a300db1c70328c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a34833337d38a52037acccd7fc1630bc0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719">EdgeOrientation</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a34833337d38a52037acccd7fc1630bc0">getEdgeOrientation</a> (const double tolerance=1e-6) const</td></tr>
-<tr class="separator:a34833337d38a52037acccd7fc1630bc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f45c9d99983a0038a5dcebd3aebb111"><td class="memTemplParams" colspan="2">template&lt;typename ctype  = double&gt; </td></tr>
-<tr class="memitem:a2f45c9d99983a0038a5dcebd3aebb111"><td class="memTemplItemLeft" align="right" valign="top">Clipper2Lib::Path&lt; ctype &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a2f45c9d99983a0038a5dcebd3aebb111">path</a> (unsigned int samples=200, const int intScale=0) const</td></tr>
-<tr class="separator:a2f45c9d99983a0038a5dcebd3aebb111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a85d08f0c88343e089fbd909354aabc03"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3c/a01418.html#a2a5cfc7845251012aad992f3dc538fcd">Geometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a85d08f0c88343e089fbd909354aabc03">nurbsGeometry</a></td></tr>
-<tr class="separator:a85d08f0c88343e089fbd909354aabc03"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d652cd4da46fb09c0aaed32dcc17382"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d4/d3c/a01418.html#a34497333a209c96c14414d9f89fe7603">DomainType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a4d652cd4da46fb09c0aaed32dcc17382">domain</a> {}</td></tr>
-<tr class="separator:a4d652cd4da46fb09c0aaed32dcc17382"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa4feabb805611d11726b6328e9d99d"><td class="memItemLeft" align="right" valign="top">std::array&lt; <a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a>, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a1aa4feabb805611d11726b6328e9d99d">endPoints</a></td></tr>
-<tr class="separator:a1aa4feabb805611d11726b6328e9d99d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ade53cf04ff5dec2a538e01ec03f995a1"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#ade53cf04ff5dec2a538e01ec03f995a1">createIntegrationRule</a> (const <a class="el" href="../../d4/d3c/a01418.html#add66d188a70a00b4a2970ecedc174a58">PatchElement</a> &amp;element, int quadratureOrder, const <a class="el" href="../../d1/df4/a01422.html">Parameters</a> &amp;parameters=<a class="el" href="../../d1/df4/a01422.html">Parameters</a>{}, const QuadratureType::Enum qt=QuadratureType::GaussLegendre)</td></tr>
+<tr class="separator:ade53cf04ff5dec2a538e01ec03f995a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68c6c3a2a0a5796255adeb198a1a2a38"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a68c6c3a2a0a5796255adeb198a1a2a38">createSimplicies</a> (const <a class="el" href="../../d4/d3c/a01418.html#add66d188a70a00b4a2970ecedc174a58">PatchElement</a> &amp;element, const <a class="el" href="../../d1/df4/a01422.html">Parameters</a> &amp;parameters=<a class="el" href="../../d1/df4/a01422.html">Parameters</a>{}) -&gt; std::tuple&lt; std::vector&lt; <a class="el" href="../../d4/d3c/a01418.html#a6c1838514a879fe0da33ddc80adde624">Element</a> &gt;, std::vector&lt; <a class="el" href="../../d4/d3c/a01418.html#a4b7a6dd2aed4aa95e50d4d9098034af4">Point</a> &gt;, std::vector&lt; <a class="el" href="../../d4/d3c/a01418.html#a50284576e26b0fcf2585fb2f4b79333e">Index</a> &gt; &gt;</td></tr>
+<tr class="separator:a68c6c3a2a0a5796255adeb198a1a2a38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:ac71eeeb486349846c4010f447e03132a"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a> = 2</td></tr>
-<tr class="separator:ac71eeeb486349846c4010f447e03132a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab1f2b3d48da32b4cdb7dec13509ee230"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a> = 1</td></tr>
-<tr class="separator:ab1f2b3d48da32b4cdb7dec13509ee230"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25df768822e6d5d3d24b28a8bfdb4696"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a> = GridImp::dimension</td></tr>
+<tr class="separator:a25df768822e6d5d3d24b28a8bfdb4696"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a86e0d26476bdb5abee642e5fd84fdec6" name="a86e0d26476bdb5abee642e5fd84fdec6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86e0d26476bdb5abee642e5fd84fdec6">&#9670;&nbsp;</a></span>ControlPointNetType</h2>
+<a id="a6c1838514a879fe0da33ddc80adde624" name="a6c1838514a879fe0da33ddc80adde624"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c1838514a879fe0da33ddc80adde624">&#9670;&nbsp;</a></span>Element</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html#a86e0d26476bdb5abee642e5fd84fdec6">Dune::IGA::Boundary::ControlPointNetType</a> =  Dune::IGA::MultiDimensionalNet&lt;<a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#ad8a720ae0a9f841a18ed3dae45423a54">ControlPointType</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::Element =  MultiLinearGeometry&lt;double, <a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a>&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ad8a720ae0a9f841a18ed3dae45423a54" name="ad8a720ae0a9f841a18ed3dae45423a54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad8a720ae0a9f841a18ed3dae45423a54">&#9670;&nbsp;</a></span>ControlPointType</h2>
+<a id="a50284576e26b0fcf2585fb2f4b79333e" name="a50284576e26b0fcf2585fb2f4b79333e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50284576e26b0fcf2585fb2f4b79333e">&#9670;&nbsp;</a></span>Index</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html#ad8a720ae0a9f841a18ed3dae45423a54">Dune::IGA::Boundary::ControlPointType</a> =  typename Geometry::ControlPointType</td>
+          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::Index =  std::uint64_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a34497333a209c96c14414d9f89fe7603" name="a34497333a209c96c14414d9f89fe7603"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34497333a209c96c14414d9f89fe7603">&#9670;&nbsp;</a></span>DomainType</h2>
+<a id="add66d188a70a00b4a2970ecedc174a58" name="add66d188a70a00b4a2970ecedc174a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add66d188a70a00b4a2970ecedc174a58">&#9670;&nbsp;</a></span>PatchElement</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html#a34497333a209c96c14414d9f89fe7603">Dune::IGA::Boundary::DomainType</a> =  Utilities::Domain&lt;double&gt;</td>
+          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::PatchElement =  typename GridImp::Traits::template Codim&lt;0&gt;::Entity</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a2a5cfc7845251012aad992f3dc538fcd" name="a2a5cfc7845251012aad992f3dc538fcd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a5cfc7845251012aad992f3dc538fcd">&#9670;&nbsp;</a></span>Geometry</h2>
+<a id="a4b7a6dd2aed4aa95e50d4d9098034af4" name="a4b7a6dd2aed4aa95e50d4d9098034af4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b7a6dd2aed4aa95e50d4d9098034af4">&#9670;&nbsp;</a></span>Point</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html#a2a5cfc7845251012aad992f3dc538fcd">Dune::IGA::Boundary::Geometry</a> =  NURBSPatchGeometry&lt;<a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a>&gt;</td>
+          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::Point =  FieldVector&lt;double, <a class="el" href="../../d4/d3c/a01418.html#a25df768822e6d5d3d24b28a8bfdb4696">dim</a>&gt;</td>
         </tr>
       </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af76416410208288f6548c1d726bf37dd" name="af76416410208288f6548c1d726bf37dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af76416410208288f6548c1d726bf37dd">&#9670;&nbsp;</a></span>PatchData</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html#af76416410208288f6548c1d726bf37dd">Dune::IGA::Boundary::PatchData</a> =  Dune::IGA::NURBSPatchData&lt;<a class="el" href="../../d4/d3c/a01418.html#ab1f2b3d48da32b4cdb7dec13509ee230">dim</a>, <a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="add43ef27f7d5c9bf7e9b5083b84cb5c3" name="add43ef27f7d5c9bf7e9b5083b84cb5c3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add43ef27f7d5c9bf7e9b5083b84cb5c3">&#9670;&nbsp;</a></span>Point</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Dune::IGA::Boundary::Point</a> =  Dune::FieldVector&lt;double, <a class="el" href="../../d4/d3c/a01418.html#ac71eeeb486349846c4010f447e03132a">worldDim</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a4b56bac0e58a6f15d7509de369649719" name="a4b56bac0e58a6f15d7509de369649719"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b56bac0e58a6f15d7509de369649719">&#9670;&nbsp;</a></span>EdgeOrientation</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum class <a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719">Dune::IGA::Boundary::EdgeOrientation</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a4b56bac0e58a6f15d7509de369649719a7b774effe4a349c6dd82ad4f4f21d34c" name="a4b56bac0e58a6f15d7509de369649719a7b774effe4a349c6dd82ad4f4f21d34c"></a>u&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4b56bac0e58a6f15d7509de369649719a9e3669d19b675bd57058fd4664205d2a" name="a4b56bac0e58a6f15d7509de369649719a9e3669d19b675bd57058fd4664205d2a"></a>v&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e" name="a4b56bac0e58a6f15d7509de369649719a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"></td></tr>
-</table>
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="afabe9b72bde2c59e409a760481d9bd56" name="afabe9b72bde2c59e409a760481d9bd56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afabe9b72bde2c59e409a760481d9bd56">&#9670;&nbsp;</a></span>Boundary() <span class="overload">[1/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::IGA::Boundary::Boundary </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afa9a7638660b87ec176495055e7112ff" name="afa9a7638660b87ec176495055e7112ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa9a7638660b87ec176495055e7112ff">&#9670;&nbsp;</a></span>Boundary() <span class="overload">[2/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::IGA::Boundary::Boundary </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d4/d3c/a01418.html#a2a5cfc7845251012aad992f3dc538fcd">Geometry</a>&#160;</td>
-          <td class="paramname"><em>_nurbsGeometry</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const Utilities::Domain&lt; double &gt; &amp;&#160;</td>
-          <td class="paramname"><em>_domain</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a905bb2e2dd4db7b075770c27835bb02e" name="a905bb2e2dd4db7b075770c27835bb02e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a905bb2e2dd4db7b075770c27835bb02e">&#9670;&nbsp;</a></span>Boundary() <span class="overload">[3/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::IGA::Boundary::Boundary </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d6/dfe/a01366.html">Ibra::BrepTrim</a> &amp;&#160;</td>
-          <td class="paramname"><em>_trim</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a41753b575530d424a7cb3a35e95bf653" name="a41753b575530d424a7cb3a35e95bf653"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41753b575530d424a7cb3a35e95bf653">&#9670;&nbsp;</a></span>Boundary() <span class="overload">[4/4]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Dune::IGA::Boundary::Boundary </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>a</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a> &amp;&#160;</td>
-          <td class="paramname"><em>b</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a6e3b4681a0cd2f791a300db1c70328c9" name="a6e3b4681a0cd2f791a300db1c70328c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6e3b4681a0cd2f791a300db1c70328c9">&#9670;&nbsp;</a></span>degree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Dune::IGA::Boundary::degree </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a34833337d38a52037acccd7fc1630bc0" name="a34833337d38a52037acccd7fc1630bc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a34833337d38a52037acccd7fc1630bc0">&#9670;&nbsp;</a></span>getEdgeOrientation()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d4/d3c/a01418.html#a4b56bac0e58a6f15d7509de369649719">EdgeOrientation</a> Dune::IGA::Boundary::getEdgeOrientation </td>
-          <td>(</td>
-          <td class="paramtype">const double&#160;</td>
-          <td class="paramname"><em>tolerance</em> = <code>1e-6</code></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f45c9d99983a0038a5dcebd3aebb111" name="a2f45c9d99983a0038a5dcebd3aebb111"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f45c9d99983a0038a5dcebd3aebb111">&#9670;&nbsp;</a></span>path()</h2>
+<a id="ade53cf04ff5dec2a538e01ec03f995a1" name="ade53cf04ff5dec2a538e01ec03f995a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade53cf04ff5dec2a538e01ec03f995a1">&#9670;&nbsp;</a></span>createIntegrationRule()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename ctype  = double&gt; </div>
+template&lt;typename GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Clipper2Lib::Path&lt; ctype &gt; Dune::IGA::Boundary::path </td>
+          <td class="memname">static auto <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::createIntegrationRule </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>samples</em> = <code>200</code>, </td>
+          <td class="paramtype">const <a class="el" href="../../d4/d3c/a01418.html#add66d188a70a00b4a2970ecedc174a58">PatchElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>intScale</em> = <code>0</code>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>quadratureOrder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/df4/a01422.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em> = <code><a class="el" href="../../d1/df4/a01422.html">Parameters</a>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QuadratureType::Enum&#160;</td>
+          <td class="paramname"><em>qt</em> = <code>QuadratureType::GaussLegendre</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a68c6c3a2a0a5796255adeb198a1a2a38" name="a68c6c3a2a0a5796255adeb198a1a2a38"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68c6c3a2a0a5796255adeb198a1a2a38">&#9670;&nbsp;</a></span>createSimplicies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridImp &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::createSimplicies </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d4/d3c/a01418.html#add66d188a70a00b4a2970ecedc174a58">PatchElement</a> &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../d1/df4/a01422.html">Parameters</a> &amp;&#160;</td>
+          <td class="paramname"><em>parameters</em> = <code><a class="el" href="../../d1/df4/a01422.html">Parameters</a>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> -&gt; std::tuple&lt;std::vector&lt;<a class="el" href="../../d4/d3c/a01418.html#a6c1838514a879fe0da33ddc80adde624">Element</a>&gt;, std::vector&lt;<a class="el" href="../../d4/d3c/a01418.html#a4b7a6dd2aed4aa95e50d4d9098034af4">Point</a>&gt;, std::vector&lt;<a class="el" href="../../d4/d3c/a01418.html#a50284576e26b0fcf2585fb2f4b79333e">Index</a>&gt;&gt; </td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -485,17 +286,19 @@ template&lt;typename ctype  = double&gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ab1f2b3d48da32b4cdb7dec13509ee230" name="ab1f2b3d48da32b4cdb7dec13509ee230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab1f2b3d48da32b4cdb7dec13509ee230">&#9670;&nbsp;</a></span>dim</h2>
+<a id="a25df768822e6d5d3d24b28a8bfdb4696" name="a25df768822e6d5d3d24b28a8bfdb4696"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25df768822e6d5d3d24b28a8bfdb4696">&#9670;&nbsp;</a></span>dim</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int Dune::IGA::Boundary::dim = 1</td>
+          <td class="memname">constexpr int <a class="el" href="../../d4/d3c/a01418.html">Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator</a>&lt; GridImp &gt;::dim = GridImp::dimension</td>
         </tr>
       </table>
   </td>
@@ -507,79 +310,15 @@ template&lt;typename ctype  = double&gt; </div>
 
 </div>
 </div>
-<a id="a4d652cd4da46fb09c0aaed32dcc17382" name="a4d652cd4da46fb09c0aaed32dcc17382"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d652cd4da46fb09c0aaed32dcc17382">&#9670;&nbsp;</a></span>domain</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d4/d3c/a01418.html#a34497333a209c96c14414d9f89fe7603">DomainType</a> Dune::IGA::Boundary::domain {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1aa4feabb805611d11726b6328e9d99d" name="a1aa4feabb805611d11726b6328e9d99d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1aa4feabb805611d11726b6328e9d99d">&#9670;&nbsp;</a></span>endPoints</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::array&lt;<a class="el" href="../../d4/d3c/a01418.html#add43ef27f7d5c9bf7e9b5083b84cb5c3">Point</a>, 2&gt; Dune::IGA::Boundary::endPoints</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a85d08f0c88343e089fbd909354aabc03" name="a85d08f0c88343e089fbd909354aabc03"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a85d08f0c88343e089fbd909354aabc03">&#9670;&nbsp;</a></span>nurbsGeometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d4/d3c/a01418.html#a2a5cfc7845251012aad992f3dc538fcd">Geometry</a> Dune::IGA::Boundary::nurbsGeometry</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac71eeeb486349846c4010f447e03132a" name="ac71eeeb486349846c4010f447e03132a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac71eeeb486349846c4010f447e03132a">&#9670;&nbsp;</a></span>worldDim</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int Dune::IGA::Boundary::worldDim = 2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d2/de7/a00014_source.html">nurbstrimboundary.hh</a></li>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="../../d1/d44/a00098_source.html">simplexintegrationrulegenerator.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Dune</a></li><li class="navelem"><a class="el" href="../../de/dbc/a00249.html">IGA</a></li><li class="navelem"><a class="el" href="../../d4/d3c/a01418.html">Boundary</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d52/a00221.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d24/a00222.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../da/d2e/a00238.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d4/d3c/a01418.html">SimplexIntegrationRuleGenerator</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

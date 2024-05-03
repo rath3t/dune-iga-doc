@@ -1,4 +1,5 @@
 var a00101 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "dd/d08/a01682.html", "dd/d08/a01682" ]
+    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >", "de/d9d/a01382.html", "de/d9d/a01382" ],
+    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >::StringAndIndex", "d3/deb/a01386.html", "d3/deb/a01386" ]
 ];

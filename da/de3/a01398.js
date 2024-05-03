@@ -1,11 +1,15 @@
 var a01398 =
 [
-    [ "Grid", "da/de3/a01398.html#a1df7774a327d2e6f0af13c3fb77495c3", null ],
-    [ "ScalarType", "da/de3/a01398.html#a2b52197187bd75aefd972027495903c7", null ],
-    [ "JSONGridFactory", "da/de3/a01398.html#ac530692f594e23f73798266a9fe090b3", null ],
-    [ "JSONGridFactory", "da/de3/a01398.html#a9f4c7e2435c794ee5cd129f08c6d369e", null ],
-    [ "grid", "da/de3/a01398.html#a76367717e67130da608ff1d1c38595cb", null ],
-    [ "grid_", "da/de3/a01398.html#a8ba88636f3dc2c48f2624aca1932559f", null ],
-    [ "gridDim", "da/de3/a01398.html#ae333f5a98f9206e2e7890cec10bc89a0", null ],
-    [ "worldDim", "da/de3/a01398.html#ac5d1cecc6f5c369ad6c489d026a47fb1", null ]
+    [ "EntitySeedType", "da/de3/a01398.html#a8890551f6b7dd633c0e726d9f004a6f7", null ],
+    [ "HostIdType", "da/de3/a01398.html#af47ca76d99c81d882d3ed1151b2e25df", null ],
+    [ "TrimInfo", "da/de3/a01398.html#a89f27b25bec586400a232613e2ef61e7", null ],
+    [ "isTrimmed", "da/de3/a01398.html#a912fdaea912e2479db5e4966f90fef68", null ],
+    [ "isValid", "da/de3/a01398.html#a32ef14f82d455ae3aefa6f17d5723873", null ],
+    [ "codimension", "da/de3/a01398.html#ac48cd616f14311c17013a47bea526388", null ],
+    [ "hostSeed", "da/de3/a01398.html#acab74fedea32904b15b4468919cd5714", null ],
+    [ "id", "da/de3/a01398.html#af8aa6d69ec1035bf3138caf493a14574", null ],
+    [ "indexInLvlStorage", "da/de3/a01398.html#a82ab1d0c5728a55f83850070e69cc8e9", null ],
+    [ "lvl", "da/de3/a01398.html#a9e1d18de3d5b7b3f6062d0ef66647112", null ],
+    [ "trimInfo", "da/de3/a01398.html#a287d0bcb5949ca409f7436bbc85b4d38", null ],
+    [ "trimmed", "da/de3/a01398.html#acfc6391dadbe516019c5e019d6cf8c5f", null ]
 ];

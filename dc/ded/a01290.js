@@ -1,8 +1,11 @@
 var a01290 =
 [
-    [ "domain", "dc/ded/a01290.html#a76afc9a7de97fdc7225c4d86f9ed3b1b", null ],
-    [ "geometry", "dc/ded/a01290.html#adf9e102ea8ec44a63d9a2e51186b8b60", null ],
+    [ "StringVector", "dc/ded/a01290.html#ac65c971ebfdbce34ca712da602886615", null ],
+    [ "curve_geometries_2d", "dc/ded/a01290.html#aa6e869760bc95c02005c3e94e7049fe2", null ],
     [ "key", "dc/ded/a01290.html#a8061adf4c0a0398469d6e0d5eb17879d", null ],
+    [ "loops", "dc/ded/a01290.html#a094f6472e89605e71fafa767c11bf18f", null ],
+    [ "surface_geometries_3d", "dc/ded/a01290.html#a71312f8528c9e7ca134779db8ae51515", null ],
+    [ "trims", "dc/ded/a01290.html#a948a8a4d6b54add239b3ac2e807cc3fa", null ],
     [ "type", "dc/ded/a01290.html#a642986b37e38b25d90c0317c52b97c9c", null ],
     [ "typeString", "dc/ded/a01290.html#a3bc2b8ce8b887a5476845145dec45335", null ]
 ];

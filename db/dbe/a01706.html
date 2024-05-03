@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::DefaultTrim::Parameter Struct Reference</title>
+<title>dune-iga: Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,86 +92,209 @@ $(document).ready(function(){initNavTree('db/dbe/a01706.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../df/d12/a01703.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::Parameter Struct Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="../../db/dbe/a01706.html" title="Parameter struct representing parameters for the trimming operation.">Parameter</a> struct representing parameters for the trimming operation.  
+<p>class holds a n-dim net  
  <a href="../../db/dbe/a01706.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../d0/de6/a03807_source.html">dune/iga/trimmer/defaulttrimmer/trimmer.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d4/d3e/a00116_source.html">dune/iga/utils/mdnet.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:a8d04fa108590070c7eda6336bf50c2dc"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#a8d04fa108590070c7eda6336bf50c2dc">splitter</a> = 100</td></tr>
-<tr class="separator:a8d04fa108590070c7eda6336bf50c2dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7263dad9c09022418bd93c5985c5b11"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#af7263dad9c09022418bd93c5985c5b11">dummy</a> = 7</td></tr>
-<tr class="memdesc:af7263dad9c09022418bd93c5985c5b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dummy variable.  <a href="../../db/dbe/a01706.html#af7263dad9c09022418bd93c5985c5b11">More...</a><br /></td></tr>
-<tr class="separator:af7263dad9c09022418bd93c5985c5b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb8d6845cc381c10e0816f48ac3e9f5f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#adb8d6845cc381c10e0816f48ac3e9f5f">trimPrecision</a> = 1e-10</td></tr>
-<tr class="memdesc:adb8d6845cc381c10e0816f48ac3e9f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Precision for trimming.  <a href="../../db/dbe/a01706.html#adb8d6845cc381c10e0816f48ac3e9f5f">More...</a><br /></td></tr>
-<tr class="separator:adb8d6845cc381c10e0816f48ac3e9f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a07bde1e4d2c1949cb416b624bdf72767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#a07bde1e4d2c1949cb416b624bdf72767">MultiDimensionalNetIndex</a> (const FieldVector&lt; int, netdim &gt; &amp;dimSize)</td></tr>
+<tr class="separator:a07bde1e4d2c1949cb416b624bdf72767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8821b3ef72e566daff7ad20071f4514a"><td class="memTemplParams" colspan="2">template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
+<tr class="memitem:a8821b3ef72e566daff7ad20071f4514a"><td class="memTemplItemLeft" align="right" valign="top">ReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#a8821b3ef72e566daff7ad20071f4514a">directToMultiIndex</a> (const int <a class="el" href="../../db/dbe/a01706.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a>) const</td></tr>
+<tr class="memdesc:a8821b3ef72e566daff7ad20071f4514a"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns a multiindex for a scalar index  <a href="../../db/dbe/a01706.html#a8821b3ef72e566daff7ad20071f4514a">More...</a><br /></td></tr>
+<tr class="separator:a8821b3ef72e566daff7ad20071f4514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memTemplParams" colspan="2">template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
+<tr class="memitem:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memTemplItemLeft" align="right" valign="top">int&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a> (const ArrayType &amp;multiIndex) const</td></tr>
+<tr class="separator:a0c37d6ecb435bf22a32dba0a0b0155ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b46c1132b41bb080b0e89bb0bad98a1"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#a1b46c1132b41bb080b0e89bb0bad98a1">size</a> () const</td></tr>
+<tr class="separator:a1b46c1132b41bb080b0e89bb0bad98a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memTemplParams" colspan="2">template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </td></tr>
+<tr class="memitem:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memTemplItemLeft" align="right" valign="top">static ReturnType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../db/dbe/a01706.html#a1af055fa6ad1a7cdf6b50b3b29f33040">directToMultiIndex</a> (const std::array&lt; int, netdim &gt; &amp;dimSize, const int <a class="el" href="../../db/dbe/a01706.html#a0c37d6ecb435bf22a32dba0a0b0155ff">index</a>)</td></tr>
+<tr class="separator:a1af055fa6ad1a7cdf6b50b3b29f33040"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p ><a class="el" href="../../db/dbe/a01706.html" title="Parameter struct representing parameters for the trimming operation.">Parameter</a> struct representing parameters for the trimming operation. </p>
-</div><h2 class="groupheader">Member Data Documentation</h2>
-<a id="af7263dad9c09022418bd93c5985c5b11" name="af7263dad9c09022418bd93c5985c5b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7263dad9c09022418bd93c5985c5b11">&#9670;&nbsp;</a></span>dummy</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;std::size_t netdim&gt;<br />
+class Dune::IGANEW::MultiDimensionalNetIndex&lt; netdim &gt;</div><p >class holds a n-dim net </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a07bde1e4d2c1949cb416b624bdf72767" name="a07bde1e4d2c1949cb416b624bdf72767"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07bde1e4d2c1949cb416b624bdf72767">&#9670;&nbsp;</a></span>MultiDimensionalNetIndex()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int Dune::IGANEW::DefaultTrim::Parameter::dummy = 7</td>
+          <td class="memname"><a class="el" href="../../db/dbe/a01706.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::MultiDimensionalNetIndex </td>
+          <td>(</td>
+          <td class="paramtype">const FieldVector&lt; int, netdim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dimSize</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Dummy variable. </p>
-
 </div>
 </div>
-<a id="a8d04fa108590070c7eda6336bf50c2dc" name="a8d04fa108590070c7eda6336bf50c2dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d04fa108590070c7eda6336bf50c2dc">&#9670;&nbsp;</a></span>splitter</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a8821b3ef72e566daff7ad20071f4514a" name="a8821b3ef72e566daff7ad20071f4514a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8821b3ef72e566daff7ad20071f4514a">&#9670;&nbsp;</a></span>directToMultiIndex() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<div class="memtemplate">
+template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t Dune::IGANEW::DefaultTrim::Parameter::splitter = 100</td>
+          <td class="memname">ReturnType <a class="el" href="../../db/dbe/a01706.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::directToMultiIndex </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>returns a multiindex for a scalar index </p>
 
 </div>
 </div>
-<a id="adb8d6845cc381c10e0816f48ac3e9f5f" name="adb8d6845cc381c10e0816f48ac3e9f5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb8d6845cc381c10e0816f48ac3e9f5f">&#9670;&nbsp;</a></span>trimPrecision</h2>
+<a id="a1af055fa6ad1a7cdf6b50b3b29f33040" name="a1af055fa6ad1a7cdf6b50b3b29f33040"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1af055fa6ad1a7cdf6b50b3b29f33040">&#9670;&nbsp;</a></span>directToMultiIndex() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<div class="memtemplate">
+template&lt;typename ReturnType  = std::array&lt;int, netdim&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double Dune::IGANEW::DefaultTrim::Parameter::trimPrecision = 1e-10</td>
+          <td class="memname">static ReturnType <a class="el" href="../../db/dbe/a01706.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::directToMultiIndex </td>
+          <td>(</td>
+          <td class="paramtype">const std::array&lt; int, netdim &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dimSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>index</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Precision for trimming. </p>
+</div>
+</div>
+<a id="a0c37d6ecb435bf22a32dba0a0b0155ff" name="a0c37d6ecb435bf22a32dba0a0b0155ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c37d6ecb435bf22a32dba0a0b0155ff">&#9670;&nbsp;</a></span>index()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<div class="memtemplate">
+template&lt;typename ArrayType  = std::array&lt;int, netdim&gt;&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../db/dbe/a01706.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::index </td>
+          <td>(</td>
+          <td class="paramtype">const ArrayType &amp;&#160;</td>
+          <td class="paramname"><em>multiIndex</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d0/de6/a03807_source.html">defaulttrimmer/trimmer.hh</a></li>
+<a id="a1b46c1132b41bb080b0e89bb0bad98a1" name="a1b46c1132b41bb080b0e89bb0bad98a1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b46c1132b41bb080b0e89bb0bad98a1">&#9670;&nbsp;</a></span>size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;std::size_t netdim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int <a class="el" href="../../db/dbe/a01706.html">Dune::IGANEW::MultiDimensionalNetIndex</a>&lt; netdim &gt;::size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d4/d3e/a00116_source.html">mdnet.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Dune</a></li><li class="navelem"><a class="el" href="../../d4/d08/a00237.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d03/a00254.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../db/dbe/a01706.html">Parameter</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d52/a00221.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d24/a00222.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../db/dbe/a01706.html">MultiDimensionalNetIndex</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

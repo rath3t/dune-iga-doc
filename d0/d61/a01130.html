@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::Capabilities::hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::Capabilities::isLevelwiseConforming&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,51 +95,39 @@ $(document).ready(function(){initNavTree('d0/d61/a01130.html','../../'); initRes
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d9/d5b/a01127.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::Capabilities::hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::Capabilities::isLevelwiseConforming&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d6/db8/a00158_source.html">dune/iga/hierarchicpatch/gridcapabilities.hh</a>&gt;</code></p>
+<p>has conforming level grids when host grid has  
+ <a href="../../d0/d61/a01130.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d7/dce/a00143_source.html">dune/iga/hierarchicpatch/gridcapabilities.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a559ac97e8220fa95229021ce48bdd96c"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a559ac97e8220fa95229021ce48bdd96c">ParameterSpaceGrid</a> = typename GridFamilyTraits&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::ParameterSpaceGrid</td></tr>
-<tr class="separator:a559ac97e8220fa95229021ce48bdd96c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82af79a2d55693571998f5279d595d52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a82af79a2d55693571998f5279d595d52">GridFamilyTraitsT</a> = GridFamilyTraits&lt; dim, dimworld, ScalarType &gt;</td></tr>
-<tr class="separator:a82af79a2d55693571998f5279d595d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a53b95ac5581418792677eb096d0f6bb0"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a53b95ac5581418792677eb096d0f6bb0">ParameterSpaceGrid</a> = typename GridFamilyTraits&lt; dim, dimworld, ScalarType &gt;::TrimmerTraits::ParameterSpaceGrid</td></tr>
+<tr class="separator:a53b95ac5581418792677eb096d0f6bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a343b943e13547d891a093530ecb65170"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a343b943e13547d891a093530ecb65170">v</a> = GridFamilyTraitsT::template hasEntityIterator&lt;codim&gt;</td></tr>
-<tr class="separator:a343b943e13547d891a093530ecb65170"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47eb103fccf63569d2cb71d1d3898ae4"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html#a47eb103fccf63569d2cb71d1d3898ae4">v</a> = isLevelwiseConforming&lt;<a class="el" href="../../d0/d61/a01130.html#a53b95ac5581418792677eb096d0f6bb0">ParameterSpaceGrid</a>&gt;::v</td></tr>
+<tr class="separator:a47eb103fccf63569d2cb71d1d3898ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a82af79a2d55693571998f5279d595d52" name="a82af79a2d55693571998f5279d595d52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a82af79a2d55693571998f5279d595d52">&#9670;&nbsp;</a></span>GridFamilyTraitsT</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, int dimworld, typename ScalarType, template&lt; int, int, typename &gt; typename GridFamilyTraits&gt;<br />
+struct Dune::Capabilities::isLevelwiseConforming&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</div><p >has conforming level grids when host grid has </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a53b95ac5581418792677eb096d0f6bb0" name="a53b95ac5581418792677eb096d0f6bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a53b95ac5581418792677eb096d0f6bb0">&#9670;&nbsp;</a></span>ParameterSpaceGrid</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits, int codim&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using Dune::Capabilities::hasEntityIterator&lt; <a class="el" href="../../dd/d9e/a01226.html">IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;::GridFamilyTraitsT =  GridFamilyTraits&lt;dim, dimworld, ScalarType&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a559ac97e8220fa95229021ce48bdd96c" name="a559ac97e8220fa95229021ce48bdd96c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a559ac97e8220fa95229021ce48bdd96c">&#9670;&nbsp;</a></span>ParameterSpaceGrid</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits, int codim&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using Dune::Capabilities::hasEntityIterator&lt; <a class="el" href="../../dd/d9e/a01226.html">IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;::ParameterSpaceGrid =  typename GridFamilyTraits&lt;dim, dimworld, ScalarType&gt;::TrimmerTraits::ParameterSpaceGrid</td>
+          <td class="memname">using Dune::Capabilities::isLevelwiseConforming&lt; <a class="el" href="../../d2/da6/a01210.html">IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;::ParameterSpaceGrid =  typename GridFamilyTraits&lt;dim, dimworld, ScalarType&gt;::TrimmerTraits::ParameterSpaceGrid</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -147,19 +135,19 @@ template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a343b943e13547d891a093530ecb65170" name="a343b943e13547d891a093530ecb65170"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a343b943e13547d891a093530ecb65170">&#9670;&nbsp;</a></span>v</h2>
+<a id="a47eb103fccf63569d2cb71d1d3898ae4" name="a47eb103fccf63569d2cb71d1d3898ae4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47eb103fccf63569d2cb71d1d3898ae4">&#9670;&nbsp;</a></span>v</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits, int codim&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const bool Dune::Capabilities::hasEntityIterator&lt; <a class="el" href="../../dd/d9e/a01226.html">IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;::v = GridFamilyTraitsT::template hasEntityIterator&lt;codim&gt;</td>
+          <td class="memname">const bool Dune::Capabilities::isLevelwiseConforming&lt; <a class="el" href="../../d2/da6/a01210.html">IGANEW::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;::v = isLevelwiseConforming&lt;<a class="el" href="../../d0/d61/a01130.html#a53b95ac5581418792677eb096d0f6bb0">ParameterSpaceGrid</a>&gt;::v</td>
         </tr>
       </table>
   </td>
@@ -172,14 +160,14 @@ template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d6/db8/a00158_source.html">gridcapabilities.hh</a></li>
+<li><a class="el" href="../../d7/dce/a00143_source.html">gridcapabilities.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/d82/a00243.html">Capabilities</a></li><li class="navelem"><a class="el" href="../../d0/d61/a01130.html">hasEntityIterator&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d52/a00221.html">Dune</a></li><li class="navelem"><a class="el" href="../../de/dc2/a00228.html">Capabilities</a></li><li class="navelem"><a class="el" href="../../d0/d61/a01130.html">isLevelwiseConforming&lt; IGANEW::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

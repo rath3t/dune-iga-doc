@@ -1,8 +1,6 @@
 var a01374 =
 [
-    [ "BrepLoop", "d2/dff/a01374.html#a202972e41538dbb52ab0e29d7ba13d64", null ],
-    [ "key", "d2/dff/a01374.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "trims", "d2/dff/a01374.html#a0ab2de7a74ccb203dca621407df7eeca", null ],
-    [ "type", "d2/dff/a01374.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "d2/dff/a01374.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
+    [ "geometry", "d2/dff/a01374.html#ab694371db7bbb46cf354a6013b6a486e", null ],
+    [ "idx", "d2/dff/a01374.html#af5a80435612c1fc90b0a850f28f0b3cc", null ],
+    [ "isHost", "d2/dff/a01374.html#a64629d8da22a27ccf67af08159e24fa4", null ]
 ];

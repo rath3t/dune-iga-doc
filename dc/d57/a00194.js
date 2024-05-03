@@ -1,5 +1,5 @@
 var a00194 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d4/da7/a01102.html", "d4/da7/a01102" ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "da/d4e/a01106.html", "da/d4e/a01106" ]
+    [ "IGAGrid", "dc/d57/a00194.html#af93cff67f8b7e3e20822b05262c82751", null ],
+    [ "grid_registry", "dc/d57/a00194.html#a49a8630210f89f42b665afd341205e8d", null ]
 ];

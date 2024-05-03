@@ -1,14 +1,20 @@
 var a01358 =
 [
-    [ "ControlPointType", "de/d5c/a01358.html#a171156a04b856a610d8c9fc00ef9f649", null ],
-    [ "compileKnotVectors", "de/d5c/a01358.html#af1e9fb39ca5239871b3497c67c8cff78", null ],
-    [ "transformControlPoints", "de/d5c/a01358.html#aed450e73a2ebef5fc5477e101d71a185", null ],
-    [ "controlPoints", "de/d5c/a01358.html#abe6fc348097b4a6957d52eb39547305e", null ],
-    [ "degree", "de/d5c/a01358.html#a8fa010e79520bc50c15d319bfbdc3d8c", null ],
-    [ "key", "de/d5c/a01358.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "knots", "de/d5c/a01358.html#a957ffc4bab5a49b687d8d302938a364c", null ],
-    [ "n_controlPoints", "de/d5c/a01358.html#a11f6446750cdd679e343bf5c380a3b37", null ],
-    [ "type", "de/d5c/a01358.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "de/d5c/a01358.html#a51d455d391e155f6f736a2ec40b7fc69", null ],
-    [ "weights", "de/d5c/a01358.html#a274e1d6a8d0b93d7c5b5230e2b4f6f65", null ]
+    [ "LocalView", "da/dab/a01362.html", "da/dab/a01362" ],
+    [ "DynamicMatrixType", "de/d5c/a01358.html#ada61f5d711fe8694da88b4376b573e27", null ],
+    [ "DynamicVectorType", "de/d5c/a01358.html#a49d7f330fa9fe4978d25046d0eb0d30c", null ],
+    [ "ScalarType", "de/d5c/a01358.html#a3ef8ec01b528ac5bed499c08b12fd8a2", null ],
+    [ "Nurbs", "de/d5c/a01358.html#a3eeedc2bfb9f3da9437978be8db6e7f0", null ],
+    [ "Nurbs", "de/d5c/a01358.html#a3113f76c47bddd76f9e272752d6a3cb5", null ],
+    [ "Nurbs", "de/d5c/a01358.html#a83770651506bbe7b1cd2ff443619772a", null ],
+    [ "Nurbs", "de/d5c/a01358.html#a320f2828d6f5b85a47e67d0130c1c72c", null ],
+    [ "basisFunctionDerivatives", "de/d5c/a01358.html#ad6afa16ca79cb65ea9059ba40555a47f", null ],
+    [ "basisFunctionDerivatives", "de/d5c/a01358.html#afc2d73fb22cd3d45395b9833a2c93b54", null ],
+    [ "basisFunctionDerivatives", "de/d5c/a01358.html#ad62b4125f4027a78592724db2fa259c5", null ],
+    [ "basisFunctions", "de/d5c/a01358.html#a2139f62f80ffbe182849599ae7392240", null ],
+    [ "basisFunctions", "de/d5c/a01358.html#a2c462fd3c8b0c02e446816a63f0ad34f", null ],
+    [ "basisFunctions", "de/d5c/a01358.html#a671ef17436aaee73defe85d1adfbb7e3", null ],
+    [ "basisFunctions", "de/d5c/a01358.html#afd258ce58fd1649dac14d9a48bcb657c", null ],
+    [ "localView", "de/d5c/a01358.html#a198d0f6e05cbd1b08cbc72b1322eb271", null ],
+    [ "dimension", "de/d5c/a01358.html#a1f37590f8d33025fb1afa82826dc36fe", null ]
 ];

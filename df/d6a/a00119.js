@@ -1,5 +1,5 @@
 var a00119 =
 [
-    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >", "d7/d22/a01514.html", "d7/d22/a01514" ],
-    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >::StringAndIndex", "d0/d1a/a01518.html", "d0/d1a/a01518" ]
+    [ "is_instantiation_of< Template, T >", "d6/d9a/a01710.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d8/dce/a01714.html", null ]
 ];

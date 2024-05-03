@@ -1,8 +1,11 @@
 var a01362 =
 [
-    [ "domain", "da/dab/a01362.html#aef8f445852c74a1aa1a534fff6cb42b9", null ],
-    [ "geometry", "da/dab/a01362.html#aa568b78ebce126fa61a730ae78b84f1d", null ],
-    [ "key", "da/dab/a01362.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "type", "da/dab/a01362.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "da/dab/a01362.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
+    [ "LocalView", "da/dab/a01362.html#acf5aea0dd285e89d4bf778c5579b6167", null ],
+    [ "LocalView", "da/dab/a01362.html#a97ef03909afc7396be42415c4a98ab37", null ],
+    [ "basisFunctionDerivatives", "da/dab/a01362.html#a011c19976f2f5daa786055bedff436e0", null ],
+    [ "basisFunctions", "da/dab/a01362.html#a1d16825d4900ee1e6687d88730ce4a55", null ],
+    [ "bind", "da/dab/a01362.html#ad81c079ed00f61034346a4d6abf60ef2", null ],
+    [ "dimension", "da/dab/a01362.html#a8cd919096d02f2d1866b45fe940b7c3e", null ],
+    [ "nurbs_", "da/dab/a01362.html#ae04565bbc9dbeed2c5d3f7a1606fdd5d", null ],
+    [ "spIndex_", "da/dab/a01362.html#a8dce31141da04e79ed1e6b42752678d0", null ]
 ];

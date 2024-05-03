@@ -1,14 +1,8 @@
 var a00170 =
 [
-    [ "Dune::IGANEW::Utilities::Domain< ScalarType >", "da/d73/a01090.html", "da/d73/a01090" ],
-    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d5/dcb/a00170.html#ada1286817f950d2e7a16f906473aa2b2", null ],
-    [ "clampToDomain", "d5/dcb/a00170.html#a341a1dc953d397349b5bb0d9f39c4106", null ],
-    [ "linspace", "d5/dcb/a00170.html#a0c6fd781b9aa39c1d69699ec173cece8", null ],
-    [ "linspace", "d5/dcb/a00170.html#a42b0275340679a127b2576175939833f", null ],
-    [ "linspace", "d5/dcb/a00170.html#a2630a0eab9b7e24915eeb52ca335972c", null ],
-    [ "mapToRange", "d5/dcb/a00170.html#a6b48e47a84d5e67509b5d6b512933245", null ],
-    [ "mapToRange", "d5/dcb/a00170.html#a04ac9c71c72215ada13cdc92a31d96ba", null ],
-    [ "mapToRange", "d5/dcb/a00170.html#addda4c834225ccb0923b33a5f9d494b0", null ],
-    [ "mapToRangeFromZeroToOne", "d5/dcb/a00170.html#aa702762865e719e68a197ce63a446b33", null ],
-    [ "splitDomainInHalf", "d5/dcb/a00170.html#a8a1ae4d6e29645af6fa8e60672bac908", null ]
+    [ "findClosestParameterSpaceCoordinate", "d5/dcb/a00170.html#a85b42ae7d7cb1ba7149c382655ce96ea", null ],
+    [ "hessian", "d5/dcb/a00170.html#a7693ef58b9b466df6285facbe588e2e7", null ],
+    [ "isPointOnLineSegment", "d5/dcb/a00170.html#a6876a380ff49e968adf928cfb5a8ef44", null ],
+    [ "jacobianTransposed", "d5/dcb/a00170.html#a558ed80fd1396cbfe7c36ad505937a52", null ],
+    [ "position", "d5/dcb/a00170.html#ae7bdc51407259017c5322f80267fcc5e", null ]
 ];

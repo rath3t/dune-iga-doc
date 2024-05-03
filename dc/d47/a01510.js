@@ -1,8 +1,14 @@
 var a01510 =
 [
-    [ "direction", "dc/d47/a01510.html#af62abf19fb6d909a74ad935bc4f4f43d", null ],
-    [ "geometry", "dc/d47/a01510.html#aafc34fed3d6b27b8cf7fd75630516201", null ],
-    [ "idx", "dc/d47/a01510.html#ad43929b21c1ab86f6916ce783679cfa6", null ],
-    [ "isHost", "dc/d47/a01510.html#a02b7ec34c74635fc1ed7ba715dbe6870", null ],
-    [ "isTrimmed", "dc/d47/a01510.html#ac535a8b834884c4796d0af8986d3a409", null ]
+    [ "ElementTrimData", "dc/d47/a01510.html#a31f4c08063a065896534616b7568a989", null ],
+    [ "Entity", "dc/d47/a01510.html#aeaaa17e28a86d35d580a4fee70e1adc7", null ],
+    [ "GlobalIdSetId", "dc/d47/a01510.html#a652466c4798e25ccd1ac93beeac582e8", null ],
+    [ "ParameterSpaceGridEntity", "dc/d47/a01510.html#ae54900d8bd2d89e605b3807a592d1b07", null ],
+    [ "PatchGridLevelIterator", "dc/d47/a01510.html#aa0afc3b691334eabc027d19d2705c7c6", null ],
+    [ "PatchGridLevelIterator", "dc/d47/a01510.html#ab5dacc72b1517862a0c9bad42a514186", null ],
+    [ "PatchGridLevelIterator", "dc/d47/a01510.html#ad949a3f0cc889d65ef64febf3d034349", null ],
+    [ "dereference", "dc/d47/a01510.html#aaf9dbda00bc11fe1e4505176788ed6a1", null ],
+    [ "equals", "dc/d47/a01510.html#a4039cb0b8ea0726bd3146238c0fc03a1", null ],
+    [ "increment", "dc/d47/a01510.html#a9fb260e871fb4d2fd39d6952893780bd", null ],
+    [ "codimension", "dc/d47/a01510.html#a70a0acef050e96b40242a34f8020a53f", null ]
 ];

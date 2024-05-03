@@ -1,9 +1,13 @@
 var a01366 =
 [
-    [ "BrepTrim", "d6/dfe/a01366.html#ae0e39b86949b3e44bd8606e85c5cedfc", null ],
-    [ "domain", "d6/dfe/a01366.html#ac05e18a4978427a2c6ee000b0e53ca3d", null ],
-    [ "geometry", "d6/dfe/a01366.html#a4c3f4372e1a46cb6d01a65cb897bbfce", null ],
-    [ "key", "d6/dfe/a01366.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "type", "d6/dfe/a01366.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "d6/dfe/a01366.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
+    [ "ControlPointNetType", "d6/dfe/a01366.html#a034cb04c4735d7dcb5615574e19a6f63", null ],
+    [ "ControlPointType", "d6/dfe/a01366.html#a6d2b555a549c0ef07e449cf8d2e03a5c", null ],
+    [ "GlobalCoordinateType", "d6/dfe/a01366.html#a51ab1704f2ced939d707f5c8a5394c55", null ],
+    [ "NURBSPatchData", "d6/dfe/a01366.html#ab13d244f5428abe158492937797c4785", null ],
+    [ "NURBSPatchData", "d6/dfe/a01366.html#add312a85f454004fc4db34413c12d848", null ],
+    [ "controlPoints", "d6/dfe/a01366.html#a5038d8719ed15eec6042971ea15e1706", null ],
+    [ "degree", "d6/dfe/a01366.html#a30411a17ca195626ac8510acd7b99758", null ],
+    [ "dimworld", "d6/dfe/a01366.html#a3a51850e6e5281b2b5692f8fb6685187", null ],
+    [ "knotSpans", "d6/dfe/a01366.html#ac3ae0d508de8bcc031da26a4578c979b", null ],
+    [ "patchDim", "d6/dfe/a01366.html#a008c4794473967d91fae315659b7a5ef", null ]
 ];

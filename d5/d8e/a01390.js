@@ -1,9 +1,12 @@
 var a01390 =
 [
-    [ "ControlPoint", "d5/d8e/a01390.html#a05660dacc1b434b971e62129c28422fd", null ],
-    [ "ControlPointNetType", "d5/d8e/a01390.html#a7caabc5e76d77b4e8299dfc023bfe26b", null ],
-    [ "Grid", "d5/d8e/a01390.html#a29a07fbaa75336571b9f293537a0ec48", null ],
-    [ "PatchData", "d5/d8e/a01390.html#ac5a13cf5d977000274c321869942cc52", null ],
-    [ "read", "d5/d8e/a01390.html#a00f99434abd8039a53dc9f1e1927a42d", null ],
-    [ "read", "d5/d8e/a01390.html#ac4f683de38a5acfa58551bd84c9463a5", null ]
+    [ "EntityIdType", "d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30", [
+      [ "host", "d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e", null ],
+      [ "newId", "d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0", null ]
+    ] ],
+    [ "operator==", "d5/d8e/a01390.html#ad912e12f00f0b50c966995051948a86d", null ],
+    [ "operator<<", "d5/d8e/a01390.html#a0a734e442bb8250ba46bb8e3d027fa23", null ],
+    [ "entityIdType", "d5/d8e/a01390.html#a3a5f12dff1e201f674486abc8e668d21", null ],
+    [ "hostId", "d5/d8e/a01390.html#a6fac67dc97fc8b2fc1861a950538d381", null ],
+    [ "id", "d5/d8e/a01390.html#a6483db5ee79f980bc83e175d9ea1ca34", null ]
 ];

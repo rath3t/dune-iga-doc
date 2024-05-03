@@ -1,10 +1,7 @@
 var a01266 =
 [
-    [ "ThisType", "d7/d73/a01266.html#acf8009860b8d5588205792bff0aaf6af", null ],
-    [ "TrimmerType", "d7/d73/a01266.html#a4a43dfaa49f854341fcf48902030aa06", null ],
-    [ "PatchGridLevelGridView", "d7/d73/a01266.html#a6136f21384c47731acb2545311477834", null ],
-    [ "patchData", "d7/d73/a01266.html#ade43589957d62296e1e575e66c85ab35", null ],
-    [ "tensorProductCoordinates", "d7/d73/a01266.html#a5c4dc0f991f9846e9ebc00b68134e566", null ],
-    [ "untrimmedElementNumbers", "d7/d73/a01266.html#a000e8b4ecae84ed3d670b70e9f0714a6", null ],
-    [ "unTrimmedPatch", "d7/d73/a01266.html#ac2f73e08e1bf389e8ef6698793656ba4", null ]
+    [ "operator<<", "d7/d73/a01266.html#a5b59867bdd8d1d0f656beb3e489bcd4f", null ],
+    [ "key", "d7/d73/a01266.html#a8061adf4c0a0398469d6e0d5eb17879d", null ],
+    [ "type", "d7/d73/a01266.html#a642986b37e38b25d90c0317c52b97c9c", null ],
+    [ "typeString", "d7/d73/a01266.html#a3bc2b8ce8b887a5476845145dec45335", null ]
 ];

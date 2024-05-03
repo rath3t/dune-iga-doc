@@ -1,6 +1,8 @@
 var a01706 =
 [
-    [ "dummy", "db/dbe/a01706.html#af7263dad9c09022418bd93c5985c5b11", null ],
-    [ "splitter", "db/dbe/a01706.html#a8d04fa108590070c7eda6336bf50c2dc", null ],
-    [ "trimPrecision", "db/dbe/a01706.html#adb8d6845cc381c10e0816f48ac3e9f5f", null ]
+    [ "MultiDimensionalNetIndex", "db/dbe/a01706.html#a07bde1e4d2c1949cb416b624bdf72767", null ],
+    [ "directToMultiIndex", "db/dbe/a01706.html#a8821b3ef72e566daff7ad20071f4514a", null ],
+    [ "directToMultiIndex", "db/dbe/a01706.html#a1af055fa6ad1a7cdf6b50b3b29f33040", null ],
+    [ "index", "db/dbe/a01706.html#a0c37d6ecb435bf22a32dba0a0b0155ff", null ],
+    [ "size", "db/dbe/a01706.html#a1b46c1132b41bb080b0e89bb0bad98a1", null ]
 ];

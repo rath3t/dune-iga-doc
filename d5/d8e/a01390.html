@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,224 +93,153 @@ $(document).ready(function(){initNavTree('d5/d8e/a01390.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="../../d9/d40/a01387.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::IbraReader&lt; gridDim, worldDim, ScalarType &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::IdType&lt; HostIdType &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d2/d17/a03750_source.html">dune/iga/oldStuff/io/ibra/ibrareader.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d1/def/a03475_source.html">dune/iga/trimmer/defaulttrimmer/trimmer.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a29a07fbaa75336571b9f293537a0ec48"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a29a07fbaa75336571b9f293537a0ec48">Grid</a> = <a class="el" href="../../d3/deb/a01386.html">Dune::IGA::NURBSGrid</a>&lt; gridDim, worldDim, ScalarType &gt;</td></tr>
-<tr class="separator:a29a07fbaa75336571b9f293537a0ec48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a05660dacc1b434b971e62129c28422fd"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a05660dacc1b434b971e62129c28422fd">ControlPoint</a> = Dune::IGA::NURBSPatchData&lt; gridDim, worldDim &gt;::ControlPointType</td></tr>
-<tr class="separator:a05660dacc1b434b971e62129c28422fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5a13cf5d977000274c321869942cc52"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#ac5a13cf5d977000274c321869942cc52">PatchData</a> = Dune::IGA::NURBSPatchData&lt; gridDim, worldDim &gt;</td></tr>
-<tr class="separator:ac5a13cf5d977000274c321869942cc52"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7caabc5e76d77b4e8299dfc023bfe26b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a7caabc5e76d77b4e8299dfc023bfe26b">ControlPointNetType</a> = Dune::IGA::MultiDimensionalNet&lt; gridDim, <a class="el" href="../../d5/d8e/a01390.html#a05660dacc1b434b971e62129c28422fd">ControlPoint</a> &gt;</td></tr>
-<tr class="separator:a7caabc5e76d77b4e8299dfc023bfe26b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe481c5254837097517abb2fabb40f30"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30">EntityIdType</a> { <a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">host</a>
+, <a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0">newId</a>
+ }</td></tr>
+<tr class="separator:afe481c5254837097517abb2fabb40f30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a00f99434abd8039a53dc9f1e1927a42d"><td class="memItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="../../d5/d8e/a01390.html#a29a07fbaa75336571b9f293537a0ec48">Grid</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a00f99434abd8039a53dc9f1e1927a42d">read</a> (const std::string &amp;fileName, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})</td></tr>
-<tr class="separator:a00f99434abd8039a53dc9f1e1927a42d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4f683de38a5acfa58551bd84c9463a5"><td class="memTemplParams" colspan="2">template&lt;typename InputStringType &gt; <br />
-requires (not std::convertible_to&lt;std::string, InputStringType&gt; and not std::convertible_to&lt;InputStringType, const char*&gt;)</td></tr>
-<tr class="memitem:ac4f683de38a5acfa58551bd84c9463a5"><td class="memTemplItemLeft" align="right" valign="top">static std::unique_ptr&lt; <a class="el" href="../../d5/d8e/a01390.html#a29a07fbaa75336571b9f293537a0ec48">Grid</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#ac4f683de38a5acfa58551bd84c9463a5">read</a> (InputStringType &amp;ibraInputFile, const bool trim=true, std::array&lt; int, 2 &gt; elevateDegree={0, 0}, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})</td></tr>
-<tr class="separator:ac4f683de38a5acfa58551bd84c9463a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:ad912e12f00f0b50c966995051948a86d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#ad912e12f00f0b50c966995051948a86d">operator==</a> (const <a class="el" href="../../d5/d8e/a01390.html">IdType</a> &amp;other) const</td></tr>
+<tr class="separator:ad912e12f00f0b50c966995051948a86d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a3a5f12dff1e201f674486abc8e668d21"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30">EntityIdType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a3a5f12dff1e201f674486abc8e668d21">entityIdType</a> {<a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">EntityIdType::host</a>}</td></tr>
+<tr class="separator:a3a5f12dff1e201f674486abc8e668d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6483db5ee79f980bc83e175d9ea1ca34"><td class="memItemLeft" align="right" valign="top">HostIdType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a6483db5ee79f980bc83e175d9ea1ca34">id</a> {}</td></tr>
+<tr class="separator:a6483db5ee79f980bc83e175d9ea1ca34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fac67dc97fc8b2fc1861a950538d381"><td class="memItemLeft" align="right" valign="top">std::optional&lt; HostIdType &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d8e/a01390.html#a6fac67dc97fc8b2fc1861a950538d381">hostId</a> {}</td></tr>
+<tr class="separator:a6fac67dc97fc8b2fc1861a950538d381"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a05660dacc1b434b971e62129c28422fd" name="a05660dacc1b434b971e62129c28422fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a05660dacc1b434b971e62129c28422fd">&#9670;&nbsp;</a></span>ControlPoint</h2>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="afe481c5254837097517abb2fabb40f30" name="afe481c5254837097517abb2fabb40f30"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe481c5254837097517abb2fabb40f30">&#9670;&nbsp;</a></span>EntityIdType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int gridDim, int worldDim, typename ScalarType  = double&gt; </div>
+template&lt;typename HostIdType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../d5/d8e/a01390.html">Dune::IGA::IbraReader</a>&lt; gridDim, worldDim, ScalarType &gt;::ControlPoint =  Dune::IGA::NURBSPatchData&lt;gridDim, worldDim&gt;::ControlPointType</td>
+          <td class="memname">enum class <a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30">Dune::IGANEW::DefaultTrim::IdType::EntityIdType</a></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7caabc5e76d77b4e8299dfc023bfe26b" name="a7caabc5e76d77b4e8299dfc023bfe26b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7caabc5e76d77b4e8299dfc023bfe26b">&#9670;&nbsp;</a></span>ControlPointNetType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int gridDim, int worldDim, typename ScalarType  = double&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d5/d8e/a01390.html">Dune::IGA::IbraReader</a>&lt; gridDim, worldDim, ScalarType &gt;::ControlPointNetType =  Dune::IGA::MultiDimensionalNet&lt;gridDim, <a class="el" href="../../d5/d8e/a01390.html#a05660dacc1b434b971e62129c28422fd">ControlPoint</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29a07fbaa75336571b9f293537a0ec48" name="a29a07fbaa75336571b9f293537a0ec48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29a07fbaa75336571b9f293537a0ec48">&#9670;&nbsp;</a></span>Grid</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int gridDim, int worldDim, typename ScalarType  = double&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d5/d8e/a01390.html">Dune::IGA::IbraReader</a>&lt; gridDim, worldDim, ScalarType &gt;::Grid =  <a class="el" href="../../d3/deb/a01386.html">Dune::IGA::NURBSGrid</a>&lt;gridDim, worldDim, ScalarType&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac5a13cf5d977000274c321869942cc52" name="ac5a13cf5d977000274c321869942cc52"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5a13cf5d977000274c321869942cc52">&#9670;&nbsp;</a></span>PatchData</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int gridDim, int worldDim, typename ScalarType  = double&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d5/d8e/a01390.html">Dune::IGA::IbraReader</a>&lt; gridDim, worldDim, ScalarType &gt;::PatchData =  Dune::IGA::NURBSPatchData&lt;gridDim, worldDim&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e" name="afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e"></a>host&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0" name="afe481c5254837097517abb2fabb40f30a6c02b5bcb9b148d7b3321dfdb2ba85a0"></a>newId&#160;</td><td class="fielddoc"></td></tr>
+</table>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a00f99434abd8039a53dc9f1e1927a42d" name="a00f99434abd8039a53dc9f1e1927a42d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00f99434abd8039a53dc9f1e1927a42d">&#9670;&nbsp;</a></span>read() <span class="overload">[1/2]</span></h2>
+<a id="ad912e12f00f0b50c966995051948a86d" name="ad912e12f00f0b50c966995051948a86d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad912e12f00f0b50c966995051948a86d">&#9670;&nbsp;</a></span>operator==()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int gridDim, int worldDim, typename ScalarType  = double&gt; </div>
+template&lt;typename HostIdType &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">static std::unique_ptr&lt; <a class="el" href="../../d5/d8e/a01390.html#a29a07fbaa75336571b9f293537a0ec48">Grid</a> &gt; <a class="el" href="../../d5/d8e/a01390.html">Dune::IGA::IbraReader</a>&lt; gridDim, worldDim, ScalarType &gt;::read </td>
+          <td class="memname">bool <a class="el" href="../../d5/d8e/a01390.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::operator== </td>
           <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>fileName</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>trim</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
-          <td class="paramname"><em>elevateDegree</em> = <code>{0,&#160;0}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
-          <td class="paramname"><em>preKnotRefine</em> = <code>{0,&#160;0}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
-          <td class="paramname"><em>postKnotRefine</em> = <code>{0,&#160;0}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="paramtype">const <a class="el" href="../../d5/d8e/a01390.html">IdType</a>&lt; HostIdType &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="ac4f683de38a5acfa58551bd84c9463a5" name="ac4f683de38a5acfa58551bd84c9463a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4f683de38a5acfa58551bd84c9463a5">&#9670;&nbsp;</a></span>read() <span class="overload">[2/2]</span></h2>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a3a5f12dff1e201f674486abc8e668d21" name="a3a5f12dff1e201f674486abc8e668d21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a5f12dff1e201f674486abc8e668d21">&#9670;&nbsp;</a></span>entityIdType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int gridDim, int worldDim, typename ScalarType  = double&gt; </div>
-<div class="memtemplate">
-template&lt;typename InputStringType &gt; <br />
-requires (not std::convertible_to&lt;std::string, InputStringType&gt; and not std::convertible_to&lt;InputStringType, const char*&gt;)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename HostIdType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">static std::unique_ptr&lt; <a class="el" href="../../d5/d8e/a01390.html#a29a07fbaa75336571b9f293537a0ec48">Grid</a> &gt; <a class="el" href="../../d5/d8e/a01390.html">Dune::IGA::IbraReader</a>&lt; gridDim, worldDim, ScalarType &gt;::read </td>
-          <td>(</td>
-          <td class="paramtype">InputStringType &amp;&#160;</td>
-          <td class="paramname"><em>ibraInputFile</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>trim</em> = <code>true</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
-          <td class="paramname"><em>elevateDegree</em> = <code>{0,&#160;0}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
-          <td class="paramname"><em>preKnotRefine</em> = <code>{0,&#160;0}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::array&lt; int, 2 &gt;&#160;</td>
-          <td class="paramname"><em>postKnotRefine</em> = <code>{0,&#160;0}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
+          <td class="memname"><a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30">EntityIdType</a> <a class="el" href="../../d5/d8e/a01390.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::entityIdType {<a class="el" href="../../d5/d8e/a01390.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e">EntityIdType::host</a>}</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d2/d17/a03750_source.html">oldStuff/io/ibra/ibrareader.hh</a></li>
+<a id="a6fac67dc97fc8b2fc1861a950538d381" name="a6fac67dc97fc8b2fc1861a950538d381"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fac67dc97fc8b2fc1861a950538d381">&#9670;&nbsp;</a></span>hostId</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename HostIdType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt;HostIdType&gt; <a class="el" href="../../d5/d8e/a01390.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::hostId {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6483db5ee79f980bc83e175d9ea1ca34" name="a6483db5ee79f980bc83e175d9ea1ca34"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6483db5ee79f980bc83e175d9ea1ca34">&#9670;&nbsp;</a></span>id</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename HostIdType &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">HostIdType <a class="el" href="../../d5/d8e/a01390.html">Dune::IGANEW::DefaultTrim::IdType</a>&lt; HostIdType &gt;::id {}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following files:<ul>
+<li><a class="el" href="../../da/dec/a00080_source.html">entityinfo.hh</a></li>
+<li><a class="el" href="../../d1/def/a03475_source.html">defaulttrimmer/trimmer.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Dune</a></li><li class="navelem"><a class="el" href="../../de/dbc/a00249.html">IGA</a></li><li class="navelem"><a class="el" href="../../d5/d8e/a01390.html">IbraReader</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d52/a00221.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d24/a00222.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../da/d2e/a00238.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d5/d8e/a01390.html">IdType</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

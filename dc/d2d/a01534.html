@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::IGANEW::DefaultTrim::PatchTrimDataImpl&lt; GridImp &gt;::CurveManager Class Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,130 +92,46 @@ $(document).ready(function(){initNavTree('dc/d2d/a01534.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d4/d62/a01531.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl&lt; GridImp &gt;::CurveManager Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d1/d44/a00098_source.html">dune/iga/trimmer/defaulttrimmer/entityinfo.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../db/dab/a00089_source.html">dune/iga/trimmer/defaulttrimmer/patchtrimdata.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/def/a01538.html">GeometryMap</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a434ebc80ee729101faf74f6e0fa31d63"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a434ebc80ee729101faf74f6e0fa31d63">HostIdType</a> = typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType</td></tr>
-<tr class="separator:a434ebc80ee729101faf74f6e0fa31d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b0de6ae88acad9c20f9d2a79b1e9ef6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a3b0de6ae88acad9c20f9d2a79b1e9ef6">EntitySeedType</a> = typename Traits::ParameterSpaceGrid::template Codim&lt; <a class="el" href="../../dc/d2d/a01534.html#a799f4ac3b3f2b83cde8e4b9082b03b1b">codimension</a> &gt;::Entity::EntitySeed</td></tr>
-<tr class="separator:a3b0de6ae88acad9c20f9d2a79b1e9ef6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c15ae3ab4265404a0f2ce461c5adab1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a2c15ae3ab4265404a0f2ce461c5adab1">TrimmedEntityGeometry</a> = typename Traits::template Codim&lt; <a class="el" href="../../dc/d2d/a01534.html#a799f4ac3b3f2b83cde8e4b9082b03b1b">codimension</a> &gt;::TrimmedParameterSpaceGeometry::PatchGeometry</td></tr>
-<tr class="separator:a2c15ae3ab4265404a0f2ce461c5adab1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a325747c00713ffbcc945aad7bede94b6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a325747c00713ffbcc945aad7bede94b6">TrimInfo</a> = typename Traits::ElementTrimData::EdgeInfo</td></tr>
-<tr class="separator:a325747c00713ffbcc945aad7bede94b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab165f921faa2379141966677c92ccfa6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#ab165f921faa2379141966677c92ccfa6">idx_t</a> = u_int64_t</td></tr>
+<tr class="separator:ab165f921faa2379141966677c92ccfa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aafdf0b635599fd0f6512c90af373f0c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d2d/a01534.html#a2c15ae3ab4265404a0f2ce461c5adab1">TrimmedEntityGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#aafdf0b635599fd0f6512c90af373f0c9">geometryForIdx</a> (unsigned int idx) const</td></tr>
-<tr class="memdesc:aafdf0b635599fd0f6512c90af373f0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">for a given inside index return the edge geometry in the inside element  <a href="../../dc/d2d/a01534.html#aafdf0b635599fd0f6512c90af373f0c9">More...</a><br /></td></tr>
-<tr class="separator:aafdf0b635599fd0f6512c90af373f0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6591944db610610d9d4b2356d6ba34bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d2d/a01534.html#a2c15ae3ab4265404a0f2ce461c5adab1">TrimmedEntityGeometry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a6591944db610610d9d4b2356d6ba34bf">otherGeometryForIdx</a> (unsigned int idx) const</td></tr>
-<tr class="memdesc:a6591944db610610d9d4b2356d6ba34bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">for a given inside index return the edge geometry in the outside element  <a href="../../dc/d2d/a01534.html#a6591944db610610d9d4b2356d6ba34bf">More...</a><br /></td></tr>
-<tr class="separator:a6591944db610610d9d4b2356d6ba34bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aec55a019cd1404ede8bb289d5b56a7c9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#aec55a019cd1404ede8bb289d5b56a7c9">isTrimmed</a> () const</td></tr>
-<tr class="separator:aec55a019cd1404ede8bb289d5b56a7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa498e81b21ac870e350bc808f0541414"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#aa498e81b21ac870e350bc808f0541414">isTrimmedHost</a> () const</td></tr>
-<tr class="separator:aa498e81b21ac870e350bc808f0541414"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad912d964614b58bb6bfb66b202b14713"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#ad912d964614b58bb6bfb66b202b14713">isValid</a> () const</td></tr>
-<tr class="separator:ad912d964614b58bb6bfb66b202b14713"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aee95ac77a72474e48c4857ea2b1d6638"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#aee95ac77a72474e48c4857ea2b1d6638">indexInLvlStorage</a> {std::numeric_limits&lt;unsigned int&gt;::max()}</td></tr>
-<tr class="separator:aee95ac77a72474e48c4857ea2b1d6638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7091325f863afaf91ef52ce359ee85b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#af7091325f863afaf91ef52ce359ee85b">lvl</a> {}</td></tr>
-<tr class="separator:af7091325f863afaf91ef52ce359ee85b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5ad6a901058b27899d036d95ba93627"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#ac5ad6a901058b27899d036d95ba93627">trimmed</a> {false}</td></tr>
-<tr class="separator:ac5ad6a901058b27899d036d95ba93627"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a33a544f43537f28a79b40bb3378de61a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../da/da6/a01522.html">IdType</a>&lt; <a class="el" href="../../dc/d2d/a01534.html#a434ebc80ee729101faf74f6e0fa31d63">HostIdType</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a33a544f43537f28a79b40bb3378de61a">id</a></td></tr>
-<tr class="separator:a33a544f43537f28a79b40bb3378de61a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3648060fdddab1ba88cd48cf532eb844"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dc/d2d/a01534.html#a3b0de6ae88acad9c20f9d2a79b1e9ef6">EntitySeedType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a3648060fdddab1ba88cd48cf532eb844">hostSeed</a> {}</td></tr>
-<tr class="separator:a3648060fdddab1ba88cd48cf532eb844"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24ed063a3d69747adf0e27d3956e3f35"><td class="memItemLeft" align="right" valign="top">std::vector&lt; GeometryMap &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a24ed063a3d69747adf0e27d3956e3f35">edgeGeometries</a> {}</td></tr>
-<tr class="separator:a24ed063a3d69747adf0e27d3956e3f35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acacb1792e0ff4e068936999d7e9f8650"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../dc/d2d/a01534.html#a325747c00713ffbcc945aad7bede94b6">TrimInfo</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#acacb1792e0ff4e068936999d7e9f8650">trimInfo</a> {}</td></tr>
-<tr class="separator:acacb1792e0ff4e068936999d7e9f8650"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f3b1526715f9807791d82369924cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#ad3f3b1526715f9807791d82369924cda">addLoop</a> (const Impl::BoundaryLoop&lt; <a class="el" href="../../d7/d90/a01530.html#a8e43129977838c5c14b41d2792c94c4d">TrimmingCurve</a> &gt; &amp;loop)</td></tr>
+<tr class="separator:ad3f3b1526715f9807791d82369924cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e04055268f24db0a5c8aed136a80d93"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a6e04055268f24db0a5c8aed136a80d93">getIndices</a> (const <a class="el" href="../../dc/d2d/a01534.html#ab165f921faa2379141966677c92ccfa6">idx_t</a> val) const -&gt; Impl::CurveLoopIndexEncoder::IndexResult</td></tr>
+<tr class="separator:a6e04055268f24db0a5c8aed136a80d93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac896a78cf4d62d3344e2873abef34cd8"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#ac896a78cf4d62d3344e2873abef34cd8">getZValue</a> (int loopIndex, int curveIndex, int sampleIndex) const</td></tr>
+<tr class="separator:ac896a78cf4d62d3344e2873abef34cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a799f4ac3b3f2b83cde8e4b9082b03b1b"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a799f4ac3b3f2b83cde8e4b9082b03b1b">codimension</a> = 1</td></tr>
-<tr class="separator:a799f4ac3b3f2b83cde8e4b9082b03b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3216a6d4d58aa5c46871b2ddf7d24a39"><td class="memItemLeft" align="right" valign="top">static constexpr <a class="el" href="../../dc/d2d/a01534.html#ab165f921faa2379141966677c92ccfa6">idx_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d2d/a01534.html#a3216a6d4d58aa5c46871b2ddf7d24a39">indexOffSet</a> = 5</td></tr>
+<tr class="separator:a3216a6d4d58aa5c46871b2ddf7d24a39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a3b0de6ae88acad9c20f9d2a79b1e9ef6" name="a3b0de6ae88acad9c20f9d2a79b1e9ef6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3b0de6ae88acad9c20f9d2a79b1e9ef6">&#9670;&nbsp;</a></span>EntitySeedType</h2>
+<a id="ab165f921faa2379141966677c92ccfa6" name="ab165f921faa2379141966677c92ccfa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab165f921faa2379141966677c92ccfa6">&#9670;&nbsp;</a></span>idx_t</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">using <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::EntitySeedType =  typename Traits::ParameterSpaceGrid::template Codim&lt;<a class="el" href="../../dc/d2d/a01534.html#a799f4ac3b3f2b83cde8e4b9082b03b1b">codimension</a>&gt;::Entity::EntitySeed</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a434ebc80ee729101faf74f6e0fa31d63" name="a434ebc80ee729101faf74f6e0fa31d63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a434ebc80ee729101faf74f6e0fa31d63">&#9670;&nbsp;</a></span>HostIdType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::HostIdType =  typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a325747c00713ffbcc945aad7bede94b6" name="a325747c00713ffbcc945aad7bede94b6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a325747c00713ffbcc945aad7bede94b6">&#9670;&nbsp;</a></span>TrimInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::TrimInfo =  typename Traits::ElementTrimData::EdgeInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2c15ae3ab4265404a0f2ce461c5adab1" name="a2c15ae3ab4265404a0f2ce461c5adab1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c15ae3ab4265404a0f2ce461c5adab1">&#9670;&nbsp;</a></span>TrimmedEntityGeometry</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::TrimmedEntityGeometry =  typename Traits::template Codim&lt;<a class="el" href="../../dc/d2d/a01534.html#a799f4ac3b3f2b83cde8e4b9082b03b1b">codimension</a>&gt;::TrimmedParameterSpaceGeometry::PatchGeometry</td>
+          <td class="memname">using <a class="el" href="../../d7/d90/a01530.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl</a>&lt; GridImp &gt;::CurveManager::idx_t =  u_int64_t</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,58 +139,23 @@ template&lt;typename Traits &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aafdf0b635599fd0f6512c90af373f0c9" name="aafdf0b635599fd0f6512c90af373f0c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafdf0b635599fd0f6512c90af373f0c9">&#9670;&nbsp;</a></span>geometryForIdx()</h2>
+<a id="ad3f3b1526715f9807791d82369924cda" name="ad3f3b1526715f9807791d82369924cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad3f3b1526715f9807791d82369924cda">&#9670;&nbsp;</a></span>addLoop()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dc/d2d/a01534.html#a2c15ae3ab4265404a0f2ce461c5adab1">TrimmedEntityGeometry</a> <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::geometryForIdx </td>
+          <td class="memname">void <a class="el" href="../../d7/d90/a01530.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl</a>&lt; GridImp &gt;::CurveManager::addLoop </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>for a given inside index return the edge geometry in the inside element </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>lvl index of inside element </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aec55a019cd1404ede8bb289d5b56a7c9" name="aec55a019cd1404ede8bb289d5b56a7c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aec55a019cd1404ede8bb289d5b56a7c9">&#9670;&nbsp;</a></span>isTrimmed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::isTrimmed </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const Impl::BoundaryLoop&lt; <a class="el" href="../../d7/d90/a01530.html#a8e43129977838c5c14b41d2792c94c4d">TrimmingCurve</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>loop</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
@@ -286,22 +167,23 @@ template&lt;typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="aa498e81b21ac870e350bc808f0541414" name="aa498e81b21ac870e350bc808f0541414"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa498e81b21ac870e350bc808f0541414">&#9670;&nbsp;</a></span>isTrimmedHost()</h2>
+<a id="a6e04055268f24db0a5c8aed136a80d93" name="a6e04055268f24db0a5c8aed136a80d93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e04055268f24db0a5c8aed136a80d93">&#9670;&nbsp;</a></span>getIndices()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::isTrimmedHost </td>
+          <td class="memname">auto <a class="el" href="../../d7/d90/a01530.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl</a>&lt; GridImp &gt;::CurveManager::getIndices </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const <a class="el" href="../../dc/d2d/a01534.html#ab165f921faa2379141966677c92ccfa6">idx_t</a>&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td> const -&gt; Impl::CurveLoopIndexEncoder::IndexResult </td>
         </tr>
       </table>
   </td>
@@ -313,22 +195,39 @@ template&lt;typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="ad912d964614b58bb6bfb66b202b14713" name="ad912d964614b58bb6bfb66b202b14713"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad912d964614b58bb6bfb66b202b14713">&#9670;&nbsp;</a></span>isValid()</h2>
+<a id="ac896a78cf4d62d3344e2873abef34cd8" name="ac896a78cf4d62d3344e2873abef34cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac896a78cf4d62d3344e2873abef34cd8">&#9670;&nbsp;</a></span>getZValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::isValid </td>
+          <td class="memname">auto <a class="el" href="../../d7/d90/a01530.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl</a>&lt; GridImp &gt;::CurveManager::getZValue </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>loopIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>curveIndex</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>sampleIndex</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -337,59 +236,23 @@ template&lt;typename Traits &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6591944db610610d9d4b2356d6ba34bf" name="a6591944db610610d9d4b2356d6ba34bf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6591944db610610d9d4b2356d6ba34bf">&#9670;&nbsp;</a></span>otherGeometryForIdx()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dc/d2d/a01534.html#a2c15ae3ab4265404a0f2ce461c5adab1">TrimmedEntityGeometry</a> <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::otherGeometryForIdx </td>
-          <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
-          <td class="paramname"><em>idx</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>for a given inside index return the edge geometry in the outside element </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">idx</td><td>lvl index of inside element </td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a799f4ac3b3f2b83cde8e4b9082b03b1b" name="a799f4ac3b3f2b83cde8e4b9082b03b1b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a799f4ac3b3f2b83cde8e4b9082b03b1b">&#9670;&nbsp;</a></span>codimension</h2>
+<a id="a3216a6d4d58aa5c46871b2ddf7d24a39" name="a3216a6d4d58aa5c46871b2ddf7d24a39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3216a6d4d58aa5c46871b2ddf7d24a39">&#9670;&nbsp;</a></span>indexOffSet</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename Traits &gt; </div>
+template&lt;typename GridImp &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::codimension = 1</td>
+          <td class="memname">constexpr <a class="el" href="../../dc/d2d/a01534.html#ab165f921faa2379141966677c92ccfa6">idx_t</a> <a class="el" href="../../d7/d90/a01530.html">Dune::IGANEW::DefaultTrim::PatchTrimDataImpl</a>&lt; GridImp &gt;::CurveManager::indexOffSet = 5</td>
         </tr>
       </table>
   </td>
@@ -401,127 +264,15 @@ template&lt;typename Traits &gt; </div>
 
 </div>
 </div>
-<a id="a24ed063a3d69747adf0e27d3956e3f35" name="a24ed063a3d69747adf0e27d3956e3f35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24ed063a3d69747adf0e27d3956e3f35">&#9670;&nbsp;</a></span>edgeGeometries</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;GeometryMap&gt; <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::edgeGeometries {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3648060fdddab1ba88cd48cf532eb844" name="a3648060fdddab1ba88cd48cf532eb844"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3648060fdddab1ba88cd48cf532eb844">&#9670;&nbsp;</a></span>hostSeed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../dc/d2d/a01534.html#a3b0de6ae88acad9c20f9d2a79b1e9ef6">EntitySeedType</a> <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::hostSeed {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a33a544f43537f28a79b40bb3378de61a" name="a33a544f43537f28a79b40bb3378de61a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33a544f43537f28a79b40bb3378de61a">&#9670;&nbsp;</a></span>id</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../da/da6/a01522.html">IdType</a>&lt;<a class="el" href="../../dc/d2d/a01534.html#a434ebc80ee729101faf74f6e0fa31d63">HostIdType</a>&gt; <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::id</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aee95ac77a72474e48c4857ea2b1d6638" name="aee95ac77a72474e48c4857ea2b1d6638"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee95ac77a72474e48c4857ea2b1d6638">&#9670;&nbsp;</a></span>indexInLvlStorage</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::indexInLvlStorage {std::numeric_limits&lt;unsigned int&gt;::max()}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7091325f863afaf91ef52ce359ee85b" name="af7091325f863afaf91ef52ce359ee85b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7091325f863afaf91ef52ce359ee85b">&#9670;&nbsp;</a></span>lvl</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::lvl {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="acacb1792e0ff4e068936999d7e9f8650" name="acacb1792e0ff4e068936999d7e9f8650"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acacb1792e0ff4e068936999d7e9f8650">&#9670;&nbsp;</a></span>trimInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt;<a class="el" href="../../dc/d2d/a01534.html#a325747c00713ffbcc945aad7bede94b6">TrimInfo</a>&gt; <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::trimInfo {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac5ad6a901058b27899d036d95ba93627" name="ac5ad6a901058b27899d036d95ba93627"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac5ad6a901058b27899d036d95ba93627">&#9670;&nbsp;</a></span>trimmed</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename Traits &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../da/d0a/a01526.html">Dune::IGANEW::DefaultTrim::EntityInfoImpl</a>&lt; Traits, 1 &gt;::trimmed {false}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d1/d44/a00098_source.html">entityinfo.hh</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../db/dab/a00089_source.html">patchtrimdata.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Dune</a></li><li class="navelem"><a class="el" href="../../d4/d08/a00237.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../d7/d03/a00254.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../dc/d2d/a01534.html">EntityInfoImpl&lt; Traits, 1 &gt;</a></li>
+    <li class="navelem"><a class="el" href="../../dd/d52/a00221.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d24/a00222.html">IGANEW</a></li><li class="navelem"><a class="el" href="../../da/d2e/a00238.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d7/d90/a01530.html">PatchTrimDataImpl</a></li><li class="navelem"><a class="el" href="../../dc/d2d/a01534.html">CurveManager</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

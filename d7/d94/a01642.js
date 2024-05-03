@@ -1,14 +1,9 @@
 var a01642 =
 [
-    [ "ElementTrimData", "d7/d94/a01642.html#a31f4c08063a065896534616b7568a989", null ],
-    [ "Entity", "d7/d94/a01642.html#aeaaa17e28a86d35d580a4fee70e1adc7", null ],
-    [ "GlobalIdSetId", "d7/d94/a01642.html#a652466c4798e25ccd1ac93beeac582e8", null ],
-    [ "ParameterSpaceGridEntity", "d7/d94/a01642.html#ae54900d8bd2d89e605b3807a592d1b07", null ],
-    [ "PatchGridLevelIterator", "d7/d94/a01642.html#aa0afc3b691334eabc027d19d2705c7c6", null ],
-    [ "PatchGridLevelIterator", "d7/d94/a01642.html#ab5dacc72b1517862a0c9bad42a514186", null ],
-    [ "PatchGridLevelIterator", "d7/d94/a01642.html#ad949a3f0cc889d65ef64febf3d034349", null ],
-    [ "dereference", "d7/d94/a01642.html#aaf9dbda00bc11fe1e4505176788ed6a1", null ],
-    [ "equals", "d7/d94/a01642.html#a4039cb0b8ea0726bd3146238c0fc03a1", null ],
-    [ "increment", "d7/d94/a01642.html#a9fb260e871fb4d2fd39d6952893780bd", null ],
-    [ "codimension", "d7/d94/a01642.html#a70a0acef050e96b40242a34f8020a53f", null ]
+    [ "Intersection", "d7/d94/a01642.html#a96615d85169b563aa3b76492b4a7e797", null ],
+    [ "PatchGridLeafIntersectionIterator", "d7/d94/a01642.html#a5381c850da02988d30c924704e1f6e05", null ],
+    [ "PatchGridLeafIntersectionIterator", "d7/d94/a01642.html#a103d9e4dd92417c1311f741c84005248", null ],
+    [ "dereference", "d7/d94/a01642.html#a0a573d6da346fc550b9859916ba93c64", null ],
+    [ "equals", "d7/d94/a01642.html#a74d7a3a0c5f28884eb5390a7112b6a72", null ],
+    [ "increment", "d7/d94/a01642.html#acce4e4259683ab365ea2a358d4f9b8dc", null ]
 ];

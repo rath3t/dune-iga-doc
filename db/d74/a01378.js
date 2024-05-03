@@ -1,11 +1,8 @@
 var a01378 =
 [
-    [ "StringVector", "db/d74/a01378.html#a94f119b740cc4ce55e6bd721dddbe2c1", null ],
-    [ "curve_geometries_2d", "db/d74/a01378.html#af742ef59082640c3d941c8c617cea6fb", null ],
-    [ "key", "db/d74/a01378.html#ad3bff32c80e0b2c0c66f696da22af6a3", null ],
-    [ "loops", "db/d74/a01378.html#ad4fb64a1c336ee19cf8b6e725030b639", null ],
-    [ "surface_geometries_3d", "db/d74/a01378.html#a9010ce626abe088d92fa7ca94dea8809", null ],
-    [ "trims", "db/d74/a01378.html#a0b18289437b2c70cbb84ce06024107f4", null ],
-    [ "type", "db/d74/a01378.html#a4aacf3670ded47f6e2a42fdaeebd526a", null ],
-    [ "typeString", "db/d74/a01378.html#a51d455d391e155f6f736a2ec40b7fc69", null ]
+    [ "direction", "db/d74/a01378.html#af62abf19fb6d909a74ad935bc4f4f43d", null ],
+    [ "geometry", "db/d74/a01378.html#aafc34fed3d6b27b8cf7fd75630516201", null ],
+    [ "idx", "db/d74/a01378.html#ad43929b21c1ab86f6916ce783679cfa6", null ],
+    [ "isHost", "db/d74/a01378.html#a02b7ec34c74635fc1ed7ba715dbe6870", null ],
+    [ "isTrimmed", "db/d74/a01378.html#ac535a8b834884c4796d0af8986d3a409", null ]
 ];

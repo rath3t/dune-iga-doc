@@ -1,13 +1,10 @@
 var a01546 =
 [
-    [ "IdType", "d9/da1/a01546.html#a4f8f69845b2003ef02276c7ba247c748", null ],
-    [ "PersistentIndexType", "d9/da1/a01546.html#ab881b4e4fcfc2eb284b33021602f2e4d", null ],
-    [ "PatchGridGlobalIdSet", "d9/da1/a01546.html#ab1ef671198844aaf6a9f87626fb67efb", null ],
-    [ "PatchGridGlobalIdSet", "d9/da1/a01546.html#a46ef04491be5831dfa0c56ffa3fa0a71", null ],
-    [ "id", "d9/da1/a01546.html#a132729c804de189d8de1f201431c8558", null ],
-    [ "newFreeIndex", "d9/da1/a01546.html#ac5b1b61e94f2186f6e876571c5e7d5df", null ],
-    [ "subId", "d9/da1/a01546.html#a82f66af20a0238348b8b093898791d4b", null ],
-    [ "update", "d9/da1/a01546.html#afab15d4f4e30c82632f35874f3ff75ff", null ],
-    [ "grid_", "d9/da1/a01546.html#a166f0403b0d6fa2c1ea7b2d3e5f8a567", null ],
-    [ "lastFreeIndex_", "d9/da1/a01546.html#a1de38c4c4d6ee4e2a9dacf53ccba4996", null ]
+    [ "const_iterator", "d9/da1/a01546.html#af53b99a07fffc40ae13665b9911e267d", null ],
+    [ "iterator", "d9/da1/a01546.html#a3ddf21560e8563c01791bb4d7330e100", null ],
+    [ "SubEntityRangeImpl", "d9/da1/a01546.html#a89bcb6e2bf0e4d06b14c5f2d2aed89a7", null ],
+    [ "SubEntityRangeImpl", "d9/da1/a01546.html#ad099246eaefc02c6082cf354cfc3ecb1", null ],
+    [ "SubEntityRangeImpl", "d9/da1/a01546.html#a36cb82af386101c1a3b84ee6a5aba304", null ],
+    [ "contains", "d9/da1/a01546.html#a69f4aeadda8e5cc51d0ecfd476a956c4", null ],
+    [ "size", "d9/da1/a01546.html#a3cf4a901552d8f6f6b1136eec8f94ce8", null ]
 ];

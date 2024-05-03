@@ -1,7 +1,5 @@
 var a01422 =
 [
-    [ "TrimData", "d1/df4/a01422.html#ac2009fc47a62d0cfcfe80811f9fe6bfb", null ],
-    [ "addLoop", "d1/df4/a01422.html#a065412a5007835e01f8b48b745fff51d", null ],
-    [ "numBoundaries", "d1/df4/a01422.html#a44d0aac398da6d55ce5476a765a019ab", null ],
-    [ "boundaryLoops", "d1/df4/a01422.html#a3a301d623d890048a88f1d2bfe45021b", null ]
+    [ "maxBoundaryDivisions", "d1/df4/a01422.html#ae331d3a4f1b2a1c5fa9194e19a79d1c9", null ],
+    [ "targetTolerance", "d1/df4/a01422.html#a833d311c87eb2194cfd2cd1adf7c88c2", null ]
 ];

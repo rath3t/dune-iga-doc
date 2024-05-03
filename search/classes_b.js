@@ -1,29 +1,6 @@
 var searchData=
 [
-  ['parameter_0',['Parameter',['../db/dbe/a01706.html',1,'Dune::IGANEW::DefaultTrim::Parameter'],['../d5/dec/a01794.html',1,'Dune::IGANEW::IdentityTrim::Parameter']]],
-  ['parameters_1',['Parameters',['../d7/d1d/a01554.html',1,'Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator']]],
-  ['patchgeometrylocalview_2',['PatchGeometryLocalView',['../d6/d40/a01114.html',1,'Dune::IGANEW::GeometryKernel']]],
-  ['patchgrid_3',['PatchGrid',['../dd/d9e/a01226.html',1,'Dune::IGANEW']]],
-  ['patchgridentity_4',['PatchGridEntity',['../d0/d58/a01230.html',1,'Dune::IGANEW']]],
-  ['patchgridentity_3c_200_2c_20dim_2c_20gridimp_20_3e_5',['PatchGridEntity&lt; 0, dim, GridImp &gt;',['../d8/ddf/a01238.html',1,'Dune::IGANEW']]],
-  ['patchgridentityseed_6',['PatchGridEntitySeed',['../d1/d9b/a01566.html',1,'Dune::IGANEW::DefaultTrim::PatchGridEntitySeed&lt; codim, GridImp &gt;'],['../dc/d3a/a01750.html',1,'Dune::IGANEW::IdentityTrim::PatchGridEntitySeed&lt; codim, GridImp &gt;']]],
-  ['patchgridfamily_7',['PatchGridFamily',['../d8/dce/a01714.html',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;'],['../d5/d32/a01214.html',1,'Dune::IGANEW::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;'],['../d7/d04/a01246.html',1,'Dune::IGANEW::PatchGridFamily&lt; dim, dimworld, TrimmerType, ScalarType &gt;']]],
-  ['patchgridgeometry_8',['PatchGridGeometry',['../d4/d22/a01250.html',1,'Dune::IGANEW']]],
-  ['patchgridglobalidset_9',['PatchGridGlobalIdSet',['../d9/da1/a01546.html',1,'Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet&lt; GridImp &gt;'],['../d0/d79/a01766.html',1,'Dune::IGANEW::IdentityTrim::PatchGridGlobalIdSet&lt; GridImp &gt;']]],
-  ['patchgridhierarchiciterator_10',['PatchGridHierarchicIterator',['../d5/d75/a01570.html',1,'Dune::IGANEW::DefaultTrim::PatchGridHierarchicIterator&lt; GridImp &gt;'],['../d9/d37/a01754.html',1,'Dune::IGANEW::IdentityTrim::PatchGridHierarchicIterator&lt; GridImp &gt;']]],
-  ['patchgridleafgridview_11',['PatchGridLeafGridView',['../da/d00/a01270.html',1,'Dune::IGANEW']]],
-  ['patchgridleafgridviewtraits_12',['PatchGridLeafGridViewTraits',['../d4/d10/a01278.html',1,'Dune::IGANEW']]],
-  ['patchgridleafindexset_13',['PatchGridLeafIndexSet',['../d0/d21/a01582.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLeafIndexSet&lt; GridImp &gt;'],['../dd/d40/a01762.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLeafIndexSet&lt; GridImp &gt;']]],
-  ['patchgridleafintersection_14',['PatchGridLeafIntersection',['../da/da1/a01258.html',1,'Dune::IGANEW']]],
-  ['patchgridleafintersectioniterator_15',['PatchGridLeafIntersectionIterator',['../d5/dcf/a01602.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt;'],['../d9/d02/a01774.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt;'],['../d6/d1e/a01234.html',1,'Dune::IGANEW::PatchGridLeafIntersectionIterator&lt; GridImp &gt;']]],
-  ['patchgridleafiterator_16',['PatchGridLeafIterator',['../dd/d55/a01638.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLeafIterator&lt; codim, pitype, GridImp &gt;'],['../dd/dec/a01782.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLeafIterator&lt; codim, pitype, GridImp &gt;']]],
-  ['patchgridlevelgridview_17',['PatchGridLevelGridView',['../d7/d73/a01266.html',1,'Dune::IGANEW']]],
-  ['patchgridlevelgridviewtraits_18',['PatchGridLevelGridViewTraits',['../de/d33/a01274.html',1,'Dune::IGANEW']]],
-  ['patchgridlevelindexset_19',['PatchGridLevelIndexSet',['../d1/d88/a01578.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLevelIndexSet&lt; GridImp &gt;'],['../d9/de3/a01758.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLevelIndexSet&lt; GridImp &gt;']]],
-  ['patchgridlevelintersection_20',['PatchGridLevelIntersection',['../d3/d53/a01262.html',1,'Dune::IGANEW']]],
-  ['patchgridlevelintersectioniterator_21',['PatchGridLevelIntersectionIterator',['../d3/d2d/a01606.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt;'],['../df/d21/a01778.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt;']]],
-  ['patchgridleveliterator_22',['PatchGridLevelIterator',['../d7/d94/a01642.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLevelIterator&lt; codim, pitype, GridImp &gt;'],['../db/d4b/a01786.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLevelIterator&lt; codim, pitype, GridImp &gt;']]],
-  ['patchgridlocalgeometry_23',['PatchGridLocalGeometry',['../d2/d20/a01790.html',1,'Dune::IGANEW']]],
-  ['patchgridlocalidset_24',['PatchGridLocalIdSet',['../d2/d2f/a01586.html',1,'Dune::IGANEW::DefaultTrim::PatchGridLocalIdSet&lt; GridImp &gt;'],['../d4/dfe/a01770.html',1,'Dune::IGANEW::IdentityTrim::PatchGridLocalIdSet&lt; GridImp &gt;']]],
-  ['patchtrimdataimpl_25',['PatchTrimDataImpl',['../d9/dbc/a01662.html',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl&lt; GridImp &gt;'],['../db/db2/a01806.html',1,'Dune::IGANEW::IdentityTrim::PatchTrimDataImpl&lt; dim, ScalarType &gt;']]]
+  ['simplexintegrationrulegenerator_0',['SimplexIntegrationRuleGenerator',['../d4/d3c/a01418.html',1,'Dune::IGANEW::DefaultTrim']]],
+  ['stringandindex_1',['StringAndIndex',['../d3/deb/a01386.html',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
+  ['subentityrangeimpl_2',['SubEntityRangeImpl',['../d9/da1/a01546.html',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
 ];
