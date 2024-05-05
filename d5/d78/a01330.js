@@ -14,6 +14,7 @@ var a01330 =
     [ "element", "d5/d78/a01330.html#a5d44299aff465f934b96a97785fd1a67", null ],
     [ "finiteElement", "d5/d78/a01330.html#a30eee42a1d363fb03bd25f7b35d15920", null ],
     [ "finiteElement", "d5/d78/a01330.html#a30eee42a1d363fb03bd25f7b35d15920", null ],
+    [ "getDirectIndex", "d5/d78/a01330.html#a0525602271982b51c9562cd938f4d992", null ],
     [ "NurbsPreBasis", "d5/d78/a01330.html#a9ac39f538eeb70f3c08d738e13f17da8", null ],
     [ "element_", "d5/d78/a01330.html#a46140a3c8b42bd09729688683ec9a76f", null ],
     [ "finiteElement_", "d5/d78/a01330.html#a072519f1aaec2ac604c94153cfc9d193", null ],

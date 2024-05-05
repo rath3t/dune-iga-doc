@@ -23,6 +23,7 @@ var a01194 =
     [ "evaluateFunction", "d9/d2e/a01194.html#a1b7bc087d8fa822f33bef0790ffbed69", null ],
     [ "evaluateJacobian", "d9/d2e/a01194.html#a845190d3748e2a2c6190e280622ed22a", null ],
     [ "evaluateJacobian", "d9/d2e/a01194.html#a845190d3748e2a2c6190e280622ed22a", null ],
+    [ "getDirectIndex", "d9/d2e/a01194.html#a27ba86ce29f079639fcd9cbd09f9e0a9", null ],
     [ "getIJK", "d9/d2e/a01194.html#ad6a2b5d833570a683f54c470f4380237", null ],
     [ "getIJK", "d9/d2e/a01194.html#a60e90bc09cd6c3dce6f4aaaa36702947", null ],
     [ "gridView", "d9/d2e/a01194.html#aaeafc1eca094c0766e4bd219ddf3ecab", null ],

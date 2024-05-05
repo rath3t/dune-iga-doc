@@ -14,6 +14,7 @@ var a01550 =
     [ "getHostEntity", "d8/daf/a01550.html#af4bc84fbe01899dd30b342130879cb49", null ],
     [ "hasFather", "d8/daf/a01550.html#a3db0d16d204c73604cadb9a26c3f27a7", null ],
     [ "hostEntity", "d8/daf/a01550.html#a09fd5db98198a49e1cc0b4ad50cd8b26", null ],
+    [ "hostIndexInLvl", "d8/daf/a01550.html#a66b9bb7a35d063598cbf5923f92172b1", null ],
     [ "id", "d8/daf/a01550.html#aad7618485e129da0d8824d2e1cc1da15", null ],
     [ "ileafbegin", "d8/daf/a01550.html#abe0fec424b800d4353817ce7e52311d7", null ],
     [ "ileafend", "d8/daf/a01550.html#acb8199fa2ea09e3d34591e3d843f5a85", null ],

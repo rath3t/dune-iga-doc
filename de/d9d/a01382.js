@@ -46,6 +46,7 @@ var a01382 =
     [ "idToVertexInfoMap", "de/d9d/a01382.html#a0abb70127811f0814d305b8116ae7535", null ],
     [ "numberOfTrimmedElements", "de/d9d/a01382.html#afebb5c66ccada770c4ecfe72e6e4e9a2", null ],
     [ "numberOfUnTrimmedElements", "de/d9d/a01382.html#ac5540bea9ea6f3d118347fd2b6812d35", null ],
+    [ "trimFlags_", "de/d9d/a01382.html#a6b33ae9a2c997423032fd4be1d3af155", null ],
     [ "trimmedVertexIds_", "de/d9d/a01382.html#a51136003460376db352758ac6a120488", null ],
     [ "vertexCount", "de/d9d/a01382.html#aa574cdcc63686dda8d54f63063bcb45d", null ]
 ];

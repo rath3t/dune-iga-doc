@@ -3,6 +3,7 @@ var a01250 =
     [ "ThisType", "d4/d22/a01250.html#acf8009860b8d5588205792bff0aaf6af", null ],
     [ "TrimmerType", "d4/d22/a01250.html#a4a43dfaa49f854341fcf48902030aa06", null ],
     [ "PatchGridLevelGridView", "d4/d22/a01250.html#a6136f21384c47731acb2545311477834", null ],
+    [ "level", "d4/d22/a01250.html#a579c46890bba7fd0f03ada8f5830d294", null ],
     [ "patchData", "d4/d22/a01250.html#ade43589957d62296e1e575e66c85ab35", null ],
     [ "tensorProductCoordinates", "d4/d22/a01250.html#a5c4dc0f991f9846e9ebc00b68134e566", null ],
     [ "untrimmedElementNumbers", "d4/d22/a01250.html#a000e8b4ecae84ed3d670b70e9f0714a6", null ],

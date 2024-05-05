@@ -169,6 +169,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeed25fe7b4007adf6e1930ee803448c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1d5be49a1deaee6b53742e41c5be747"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#ac1d5be49a1deaee6b53742e41c5be747">createUntrimmedNodeIndices</a> ()</td></tr>
 <tr class="separator:ac1d5be49a1deaee6b53742e41c5be747"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ba86ce29f079639fcd9cbd09f9e0a9"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#a27ba86ce29f079639fcd9cbd09f9e0a9">getDirectIndex</a> (const auto &amp;ele) const</td></tr>
+<tr class="separator:a27ba86ce29f079639fcd9cbd09f9e0a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afeda8feefa8f07725dcc34f750d8fc3b"><td class="memTemplParams" colspan="2">template&lt;typename It &gt; </td></tr>
 <tr class="memitem:afeda8feefa8f07725dcc34f750d8fc3b"><td class="memTemplItemLeft" align="right" valign="top">It&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#afeda8feefa8f07725dcc34f750d8fc3b">indices</a> (const <a class="el" href="../../d9/d2e/a01194.html#a92687205867b4a7ab813913a6bddbae0">Node</a> &amp;node, It it) const</td></tr>
 <tr class="memdesc:afeda8feefa8f07725dcc34f750d8fc3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps from subtree index set [0..size-1] to a globally unique multi index in global basis.  <a href="../../d9/d2e/a01194.html#afeda8feefa8f07725dcc34f750d8fc3b">More...</a><br /></td></tr>
@@ -250,7 +252,7 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a265d30472e118a4bcebb635237dc2502"><td class="memItemLeft" align="right" valign="top">std::array&lt; int, dim &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#a265d30472e118a4bcebb635237dc2502">elements_</a></td></tr>
 <tr class="memdesc:a265d30472e118a4bcebb635237dc2502"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of grid elements in the different coordinate directions.  <a href="../../d9/d2e/a01194.html#a265d30472e118a4bcebb635237dc2502">More...</a><br /></td></tr>
 <tr class="separator:a265d30472e118a4bcebb635237dc2502"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3639680130557d8e19cbfca5b21ac75b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#a3639680130557d8e19cbfca5b21ac75b">cachedSize_</a> = std::numeric_limits&lt;unsigned int&gt;::signaling_NaN()</td></tr>
+<tr class="memitem:a3639680130557d8e19cbfca5b21ac75b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#a3639680130557d8e19cbfca5b21ac75b">cachedSize_</a> = std::numeric_limits&lt;unsigned int&gt;::max()</td></tr>
 <tr class="separator:a3639680130557d8e19cbfca5b21ac75b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c6f3b1325b48b7ef697eba2bb9649cb"><td class="memItemLeft" align="right" valign="top">std::map&lt; DirectIndex, std::vector&lt; <a class="el" href="../../d9/d2e/a01194.html#a401b78d56f3a60443383e1ad654370ea">size_type</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d2e/a01194.html#a9c6f3b1325b48b7ef697eba2bb9649cb">originalIndices_</a></td></tr>
 <tr class="separator:a9c6f3b1325b48b7ef697eba2bb9649cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -883,6 +885,34 @@ template&lt;typename GV , typename ScalarType &gt; </div>
 
 <p>Evaluate Jacobian of all B-spline basis functions. </p>
 <p >In theory this is easy: just look up the formula in a B-spline text of your choice. The challenge is compute only the values needed for the current knot span. </p>
+
+</div>
+</div>
+<a id="a27ba86ce29f079639fcd9cbd09f9e0a9" name="a27ba86ce29f079639fcd9cbd09f9e0a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a27ba86ce29f079639fcd9cbd09f9e0a9">&#9670;&nbsp;</a></span>getDirectIndex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename GV , typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d9/d2e/a01194.html">Dune::Functions::NurbsPreBasis</a>&lt; GV, ScalarType &gt;::getDirectIndex </td>
+          <td>(</td>
+          <td class="paramtype">const auto &amp;&#160;</td>
+          <td class="paramname"><em>ele</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -1635,7 +1665,7 @@ template&lt;typename GV , typename ScalarType &gt; </div>
 template&lt;typename GV , typename ScalarType &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">unsigned int <a class="el" href="../../d9/d2e/a01194.html">Dune::Functions::NurbsPreBasis</a>&lt; GV, ScalarType &gt;::cachedSize_ = std::numeric_limits&lt;unsigned int&gt;::signaling_NaN()</td>
+          <td class="memname">unsigned int <a class="el" href="../../d9/d2e/a01194.html">Dune::Functions::NurbsPreBasis</a>&lt; GV, ScalarType &gt;::cachedSize_ = std::numeric_limits&lt;unsigned int&gt;::max()</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1865,9 +1895,9 @@ template&lt;typename GV , typename ScalarType &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="../../dc/dc7/a03424_source.html">hierarchicpatch/patchgrid.hh</a></li>
+<li><a class="el" href="../../dd/ddc/a03444_source.html">hierarchicpatch/patchgrid.hh</a></li>
 <li><a class="el" href="../../d2/de7/a00014_source.html">nurbsbasis.hh</a></li>
-<li><a class="el" href="../../d9/d2c/a03421_source.html">oldStuff/nurbsbasis.hh</a></li>
+<li><a class="el" href="../../de/dc4/a03441_source.html">oldStuff/nurbsbasis.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
