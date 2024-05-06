@@ -1,5 +1,5 @@
 var a00179 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d9/df5/a01086.html", "d9/df5/a01086" ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "da/d73/a01090.html", "da/d73/a01090" ]
+    [ "sliceCurve", "db/dd9/a00179.html#abfc77ae77e0b94352c95be9f7743ba82", null ],
+    [ "splitCurve", "db/dd9/a00179.html#a9d1ef665e00560598f9eecf853c6187b", null ]
 ];

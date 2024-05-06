@@ -1,5 +1,5 @@
 var a00182 =
 [
-    [ "transform", "d7/d25/a00182.html#a32f8f310c48c22247e2072bd76abc0fb", null ],
-    [ "transformToSpan", "d7/d25/a00182.html#ae67fa9708ca6ef804d1df77ef93777b4", null ]
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d3/dc4/a01089.html", "d3/dc4/a01089" ],
+    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "de/d1c/a01093.html", "de/d1c/a01093" ]
 ];

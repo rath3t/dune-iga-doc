@@ -1,4 +1,4 @@
 var examples =
 [
-    [ "/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh", "de/db5/a01730.html", null ]
+    [ "/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh", "df/d2e/a01737.html", null ]
 ];
