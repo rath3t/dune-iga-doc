@@ -25,6 +25,7 @@ var a01234 =
     [ "jacobianInverseTransposed", "d6/d1e/a01234.html#a565c66ff03c5db3ef39fcdcd39be02a2", null ],
     [ "jacobianTransposed", "d6/d1e/a01234.html#a164a9a6859316902216108d66e22454c", null ],
     [ "local", "d6/d1e/a01234.html#aae1e7088c762a9b0f76f81e62d2c477a", null ],
+    [ "secondFundamentalForm", "d6/d1e/a01234.html#a8c0cace0792082a074406d14663da42c", null ],
     [ "type", "d6/d1e/a01234.html#a938c6f842fbf9392b9802ff673d57d05", null ],
     [ "zeroFirstAndSecondDerivativeOfPosition", "d6/d1e/a01234.html#a2b628ff452aafed391aa25f9ec1b225e", null ],
     [ "codim", "d6/d1e/a01234.html#af1b4a7f53d93332d06528d22e95ccd74", null ],

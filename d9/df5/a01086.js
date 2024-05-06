@@ -46,6 +46,7 @@ var a01086 =
     [ "operator==", "d9/df5/a01086.html#a722e1a3f2ed4a7f288b089d229269510", null ],
     [ "patchData", "d9/df5/a01086.html#a774988b3688480f79deefe9177d23b23", null ],
     [ "patchData", "d9/df5/a01086.html#a9957f7bf50ec3960c1d1793d1778705c", null ],
+    [ "secondFundamentalForm", "d9/df5/a01086.html#a93e4586357a7211903bb8456c1263491", null ],
     [ "type", "d9/df5/a01086.html#a865962205c7091fb854a95d51f147103", null ],
     [ "uniqueKnotVector", "d9/df5/a01086.html#a854b46f824f70ca2fa44584c634671d9", null ],
     [ "volume", "d9/df5/a01086.html#a51608259c110bc32da401244999271e6", null ],
