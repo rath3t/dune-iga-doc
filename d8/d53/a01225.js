@@ -20,7 +20,7 @@ var a01225 =
     [ "geometry", "d8/d53/a01225.html#a29a6de9f61c8258c0571facc18aca75e", null ],
     [ "geometryInFather", "d8/d53/a01225.html#a36aaf9ea317ba313daabe12153fb4e04", null ],
     [ "getLocalEntity", "d8/d53/a01225.html#ac76231324b8c6ec906478c85ecca61fa", null ],
-    [ "getQuadratureRule", "d8/d53/a01225.html#a46260177444d1ae092aef10f0b044bb2", null ],
+    [ "getQuadratureRule", "d8/d53/a01225.html#a7606694ddb4e2357ac3de5db0f770c7e", null ],
     [ "hasFather", "d8/d53/a01225.html#a911482fbad35821622687c19e850f72b", null ],
     [ "hbegin", "d8/d53/a01225.html#a877889d7a71d5c8a6504f790b4fa0bd1", null ],
     [ "hend", "d8/d53/a01225.html#a1c85a91c10796c3c2fa9945b4e1972fb", null ],

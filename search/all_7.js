@@ -26,7 +26,7 @@ var searchData=
   ['getlocalentity_23',['getLocalEntity',['../d8/d53/a01225.html#ac76231324b8c6ec906478c85ecca61fa',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::getLocalEntity()'],['../da/d19/a01217.html#a7c0b76c06ab17aac7c1a3fcc765a6b4b',1,'Dune::IGANEW::PatchGridEntity::getLocalEntity()']]],
   ['getmark_24',['getMark',['../d5/d54/a01213.html#af8764211d74a3288c548851606e4e3d7',1,'Dune::IGANEW::PatchGrid']]],
   ['getpointsinpatch_25',['getPointsInPatch',['../d1/d62/a01533.html#a62ce1d68f56f460b71bbc2ea75a95817',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl']]],
-  ['getquadraturerule_26',['getQuadratureRule',['../d8/d53/a01225.html#a46260177444d1ae092aef10f0b044bb2',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
+  ['getquadraturerule_26',['getQuadratureRule',['../d8/d53/a01225.html#a7606694ddb4e2357ac3de5db0f770c7e',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;']]],
   ['getvertices_27',['getVertices',['../db/d4b/a01309.html#a792f46594bae296b6de221aef296df84',1,'Dune::IGA::IGARefinedGeometries']]],
   ['getzvalue_28',['getZValue',['../df/d3f/a01537.html#ac896a78cf4d62d3344e2873abef34cd8',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::CurveManager::getZValue()'],['../d1/d62/a01533.html#a9a301632e1f5216a9ba0fdf1559981dc',1,'Dune::IGANEW::DefaultTrim::PatchTrimDataImpl::getZValue()']]],
   ['ghostsize_29',['ghostSize',['../d5/d54/a01213.html#aab69923b905f2f0ee815602572dc98dc',1,'Dune::IGANEW::PatchGrid::ghostSize(int codim) const'],['../d5/d54/a01213.html#a9c187ce458995bb1dc03a8ebd57be115',1,'Dune::IGANEW::PatchGrid::ghostSize(int level, int codim) const']]],
