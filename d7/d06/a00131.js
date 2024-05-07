@@ -1,4 +1,4 @@
 var a00131 =
 [
-    [ "Dune::IGANEW::PatchGridGeometry< mydim, coorddim, GridImp >", "dc/dab/a01237.html", "dc/dab/a01237" ]
+    [ "Dune::IGA::PatchGridGeometry< mydim, coorddim, GridImp >", "d8/d2b/a01236.html", "d8/d2b/a01236" ]
 ];

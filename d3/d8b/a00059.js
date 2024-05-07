@@ -1,4 +1,4 @@
 var a00059 =
 [
-    [ "Dune::IGANEW::DefaultTrim::Transformations", "dd/dda/a01621.html", "dd/dda/a01621" ]
+    [ "Dune::IGA::DefaultTrim::Transformations", "db/dad/a01616.html", "db/dad/a01616" ]
 ];

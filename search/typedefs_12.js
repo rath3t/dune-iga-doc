@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['yaspentity_0',['YASPEntity',['../da/df3/a01581.html#a79c4c2f353e0752352fbc84a5916fc74',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
-  ['yaspgridtype_1',['YASPGridType',['../d7/d29/a01589.html#ab17d80a1e6f723b087ae51a2e5f963af',1,'Dune::IGANEW::DefaultTrim::PatchGridFamily::TrimmerTraits']]]
+  ['yaspentity_0',['YASPEntity',['../db/dfd/a01576.html#a93809a32c0f865ffa7a0663f56404976',1,'Dune::IGA::DefaultTrim::TrimmerImpl']]],
+  ['yaspgridtype_1',['YASPGridType',['../d8/d22/a01584.html#a10fd09327a0ccc83c28bae7431f04fdd',1,'Dune::IGA::DefaultTrim::PatchGridFamily::TrimmerTraits']]]
 ];

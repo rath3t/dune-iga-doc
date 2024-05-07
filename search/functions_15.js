@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['vertex_0',['vertex',['../d7/d38/a01373.html#ac2def62397ee515cae3ab75d87c9ad9e',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['vertexsubindex_1',['vertexSubIndex',['../db/d4b/a01309.html#a42e1db517691e8606cef2c737f41d17d',1,'Dune::IGA::IGARefinedGeometries']]],
-  ['vertices_2',['vertices',['../d7/d38/a01373.html#ad9eaf90122bd35dc573bc612e0418de1',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['visit_3',['visit',['../d6/d15/a01697.html#a647f652d8dc9c0ff3a6d9c08864b274c',1,'Dune::IGANEW::Trim::LocalGeometryVariant']]],
-  ['volume_4',['volume',['../d0/dd3/a01077.html#ac12f4ce45210a778408b7d87cbc8756b',1,'Dune::IGANEW::Utilities::Domain::volume()'],['../d3/dc4/a01089.html#a51608259c110bc32da401244999271e6',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::volume()'],['../de/d99/a01101.html#abfada214df60cc503a46e55500e37745',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView::volume()'],['../d7/d38/a01373.html#a1ba194b2c2c6b96da9e54f8b5cafc7dd',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl::volume()'],['../d5/dc8/a01541.html#a93a1449e5f112957e3e3235dc8a15081',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement::volume()']]]
+  ['vertex_0',['vertex',['../dd/d0c/a01368.html#a95b89cf2f346575607512a7a4906d309',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]],
+  ['vertexsubindex_1',['vertexSubIndex',['../d1/d56/a01308.html#a42e1db517691e8606cef2c737f41d17d',1,'Dune::IGA::IGARefinedGeometries']]],
+  ['vertices_2',['vertices',['../dd/d0c/a01368.html#af33bce7eeeedab327e939ce6bc12056c',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]],
+  ['visit_3',['visit',['../da/dc4/a01692.html#ab567db54b7e5ff70962e18778cd43e5e',1,'Dune::IGA::Trim::LocalGeometryVariant']]],
+  ['volume_4',['volume',['../d6/d80/a01076.html#a4ac70e4cbebfcbd3ea2b0c49807494e6',1,'Dune::IGA::Utilities::Domain::volume()'],['../da/db7/a01088.html#aab30f378a5a387f1145dd7de771a5c36',1,'Dune::IGA::GeometryKernel::NURBSPatch::volume()'],['../d3/dbd/a01100.html#a470cd9c59c45932b160e1ae5d5e456c9',1,'Dune::IGA::GeometryKernel::PatchGeometryLocalView::volume()'],['../dd/d0c/a01368.html#a30f6a733c6ee494bf6f570ac3a9cf20e',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl::volume()'],['../d0/da6/a01536.html#a58eac9fbfebe8815a6de314703038b2d',1,'Dune::IGA::DefaultTrim::TrimmedReferenceElement::volume()']]]
 ];

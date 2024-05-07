@@ -1,6 +1,6 @@
 var a00098 =
 [
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d5/dc8/a01541.html", "d5/dc8/a01541" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "dd/dba/a01545.html", "dd/dba/a01545" ],
-    [ "Dune::IGANEW::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "d3/d1b/a01549.html", "d3/d1b/a01549" ]
+    [ "Dune::IGA::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d0/da6/a01536.html", "d0/da6/a01536" ],
+    [ "Dune::IGA::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d3/d4c/a01540.html", "d3/d4c/a01540" ],
+    [ "Dune::IGA::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "d6/d83/a01544.html", "d6/d83/a01544" ]
 ];

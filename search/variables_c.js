@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['n_5fcontrolpoints_0',['n_controlPoints',['../de/d85/a01273.html#aa85e99325b805008cb7d93e1361460c5',1,'Dune::IGANEW::Ibra::IbraNURBSData']]],
-  ['netdim_1',['netDim',['../d1/da7/a01709.html#a6a8ff1fc7aba653316c32516f48c1f9f',1,'Dune::IGANEW::MultiDimensionalNet']]],
-  ['numberofsecondderivatives_2',['numberOfSecondDerivatives',['../de/d99/a01101.html#adf75cdd10698f5cd203be258e738d0a0',1,'Dune::IGANEW::GeometryKernel::PatchGeometryLocalView']]],
-  ['numberoftrimmedelements_3',['numberOfTrimmedElements',['../df/d68/a01385.html#afebb5c66ccada770c4ecfe72e6e4e9a2',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['numberofuntrimmedelements_4',['numberOfUnTrimmedElements',['../df/d68/a01385.html#ac5540bea9ea6f3d118347fd2b6812d35',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['numcells_5f_5',['numCells_',['../dc/d9e/a01305.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
-  ['numpoints_5f_6',['numPoints_',['../dc/d9e/a01305.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
-  ['nurbs_5f_7',['nurbs_',['../d7/d81/a01365.html#ae04565bbc9dbeed2c5d3f7a1606fdd5d',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../d4/d0e/a01272.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['netdim_1',['netDim',['../d0/dbc/a01704.html#a20c31ed8cf05b75297d849c3c70ee25b',1,'Dune::IGA::MultiDimensionalNet']]],
+  ['numberofsecondderivatives_2',['numberOfSecondDerivatives',['../d3/dbd/a01100.html#a384048b55d3b81a5c94adf9ee4ac14c8',1,'Dune::IGA::GeometryKernel::PatchGeometryLocalView']]],
+  ['numberoftrimmedelements_3',['numberOfTrimmedElements',['../dd/d6d/a01380.html#ab76b77e67fe46888694bf10943979564',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
+  ['numberofuntrimmedelements_4',['numberOfUnTrimmedElements',['../dd/d6d/a01380.html#a41b957b95b61db6d804523911cdfbb39',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
+  ['numcells_5f_5',['numCells_',['../d6/dae/a01304.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['numpoints_5f_6',['numPoints_',['../d6/dae/a01304.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['nurbs_5f_7',['nurbs_',['../d9/d79/a01360.html#a478dac2e76f1772e6cdb0ddef23d6ce6',1,'Dune::IGA::Splines::Nurbs::LocalView']]]
 ];

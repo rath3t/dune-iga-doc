@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['boundary_0',['boundary',['../de/d1c/a01093.html#a7dc10e45ab3a688919f4d411c5742c51',1,'Dune::IGANEW::GeometryKernel::NURBSPatch::ConnectionResult']]],
-  ['brep_1',['brep',['../d1/d1a/a01285.html#aa6ee3feb7a6257694244c240400b8ffe',1,'Dune::IGANEW::Ibra::BrepLoopRepresentation']]]
+  ['boundary_0',['boundary',['../de/d9c/a01092.html#a1aa57c15db5c010d5c48f1cc9efe72db',1,'Dune::IGA::GeometryKernel::NURBSPatch::ConnectionResult']]],
+  ['brep_1',['brep',['../dd/d18/a01284.html#aa2343de3ad19b0f0a47a0b65a9b6f28c',1,'Dune::IGA::Ibra::BrepLoopRepresentation']]]
 ];

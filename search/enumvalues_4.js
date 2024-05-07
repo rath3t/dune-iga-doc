@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['host_0',['host',['../d3/d92/a01393.html#afe481c5254837097517abb2fabb40f30a67b3dba8bc6778101892eb77249db32e',1,'Dune::IGANEW::DefaultTrim::IdType']]],
-  ['hostnew_1',['HostNew',['../d7/d38/a01373.html#aa0a167ec79a5d7276d4513da706a1aa2abe33564458f2a42122e0d3c8d93dffda',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]]
+  ['host_0',['host',['../d0/d36/a01388.html#acb2092c4fcba2bacf983813d49dcafbfa67b3dba8bc6778101892eb77249db32e',1,'Dune::IGA::DefaultTrim::IdType']]],
+  ['hostnew_1',['HostNew',['../dd/d0c/a01368.html#a97ecae6a34431d9114500b423a016551abe33564458f2a42122e0d3c8d93dffda',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]]
 ];

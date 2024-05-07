@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['json_5f_0',['json_',['../db/d1c/a01229.html#a0971f2326da71f9e9e5f4abd7099f1e8',1,'Dune::GridFactory&lt; IGANEW::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]]
+  ['json_5f_0',['json_',['../de/d16/a01228.html#a2e5e3e22e3f363e3b89553d91ae2e63e',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]]
 ];

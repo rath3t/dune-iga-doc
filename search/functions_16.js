@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wasrefined_0',['wasRefined',['../d8/d53/a01225.html#abec2fbf817b010250fd6412ea79e3724',1,'Dune::IGANEW::PatchGridEntity&lt; 0, dim, GridImp &gt;::wasRefined()'],['../de/d2c/a01553.html#a7b35c3dd789aa97fde07778bc9ca7abc',1,'Dune::IGANEW::DefaultTrim::TrimmedParameterSpaceGridEntity::wasRefined()']]]
+  ['wasrefined_0',['wasRefined',['../d8/d8e/a01224.html#ad71b169c4a0fee8cc4154377b970be1a',1,'Dune::IGA::PatchGridEntity&lt; 0, dim, GridImp &gt;::wasRefined()'],['../da/dc7/a01548.html#a56fc8d9830de1558d60df4d33944828e',1,'Dune::IGA::DefaultTrim::TrimmedParameterSpaceGridEntity::wasRefined()']]]
 ];

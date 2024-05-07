@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['targettolerance_0',['targetTolerance',['../db/df2/a01425.html#a833d311c87eb2194cfd2cd1adf7c88c2',1,'Dune::IGANEW::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters']]],
-  ['trimdata_5f_1',['trimData_',['../da/df3/a01581.html#abc07e27c81e7b174460fca212ff120e3',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
-  ['trimflags_5f_2',['trimFlags_',['../df/d68/a01385.html#a6b33ae9a2c997423032fd4be1d3af155',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['triminfo_3',['trimInfo',['../dc/df4/a01401.html#a287d0bcb5949ca409f7436bbc85b4d38',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt;::trimInfo()'],['../d4/d1a/a01405.html#acacb1792e0ff4e068936999d7e9f8650',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;::trimInfo()']]],
-  ['trimmed_4',['trimmed',['../dc/df4/a01401.html#acfc6391dadbe516019c5e019d6cf8c5f',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt;::trimmed()'],['../d4/d1a/a01405.html#ac5ad6a901058b27899d036d95ba93627',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;::trimmed()'],['../d7/d68/a01413.html#a47a6fe3f04b19b150ee19a97e167e198',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 0 &gt;::trimmed()']]],
-  ['trimmedindexinlvl_5',['trimmedIndexInLvl',['../d7/d68/a01413.html#a7f075267874aedf5802f5a4c0bc3e24f',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 0 &gt;']]],
-  ['trimmedvertexids_5f_6',['trimmedVertexIds_',['../df/d68/a01385.html#a51136003460376db352758ac6a120488',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['trimmer_7',['Trimmer',['../d5/d54/a01213.html#aec36ae5e314bf5c4ae3b5829485bac6b',1,'Dune::IGANEW::PatchGrid::Trimmer()'],['../d9/db0/a01437.html#a036089004fd73ddd900077b7ba2f97f7',1,'Dune::IGANEW::DefaultTrim::PatchGridEntitySeed::Trimmer()']]],
-  ['trimmingcurvez_8',['trimmingCurveZ',['../d3/da1/a01613.html#aa1c516b288a5064880263e840bf2d1f3',1,'Dune::IGANEW::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl']]],
-  ['trimprecision_9',['trimPrecision',['../d3/daa/a01577.html#adb8d6845cc381c10e0816f48ac3e9f5f',1,'Dune::IGANEW::DefaultTrim::Parameter']]],
-  ['trims_10',['trims',['../d1/d1a/a01285.html#aa421c3852c683034c76768b4d8a14a69',1,'Dune::IGANEW::Ibra::BrepLoopRepresentation::trims()'],['../d9/dda/a01289.html#ac879dd81364ef1341406aff987605b7f',1,'Dune::IGANEW::Ibra::BrepLoop::trims()'],['../dc/dd5/a01293.html#a948a8a4d6b54add239b3ac2e807cc3fa',1,'Dune::IGANEW::Ibra::BrepRepresentation::trims()'],['../dc/d8c/a01297.html#af19f62b66735603e13a8f1d68930a3b0',1,'Dune::IGANEW::Ibra::Brep::trims()']]],
-  ['type_11',['type',['../d6/d16/a01269.html#a642986b37e38b25d90c0317c52b97c9c',1,'Dune::IGANEW::Ibra::IbraBase']]],
-  ['typestring_12',['typeString',['../d6/d16/a01269.html#a3bc2b8ce8b887a5476845145dec45335',1,'Dune::IGANEW::Ibra::IbraBase']]]
+  ['targettolerance_0',['targetTolerance',['../d0/d05/a01420.html#a9ba8572a5aa73cf90cc7c0447d0d793e',1,'Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters']]],
+  ['trimdata_5f_1',['trimData_',['../db/dfd/a01576.html#ab4c2f307c77291ea12ca2aa4d457784a',1,'Dune::IGA::DefaultTrim::TrimmerImpl']]],
+  ['trimflags_5f_2',['trimFlags_',['../dd/d6d/a01380.html#a43ab84420c2109cd2a60585e4b6ae6d4',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
+  ['triminfo_3',['trimInfo',['../d9/d45/a01396.html#aa59ccd6f3d26a0388c29cc6ed88bf760',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt;::trimInfo()'],['../dc/d35/a01400.html#a4ba2aebef43fa3c8c0653d68751767d6',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;::trimInfo()']]],
+  ['trimmed_4',['trimmed',['../d9/d45/a01396.html#a8386527f4610d136abd9bafc5f274831',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt;::trimmed()'],['../dc/d35/a01400.html#ac181ba80add995bd32e53e89162eea96',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;::trimmed()'],['../df/d84/a01408.html#a20e957bcf4f8842bfb024802d8ac41f8',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 0 &gt;::trimmed()']]],
+  ['trimmedindexinlvl_5',['trimmedIndexInLvl',['../df/d84/a01408.html#a73c6ab1e29cd17ebd6187c7152a597ed',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 0 &gt;']]],
+  ['trimmedvertexids_5f_6',['trimmedVertexIds_',['../dd/d6d/a01380.html#a2f948cd4e9729bf52efffafd7f224165',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
+  ['trimmer_7',['Trimmer',['../dc/db6/a01212.html#ab6af28f4e41f202fe01ea12a1fd98c77',1,'Dune::IGA::PatchGrid::Trimmer()'],['../db/dff/a01432.html#a551065380a7bc63372ce71c4ed799de7',1,'Dune::IGA::DefaultTrim::PatchGridEntitySeed::Trimmer()']]],
+  ['trimmingcurvez_8',['trimmingCurveZ',['../db/dfd/a01608.html#a452e5f16a771a0bc2998c0710c2a9c93',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl']]],
+  ['trimprecision_9',['trimPrecision',['../d3/d22/a01572.html#ac455873e7222da96caae05324639e17c',1,'Dune::IGA::DefaultTrim::Parameter']]],
+  ['trims_10',['trims',['../dd/d18/a01284.html#a61a53e394317f3844be719ad7cfdd240',1,'Dune::IGA::Ibra::BrepLoopRepresentation::trims()'],['../d7/d8d/a01288.html#a0ab2de7a74ccb203dca621407df7eeca',1,'Dune::IGA::Ibra::BrepLoop::trims()'],['../d8/d7a/a01292.html#a0b18289437b2c70cbb84ce06024107f4',1,'Dune::IGA::Ibra::BrepRepresentation::trims()'],['../d4/d64/a01296.html#aff01becf209101c0944a633e2779f98b',1,'Dune::IGA::Ibra::Brep::trims()']]],
+  ['type_11',['type',['../dc/dd9/a01268.html#a4aacf3670ded47f6e2a42fdaeebd526a',1,'Dune::IGA::Ibra::IbraBase']]],
+  ['typestring_12',['typeString',['../dc/dd9/a01268.html#a51d455d391e155f6f736a2ec40b7fc69',1,'Dune::IGA::Ibra::IbraBase']]]
 ];

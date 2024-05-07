@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['spindex_5f_0',['spIndex_',['../d7/d81/a01365.html#a8dce31141da04e79ed1e6b42752678d0',1,'Dune::IGANEW::Splines::Nurbs::LocalView']]],
-  ['splitter_1',['splitter',['../d3/daa/a01577.html#a8d04fa108590070c7eda6336bf50c2dc',1,'Dune::IGANEW::DefaultTrim::Parameter']]],
-  ['surface_5fgeometries_5f3d_2',['surface_geometries_3d',['../dc/dd5/a01293.html#a71312f8528c9e7ca134779db8ae51515',1,'Dune::IGANEW::Ibra::BrepRepresentation']]],
-  ['surfaces_3',['surfaces',['../dc/d8c/a01297.html#a9b212409e86466050d4e12dcf06194e6',1,'Dune::IGANEW::Ibra::Brep']]]
+  ['spindex_5f_0',['spIndex_',['../d9/d79/a01360.html#aa1ec68d3ba306092a5c2008c17bc0f5b',1,'Dune::IGA::Splines::Nurbs::LocalView']]],
+  ['splitter_1',['splitter',['../d3/d22/a01572.html#a0a687d3d9c6f1a17d7a8ed2fcc26b534',1,'Dune::IGA::DefaultTrim::Parameter']]],
+  ['surface_5fgeometries_5f3d_2',['surface_geometries_3d',['../d8/d7a/a01292.html#a9010ce626abe088d92fa7ca94dea8809',1,'Dune::IGA::Ibra::BrepRepresentation']]],
+  ['surfaces_3',['surfaces',['../d4/d64/a01296.html#a77af74d7b76494e0e1282baf5a9867c8',1,'Dune::IGA::Ibra::Brep']]]
 ];

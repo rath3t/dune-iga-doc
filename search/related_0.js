@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hash_5fvalue_0',['hash_value',['../d5/dc8/a01541.html#a18b5ca228a3c5e845dd2f21eb585762b',1,'Dune::IGANEW::DefaultTrim::TrimmedReferenceElement']]]
+  ['hash_5fvalue_0',['hash_value',['../d0/da6/a01536.html#a18b5ca228a3c5e845dd2f21eb585762b',1,'Dune::IGA::DefaultTrim::TrimmedReferenceElement']]]
 ];

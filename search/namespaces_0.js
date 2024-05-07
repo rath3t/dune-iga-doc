@@ -1,20 +1,19 @@
 var searchData=
 [
-  ['basisfactory_0',['BasisFactory',['../d4/d08/a00237.html',1,'Dune::Functions']]],
+  ['basisfactory_0',['BasisFactory',['../d7/d40/a00236.html',1,'Dune::Functions']]],
   ['capabilities_1',['Capabilities',['../df/d17/a00231.html',1,'Dune']]],
-  ['concept_2',['Concept',['../d1/da8/a00230.html',1,'Dune::IGANEW']]],
-  ['defaulttrim_3',['DefaultTrim',['../d6/db6/a00241.html',1,'Dune::IGANEW']]],
+  ['concept_2',['Concept',['../d1/da8/a00230.html',1,'Dune::IGA']]],
+  ['defaulttrim_3',['DefaultTrim',['../d9/d21/a00240.html',1,'Dune::IGA']]],
   ['dune_4',['Dune',['../d5/ddf/a00224.html',1,'']]],
   ['functions_5',['Functions',['../d0/d53/a00232.html',1,'Dune']]],
-  ['geometrykernel_6',['GeometryKernel',['../dc/d55/a00226.html',1,'Dune::IGANEW']]],
-  ['ibra_7',['Ibra',['../da/d31/a00234.html',1,'Dune::IGANEW']]],
-  ['identitytrim_8',['IdentityTrim',['../d6/de1/a00233.html',1,'Dune::IGANEW']]],
-  ['iga_9',['IGA',['../d7/d40/a00236.html',1,'Dune::IGA'],['../d0/da7/a00250.html',1,'Dune::Python::IGA']]],
-  ['iganew_10',['IGANEW',['../dc/d98/a00225.html',1,'Dune']]],
-  ['python_11',['Python',['../de/dbc/a00249.html',1,'Dune']]],
-  ['splines_12',['Splines',['../d0/d27/a00239.html',1,'Dune::IGANEW']]],
-  ['trim_13',['Trim',['../dd/dd7/a00248.html',1,'Dune::IGANEW']]],
-  ['util_14',['Util',['../d2/dc8/a00242.html',1,'Dune::IGANEW::DefaultTrim']]],
-  ['utilities_15',['Utilities',['../d9/d01/a00227.html',1,'Dune::IGANEW']]],
-  ['vtk_16',['Vtk',['../d3/d42/a00235.html',1,'Dune']]]
+  ['geometrykernel_6',['GeometryKernel',['../dc/d55/a00226.html',1,'Dune::IGA']]],
+  ['ibra_7',['Ibra',['../da/d31/a00234.html',1,'Dune::IGA']]],
+  ['identitytrim_8',['IdentityTrim',['../d6/de1/a00233.html',1,'Dune::IGA']]],
+  ['iga_9',['IGA',['../dc/d98/a00225.html',1,'Dune::IGA'],['../de/dbc/a00249.html',1,'Dune::Python::IGA']]],
+  ['python_10',['Python',['../dd/dd7/a00248.html',1,'Dune']]],
+  ['splines_11',['Splines',['../da/d2e/a00238.html',1,'Dune::IGA']]],
+  ['trim_12',['Trim',['../d0/d1f/a00247.html',1,'Dune::IGA']]],
+  ['util_13',['Util',['../d6/db6/a00241.html',1,'Dune::IGA::DefaultTrim']]],
+  ['utilities_14',['Utilities',['../d9/d01/a00227.html',1,'Dune::IGA']]],
+  ['vtk_15',['Vtk',['../d3/d42/a00235.html',1,'Dune']]]
 ];

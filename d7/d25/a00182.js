@@ -1,5 +1,5 @@
 var a00182 =
 [
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d3/dc4/a01089.html", "d3/dc4/a01089" ],
-    [ "Dune::IGANEW::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "de/d1c/a01093.html", "de/d1c/a01093" ]
+    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "da/db7/a01088.html", "da/db7/a01088" ],
+    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "de/d9c/a01092.html", "de/d9c/a01092" ]
 ];

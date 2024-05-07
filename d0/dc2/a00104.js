@@ -1,5 +1,5 @@
 var a00104 =
 [
-    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >", "df/d68/a01385.html", "df/d68/a01385" ],
-    [ "Dune::IGANEW::DefaultTrim::VectorEntityContainer< GridImp >::StringAndIndex", "d0/d95/a01389.html", "d0/d95/a01389" ]
+    [ "Dune::IGA::DefaultTrim::VectorEntityContainer< GridImp >", "dd/d6d/a01380.html", "dd/d6d/a01380" ],
+    [ "Dune::IGA::DefaultTrim::VectorEntityContainer< GridImp >::StringAndIndex", "d7/dde/a01384.html", "d7/dde/a01384" ]
 ];

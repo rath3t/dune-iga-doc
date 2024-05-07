@@ -1,9 +1,9 @@
 var a00155 =
 [
-    [ "Dune::IGANEW::ControlPoint< VT >", "d9/d7c/a01073.html", "d9/d7c/a01073" ],
-    [ "operator*", "d3/df8/a00155.html#a3f232585a065fb77fc7443359eda7b95", null ],
-    [ "operator*", "d3/df8/a00155.html#aab23834de62fd10b103b27e062dccfbd", null ],
-    [ "operator+", "d3/df8/a00155.html#a33477ec847c0f90f5090046a585d3488", null ],
-    [ "operator-", "d3/df8/a00155.html#aade6853aaa9cc5602813449a1b566ec4", null ],
-    [ "operator-", "d3/df8/a00155.html#a124862a808b0cd8eee23b3960c456f83", null ]
+    [ "Dune::IGA::ControlPoint< VT >", "d6/d6a/a01072.html", "d6/d6a/a01072" ],
+    [ "operator*", "d3/df8/a00155.html#a89768292715310b5f770da3658c84a73", null ],
+    [ "operator*", "d3/df8/a00155.html#a3b3404cd6766af872a3bd7a3efbdfbb7", null ],
+    [ "operator+", "d3/df8/a00155.html#ab9a55402086df77d594e7c5a6cf05fa7", null ],
+    [ "operator-", "d3/df8/a00155.html#a30e9a9595254e0a0ef37a8014ea2b1c6", null ],
+    [ "operator-", "d3/df8/a00155.html#a7e68af86ba6edc7bb6eecc3debace414", null ]
 ];

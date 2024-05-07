@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['trimmedhostedgedirection_0',['TrimmedHostEdgeDirection',['../d7/d38/a01373.html#aa0a167ec79a5d7276d4513da706a1aa2',1,'Dune::IGANEW::DefaultTrim::ElementTrimDataImpl']]],
-  ['type_1',['Type',['../da/d31/a00234.html#a68040d1ccd6b249ad326be22a366c1e1',1,'Dune::IGANEW::Ibra']]]
+  ['trimmedhostedgedirection_0',['TrimmedHostEdgeDirection',['../dd/d0c/a01368.html#a97ecae6a34431d9114500b423a016551',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]],
+  ['type_1',['Type',['../da/d31/a00234.html#a7e1d9b847ff31435dac790c39d02451f',1,'Dune::IGA::Ibra']]]
 ];

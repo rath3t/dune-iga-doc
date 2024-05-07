@@ -1,12 +1,12 @@
 var a00191 =
 [
-    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >", "d2/d1f/a01361.html", "d2/d1f/a01361" ],
-    [ "Dune::IGANEW::Splines::Nurbs< dim, ScalarType_ >::LocalView", "d7/d81/a01365.html", "d7/d81/a01365" ],
-    [ "degreeElevate", "d9/dd0/a00191.html#a4bf1897206fd2e11509730b6c925ac6b", null ],
-    [ "extractControlCoordinates", "d9/dd0/a00191.html#ac182f0a34d571d507849a1a4b8c79351", null ],
-    [ "extractWeights", "d9/dd0/a00191.html#a7a4aecc29b5ea9c6afc43ec3718fd13b", null ],
-    [ "generateRefinedKnots", "d9/dd0/a00191.html#a2287fefbe65d5d37c50e3c953258961d", null ],
-    [ "knotRefinement", "d9/dd0/a00191.html#ae31d742d70844f23a725edbd89c0f31c", null ],
-    [ "netOfSpan", "d9/dd0/a00191.html#a2b11d7a37a27ce3c1fd6b45ad3309642", null ],
-    [ "netOfSpan", "d9/dd0/a00191.html#a218f66b186e84e496dcb7d698d6bc1a8", null ]
+    [ "Dune::IGA::Splines::Nurbs< dim, ScalarType_ >", "d2/d3f/a01356.html", "d2/d3f/a01356" ],
+    [ "Dune::IGA::Splines::Nurbs< dim, ScalarType_ >::LocalView", "d9/d79/a01360.html", "d9/d79/a01360" ],
+    [ "degreeElevate", "d9/dd0/a00191.html#ab00d012b66e12da10952ef8d49d4844d", null ],
+    [ "extractControlCoordinates", "d9/dd0/a00191.html#ab1728f106934c40687f363cab2c7db4f", null ],
+    [ "extractWeights", "d9/dd0/a00191.html#aeaadf1acdb2d02ef98b31059072a86f5", null ],
+    [ "generateRefinedKnots", "d9/dd0/a00191.html#a32cad2d352405d98bf78df30093cf8f5", null ],
+    [ "knotRefinement", "d9/dd0/a00191.html#a5e3ff1bb11d860a83e14581b3f8e1187", null ],
+    [ "netOfSpan", "d9/dd0/a00191.html#a7a69389594176e66c842342b7c6b58e0", null ],
+    [ "netOfSpan", "d9/dd0/a00191.html#a6dee5f4f93209fff3ca08503ce8c4652", null ]
 ];

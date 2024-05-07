@@ -1,14 +1,14 @@
 var searchData=
 [
-  ['edgecount_0',['edgeCount',['../df/d68/a01385.html#a04843a391ac0e59464a0d098d0dfac7f',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]],
-  ['edgedirections_1',['edgeDirections',['../d2/dc8/a00242.html#a2980769b17a08a9c365baf8b18cca9d7',1,'Dune::IGANEW::DefaultTrim::Util']]],
-  ['edgegeometries_2',['edgeGeometries',['../d4/d1a/a01405.html#a24ed063a3d69747adf0e27d3956e3f35',1,'Dune::IGANEW::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;']]],
-  ['edgeindexmapping_3',['edgeIndexMapping',['../d2/dc8/a00242.html#ac7e1eb84b57061650b4b4c90078df1dd',1,'Dune::IGANEW::DefaultTrim::Util']]],
-  ['edgelookup_4',['edgeLookUp',['../d2/dc8/a00242.html#a16d111a10fb0652a5487a6116aeabb50',1,'Dune::IGANEW::DefaultTrim::Util']]],
-  ['element_5f_5',['element_',['../dc/d2a/a01333.html#a46140a3c8b42bd09729688683ec9a76f',1,'Dune::Functions::NurbsNode']]],
-  ['elementidx_5f_6',['elementIdx_',['../df/db8/a01317.html#a16f1148bf96c3673f9bbcd0a7ad9eb33',1,'Dune::Functions::NurbsLocalFiniteElement::elementIdx_()'],['../df/db8/a01317.html#aa191406a187a19cbe0cc3008756cd66a',1,'Dune::Functions::NurbsLocalFiniteElement::elementIdx_()']]],
-  ['elements_5f_7',['elements_',['../d4/d10/a01197.html#a265d30472e118a4bcebb635237dc2502',1,'Dune::Functions::NurbsPreBasis::elements_()'],['../d4/d10/a01197.html#a1be37115f81a0ff5898f78904f8317dd',1,'Dune::Functions::NurbsPreBasis::elements_()']]],
-  ['entitycontainer_5f_8',['entityContainer_',['../da/df3/a01581.html#a68bd7c147c2502c996be75d829c14199',1,'Dune::IGANEW::DefaultTrim::TrimmerImpl']]],
-  ['entityidtype_9',['entityIdType',['../d3/d92/a01393.html#a3a5f12dff1e201f674486abc8e668d21',1,'Dune::IGANEW::DefaultTrim::IdType']]],
-  ['entityimps_5f_10',['entityImps_',['../df/d68/a01385.html#a6f79753315def0895c5fdeee31c790f3',1,'Dune::IGANEW::DefaultTrim::VectorEntityContainer']]]
+  ['edgecount_0',['edgeCount',['../dd/d6d/a01380.html#ad2f0c9e53d79f33d4ee5709363da80f0',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
+  ['edgedirections_1',['edgeDirections',['../d6/db6/a00241.html#a1f86c47c86a639133c16255b9864fb4d',1,'Dune::IGA::DefaultTrim::Util']]],
+  ['edgegeometries_2',['edgeGeometries',['../dc/d35/a01400.html#a782fff8e9eba13ad7c37d2ce6f643d0a',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;']]],
+  ['edgeindexmapping_3',['edgeIndexMapping',['../d6/db6/a00241.html#a4a13e5b2b18e0d06e96628f420840974',1,'Dune::IGA::DefaultTrim::Util']]],
+  ['edgelookup_4',['edgeLookUp',['../d6/db6/a00241.html#ae3da1da4b28ba0c5d550f7b79855c8e8',1,'Dune::IGA::DefaultTrim::Util']]],
+  ['element_5f_5',['element_',['../d9/d45/a01332.html#a46140a3c8b42bd09729688683ec9a76f',1,'Dune::Functions::NurbsNode']]],
+  ['elementidx_5f_6',['elementIdx_',['../d4/d49/a01316.html#a16f1148bf96c3673f9bbcd0a7ad9eb33',1,'Dune::Functions::NurbsLocalFiniteElement']]],
+  ['elements_5f_7',['elements_',['../d2/d22/a01196.html#a265d30472e118a4bcebb635237dc2502',1,'Dune::Functions::NurbsPreBasis']]],
+  ['entitycontainer_5f_8',['entityContainer_',['../db/dfd/a01576.html#a27245ee72e1a9026c072ff36c3eebb68',1,'Dune::IGA::DefaultTrim::TrimmerImpl']]],
+  ['entityidtype_9',['entityIdType',['../d0/d36/a01388.html#a79623c31570c232cb5e774c5d4e45179',1,'Dune::IGA::DefaultTrim::IdType']]],
+  ['entityimps_5f_10',['entityImps_',['../dd/d6d/a01380.html#af9e51ac5075ad454bd8994307a3ad64e',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]]
 ];

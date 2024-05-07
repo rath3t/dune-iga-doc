@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['finiteelement_0',['FiniteElement',['../dc/d2a/a01333.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode::FiniteElement()'],['../dc/d2a/a01333.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode::FiniteElement()']]],
-  ['firstelement_1',['FirstElement',['../d6/d15/a01697.html#a15f040d299064de9bcaf37b97b628e28',1,'Dune::IGANEW::Trim::LocalGeometryVariant']]]
+  ['finiteelement_0',['FiniteElement',['../d9/d45/a01332.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode']]],
+  ['firstelement_1',['FirstElement',['../da/dc4/a01692.html#a84865f9839702c564334905aea3bba96',1,'Dune::IGA::Trim::LocalGeometryVariant']]]
 ];

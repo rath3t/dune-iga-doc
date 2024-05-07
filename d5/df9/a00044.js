@@ -1,4 +1,4 @@
 var a00044 =
 [
-    [ "Dune::IGANEW::DefaultTrim::PatchGridGlobalIdSet< GridImp >", "de/daf/a01417.html", "de/daf/a01417" ]
+    [ "Dune::IGA::DefaultTrim::PatchGridGlobalIdSet< GridImp >", "dc/d10/a01412.html", "dc/d10/a01412" ]
 ];
