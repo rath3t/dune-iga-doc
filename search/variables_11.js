@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['targettolerance_0',['targetTolerance',['../d0/d05/a01420.html#a9ba8572a5aa73cf90cc7c0447d0d793e',1,'Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters']]],
+  ['targetaccuracy_0',['targetAccuracy',['../d0/d05/a01420.html#a905663c9f5059e7a735d2fc5bef9a1a6',1,'Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters']]],
   ['trimdata_5f_1',['trimData_',['../db/dfd/a01576.html#ab4c2f307c77291ea12ca2aa4d457784a',1,'Dune::IGA::DefaultTrim::TrimmerImpl']]],
   ['trimflags_5f_2',['trimFlags_',['../dd/d6d/a01380.html#a43ab84420c2109cd2a60585e4b6ae6d4',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
   ['triminfo_3',['trimInfo',['../d9/d45/a01396.html#aa59ccd6f3d26a0388c29cc6ed88bf760',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 2 &gt;::trimInfo()'],['../dc/d35/a01400.html#a4ba2aebef43fa3c8c0653d68751767d6',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 1 &gt;::trimInfo()']]],

@@ -3,7 +3,7 @@ var searchData=
   ['newverteximpl_0',['NewVertexImpl',['../db/dfd/a01608.html',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['nth_3c_200_2c_20dune_3a_3afieldvector_3c_20t_2c_202_20_3e_20_3e_1',['nth&lt; 0, Dune::FieldVector&lt; T, 2 &gt; &gt;',['../d5/da5/a01424.html',1,'mapbox::util']]],
   ['nth_3c_201_2c_20dune_3a_3afieldvector_3c_20t_2c_202_20_3e_20_3e_2',['nth&lt; 1, Dune::FieldVector&lt; T, 2 &gt; &gt;',['../d2/db1/a01428.html',1,'mapbox::util']]],
-  ['nurbs_3',['Nurbs',['../d2/d3f/a01356.html',1,'Dune::IGA::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../da/d0e/a01720.html',1,'iga.basis.Nurbs']]],
+  ['nurbs_3',['Nurbs',['../d2/d3f/a01356.html',1,'Dune::IGA::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d3/d4c/a01724.html',1,'iga.basis.Nurbs']]],
   ['nurbs_3c_20mydimension_2c_20ctype_20_3e_4',['Nurbs&lt; mydimension, ctype &gt;',['../d2/d3f/a01356.html',1,'Dune::IGA::Splines']]],
   ['nurbs_3c_20mydimension_2c_20double_20_3e_5',['Nurbs&lt; mydimension, double &gt;',['../d2/d3f/a01356.html',1,'Dune::IGA::Splines']]],
   ['nurbslocalbasis_6',['NurbsLocalBasis',['../df/dec/a01320.html',1,'Dune::Functions']]],

@@ -5,7 +5,7 @@ var searchData=
   ['fatherid_2',['fatherId',['../df/d84/a01408.html#af61eab09e972b6a517676546f2967bb7',1,'Dune::IGA::DefaultTrim::EntityInfoImpl&lt; Traits, 0 &gt;']]],
   ['finalize_3',['finalize',['../dd/d0c/a01368.html#a1a233d3ffa1677c458f5b9aad931783d',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]],
   ['findclosestparameterspacecoordinate_4',['findClosestParameterSpaceCoordinate',['../dc/d55/a00226.html#a9b67765d6be43c55a6e796d0e7fa4ebd',1,'Dune::IGA::GeometryKernel']]],
-  ['findgoodstartingpoint_5',['findGoodStartingPoint',['../d6/db6/a00241.html#af65efaed9d25e81506b760dd2d55e9b6',1,'Dune::IGA::DefaultTrim::Util']]],
+  ['findgoodstartingpoint_5',['findGoodStartingPoint',['../d6/db6/a00241.html#a70718c6dfba53db598a93503b15370e4',1,'Dune::IGA::DefaultTrim::Util']]],
   ['findintersection_2ehh_6',['findintersection.hh',['../d5/dcb/a00170.html',1,'']]],
   ['findintersectioncurveandline_7',['findIntersectionCurveAndLine',['../dc/d98/a00225.html#ab844b5f8a427e7ef41a201df359488fc',1,'Dune::IGA']]],
   ['findintersectionlinearcurveandline_8',['findIntersectionLinearCurveAndLine',['../dc/d98/a00225.html#aacb1dcc3d78324404e5cfe1284bc3d16',1,'Dune::IGA']]],

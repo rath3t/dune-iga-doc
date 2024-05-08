@@ -15,6 +15,7 @@ var a01368 =
     ] ],
     [ "ElementTrimDataImpl", "dd/d0c/a01368.html#a39fced59da0205471897dc3689a7e25e", null ],
     [ "ElementTrimDataImpl", "dd/d0c/a01368.html#a0fca673f3cc412d9de98caca58fb8856", null ],
+    [ "addBoundarySegmentIdxToLastEdge", "dd/d0c/a01368.html#aba36f265f290803f7b66ebe11a89827a", null ],
     [ "addEdge", "dd/d0c/a01368.html#a2a209965a49e8da0e5d6b4edf2386e90", null ],
     [ "addEdgeHostNew", "dd/d0c/a01368.html#a684997612155c47ef532c5432316c1e2", null ],
     [ "addEdgeNewHost", "dd/d0c/a01368.html#a70284e7a8ed0839c3f5fcacf9cf33bcb", null ],

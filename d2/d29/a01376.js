@@ -1,5 +1,7 @@
 var a01376 =
 [
+    [ "hasBoundarySegmentIdx", "d2/d29/a01376.html#ad00c4a60f3527a9c738ef868d91ae68e", null ],
+    [ "boundarySegmentIdx", "d2/d29/a01376.html#a4f679c61282ec9dfa969958b43915947", null ],
     [ "direction", "d2/d29/a01376.html#a3ea1691e808fa7f869512cdf4a833afe", null ],
     [ "geometry", "d2/d29/a01376.html#a98500e1010ec1648787fe13a2fd5b755", null ],
     [ "idx", "d2/d29/a01376.html#a3d3aa594498584f223de7584fc6309f9", null ],

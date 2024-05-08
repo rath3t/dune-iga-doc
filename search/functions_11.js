@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['read_0',['read',['../d8/dc5/a01300.html#ae024b0b35508b6a0eab346e306eff92b',1,'Dune::IGA::IbraReader']]],
+  ['read_0',['read',['../d8/dc5/a01300.html#ac7c757db8710623d7e5d38233e39ae6f',1,'Dune::IGA::IbraReader']]],
   ['readjson_1',['readJson',['../dc/d98/a00225.html#a9d751eac9df3522e457a5620082bb7e8',1,'Dune::IGA::readJson(InputStringType &amp;ibraInputFile)'],['../dc/d98/a00225.html#aa0f8ccf410542ea91d5841fee8673130',1,'Dune::IGA::readJson(const std::string &amp;fileName)']]],
   ['referenceelement_2',['referenceElement',['../db/dfd/a01576.html#a48da0807104c42db66227e495b522881',1,'Dune::IGA::DefaultTrim::TrimmerImpl::referenceElement()'],['../d5/d83/a01680.html#ac0fe7e2c84fbec03ba963b7d8949a105',1,'Dune::IGA::IdentityTrim::TrimmerImpl::referenceElement()'],['../dc/d98/a00225.html#a10579811f681f13697cedf2abf633e78',1,'Dune::IGA::referenceElement(const PatchGridEntity&lt; cd, dim, const PatchGrid&lt; dim, dimworld, GridFamily, ScalarType &gt; &gt; &amp;entity)'],['../dc/d98/a00225.html#aa4c0e4b40689204d775a70c356f3df9c',1,'Dune::IGA::referenceElement(const Entity&lt; cd, dim, const PatchGrid&lt; dim, dimworld, GridFamily, ScalarType &gt;, PatchGridEntity &gt; &amp;entity)']]],
   ['refineparameterspacegrid_3',['refineParameterSpaceGrid',['../db/dfd/a01576.html#a647179f97ca747a4e9de7346e9392e0f',1,'Dune::IGA::DefaultTrim::TrimmerImpl']]],
