@@ -29,6 +29,7 @@ var a01680 =
     [ "ilevelbegin", "d5/d83/a01680.html#a469ec3422bd834a6c9e1114ca908b5cd", null ],
     [ "ilevelend", "d5/d83/a01680.html#ac98128115adf826fe361632066898efe", null ],
     [ "maxLevel", "d5/d83/a01680.html#a1dde9c81b2346bd25523fcc2e2d719f0", null ],
+    [ "numBoundarySegments", "d5/d83/a01680.html#af16ee83169591370e1e6c33f924449b2", null ],
     [ "operator=", "d5/d83/a01680.html#ae32748f26c99bd88a114f3734fd51b8a", null ],
     [ "parameterSpaceGrid", "d5/d83/a01680.html#a046025a0119fd0aec72f1843394d99bf", null ],
     [ "parameterSpaceGrid", "d5/d83/a01680.html#a74466cba3e4c971a14d5b4563b938671", null ],

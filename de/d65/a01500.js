@@ -19,6 +19,7 @@ var a01500 =
     [ "indexInOutside", "de/d65/a01500.html#a7e8265a86de33e4578e492447289a33f", null ],
     [ "inside", "de/d65/a01500.html#a4e31e194d36aed840f78287b11fe7627", null ],
     [ "integrationOuterNormal", "de/d65/a01500.html#a5356067e73320a004bcb4c9ebdb7ff75", null ],
+    [ "isTrimmed", "de/d65/a01500.html#a165ca3319c9d0c693ffbc6e7ecb1894b", null ],
     [ "neighbor", "de/d65/a01500.html#ab5d0d6b6f23926afc659df79ac471b26", null ],
     [ "operator==", "de/d65/a01500.html#a5127d30f6b54808ef92547bb8b95e4fa", null ],
     [ "outerNormal", "de/d65/a01500.html#ab86f7783add601932a985575c5f3ee52", null ],

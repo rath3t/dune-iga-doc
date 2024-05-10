@@ -4,6 +4,7 @@ var a00241 =
     [ "approxSamePoint", "d6/db6/a00241.html#a195028ded7edd8401392d036fd3961c2", null ],
     [ "callFindIntersection", "d6/db6/a00241.html#a5c425a5fc3b6576e482419ee8c645eaa", null ],
     [ "clipElementRectangle", "d6/db6/a00241.html#aa587e9f91c9d82089d6cc2292d7a2ad1", null ],
+    [ "coarsestFather", "d6/db6/a00241.html#abe7086e2ad3e2413dce51b99be7bdd9c", null ],
     [ "createHostGeometry", "d6/db6/a00241.html#ae02260129055333f93e55ddd1fc05559", null ],
     [ "createTrimmingCurveSlice", "d6/db6/a00241.html#a7fbd7f2c42db6448082a2e15747b67cd", null ],
     [ "distance", "d6/db6/a00241.html#a4bfc3f4a9119d181e745c9b2c36f62e2", null ],

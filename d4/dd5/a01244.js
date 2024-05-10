@@ -21,6 +21,7 @@ var a01244 =
     [ "indexInOutside", "d4/dd5/a01244.html#a792be7a7b81b6325964f3655dca0a3a8", null ],
     [ "inside", "d4/dd5/a01244.html#ac4c29a84840fabe757b5e93d943cecff", null ],
     [ "integrationOuterNormal", "d4/dd5/a01244.html#a4e0bb7f0fe426866c3f01023ec0c83d8", null ],
+    [ "isTrimmed", "d4/dd5/a01244.html#ae7b796cb98a41d11c39858a6fc1d918f", null ],
     [ "neighbor", "d4/dd5/a01244.html#af588e64fbcda7d52ec5cd12018f4531b", null ],
     [ "outerNormal", "d4/dd5/a01244.html#ac05704895fd7e13c8d2a25c4f34f96b3", null ],
     [ "outside", "d4/dd5/a01244.html#a97f9cd564fc6a5271323276d7290cc9d", null ],
