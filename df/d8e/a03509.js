@@ -1,4 +1,4 @@
 var a03509 =
 [
-    [ "Dune::IGA::IdentityTrim::PatchGridLeafIterator< codim, pitype, GridImp >", "d0/dc0/a01652.html", "d0/dc0/a01652" ]
+    [ "Dune::IGA::IdentityTrim::PatchGridEntitySeed< codim, GridImp >", "d6/df0/a01647.html", "d6/df0/a01647" ]
 ];

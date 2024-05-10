@@ -1,13 +1,14 @@
 var a00230 =
 [
-    [ "Vector", "d3/d5e/a01725.html", null ],
-    [ "ControlPoint", "df/dba/a01726.html", null ],
-    [ "MultiplyAble", "de/d0f/a01727.html", null ],
-    [ "AddAble", "df/de0/a01728.html", null ],
-    [ "SubstractAble", "d2/d70/a01729.html", null ],
-    [ "MultiplyAssignAble", "de/db5/a01730.html", null ],
-    [ "DivideAssignAble", "df/dd2/a01731.html", null ],
-    [ "DivideAble", "de/d25/a01732.html", null ],
-    [ "TrimDataContainer", "d8/d9c/a01733.html", null ],
-    [ "Trimmer", "d0/d1f/a01734.html", null ]
+    [ "Domain", "d2/d4d/a01079.html", "d2/d4d/a01079" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d1/da8/a00230.html#a532897d1990f320393603ae743e25401", null ],
+    [ "clampToDomain", "d1/da8/a00230.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
+    [ "linspace", "d1/da8/a00230.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
+    [ "linspace", "d1/da8/a00230.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
+    [ "linspace", "d1/da8/a00230.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
+    [ "mapToRange", "d1/da8/a00230.html#a3d59a12b8ff14b4ae1ba2bf40845b301", null ],
+    [ "mapToRange", "d1/da8/a00230.html#a9bfbe1e0c0481fdaa7f59bbcb02aae19", null ],
+    [ "mapToRange", "d1/da8/a00230.html#a36c887e0deedc2b16c340ffcee35f961", null ],
+    [ "mapToRangeFromZeroToOne", "d1/da8/a00230.html#a86276840eb12dcb7cc614974d1675d6c", null ],
+    [ "splitDomainInHalf", "d1/da8/a00230.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
 ];

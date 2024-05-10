@@ -1,5 +1,8 @@
 var a00197 =
 [
-    [ "IGAGrid", "de/db1/a00197.html#af93cff67f8b7e3e20822b05262c82751", null ],
-    [ "grid_registry", "de/db1/a00197.html#a49a8630210f89f42b665afd341205e8d", null ]
+    [ "Dune::IGA::Splines::BsplineBasis< ScalarType_ >", "d6/d4d/a01371.html", "d6/d4d/a01371" ],
+    [ "createUniqueKnotSpans", "de/db1/a00197.html#aa09b1b9cc7958375a8a31d62af5b0912", null ],
+    [ "findSpan", "de/db1/a00197.html#aa4d165c52600cfe1d6e076699c11c259", null ],
+    [ "findSpan", "de/db1/a00197.html#a8903fd5c5528d00350ae67acdad78eda", null ],
+    [ "multiplicity", "de/db1/a00197.html#a8fa013ed31b0cad949e149776818c0a3", null ]
 ];

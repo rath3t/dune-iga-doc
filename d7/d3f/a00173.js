@@ -1,8 +1,11 @@
 var a00173 =
 [
-    [ "findClosestParameterSpaceCoordinate", "d7/d3f/a00173.html#a9b67765d6be43c55a6e796d0e7fa4ebd", null ],
-    [ "hessian", "d7/d3f/a00173.html#a8c84717f13b7cfdee0600f06d50727a2", null ],
-    [ "isPointOnLineSegment", "d7/d3f/a00173.html#af70677b5740fa61eebbe419e897628a9", null ],
-    [ "jacobianTransposed", "d7/d3f/a00173.html#aa846d6a57eeeae7b5b7f7d9fbdd52207", null ],
-    [ "position", "d7/d3f/a00173.html#a59c520803eb8ee5193287d7000e371bb", null ]
+    [ "DUNE_FMatrix_WITH_CHECKING", "d7/d3f/a00173.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b", null ],
+    [ "IntersectionCurveAndLine", "d7/d3f/a00173.html#aa9ac1b688f23da46f2a4b8c9063de166", [
+      [ "disjoint", "d7/d3f/a00173.html#aa9ac1b688f23da46f2a4b8c9063de166aff8d48ba74b051ac230fb0c28ae11984", null ],
+      [ "intersect", "d7/d3f/a00173.html#aa9ac1b688f23da46f2a4b8c9063de166aea228c391b72961cc1370e2d66442d86", null ],
+      [ "parallel", "d7/d3f/a00173.html#aa9ac1b688f23da46f2a4b8c9063de166a48920c071f6a5c97ae3739be64630697", null ]
+    ] ],
+    [ "findIntersectionCurveAndLine", "d7/d3f/a00173.html#ab844b5f8a427e7ef41a201df359488fc", null ],
+    [ "findIntersectionLinearCurveAndLine", "d7/d3f/a00173.html#aacb1dcc3d78324404e5cfe1284bc3d16", null ]
 ];

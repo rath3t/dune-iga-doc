@@ -7,5 +7,5 @@ var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
     [ "trimmer", "dir_7d0c370ab440c4b4f78419bfc8c93eb8.html", "dir_7d0c370ab440c4b4f78419bfc8c93eb8" ],
     [ "utils", "dir_054fedf05f142c88b967e78541d2ed3d.html", "dir_054fedf05f142c88b967e78541d2ed3d" ],
     [ "nurbsbasis.hh", "d2/de7/a00014.html", "d2/de7/a00014" ],
-    [ "patchgrid.hh", "d1/d88/a00128.html", null ]
+    [ "patchgrid.hh", "d7/d06/a00131.html", null ]
 ];

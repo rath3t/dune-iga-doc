@@ -1,6 +1,5 @@
 var a03527 =
 [
-    [ "registerControlPoint", "da/d72/a03527.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "da/d72/a03527.html#ad1c3e9e27b16a052696b80a7846b05eb", null ],
-    [ "registerNurbsPatchData", "da/d72/a03527.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator< GridImp >", "dd/d38/a01663.html", "dd/d38/a01663" ],
+    [ "Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator< GridImp >", "dd/d8d/a01667.html", "dd/d8d/a01667" ]
 ];
