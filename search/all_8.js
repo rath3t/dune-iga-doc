@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['concepts_2ehh_0',['concepts.hh',['../df/d5f/a03494.html',1,'']]],
+  ['concepts_2ehh_0',['concepts.hh',['../d7/d70/a03498.html',1,'']]],
   ['hasbackuprestorefacilities_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iga_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_20_3e_1',['hasBackupRestoreFacilities&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;',['../db/d07/a01155.html',1,'Dune::Capabilities']]],
   ['hasbackuprestorefacilities_3c_20iga_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2',['hasBackupRestoreFacilities&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../de/df1/a01151.html',1,'Dune::Capabilities']]],
   ['hasboundarysegmentidx_3',['hasBoundarySegmentIdx',['../d2/df5/a01395.html#ad00c4a60f3527a9c738ef868d91ae68e',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl::EdgeInfo']]],
@@ -43,6 +43,6 @@ var searchData=
   ['hypersurfbegin_40',['hyperSurfBegin',['../dc/de8/a01723.html#aabbd43307e7e72eedeec693e3ef3f724',1,'Dune::IGA::MultiDimensionalNet::hyperSurfBegin(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction)'],['../dc/de8/a01723.html#a055af54959ee36c24eac6caab62dcf92',1,'Dune::IGA::MultiDimensionalNet::hyperSurfBegin(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction) const']]],
   ['hypersurfend_41',['hyperSurfEnd',['../dc/de8/a01723.html#a4ad067f771d64930dd30294dfe0a7b89',1,'Dune::IGA::MultiDimensionalNet::hyperSurfEnd(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction)'],['../dc/de8/a01723.html#a381fae8deb83be28c7eb6924d9d90c39',1,'Dune::IGA::MultiDimensionalNet::hyperSurfEnd(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction) const']]],
   ['hypersurffront_42',['hyperSurfFront',['../dc/de8/a01723.html#ade411e48301eb55846876e62409f2183',1,'Dune::IGA::MultiDimensionalNet::hyperSurfFront(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction)'],['../dc/de8/a01723.html#a2012a94ca0d3bc1893988428c560b96d',1,'Dune::IGA::MultiDimensionalNet::hyperSurfFront(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction) const']]],
-  ['patchgrid_2ehh_43',['patchgrid.hh',['../d0/d17/a03491.html',1,'']]],
-  ['patchgridintersections_2ehh_44',['patchgridintersections.hh',['../d0/de9/a03530.html',1,'']]]
+  ['patchgrid_2ehh_43',['patchgrid.hh',['../dd/d6c/a03495.html',1,'']]],
+  ['patchgridintersections_2ehh_44',['patchgridintersections.hh',['../d6/de6/a03534.html',1,'']]]
 ];

@@ -4,8 +4,9 @@ var a00253 =
       [ "boundaryPatch", "d7/d03/a00254.html#adca8f900f932f6673b01a1bff6ef60ac", null ]
     ] ],
     [ "_igagrids", "d4/d04/a00255.html", [
-      [ "IGAGrid", "d4/d04/a00255.html#af93cff67f8b7e3e20822b05262c82751", null ],
-      [ "grid_registry", "d4/d04/a00255.html#a49a8630210f89f42b665afd341205e8d", null ]
+      [ "IGAGrid", "d4/d04/a00255.html#ae09e9b82dd711a3d375166c9b8e4f9e7", null ],
+      [ "grid_registry", "d4/d04/a00255.html#a49a8630210f89f42b665afd341205e8d", null ],
+      [ "IGAGridType", "d4/d04/a00255.html#ac6a8d661f961a6bc256b219264f65c08", null ]
     ] ],
     [ "_nurbsalgorithms", "d0/def/a00256.html", [
       [ "makeCircularArc", "d0/def/a00256.html#a22eb6b54ecd977addcf9b5da165613e8", null ],
