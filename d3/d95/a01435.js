@@ -1,11 +1,13 @@
 var a01435 =
 [
-    [ "Parameters", "d7/dfd/a01439.html", "d7/dfd/a01439" ],
-    [ "Element", "d3/d95/a01435.html#a1247253f2a4d0fb78c9af00e8e693108", null ],
-    [ "Index", "d3/d95/a01435.html#a6461c867879206f627a638cc74d1e764", null ],
-    [ "PatchElement", "d3/d95/a01435.html#a896e358409ea40a2d831309b6892ff7e", null ],
-    [ "Point", "d3/d95/a01435.html#afff4bf59bb37a374dce4a5ea04d2d1e9", null ],
-    [ "createIntegrationRule", "d3/d95/a01435.html#a0b633eb0a88526adac57e9494f3dc00c", null ],
-    [ "createSimplicies", "d3/d95/a01435.html#a51e6f42dd9aade9c44743996e9892053", null ],
-    [ "dim", "d3/d95/a01435.html#a837bb47efe24ec50cb3c2639b293efb2", null ]
+    [ "IdType", "d3/d95/a01435.html#aba25a123bd82bba08f6676d022b1bf0f", null ],
+    [ "PersistentIndexType", "d3/d95/a01435.html#afd0cb5b56d734abf688abc3742976381", null ],
+    [ "PatchGridGlobalIdSet", "d3/d95/a01435.html#acd0c01792fac03e5fd89c776b1910681", null ],
+    [ "PatchGridGlobalIdSet", "d3/d95/a01435.html#a9b13fb6a2e5607de07d59f89f80f99e7", null ],
+    [ "id", "d3/d95/a01435.html#a38e99e75085b997013601cf867e34c3c", null ],
+    [ "newFreeIndex", "d3/d95/a01435.html#a3134a1bcc7f42fffa770fe44db69414e", null ],
+    [ "subId", "d3/d95/a01435.html#a41efa34179474c40dd37be5d8932d50c", null ],
+    [ "update", "d3/d95/a01435.html#a226dd184f2ba6e90de97a39b193749e3", null ],
+    [ "grid_", "d3/d95/a01435.html#ade26dfbf8781ac8a2c656db560526674", null ],
+    [ "lastFreeIndex_", "d3/d95/a01435.html#a49b198dbb12a36ddd3acc72ea19bc844", null ]
 ];

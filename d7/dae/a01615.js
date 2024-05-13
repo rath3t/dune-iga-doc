@@ -1,12 +1,10 @@
 var a01615 =
 [
-    [ "Vertex", "d3/deb/a01619.html", "d3/deb/a01619" ],
-    [ "ClippingResult", "d7/dae/a01615.html#ad14cc4d0420b14ace8a61c61595bb852", null ],
-    [ "addInsideVertex", "d7/dae/a01615.html#a46cf2a84a8467ac9ae8668b4268c6958", null ],
-    [ "addNewVertex", "d7/dae/a01615.html#abf66b0108b78aad771f81087391f9ce5", null ],
-    [ "addOriginalVertex", "d7/dae/a01615.html#a0992364abc62f566ec8d68fadad250a5", null ],
-    [ "addOriginalVertex", "d7/dae/a01615.html#a261e4a7bf6ca5073cbb9f5d5b6b96dab", null ],
-    [ "finish", "d7/dae/a01615.html#a6c54283389b80bdd1d3d9782717fad66", null ],
-    [ "report", "d7/dae/a01615.html#a471c43053dc08c7913f68e1e0c176b85", null ],
-    [ "vertices_", "d7/dae/a01615.html#a1a2f4c50d209ea90053efd4e255f807e", null ]
+    [ "Preferences", "d7/dae/a01615.html#adf59987cc80464d2fee431345c5002e5", null ],
+    [ "boundaryDivisions", "d7/dae/a01615.html#acff7bcc5e02bae99b59726cfcb919ac6", null ],
+    [ "boundaryDivisions", "d7/dae/a01615.html#a8624608edbeb6affadb1e1129ffc9a70", null ],
+    [ "getInstance", "d7/dae/a01615.html#a19c3b252a6daa55f42f41a6d9e03e173", null ],
+    [ "operator=", "d7/dae/a01615.html#ae49006fbc7885b55759167099bfa14ea", null ],
+    [ "targetAccuracy", "d7/dae/a01615.html#a9dd02cab5bf09d91219d194b8ee5c3c0", null ],
+    [ "targetAccuracy", "d7/dae/a01615.html#a9c1e29d25ce10f49e9bd4c125d95f9ea", null ]
 ];

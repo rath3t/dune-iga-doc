@@ -1,16 +1,20 @@
 var a01327 =
 [
-    [ "Element", "d4/d2c/a01327.html#ae0f1b0280a151f71808caddeb0db81b5", null ],
-    [ "IDType", "d4/d2c/a01327.html#ab2b97e7dd8e0e8c99d9a351493bdd889", null ],
-    [ "Index", "d4/d2c/a01327.html#a97f546935cd4cf34b919527ec5247bbf", null ],
-    [ "Point", "d4/d2c/a01327.html#a458043700435144746a87ae7c201e4a5", null ],
-    [ "IGARefinedGeometries", "d4/d2c/a01327.html#a35832a135806de1935c201fb8d07a52a", null ],
-    [ "geometryType", "d4/d2c/a01327.html#add16dc454795e1a41f7afba282c09ed0", null ],
-    [ "getElements", "d4/d2c/a01327.html#a3e8200df1f6b5d42ce4dda94e61e6f39", null ],
-    [ "getIndices", "d4/d2c/a01327.html#a13efad846c5456fb0e28731f9b38aa8f", null ],
-    [ "getVertices", "d4/d2c/a01327.html#a792f46594bae296b6de221aef296df84", null ],
-    [ "nElements", "d4/d2c/a01327.html#aca7e452e5ab9c5d6dfe8b08783590797", null ],
-    [ "nVertices", "d4/d2c/a01327.html#a5cd99803d3468f84edad7d8cd598dfd3", null ],
-    [ "vertexSubIndex", "d4/d2c/a01327.html#a42e1db517691e8606cef2c737f41d17d", null ],
-    [ "dim", "d4/d2c/a01327.html#a30471b9626e57db233cde8e609ea2b29", null ]
+    [ "PointSet", "d4/d2c/a01327.html#ada1e06e4d2fe8194d01d2abf4f52b8ea", null ],
+    [ "DiscontinuousIgaDataCollector", "d4/d2c/a01327.html#a4858686fd6f924ca0197f1b5fe638eda", null ],
+    [ "DiscontinuousIgaDataCollector", "d4/d2c/a01327.html#aad389225daec797ea6808acaed64dea1", null ],
+    [ "DiscontinuousIgaDataCollector", "d4/d2c/a01327.html#a86154334b14d4fa15dfc7e59139bd64a", null ],
+    [ "cellDataImpl", "d4/d2c/a01327.html#a80173966f7d260562cc0034f1f12f16b", null ],
+    [ "cellsImpl", "d4/d2c/a01327.html#a3ddd74a17c3266184bcc6dc9509c839d", null ],
+    [ "numCellsImpl", "d4/d2c/a01327.html#ae66e7649e22ea229d30b699b43a0af45", null ],
+    [ "numPointsImpl", "d4/d2c/a01327.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7", null ],
+    [ "pointDataImpl", "d4/d2c/a01327.html#ad75e6d1fb3072de1f868555615afe04d", null ],
+    [ "pointsImpl", "d4/d2c/a01327.html#a7146c60450378d89d507be93c2fc3567", null ],
+    [ "updateImpl", "d4/d2c/a01327.html#a3f9f1b871c8800a722379721b64ec249", null ],
+    [ "geometries_", "d4/d2c/a01327.html#a6b0e8dfe3e05f605cbfd5c7020f69376", null ],
+    [ "indexMap_", "d4/d2c/a01327.html#a90e3a8e72b603367b1ba87ed69011c82", null ],
+    [ "numCells_", "d4/d2c/a01327.html#ace1c9b7c96ba1c206f79b1c115939c41", null ],
+    [ "numPoints_", "d4/d2c/a01327.html#acb3c97d81a0773a69a2fb7e42c8969ac", null ],
+    [ "pointSets_", "d4/d2c/a01327.html#a38e52710bba07c29d37de65934406be2", null ],
+    [ "vertexIndex_", "d4/d2c/a01327.html#a62034bc60158e38eefa437e30e67d3d5", null ]
 ];

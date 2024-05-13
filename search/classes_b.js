@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['simplexintegrationrulegenerator_0',['SimplexIntegrationRuleGenerator',['../d3/d95/a01435.html',1,'Dune::IGA::DefaultTrim']]],
-  ['stringandindex_1',['StringAndIndex',['../da/d06/a01403.html',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
-  ['subentityrangeimpl_2',['SubEntityRangeImpl',['../d8/d6c/a01563.html',1,'Dune::IGA::DefaultTrim::TrimmedReferenceElement']]]
+  ['simplexintegrationrulegenerator_0',['SimplexIntegrationRuleGenerator',['../d7/dfd/a01439.html',1,'Dune::IGA::DefaultTrim']]],
+  ['stringandindex_1',['StringAndIndex',['../d8/d31/a01407.html',1,'Dune::IGA::DefaultTrim::VectorEntityContainer']]],
+  ['subentityrangeimpl_2',['SubEntityRangeImpl',['../d7/d57/a01567.html',1,'Dune::IGA::DefaultTrim::TrimmedReferenceElement']]]
 ];

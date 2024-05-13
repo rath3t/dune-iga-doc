@@ -1,6 +1,11 @@
 var a01343 =
 [
-    [ "init", "d3/da4/a01343.html#ab29a3056636e956a36a4bfe47a951091", null ],
-    [ "localKey", "d3/da4/a01343.html#adf5a802caa3f9bf1b909336121dea33c", null ],
-    [ "size", "d3/da4/a01343.html#ab751125f214b769ded9842be52d11fa2", null ]
+    [ "Traits", "d3/da4/a01343.html#aa33762da2841b00c25730b54f403b18d", null ],
+    [ "NurbsLocalBasis", "d3/da4/a01343.html#ad119ff60c7cbee7b6629d14495ae1049", null ],
+    [ "evaluateFunction", "d3/da4/a01343.html#a98cb4d4ffdb36ce3ad6cd5ccc8a48c1f", null ],
+    [ "evaluateJacobian", "d3/da4/a01343.html#a1e4031a5766fdf953b67c52753a5173c", null ],
+    [ "order", "d3/da4/a01343.html#a112e67e9f50f06663a24cfb7e1c3804f", null ],
+    [ "partial", "d3/da4/a01343.html#a19caec343db1c4b578863e38a1956cf3", null ],
+    [ "size", "d3/da4/a01343.html#acf2935949ca9304b3007895aae110cc6", null ],
+    [ "NurbsLocalFiniteElement< GV, R >", "d3/da4/a01343.html#ad1ec86095c75c7472125add171d19867", null ]
 ];

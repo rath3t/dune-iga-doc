@@ -1,5 +1,6 @@
 var a01635 =
 [
-    [ "mapToDune", "dd/d2d/a01635.html#af64f7804c4c599a03380cc4cc78b6a7e", null ],
-    [ "mapToTrimmer", "dd/d2d/a01635.html#aa07ae8cbb09875f04e9cba4e253ff881", null ]
+    [ "curveIdxI", "dd/d2d/a01635.html#ab75fc5a1ea92dc9a10f60a388a8e6751", null ],
+    [ "curveIdxJ", "dd/d2d/a01635.html#a0fbf381900aaa4d79ae0281f47dd14ab", null ],
+    [ "loopIdx", "dd/d2d/a01635.html#abc33f5173a7247ceb3ac7cfc8e75c317", null ]
 ];

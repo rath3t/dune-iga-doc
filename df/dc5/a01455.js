@@ -1,10 +1,13 @@
 var a01455 =
 [
-    [ "Entity", "df/dc5/a01455.html#a8d9191e084026fc5fca94de999f0497f", null ],
-    [ "PatchGridHierarchicIterator", "df/dc5/a01455.html#a319f8d40b0c0f4f39887cb5e99873af1", null ],
-    [ "PatchGridHierarchicIterator", "df/dc5/a01455.html#ac53dc8e896d1d67e12644b486207129f", null ],
-    [ "dereference", "df/dc5/a01455.html#aeb02c792bf370320c047443dcc648534", null ],
-    [ "equals", "df/dc5/a01455.html#a3043d7935d9e4e9f37005c6c2a20744e", null ],
-    [ "increment", "df/dc5/a01455.html#a5d16bd1bcf3a6d5b235234c1782bb2e0", null ],
-    [ "codimension", "df/dc5/a01455.html#a3902e8b3e3ce2f75252425284cf960e0", null ]
+    [ "Entity", "df/dc5/a01455.html#a3c98d03777871ea5e73a48008d413281", null ],
+    [ "EntityImp", "df/dc5/a01455.html#aaa7eb643899b69dbedd330d42aab030d", null ],
+    [ "EntityInfo", "df/dc5/a01455.html#aa1cc124fbd3faaab17fefdfa6c0f7664", null ],
+    [ "ParameterSpaceGridEntitySeed", "df/dc5/a01455.html#a76a292103b6a40eb4a81513b2a01dd2f", null ],
+    [ "Trimmer", "df/dc5/a01455.html#aa6c90011b298382c1b6a48b203b26a33", null ],
+    [ "PatchGridEntitySeed", "df/dc5/a01455.html#aeb39fb3fb628977640182497077bf7ac", null ],
+    [ "PatchGridEntitySeed", "df/dc5/a01455.html#a1c33f8646cccbfbd238be5d5ede2de54", null ],
+    [ "isValid", "df/dc5/a01455.html#ae0d3749f2ce0ab5dbeef7c61ef9b2fb2", null ],
+    [ "codimension", "df/dc5/a01455.html#a6a1260cd17f5869d55979cee46a60b00", null ],
+    [ "Trimmer", "df/dc5/a01455.html#a551065380a7bc63372ce71c4ed799de7", null ]
 ];

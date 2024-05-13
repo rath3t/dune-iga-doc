@@ -1,18 +1,5 @@
 var a01427 =
 [
-    [ "EntitySeedType", "db/d78/a01427.html#a1fe1384be9a52c8836c4ac7263f41e1b", null ],
-    [ "HostIdType", "db/d78/a01427.html#afb1ffee2209db1a078e9fd7edd3991d1", null ],
-    [ "isTrimmed", "db/d78/a01427.html#a5a85d3410aef52451c2eb144ecfcccc6", null ],
-    [ "isValid", "db/d78/a01427.html#a1ca78194363e09980853c02d32423c75", null ],
-    [ "codimension", "db/d78/a01427.html#a81a70010f05bb09acbd23cf513ed2fca", null ],
-    [ "decendantIds", "db/d78/a01427.html#a3e25c04ed9abcf9687207041d4b0ac3e", null ],
-    [ "fatherId", "db/d78/a01427.html#af61eab09e972b6a517676546f2967bb7", null ],
-    [ "hostIndexInLvl", "db/d78/a01427.html#ae4426f846333b0ec847cb6c84e377f53", null ],
-    [ "hostSeed", "db/d78/a01427.html#a320fdbd42c25bd2cca254ee40df4a047", null ],
-    [ "id", "db/d78/a01427.html#a796ad5ddd7f6ba2885e9ab943cd3665c", null ],
-    [ "indexInLvlStorage", "db/d78/a01427.html#a6bb0c20d9a7c00ca1a295a74b540221d", null ],
-    [ "lvl", "db/d78/a01427.html#aa58a9b22c6fbeab21398e801a585dfdd", null ],
-    [ "trimmed", "db/d78/a01427.html#a20e957bcf4f8842bfb024802d8ac41f8", null ],
-    [ "trimmedIndexInLvl", "db/d78/a01427.html#a73c6ab1e29cd17ebd6187c7152a597ed", null ],
-    [ "unTrimmedIndexInLvl", "db/d78/a01427.html#a600e3eb4005ea71815c7e4b67edaa765", null ]
+    [ "geometry", "db/d78/a01427.html#aa1f4f344eb8893886e70d4954f4330e6", null ],
+    [ "indexOfInsideElementinLvl", "db/d78/a01427.html#a264e52b65246cb672d99dbdd4fb5cb1f", null ]
 ];

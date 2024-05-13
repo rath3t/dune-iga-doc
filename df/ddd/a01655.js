@@ -1,15 +1,10 @@
 var a01655 =
 [
-    [ "HostGrid", "df/ddd/a01655.html#a931db8951379dfbe88bf41522cf59788", null ],
-    [ "Types", "df/ddd/a01655.html#a9e8f3cfca6d394553d464f1b687f59e2", null ],
-    [ "contains", "df/ddd/a01655.html#a4ad7c8776dc5c4d99e57b8d5745aadf9", null ],
-    [ "index", "df/ddd/a01655.html#a74c0c6048cc158da607a157b50fe7d46", null ],
-    [ "size", "df/ddd/a01655.html#aa9fdb9d2a1f6788b12c56f6520eb3745", null ],
-    [ "size", "df/ddd/a01655.html#a6d98b22d863bf2845c362436ed842d07", null ],
-    [ "subIndex", "df/ddd/a01655.html#a0edb7a9793ef99df84c9c92a0bcf885d", null ],
-    [ "types", "df/ddd/a01655.html#a61c5f0c46fa4acf78ffa4b464ef13793", null ],
-    [ "update", "df/ddd/a01655.html#a549ea25aec0d723b92cade0de1d47d09", null ],
-    [ "dim", "df/ddd/a01655.html#aa1d4e5fbcd6be356c81d343949569045", null ],
-    [ "grid_", "df/ddd/a01655.html#a713d9b8c1be915a04c013ea1202ade4f", null ],
-    [ "level_", "df/ddd/a01655.html#a02901afa0659cb2008aa1676a9167c0c", null ]
+    [ "Entity", "df/ddd/a01655.html#ad7e466fd441d331b68af847215b702dd", null ],
+    [ "PatchGridHierarchicIterator", "df/ddd/a01655.html#a7b46bc88039813f5af892b1626763ca1", null ],
+    [ "PatchGridHierarchicIterator", "df/ddd/a01655.html#a0c43a17eda2fb8c5730d30acd33f966c", null ],
+    [ "dereference", "df/ddd/a01655.html#aaf262f4613e0825099dabb1c8b9a4c0f", null ],
+    [ "equals", "df/ddd/a01655.html#a3381cbac590d65945994ff2d522f676e", null ],
+    [ "increment", "df/ddd/a01655.html#a7e8cf56ce866121f778ce4bdb95de7bc", null ],
+    [ "codimension", "df/ddd/a01655.html#af61921148256598e66bfd25b875ad539", null ]
 ];

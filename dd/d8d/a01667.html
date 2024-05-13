@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt; Class Template Reference</title>
+<title>dune-iga: Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -95,33 +95,40 @@ $(document).ready(function(){initNavTree('dd/d8d/a01667.html','../../'); initRes
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="../../dc/d71/a01664.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d9/d1f/a03531_source.html">dune/iga/trimmer/identitytrimmer/patchgridintersectioniterator.hh</a>&gt;</code></p>
+<p>Iterator over all element neighborsMesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element!  
+ <a href="../../dd/d8d/a01667.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d8/d59/a03539_source.html">dune/iga/trimmer/identitytrimmer/patchgridintersectioniterator.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a52bba2fb6ea1d6026718e9e39e6fe751"><td class="memItemLeft" align="right" valign="top">typedef Dune::Intersection&lt; const GridImp, <a class="el" href="../../dc/dc2/a01251.html">PatchGridLevelIntersection</a>&lt; GridImp &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a52bba2fb6ea1d6026718e9e39e6fe751">Intersection</a></td></tr>
-<tr class="separator:a52bba2fb6ea1d6026718e9e39e6fe751"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6139cebbfee8b0cd8ac462c2ca8a77fc"><td class="memItemLeft" align="right" valign="top">typedef Dune::Intersection&lt; const GridImp, <a class="el" href="../../dc/dc2/a01251.html">PatchGridLeafIntersection</a>&lt; GridImp &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a6139cebbfee8b0cd8ac462c2ca8a77fc">Intersection</a></td></tr>
+<tr class="separator:a6139cebbfee8b0cd8ac462c2ca8a77fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a370ee00ddc91979c7821b59929238c39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a370ee00ddc91979c7821b59929238c39">PatchGridLevelIntersectionIterator</a> ()</td></tr>
-<tr class="separator:a370ee00ddc91979c7821b59929238c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f80cdde849fa61446331a484fbf10c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a1f80cdde849fa61446331a484fbf10c8">PatchGridLevelIntersectionIterator</a> (const GridImp *parameterSpaceGrid, const HostLevelIntersectionIterator &amp;hostIterator)</td></tr>
-<tr class="separator:a1f80cdde849fa61446331a484fbf10c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa228a5c21a8e8fd5f5fd1c7ba4e43dee"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#aa228a5c21a8e8fd5f5fd1c7ba4e43dee">equals</a> (const <a class="el" href="../../dd/d8d/a01667.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt; &amp;other) const</td></tr>
-<tr class="separator:aa228a5c21a8e8fd5f5fd1c7ba4e43dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d22aae2bdc2e57c53e5c21a7604363f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a9d22aae2bdc2e57c53e5c21a7604363f">increment</a> ()</td></tr>
-<tr class="separator:a9d22aae2bdc2e57c53e5c21a7604363f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab22a1c8dd1459a5da631e897e48be5f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d8d/a01667.html#a52bba2fb6ea1d6026718e9e39e6fe751">Intersection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#ab22a1c8dd1459a5da631e897e48be5f4">dereference</a> () const</td></tr>
-<tr class="separator:ab22a1c8dd1459a5da631e897e48be5f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0833eb91e585595bae6b1e1ed98361e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a0833eb91e585595bae6b1e1ed98361e4">PatchGridLeafIntersectionIterator</a> ()</td></tr>
+<tr class="separator:a0833eb91e585595bae6b1e1ed98361e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a316265d42ab5ad218145f976b0548a82"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a316265d42ab5ad218145f976b0548a82">PatchGridLeafIntersectionIterator</a> (const GridImp *parameterSpaceGrid, const HostLeafIntersectionIterator &amp;hostIterator)</td></tr>
+<tr class="separator:a316265d42ab5ad218145f976b0548a82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedbb9bb1a9dc65de78dafd75fae4a5af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#aedbb9bb1a9dc65de78dafd75fae4a5af">equals</a> (const <a class="el" href="../../dd/d8d/a01667.html">PatchGridLeafIntersectionIterator</a> &amp;other) const</td></tr>
+<tr class="separator:aedbb9bb1a9dc65de78dafd75fae4a5af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3973cbe9a1ab38c87ca1a4d998e1e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#acb3973cbe9a1ab38c87ca1a4d998e1e6">increment</a> ()</td></tr>
+<tr class="separator:acb3973cbe9a1ab38c87ca1a4d998e1e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1de71ed09cd8cf3c68b570c97f7880af"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../dd/d8d/a01667.html#a6139cebbfee8b0cd8ac462c2ca8a77fc">Intersection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d8d/a01667.html#a1de71ed09cd8cf3c68b570c97f7880af">dereference</a> () const</td></tr>
+<tr class="separator:a1de71ed09cd8cf3c68b570c97f7880af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a52bba2fb6ea1d6026718e9e39e6fe751" name="a52bba2fb6ea1d6026718e9e39e6fe751"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a52bba2fb6ea1d6026718e9e39e6fe751">&#9670;&nbsp;</a></span>Intersection</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class GridImp&gt;<br />
+class Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt;</div><p >Iterator over all element neighbors</p>
+<p >Mesh entities of codimension 0 ("elements") allow to visit all neighbors, where a neighbor is an entity of codimension 0 which has a common entity of codimension 1 These neighbors are accessed via a IntersectionIterator. This allows the implement non-matching meshes. The number of neighbors may be different from the number of an element! </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a6139cebbfee8b0cd8ac462c2ca8a77fc" name="a6139cebbfee8b0cd8ac462c2ca8a77fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6139cebbfee8b0cd8ac462c2ca8a77fc">&#9670;&nbsp;</a></span>Intersection</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -129,7 +136,7 @@ Public Member Functions</h2></td></tr>
 template&lt;class GridImp &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef Dune::Intersection&lt;const GridImp, <a class="el" href="../../dc/dc2/a01251.html">PatchGridLevelIntersection</a>&lt;GridImp&gt; &gt; <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;::Intersection</td>
+          <td class="memname">typedef Dune::Intersection&lt;const GridImp, <a class="el" href="../../dc/dc2/a01251.html">PatchGridLeafIntersection</a>&lt;GridImp&gt; &gt; <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;::Intersection</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -137,8 +144,8 @@ template&lt;class GridImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a370ee00ddc91979c7821b59929238c39" name="a370ee00ddc91979c7821b59929238c39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a370ee00ddc91979c7821b59929238c39">&#9670;&nbsp;</a></span>PatchGridLevelIntersectionIterator() <span class="overload">[1/2]</span></h2>
+<a id="a0833eb91e585595bae6b1e1ed98361e4" name="a0833eb91e585595bae6b1e1ed98361e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0833eb91e585595bae6b1e1ed98361e4">&#9670;&nbsp;</a></span>PatchGridLeafIntersectionIterator() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -149,7 +156,7 @@ template&lt;class GridImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;::PatchGridLevelIntersectionIterator </td>
+          <td class="memname"><a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;::PatchGridLeafIntersectionIterator </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -164,8 +171,8 @@ template&lt;class GridImp &gt; </div>
 
 </div>
 </div>
-<a id="a1f80cdde849fa61446331a484fbf10c8" name="a1f80cdde849fa61446331a484fbf10c8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f80cdde849fa61446331a484fbf10c8">&#9670;&nbsp;</a></span>PatchGridLevelIntersectionIterator() <span class="overload">[2/2]</span></h2>
+<a id="a316265d42ab5ad218145f976b0548a82" name="a316265d42ab5ad218145f976b0548a82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a316265d42ab5ad218145f976b0548a82">&#9670;&nbsp;</a></span>PatchGridLeafIntersectionIterator() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,7 +183,7 @@ template&lt;class GridImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;::PatchGridLevelIntersectionIterator </td>
+          <td class="memname"><a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;::PatchGridLeafIntersectionIterator </td>
           <td>(</td>
           <td class="paramtype">const GridImp *&#160;</td>
           <td class="paramname"><em>parameterSpaceGrid</em>, </td>
@@ -184,7 +191,7 @@ template&lt;class GridImp &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const HostLevelIntersectionIterator &amp;&#160;</td>
+          <td class="paramtype">const HostLeafIntersectionIterator &amp;&#160;</td>
           <td class="paramname"><em>hostIterator</em>&#160;</td>
         </tr>
         <tr>
@@ -203,8 +210,8 @@ template&lt;class GridImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab22a1c8dd1459a5da631e897e48be5f4" name="ab22a1c8dd1459a5da631e897e48be5f4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab22a1c8dd1459a5da631e897e48be5f4">&#9670;&nbsp;</a></span>dereference()</h2>
+<a id="a1de71ed09cd8cf3c68b570c97f7880af" name="a1de71ed09cd8cf3c68b570c97f7880af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1de71ed09cd8cf3c68b570c97f7880af">&#9670;&nbsp;</a></span>dereference()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -215,7 +222,7 @@ template&lt;class GridImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../dd/d8d/a01667.html#a52bba2fb6ea1d6026718e9e39e6fe751">Intersection</a> <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;::dereference </td>
+          <td class="memname"><a class="el" href="../../dd/d8d/a01667.html#a6139cebbfee8b0cd8ac462c2ca8a77fc">Intersection</a> <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;::dereference </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
@@ -230,8 +237,8 @@ template&lt;class GridImp &gt; </div>
 
 </div>
 </div>
-<a id="aa228a5c21a8e8fd5f5fd1c7ba4e43dee" name="aa228a5c21a8e8fd5f5fd1c7ba4e43dee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa228a5c21a8e8fd5f5fd1c7ba4e43dee">&#9670;&nbsp;</a></span>equals()</h2>
+<a id="aedbb9bb1a9dc65de78dafd75fae4a5af" name="aedbb9bb1a9dc65de78dafd75fae4a5af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedbb9bb1a9dc65de78dafd75fae4a5af">&#9670;&nbsp;</a></span>equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -242,9 +249,9 @@ template&lt;class GridImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;::equals </td>
+          <td class="memname">bool <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;::equals </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dd/d8d/a01667.html">PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../dd/d8d/a01667.html">PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt; &amp;&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td> const</td>
         </tr>
@@ -258,8 +265,8 @@ template&lt;class GridImp &gt; </div>
 
 </div>
 </div>
-<a id="a9d22aae2bdc2e57c53e5c21a7604363f" name="a9d22aae2bdc2e57c53e5c21a7604363f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d22aae2bdc2e57c53e5c21a7604363f">&#9670;&nbsp;</a></span>increment()</h2>
+<a id="acb3973cbe9a1ab38c87ca1a4d998e1e6" name="acb3973cbe9a1ab38c87ca1a4d998e1e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3973cbe9a1ab38c87ca1a4d998e1e6">&#9670;&nbsp;</a></span>increment()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -270,7 +277,7 @@ template&lt;class GridImp &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator</a>&lt; GridImp &gt;::increment </td>
+          <td class="memname">void <a class="el" href="../../dd/d8d/a01667.html">Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator</a>&lt; GridImp &gt;::increment </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -286,14 +293,14 @@ template&lt;class GridImp &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../d9/d1f/a03531_source.html">identitytrimmer/patchgridintersectioniterator.hh</a></li>
+<li><a class="el" href="../../d8/d59/a03539_source.html">identitytrimmer/patchgridintersectioniterator.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d9/d01/a00227.html">Dune</a></li><li class="navelem"><a class="el" href="../../de/dc2/a00228.html">IGA</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">IdentityTrim</a></li><li class="navelem"><a class="el" href="../../dd/d8d/a01667.html">PatchGridLevelIntersectionIterator</a></li>
+    <li class="navelem"><a class="el" href="../../d1/da8/a00230.html">Dune</a></li><li class="navelem"><a class="el" href="../../df/d17/a00231.html">IGA</a></li><li class="navelem"><a class="el" href="../../d0/d27/a00239.html">IdentityTrim</a></li><li class="navelem"><a class="el" href="../../dd/d8d/a01667.html">PatchGridLeafIntersectionIterator</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
