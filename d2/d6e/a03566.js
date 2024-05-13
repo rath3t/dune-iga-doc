@@ -1,5 +1,6 @@
 var a03566 =
 [
-    [ "Dune::IGA::NURBSPatchData< dim, dimworld_, ScalarType >", "d9/d40/a01387.html", "d9/d40/a01387" ],
-    [ "NURBSPatchData", "d2/d6e/a03566.html#a719e776ccc21fb8be2d8238621d81152", null ]
+    [ "registerControlPoint", "d2/d6e/a03566.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
+    [ "registerMultiDimensionalNet", "d2/d6e/a03566.html#aaa677c6977c16109d2b237f5f072fe2d", null ],
+    [ "registerNurbsPatchData", "d2/d6e/a03566.html#abb0ad571b894541ccc4722f669ce8097", null ]
 ];

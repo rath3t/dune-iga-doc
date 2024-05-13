@@ -1,10 +1,10 @@
 var a00062 =
 [
-    [ "Dune::IGA::DefaultTrim::Util::ClippingResult", "d3/deb/a01619.html", "d3/deb/a01619" ],
-    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex", "d2/dcc/a01623.html", "d2/dcc/a01623" ],
-    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::HostVertexImpl", "de/db6/a01627.html", "de/db6/a01627" ],
-    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl", "d0/da4/a01631.html", "d0/da4/a01631" ],
-    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl", "dd/d2d/a01635.html", "dd/d2d/a01635" ],
+    [ "Dune::IGA::DefaultTrim::Util::ClippingResult", "db/dad/a01616.html", "db/dad/a01616" ],
+    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex", "da/df2/a01620.html", "da/df2/a01620" ],
+    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::HostVertexImpl", "de/df9/a01624.html", "de/df9/a01624" ],
+    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::NewVertexImpl", "dd/deb/a01628.html", "dd/deb/a01628" ],
+    [ "Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex::InsideVertexImpl", "d6/daf/a01632.html", "d6/daf/a01632" ],
     [ "giveEdgeIdx", "df/d03/a00062.html#a3e392b56f3d269be79010643a236f40b", null ],
     [ "isCornerVertex", "df/d03/a00062.html#ad456d6ac2db4d1b30b31bc238b40a3ca", null ],
     [ "edgeDirections", "df/d03/a00062.html#a1f86c47c86a639133c16255b9864fb4d", null ],

@@ -1,5 +1,5 @@
 var a00002 =
 [
-    [ "Dune::DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d5/d34/a01743.html", null ],
-    [ "Dune::DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d7/db4/a01747.html", "d7/db4/a01747" ]
+    [ "Dune::DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "df/d8f/a01740.html", null ],
+    [ "Dune::DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d1/d04/a01744.html", "d1/d04/a01744" ]
 ];
