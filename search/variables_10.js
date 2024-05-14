@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['spindex_5f_0',['spIndex_',['../dd/d6d/a01380.html#aa1ec68d3ba306092a5c2008c17bc0f5b',1,'Dune::IGA::Splines::Nurbs::LocalView']]],
-  ['splitter_1',['splitter',['../de/d40/a01592.html#a0a687d3d9c6f1a17d7a8ed2fcc26b534',1,'Dune::IGA::DefaultTrim::Parameter']]],
-  ['surface_5fgeometries_5f3d_2',['surface_geometries_3d',['../d4/d64/a01296.html#a9010ce626abe088d92fa7ca94dea8809',1,'Dune::IGA::Ibra::BrepRepresentation']]],
-  ['surfaces_3',['surfaces',['../d8/dc5/a01300.html#a77af74d7b76494e0e1282baf5a9867c8',1,'Dune::IGA::Ibra::Brep']]]
+  ['registry_0',['registry',['../d0/d3e/a00253.html#a692469dff5d684126efb9a24e2905bd4',1,'iga']]],
+  ['runcirculararc_1',['runCircularArc',['../d0/def/a00256.html#a4435c22c355c8f50239394e8452069db',1,'iga::_nurbsalgorithms']]],
+  ['runsurfaceofrevolution_2',['runSurfaceOfRevolution',['../d0/def/a00256.html#a050e71892f002f5250de3c7b3155c942',1,'iga::_nurbsalgorithms']]]
 ];

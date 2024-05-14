@@ -1,6 +1,13 @@
 var searchData=
 [
-  ['registry_0',['registry',['../d0/d3e/a00253.html#a692469dff5d684126efb9a24e2905bd4',1,'iga']]],
-  ['runcirculararc_1',['runCircularArc',['../d0/def/a00256.html#a4435c22c355c8f50239394e8452069db',1,'iga::_nurbsalgorithms']]],
-  ['runsurfaceofrevolution_2',['runSurfaceOfRevolution',['../d0/def/a00256.html#a050e71892f002f5250de3c7b3155c942',1,'iga::_nurbsalgorithms']]]
+  ['p_0',['p',['../d6/d80/a01076.html#a59e28962433ecc6c63740220adee87d3',1,'Dune::IGA::ControlPoint']]],
+  ['parameters_5f_1',['parameters_',['../d0/d67/a01232.html#a1fb7e883b3f225965ab2396d7f067402',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;::parameters_()'],['../dd/d70/a01596.html#a3f7154b8ee14e21c0e2cde220bdfb225',1,'Dune::IGA::DefaultTrim::TrimmerImpl::parameters_()']]],
+  ['parameterspacegrid_5f_2',['parameterSpaceGrid_',['../dd/d70/a01596.html#a37bd8573507dae8fd020364084821d78',1,'Dune::IGA::DefaultTrim::TrimmerImpl::parameterSpaceGrid_()'],['../d4/d26/a01700.html#ab6e28697d0db0d661dc9a1aed251b0b7',1,'Dune::IGA::IdentityTrim::TrimmerImpl::parameterSpaceGrid_()']]],
+  ['patchdata_5f_3',['patchData_',['../d0/d67/a01232.html#a7495e43c6d7dfdcf5d764b6a74d93f21',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;::patchData_()'],['../dc/dcc/a01200.html#a21f27b41d02d46b60e163d4a3c4d437b',1,'Dune::Functions::NurbsPreBasis::patchData_()']]],
+  ['patchdim_4',['patchDim',['../d7/dde/a01384.html#ad6206583900ce3a6e663d2879feb1d7b',1,'Dune::IGA::NURBSPatchData::patchDim()'],['../d4/d3f/a01600.html#af3008c0fc0c209561a260fe7214d8920',1,'Dune::IGA::DefaultTrim::PatchGridFamily::patchDim()']]],
+  ['patchnumberofsecondderivatives_5',['patchNumberOfSecondDerivatives',['../dd/dcb/a01104.html#ac332cd50a12b75a53b591584b558276c',1,'Dune::IGA::GeometryKernel::PatchGeometryLocalView']]],
+  ['patchtrimdata_5f_6',['patchTrimData_',['../d0/d67/a01232.html#adeee41d3dbb18f553bfe54f821bb0ef1',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
+  ['pointsets_5f_7',['pointSets_',['../d5/d53/a01324.html#a38e52710bba07c29d37de65934406be2',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['prebasis_5f_8',['preBasis_',['../df/d93/a01336.html#a2694ec0d342287865eee67f869602641',1,'Dune::Functions::NurbsLocalFiniteElement::preBasis_()'],['../d0/d85/a01352.html#a7b3c53f6aef8715f9d617cf8d3d04b57',1,'Dune::Functions::NurbsNode::preBasis_()']]],
+  ['pt_9',['pt',['../da/df2/a01620.html#a911135ac0f5613152318c60d43cb5bb0',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex']]]
 ];

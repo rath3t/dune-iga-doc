@@ -10,6 +10,7 @@ var a00244 =
     [ "distance", "d6/d08/a00244.html#a4bfc3f4a9119d181e745c9b2c36f62e2", null ],
     [ "findGoodStartingPoint", "d6/d08/a00244.html#a70718c6dfba53db598a93503b15370e4", null ],
     [ "giveEdgeIdx", "d6/d08/a00244.html#a3e392b56f3d269be79010643a236f40b", null ],
+    [ "isConsecutive", "d6/d08/a00244.html#ac263f580f14c363a7d304904ff7966d2", null ],
     [ "isCornerVertex", "d6/d08/a00244.html#ad456d6ac2db4d1b30b31bc238b40a3ca", null ],
     [ "isSameEdgeGeometry", "d6/d08/a00244.html#a8725433a6226ec66c7e7221475da8e10", null ],
     [ "sameCorner", "d6/d08/a00244.html#a348d10e73bae872e0c993c5521f10606", null ],
