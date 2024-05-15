@@ -55,7 +55,7 @@ var searchData=
   ['initializeindices_52',['initializeIndices',['../dc/dcc/a01200.html#a5d0c0dc12780e031fb2ae49bd94257eb',1,'Dune::Functions::NurbsPreBasis']]],
   ['inparameterspace_53',['InParameterSpace',['../d6/d82/a00243.html#a235119f36c1c00db38f86bc6d742d365a8a1271beadae7821c36d87fc0c4e480e',1,'Dune::IGA::DefaultTrim']]],
   ['inreferenceelement_54',['InReferenceElement',['../d6/d82/a00243.html#a235119f36c1c00db38f86bc6d742d365ac387cd45b20325cc986016334e9dd723',1,'Dune::IGA::DefaultTrim']]],
-  ['insertjson_55',['insertJson',['../d0/d67/a01232.html#ab8c02e9743a6c4edb9f4751a64b2f661',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
+  ['insertjson_55',['insertJson',['../d0/d67/a01232.html#a5ab30c1cffbbd82a99bcfb9182e5b2fb',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
   ['insertpatch_56',['insertPatch',['../d0/d67/a01232.html#ad4c38666156f496bf3036a578093db69',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],
   ['inserttrimcurve_57',['insertTrimCurve',['../da/dc7/a01548.html#a6e097f59163c10aa9325c2cfde32e655',1,'Dune::IGA::DefaultTrim::PatchTrimDataImpl']]],
   ['inserttrimmingcurve_58',['insertTrimmingCurve',['../d0/d67/a01232.html#a54a33855f7c358c8d103f695ba0b24e0',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;']]],

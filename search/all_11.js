@@ -2,7 +2,7 @@ var searchData=
 [
   ['r_0',['R',['../dc/dcc/a01200.html#ab1f3514ea58617b8ae2a5368d47d627e',1,'Dune::Functions::NurbsPreBasis']]],
   ['rank_5ftype_1',['rank_type',['../d3/d4c/a01724.html#acc14b56ba09679ce790b746e08623749',1,'Dune::IGA::MultiDimensionalNet']]],
-  ['read_2',['read',['../d4/d49/a01316.html#aa4bec56aa5e7c29b9fbeb64e83cd5bea',1,'Dune::IGA::IbraReader&lt; dim, dimworld, PatchGrid, true &gt;::read()'],['../df/dec/a01320.html#a3f68577aefa574d414879474a9cc00fd',1,'Dune::IGA::IbraReader&lt; dim, dimworld, PatchGrid, false &gt;::read()']]],
+  ['read_2',['read',['../d4/d49/a01316.html#a0d32f6b66e1e8db44821629a31cb8c41',1,'Dune::IGA::IbraReader&lt; dim, dimworld, PatchGrid, true &gt;::read()'],['../df/dec/a01320.html#a4f35fad5c7d94f13732c5fe73320f39e',1,'Dune::IGA::IbraReader&lt; dim, dimworld, PatchGrid, false &gt;::read()']]],
   ['reader_3',['Reader',['../dc/ded/a00252.html#a1ef280a2762fbf1b3a46535ade3f8172',1,'Dune::Python::IGA']]],
   ['readjson_4',['readJson',['../de/dc2/a00228.html#aa0f8ccf410542ea91d5841fee8673130',1,'Dune::IGA::readJson(const std::string &amp;fileName)'],['../de/dc2/a00228.html#a9d751eac9df3522e457a5620082bb7e8',1,'Dune::IGA::readJson(InputStringType &amp;ibraInputFile)']]],
   ['reference_5',['reference',['../d3/d4c/a01724.html#a06d9bbc3532d841eebc43797be9ddcf7',1,'Dune::IGA::MultiDimensionalNet']]],
