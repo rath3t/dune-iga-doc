@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: griddrawer.hh File Reference</title>
+<title>dune-iga: algorithms.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,10 +94,11 @@ $(document).ready(function(){initNavTree('d3/d52/a00023.html','../../'); initRes
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">griddrawer.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">algorithms.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d0/d20/a03557_source.html">dune/iga/trimmer/defaulttrimmer/trimmer.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d6/d5b/a00026_source.html">dune/iga/geometrykernel/closestpointprojection.hh</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d8/d41/a00038_source.html">dune/iga/geometrykernel/geohelper.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d3/d52/a00023_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,19 +108,38 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:de/dc2/a00228"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:dd/d2d/a00229"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html">Dune::IGA::GeometryKernel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ab2eac10a24b02432cc0a0df609dcd358"><td class="memTemplParams" colspan="2">template&lt;typename PatchGrid &gt; </td></tr>
-<tr class="memitem:ab2eac10a24b02432cc0a0df609dcd358"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html#ab2eac10a24b02432cc0a0df609dcd358">Dune::IGA::drawGrid</a> (PatchGrid *grid, std::string &amp;&amp;file_name)</td></tr>
-<tr class="separator:ab2eac10a24b02432cc0a0df609dcd358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b67765d6be43c55a6e796d0e7fa4ebd"><td class="memTemplParams" colspan="2">template&lt;typename Geometry &gt; </td></tr>
+<tr class="memitem:a9b67765d6be43c55a6e796d0e7fa4ebd"><td class="memTemplItemLeft" align="right" valign="top">Geometry::LocalCoordinate&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html#a9b67765d6be43c55a6e796d0e7fa4ebd">Dune::IGA::GeometryKernel::findClosestParameterSpaceCoordinate</a> (const Geometry &amp;geo, const typename Geometry::GlobalCoordinate &amp;global)</td></tr>
+<tr class="memdesc:a9b67765d6be43c55a6e796d0e7fa4ebd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the parameter space coordinate corresponding to a given global coordinate on a geometry.  <a href="../../dd/d2d/a00229.html#a9b67765d6be43c55a6e796d0e7fa4ebd">More...</a><br /></td></tr>
+<tr class="separator:a9b67765d6be43c55a6e796d0e7fa4ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c84717f13b7cfdee0600f06d50727a2"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a8c84717f13b7cfdee0600f06d50727a2"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html#a8c84717f13b7cfdee0600f06d50727a2">Dune::IGA::GeometryKernel::hessian</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:a8c84717f13b7cfdee0600f06d50727a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the Hessian matrix of a NURBS geometry at a specified local coordinate.  <a href="../../dd/d2d/a00229.html#a8c84717f13b7cfdee0600f06d50727a2">More...</a><br /></td></tr>
+<tr class="separator:a8c84717f13b7cfdee0600f06d50727a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa846d6a57eeeae7b5b7f7d9fbdd52207"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:aa846d6a57eeeae7b5b7f7d9fbdd52207"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html#aa846d6a57eeeae7b5b7f7d9fbdd52207">Dune::IGA::GeometryKernel::jacobianTransposed</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:aa846d6a57eeeae7b5b7f7d9fbdd52207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the transposed Jacobian matrix of a NURBS geometry at a specified local coordinate.  <a href="../../dd/d2d/a00229.html#aa846d6a57eeeae7b5b7f7d9fbdd52207">More...</a><br /></td></tr>
+<tr class="separator:aa846d6a57eeeae7b5b7f7d9fbdd52207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c520803eb8ee5193287d7000e371bb"><td class="memTemplParams" colspan="2">template&lt;typename LocalCoordinate , typename NurbsLocalView , typename ControlPointCoordinateNetType &gt; </td></tr>
+<tr class="memitem:a59c520803eb8ee5193287d7000e371bb"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html#a59c520803eb8ee5193287d7000e371bb">Dune::IGA::GeometryKernel::position</a> (const LocalCoordinate &amp;local, const NurbsLocalView &amp;nurbsLocalView, const ControlPointCoordinateNetType &amp;localControlPointNet)</td></tr>
+<tr class="memdesc:a59c520803eb8ee5193287d7000e371bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the global position of a NURBS geometry at a specified local coordinate.  <a href="../../dd/d2d/a00229.html#a59c520803eb8ee5193287d7000e371bb">More...</a><br /></td></tr>
+<tr class="separator:a59c520803eb8ee5193287d7000e371bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af70677b5740fa61eebbe419e897628a9"><td class="memTemplParams" colspan="2">template&lt;typename Coordinate , std::floating_point Tolerance = double_t&gt; </td></tr>
+<tr class="memitem:af70677b5740fa61eebbe419e897628a9"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../dd/d2d/a00229.html#af70677b5740fa61eebbe419e897628a9">Dune::IGA::GeometryKernel::isPointOnLineSegment</a> (const Coordinate &amp;p, const Coordinate &amp;linePoint0, const Coordinate &amp;linePoint1, Tolerance tol=1e-6) -&gt; bool</td></tr>
+<tr class="memdesc:af70677b5740fa61eebbe419e897628a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a point lies on a line defined by two other points with a specified tolerance.  <a href="../../dd/d2d/a00229.html#af70677b5740fa61eebbe419e897628a9">More...</a><br /></td></tr>
+<tr class="separator:af70677b5740fa61eebbe419e897628a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li><li class="navelem"><a class="el" href="../../d3/d52/a00023.html">griddrawer.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d3/d52/a00023.html">algorithms.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

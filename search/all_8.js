@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['concepts_2ehh_0',['concepts.hh',['../dd/daf/a03503.html',1,'']]],
+  ['concepts_2ehh_0',['concepts.hh',['../df/d8e/a03509.html',1,'']]],
   ['hasbackuprestorefacilities_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iga_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_20_3e_1',['hasBackupRestoreFacilities&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;',['../d9/d42/a01156.html',1,'Dune::Capabilities']]],
   ['hasbackuprestorefacilities_3c_20iga_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2',['hasBackupRestoreFacilities&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;',['../d9/d97/a01152.html',1,'Dune::Capabilities']]],
   ['hasboundarysegmentidx_3',['hasBoundarySegmentIdx',['../d9/d45/a01396.html#ad00c4a60f3527a9c738ef868d91ae68e',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl::EdgeInfo']]],
@@ -45,5 +45,5 @@ var searchData=
   ['hypersurfend_42',['hyperSurfEnd',['../d3/d4c/a01724.html#a4ad067f771d64930dd30294dfe0a7b89',1,'Dune::IGA::MultiDimensionalNet::hyperSurfEnd(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction)'],['../d3/d4c/a01724.html#a381fae8deb83be28c7eb6924d9d90c39',1,'Dune::IGA::MultiDimensionalNet::hyperSurfEnd(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction) const']]],
   ['hypersurffront_43',['hyperSurfFront',['../d3/d4c/a01724.html#ade411e48301eb55846876e62409f2183',1,'Dune::IGA::MultiDimensionalNet::hyperSurfFront(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction)'],['../d3/d4c/a01724.html#a2012a94ca0d3bc1893988428c560b96d',1,'Dune::IGA::MultiDimensionalNet::hyperSurfFront(const std::array&lt; int,(std::size_t)(netdim - 1)&gt; &amp;direction) const']]],
   ['patchgrid_2ehh_44',['patchgrid.hh',['../d8/d63/a03500.html',1,'']]],
-  ['patchgridintersections_2ehh_45',['patchgridintersections.hh',['../d8/d59/a03539.html',1,'']]]
+  ['patchgridintersections_2ehh_45',['patchgridintersections.hh',['../dd/d25/a03545.html',1,'']]]
 ];

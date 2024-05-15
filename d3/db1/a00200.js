@@ -1,6 +1,7 @@
 var a00200 =
 [
-    [ "IGAGrid", "d3/db1/a00200.html#ae09e9b82dd711a3d375166c9b8e4f9e7", null ],
-    [ "grid_registry", "d3/db1/a00200.html#a49a8630210f89f42b665afd341205e8d", null ],
-    [ "IGAGridType", "d3/db1/a00200.html#ac6a8d661f961a6bc256b219264f65c08", null ]
+    [ "ControlPoint", "d3/db1/a00200.html#a87eb600529940f01930f93b69fb57771", null ],
+    [ "ControlPointNet", "d3/db1/a00200.html#a0aaa76ef36eaaaab6f75a00d73e7af7d", null ],
+    [ "NurbsPatchData", "d3/db1/a00200.html#a2e79a7a839b0ea0ebef0ad1ce581dd72", null ],
+    [ "NurbsPatchDataDefault", "d3/db1/a00200.html#a27a76c3c944053aa8fea7ee072860187", null ]
 ];

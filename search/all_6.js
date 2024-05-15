@@ -6,7 +6,7 @@ var searchData=
   ['finalize_3',['finalize',['../d0/d36/a01388.html#a1a233d3ffa1677c458f5b9aad931783d',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]],
   ['findclosestparameterspacecoordinate_4',['findClosestParameterSpaceCoordinate',['../dd/d2d/a00229.html#a9b67765d6be43c55a6e796d0e7fa4ebd',1,'Dune::IGA::GeometryKernel']]],
   ['findgoodstartingpoint_5',['findGoodStartingPoint',['../d6/d08/a00244.html#a70718c6dfba53db598a93503b15370e4',1,'Dune::IGA::DefaultTrim::Util']]],
-  ['findintersection_2ehh_6',['findintersection.hh',['../d5/dcb/a00170.html',1,'']]],
+  ['findintersection_2ehh_6',['findintersection.hh',['../d5/d16/a00029.html',1,'']]],
   ['findintersectioncurveandline_7',['findIntersectionCurveAndLine',['../de/dc2/a00228.html#ab844b5f8a427e7ef41a201df359488fc',1,'Dune::IGA']]],
   ['findintersectionlinearcurveandline_8',['findIntersectionLinearCurveAndLine',['../de/dc2/a00228.html#aacb1dcc3d78324404e5cfe1284bc3d16',1,'Dune::IGA']]],
   ['findspan_9',['findSpan',['../d6/db6/a00241.html#a8903fd5c5528d00350ae67acdad78eda',1,'Dune::IGA::Splines::findSpan(const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)'],['../d6/db6/a00241.html#aa4d165c52600cfe1d6e076699c11c259',1,'Dune::IGA::Splines::findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)']]],

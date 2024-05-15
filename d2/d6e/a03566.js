@@ -1,6 +1,10 @@
 var a03566 =
 [
-    [ "registerControlPoint", "d2/d6e/a03566.html#a5d2b9f264b1b4229ed54df9082d5d35d", null ],
-    [ "registerMultiDimensionalNet", "d2/d6e/a03566.html#aaa677c6977c16109d2b237f5f072fe2d", null ],
-    [ "registerNurbsPatchData", "d2/d6e/a03566.html#abb0ad571b894541ccc4722f669ce8097", null ]
+    [ "Dune::IGA::IdentityTrim::Parameter", "d2/d71/a01684.html", null ],
+    [ "Dune::IGA::IdentityTrim::ElementTrimDataImpl< mydim_, ScalarType >", "d6/d53/a01688.html", null ],
+    [ "Dune::IGA::IdentityTrim::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "da/dc4/a01692.html", null ],
+    [ "Dune::IGA::IdentityTrim::PatchTrimDataImpl< dim, ScalarType >", "d9/d49/a01696.html", null ],
+    [ "Dune::IGA::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >", "d7/d5a/a01204.html", "d7/d5a/a01204" ],
+    [ "Dune::IGA::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits", "d0/dbc/a01704.html", "d0/dbc/a01704" ],
+    [ "Dune::IGA::IdentityTrim::PatchGridFamily< dim, dimworld, ScalarType >::TrimmerTraits::Codim< codim >", "de/d5c/a01708.html", "de/d5c/a01708" ]
 ];

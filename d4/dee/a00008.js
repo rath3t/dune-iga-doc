@@ -1,6 +1,5 @@
 var a00008 =
 [
-    [ "Reader", "d4/dee/a00008.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-      [ "json", "d4/dee/a00008.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-    ] ]
+    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "de/d9c/a01092.html", "de/d9c/a01092" ],
+    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "d2/d20/a01096.html", "d2/d20/a01096" ]
 ];

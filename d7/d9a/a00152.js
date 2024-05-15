@@ -1,4 +1,5 @@
 var a00152 =
 [
-    [ "Dune::GridFactory< IGA::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d0/d67/a01232.html", "d0/d67/a01232" ]
+    [ "readJson", "d7/d9a/a00152.html#aa0f8ccf410542ea91d5841fee8673130", null ],
+    [ "readJson", "d7/d9a/a00152.html#a9d751eac9df3522e457a5620082bb7e8", null ]
 ];

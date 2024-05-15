@@ -1,5 +1,4 @@
 var a00026 =
 [
-    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, true >", "d4/d49/a01316.html", "d4/d49/a01316" ],
-    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, false >", "df/dec/a01320.html", "df/dec/a01320" ]
+    [ "closestPointProjectionByTrustRegion", "d6/d5b/a00026.html#a7a62c0cc97a46970cbdfeaa02f5afa2e", null ]
 ];

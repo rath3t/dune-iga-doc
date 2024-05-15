@@ -1,11 +1,14 @@
 var a00038 =
 [
-    [ "Dune::IGA::DefaultTrim::ElementTrimDataImpl< Grid >", "d0/d36/a01388.html", "d0/d36/a01388" ],
-    [ "Dune::IGA::DefaultTrim::ElementTrimDataImpl< Grid >::VertexInfo", "d1/dcc/a01392.html", "d1/dcc/a01392" ],
-    [ "Dune::IGA::DefaultTrim::ElementTrimDataImpl< Grid >::EdgeInfo", "d9/d45/a01396.html", "d9/d45/a01396" ],
-    [ "ElementTrimFlag", "d8/d41/a00038.html#a684b340440b49f6af9336f072361bdc7", [
-      [ "full", "d8/d41/a00038.html#a684b340440b49f6af9336f072361bdc7ae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "d8/d41/a00038.html#a684b340440b49f6af9336f072361bdc7aa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "d8/d41/a00038.html#a684b340440b49f6af9336f072361bdc7a853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ]
+    [ "Dune::IGA::Utilities::Domain< ScalarType >", "d9/d67/a01080.html", "d9/d67/a01080" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d8/d41/a00038.html#a532897d1990f320393603ae743e25401", null ],
+    [ "clampToDomain", "d8/d41/a00038.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
+    [ "linspace", "d8/d41/a00038.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
+    [ "linspace", "d8/d41/a00038.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
+    [ "linspace", "d8/d41/a00038.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
+    [ "mapToRange", "d8/d41/a00038.html#a3d59a12b8ff14b4ae1ba2bf40845b301", null ],
+    [ "mapToRange", "d8/d41/a00038.html#a9bfbe1e0c0481fdaa7f59bbcb02aae19", null ],
+    [ "mapToRange", "d8/d41/a00038.html#a36c887e0deedc2b16c340ffcee35f961", null ],
+    [ "mapToRangeFromZeroToOne", "d8/d41/a00038.html#a86276840eb12dcb7cc614974d1675d6c", null ],
+    [ "splitDomainInHalf", "d8/d41/a00038.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: findintersection.hh File Reference</title>
+<title>dune-iga: patchgridfactory.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,70 +92,33 @@ $(document).ready(function(){initNavTree('d5/dcb/a00170.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#define-members">Macros</a> &#124;
-<a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">findintersection.hh File Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">patchgridfactory.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;dune/common/float_cmp.hh&quot;</code><br />
-<code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../da/d1e/a00149_source.html">../io/ibrareader.hh</a>&quot;</code><br />
+<code>#include &lt;nlohmann/json.hpp&gt;</code><br />
+<code>#include &lt;dune/grid/common/gridfactory.hh&gt;</code><br />
 </div>
 <p><a href="../../d5/dcb/a00170_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d67/a01232.html">Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, TrimmerType_, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d9/d01/a00227"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d01/a00227.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:de/dc2/a00228"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html">Dune::IGA</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
-Macros</h2></td></tr>
-<tr class="memitem:ae4bc7cdc5e53b7a5a31910e968d7ef0b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dcb/a00170.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b">DUNE_FMatrix_WITH_CHECKING</a></td></tr>
-<tr class="separator:ae4bc7cdc5e53b7a5a31910e968d7ef0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
-Enumerations</h2></td></tr>
-<tr class="memitem:aa9ac1b688f23da46f2a4b8c9063de166"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html#aa9ac1b688f23da46f2a4b8c9063de166">Dune::IGA::IntersectionCurveAndLine</a> { <a class="el" href="../../de/dc2/a00228.html#aa9ac1b688f23da46f2a4b8c9063de166aff8d48ba74b051ac230fb0c28ae11984">Dune::IGA::disjoint</a>
-, <a class="el" href="../../de/dc2/a00228.html#aa9ac1b688f23da46f2a4b8c9063de166aea228c391b72961cc1370e2d66442d86">Dune::IGA::intersect</a>
-, <a class="el" href="../../de/dc2/a00228.html#aa9ac1b688f23da46f2a4b8c9063de166a48920c071f6a5c97ae3739be64630697">Dune::IGA::parallel</a>
- }</td></tr>
-<tr class="separator:aa9ac1b688f23da46f2a4b8c9063de166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:aacb1dcc3d78324404e5cfe1284bc3d16"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; <br />
-requires (dim == 2)</td></tr>
-<tr class="memitem:aacb1dcc3d78324404e5cfe1284bc3d16"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html#aacb1dcc3d78324404e5cfe1284bc3d16">Dune::IGA::findIntersectionLinearCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
-<tr class="separator:aacb1dcc3d78324404e5cfe1284bc3d16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab844b5f8a427e7ef41a201df359488fc"><td class="memTemplParams" colspan="2">template&lt;typename GeoCurve , typename ScalarType , int dim&gt; </td></tr>
-<tr class="memitem:ab844b5f8a427e7ef41a201df359488fc"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../de/dc2/a00228.html#ab844b5f8a427e7ef41a201df359488fc">Dune::IGA::findIntersectionCurveAndLine</a> (const GeoCurve &amp;geoCurve, const FieldVector&lt; ScalarType, dim &gt; &amp;pos, const FieldVector&lt; ScalarType, dim &gt; &amp;dir, FieldVector&lt; ScalarType, 2 &gt; tParameter, ScalarType tol=1e-10)</td></tr>
-<tr class="separator:ab844b5f8a427e7ef41a201df359488fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
-<a id="ae4bc7cdc5e53b7a5a31910e968d7ef0b" name="ae4bc7cdc5e53b7a5a31910e968d7ef0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4bc7cdc5e53b7a5a31910e968d7ef0b">&#9670;&nbsp;</a></span>DUNE_FMatrix_WITH_CHECKING</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">#define DUNE_FMatrix_WITH_CHECKING</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d5/dcb/a00170.html">findintersection.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d5/dcb/a00170.html">patchgridfactory.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

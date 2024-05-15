@@ -1,5 +1,7 @@
 var a00095 =
 [
-    [ "isSameEdgeGeometry", "d9/d77/a00095.html#a8725433a6226ec66c7e7221475da8e10", null ],
-    [ "sameCorner", "d9/d77/a00095.html#a348d10e73bae872e0c993c5521f10606", null ]
+    [ "Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator< GridImp >", "dc/d85/a01436.html", "dc/d85/a01436" ],
+    [ "Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator< GridImp >::Parameters", "df/d31/a01440.html", "df/d31/a01440" ],
+    [ "mapbox::util::nth< 0, Dune::FieldVector< T, 2 > >", "d7/d32/a01444.html", "d7/d32/a01444" ],
+    [ "mapbox::util::nth< 1, Dune::FieldVector< T, 2 > >", "dd/d08/a01448.html", "dd/d08/a01448" ]
 ];
