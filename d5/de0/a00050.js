@@ -1,5 +1,5 @@
 var a00050 =
 [
-    [ "Dune::IGA::DefaultTrim::PatchTrimDataImpl< GridImp >", "da/dc7/a01548.html", "da/dc7/a01548" ],
-    [ "Dune::IGA::DefaultTrim::PatchTrimDataImpl< GridImp >::CurveManager", "d0/db9/a01552.html", "d0/db9/a01552" ]
+    [ "Dune::IGA::DefaultTrim::PatchTrimDataImpl< GridImp >", "d6/dd7/a01555.html", "d6/dd7/a01555" ],
+    [ "Dune::IGA::DefaultTrim::PatchTrimDataImpl< GridImp >::CurveManager", "de/d1a/a01559.html", "de/d1a/a01559" ]
 ];
