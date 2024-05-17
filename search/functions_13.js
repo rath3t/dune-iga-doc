@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['targetaccuracy_0',['targetAccuracy',['../d3/deb/a01619.html#a9c1e29d25ce10f49e9bd4c125d95f9ea',1,'Preferences::targetAccuracy(double _targetAccuracy)'],['../d3/deb/a01619.html#a9dd02cab5bf09d91219d194b8ee5c3c0',1,'Preferences::targetAccuracy()']]],
+  ['targetaccuracy_0',['targetAccuracy',['../d3/deb/a01619.html#a9c1e29d25ce10f49e9bd4c125d95f9ea',1,'Preferences::targetAccuracy(double _targetAccuracy)'],['../d3/deb/a01619.html#a0ed4096cdd5500429567dc33c2a59ba0',1,'Preferences::targetAccuracy() const']]],
   ['tensorproductcoordinates_1',['tensorProductCoordinates',['../d5/d39/a01219.html#a6e3b18a1611266d640adf64d1e9ff4f8',1,'Dune::IGA::PatchGrid::tensorProductCoordinates()'],['../dd/d42/a01259.html#a0e5e325b8edc3c4304d9fa784b471e1f',1,'Dune::IGA::PatchGridLevelGridView::tensorProductCoordinates()'],['../de/dcb/a01263.html#ad46b7a6d8f562f9bd6a8984fcce1dcc1',1,'Dune::IGA::PatchGridLeafGridView::tensorProductCoordinates()']]],
   ['transform_2',['transform',['../d0/d53/a00232.html#a02efab58e4dc7beb7bc5bc3307131a12',1,'Dune::IGA::GeometryKernel']]],
   ['transformcontrolpoints_3',['transformControlPoints',['../d5/da7/a01283.html#ac09946129aba6251a1a0cf31a9c8186a',1,'Dune::IGA::Ibra::IbraNURBSData']]],
