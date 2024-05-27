@@ -148,7 +148,7 @@ $(document).ready(function(){initNavTree('d9/d77/a00095_source.html','../../'); 
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; edgeInfo : trimData.edges()) {</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="keywordflow">if</span> (edgeInfo.isTrimmed) {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> localGeometry         = <a class="code hl_function" href="../../d0/d53/a00232.html#a5295757b5acf619a91ba551125ad7419">GeometryKernel::transformToSpan</a>(edgeInfo.geometry.value(), hostEntity.geometry());</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        <span class="keyword">auto</span> localGeometry = <a class="code hl_function" href="../../d0/d53/a00232.html#a5295757b5acf619a91ba551125ad7419">GeometryKernel::transformToSpan</a>(edgeInfo.geometry.value(), hostEntity.geometry());</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        splitBoundary(localGeometry, parameters, vertices);</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      } <span class="keywordflow">else</span> {</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keyword">auto</span> refElement = <a class="code hl_function" href="../../df/d17/a00231.html#a10579811f681f13697cedf2abf633e78">referenceElement</a>(hostEntity);</div>
@@ -182,114 +182,100 @@ $(document).ready(function(){initNavTree('d9/d77/a00095_source.html','../../'); 
 <div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> splitBoundary(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; localGeometry, <span class="keyword">const</span> Parameters&amp; parameters, std::vector&lt;Point&gt;&amp; points) {</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">if</span> (localGeometry.affine()) {</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      points.push_back(localGeometry.global({0.0}));</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">return</span>;</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    }</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span> </div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="keywordflow">if</span> (not parameters.useAdaptiveDivisions()) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      points.reserve(parameters.boundaryDivisions);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> local : <a class="code hl_function" href="../../d6/de1/a00233.html#aa3db3f379446d87eac1f9cc39abcbedd">Utilities::linspace</a>(0.0, 1.0, parameters.boundaryDivisions))</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        points.push_back(localGeometry.global({local}));</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="comment">// Guess initial amount of segments (a quadratic segment of lenght 1 should be devided by 5 divions)</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      <span class="keywordtype">double</span> curveLength   = localGeometry.curveLength();</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>      <span class="keyword">auto</span> initialSegments = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::ceil(5 * curveLength * localGeometry.degree()[0]));</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span> </div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      std::vector&lt;Point&gt; initialPoints;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> i : Dune::range(initialSegments)) {</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        <span class="keywordtype">double</span> t = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(i) / initialSegments;</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        initialPoints.push_back(localGeometry.global({t}));</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>      }</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>      points.push_back(initialPoints.front());</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>      <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i_ = 0; i_ &lt; initialPoints.size() - 1; ++i_) {</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>        <span class="keyword">const</span> <span class="keyword">auto</span> i = <span class="keyword">static_cast&lt;</span><span class="keywordtype">double</span><span class="keyword">&gt;</span>(i_);</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        refineSegments(points, localGeometry, i * (1.0 / initialSegments), (i + 1) * (1.0 / initialSegments),</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>                       parameters.targetAccuracy);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>      }</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    }</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    points.push_back(localGeometry.global({1.0}));</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span> </div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="comment">// Remove last element to avoid duplication</span></div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    points.pop_back();</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>  }</div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span> </div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  <span class="keyword">static</span> <span class="keyword">auto</span> triangulate(<span class="keyword">const</span> std::vector&lt;Point&gt;&amp; points) -&gt; std::vector&lt;Index&gt; {</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    std::vector&lt;std::vector&lt;Point&gt;&gt; polygonInput;</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    polygonInput.push_back(points);</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    <span class="keywordflow">return</span> mapbox::earcut&lt;Index&gt;(polygonInput);</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  }</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>  <span class="keyword">static</span> <span class="keyword">auto</span> makeQuadratureRule(<span class="keyword">const</span> std::vector&lt;Element&gt;&amp; elements, <span class="keywordtype">int</span> quadratureOrder,</div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>                                 <span class="keyword">const</span> QuadratureType::Enum qt) {</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    assert(qt == QuadratureType::GaussLegendre);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    Dune::QuadratureRule&lt;double, dim&gt; vector{};</div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; subElement : elements) {</div>
-<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; rule = Dune::QuadratureRules&lt;double, dim&gt;::rule(subElement.type(), quadratureOrder, qt);</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> ip : rule) {</div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        <span class="keyword">auto</span> globalInSpan = subElement.global(ip.position());</div>
-<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>        vector.emplace_back(globalInSpan, ip.weight() * subElement.integrationElement(ip.position()));</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>      }</div>
-<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>    }</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> vector;</div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  }</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>  <span class="comment">// Function to calculate the distance between two points</span></div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>  <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code hl_function" href="../../d0/d1f/a00247.html#a4bfc3f4a9119d181e745c9b2c36f62e2">distance</a>(<span class="keyword">const</span> Point&amp; p1, <span class="keyword">const</span> Point&amp; p2) {</div>
-<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keywordflow">return</span> std::sqrt(Dune::power(p2[0] - p1[0], 2) + Dune::power(p2[1] - p1[1], 2));</div>
-<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>  }</div>
-<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span> </div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>  <span class="keyword">static</span> <span class="keywordtype">void</span> refineSegments(std::vector&lt;Point&gt;&amp; points, <span class="keyword">const</span> <span class="keyword">auto</span>&amp; localGeometry, <span class="keywordtype">double</span> t_start, <span class="keywordtype">double</span> t_end,</div>
-<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>                             <span class="keywordtype">double</span> tolerance) {</div>
-<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    Point p1 = localGeometry.global({t_start});</div>
-<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    Point p2 = localGeometry.global({t_end});</div>
-<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span> </div>
-<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>    <span class="comment">// Calculate the midpoint of the parameter</span></div>
-<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keywordtype">double</span> t_mid = (t_start + t_end) / 2;</div>
-<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    Point p_mid  = localGeometry.global({t_mid});</div>
-<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span> </div>
-<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>    <span class="comment">// Calculate the perpendicular distance from the midpoint to the line segment</span></div>
-<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>    <span class="keywordtype">double</span> numerator =</div>
-<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>        std::abs((p2[1] - p1[1]) * p_mid[0] - (p2[0] - p1[0]) * p_mid[1] + p2[0] * p1[1] - p2[1] * p1[0]);</div>
-<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span>    <span class="keywordtype">double</span> denominator     = <a class="code hl_function" href="../../d0/d1f/a00247.html#a4bfc3f4a9119d181e745c9b2c36f62e2">distance</a>(p1, p2);</div>
-<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span>    <span class="keywordtype">double</span> dist_to_segment = numerator / denominator;</div>
-<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span> </div>
-<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span>    <span class="keywordflow">if</span> (dist_to_segment &gt; tolerance) {</div>
-<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>      <span class="comment">// If the distance is greater than the tolerance, subdivide recursively</span></div>
-<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span>      refineSegments(points, localGeometry, t_start, t_mid, tolerance);</div>
-<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>      refineSegments(points, localGeometry, t_mid, t_end, tolerance);</div>
-<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>      points.push_back(p2); <span class="comment">// Include the endpoint of the segment</span></div>
-<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>    }</div>
-<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  }</div>
-<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span>};</div>
-<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span> </div>
-<div class="line"><a id="l00176" name="l00176"></a><span class="lineno">  176</span>} <span class="comment">// namespace Dune::IGA::DefaultTrim</span></div>
-<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span> </div>
-<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span><span class="comment">// Add support for Dune::FieldVector in Earcut</span></div>
-<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="../../dd/dd7/a00248.html">  179</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../de/dbc/a00249.html">mapbox::util</a> {</div>
-<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span> </div>
-<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00182" name="l00182"></a><span class="lineno"><a class="line" href="../../d3/dbc/a01451.html">  182</a></span><span class="keyword">struct </span>nth&lt;0, <a class="code hl_namespace" href="../../d1/da8/a00230.html">Dune</a>::FieldVector&lt;T, 2&gt;&gt;</div>
-<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>{</div>
-<div class="line"><a id="l00184" name="l00184"></a><span class="lineno"><a class="line" href="../../d3/dbc/a01451.html#a4e0343e33a34537216659a76f9712b7a">  184</a></span>  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../d3/dbc/a01451.html#a4e0343e33a34537216659a76f9712b7a">get</a>(<span class="keyword">const</span> Dune::FieldVector&lt;T, 2&gt;&amp; t) {</div>
-<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>    <span class="keywordflow">return</span> t[0];</div>
-<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>  };</div>
-<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>};</div>
-<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span> </div>
-<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno"><a class="line" href="../../df/dc5/a01455.html">  190</a></span><span class="keyword">struct </span>nth&lt;1, <a class="code hl_namespace" href="../../d1/da8/a00230.html">Dune</a>::FieldVector&lt;T, 2&gt;&gt;</div>
-<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>{</div>
-<div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="../../df/dc5/a01455.html#af002bbed9e7b892d568cec3f376d18a5">  192</a></span>  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../df/dc5/a01455.html#af002bbed9e7b892d568cec3f376d18a5">get</a>(<span class="keyword">const</span> Dune::FieldVector&lt;T, 2&gt;&amp; t) {</div>
-<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordflow">return</span> t[1];</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  };</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>};</div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>} <span class="comment">// namespace mapbox::util</span></div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>    <span class="keywordflow">if</span> (localGeometry.affine()) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      points.push_back(localGeometry.global({0.0}));</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>      <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    }</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">if</span> (not parameters.useAdaptiveDivisions()) {</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>      points.reserve(parameters.boundaryDivisions);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> local : <a class="code hl_function" href="../../d6/de1/a00233.html#aa3db3f379446d87eac1f9cc39abcbedd">Utilities::linspace</a>(0.0, 1.0, parameters.boundaryDivisions))</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>        points.push_back(localGeometry.global({local}));</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>      <span class="comment">// Guess initial amount of segments (a linear segment of lenght 1 should be devided by 1 divions)</span></div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>      <span class="keywordtype">double</span> curveLength = localGeometry.curveLength();</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>      <span class="keyword">auto</span> segments      = <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">int</span><span class="keyword">&gt;</span>(std::ceil(1 * curveLength * localGeometry.degree()[0]));</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>      <span class="keywordtype">bool</span> converged = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>      std::vector&lt;Point&gt; newPoints;</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>      <span class="keywordflow">while</span> (not converged) {</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        std::tie(converged, newPoints) =</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>            checkForConvergence(localGeometry, segments, curveLength, parameters.targetAccuracy);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        ++segments;</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        <span class="keywordflow">if</span> (converged)</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>          points.insert(points.end(), newPoints.begin(), newPoints.end());</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>      }</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    }</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="comment">// points.push_back(localGeometry.global({1.0}));</span></div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="comment">// Remove last element to avoid duplication</span></div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    points.pop_back();</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  }</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keyword">static</span> <span class="keyword">auto</span> triangulate(<span class="keyword">const</span> std::vector&lt;Point&gt;&amp; points) -&gt; std::vector&lt;Index&gt; {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    std::vector&lt;std::vector&lt;Point&gt;&gt; polygonInput;</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    polygonInput.push_back(points);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordflow">return</span> mapbox::earcut&lt;Index&gt;(polygonInput);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  }</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  <span class="keyword">static</span> <span class="keyword">auto</span> makeQuadratureRule(<span class="keyword">const</span> std::vector&lt;Element&gt;&amp; elements, <span class="keywordtype">int</span> quadratureOrder,</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>                                 <span class="keyword">const</span> QuadratureType::Enum qt) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    assert(qt == QuadratureType::GaussLegendre);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    Dune::QuadratureRule&lt;double, dim&gt; vector{};</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; subElement : elements) {</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; rule = Dune::QuadratureRules&lt;double, dim&gt;::rule(subElement.type(), quadratureOrder, qt);</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> ip : rule) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <span class="keyword">auto</span> globalInSpan = subElement.global(ip.position());</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        vector.emplace_back(globalInSpan, ip.weight() * subElement.integrationElement(ip.position()));</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>      }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    }</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">return</span> vector;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>  <span class="comment">// Function to calculate the distance between two points</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span> </div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  <span class="keyword">static</span> <span class="keyword">auto</span> checkForConvergence(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; localGeometry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numSegements, <span class="keywordtype">double</span> curveLength,</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                                  <span class="keywordtype">double</span> targetAccuracy) -&gt; std::pair&lt;bool, std::vector&lt;Point&gt;&gt; {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../d0/d1f/a00247.html#a4bfc3f4a9119d181e745c9b2c36f62e2">distance</a> = [](<span class="keyword">const</span> <a class="code hl_typedef" href="../../d6/d65/a01443.html#afff4bf59bb37a374dce4a5ea04d2d1e9">Point</a>&amp; p1, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d6/d65/a01443.html#afff4bf59bb37a374dce4a5ea04d2d1e9">Point</a>&amp; p2) {</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>      <span class="keywordflow">return</span> std::sqrt(Dune::power(p2[0] - p1[0], 2) + Dune::power(p2[1] - p1[1], 2));</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    };</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span> </div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    std::vector&lt;Point&gt; points;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> local : <a class="code hl_function" href="../../d6/de1/a00233.html#aa3db3f379446d87eac1f9cc39abcbedd">Utilities::linspace</a>(0.0, 1.0, numSegements + 1))</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>      points.push_back(localGeometry.global({local}));</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span> </div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>    <span class="keywordtype">double</span> totalDistance = 0.0;</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> i : Dune::range(1ul, points.size()))</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>      totalDistance += <a class="code hl_function" href="../../d0/d1f/a00247.html#a4bfc3f4a9119d181e745c9b2c36f62e2">distance</a>(points[i - 1], points[i]);</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span> </div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span>    <span class="keyword">auto</span> converged = std::abs((totalDistance - curveLength) / curveLength) &lt; targetAccuracy;</div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span>    <span class="keywordflow">return</span> std::make_pair(converged, points);</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>  }</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>};</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno">  162</span>} <span class="comment">// namespace Dune::IGA::DefaultTrim</span></div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno">  163</span> </div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno">  164</span><span class="comment">// Add support for Dune::FieldVector in Earcut</span></div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="../../dd/dd7/a00248.html">  165</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../de/dbc/a00249.html">mapbox::util</a> {</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno">  166</span> </div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="../../d3/dbc/a01451.html">  168</a></span><span class="keyword">struct </span>nth&lt;0, <a class="code hl_namespace" href="../../d1/da8/a00230.html">Dune</a>::FieldVector&lt;T, 2&gt;&gt;</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>{</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno"><a class="line" href="../../d3/dbc/a01451.html#a4e0343e33a34537216659a76f9712b7a">  170</a></span>  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../d3/dbc/a01451.html#a4e0343e33a34537216659a76f9712b7a">get</a>(<span class="keyword">const</span> Dune::FieldVector&lt;T, 2&gt;&amp; t) {</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    <span class="keywordflow">return</span> t[0];</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  };</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>};</div>
+<div class="line"><a id="l00174" name="l00174"></a><span class="lineno">  174</span> </div>
+<div class="line"><a id="l00175" name="l00175"></a><span class="lineno">  175</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00176" name="l00176"></a><span class="lineno"><a class="line" href="../../df/dc5/a01455.html">  176</a></span><span class="keyword">struct </span>nth&lt;1, <a class="code hl_namespace" href="../../d1/da8/a00230.html">Dune</a>::FieldVector&lt;T, 2&gt;&gt;</div>
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno">  177</span>{</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno"><a class="line" href="../../df/dc5/a01455.html#af002bbed9e7b892d568cec3f376d18a5">  178</a></span>  <span class="keyword">inline</span> <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../df/dc5/a01455.html#af002bbed9e7b892d568cec3f376d18a5">get</a>(<span class="keyword">const</span> Dune::FieldVector&lt;T, 2&gt;&amp; t) {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>    <span class="keywordflow">return</span> t[1];</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>  };</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>};</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>} <span class="comment">// namespace mapbox::util</span></div>
 <div class="ttc" id="aa00035_html"><div class="ttname"><a href="../../d4/d8c/a00035.html">nurbspatchtransform.hh</a></div></div>
 <div class="ttc" id="aa00038_html"><div class="ttname"><a href="../../d8/d41/a00038.html">geohelper.hh</a></div></div>
 <div class="ttc" id="aa00092_html"><div class="ttname"><a href="../../d1/dc1/a00092.html">trimmerpreferences.hh</a></div></div>
@@ -299,7 +285,7 @@ $(document).ready(function(){initNavTree('d9/d77/a00095_source.html','../../'); 
 <div class="ttc" id="aa00233_html_aa3db3f379446d87eac1f9cc39abcbedd"><div class="ttname"><a href="../../d6/de1/a00233.html#aa3db3f379446d87eac1f9cc39abcbedd">Dune::IGA::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdoc">A view with N coordinates between a and b including a and b.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:108</div></div>
 <div class="ttc" id="aa00246_html"><div class="ttname"><a href="../../d4/d9a/a00246.html">Dune::IGA::DefaultTrim</a></div><div class="ttdef"><b>Definition:</b> createentities.hh:10</div></div>
 <div class="ttc" id="aa00247_html_a4bfc3f4a9119d181e745c9b2c36f62e2"><div class="ttname"><a href="../../d0/d1f/a00247.html#a4bfc3f4a9119d181e745c9b2c36f62e2">Dune::IGA::DefaultTrim::Util::distance</a></div><div class="ttdeci">auto distance(const Clipper2Lib::PointD &amp;p1, const auto &amp;p2) -&gt; double</div><div class="ttdef"><b>Definition:</b> trimutils.hh:21</div></div>
-<div class="ttc" id="aa00249_html"><div class="ttname"><a href="../../de/dbc/a00249.html">mapbox::util</a></div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:179</div></div>
+<div class="ttc" id="aa00249_html"><div class="ttname"><a href="../../de/dbc/a00249.html">mapbox::util</a></div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:165</div></div>
 <div class="ttc" id="aa01443_html"><div class="ttname"><a href="../../d6/d65/a01443.html">Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator</a></div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:16</div></div>
 <div class="ttc" id="aa01443_html_a0b633eb0a88526adac57e9494f3dc00c"><div class="ttname"><a href="../../d6/d65/a01443.html#a0b633eb0a88526adac57e9494f3dc00c">Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::createIntegrationRule</a></div><div class="ttdeci">static auto createIntegrationRule(const PatchElement &amp;element, int quadratureOrder, const Parameters &amp;parameters=Parameters{}, const QuadratureType::Enum qt=QuadratureType::GaussLegendre)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:34</div></div>
 <div class="ttc" id="aa01443_html_a1247253f2a4d0fb78c9af00e8e693108"><div class="ttname"><a href="../../d6/d65/a01443.html#a1247253f2a4d0fb78c9af00e8e693108">Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Element</a></div><div class="ttdeci">MultiLinearGeometry&lt; double, dim, dim &gt; Element</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:22</div></div>
@@ -312,8 +298,8 @@ $(document).ready(function(){initNavTree('d9/d77/a00095_source.html','../../'); 
 <div class="ttc" id="aa01447_html_a79f69862cf64225eb07817c511ae0fc0"><div class="ttname"><a href="../../df/d75/a01447.html#a79f69862cf64225eb07817c511ae0fc0">Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters::boundaryDivisions</a></div><div class="ttdeci">int boundaryDivisions</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:26</div></div>
 <div class="ttc" id="aa01447_html_a905663c9f5059e7a735d2fc5bef9a1a6"><div class="ttname"><a href="../../df/d75/a01447.html#a905663c9f5059e7a735d2fc5bef9a1a6">Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters::targetAccuracy</a></div><div class="ttdeci">double targetAccuracy</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:27</div></div>
 <div class="ttc" id="aa01447_html_aa5c401a128200b1e2244a20e636e0ea4"><div class="ttname"><a href="../../df/d75/a01447.html#aa5c401a128200b1e2244a20e636e0ea4">Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator::Parameters::useAdaptiveDivisions</a></div><div class="ttdeci">bool useAdaptiveDivisions() const</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:29</div></div>
-<div class="ttc" id="aa01451_html_a4e0343e33a34537216659a76f9712b7a"><div class="ttname"><a href="../../d3/dbc/a01451.html#a4e0343e33a34537216659a76f9712b7a">mapbox::util::nth&lt; 0, Dune::FieldVector&lt; T, 2 &gt; &gt;::get</a></div><div class="ttdeci">static auto get(const Dune::FieldVector&lt; T, 2 &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:184</div></div>
-<div class="ttc" id="aa01455_html_af002bbed9e7b892d568cec3f376d18a5"><div class="ttname"><a href="../../df/dc5/a01455.html#af002bbed9e7b892d568cec3f376d18a5">mapbox::util::nth&lt; 1, Dune::FieldVector&lt; T, 2 &gt; &gt;::get</a></div><div class="ttdeci">static auto get(const Dune::FieldVector&lt; T, 2 &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:192</div></div>
+<div class="ttc" id="aa01451_html_a4e0343e33a34537216659a76f9712b7a"><div class="ttname"><a href="../../d3/dbc/a01451.html#a4e0343e33a34537216659a76f9712b7a">mapbox::util::nth&lt; 0, Dune::FieldVector&lt; T, 2 &gt; &gt;::get</a></div><div class="ttdeci">static auto get(const Dune::FieldVector&lt; T, 2 &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:170</div></div>
+<div class="ttc" id="aa01455_html_af002bbed9e7b892d568cec3f376d18a5"><div class="ttname"><a href="../../df/dc5/a01455.html#af002bbed9e7b892d568cec3f376d18a5">mapbox::util::nth&lt; 1, Dune::FieldVector&lt; T, 2 &gt; &gt;::get</a></div><div class="ttdeci">static auto get(const Dune::FieldVector&lt; T, 2 &gt; &amp;t)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:178</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
