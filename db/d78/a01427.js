@@ -1,15 +1,20 @@
 var a01427 =
 [
-    [ "EntitySeedType", "db/d78/a01427.html#af4dd37bb0278ad419a99fe3f3562f20a", null ],
-    [ "HostIdType", "db/d78/a01427.html#a6b840b5407f221c14094f3a9af09fefe", null ],
-    [ "TrimInfo", "db/d78/a01427.html#a4198daa48f62e96cd80c6cc267756564", null ],
-    [ "isTrimmed", "db/d78/a01427.html#ac1694fa14d37e6c1fcdc57599a9e1493", null ],
-    [ "isValid", "db/d78/a01427.html#aa1fc27babb5a9556d960c1125a749174", null ],
-    [ "codimension", "db/d78/a01427.html#a83ea83a5e5d49a7299a995cc67bbb1c9", null ],
-    [ "hostSeed", "db/d78/a01427.html#abcddc4484394ea4d0d8def123be3ee58", null ],
-    [ "id", "db/d78/a01427.html#a3aa2b1d612d91b57cef5c7ec01f2c2bc", null ],
-    [ "indexInLvlStorage", "db/d78/a01427.html#ad715fab1b92666d87fef82fe9212fbbe", null ],
-    [ "lvl", "db/d78/a01427.html#adf4f716783b3bd70e20585c3f604e54e", null ],
-    [ "trimInfo", "db/d78/a01427.html#aa59ccd6f3d26a0388c29cc6ed88bf760", null ],
-    [ "trimmed", "db/d78/a01427.html#a8386527f4610d136abd9bafc5f274831", null ]
+    [ "GeometryMap", "d7/d8b/a01431.html", "d7/d8b/a01431" ],
+    [ "EntitySeedType", "db/d78/a01427.html#a211d49b9e551451b52258ef2cc718c96", null ],
+    [ "HostIdType", "db/d78/a01427.html#abf3304ee9ec8674a3d90f4dff89468ec", null ],
+    [ "TrimInfo", "db/d78/a01427.html#acc54d5ca31cb15e814d409c88b1ba2a2", null ],
+    [ "TrimmedEntityGeometry", "db/d78/a01427.html#a06ced35861337d508253574b8573a5e2", null ],
+    [ "intersectionGeometry", "db/d78/a01427.html#a27dcfdb15f1995916b174727698c9cea", null ],
+    [ "isTrimmed", "db/d78/a01427.html#a6d0126f6f256ef0645e6763ce111056f", null ],
+    [ "isTrimmedHost", "db/d78/a01427.html#abb664957ce7a70d27f8c9b99e8167ba9", null ],
+    [ "isValid", "db/d78/a01427.html#abcce7ea03431818358ced8a8cc426673", null ],
+    [ "codimension", "db/d78/a01427.html#af64530f99b144eef8ad2cd8828bedb39", null ],
+    [ "edgeGeometries", "db/d78/a01427.html#a782fff8e9eba13ad7c37d2ce6f643d0a", null ],
+    [ "hostSeed", "db/d78/a01427.html#adb9c7b1fd427cf8d16822ad397a76104", null ],
+    [ "id", "db/d78/a01427.html#ab66fa1833896563369c78a7deaf9018e", null ],
+    [ "indexInLvlStorage", "db/d78/a01427.html#aa650b6123f57b03c8dc7accd774d0c0d", null ],
+    [ "lvl", "db/d78/a01427.html#a10c80367015beafcba6b323653bbb650", null ],
+    [ "trimInfo", "db/d78/a01427.html#a4ba2aebef43fa3c8c0653d68751767d6", null ],
+    [ "trimmed", "db/d78/a01427.html#ac181ba80add995bd32e53e89162eea96", null ]
 ];

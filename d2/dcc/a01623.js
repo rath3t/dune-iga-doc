@@ -1,14 +1,12 @@
 var a01623 =
 [
-    [ "Preferences", "d2/dcc/a01623.html#adf59987cc80464d2fee431345c5002e5", null ],
-    [ "boundaryDivisions", "d2/dcc/a01623.html#a56a69ee6cfc14cc7635a3c7e056c4cc1", null ],
-    [ "boundaryDivisions", "d2/dcc/a01623.html#a8624608edbeb6affadb1e1129ffc9a70", null ],
-    [ "getInstance", "d2/dcc/a01623.html#a19c3b252a6daa55f42f41a6d9e03e173", null ],
-    [ "operator=", "d2/dcc/a01623.html#ae49006fbc7885b55759167099bfa14ea", null ],
-    [ "reconstructTrimmedLocalGeometry", "d2/dcc/a01623.html#adf5f44c1e76a6121090510c8fbdab6ad", null ],
-    [ "reconstructTrimmedLocalGeometry", "d2/dcc/a01623.html#a18a9676b02aa52fc2e01208d36279f6d", null ],
-    [ "reportTrimmedElementGeometryTypeAsNone", "d2/dcc/a01623.html#a9ec6d02568a5e28528445e58bc361b2e", null ],
-    [ "reportTrimmedElementGeometryTypeAsNone", "d2/dcc/a01623.html#ae57af2c61e14419a95d49f6f75a8e0f9", null ],
-    [ "targetAccuracy", "d2/dcc/a01623.html#a0ed4096cdd5500429567dc33c2a59ba0", null ],
-    [ "targetAccuracy", "d2/dcc/a01623.html#a9c1e29d25ce10f49e9bd4c125d95f9ea", null ]
+    [ "Vertex", "de/db6/a01627.html", "de/db6/a01627" ],
+    [ "ClippingResult", "d2/dcc/a01623.html#ad14cc4d0420b14ace8a61c61595bb852", null ],
+    [ "addInsideVertex", "d2/dcc/a01623.html#a46cf2a84a8467ac9ae8668b4268c6958", null ],
+    [ "addNewVertex", "d2/dcc/a01623.html#abf66b0108b78aad771f81087391f9ce5", null ],
+    [ "addOriginalVertex", "d2/dcc/a01623.html#a0992364abc62f566ec8d68fadad250a5", null ],
+    [ "addOriginalVertex", "d2/dcc/a01623.html#afcec013f5dba63860371a32b0f4b8a01", null ],
+    [ "finish", "d2/dcc/a01623.html#a6c54283389b80bdd1d3d9782717fad66", null ],
+    [ "report", "d2/dcc/a01623.html#a471c43053dc08c7913f68e1e0c176b85", null ],
+    [ "vertices_", "d2/dcc/a01623.html#a1a2f4c50d209ea90053efd4e255f807e", null ]
 ];

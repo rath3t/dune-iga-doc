@@ -7,7 +7,7 @@ var searchData=
   ['hasentity_3c_20iga_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_4',['hasEntity&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../df/dd5/a01115.html',1,'Dune::Capabilities']]],
   ['hasentityiterator_3c_20dune_3a_3agrid_3c_20dim_2c_20dimworld_2c_20scalartype_2c_20iga_3a_3apatchgridfamily_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_20_3e_2c_20codim_20_3e_5',['hasEntityIterator&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;, codim &gt;',['../d9/d5b/a01127.html',1,'Dune::Capabilities']]],
   ['hasentityiterator_3c_20iga_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_6',['hasEntityIterator&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../de/de5/a01123.html',1,'Dune::Capabilities']]],
-  ['hash_3c_20dune_3a_3aiga_3a_3adefaulttrim_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGA::DefaultTrim::IdType&lt; HostIdType &gt; &gt;',['../d9/d13/a01599.html',1,'std']]],
-  ['hostgridaccess_8',['HostGridAccess',['../d8/dd9/a01507.html',1,'Dune::IGA::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../da/d3f/a01215.html',1,'Dune::IGA::HostGridAccess&lt; Grid &gt;']]],
-  ['hostverteximpl_9',['HostVertexImpl',['../dd/d2d/a01635.html',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex']]]
+  ['hash_3c_20dune_3a_3aiga_3a_3adefaulttrim_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGA::DefaultTrim::IdType&lt; HostIdType &gt; &gt;',['../dc/dbf/a01595.html',1,'std']]],
+  ['hostgridaccess_8',['HostGridAccess',['../d6/df5/a01503.html',1,'Dune::IGA::DefaultTrim::HostGridAccess&lt; Grid &gt;'],['../da/d3f/a01215.html',1,'Dune::IGA::HostGridAccess&lt; Grid &gt;']]],
+  ['hostverteximpl_9',['HostVertexImpl',['../d0/da4/a01631.html',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex']]]
 ];

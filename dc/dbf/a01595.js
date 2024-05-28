@@ -1,32 +1,4 @@
 var a01595 =
 [
-    [ "ctype", "dc/dbf/a01595.html#a247b15d125f75ba6a69cdd9830ae398a", null ],
-    [ "GlobalCoordinate", "dc/dbf/a01595.html#a5bdd33fd34fd3b9fc3e79c4e3f26093b", null ],
-    [ "Hessian", "dc/dbf/a01595.html#ade4f1c9a9584d80c581473badf736747", null ],
-    [ "Jacobian", "dc/dbf/a01595.html#adcb8c1445ce63832655336a365d3bcd0", null ],
-    [ "JacobianInverse", "dc/dbf/a01595.html#ad620ff1c1a8863d7bbd90d76ed6e5b01", null ],
-    [ "JacobianInverseTransposed", "dc/dbf/a01595.html#ab0d00173d13e3cadc77360b522579e0e", null ],
-    [ "JacobianTransposed", "dc/dbf/a01595.html#a0ac994b29f514870b8fae5c72003b8cb", null ],
-    [ "LocalCoordinate", "dc/dbf/a01595.html#a9ccd570ba2f7fccba85688cce82d1235", null ],
-    [ "LocalCoordinateInPatch", "dc/dbf/a01595.html#a6c036e3e273537ea367f30e07cd10322", null ],
-    [ "PatchGeometry", "dc/dbf/a01595.html#a1b3ea9c94f98c77769922987f35d0806", null ],
-    [ "Trimmer", "dc/dbf/a01595.html#aa7dca399909c223df72a2eb12865da0d", null ],
-    [ "Volume", "dc/dbf/a01595.html#a3ffbd7c5fd4113c5d461ebe12c98e957", null ],
-    [ "TrimmedLocalGeometryImpl", "dc/dbf/a01595.html#acc0d94042b58fbbf08172d779aa72e33", null ],
-    [ "TrimmedLocalGeometryImpl", "dc/dbf/a01595.html#add91c60ba70d2d5b7e5847c18278310a", null ],
-    [ "affine", "dc/dbf/a01595.html#ad8dbeed337b7bde0d3b87b226e4cdd0f", null ],
-    [ "center", "dc/dbf/a01595.html#ae0c94e0bb9c5dd96182bd5fe441b130c", null ],
-    [ "checkInside", "dc/dbf/a01595.html#a2fda6c5cdbe9b94f64933f14558d4850", null ],
-    [ "corner", "dc/dbf/a01595.html#a0b923ac3485a4994078d6a358fdeaf0c", null ],
-    [ "corners", "dc/dbf/a01595.html#aa968fa55b8f1e8f55efc41f5547b89dd", null ],
-    [ "global", "dc/dbf/a01595.html#a6a628333cb8b31de3d8790a4336c0843", null ],
-    [ "integrationElement", "dc/dbf/a01595.html#ab8c2817fbabbc0fa6cb365b9ec673c89", null ],
-    [ "jacobianInverseTransposed", "dc/dbf/a01595.html#adb560b4d361f3e5c0b942d1f6cc42e71", null ],
-    [ "jacobianTransposed", "dc/dbf/a01595.html#abfd7453b6659f6a2bf21e06f9d3d1ba3", null ],
-    [ "local", "dc/dbf/a01595.html#a4b8e2354cb81124a95b58f51203fa8f6", null ],
-    [ "operator==", "dc/dbf/a01595.html#a538b62bf1c01c42ee8d73ed6e28c4bf6", null ],
-    [ "type", "dc/dbf/a01595.html#a2fc16bf25a2608caaddc2e8de0b7cf94", null ],
-    [ "codim", "dc/dbf/a01595.html#aa2f4a1ab90423abd125f9216fd296bfe", null ],
-    [ "coorddimension", "dc/dbf/a01595.html#a6e1ba80ea0da41ed9dfa36822d9f4f39", null ],
-    [ "mydimension", "dc/dbf/a01595.html#a15c580e2a6701e36b286ef222bf1bb59", null ]
+    [ "operator()", "dc/dbf/a01595.html#a15985651dcdc62c99464c775f7f7a203", null ]
 ];

@@ -1,15 +1,14 @@
 var a01619 =
 [
-    [ "EntityImp", "d3/deb/a01619.html#a9ac498866afdc9f261469f3c83995e6c", null ],
-    [ "EntityInfo", "d3/deb/a01619.html#a6f94ef721027814be92fc8794db0557b", null ],
-    [ "EntitySeedImpl", "d3/deb/a01619.html#a89b96a128966d41092158ffbf9db95c7", null ],
-    [ "HostParameterSpaceGridEntity", "d3/deb/a01619.html#a172380b8e591a4e387ca635f39147c23", null ],
-    [ "LocalGeometry", "d3/deb/a01619.html#a2517ba57cc80e015146507adbb3af1e2", null ],
-    [ "LocalParameterSpaceGeometry", "d3/deb/a01619.html#a265723cb742c47c5c93fd3fbbb1284cc", null ],
-    [ "ParameterSpaceGridEntity", "d3/deb/a01619.html#a489c9a5d854c7c5e5025ab83a5c9f527", null ],
-    [ "ParameterSpaceGridEntitySeed", "d3/deb/a01619.html#ab50bde1069ac37dfcc66442372b46790", null ],
-    [ "TrimmedLocalGeometry", "d3/deb/a01619.html#ae6605938b12cc06ed9a49ff973b74920", null ],
-    [ "TrimmedParameterSpaceGeometry", "d3/deb/a01619.html#adac8f4ec948a4661b6dc6eae3b1fcb84", null ],
-    [ "UntrimmedLocalGeometry", "d3/deb/a01619.html#a8888ed9861751a0bf781bb1cd7151900", null ],
-    [ "UntrimmedParameterSpaceGeometry", "d3/deb/a01619.html#ab3007f93870d703f8cc9c5ef360d4ae1", null ]
+    [ "Preferences", "d3/deb/a01619.html#adf59987cc80464d2fee431345c5002e5", null ],
+    [ "boundaryDivisions", "d3/deb/a01619.html#a56a69ee6cfc14cc7635a3c7e056c4cc1", null ],
+    [ "boundaryDivisions", "d3/deb/a01619.html#a8624608edbeb6affadb1e1129ffc9a70", null ],
+    [ "getInstance", "d3/deb/a01619.html#a19c3b252a6daa55f42f41a6d9e03e173", null ],
+    [ "operator=", "d3/deb/a01619.html#ae49006fbc7885b55759167099bfa14ea", null ],
+    [ "reconstructTrimmedLocalGeometry", "d3/deb/a01619.html#adf5f44c1e76a6121090510c8fbdab6ad", null ],
+    [ "reconstructTrimmedLocalGeometry", "d3/deb/a01619.html#a18a9676b02aa52fc2e01208d36279f6d", null ],
+    [ "reportTrimmedElementGeometryTypeAsNone", "d3/deb/a01619.html#a9ec6d02568a5e28528445e58bc361b2e", null ],
+    [ "reportTrimmedElementGeometryTypeAsNone", "d3/deb/a01619.html#ae57af2c61e14419a95d49f6f75a8e0f9", null ],
+    [ "targetAccuracy", "d3/deb/a01619.html#a0ed4096cdd5500429567dc33c2a59ba0", null ],
+    [ "targetAccuracy", "d3/deb/a01619.html#a9c1e29d25ce10f49e9bd4c125d95f9ea", null ]
 ];

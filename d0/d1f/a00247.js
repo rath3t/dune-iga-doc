@@ -1,6 +1,6 @@
 var a00247 =
 [
-    [ "ClippingResult", "de/db6/a01627.html", "de/db6/a01627" ],
+    [ "ClippingResult", "d2/dcc/a01623.html", "d2/dcc/a01623" ],
     [ "approxSamePoint", "d0/d1f/a00247.html#a195028ded7edd8401392d036fd3961c2", null ],
     [ "callFindIntersection", "d0/d1f/a00247.html#a5c425a5fc3b6576e482419ee8c645eaa", null ],
     [ "clipElementRectangle", "d0/d1f/a00247.html#aa587e9f91c9d82089d6cc2292d7a2ad1", null ],

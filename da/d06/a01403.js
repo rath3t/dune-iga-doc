@@ -1,6 +1,10 @@
 var a01403 =
 [
-    [ "geometry", "da/d06/a01403.html#a167fae259141c71e416e15f8aac17daa", null ],
-    [ "idx", "da/d06/a01403.html#a2a3abbb2cbae089c14ec40698251ef33", null ],
-    [ "isHost", "da/d06/a01403.html#a3027b48872c33d4a3cca47ee2a2b6976", null ]
+    [ "hasBoundarySegmentIdx", "da/d06/a01403.html#ad00c4a60f3527a9c738ef868d91ae68e", null ],
+    [ "boundarySegmentIdx", "da/d06/a01403.html#a4f679c61282ec9dfa969958b43915947", null ],
+    [ "direction", "da/d06/a01403.html#a3ea1691e808fa7f869512cdf4a833afe", null ],
+    [ "geometry", "da/d06/a01403.html#a98500e1010ec1648787fe13a2fd5b755", null ],
+    [ "idx", "da/d06/a01403.html#a3d3aa594498584f223de7584fc6309f9", null ],
+    [ "isHost", "da/d06/a01403.html#ab3ab8d2f4f13dc63ea7b1b0947bf54da", null ],
+    [ "isTrimmed", "da/d06/a01403.html#a883d8ef591af88d0c04179f0b288f218", null ]
 ];

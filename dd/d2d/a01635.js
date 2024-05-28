@@ -1,5 +1,5 @@
 var a01635 =
 [
-    [ "additionalZVal", "dd/d2d/a01635.html#a1e544bc44b0cd40b1904ed9ff3243d2c", null ],
-    [ "hostIdx", "dd/d2d/a01635.html#a27e66f228dcfc38afe9b451ed630c77b", null ]
+    [ "onEdgeIdx", "dd/d2d/a01635.html#a5745533e08e778d183c81416a91b5704", null ],
+    [ "trimmingCurveZ", "dd/d2d/a01635.html#a452e5f16a771a0bc2998c0710c2a9c93", null ]
 ];
