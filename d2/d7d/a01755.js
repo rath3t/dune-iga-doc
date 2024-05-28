@@ -1,6 +1,5 @@
 var a01755 =
 [
-    [ "__init__", "d2/d7d/a01755.html#ae3fe0416d11b39a78e81705f2a908143", null ],
-    [ "__repr__", "d2/d7d/a01755.html#a7e51c24af5841629d3154aac5ea249fe", null ],
-    [ "dimRange", "d2/d7d/a01755.html#a590b25812f71f443cf8cbdd0eb00b338", null ]
+    [ "refineStepsForHalf", "d2/d7d/a01755.html#ac175085ce9ffc120e4fdf64b5cf24e90", null ],
+    [ "refineWeight", "d2/d7d/a01755.html#a8406ab2477444a09a330d394765bcff8", null ]
 ];

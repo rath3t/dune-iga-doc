@@ -103,7 +103,7 @@ $(document).ready(function(){initNavTree('d5/d39/a01219.html','../../'); initRes
 <p>Provides a NURBS grid based on a single NURBS patch.  
  <a href="../../d5/d39/a01219.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../dc/d46/a03507_source.html">dune/iga/hierarchicpatch/patchgrid.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d9/d25/a03511_source.html">dune/iga/hierarchicpatch/patchgrid.hh</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Dune::IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt;:</div>
 <div class="dyncontent">
@@ -133,7 +133,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae71e48cc7a720d8d686d4b351b3d92ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d39/a01219.html#ae71e48cc7a720d8d686d4b351b3d92ba">PatchGrid</a> (const <a class="el" href="../../dc/dbc/a01391.html">NURBSPatchData</a>&lt; dim, dimworld, <a class="el" href="../../d5/d39/a01219.html#ae3acaae8dbba9e45cfadfec04a35242d">ctype</a> &gt; &amp;patchData, const std::optional&lt; <a class="el" href="../../d5/d39/a01219.html#a13058266b5a6dc632907d6d005a0b07b">PatchTrimData</a> &gt; &amp;patchTrimData=std::nullopt, const typename GridFamily::TrimmerTraits::ParameterType &amp;par={})</td></tr>
+<tr class="memitem:ae71e48cc7a720d8d686d4b351b3d92ba"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d39/a01219.html#ae71e48cc7a720d8d686d4b351b3d92ba">PatchGrid</a> (const <a class="el" href="../../d2/df5/a01395.html">NURBSPatchData</a>&lt; dim, dimworld, <a class="el" href="../../d5/d39/a01219.html#ae3acaae8dbba9e45cfadfec04a35242d">ctype</a> &gt; &amp;patchData, const std::optional&lt; <a class="el" href="../../d5/d39/a01219.html#a13058266b5a6dc632907d6d005a0b07b">PatchTrimData</a> &gt; &amp;patchTrimData=std::nullopt, const typename GridFamily::TrimmerTraits::ParameterType &amp;par={})</td></tr>
 <tr class="memdesc:ae71e48cc7a720d8d686d4b351b3d92ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="../../d5/d39/a01219.html#ae71e48cc7a720d8d686d4b351b3d92ba">More...</a><br /></td></tr>
 <tr class="separator:ae71e48cc7a720d8d686d4b351b3d92ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03d0e89681687202e68eefd175ac409e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d5/d39/a01219.html">PatchGrid</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d39/a01219.html#a03d0e89681687202e68eefd175ac409e">operator=</a> (<a class="el" href="../../d5/d39/a01219.html">PatchGrid</a> &amp;&amp;other) noexcept</td></tr>
@@ -284,14 +284,14 @@ class Dune::IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt;</div>
 <div class="line"><span class="keyword">const</span> std::array&lt;int, dim&gt; order = {2, 2};</div>
 <div class="line"><span class="keyword">const</span> std::array&lt;std::vector&lt;double&gt;, dim&gt; knotSpans = {{{0, 0, 0, 1, 1, 1}, {0, 0, 0, 1, 1, 1}}};</div>
 <div class="line"> </div>
-<div class="line"><span class="keyword">using </span><a class="code hl_struct" href="../../d2/d4d/a01079.html">ControlPoint</a> = <a class="code hl_struct" href="../../dc/dbc/a01391.html">NURBSPatchData&lt;dim, dimworld&gt;::ControlPointType</a>;</div>
+<div class="line"><span class="keyword">using </span><a class="code hl_struct" href="../../d2/d4d/a01079.html">ControlPoint</a> = <a class="code hl_struct" href="../../d2/df5/a01395.html">NURBSPatchData&lt;dim, dimworld&gt;::ControlPointType</a>;</div>
 <div class="line"><span class="keyword">const</span> std::vector&lt;std::vector&lt;ControlPoint&gt;&gt; controlPoints = {</div>
 <div class="line">    {{.p = {0, 0}, .w = 1}, {.p = {0.5, 0}, .w = 1}, {.p = {1, 0}, .w = 1}},</div>
 <div class="line">    {{.p = {0, 0.5}, .w = 1}, {.p = {0.5, 0.5}, .w = 1}, {.p = {1, 0.5}, .w = 1}},</div>
 <div class="line">    {{.p = {0, 1}, .w = 1}, {.p = {0.5, 1}, .w = 1}, {.p = {1, 1}, .w = 1}}</div>
 <div class="line">};</div>
 <div class="line">std::array&lt;int, dim&gt; dimsize = {<span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(controlPoints.size()), <span class="keyword">static_cast&lt;</span><span class="keywordtype">int</span><span class="keyword">&gt;</span>(controlPoints[0].<a class="code hl_function" href="../../d5/d39/a01219.html#ab4bdaac8d51ffcf7d335702f61ece771">size</a>())};</div>
-<div class="line"><span class="keyword">auto</span> controlNet = <a class="code hl_typedef" href="../../dc/dbc/a01391.html#ae717786e1d144a64c616c3234f9d4483">NURBSPatchData&lt;dim, dimworld&gt;::ControlPointNetType</a>(dimsize, controlPoints);</div>
+<div class="line"><span class="keyword">auto</span> controlNet = <a class="code hl_typedef" href="../../d2/df5/a01395.html#ae717786e1d144a64c616c3234f9d4483">NURBSPatchData&lt;dim, dimworld&gt;::ControlPointNetType</a>(dimsize, controlPoints);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Create a PatchGrid from the NURBS patch data</span></div>
 <div class="line"><a class="code hl_class" href="../../d5/d39/a01219.html">PatchGrid&lt;dim, dimworld&gt;</a> grid({knotSpans, controlNet, order});</div>
@@ -303,8 +303,8 @@ class Dune::IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt;</div>
 <div class="ttc" id="aa01219_html"><div class="ttname"><a href="../../d5/d39/a01219.html">Dune::IGA::PatchGrid</a></div><div class="ttdoc">Provides a NURBS grid based on a single NURBS patch.</div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:83</div></div>
 <div class="ttc" id="aa01219_html_ab4bdaac8d51ffcf7d335702f61ece771"><div class="ttname"><a href="../../d5/d39/a01219.html#ab4bdaac8d51ffcf7d335702f61ece771">Dune::IGA::PatchGrid::size</a></div><div class="ttdeci">int size(int level, int codim) const</div><div class="ttdoc">Number of grid entities per level and codim.</div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:232</div></div>
 <div class="ttc" id="aa01219_html_ad857347c04799342b146f613d75c4c8a"><div class="ttname"><a href="../../d5/d39/a01219.html#ad857347c04799342b146f613d75c4c8a">Dune::IGA::PatchGrid::globalRefine</a></div><div class="ttdeci">void globalRefine(int refCount)</div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:291</div></div>
-<div class="ttc" id="aa01391_html"><div class="ttname"><a href="../../dc/dbc/a01391.html">Dune::IGA::NURBSPatchData</a></div><div class="ttdoc">Struct that holds all data regarding the NURBS geometric structure.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:20</div></div>
-<div class="ttc" id="aa01391_html_ae717786e1d144a64c616c3234f9d4483"><div class="ttname"><a href="../../dc/dbc/a01391.html#ae717786e1d144a64c616c3234f9d4483">Dune::IGA::NURBSPatchData::ControlPointNetType</a></div><div class="ttdeci">MultiDimensionalNet&lt; dim, ControlPointType &gt; ControlPointNetType</div><div class="ttdoc">Type for the net of control points.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:25</div></div>
+<div class="ttc" id="aa01395_html"><div class="ttname"><a href="../../d2/df5/a01395.html">Dune::IGA::NURBSPatchData</a></div><div class="ttdoc">Struct that holds all data regarding the NURBS geometric structure.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:20</div></div>
+<div class="ttc" id="aa01395_html_ae717786e1d144a64c616c3234f9d4483"><div class="ttname"><a href="../../d2/df5/a01395.html#ae717786e1d144a64c616c3234f9d4483">Dune::IGA::NURBSPatchData::ControlPointNetType</a></div><div class="ttdeci">MultiDimensionalNet&lt; dim, ControlPointType &gt; ControlPointNetType</div><div class="ttdoc">Type for the net of control points.</div><div class="ttdef"><b>Definition:</b> iga/splines/nurbspatchdata.hh:25</div></div>
 </div><!-- fragment --> </td></tr>
   </table>
   </dd>
@@ -437,7 +437,7 @@ template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename
         <tr>
           <td class="memname"><a class="el" href="../../d5/d39/a01219.html">Dune::IGA::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt;::PatchGrid </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../dc/dbc/a01391.html">NURBSPatchData</a>&lt; dim, dimworld, <a class="el" href="../../d5/d39/a01219.html#ae3acaae8dbba9e45cfadfec04a35242d">ctype</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="../../d2/df5/a01395.html">NURBSPatchData</a>&lt; dim, dimworld, <a class="el" href="../../d5/d39/a01219.html#ae3acaae8dbba9e45cfadfec04a35242d">ctype</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>patchData</em>, </td>
         </tr>
         <tr>
@@ -1915,7 +1915,7 @@ template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../dc/d46/a03507_source.html">hierarchicpatch/patchgrid.hh</a></li>
+<li><a class="el" href="../../d9/d25/a03511_source.html">hierarchicpatch/patchgrid.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

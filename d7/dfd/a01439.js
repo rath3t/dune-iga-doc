@@ -1,13 +1,18 @@
 var a01439 =
 [
-    [ "IdType", "d7/dfd/a01439.html#aba25a123bd82bba08f6676d022b1bf0f", null ],
-    [ "PersistentIndexType", "d7/dfd/a01439.html#afd0cb5b56d734abf688abc3742976381", null ],
-    [ "PatchGridGlobalIdSet", "d7/dfd/a01439.html#acd0c01792fac03e5fd89c776b1910681", null ],
-    [ "PatchGridGlobalIdSet", "d7/dfd/a01439.html#a9b13fb6a2e5607de07d59f89f80f99e7", null ],
-    [ "id", "d7/dfd/a01439.html#a38e99e75085b997013601cf867e34c3c", null ],
-    [ "newFreeIndex", "d7/dfd/a01439.html#a3134a1bcc7f42fffa770fe44db69414e", null ],
-    [ "subId", "d7/dfd/a01439.html#a41efa34179474c40dd37be5d8932d50c", null ],
-    [ "update", "d7/dfd/a01439.html#a226dd184f2ba6e90de97a39b193749e3", null ],
-    [ "grid_", "d7/dfd/a01439.html#ade26dfbf8781ac8a2c656db560526674", null ],
-    [ "lastFreeIndex_", "d7/dfd/a01439.html#a49b198dbb12a36ddd3acc72ea19bc844", null ]
+    [ "EntitySeedType", "d7/dfd/a01439.html#a1fe1384be9a52c8836c4ac7263f41e1b", null ],
+    [ "HostIdType", "d7/dfd/a01439.html#afb1ffee2209db1a078e9fd7edd3991d1", null ],
+    [ "isTrimmed", "d7/dfd/a01439.html#a5a85d3410aef52451c2eb144ecfcccc6", null ],
+    [ "isValid", "d7/dfd/a01439.html#a1ca78194363e09980853c02d32423c75", null ],
+    [ "codimension", "d7/dfd/a01439.html#a81a70010f05bb09acbd23cf513ed2fca", null ],
+    [ "decendantIds", "d7/dfd/a01439.html#a3e25c04ed9abcf9687207041d4b0ac3e", null ],
+    [ "fatherId", "d7/dfd/a01439.html#af61eab09e972b6a517676546f2967bb7", null ],
+    [ "hostIndexInLvl", "d7/dfd/a01439.html#ae4426f846333b0ec847cb6c84e377f53", null ],
+    [ "hostSeed", "d7/dfd/a01439.html#a320fdbd42c25bd2cca254ee40df4a047", null ],
+    [ "id", "d7/dfd/a01439.html#a796ad5ddd7f6ba2885e9ab943cd3665c", null ],
+    [ "indexInLvlStorage", "d7/dfd/a01439.html#a6bb0c20d9a7c00ca1a295a74b540221d", null ],
+    [ "lvl", "d7/dfd/a01439.html#aa58a9b22c6fbeab21398e801a585dfdd", null ],
+    [ "trimmed", "d7/dfd/a01439.html#a20e957bcf4f8842bfb024802d8ac41f8", null ],
+    [ "trimmedIndexInLvl", "d7/dfd/a01439.html#a73c6ab1e29cd17ebd6187c7152a597ed", null ],
+    [ "unTrimmedIndexInLvl", "d7/dfd/a01439.html#a600e3eb4005ea71815c7e4b67edaa765", null ]
 ];

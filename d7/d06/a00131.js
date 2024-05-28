@@ -1,7 +1,7 @@
 var a00131 =
 [
-    [ "Dune::IGA::MultiDimensionalNet< netdim, ElementType, Container >", "df/dd2/a01731.html", "df/dd2/a01731" ],
-    [ "Dune::IGA::MultiDimensionalNetIndex< netdim >", "d6/d2e/a01735.html", "d6/d2e/a01735" ],
+    [ "Dune::IGA::MultiDimensionalNet< netdim, ElementType, Container >", "d6/d2e/a01735.html", "d6/d2e/a01735" ],
+    [ "Dune::IGA::MultiDimensionalNetIndex< netdim >", "d1/d46/a01739.html", "d1/d46/a01739" ],
     [ "dot", "d7/d06/a00131.html#ab494853db2f6cc105541b0eaf9a16573", null ],
     [ "MultiDimensionalNet", "d7/d06/a00131.html#ad434568f69368db1d1211d5e438d51ab", null ],
     [ "operator*", "d7/d06/a00131.html#a58e016c6ad5f1db9f128efbf889ccf14", null ],

@@ -1,8 +1,17 @@
 var a01559 =
 [
-    [ "idx_t", "de/d1a/a01559.html#a2424fbaa97224ef978802323c5761261", null ],
-    [ "addLoop", "de/d1a/a01559.html#a134386443648d121ff20bd0003ff9782", null ],
-    [ "getIndices", "de/d1a/a01559.html#a1ebd95e5dfd7d4bf505f149caf5ffa74", null ],
-    [ "getZValue", "de/d1a/a01559.html#a2ff9d394b03b21be75a06113881414a8", null ],
-    [ "indexOffSet", "de/d1a/a01559.html#a6bd5f0036047c8c974d76833c99d2953", null ]
+    [ "CurveManager", "d8/d6c/a01563.html", "d8/d6c/a01563" ],
+    [ "ctype", "de/d1a/a01559.html#a6a050691582866ae9a76c41f74a8d4cf", null ],
+    [ "ParameterType", "de/d1a/a01559.html#a7ce2c66921fabac985f6c0b442b22bfc", null ],
+    [ "TrimmingCurve", "de/d1a/a01559.html#a475b8fc0f92ea447ead7ee9632577e16", null ],
+    [ "addLoop", "de/d1a/a01559.html#a1b298ff559f46a540042b9546dbf0a39", null ],
+    [ "clipperLoops", "de/d1a/a01559.html#a01dd67533036ccedf296c240bb68eb85", null ],
+    [ "getCurve", "de/d1a/a01559.html#a0240a8319155f9cc14b812308157b5a8", null ],
+    [ "getCurve", "de/d1a/a01559.html#a919263ced0d68477b250b75edda5ee52", null ],
+    [ "getIndices", "de/d1a/a01559.html#ab1ca24930009a2199d8ab01f72b15d87", null ],
+    [ "getPointsInPatch", "de/d1a/a01559.html#a5a858211547b0d494ff433147c96c935", null ],
+    [ "getZValue", "de/d1a/a01559.html#a422de4b13b831cd8aefb98307456fb0f", null ],
+    [ "insertTrimCurve", "de/d1a/a01559.html#a6e097f59163c10aa9325c2cfde32e655", null ],
+    [ "loops", "de/d1a/a01559.html#a29c0e59aba962fbd3d25065ed6923685", null ],
+    [ "prepare", "de/d1a/a01559.html#a44f9b744a90e25af6bbba0d562ce109b", null ]
 ];

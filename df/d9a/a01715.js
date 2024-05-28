@@ -1,9 +1,9 @@
 var a01715 =
 [
-    [ "EntityImp", "df/d9a/a01715.html#a6424932cc40aecdf0756f7612e3e984a", null ],
-    [ "EntitySeedImp", "df/d9a/a01715.html#a200ddebe7bdd14cecce1bb4e1a7ea982", null ],
-    [ "LocalGeometry", "df/d9a/a01715.html#a462f179f159e9bb3faca0baf7db51dd4", null ],
-    [ "LocalParameterSpaceGeometry", "df/d9a/a01715.html#aa66496daa55ab55a470ecc7095ce8906", null ],
-    [ "ParameterSpaceGridEntity", "df/d9a/a01715.html#aecea0ac85e0b000209a11721ffdca9c3", null ],
-    [ "ParameterSpaceGridEntitySeed", "df/d9a/a01715.html#a37203e440974ccec20334cb9f8414e99", null ]
+    [ "Codim", "d6/d56/a01719.html", "d6/d56/a01719" ],
+    [ "ParameterSpaceGrid", "df/d9a/a01715.html#a12b6a72f17cf26f28745ace804b9fcf8", null ],
+    [ "ParameterSpaceLeafIntersection", "df/d9a/a01715.html#ad16d504fc9fa09fbf8f9724d0c4c4402", null ],
+    [ "ParameterSpaceLevelIntersection", "df/d9a/a01715.html#a90700ec82ad32a0c54552ba063d08bd5", null ],
+    [ "ParameterType", "df/d9a/a01715.html#a42260ceec7ed643c449d60eac035563b", null ],
+    [ "PatchTrimData", "df/d9a/a01715.html#a7f0e2b66ec79c72de0ab49051ab74ede", null ]
 ];

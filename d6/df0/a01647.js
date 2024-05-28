@@ -1,9 +1,5 @@
 var a01647 =
 [
-    [ "IdType", "d6/df0/a01647.html#ae63c4ccaf1009cd7e7d6227224f1ad57", null ],
-    [ "PatchGridGlobalIdSet", "d6/df0/a01647.html#afbfc79b7186ef3588f3bab7b67a16a06", null ],
-    [ "id", "d6/df0/a01647.html#ac4fe3515d133a63d486d358b7323f614", null ],
-    [ "subId", "d6/df0/a01647.html#aa8f77e18bdc47388eba75799776b2107", null ],
-    [ "update", "d6/df0/a01647.html#ab19bc229138d9092b040d8bb1f8425cd", null ],
-    [ "grid_", "d6/df0/a01647.html#ac5b6ccf36ab91ee278b00f85866bae76", null ]
+    [ "mapToDune", "d6/df0/a01647.html#af64f7804c4c599a03380cc4cc78b6a7e", null ],
+    [ "mapToTrimmer", "d6/df0/a01647.html#aa07ae8cbb09875f04e9cba4e253ff881", null ]
 ];

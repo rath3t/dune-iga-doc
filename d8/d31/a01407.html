@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::DefaultTrim::VectorEntityContainer&lt; GridImp &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::IGA::DefaultTrim::ElementTrimDataImpl&lt; Grid &gt;::EdgeInfo Struct Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,1168 +92,52 @@ $(document).ready(function(){initNavTree('d8/d31/a01407.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d2/d82/a01404.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::DefaultTrim::VectorEntityContainer&lt; GridImp &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::DefaultTrim::ElementTrimDataImpl&lt; Grid &gt;::EdgeInfo Struct Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d6/d2d/a00047_source.html">dune/iga/trimmer/defaulttrimmer/entitycontainer.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d0/dc2/a00104_source.html">dune/iga/trimmer/defaulttrimmer/elementtrimdata.hh</a>&gt;</code></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d99/a01411.html">StringAndIndex</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a27de60555e3bc94563cab97243442e3f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a27de60555e3bc94563cab97243442e3f">Trimmer</a> = typename GridImp::Trimmer</td></tr>
-<tr class="separator:a27de60555e3bc94563cab97243442e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a36e3b99d4b9935a42c9cb18c7f427963"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a36e3b99d4b9935a42c9cb18c7f427963">ctype</a> = typename GridImp::ctype</td></tr>
-<tr class="separator:a36e3b99d4b9935a42c9cb18c7f427963"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80725534d9133564b8ad97be5c4a3c89"><td class="memTemplParams" colspan="2">template&lt;int cd&gt; </td></tr>
-<tr class="memitem:a80725534d9133564b8ad97be5c4a3c89"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a> = typename Trimmer::TrimmerTraits::template Codim&lt; cd &gt;::EntityInfo</td></tr>
-<tr class="separator:a80725534d9133564b8ad97be5c4a3c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac91aa0d55df0267f3892bbcd29ab1e18"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ac91aa0d55df0267f3892bbcd29ab1e18">GeoTypes</a> = typename GridImp::GridFamily::GeometryTypes</td></tr>
-<tr class="separator:ac91aa0d55df0267f3892bbcd29ab1e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa2aeac71ec51110401d89e9c189225b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> = typename Trimmer::TrimmerTraits::GlobalIdSetId</td></tr>
-<tr class="separator:afa2aeac71ec51110401d89e9c189225b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafdd56c597a0157d283f99fe5971cadd"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:aafdd56c597a0157d283f99fe5971cadd"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#aafdd56c597a0157d283f99fe5971cadd">Entity</a> = typename Trimmer::TrimmerTraits::template Codim&lt; codim &gt;::ParameterSpaceGridEntity</td></tr>
-<tr class="separator:aafdd56c597a0157d283f99fe5971cadd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9f64792c4120eef2820f4458ed13d95b"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a9f64792c4120eef2820f4458ed13d95b">EntityImps</a> = std::decay_t&lt; decltype(<a class="el" href="../../d8/d31/a01407.html#a399f403f42abc640718d2867daaeb466">makeEntityImps_</a>())&gt;</td></tr>
-<tr class="separator:a9f64792c4120eef2820f4458ed13d95b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cacfb1f5dccf2a6e931bcdb3176a3a3"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a3cacfb1f5dccf2a6e931bcdb3176a3a3">EntityTuple</a> = typename EntityImps::value_type</td></tr>
-<tr class="separator:a3cacfb1f5dccf2a6e931bcdb3176a3a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5ed4e7b9f85bea25a64eb48f86c0a72d"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:a5ed4e7b9f85bea25a64eb48f86c0a72d"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a5ed4e7b9f85bea25a64eb48f86c0a72d">EntityConstInteratorImpl</a> = typename std::tuple_element_t&lt; codim, <a class="el" href="../../d8/d31/a01407.html#a3cacfb1f5dccf2a6e931bcdb3176a3a3">EntityTuple</a> &gt;::const_iterator</td></tr>
-<tr class="separator:a5ed4e7b9f85bea25a64eb48f86c0a72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0e654861ac4ed617fb4a2b0c018bca5"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:af0e654861ac4ed617fb4a2b0c018bca5"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#af0e654861ac4ed617fb4a2b0c018bca5">EntityInteratorImpl</a> = typename std::tuple_element_t&lt; codim, <a class="el" href="../../d8/d31/a01407.html#a3cacfb1f5dccf2a6e931bcdb3176a3a3">EntityTuple</a> &gt;::iterator</td></tr>
-<tr class="separator:af0e654861ac4ed617fb4a2b0c018bca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a048d64b1685a411e2abd027fdb7a0d63"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:a048d64b1685a411e2abd027fdb7a0d63"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a048d64b1685a411e2abd027fdb7a0d63">begin</a> (int lvl) const</td></tr>
-<tr class="separator:a048d64b1685a411e2abd027fdb7a0d63"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f89255718c9c6281cc84e9a86889f60"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:a5f89255718c9c6281cc84e9a86889f60"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a5f89255718c9c6281cc84e9a86889f60">end</a> (int lvl) const</td></tr>
-<tr class="separator:a5f89255718c9c6281cc84e9a86889f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa33e4bd610ac2fec3b6a8c9299b2a504"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:aa33e4bd610ac2fec3b6a8c9299b2a504"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#aa33e4bd610ac2fec3b6a8c9299b2a504">begin</a> (int lvl)</td></tr>
-<tr class="separator:aa33e4bd610ac2fec3b6a8c9299b2a504"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28127611f05219bddbf61f7dd0eaaef5"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:a28127611f05219bddbf61f7dd0eaaef5"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a28127611f05219bddbf61f7dd0eaaef5">end</a> (int lvl)</td></tr>
-<tr class="separator:a28127611f05219bddbf61f7dd0eaaef5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c7f080eebc409789a67726452376c75"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a6c7f080eebc409789a67726452376c75">subId</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;elementId, int localSubIndex, int codim) const</td></tr>
-<tr class="separator:a6c7f080eebc409789a67726452376c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7264b1dadd43060069bd50e3915f539f"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a7264b1dadd43060069bd50e3915f539f">subIds</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;elementId, int codim) const</td></tr>
-<tr class="separator:a7264b1dadd43060069bd50e3915f539f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d58ea07f8f0e58be97f95ea25c89079"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a3d58ea07f8f0e58be97f95ea25c89079">outsideIntersectionIndex</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;insideElementId, const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;outsideElementId, int indexInInside) const</td></tr>
-<tr class="separator:a3d58ea07f8f0e58be97f95ea25c89079"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8c3e8d383b3bb45ef4186bf3f2534ecf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a8c3e8d383b3bb45ef4186bf3f2534ecf">isElementTrimmed</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;elementId) const</td></tr>
-<tr class="separator:a8c3e8d383b3bb45ef4186bf3f2534ecf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab30f84614a12514d4447f271891cbb9f"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</td></tr>
-<tr class="memitem:ab30f84614a12514d4447f271891cbb9f"><td class="memTemplItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ab30f84614a12514d4447f271891cbb9f">entity</a> (int lvl, int indexInLvlStorage) const</td></tr>
-<tr class="separator:ab30f84614a12514d4447f271891cbb9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae331e03e1daf3266adec6a4f7d13efc0"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</td></tr>
-<tr class="memitem:ae331e03e1daf3266adec6a4f7d13efc0"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ae331e03e1daf3266adec6a4f7d13efc0">entity</a> (int lvl, int indexInLvlStorage)</td></tr>
-<tr class="separator:ae331e03e1daf3266adec6a4f7d13efc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f3d5a8a8c7ca50ff38de4538b671081"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:a1f3d5a8a8c7ca50ff38de4538b671081"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a1f3d5a8a8c7ca50ff38de4538b671081">entity</a> (const <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; codim &gt; &amp;info)</td></tr>
-<tr class="separator:a1f3d5a8a8c7ca50ff38de4538b671081"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada6eb1e1f3b33e9ac06f66466f8c5d1f"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; </td></tr>
-<tr class="memitem:ada6eb1e1f3b33e9ac06f66466f8c5d1f"><td class="memTemplItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ada6eb1e1f3b33e9ac06f66466f8c5d1f">entity</a> (const <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; codim &gt; &amp;info) const</td></tr>
-<tr class="separator:ada6eb1e1f3b33e9ac06f66466f8c5d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41fb5e78c9bf3ad3445c37dafa2a5f84"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</td></tr>
-<tr class="memitem:a41fb5e78c9bf3ad3445c37dafa2a5f84"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a41fb5e78c9bf3ad3445c37dafa2a5f84">entity</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;id, int lvl)</td></tr>
-<tr class="separator:a41fb5e78c9bf3ad3445c37dafa2a5f84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaae69493ea9522f3ebf33b766df4e0e4"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</td></tr>
-<tr class="memitem:aaae69493ea9522f3ebf33b766df4e0e4"><td class="memTemplItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#aaae69493ea9522f3ebf33b766df4e0e4">entity</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;id, int lvl) const</td></tr>
-<tr class="separator:aaae69493ea9522f3ebf33b766df4e0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70b5aeec809cfc09b533fdede295f9fa"><td class="memTemplParams" colspan="2">template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</td></tr>
-<tr class="memitem:a70b5aeec809cfc09b533fdede295f9fa"><td class="memTemplItemLeft" align="right" valign="top">const auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a70b5aeec809cfc09b533fdede295f9fa">infoFromId</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;id, int lvl=std::numeric_limits&lt; int &gt;::max()) const</td></tr>
-<tr class="separator:a70b5aeec809cfc09b533fdede295f9fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a598ba283643af7663f2fdce217aab200"><td class="memTemplParams" colspan="2">template&lt;int cc&gt; </td></tr>
-<tr class="memitem:a598ba283643af7663f2fdce217aab200"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a598ba283643af7663f2fdce217aab200">subIndexFromId</a> (const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;id, int i, int codim, int lvl) const</td></tr>
-<tr class="separator:a598ba283643af7663f2fdce217aab200"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b7bc4ccf883293421b363cd1c6b078a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d31/a01407.html#ac91aa0d55df0267f3892bbcd29ab1e18">GeoTypes</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a6b7bc4ccf883293421b363cd1c6b078a">types</a> (int codim, int level) const</td></tr>
-<tr class="separator:a6b7bc4ccf883293421b363cd1c6b078a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67f7d2f57eccc32bb573aafd74244cd8"><td class="memTemplParams" colspan="2">template&lt;typename EntityType &gt; </td></tr>
-<tr class="memitem:a67f7d2f57eccc32bb573aafd74244cd8"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a67f7d2f57eccc32bb573aafd74244cd8">contains</a> (const EntityType &amp;e, int lvl) const</td></tr>
-<tr class="separator:a67f7d2f57eccc32bb573aafd74244cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a80fe2ebb72aa224938869790fb611cc8"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a80fe2ebb72aa224938869790fb611cc8">size</a> (int codim, int lvl) const</td></tr>
-<tr class="separator:a80fe2ebb72aa224938869790fb611cc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a951083982574b69200ac86253e3d9876"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a951083982574b69200ac86253e3d9876">size</a> (GeometryType type, int lvl) const</td></tr>
-<tr class="separator:a951083982574b69200ac86253e3d9876"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a102d0dd4284b53474a290ec1f6b61221"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a102d0dd4284b53474a290ec1f6b61221">sizeOfInfos</a> (int codim, int lvl) const</td></tr>
-<tr class="separator:a102d0dd4284b53474a290ec1f6b61221"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a377247bd511c3ca6e91130de3c127b2d"><td class="memTemplParams" colspan="2">template&lt;std::size_t... codim&gt; </td></tr>
-<tr class="memitem:a377247bd511c3ca6e91130de3c127b2d"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a377247bd511c3ca6e91130de3c127b2d">makeEntityImpsImpl_</a> (std::index_sequence&lt; codim... &gt;, std::size_t numLevels)</td></tr>
-<tr class="separator:a377247bd511c3ca6e91130de3c127b2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a399f403f42abc640718d2867daaeb466"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a399f403f42abc640718d2867daaeb466">makeEntityImps_</a> (std::size_t numLevels=1)</td></tr>
-<tr class="separator:a399f403f42abc640718d2867daaeb466"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad00c4a60f3527a9c738ef868d91ae68e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ad00c4a60f3527a9c738ef868d91ae68e">hasBoundarySegmentIdx</a> () const</td></tr>
+<tr class="separator:ad00c4a60f3527a9c738ef868d91ae68e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:af9e51ac5075ad454bd8994307a3ad64e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/d31/a01407.html#a9f64792c4120eef2820f4458ed13d95b">EntityImps</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#af9e51ac5075ad454bd8994307a3ad64e">entityImps_</a></td></tr>
-<tr class="separator:af9e51ac5075ad454bd8994307a3ad64e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0def43c59f38938657ec782c36f01e18"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, Dune::ReservedVector&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, 8 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a0def43c59f38938657ec782c36f01e18">globalEdgesIdOfElementsMap_</a></td></tr>
-<tr class="separator:a0def43c59f38938657ec782c36f01e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c775847366bc5db098290e106d47559"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, Dune::ReservedVector&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, 2 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a6c775847366bc5db098290e106d47559">globalVertexIdOfEdgesMap_</a></td></tr>
-<tr class="separator:a6c775847366bc5db098290e106d47559"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add3af792c5c305705d8ef17974c75677"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, Dune::ReservedVector&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, 8 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#add3af792c5c305705d8ef17974c75677">globalVerticesIdOfElementsMap</a></td></tr>
-<tr class="separator:add3af792c5c305705d8ef17974c75677"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa92faffe046802154db39c8635fdf8b0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; 2 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#aa92faffe046802154db39c8635fdf8b0">idToVertexInfoMap</a></td></tr>
-<tr class="separator:aa92faffe046802154db39c8635fdf8b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad075f59f2e7497f1ca6f6285ad5e5545"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; 1 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ad075f59f2e7497f1ca6f6285ad5e5545">idToEdgeInfoMap</a></td></tr>
-<tr class="separator:ad075f59f2e7497f1ca6f6285ad5e5545"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a051826b2969f0d8be3102eb0bf4cc2d1"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; 0 &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a051826b2969f0d8be3102eb0bf4cc2d1">idToElementInfoMap</a></td></tr>
-<tr class="separator:a051826b2969f0d8be3102eb0bf4cc2d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab76b77e67fe46888694bf10943979564"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ab76b77e67fe46888694bf10943979564">numberOfTrimmedElements</a> {}</td></tr>
-<tr class="separator:ab76b77e67fe46888694bf10943979564"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41b957b95b61db6d804523911cdfbb39"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a41b957b95b61db6d804523911cdfbb39">numberOfUnTrimmedElements</a> {}</td></tr>
-<tr class="separator:a41b957b95b61db6d804523911cdfbb39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a43ab84420c2109cd2a60585e4b6ae6d4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; <a class="el" href="../../d4/d9a/a00246.html#a684b340440b49f6af9336f072361bdc7">ElementTrimFlag</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a43ab84420c2109cd2a60585e4b6ae6d4">trimFlags_</a></td></tr>
-<tr class="separator:a43ab84420c2109cd2a60585e4b6ae6d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f948cd4e9729bf52efffafd7f224165"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, FieldVector&lt; double, 2 &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a2f948cd4e9729bf52efffafd7f224165">trimmedVertexIds_</a></td></tr>
-<tr class="separator:a2f948cd4e9729bf52efffafd7f224165"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2f0c9e53d79f33d4ee5709363da80f0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ad2f0c9e53d79f33d4ee5709363da80f0">edgeCount</a></td></tr>
-<tr class="separator:ad2f0c9e53d79f33d4ee5709363da80f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a7f8d89679c626174c19a1ac0555933"><td class="memItemLeft" align="right" valign="top">std::vector&lt; unsigned int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a2a7f8d89679c626174c19a1ac0555933">vertexCount</a></td></tr>
-<tr class="separator:a2a7f8d89679c626174c19a1ac0555933"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a606a7bfaedda28c977d598c3dff07dae"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a606a7bfaedda28c977d598c3dff07dae">gridDim</a> = GridImp::dimension</td></tr>
-<tr class="separator:a606a7bfaedda28c977d598c3dff07dae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47bfb9bb171e78490170aa5bb3dd9018"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a47bfb9bb171e78490170aa5bb3dd9018">dimensionworld</a> = GridImp::dimensionworld</td></tr>
-<tr class="separator:a47bfb9bb171e78490170aa5bb3dd9018"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab3ab8d2f4f13dc63ea7b1b0947bf54da"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#ab3ab8d2f4f13dc63ea7b1b0947bf54da">isHost</a> {}</td></tr>
+<tr class="separator:ab3ab8d2f4f13dc63ea7b1b0947bf54da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a883d8ef591af88d0c04179f0b288f218"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a883d8ef591af88d0c04179f0b288f218">isTrimmed</a> {}</td></tr>
+<tr class="separator:a883d8ef591af88d0c04179f0b288f218"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d3aa594498584f223de7584fc6309f9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a3d3aa594498584f223de7584fc6309f9">idx</a> {}</td></tr>
+<tr class="separator:a3d3aa594498584f223de7584fc6309f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f679c61282ec9dfa969958b43915947"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a4f679c61282ec9dfa969958b43915947">boundarySegmentIdx</a> {std::numeric_limits&lt;size_t&gt;::max()}</td></tr>
+<tr class="separator:a4f679c61282ec9dfa969958b43915947"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a98500e1010ec1648787fe13a2fd5b755"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="../../d6/d64/a01399.html#a14d1c0219c2a0fcc48363579cd2a7491">EdgePatchGeometry</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a98500e1010ec1648787fe13a2fd5b755">geometry</a> {}</td></tr>
+<tr class="separator:a98500e1010ec1648787fe13a2fd5b755"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea1691e808fa7f869512cdf4a833afe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d64/a01399.html#a97ecae6a34431d9114500b423a016551">TrimmedHostEdgeDirection</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d31/a01407.html#a3ea1691e808fa7f869512cdf4a833afe">direction</a> {}</td></tr>
+<tr class="separator:a3ea1691e808fa7f869512cdf4a833afe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a36e3b99d4b9935a42c9cb18c7f427963" name="a36e3b99d4b9935a42c9cb18c7f427963"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a36e3b99d4b9935a42c9cb18c7f427963">&#9670;&nbsp;</a></span>ctype</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::ctype =  typename GridImp::ctype</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aafdd56c597a0157d283f99fe5971cadd" name="aafdd56c597a0157d283f99fe5971cadd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafdd56c597a0157d283f99fe5971cadd">&#9670;&nbsp;</a></span>Entity</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::Entity =  typename Trimmer::TrimmerTraits::template Codim&lt;codim&gt;::ParameterSpaceGridEntity</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5ed4e7b9f85bea25a64eb48f86c0a72d" name="a5ed4e7b9f85bea25a64eb48f86c0a72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5ed4e7b9f85bea25a64eb48f86c0a72d">&#9670;&nbsp;</a></span>EntityConstInteratorImpl</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::EntityConstInteratorImpl =  typename std::tuple_element_t&lt;codim, <a class="el" href="../../d8/d31/a01407.html#a3cacfb1f5dccf2a6e931bcdb3176a3a3">EntityTuple</a>&gt;::const_iterator</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a9f64792c4120eef2820f4458ed13d95b" name="a9f64792c4120eef2820f4458ed13d95b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9f64792c4120eef2820f4458ed13d95b">&#9670;&nbsp;</a></span>EntityImps</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::EntityImps =  std::decay_t&lt;decltype(<a class="el" href="../../d8/d31/a01407.html#a399f403f42abc640718d2867daaeb466">makeEntityImps_</a>())&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80725534d9133564b8ad97be5c4a3c89" name="a80725534d9133564b8ad97be5c4a3c89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80725534d9133564b8ad97be5c4a3c89">&#9670;&nbsp;</a></span>EntityInfo</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::EntityInfo =  typename Trimmer::TrimmerTraits::template Codim&lt;cd&gt;::EntityInfo</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af0e654861ac4ed617fb4a2b0c018bca5" name="af0e654861ac4ed617fb4a2b0c018bca5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0e654861ac4ed617fb4a2b0c018bca5">&#9670;&nbsp;</a></span>EntityInteratorImpl</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::EntityInteratorImpl =  typename std::tuple_element_t&lt;codim, <a class="el" href="../../d8/d31/a01407.html#a3cacfb1f5dccf2a6e931bcdb3176a3a3">EntityTuple</a>&gt;::iterator</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3cacfb1f5dccf2a6e931bcdb3176a3a3" name="a3cacfb1f5dccf2a6e931bcdb3176a3a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3cacfb1f5dccf2a6e931bcdb3176a3a3">&#9670;&nbsp;</a></span>EntityTuple</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::EntityTuple =  typename EntityImps::value_type</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ac91aa0d55df0267f3892bbcd29ab1e18" name="ac91aa0d55df0267f3892bbcd29ab1e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac91aa0d55df0267f3892bbcd29ab1e18">&#9670;&nbsp;</a></span>GeoTypes</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::GeoTypes =  typename GridImp::GridFamily::GeometryTypes</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="afa2aeac71ec51110401d89e9c189225b" name="afa2aeac71ec51110401d89e9c189225b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afa2aeac71ec51110401d89e9c189225b">&#9670;&nbsp;</a></span>IdType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::IdType =  typename Trimmer::TrimmerTraits::GlobalIdSetId</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a27de60555e3bc94563cab97243442e3f" name="a27de60555e3bc94563cab97243442e3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27de60555e3bc94563cab97243442e3f">&#9670;&nbsp;</a></span>Trimmer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::Trimmer =  typename GridImp::Trimmer</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa33e4bd610ac2fec3b6a8c9299b2a504" name="aa33e4bd610ac2fec3b6a8c9299b2a504"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa33e4bd610ac2fec3b6a8c9299b2a504">&#9670;&nbsp;</a></span>begin() <span class="overload">[1/2]</span></h2>
+<a id="ad00c4a60f3527a9c738ef868d91ae68e" name="ad00c4a60f3527a9c738ef868d91ae68e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad00c4a60f3527a9c738ef868d91ae68e">&#9670;&nbsp;</a></span>hasBoundarySegmentIdx()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
+template&lt;typename Grid &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::begin </td>
+          <td class="memname">bool <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::hasBoundarySegmentIdx </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a048d64b1685a411e2abd027fdb7a0d63" name="a048d64b1685a411e2abd027fdb7a0d63"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a048d64b1685a411e2abd027fdb7a0d63">&#9670;&nbsp;</a></span>begin() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::begin </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a67f7d2f57eccc32bb573aafd74244cd8" name="a67f7d2f57eccc32bb573aafd74244cd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67f7d2f57eccc32bb573aafd74244cd8">&#9670;&nbsp;</a></span>contains()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;typename EntityType &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::contains </td>
-          <td>(</td>
-          <td class="paramtype">const EntityType &amp;&#160;</td>
-          <td class="paramname"><em>e</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a28127611f05219bddbf61f7dd0eaaef5" name="a28127611f05219bddbf61f7dd0eaaef5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28127611f05219bddbf61f7dd0eaaef5">&#9670;&nbsp;</a></span>end() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::end </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5f89255718c9c6281cc84e9a86889f60" name="a5f89255718c9c6281cc84e9a86889f60"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f89255718c9c6281cc84e9a86889f60">&#9670;&nbsp;</a></span>end() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::end </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1f3d5a8a8c7ca50ff38de4538b671081" name="a1f3d5a8a8c7ca50ff38de4538b671081"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1f3d5a8a8c7ca50ff38de4538b671081">&#9670;&nbsp;</a></span>entity() <span class="overload">[1/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; codim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ada6eb1e1f3b33e9ac06f66466f8c5d1f" name="ada6eb1e1f3b33e9ac06f66466f8c5d1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada6eb1e1f3b33e9ac06f66466f8c5d1f">&#9670;&nbsp;</a></span>entity() <span class="overload">[2/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt; codim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>info</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a41fb5e78c9bf3ad3445c37dafa2a5f84" name="a41fb5e78c9bf3ad3445c37dafa2a5f84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41fb5e78c9bf3ad3445c37dafa2a5f84">&#9670;&nbsp;</a></span>entity() <span class="overload">[3/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aaae69493ea9522f3ebf33b766df4e0e4" name="aaae69493ea9522f3ebf33b766df4e0e4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaae69493ea9522f3ebf33b766df4e0e4">&#9670;&nbsp;</a></span>entity() <span class="overload">[4/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entity </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae331e03e1daf3266adec6a4f7d13efc0" name="ae331e03e1daf3266adec6a4f7d13efc0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae331e03e1daf3266adec6a4f7d13efc0">&#9670;&nbsp;</a></span>entity() <span class="overload">[5/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entity </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indexInLvlStorage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab30f84614a12514d4447f271891cbb9f" name="ab30f84614a12514d4447f271891cbb9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab30f84614a12514d4447f271891cbb9f">&#9670;&nbsp;</a></span>entity() <span class="overload">[6/6]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entity </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indexInLvlStorage</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a70b5aeec809cfc09b533fdede295f9fa" name="a70b5aeec809cfc09b533fdede295f9fa"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70b5aeec809cfc09b533fdede295f9fa">&#9670;&nbsp;</a></span>infoFromId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int codim&gt; <br />
-requires (codim &gt;= 0 and codim &lt;= 2)</div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const auto &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::infoFromId </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em> = <code>std::numeric_limits&lt;int&gt;::max()</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8c3e8d383b3bb45ef4186bf3f2534ecf" name="a8c3e8d383b3bb45ef4186bf3f2534ecf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c3e8d383b3bb45ef4186bf3f2534ecf">&#9670;&nbsp;</a></span>isElementTrimmed()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::isElementTrimmed </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>elementId</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a399f403f42abc640718d2867daaeb466" name="a399f403f42abc640718d2867daaeb466"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a399f403f42abc640718d2867daaeb466">&#9670;&nbsp;</a></span>makeEntityImps_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::makeEntityImps_ </td>
-          <td>(</td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>numLevels</em> = <code>1</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a377247bd511c3ca6e91130de3c127b2d" name="a377247bd511c3ca6e91130de3c127b2d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a377247bd511c3ca6e91130de3c127b2d">&#9670;&nbsp;</a></span>makeEntityImpsImpl_()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;std::size_t... codim&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::makeEntityImpsImpl_ </td>
-          <td>(</td>
-          <td class="paramtype">std::index_sequence&lt; codim... &gt;&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">std::size_t&#160;</td>
-          <td class="paramname"><em>numLevels</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a3d58ea07f8f0e58be97f95ea25c89079" name="a3d58ea07f8f0e58be97f95ea25c89079"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d58ea07f8f0e58be97f95ea25c89079">&#9670;&nbsp;</a></span>outsideIntersectionIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::outsideIntersectionIndex </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>insideElementId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>outsideElementId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>indexInInside</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a951083982574b69200ac86253e3d9876" name="a951083982574b69200ac86253e3d9876"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a951083982574b69200ac86253e3d9876">&#9670;&nbsp;</a></span>size() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::size </td>
-          <td>(</td>
-          <td class="paramtype">GeometryType&#160;</td>
-          <td class="paramname"><em>type</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a80fe2ebb72aa224938869790fb611cc8" name="a80fe2ebb72aa224938869790fb611cc8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a80fe2ebb72aa224938869790fb611cc8">&#9670;&nbsp;</a></span>size() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::size </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a102d0dd4284b53474a290ec1f6b61221" name="a102d0dd4284b53474a290ec1f6b61221"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a102d0dd4284b53474a290ec1f6b61221">&#9670;&nbsp;</a></span>sizeOfInfos()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::sizeOfInfos </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6c7f080eebc409789a67726452376c75" name="a6c7f080eebc409789a67726452376c75"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c7f080eebc409789a67726452376c75">&#9670;&nbsp;</a></span>subId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::subId </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>elementId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>localSubIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7264b1dadd43060069bd50e3915f539f" name="a7264b1dadd43060069bd50e3915f539f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7264b1dadd43060069bd50e3915f539f">&#9670;&nbsp;</a></span>subIds()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">size_t <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::subIds </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>elementId</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a598ba283643af7663f2fdce217aab200" name="a598ba283643af7663f2fdce217aab200"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a598ba283643af7663f2fdce217aab200">&#9670;&nbsp;</a></span>subIndexFromId()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int cc&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">auto <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::subIndexFromId </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a> &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>lvl</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a6b7bc4ccf883293421b363cd1c6b078a" name="a6b7bc4ccf883293421b363cd1c6b078a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b7bc4ccf883293421b363cd1c6b078a">&#9670;&nbsp;</a></span>types()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/d31/a01407.html#ac91aa0d55df0267f3892bbcd29ab1e18">GeoTypes</a> <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::types </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>codim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>level</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> const</td>
         </tr>
       </table>
   </td>
@@ -1266,256 +150,96 @@ template&lt;typename GridImp &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a47bfb9bb171e78490170aa5bb3dd9018" name="a47bfb9bb171e78490170aa5bb3dd9018"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47bfb9bb171e78490170aa5bb3dd9018">&#9670;&nbsp;</a></span>dimensionworld</h2>
+<a id="a4f679c61282ec9dfa969958b43915947" name="a4f679c61282ec9dfa969958b43915947"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f679c61282ec9dfa969958b43915947">&#9670;&nbsp;</a></span>boundarySegmentIdx</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename Grid &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::dimensionworld = GridImp::dimensionworld</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad2f0c9e53d79f33d4ee5709363da80f0" name="ad2f0c9e53d79f33d4ee5709363da80f0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad2f0c9e53d79f33d4ee5709363da80f0">&#9670;&nbsp;</a></span>edgeCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::edgeCount</td>
+          <td class="memname">size_t <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::boundarySegmentIdx {std::numeric_limits&lt;size_t&gt;::max()}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="af9e51ac5075ad454bd8994307a3ad64e" name="af9e51ac5075ad454bd8994307a3ad64e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af9e51ac5075ad454bd8994307a3ad64e">&#9670;&nbsp;</a></span>entityImps_</h2>
+<a id="a3ea1691e808fa7f869512cdf4a833afe" name="a3ea1691e808fa7f869512cdf4a833afe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea1691e808fa7f869512cdf4a833afe">&#9670;&nbsp;</a></span>direction</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
+template&lt;typename Grid &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/d31/a01407.html#a9f64792c4120eef2820f4458ed13d95b">EntityImps</a> <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::entityImps_</td>
+          <td class="memname"><a class="el" href="../../d6/d64/a01399.html#a97ecae6a34431d9114500b423a016551">TrimmedHostEdgeDirection</a> <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::direction {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a0def43c59f38938657ec782c36f01e18" name="a0def43c59f38938657ec782c36f01e18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0def43c59f38938657ec782c36f01e18">&#9670;&nbsp;</a></span>globalEdgesIdOfElementsMap_</h2>
+<a id="a98500e1010ec1648787fe13a2fd5b755" name="a98500e1010ec1648787fe13a2fd5b755"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a98500e1010ec1648787fe13a2fd5b755">&#9670;&nbsp;</a></span>geometry</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
+template&lt;typename Grid &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, Dune::ReservedVector&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, 8&gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::globalEdgesIdOfElementsMap_</td>
+          <td class="memname">std::optional&lt;<a class="el" href="../../d6/d64/a01399.html#a14d1c0219c2a0fcc48363579cd2a7491">EdgePatchGeometry</a>&gt; <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::geometry {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a6c775847366bc5db098290e106d47559" name="a6c775847366bc5db098290e106d47559"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6c775847366bc5db098290e106d47559">&#9670;&nbsp;</a></span>globalVertexIdOfEdgesMap_</h2>
+<a id="a3d3aa594498584f223de7584fc6309f9" name="a3d3aa594498584f223de7584fc6309f9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d3aa594498584f223de7584fc6309f9">&#9670;&nbsp;</a></span>idx</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
+template&lt;typename Grid &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, Dune::ReservedVector&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, 2&gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::globalVertexIdOfEdgesMap_</td>
+          <td class="memname">int <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::idx {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="add3af792c5c305705d8ef17974c75677" name="add3af792c5c305705d8ef17974c75677"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add3af792c5c305705d8ef17974c75677">&#9670;&nbsp;</a></span>globalVerticesIdOfElementsMap</h2>
+<a id="ab3ab8d2f4f13dc63ea7b1b0947bf54da" name="ab3ab8d2f4f13dc63ea7b1b0947bf54da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab3ab8d2f4f13dc63ea7b1b0947bf54da">&#9670;&nbsp;</a></span>isHost</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
+template&lt;typename Grid &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, Dune::ReservedVector&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, 8&gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::globalVerticesIdOfElementsMap</td>
+          <td class="memname">bool <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::isHost {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a606a7bfaedda28c977d598c3dff07dae" name="a606a7bfaedda28c977d598c3dff07dae"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a606a7bfaedda28c977d598c3dff07dae">&#9670;&nbsp;</a></span>gridDim</h2>
+<a id="a883d8ef591af88d0c04179f0b288f218" name="a883d8ef591af88d0c04179f0b288f218"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a883d8ef591af88d0c04179f0b288f218">&#9670;&nbsp;</a></span>isTrimmed</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename Grid &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::gridDim = GridImp::dimension</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad075f59f2e7497f1ca6f6285ad5e5545" name="ad075f59f2e7497f1ca6f6285ad5e5545"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad075f59f2e7497f1ca6f6285ad5e5545">&#9670;&nbsp;</a></span>idToEdgeInfoMap</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt;1&gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::idToEdgeInfoMap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a051826b2969f0d8be3102eb0bf4cc2d1" name="a051826b2969f0d8be3102eb0bf4cc2d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a051826b2969f0d8be3102eb0bf4cc2d1">&#9670;&nbsp;</a></span>idToElementInfoMap</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt;0&gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::idToElementInfoMap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa92faffe046802154db39c8635fdf8b0" name="aa92faffe046802154db39c8635fdf8b0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa92faffe046802154db39c8635fdf8b0">&#9670;&nbsp;</a></span>idToVertexInfoMap</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, <a class="el" href="../../d8/d31/a01407.html#a80725534d9133564b8ad97be5c4a3c89">EntityInfo</a>&lt;2&gt; &gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::idToVertexInfoMap</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab76b77e67fe46888694bf10943979564" name="ab76b77e67fe46888694bf10943979564"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab76b77e67fe46888694bf10943979564">&#9670;&nbsp;</a></span>numberOfTrimmedElements</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::numberOfTrimmedElements {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a41b957b95b61db6d804523911cdfbb39" name="a41b957b95b61db6d804523911cdfbb39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41b957b95b61db6d804523911cdfbb39">&#9670;&nbsp;</a></span>numberOfUnTrimmedElements</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;int&gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::numberOfUnTrimmedElements {}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a43ab84420c2109cd2a60585e4b6ae6d4" name="a43ab84420c2109cd2a60585e4b6ae6d4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a43ab84420c2109cd2a60585e4b6ae6d4">&#9670;&nbsp;</a></span>trimFlags_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;<a class="el" href="../../d4/d9a/a00246.html#a684b340440b49f6af9336f072361bdc7">ElementTrimFlag</a>&gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::trimFlags_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f948cd4e9729bf52efffafd7f224165" name="a2f948cd4e9729bf52efffafd7f224165"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f948cd4e9729bf52efffafd7f224165">&#9670;&nbsp;</a></span>trimmedVertexIds_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;std::map&lt;<a class="el" href="../../d8/d31/a01407.html#afa2aeac71ec51110401d89e9c189225b">IdType</a>, FieldVector&lt;double, 2&gt; &gt; &gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::trimmedVertexIds_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2a7f8d89679c626174c19a1ac0555933" name="a2a7f8d89679c626174c19a1ac0555933"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a7f8d89679c626174c19a1ac0555933">&#9670;&nbsp;</a></span>vertexCount</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename GridImp &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::vector&lt;unsigned int&gt; <a class="el" href="../../d8/d31/a01407.html">Dune::IGA::DefaultTrim::VectorEntityContainer</a>&lt; GridImp &gt;::vertexCount</td>
+          <td class="memname">bool <a class="el" href="../../d6/d64/a01399.html">Dune::IGA::DefaultTrim::ElementTrimDataImpl</a>&lt; Grid &gt;::EdgeInfo::isTrimmed {}</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -1523,14 +247,14 @@ template&lt;typename GridImp &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d6/d2d/a00047_source.html">entitycontainer.hh</a></li>
+<li><a class="el" href="../../d0/dc2/a00104_source.html">elementtrimdata.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d1/da8/a00230.html">Dune</a></li><li class="navelem"><a class="el" href="../../df/d17/a00231.html">IGA</a></li><li class="navelem"><a class="el" href="../../d4/d9a/a00246.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d8/d31/a01407.html">VectorEntityContainer</a></li>
+    <li class="navelem"><a class="el" href="../../d1/da8/a00230.html">Dune</a></li><li class="navelem"><a class="el" href="../../df/d17/a00231.html">IGA</a></li><li class="navelem"><a class="el" href="../../d4/d9a/a00246.html">DefaultTrim</a></li><li class="navelem"><a class="el" href="../../d6/d64/a01399.html">ElementTrimDataImpl</a></li><li class="navelem"><a class="el" href="../../d8/d31/a01407.html">EdgeInfo</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

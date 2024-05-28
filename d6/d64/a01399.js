@@ -1,6 +1,38 @@
 var a01399 =
 [
-    [ "geometry", "d6/d64/a01399.html#a167fae259141c71e416e15f8aac17daa", null ],
-    [ "idx", "d6/d64/a01399.html#a2a3abbb2cbae089c14ec40698251ef33", null ],
-    [ "isHost", "d6/d64/a01399.html#a3027b48872c33d4a3cca47ee2a2b6976", null ]
+    [ "EdgeInfo", "d8/d31/a01407.html", "d8/d31/a01407" ],
+    [ "VertexInfo", "da/d06/a01403.html", "da/d06/a01403" ],
+    [ "ctype", "d6/d64/a01399.html#a75650e8d3d1bb6398a66338655f849a2", null ],
+    [ "EdgePatchGeometry", "d6/d64/a01399.html#a14d1c0219c2a0fcc48363579cd2a7491", null ],
+    [ "EdgeTrimmedParameterSpaceGeometry", "d6/d64/a01399.html#a956777cbf6889eab84134cd62ac1e1ce", null ],
+    [ "GridFamily", "d6/d64/a01399.html#a3bee34db71b854373bba47b4736d8009", null ],
+    [ "HostEntity", "d6/d64/a01399.html#a13032a5c44223153bb34d561a0cb11e7", null ],
+    [ "Vertex", "d6/d64/a01399.html#a8e8a89dacc9917ff39bb589f64615f01", null ],
+    [ "TrimmedHostEdgeDirection", "d6/d64/a01399.html#a97ecae6a34431d9114500b423a016551", [
+      [ "HostNew", "d6/d64/a01399.html#a97ecae6a34431d9114500b423a016551abe33564458f2a42122e0d3c8d93dffda", null ],
+      [ "NewHost", "d6/d64/a01399.html#a97ecae6a34431d9114500b423a016551a296c2ef3b88a7d6b3d7309b5944234e1", null ],
+      [ "NewNew", "d6/d64/a01399.html#a97ecae6a34431d9114500b423a016551a40222a1e4c02da18256918e21ebf80c1", null ]
+    ] ],
+    [ "ElementTrimDataImpl", "d6/d64/a01399.html#a39fced59da0205471897dc3689a7e25e", null ],
+    [ "ElementTrimDataImpl", "d6/d64/a01399.html#a0fca673f3cc412d9de98caca58fb8856", null ],
+    [ "addBoundarySegmentIdxToLastEdge", "d6/d64/a01399.html#aba36f265f290803f7b66ebe11a89827a", null ],
+    [ "addEdge", "d6/d64/a01399.html#a2a209965a49e8da0e5d6b4edf2386e90", null ],
+    [ "addEdgeHostNew", "d6/d64/a01399.html#a684997612155c47ef532c5432316c1e2", null ],
+    [ "addEdgeNewHost", "d6/d64/a01399.html#a70284e7a8ed0839c3f5fcacf9cf33bcb", null ],
+    [ "addEdgeNewNew", "d6/d64/a01399.html#af76a09491a7c12d067454dfbee6536c0", null ],
+    [ "addEdgeNewNewOnHost", "d6/d64/a01399.html#abb878fafb30aca3b55aee981879b484c", null ],
+    [ "checkInside", "d6/d64/a01399.html#a94f8ae961fa08ef1a861ebeeca0fc1ad", null ],
+    [ "drawResult", "d6/d64/a01399.html#af4559938c462f28221f75e9662414f4f", null ],
+    [ "edge", "d6/d64/a01399.html#ade9ae07b4873c2ee6f16a11aa364f7c9", null ],
+    [ "edges", "d6/d64/a01399.html#a8198d2bde87c98d8da165339e6704d24", null ],
+    [ "finalize", "d6/d64/a01399.html#a1a233d3ffa1677c458f5b9aad931783d", null ],
+    [ "flag", "d6/d64/a01399.html#a28b713d17161ddfd1381021976d1f630", null ],
+    [ "hostEntity", "d6/d64/a01399.html#a3f8f36b12e2ca835ec17cf1d7b1b23a8", null ],
+    [ "operator==", "d6/d64/a01399.html#a3949363127053bef104c064ab6b5e81c", null ],
+    [ "size", "d6/d64/a01399.html#a8829c535b7be2646fe7e497c9f3d8038", null ],
+    [ "vertex", "d6/d64/a01399.html#a95b89cf2f346575607512a7a4906d309", null ],
+    [ "vertices", "d6/d64/a01399.html#af33bce7eeeedab327e939ce6bc12056c", null ],
+    [ "volume", "d6/d64/a01399.html#a30f6a733c6ee494bf6f570ac3a9cf20e", null ],
+    [ "dim", "d6/d64/a01399.html#abe749d2c8a3222ef4cafbd6081fb836c", null ],
+    [ "dimworld", "d6/d64/a01399.html#a14012b895ca8e879fb79981c547d909a", null ]
 ];
