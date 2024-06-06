@@ -1,7 +1,7 @@
 var a00095 =
 [
-    [ "Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator< GridImp >", "d6/d65/a01443.html", "d6/d65/a01443" ],
-    [ "Dune::IGA::DefaultTrim::SimplexIntegrationRuleGenerator< GridImp >::Parameters", "df/d75/a01447.html", "df/d75/a01447" ],
-    [ "mapbox::util::nth< 0, Dune::FieldVector< T, 2 > >", "d3/dbc/a01451.html", "d3/dbc/a01451" ],
-    [ "mapbox::util::nth< 1, Dune::FieldVector< T, 2 > >", "df/dc5/a01455.html", "df/dc5/a01455" ]
+    [ "Dune::IGA::DefaultTrim::SimplexGenerator< GridImp >", "d8/d22/a01446.html", "d8/d22/a01446" ],
+    [ "Dune::IGA::DefaultTrim::SimplexGenerator< GridImp >::Parameters", "d3/da3/a01450.html", "d3/da3/a01450" ],
+    [ "mapbox::util::nth< 0, Dune::FieldVector< T, 2 > >", "da/df6/a01454.html", "da/df6/a01454" ],
+    [ "mapbox::util::nth< 1, Dune::FieldVector< T, 2 > >", "d7/dd1/a01458.html", "d7/dd1/a01458" ]
 ];

@@ -1,4 +1,5 @@
 var a00152 =
 [
-    [ "createUnstructuredGridImpl", "d7/d9a/a00152.html#aab3b41bcffed5f7e4d28f8f3fe629f05", null ]
+    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, true >", "d1/d54/a01326.html", "d1/d54/a01326" ],
+    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, false >", "d5/d78/a01330.html", "d5/d78/a01330" ]
 ];

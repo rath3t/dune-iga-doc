@@ -1,11 +1,11 @@
 var searchData=
 [
-  ['boundarypatchenclosingverticespropertytrimmed_0',['BoundaryPatchEnclosingVerticesPropertyTrimmed',['../dc/de8/a01723.html',1,'']]],
-  ['brep_1',['Brep',['../d2/d4c/a01307.html',1,'Dune::IGA::Ibra']]],
-  ['breploop_2',['BrepLoop',['../d8/d38/a01299.html',1,'Dune::IGA::Ibra']]],
-  ['breplooprepresentation_3',['BrepLoopRepresentation',['../d2/d68/a01295.html',1,'Dune::IGA::Ibra']]],
-  ['breprepresentation_4',['BrepRepresentation',['../d6/d07/a01303.html',1,'Dune::IGA::Ibra']]],
-  ['breptrim_5',['BrepTrim',['../d4/da0/a01291.html',1,'Dune::IGA::Ibra']]],
-  ['breptrimrepresentation_6',['BrepTrimRepresentation',['../d7/da4/a01287.html',1,'Dune::IGA::Ibra']]],
-  ['bsplinebasis_7',['BsplineBasis',['../d0/d9b/a01379.html',1,'Dune::IGA::Splines']]]
+  ['boundarypatchenclosingverticespropertytrimmed_0',['BoundaryPatchEnclosingVerticesPropertyTrimmed',['../d5/d10/a01738.html',1,'']]],
+  ['brep_1',['Brep',['../da/d79/a01310.html',1,'Dune::IGA::Ibra']]],
+  ['breploop_2',['BrepLoop',['../dc/de0/a01302.html',1,'Dune::IGA::Ibra']]],
+  ['breplooprepresentation_3',['BrepLoopRepresentation',['../d4/d34/a01298.html',1,'Dune::IGA::Ibra']]],
+  ['breprepresentation_4',['BrepRepresentation',['../d7/d8c/a01306.html',1,'Dune::IGA::Ibra']]],
+  ['breptrim_5',['BrepTrim',['../d7/d88/a01294.html',1,'Dune::IGA::Ibra']]],
+  ['breptrimrepresentation_6',['BrepTrimRepresentation',['../dc/ded/a01290.html',1,'Dune::IGA::Ibra']]],
+  ['bsplinebasis_7',['BsplineBasis',['../de/d9d/a01382.html',1,'Dune::IGA::Splines']]]
 ];

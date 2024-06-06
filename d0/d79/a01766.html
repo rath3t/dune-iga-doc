@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::Concept::Trimmer Concept Reference</title>
+<title>dune-iga: Dune::DGFGridInfo&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,69 +91,86 @@ $(document).ready(function(){initNavTree('d0/d79/a01766.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Dune::IGA::Concept::Trimmer Concept Reference<div class="ingroups"><a class="el" href="../../de/dc2/a00228.html">Trimmer</a></div></div></div>
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d9/d27/a01763.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Dune::DGFGridInfo&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Concept representing a Trimmer class.  
-<a href="../../d0/d79/a01766.html#details">More...</a></p>
+<p><code>#include &lt;<a class="el" href="../../dc/d57/a00194_source.html">dune/python/iga/grid.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac175085ce9ffc120e4fdf64b5cf24e90"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d79/a01766.html#ac175085ce9ffc120e4fdf64b5cf24e90">refineStepsForHalf</a> ()</td></tr>
+<tr class="separator:ac175085ce9ffc120e4fdf64b5cf24e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8406ab2477444a09a330d394765bcff8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d79/a01766.html#a8406ab2477444a09a330d394765bcff8">refineWeight</a> ()</td></tr>
+<tr class="separator:a8406ab2477444a09a330d394765bcff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac175085ce9ffc120e4fdf64b5cf24e90" name="ac175085ce9ffc120e4fdf64b5cf24e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac175085ce9ffc120e4fdf64b5cf24e90">&#9670;&nbsp;</a></span>refineStepsForHalf()</h2>
 
-<p><code>#include &lt;<a class="el" href="../../d0/d08/a03519_source.html">dune/iga/trimmer/concepts.hh</a>&gt;</code></p>
-<h2 class="groupheader">Concept definition</h2>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d0/d79/a01766.html">Dune::IGA::Concept::Trimmer</a> = </div>
-<div class="line">    T::isValid and</div>
-<div class="line">    <span class="keyword">requires</span>(T trimmer, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param, <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData,</div>
-<div class="line">             <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
-<div class="line">      { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
-<div class="line">      <span class="keyword">typename</span> T::ctype;</div>
-<div class="line">      <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
-<div class="line">      <span class="keyword">typename</span> T::ParameterType;</div>
-<div class="line">      <span class="keyword">typename</span> T::ElementTrimData;</div>
-<div class="line">      <span class="keyword">typename</span> T::PatchTrimData;</div>
-<div class="line"> </div>
-<div class="line">      T(); </div>
-<div class="line"> </div>
-<div class="line">      { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line">      { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"> </div>
-<div class="line">      </div>
-<div class="line">      </div>
-<div class="line">      </div>
-<div class="line"> </div>
-<div class="line">      </div>
-<div class="line"> </div>
-<div class="line">      </div>
-<div class="line">      </div>
-<div class="line">      </div>
-<div class="line"> </div>
-<div class="line">      { trimmer.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"> </div>
-<div class="line">      { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line">      { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line"> </div>
-<div class="line">      { trimmer.setParameters(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"> </div>
-<div class="line">      </div>
-<div class="line">      </div>
-<div class="line">      </div>
-<div class="line">    } and</div>
-<div class="line">    Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;</div>
-<div class="ttc" id="aa01766_html"><div class="ttname"><a href="../../d0/d79/a01766.html">Dune::IGA::Concept::Trimmer</a></div><div class="ttdoc">Concept representing a Trimmer class.</div><div class="ttdef"><b>Definition:</b> trimmer/concepts.hh:19</div></div>
-</div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Concept representing a Trimmer class. </p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">T</td><td>Type to be checked for conformity to the Trimmer concept. </td></tr>
-  </table>
-  </dd>
-</dl>
-</div></div><!-- contents -->
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename GridFamily_, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Dune::DGFGridInfo&lt; <a class="el" href="../../de/d7e/a01222.html">IGA::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt;::refineStepsForHalf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8406ab2477444a09a330d394765bcff8" name="a8406ab2477444a09a330d394765bcff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8406ab2477444a09a330d394765bcff8">&#9670;&nbsp;</a></span>refineWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename GridFamily_, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Dune::DGFGridInfo&lt; <a class="el" href="../../de/d7e/a01222.html">IGA::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt;::refineWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="../../dc/d57/a00194_source.html">grid.hh</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d1/da8/a00230.html">Dune</a></li><li class="navelem"><a class="el" href="../../df/d17/a00231.html">IGA</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Concept</a></li><li class="navelem"><a class="el" href="../../d0/d79/a01766.html">Trimmer</a></li>
+    <li class="navelem"><a class="el" href="../../d6/de1/a00233.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/d79/a01766.html">DGFGridInfo&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt;</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

@@ -1,4 +1,5 @@
 var a00137 =
 [
-    [ "drawGrid", "d2/df5/a00137.html#ab2eac10a24b02432cc0a0df609dcd358", null ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d5/d10/a01738.html", "d5/d10/a01738" ],
+    [ "forEachUntrimmedBoundaryDOF", "d2/df5/a00137.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
 ];
