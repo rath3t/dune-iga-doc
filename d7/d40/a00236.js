@@ -1,14 +1,15 @@
 var a00236 =
 [
-    [ "Domain", "d9/df5/a01086.html", "d9/df5/a01086" ],
-    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d7/d40/a00236.html#a532897d1990f320393603ae743e25401", null ],
-    [ "clampToDomain", "d7/d40/a00236.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
-    [ "linspace", "d7/d40/a00236.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
-    [ "linspace", "d7/d40/a00236.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
-    [ "linspace", "d7/d40/a00236.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
-    [ "mapToRange", "d7/d40/a00236.html#a3d59a12b8ff14b4ae1ba2bf40845b301", null ],
-    [ "mapToRange", "d7/d40/a00236.html#a9bfbe1e0c0481fdaa7f59bbcb02aae19", null ],
-    [ "mapToRange", "d7/d40/a00236.html#a36c887e0deedc2b16c340ffcee35f961", null ],
-    [ "mapToRangeFromZeroToOne", "d7/d40/a00236.html#a86276840eb12dcb7cc614974d1675d6c", null ],
-    [ "splitDomainInHalf", "d7/d40/a00236.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
+    [ "Capabilities", "d6/d82/a00243.html", "d6/d82/a00243" ],
+    [ "Functions", "d6/d08/a00244.html", "d6/d08/a00244" ],
+    [ "IGA", "d4/d08/a00237.html", "d4/d08/a00237" ],
+    [ "Python", "dd/dd7/a00260.html", "dd/dd7/a00260" ],
+    [ "Vtk", "d0/da7/a00250.html", "d0/da7/a00250" ],
+    [ "DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "df/d7b/a01765.html", null ],
+    [ "DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d7/d6d/a01769.html", "d7/d6d/a01769" ],
+    [ "EnableBoundarySegmentIndexCheck", "dd/d43/a01193.html", null ],
+    [ "EnableBoundarySegmentIndexCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/df7/a01201.html", null ],
+    [ "GridFactory< IGA::PatchGrid< dim_, dimworld_, TrimmerType_, ScalarType > >", "d3/d07/a01241.html", "d3/d07/a01241" ],
+    [ "TensorProductCoordinates", "d1/dfa/a01097.html", null ],
+    [ "YaspGrid", "de/d1c/a01093.html", null ]
 ];

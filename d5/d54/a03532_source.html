@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbspatchdata.hh Source File</title>
+<title>dune-iga: concepts.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,128 +91,70 @@ $(document).ready(function(){initNavTree('d5/d54/a03532_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">python/iga/nurbspatchdata.hh</div></div>
+  <div class="headertitle"><div class="title">parameterspace/concepts.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../d5/d54/a03532.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;<a class="code" href="../../d7/d25/a00182.html">dune/iga/nurbsbasis.hh</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;<a class="code" href="../../d9/dd0/a00191.html">dune/iga/splines/nurbsalgorithms.hh</a>&quot;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &lt;<a class="code" href="../../da/d45/a00011.html">dune/iga/geometrykernel/controlpoint.hh</a>&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/d76/a00134.html">dune/iga/utils/mdnet.hh</a>&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;dune/python/functions/globalbasis.hh&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &lt;dune/python/pybind11/eigen.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &lt;dune/python/pybind11/functional.h&gt;</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &lt;dune/python/pybind11/pybind11.h&gt;</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="preprocessor">#include &lt;dune/python/pybind11/stl.h&gt;</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/d39/a00257.html">Dune::Python</a> {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">class </span><a class="code hl_function" href="../../df/da9/a00263.html#a87eb600529940f01930f93b69fb57771">ControlPoint</a>, <span class="keyword">class</span>... options&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#a5d2b9f264b1b4229ed54df9082d5d35d">   19</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d39/a00257.html#a5d2b9f264b1b4229ed54df9082d5d35d">registerControlPoint</a>(pybind11::handle scope, pybind11::class_&lt;ControlPoint, options...&gt; cls) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keyword">using </span>pybind11::operator<span class="stringliteral">&quot;&quot;</span>_a;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">using </span>VectorType = <span class="keyword">typename</span> ControlPoint::VectorType;</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">using </span>ScalarType = <span class="keyword">typename</span> VectorType::value_type;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  cls.def(pybind11::init());</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  cls.def(pybind11::self + pybind11::self)</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      .def(pybind11::self - pybind11::self)</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      .def(pybind11::self += pybind11::self)</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      .def(-pybind11::self)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      .def(pybind11::self *= <span class="keywordtype">double</span>())</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      .def(<span class="keywordtype">double</span>() * pybind11::self)</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      .def(pybind11::self * <span class="keywordtype">double</span>());</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  cls.def(pybind11::init([](<span class="keyword">const</span> VectorType&amp; vec, <span class="keyword">const</span> ScalarType&amp; weight = 1) {</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_function" href="../../df/da9/a00263.html#a87eb600529940f01930f93b69fb57771">ControlPoint</a>({.p = vec, .w = weight});</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>          }),</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>          <span class="stringliteral">&quot;Coordinates&quot;</span>_a, <span class="stringliteral">&quot;Weight&quot;</span>_a);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  cls.def_readwrite(<span class="stringliteral">&quot;coords&quot;</span>, &amp;ControlPoint::p).def_readwrite(<span class="stringliteral">&quot;weight&quot;</span>, &amp;ControlPoint::w);</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">class </span>MultiDimensionNet, <span class="keyword">class</span>... options&gt;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#aaa677c6977c16109d2b237f5f072fe2d">   41</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d39/a00257.html#aaa677c6977c16109d2b237f5f072fe2d">registerMultiDimensionalNet</a>(pybind11::handle scope, pybind11::class_&lt;MultiDimensionNet, options...&gt; cls) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  <span class="keyword">using </span>pybind11::operator<span class="stringliteral">&quot;&quot;</span>_a;</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keyword">using </span>ValueType              = <span class="keyword">typename</span> MultiDimensionNet::value_type;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keyword">constexpr</span> std::size_t netDim = MultiDimensionNet::netDim;</div>
+<a href="../../d5/d54/a03532.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;concepts&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;dune/grid/concepts.hh&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d2/dc8/a00242.html">Dune::IGA::Concept</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../da/da5/a01783.html">   10</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../da/da5/a01783.html">TrimDataContainer</a> = <span class="keyword">requires</span>(<span class="keyword">const</span> T&amp; t, <span class="keywordtype">size_t</span> i) { t[i]; };</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d6/d3d/a01784.html">   19</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d6/d3d/a01784.html">Trimmer</a> =</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    T::isValid and</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">requires</span>(T trimmer, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param, <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>             <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      <span class="keyword">typename</span> T::ctype;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keyword">typename</span> T::ParameterType;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <span class="keyword">typename</span> T::ElementTrimData;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keyword">typename</span> T::PatchTrimData;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      T(); </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="comment">// { parameterspace.referenceElement(std::declval&lt;const EntityType&gt;()) } -&gt; std::convertible_to&lt;typename</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="comment">// T::ReferenceElementType&gt;; Uncomment the line above when the referenceElement method is added to the</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="comment">// Trimmer concept.</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="comment">// { typename T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="comment">// { parameterspace.trimData(std::declval&lt;const EntityType&gt;(), std::declval&lt;const GlobalIdSet&gt;()) } -&gt;</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// std::convertible_to&lt;std::optional&lt;std::reference_wrapper&lt;const typename T::ElementTrimData&gt;&gt;&gt;;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="comment">// Uncomment the line above when the trimData method is added to the Trimmer concept.</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      { trimmer.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  cls.def(pybind11::init());</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (netDim == 2)</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    cls.def(pybind11::init(</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        [](<span class="keyword">const</span> std::vector&lt;std::vector&lt;ValueType&gt;&gt;&amp; values) { return new MultiDimensionNet(values); }));</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (netDim == 1)</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    cls.def(pybind11::init([](<span class="keyword">const</span> std::vector&lt;ValueType&gt;&amp; values) { <span class="keywordflow">return</span> <span class="keyword">new</span> MultiDimensionNet(values); }));</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  <span class="keywordflow">else</span> <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (netDim == 3)</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    cls.def(pybind11::init(</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        [](<span class="keyword">const</span> std::vector&lt;std::vector&lt;std::vector&lt;ValueType&gt;&gt;&gt;&amp; values) { <span class="keywordflow">return</span> <span class="keyword">new</span> MultiDimensionNet(values); }));</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  cls.def(<span class="stringliteral">&quot;__len__&quot;</span>, &amp;MultiDimensionNet::size);</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  cls.def(<span class="stringliteral">&quot;strideSizes&quot;</span>, &amp;MultiDimensionNet::strideSizes);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  cls.def(<span class="stringliteral">&quot;set&quot;</span>, &amp;MultiDimensionNet::set);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  cls.def(<span class="stringliteral">&quot;directGet&quot;</span>, [](MultiDimensionNet&amp; self, <span class="keywordtype">int</span> directIndex) { <span class="keywordflow">return</span> self.directGet(directIndex); });</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  cls.def(<span class="stringliteral">&quot;get&quot;</span>, [](MultiDimensionNet&amp; self, <span class="keyword">const</span> std::array&lt;int, netDim&gt;&amp; multIndex) { <span class="keywordflow">return</span> self.get(multIndex); });</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  cls.def_property_readonly_static(<span class="stringliteral">&quot;netDim&quot;</span>, [](pybind11::object <span class="comment">/* self */</span>) { <span class="keywordflow">return</span> MultiDimensionNet::netDim; });</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  cls.def_property_readonly_static(<span class="stringliteral">&quot;valueType&quot;</span>,</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                   [](pybind11::object <span class="comment">/* self */</span>) { <span class="keywordflow">return</span> Dune::className&lt;ValueType&gt;(); });</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>}</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="keyword">template</span> &lt;<span class="keyword">class </span><a class="code hl_function" href="../../da/d31/a00234.html#a719e776ccc21fb8be2d8238621d81152">NURBSPatchData</a>, <span class="keyword">class</span>... options&gt;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../d9/d39/a00257.html#abb0ad571b894541ccc4722f669ce8097">   68</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d39/a00257.html#abb0ad571b894541ccc4722f669ce8097">registerNurbsPatchData</a>(pybind11::handle scope, pybind11::class_&lt;NURBSPatchData, options...&gt; cls) {</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">using </span>pybind11::operator<span class="stringliteral">&quot;&quot;</span>_a;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keyword">using </span>GlobalCoordinateType     = <span class="keyword">typename</span> NURBSPatchData::GlobalCoordinateType;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  <span class="keyword">constexpr</span> <span class="keywordtype">int</span> dimWorld         = NURBSPatchData::GlobalCoordinateType::dimension;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  <span class="keyword">using </span>ControlPointType         = <span class="keyword">typename</span> NURBSPatchData::ControlPointType;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keyword">using </span>ControlPointNetType      = <span class="keyword">typename</span> NURBSPatchData::ControlPointNetType;</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keyword">constexpr</span> std::size_t patchDim = NURBSPatchData::patchDim;</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keyword">constexpr</span> std::size_t dimworld = NURBSPatchData::dimworld;</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  cls.def(pybind11::init());</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  cls.def(pybind11::init([](<span class="keyword">const</span> std::array&lt;std::vector&lt;double&gt;, patchDim&gt;&amp; knotSpansI,</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>                            <span class="keyword">const</span> ControlPointNetType&amp; controlPointsI, <span class="keyword">const</span> std::array&lt;int, patchDim&gt;&amp; degreeInput) {</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keywordflow">return</span> <span class="keyword">new</span> <a class="code hl_function" href="../../da/d31/a00234.html#a719e776ccc21fb8be2d8238621d81152">NURBSPatchData</a>(knotSpansI, controlPointsI, degreeInput);</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  }));</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  cls.def_readwrite(<span class="stringliteral">&quot;knotSpans&quot;</span>, &amp;NURBSPatchData::knotSpans)</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      .def_readwrite(<span class="stringliteral">&quot;controlPoints&quot;</span>, &amp;NURBSPatchData::controlPoints)</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>      .def_readwrite(<span class="stringliteral">&quot;degree&quot;</span>, &amp;NURBSPatchData::degree);</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span> </div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  cls.def_property_readonly_static(<span class="stringliteral">&quot;patchDim&quot;</span>, [](pybind11::object <span class="comment">/* self */</span>) { <span class="keywordflow">return</span> patchDim; });</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  cls.def_property_readonly_static(<span class="stringliteral">&quot;dimworld&quot;</span>, [](pybind11::object <span class="comment">/* self */</span>) { <span class="keywordflow">return</span> dimworld; });</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  cls.def(<span class="stringliteral">&quot;asBasis&quot;</span>, [](<a class="code hl_function" href="../../da/d31/a00234.html#a719e776ccc21fb8be2d8238621d81152">NURBSPatchData</a>&amp; self) { <span class="keywordflow">return</span> <a class="code hl_function" href="../../d6/d22/a00245.html#a10c3f08f7830f39c003415e65e2a0361">Dune::Functions::BasisFactory::nurbs</a>(self); });</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  cls.def(<span class="stringliteral">&quot;degreeElevate&quot;</span>, [](<a class="code hl_function" href="../../da/d31/a00234.html#a719e776ccc21fb8be2d8238621d81152">NURBSPatchData</a>&amp; self, <span class="keyword">const</span> <span class="keywordtype">int</span> refinementDirection, <span class="keyword">const</span> <span class="keywordtype">int</span> elevationFactor) {</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d1f/a00247.html#ab00d012b66e12da10952ef8d49d4844d">Dune::IGA::Splines::degreeElevate</a>(self, refinementDirection, elevationFactor);</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  });</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  cls.def(<span class="stringliteral">&quot;knotRefinement&quot;</span>,</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>          [](<a class="code hl_function" href="../../da/d31/a00234.html#a719e776ccc21fb8be2d8238621d81152">NURBSPatchData</a>&amp; self, <span class="keyword">const</span> std::vector&lt;double&gt;&amp; newKnots, <span class="keyword">const</span> <span class="keywordtype">int</span> refinementDirection) {</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>            <span class="keywordflow">return</span> <a class="code hl_function" href="../../d0/d1f/a00247.html#a5e3ff1bb11d860a83e14581b3f8e1187">Dune::IGA::Splines::knotRefinement</a>(self, newKnots, refinementDirection);</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>          });</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>}</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>} <span class="comment">// namespace Dune::Python</span></div>
-<div class="ttc" id="aa00011_html"><div class="ttname"><a href="../../da/d45/a00011.html">controlpoint.hh</a></div></div>
-<div class="ttc" id="aa00134_html"><div class="ttname"><a href="../../de/d76/a00134.html">mdnet.hh</a></div></div>
-<div class="ttc" id="aa00182_html"><div class="ttname"><a href="../../d7/d25/a00182.html">nurbsbasis.hh</a></div><div class="ttdoc">The B-spline global function space basis.</div></div>
-<div class="ttc" id="aa00191_html"><div class="ttname"><a href="../../d9/dd0/a00191.html">nurbsalgorithms.hh</a></div></div>
-<div class="ttc" id="aa00234_html_a719e776ccc21fb8be2d8238621d81152"><div class="ttname"><a href="../../da/d31/a00234.html#a719e776ccc21fb8be2d8238621d81152">Dune::IGA::NURBSPatchData</a></div><div class="ttdeci">NURBSPatchData(const std::array&lt; std::vector&lt; double &gt;, dim &gt; &amp;knotSpansI, const MultiDimensionalNet&lt; dim, ControlPoint&lt; FieldVector&lt; ScalarType, dimworld_ &gt; &gt; &gt; &amp;controlPointsI, const std::array&lt; int, dim &gt; &amp;degreeInput) -&gt; NURBSPatchData&lt; dim, dimworld_, ScalarType &gt;</div><div class="ttdoc">Deduction guide for creating NURBSPatchData instances without explicitly specifying template argument...</div></div>
-<div class="ttc" id="aa00245_html_a10c3f08f7830f39c003415e65e2a0361"><div class="ttname"><a href="../../d6/d22/a00245.html#a10c3f08f7830f39c003415e65e2a0361">Dune::Functions::BasisFactory::nurbs</a></div><div class="ttdeci">auto nurbs(const Dune::IGA::NURBSPatchData&lt; dim, dimworld &gt; &amp;data)</div><div class="ttdoc">Create a pre-basis factory that can create a B-spline pre-basis.</div><div class="ttdef"><b>Definition:</b> nurbsbasis.hh:873</div></div>
-<div class="ttc" id="aa00247_html_a5e3ff1bb11d860a83e14581b3f8e1187"><div class="ttname"><a href="../../d0/d1f/a00247.html#a5e3ff1bb11d860a83e14581b3f8e1187">Dune::IGA::Splines::knotRefinement</a></div><div class="ttdeci">auto knotRefinement(const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const std::vector&lt; double &gt; &amp;newKnots, const int refinementDirection)</div><div class="ttdoc">Perform knot refinement on a NURBS patch.</div><div class="ttdef"><b>Definition:</b> nurbsalgorithms.hh:628</div></div>
-<div class="ttc" id="aa00247_html_ab00d012b66e12da10952ef8d49d4844d"><div class="ttname"><a href="../../d0/d1f/a00247.html#ab00d012b66e12da10952ef8d49d4844d">Dune::IGA::Splines::degreeElevate</a></div><div class="ttdeci">auto degreeElevate(const NURBSPatchData&lt; dim, dimworld, ScalarType &gt; &amp;oldData, const int elevationDirection, const int elevationFactor)</div><div class="ttdoc">Perform degree elevation on a NURBS patch.</div><div class="ttdef"><b>Definition:</b> nurbsalgorithms.hh:441</div></div>
-<div class="ttc" id="aa00257_html"><div class="ttname"><a href="../../d9/d39/a00257.html">Dune::Python</a></div><div class="ttdef"><b>Definition:</b> gridenums.hh:5</div></div>
-<div class="ttc" id="aa00257_html_a5d2b9f264b1b4229ed54df9082d5d35d"><div class="ttname"><a href="../../d9/d39/a00257.html#a5d2b9f264b1b4229ed54df9082d5d35d">Dune::Python::registerControlPoint</a></div><div class="ttdeci">void registerControlPoint(pybind11::handle scope, pybind11::class_&lt; ControlPoint, options... &gt; cls)</div><div class="ttdef"><b>Definition:</b> python/iga/nurbspatchdata.hh:19</div></div>
-<div class="ttc" id="aa00257_html_aaa677c6977c16109d2b237f5f072fe2d"><div class="ttname"><a href="../../d9/d39/a00257.html#aaa677c6977c16109d2b237f5f072fe2d">Dune::Python::registerMultiDimensionalNet</a></div><div class="ttdeci">void registerMultiDimensionalNet(pybind11::handle scope, pybind11::class_&lt; MultiDimensionNet, options... &gt; cls)</div><div class="ttdef"><b>Definition:</b> python/iga/nurbspatchdata.hh:41</div></div>
-<div class="ttc" id="aa00257_html_abb0ad571b894541ccc4722f669ce8097"><div class="ttname"><a href="../../d9/d39/a00257.html#abb0ad571b894541ccc4722f669ce8097">Dune::Python::registerNurbsPatchData</a></div><div class="ttdeci">void registerNurbsPatchData(pybind11::handle scope, pybind11::class_&lt; NURBSPatchData, options... &gt; cls)</div><div class="ttdef"><b>Definition:</b> python/iga/nurbspatchdata.hh:68</div></div>
-<div class="ttc" id="aa00263_html_a87eb600529940f01930f93b69fb57771"><div class="ttname"><a href="../../df/da9/a00263.html#a87eb600529940f01930f93b69fb57771">iga._nurbspatchdata.ControlPoint</a></div><div class="ttdeci">def ControlPoint(coords, weight=1)</div><div class="ttdef"><b>Definition:</b> _nurbspatchdata.py:8</div></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      { trimmer.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      { trimmer.setParameters(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// { parameterspace.unTrimmedParameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="comment">// T::UntrimmedParameterSpaceGrid&amp;&gt;; { parameterspace.unTrimmedParameterSpaceGrid() } -&gt;</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="comment">// std::convertible_to&lt;typename T::UntrimmedParameterSpaceGrid&amp;&gt;;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    } and</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace Dune::IGA::Concept</span></div>
+<div class="ttc" id="aa00242_html"><div class="ttname"><a href="../../d2/dc8/a00242.html">Dune::IGA::Concept</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:9</div></div>
+<div class="ttc" id="aa01783_html"><div class="ttname"><a href="../../da/da5/a01783.html">Dune::IGA::Concept::TrimDataContainer</a></div><div class="ttdef"><b>Definition:</b> parameterspace/concepts.hh:10</div></div>
+<div class="ttc" id="aa01784_html"><div class="ttname"><a href="../../d6/d3d/a01784.html">Dune::IGA::Concept::Trimmer</a></div><div class="ttdoc">Concept representing a Trimmer class.</div><div class="ttdef"><b>Definition:</b> parameterspace/concepts.hh:19</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../d5/d54/a03532.html">nurbspatchdata.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../d5/d54/a03532.html">concepts.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

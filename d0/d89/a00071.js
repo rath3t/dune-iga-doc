@@ -1,6 +1,7 @@
 var a00071 =
 [
-    [ "Dune::IGA::DefaultTrim::TrimmedReferenceElement< dim, GridImp >", "d5/d75/a01570.html", "d5/d75/a01570" ],
-    [ "Dune::IGA::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d9/df5/a01574.html", "d9/df5/a01574" ],
-    [ "Dune::IGA::DefaultTrim::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "d1/d88/a01578.html", "d1/d88/a01578" ]
+    [ "Dune::IGA::PatchGridEntity< codim, dim, GridImp >", "db/d1c/a01229.html", "db/d1c/a01229" ],
+    [ "Dune::IGA::PatchGridEntity< 0, dim, GridImp >", "dc/dab/a01237.html", "dc/dab/a01237" ],
+    [ "referenceElement", "d0/d89/a00071.html#aa4c0e4b40689204d775a70c356f3df9c", null ],
+    [ "referenceElement", "d0/d89/a00071.html#a10579811f681f13697cedf2abf633e78", null ]
 ];

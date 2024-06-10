@@ -1,11 +1,10 @@
 var a00134 =
 [
-    [ "Dune::IGA::MultiDimensionalNet< netdim, ElementType, Container >", "d5/dfa/a01746.html", "d5/dfa/a01746" ],
-    [ "Dune::IGA::MultiDimensionalNetIndex< netdim >", "dc/d3a/a01750.html", "dc/d3a/a01750" ],
-    [ "dot", "de/d76/a00134.html#ab494853db2f6cc105541b0eaf9a16573", null ],
-    [ "MultiDimensionalNet", "de/d76/a00134.html#ad434568f69368db1d1211d5e438d51ab", null ],
-    [ "operator*", "de/d76/a00134.html#a58e016c6ad5f1db9f128efbf889ccf14", null ],
-    [ "operator*", "de/d76/a00134.html#a06975ed3172fc423fe3c936bac9fefff", null ],
-    [ "operator-", "de/d76/a00134.html#af21f4f9e9fd92abd1a6f942043f72544", null ],
-    [ "operator/", "de/d76/a00134.html#a53dd923355abf6a83c2589bf67d5b0bd", null ]
+    [ "approxSamePoint", "de/d76/a00134.html#a195028ded7edd8401392d036fd3961c2", null ],
+    [ "callFindIntersection", "de/d76/a00134.html#a5c425a5fc3b6576e482419ee8c645eaa", null ],
+    [ "coarsestFather", "de/d76/a00134.html#abe7086e2ad3e2413dce51b99be7bdd9c", null ],
+    [ "createHostGeometry", "de/d76/a00134.html#ae02260129055333f93e55ddd1fc05559", null ],
+    [ "createTrimmingCurveSlice", "de/d76/a00134.html#a7fbd7f2c42db6448082a2e15747b67cd", null ],
+    [ "distance", "de/d76/a00134.html#a4bfc3f4a9119d181e745c9b2c36f62e2", null ],
+    [ "findGoodStartingPoint", "de/d76/a00134.html#a70718c6dfba53db598a93503b15370e4", null ]
 ];

@@ -1,11 +1,24 @@
 var a00074 =
 [
-    [ "Dune::IGA::DefaultTrim::TrimmedLocalGeometryImpl< mydim, coorddim, GridImp, localGeometryTag >", "d2/d2f/a01586.html", null ],
-    [ "Dune::IGA::DefaultTrim::TrimmedLocalGeometryImpl< 2, coorddim, GridImp, localGeometryTag >", "d4/d49/a01590.html", "d4/d49/a01590" ],
-    [ "Dune::IGA::DefaultTrim::TrimmedLocalGeometryImpl< 1, coorddim, GridImp, localGeometryTag >", "dc/def/a01594.html", "dc/def/a01594" ],
-    [ "Dune::IGA::DefaultTrim::TrimmedLocalGeometryImpl< 0, coorddim, GridImp, localGeometryTag >", "d3/da5/a01598.html", "d3/da5/a01598" ],
-    [ "LocalGeometryTag", "db/db6/a00074.html#a235119f36c1c00db38f86bc6d742d365", [
-      [ "InParameterSpace", "db/db6/a00074.html#a235119f36c1c00db38f86bc6d742d365a8a1271beadae7821c36d87fc0c4e480e", null ],
-      [ "InReferenceElement", "db/db6/a00074.html#a235119f36c1c00db38f86bc6d742d365ac387cd45b20325cc986016334e9dd723", null ]
-    ] ]
+    [ "Dune::Capabilities::hasEntity< const IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d6/d8b/a01117.html", "d6/d8b/a01117" ],
+    [ "Dune::Capabilities::hasEntity< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "dd/de4/a01121.html", "dd/de4/a01121" ],
+    [ "Dune::Capabilities::hasEntity< const Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d6/dc4/a01125.html", "d6/dc4/a01125" ],
+    [ "Dune::Capabilities::hasEntityIterator< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d9/d17/a01129.html", "d9/d17/a01129" ],
+    [ "Dune::Capabilities::hasEntityIterator< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "db/d28/a01133.html", "db/d28/a01133" ],
+    [ "Dune::Capabilities::canCommunicate< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d6/d6e/a01137.html", "d6/d6e/a01137" ],
+    [ "Dune::Capabilities::canCommunicate< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "de/df6/a01141.html", "de/df6/a01141" ],
+    [ "Dune::Capabilities::isLevelwiseConforming< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d9/d65/a01145.html", "d9/d65/a01145" ],
+    [ "Dune::Capabilities::isLevelwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d8/d02/a01149.html", "d8/d02/a01149" ],
+    [ "Dune::Capabilities::isLeafwiseConforming< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "dc/d06/a01153.html", "dc/d06/a01153" ],
+    [ "Dune::Capabilities::isLeafwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d9/d25/a01157.html", "d9/d25/a01157" ],
+    [ "Dune::Capabilities::hasBackupRestoreFacilities< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "dc/d81/a01161.html", "dc/d81/a01161" ],
+    [ "Dune::Capabilities::hasBackupRestoreFacilities< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d8/d92/a01165.html", "d8/d92/a01165" ],
+    [ "Dune::Capabilities::threadSafe< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d7/daf/a01169.html", "d7/daf/a01169" ],
+    [ "Dune::Capabilities::threadSafe< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d7/d0c/a01173.html", "d7/d0c/a01173" ],
+    [ "Dune::Capabilities::viewThreadSafe< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "dc/d98/a01177.html", "dc/d98/a01177" ],
+    [ "Dune::Capabilities::viewThreadSafe< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "de/db5/a01181.html", "de/db5/a01181" ],
+    [ "Dune::Capabilities::isCartesian< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d3/dd3/a01185.html", "d3/dd3/a01185" ],
+    [ "Dune::Capabilities::isCartesian< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d3/d10/a01189.html", "d3/d10/a01189" ],
+    [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/df7/a01201.html", null ],
+    [ "EnableLevelIntersectionIteratorCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d61/a01205.html", "de/d61/a01205" ]
 ];
