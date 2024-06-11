@@ -151,9 +151,9 @@ $(document).ready(function(){initNavTree('de/d76/a00134_source.html','../../'); 
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">double</span> lineGuess = (edgeIdx == 0 or edgeIdx == 2) ? (ip.x - pos[0]) / dir[0] : (ip.y - pos[1]) / dir[1];</div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="comment">// Catch a trivial but difficult case</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordflow">if</span> (<span class="keyword">auto</span> endPoint = curvePatchGeo.corner(1); <a class="code hl_function" href="../../d0/d3e/a00253.html#a195028ded7edd8401392d036fd3961c2">approxSamePoint</a>(ip, endPoint, 1e-8)) {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">return</span> std::make_pair(curvePatchGeo.domain()[0][1], endPoint);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="comment">// if (auto endPoint = curvePatchGeo.corner(1); approxSamePoint(ip, endPoint, 1e-8)) {</span></div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="comment">//   return std::make_pair(curvePatchGeo.domain()[0][1], endPoint);</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="comment">// }</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  <span class="comment">// Todo use z-Value to get a good starting point, not brute-force</span></div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keyword">auto</span> guessTParam = FieldVector&lt;double, 2&gt;{<a class="code hl_function" href="../../d0/d3e/a00253.html#a70718c6dfba53db598a93503b15370e4">findGoodStartingPoint</a>(curvePatchGeo, ip), lineGuess};</div>
