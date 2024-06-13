@@ -12,6 +12,7 @@ var a01577 =
     [ "geometry", "d3/daa/a01577.html#a4a74598d788c0a76adaa31d088b36223", null ],
     [ "geometryInFather", "d3/daa/a01577.html#a715327b37ec58f8d04d48fb751d4b48a", null ],
     [ "getHostEntity", "d3/daa/a01577.html#ace1182b19dc00d592be8626d3b03c971", null ],
+    [ "getQuadratureRule", "d3/daa/a01577.html#a594f257f9c9d3e0876522f2df3063196", null ],
     [ "hasFather", "d3/daa/a01577.html#ab9b2b730d19cf7f8baea929302cc8c5d", null ],
     [ "hostEntity", "d3/daa/a01577.html#a75313eb7b24d671893a9209ab1103391", null ],
     [ "hostIndexInLvl", "d3/daa/a01577.html#a675c1d7564a76e96cf6c67101d06ecce", null ],
@@ -35,6 +36,7 @@ var a01577 =
     [ "subId", "d3/daa/a01577.html#a9ce222c51a5e875a9189b217d126d4d6", null ],
     [ "subIndex", "d3/daa/a01577.html#adc9bf71e461632be801c709f6c36aa41", null ],
     [ "trimData", "d3/daa/a01577.html#ada4d2bd4cb331f13af893161fb4ea034", null ],
+    [ "type", "d3/daa/a01577.html#a78df0e82fbff15182029af70cc2b13ca", null ],
     [ "wasRefined", "d3/daa/a01577.html#a56fc8d9830de1558d60df4d33944828e", null ],
     [ "grid_", "d3/daa/a01577.html#a46fcbe7341fc9260faf19e412af7d4b4", null ]
 ];

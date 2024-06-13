@@ -20,6 +20,7 @@ var a01721 =
     [ "checkInside", "db/d66/a01721.html#a405848cca06ef005f93958f0aa98f25f", null ],
     [ "corner", "db/d66/a01721.html#a7a472e31cb5392df3f4676ee05292d72", null ],
     [ "corners", "db/d66/a01721.html#ac9e6bb96eca2e09b49d51dd7fe63b798", null ],
+    [ "getQuadratureRule", "db/d66/a01721.html#a326028805b59bdde4d87956eac12736e", null ],
     [ "global", "db/d66/a01721.html#a6294db7e93258e251b76b319254e0818", null ],
     [ "integrationElement", "db/d66/a01721.html#aaf63cb8a071a72b9d890b5710917fc7f", null ],
     [ "jacobianInverseTransposed", "db/d66/a01721.html#a045851349d8892586c3a105f86e73660", null ],

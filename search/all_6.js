@@ -11,8 +11,8 @@ var searchData=
   ['findintersectionlinearcurveandline_8',['findIntersectionLinearCurveAndLine',['../d4/d08/a00237.html#aacb1dcc3d78324404e5cfe1284bc3d16',1,'Dune::IGA']]],
   ['findspan_9',['findSpan',['../d7/d2f/a00258.html#a8903fd5c5528d00350ae67acdad78eda',1,'Dune::IGA::Splines::findSpan(const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)'],['../d7/d2f/a00258.html#aa4d165c52600cfe1d6e076699c11c259',1,'Dune::IGA::Splines::findSpan(const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)']]],
   ['finish_10',['finish',['../d3/d2d/a01625.html#a6c54283389b80bdd1d3d9782717fad66',1,'Dune::IGA::DefaultTrim::Util::ClippingResult']]],
-  ['finiteelement_11',['FiniteElement',['../d3/d92/a01393.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode']]],
-  ['finiteelement_12',['finiteElement',['../d3/d92/a01393.html#a30eee42a1d363fb03bd25f7b35d15920',1,'Dune::Functions::NurbsNode']]],
+  ['finiteelement_11',['finiteElement',['../d3/d92/a01393.html#a30eee42a1d363fb03bd25f7b35d15920',1,'Dune::Functions::NurbsNode']]],
+  ['finiteelement_12',['FiniteElement',['../d3/d92/a01393.html#a32ed2fa2b77f5f0c20dec6047f101683',1,'Dune::Functions::NurbsNode']]],
   ['finiteelement_5f_13',['finiteElement_',['../d3/d92/a01393.html#a072519f1aaec2ac604c94153cfc9d193',1,'Dune::Functions::NurbsNode']]],
   ['firstelement_14',['FirstElement',['../db/d66/a01721.html#a84865f9839702c564334905aea3bba96',1,'Dune::IGA::Trim::LocalGeometryVariant']]],
   ['flag_15',['flag',['../d7/d68/a01413.html#a28b713d17161ddfd1381021976d1f630',1,'Dune::IGA::DefaultTrim::ElementTrimDataImpl']]],
@@ -20,5 +20,5 @@ var searchData=
   ['formercurve_17',['formerCurve',['../dc/d62/a01629.html#a692691877e783f42a81a78af35802e63',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex']]],
   ['from_5fjson_18',['from_json',['../de/dbc/a00249.html#a70c94a23dfddde23f8cd6b56b223f943',1,'Dune::IGA::Ibra::from_json(const json &amp;j, IbraBase &amp;geometry)'],['../de/dbc/a00249.html#ad78e3ad194d1d1ffa935150b6cd71101',1,'Dune::IGA::Ibra::from_json(const json &amp;j, Curve&lt; worldDim &gt; &amp;curve)'],['../de/dbc/a00249.html#a1894712ac97812f3bade9a3ae5e4d37e',1,'Dune::IGA::Ibra::from_json(const json &amp;j, Surface&lt; worldDim &gt; &amp;surface)'],['../de/dbc/a00249.html#a114df0930f2de87f7f66670c512deb21',1,'Dune::IGA::Ibra::from_json(const json &amp;j, BrepRepresentation &amp;brep)'],['../de/dbc/a00249.html#aeb9afa0d34cf4b61e810a22f8391959e',1,'Dune::IGA::Ibra::from_json(const json &amp;j, BrepLoopRepresentation &amp;loop)'],['../de/dbc/a00249.html#a654522adec893950dcc9c8981fa76e55',1,'Dune::IGA::Ibra::from_json(const json &amp;j, BrepTrimRepresentation &amp;trim)']]],
   ['full_19',['full',['../d4/d9a/a00246.html#a684b340440b49f6af9336f072361bdc7ae9dc924f238fa6cc29465942875fe8f0',1,'Dune::IGA::DefaultTrim']]],
-  ['functiontype_20',['FunctionType',['../d1/d1a/a01285.html#a54419e5ca7517fa394d314ad6d06fec3',1,'Dune::IGA::IntegrationRuleHolder']]]
+  ['functiontype_20',['FunctionType',['../d1/d1a/a01285.html#a8f9a724192f74ab70d323288bae86876',1,'Dune::IGA::IntegrationRuleHolder']]]
 ];

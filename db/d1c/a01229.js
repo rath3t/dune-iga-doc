@@ -19,7 +19,7 @@ var a01229 =
     [ "partitionType", "db/d1c/a01229.html#af6456b52a68d7e58d106cbad22fa5966", null ],
     [ "seed", "db/d1c/a01229.html#abaded2e3efda85bf39bc13c624d851af", null ],
     [ "subEntities", "db/d1c/a01229.html#a7f7e3609b6bc8b0a8203b858dda13743", null ],
-    [ "HostGridAccess< typename std::remove_const< GridImp >::type >", "db/d1c/a01229.html#a22466467a2ab3b42f1332f32e3d1074b", null ],
+    [ "HostGridAccess< typename std::remove_const_t< GridImp > >", "db/d1c/a01229.html#ae4d2ca2ea369cf239aa8985a8ec86c0e", null ],
     [ "PatchGridGlobalIdSet", "db/d1c/a01229.html#af3e61985fd3577cd0f58b90d71d784c2", null ],
     [ "PatchGridLeafIndexSet", "db/d1c/a01229.html#a6df07eb0f3b98e11c226a72c4dc1d767", null ],
     [ "PatchGridLevelIndexSet", "db/d1c/a01229.html#a8681846474da43f0f7ec203ccd19581f", null ],

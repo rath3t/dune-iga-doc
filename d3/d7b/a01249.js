@@ -16,6 +16,7 @@ var a01249 =
     [ "Volume", "d3/d7b/a01249.html#adb649ed6ab6f44099cb9a1a3e02045e4", null ],
     [ "PatchGridGeometry", "d3/d7b/a01249.html#a532233b686e2b8eed696cab1bd16852a", null ],
     [ "affine", "d3/d7b/a01249.html#acf40032146be033faadab9bc8ebf90ad", null ],
+    [ "center", "d3/d7b/a01249.html#a3e741bdc1490a3399af6484a6cb4da2e", null ],
     [ "checkInside", "d3/d7b/a01249.html#a1a220450eaa74966aa936b2e02cd0893", null ],
     [ "corner", "d3/d7b/a01249.html#ad1275a71385765e89ca0c6eb80465ea2", null ],
     [ "corners", "d3/d7b/a01249.html#a7dc7182e93a9cba68b276ea9beb5789b", null ],
