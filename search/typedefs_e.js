@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['tensorgrid_0',['TensorGrid',['../d4/d13/a01162.html#a09e1f768583f5f18b9df7a3cd45c16ee',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['tensorgridelementgeometry_1',['TensorGridElementGeometry',['../d4/d13/a01162.html#afcfb0ddb8c77470f4752282a63ac9f3d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['tensorgridview_2',['TensorGridView',['../d4/d13/a01162.html#a6c3707db6a3e9570c04c0115b3991fcb',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['traits_3',['Traits',['../de/d91/a01034.html#aa33762da2841b00c25730b54f403b18d',1,'Dune::Functions::NurbsLocalBasis::Traits()'],['../de/d02/a01026.html#a82ab6966f35d5907b7236df6827ad859',1,'Dune::Functions::NurbsLocalFiniteElement::Traits()'],['../dd/d7a/a00990.html#a2e18234336cea6f04d919be3660ee478',1,'Dune::IGA::NURBSGrid::Traits()'],['../d0/dfb/a01066.html#abfaa96d1a71f7820c630d037e28230a8',1,'Dune::IGA::NurbsGridFamily::Traits()'],['../db/d1e/a01126.html#a152f3ce08682ba873da9c1be47c62086',1,'Dune::IGA::NURBSLeafGridView::Traits()']]],
-  ['types_4',['Types',['../db/dba/a01078.html#af7aa874aee48c013fa0b7f2d7993315c',1,'Dune::IGA::NURBSGridLeafIndexSet::Types()'],['../dd/de2/a01134.html#adbad8099757c8c280639f3edc4607714',1,'Dune::IGA::NURBSPatch::Types()']]]
+  ['scalartype_0',['ScalarType',['../de/db5/a01730.html#a76ca8e13ef9244ce8301c346e06b014a',1,'Dune::IGA::Splines::BsplineBasis::ScalarType()'],['../d0/d1f/a01734.html#a034522e3b2568b214d1fe1ec0d9b7ff5',1,'Dune::IGA::Splines::Nurbs::ScalarType()']]],
+  ['simplexgeneratorimpl_1',['SimplexGeneratorImpl',['../da/d79/a01310.html#aec9cb76a20cf78139940f325d6800bf3',1,'Dune::IGA::SimplexIntegrationRuleGenerator']]],
+  ['size_5ftype_2',['size_type',['../d2/da6/a01210.html#a401b78d56f3a60443383e1ad654370ea',1,'Dune::Functions::NurbsPreBasis::size_type()'],['../da/de3/a01398.html#ab19a70c9e32e266ff515ef6042716d0a',1,'Dune::Functions::NurbsNode::size_type()'],['../d9/d37/a01754.html#a88bb575b87de5004ce05dd1e09e91465',1,'Dune::IGA::MultiDimensionalNet::size_type()']]],
+  ['stringvector_3',['StringVector',['../d4/dd1/a01334.html#ab30c877d0fe57bf5b97555be6b5d2559',1,'Dune::IGA::Ibra::BrepLoopRepresentation::StringVector()'],['../d5/da0/a01342.html#a94f119b740cc4ce55e6bd721dddbe2c1',1,'Dune::IGA::Ibra::BrepRepresentation::StringVector()']]],
+  ['surface_4',['Surface',['../d0/da7/a00250.html#a1c3714f1b330303f0945eca12710d9e6',1,'Dune::IGA::Ibra']]],
+  ['surfacetype_5',['SurfaceType',['../d9/de4/a01346.html#afc5eab4d9fc91ce9a747b978b2608462',1,'Dune::IGA::Ibra::Brep']]]
 ];

@@ -1,25 +1,12 @@
 var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
 [
-    [ "geometry", "dir_b534248905b8119b36a62f0ff7e8fe43.html", "dir_b534248905b8119b36a62f0ff7e8fe43" ],
+    [ "geometrykernel", "dir_98571e7345f7327fea7723ec1a12d870.html", "dir_98571e7345f7327fea7723ec1a12d870" ],
+    [ "hierarchicpatch", "dir_12fc9e68aad46ae2d80ba50ef1c96d76.html", "dir_12fc9e68aad46ae2d80ba50ef1c96d76" ],
+    [ "integrationrules", "dir_42a2323245b29c7157765c1a0813ddf2.html", "dir_42a2323245b29c7157765c1a0813ddf2" ],
     [ "io", "dir_c3ccff8517fbe337b2b8ad503c3a1590.html", "dir_c3ccff8517fbe337b2b8ad503c3a1590" ],
-    [ "trim", "dir_3a8a27db37838cd238997301ec88b300.html", "dir_3a8a27db37838cd238997301ec88b300" ],
+    [ "parameterspace", "dir_13898c8d649d3f4053b811aa4a00f800.html", "dir_13898c8d649d3f4053b811aa4a00f800" ],
+    [ "splines", "dir_479b904809ee7734e338128330b60cdb.html", "dir_479b904809ee7734e338128330b60cdb" ],
     [ "utils", "dir_054fedf05f142c88b967e78541d2ed3d.html", "dir_054fedf05f142c88b967e78541d2ed3d" ],
-    [ "bsplinealgorithms.hh", "d3/d52/a00023.html", "d3/d52/a00023" ],
-    [ "controlpoint.hh", "dd/dad/a00005.html", "dd/dad/a00005" ],
-    [ "gridcapabilities.hh", "da/d45/a00011.html", null ],
-    [ "nurbsalgorithms.hh", "db/db6/a00074.html", "db/db6/a00074" ],
-    [ "nurbsbasis.hh", "d1/dc1/a00092.html", "d1/dc1/a00092" ],
-    [ "nurbsgeometry.hh", "d5/df9/a00044.html", "d5/df9/a00044" ],
-    [ "nurbsgrid.hh", "db/db2/a00020.html", "db/db2/a00020" ],
-    [ "nurbsgridentity.hh", "d6/d5b/a00026.html", "d6/d5b/a00026" ],
-    [ "nurbsgridindexsets.hh", "d4/d51/a00017.html", "d4/d51/a00017" ],
-    [ "nurbsgridleafiterator.hh", "d2/de7/a00014.html", "d2/de7/a00014" ],
-    [ "nurbsgridtraits.hh", "d1/d09/a00077.html", "d1/d09/a00077" ],
-    [ "nurbsidset.hh", "d4/d3a/a00101.html", "d4/d3a/a00101" ],
-    [ "nurbsintersection.hh", "da/d24/a00068.html", "da/d24/a00068" ],
-    [ "nurbsleafgridview.hh", "d6/d2d/a00047.html", "d6/d2d/a00047" ],
-    [ "nurbslocalgeometry.hh", "d4/dee/a00008.html", "d4/dee/a00008" ],
-    [ "nurbspatch.hh", "d0/d89/a00071.html", "d0/d89/a00071" ],
-    [ "iga/nurbspatchdata.hh", "d9/d6c/a02710.html", "d9/d6c/a02710" ],
-    [ "nurbspatchgeometry.hh", "d7/d46/a00002.html", "d7/d46/a00002" ]
+    [ "nurbsbasis.hh", "d1/d44/a00098.html", "d1/d44/a00098" ],
+    [ "patchgrid.hh", "d7/d46/a00002.html", null ]
 ];

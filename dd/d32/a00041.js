@@ -1,4 +1,5 @@
 var a00041 =
 [
-    [ "Dune::IGA::TrimmedSubGrid< dim >", "d4/d5d/a01202.html", "d4/d5d/a01202" ]
+    [ "is_instantiation_of< Template, T >", "dd/d40/a01762.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d0/d79/a01766.html", null ]
 ];

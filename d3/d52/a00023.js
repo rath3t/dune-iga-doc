@@ -1,8 +1,10 @@
 var a00023 =
 [
-    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "da/d40/a00946.html", "da/d40/a00946" ],
-    [ "findSpanCorrected", "d3/d52/a00023.html#a38d1fb2831ca0dbfa925c4858576a99b", null ],
-    [ "findSpanCorrected", "d3/d52/a00023.html#ac18a8662488d7f3817b559d81efcc445", null ],
-    [ "findSpanUncorrected", "d3/d52/a00023.html#a554d684e12126174010f2a98d8136a3d", null ],
-    [ "findSpanUncorrected", "d3/d52/a00023.html#a5fe5465b190549a27424a17e79029ace", null ]
+    [ "Dune::IGA::GeometryKernel::GeometryConcept", "d5/df4/a01779.html", null ],
+    [ "centerOfMass", "d3/d52/a00023.html#a411224757279c53adc1f72ee1eb20637", null ],
+    [ "findClosestParameterSpaceCoordinate", "d3/d52/a00023.html#a9b67765d6be43c55a6e796d0e7fa4ebd", null ],
+    [ "hessian", "d3/d52/a00023.html#a8c84717f13b7cfdee0600f06d50727a2", null ],
+    [ "isPointOnLineSegment", "d3/d52/a00023.html#af70677b5740fa61eebbe419e897628a9", null ],
+    [ "jacobianTransposed", "d3/d52/a00023.html#aa846d6a57eeeae7b5b7f7d9fbdd52207", null ],
+    [ "position", "d3/d52/a00023.html#a59c520803eb8ee5193287d7000e371bb", null ]
 ];

@@ -1,12 +1,7 @@
 var a00092 =
 [
-    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "de/d91/a01034.html", "de/d91/a01034" ],
-    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "d4/dbc/a01038.html", "d4/dbc/a01038" ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d4/d56/a01042.html", "d4/d56/a01042" ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "de/d02/a01026.html", "de/d02/a01026" ],
-    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "de/d41/a01030.html", "de/d41/a01030" ],
-    [ "Dune::Functions::NurbsNode< GV >", "da/d17/a01046.html", "da/d17/a01046" ],
-    [ "NurbsBasis", "d1/dc1/a00092.html#a4e3cfaeb5308fbfa024b5ec8085912d1", null ],
-    [ "nurbs", "d1/dc1/a00092.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
-    [ "nurbs", "d1/dc1/a00092.html#a10c3f08f7830f39c003415e65e2a0361", null ]
+    [ "Dune::GridFactory< IGA::PatchGrid< dim_, dimworld_, ParameterSpaceType_, ScalarType > >", "d7/dc5/a01242.html", "d7/dc5/a01242" ],
+    [ "makePatchGridFactory", "d1/dc1/a00092.html#a276a43039ec8e84f7cdb21e460a9cf43", null ],
+    [ "makePatchGridFactory", "d1/dc1/a00092.html#a5a93eecf55bf1ee6fd5ca0fa8324a795", null ],
+    [ "withTrimmingCapabilities", "d1/dc1/a00092.html#a4bcb674ccd63ce9fec49511a2088631a", null ]
 ];

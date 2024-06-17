@@ -1,11 +1,9 @@
 var a01086 =
 [
-    [ "Entity", "d9/df5/a01086.html#ab5ed0e7d7966fbbd82f2927a02865a3f", null ],
-    [ "NurbsHierarchicIterator", "d9/df5/a01086.html#a13c8cbde6859db4edbe08bef690c7edb", null ],
-    [ "dereference", "d9/df5/a01086.html#af364067c04c1112e111d205bb1f218d4", null ],
-    [ "equals", "d9/df5/a01086.html#a6e8197dd0af7d82c7905cba7af8c42dc", null ],
-    [ "increment", "d9/df5/a01086.html#aba13f2bc447a984cccc3a5297d202ed1", null ],
-    [ "operator*", "d9/df5/a01086.html#a6acd34d38a292b42e8cd7ebbe5952136", null ],
-    [ "operator<=>", "d9/df5/a01086.html#a4347403de0b9c96a4a26313edd846c6c", null ],
-    [ "nurbsEntity", "d9/df5/a01086.html#a99753df9e851bebc039c3bf842e5b8f4", null ]
+    [ "VectorType", "d9/df5/a01086.html#a4f2df71a64c4dde55c8222be6efe4edf", null ],
+    [ "operator*=", "d9/df5/a01086.html#a0e7dedffbcd2a8886b7a6f606df34300", null ],
+    [ "operator+=", "d9/df5/a01086.html#a3535fe07dc1acbfaca07fdefa369e84b", null ],
+    [ "setZero", "d9/df5/a01086.html#afed2f25c3da0611b87bead57e0be03b8", null ],
+    [ "p", "d9/df5/a01086.html#a59e28962433ecc6c63740220adee87d3", null ],
+    [ "w", "d9/df5/a01086.html#a49dcf9a27a50167aec078b0f12531b04", null ]
 ];

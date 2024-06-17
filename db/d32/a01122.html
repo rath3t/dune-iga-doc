@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::NurbsLeafGridViewTraits&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt; Struct Template Reference</title>
+<title>dune-iga: Dune::Capabilities::hasEntity&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,6 +16,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -86,60 +93,75 @@ $(document).ready(function(){initNavTree('db/d32/a01122.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
+<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="../../d0/d02/a01119.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::NurbsLeafGridViewTraits&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt; Struct Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::Capabilities::hasEntity&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>&zwj;**  
- <a href="../../db/d32/a01122.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="../../d6/d2d/a00047_source.html">dune/iga/nurbsleafgridview.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../db/db6/a00074_source.html">dune/iga/hierarchicpatch/gridcapabilities.hh</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a2dfdb732a67755e1228be370e1ff5970"><td class="memItemLeft" align="right" valign="top">typedef GridImp::Traits::template <a class="el" href="../../dd/d09/a01118.html">Codim</a>&lt; cd &gt;::template <a class="el" href="../../db/d32/a01122.html">Partition</a>&lt; pit &gt;::LeafIterator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/a01122.html#a2dfdb732a67755e1228be370e1ff5970">Iterator</a></td></tr>
-<tr class="memdesc:a2dfdb732a67755e1228be370e1ff5970"><td class="mdescLeft">&#160;</td><td class="mdescRight">iterator over a given codim and partition type  <a href="../../db/d32/a01122.html#a2dfdb732a67755e1228be370e1ff5970">More...</a><br /></td></tr>
-<tr class="separator:a2dfdb732a67755e1228be370e1ff5970"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16fee7245c86dd1d4a422eaf24391ecc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/a01122.html#a16fee7245c86dd1d4a422eaf24391ecc">GridFamilyTraitsT</a> = GridFamilyTraits&lt; dim, dimworld, ScalarType &gt;</td></tr>
+<tr class="separator:a16fee7245c86dd1d4a422eaf24391ecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
+<tr class="memitem:adf69ff2c0cd23b0c541d05360c32a977"><td class="memItemLeft" align="right" valign="top">static const bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/a01122.html#adf69ff2c0cd23b0c541d05360c32a977">v</a> = GridFamilyTraitsT::template hasEntity&lt;codim&gt;</td></tr>
+<tr class="separator:adf69ff2c0cd23b0c541d05360c32a977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;class GridImp&gt;<br />
-template&lt;int cd&gt;<br />
-template&lt;PartitionIteratorType pit&gt;<br />
-struct Dune::IGA::NurbsLeafGridViewTraits&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt;</div><p >&zwj;** </p>
-<p >Define types needed to iterate over entities of a given partition type *&zwj;/ </p>
-</div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="a2dfdb732a67755e1228be370e1ff5970" name="a2dfdb732a67755e1228be370e1ff5970"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2dfdb732a67755e1228be370e1ff5970">&#9670;&nbsp;</a></span>Iterator</h2>
+<h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a16fee7245c86dd1d4a422eaf24391ecc" name="a16fee7245c86dd1d4a422eaf24391ecc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16fee7245c86dd1d4a422eaf24391ecc">&#9670;&nbsp;</a></span>GridFamilyTraitsT</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;class GridImp &gt; </div>
-<div class="memtemplate">
-template&lt;int cd&gt; </div>
-<div class="memtemplate">
-template&lt;PartitionIteratorType pit&gt; </div>
+template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits, int codim&gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname">typedef GridImp::Traits::template <a class="el" href="../../dd/d09/a01118.html">Codim</a>&lt;cd&gt;::template <a class="el" href="../../db/d32/a01122.html">Partition</a>&lt;pit&gt;::LeafIterator <a class="el" href="../../d6/d40/a01114.html">Dune::IGA::NurbsLeafGridViewTraits</a>&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt;::Iterator</td>
+          <td class="memname">using Dune::Capabilities::hasEntity&lt; <a class="el" href="../../dd/d9e/a01226.html">IGA::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;::GridFamilyTraitsT =  GridFamilyTraits&lt;dim, dimworld, ScalarType&gt;</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>iterator over a given codim and partition type </p>
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="adf69ff2c0cd23b0c541d05360c32a977" name="adf69ff2c0cd23b0c541d05360c32a977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf69ff2c0cd23b0c541d05360c32a977">&#9670;&nbsp;</a></span>v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, typename ScalarType , template&lt; int, int, typename &gt; typename GridFamilyTraits, int codim&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const bool Dune::Capabilities::hasEntity&lt; <a class="el" href="../../dd/d9e/a01226.html">IGA::PatchGrid</a>&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;::v = GridFamilyTraitsT::template hasEntity&lt;codim&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
 
 </div>
 </div>
 <hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../d6/d2d/a00047_source.html">nurbsleafgridview.hh</a></li>
+<li><a class="el" href="../../db/db6/a00074_source.html">gridcapabilities.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d8/d87/a00118.html">Dune</a></li><li class="navelem"><a class="el" href="../../df/d6a/a00119.html">IGA</a></li><li class="navelem"><a class="el" href="../../d6/d40/a01114.html">NurbsLeafGridViewTraits</a></li><li class="navelem"><a class="el" href="../../dd/d09/a01118.html">Codim</a></li><li class="navelem"><a class="el" href="../../db/d32/a01122.html">Partition</a></li>
+    <li class="navelem"><a class="el" href="../../d7/d40/a00236.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/d82/a00243.html">Capabilities</a></li><li class="navelem"><a class="el" href="../../db/d32/a01122.html">hasEntity&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

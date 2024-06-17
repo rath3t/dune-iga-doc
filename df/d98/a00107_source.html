@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: boundarypatch.hh Source File</title>
+<title>dune-iga: integrationruleholder.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,6 +16,13 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+});
+</script>
+<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -84,56 +91,81 @@ $(document).ready(function(){initNavTree('df/d98/a00107_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">boundarypatch.hh</div></div>
+  <div class="headertitle"><div class="title">integrationruleholder.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../df/d98/a00107.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#if HAVE_DUNE_FUFEM</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#  include &quot;<a class="code" href="../../de/de1/a00065.html">dune/iga/utils/igahelpers.hh</a>&quot;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#  include &lt;dune/fufem/boundarypatch.hh&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#  include &lt;dune/python/pybind11/eigen.h&gt;</span></div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#  include &lt;dune/python/pybind11/functional.h&gt;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#  include &lt;dune/python/pybind11/pybind11.h&gt;</span></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#  include &lt;dune/python/pybind11/stl.h&gt;</span></div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">namespace </span>Dune::IGA::Python {</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="comment">// Python wrapper for the FVAssembler C++ class</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">template</span> &lt;<span class="keyword">class </span>BoundaryPatch, <span class="keyword">class</span>... options&gt;</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">void</span> registerBoundaryPatch(pybind11::handle scope, pybind11::class_&lt;BoundaryPatch, options...&gt; cls) {</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    <span class="keyword">using </span>pybind11::operator<span class="stringliteral">&quot;&quot;</span>_a;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    <span class="keyword">using </span>GridView = <span class="keyword">typename</span> BoundaryPatch::GridView;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    cls.def(pybind11::init([](<span class="keyword">const</span> GridView&amp; gv, Eigen::Ref&lt;Eigen::VectorX&lt;bool&gt;&gt; vec) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>              Dune::BitSetVector&lt;1&gt; bitSetVector;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>              bitSetVector.resize(vec.size());</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>              for (<span class="keywordtype">size_t</span> i = 0; i &lt; vec.size(); ++i)</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                bitSetVector[i] = vec[i];</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>              BoundaryPatch* neumannBoundary = <span class="keyword">new</span> BoundaryPatch(gv);</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>              <span class="comment">// create property for insertion by vertex vector</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>              <a class="code hl_class" href="../../d8/d15/a01218.html">BoundaryPatchEnclosingVerticesPropertyTrimmed&lt;GridView, 1&gt;</a> prop(gv, bitSetVector);</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>              neumannBoundary-&gt;insertFacesByProperty(prop);</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>              <span class="keywordflow">return</span> neumannBoundary;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>            }),</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>            pybind11::keep_alive&lt;1, 2&gt;(), pybind11::keep_alive&lt;1, 3&gt;());</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>}  <span class="comment">// namespace Dune::IGA::Python</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aa00065_html"><div class="ttname"><a href="../../de/de1/a00065.html">igahelpers.hh</a></div></div>
-<div class="ttc" id="aa01218_html"><div class="ttname"><a href="../../d8/d15/a01218.html">BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div><div class="ttdef"><b>Definition:</b> igahelpers.hh:10</div></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="../../d0/dc2/a00104.html">dune/iga/integrationrules/simplexintegrationrulegenerator.hh</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d4/d08/a00237.html">Dune::IGA</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d0/d1f/a00247.html">    9</a></span><span class="keyword">namespace </span>DefaultParameterSpace {</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keyword">template</span> &lt;<span class="keyword">typename</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d0/d00/a01286.html">   11</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="../../d0/d00/a01286.html">DefaultIntegrationRuleGenerator</a></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d0/d00/a01286.html#a87af598cf910b85f2baf09497db55023">   13</a></span>    <span class="keyword">using </span><a class="code hl_struct" href="../../da/d79/a01310.html">Generator</a> = <a class="code hl_struct" href="../../da/d79/a01310.html">SimplexIntegrationRuleGenerator&lt;GridImp&gt;</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="../../d0/d00/a01286.html#ad3b0f04ca36691707fe0af11b230c369">   14</a></span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../d0/d00/a01286.html#ad3b0f04ca36691707fe0af11b230c369">operator()</a>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; element, <span class="keywordtype">int</span> order, QuadratureType::Enum qt = QuadratureType::GaussLegendre)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      <span class="keywordflow">return</span> <a class="code hl_function" href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">Generator::createIntegrationRule</a>(element, order, parameters, qt);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    }</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <span class="keyword">typename</span> <a class="code hl_typedef" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Generator::Parameters</a> parameters{.<a class="code hl_variable" href="../../d4/d34/a01298.html#a8028055cbd3aae4719cd6e6e18fd8370">boundaryDivisions</a> = <a class="code hl_function" href="../../dd/d90/a01626.html#ada95676ba4f9a7e1435aac5a1d2cf57d">Preferences::getInstance</a>().<a class="code hl_function" href="../../dd/d90/a01626.html#a57b170f47df09b48bfa8b0392d45f231">boundaryDivisions</a>(),</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>                                              .targetAccuracy    = <a class="code hl_function" href="../../dd/d90/a01626.html#ada95676ba4f9a7e1435aac5a1d2cf57d">Preferences::getInstance</a>().<a class="code hl_function" href="../../dd/d90/a01626.html#a885a0aee4844f64a2dd667613883b528">targetAccuracy</a>()};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  };</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>}; <span class="comment">// namespace DefaultParameterSpace</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Gr<span class="keywordtype">id</span>Imp&gt;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html">   25</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../dc/ded/a01290.html">IntegrationRuleHolder</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>{</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#a59d57d953fd146ae9ec714a2004e4755">   27</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../dc/ded/a01290.html#a59d57d953fd146ae9ec714a2004e4755">ParameterSpaceElement</a> = <span class="keyword">typename</span> GridImp::ParameterSpace::template Codim&lt;0&gt;::ParameterSpaceGridEntity;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#a5f235b98a58974dcb509500c824bee45">   29</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../dc/ded/a01290.html#a5f235b98a58974dcb509500c824bee45">dim</a> = GridImp::dimension;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#a8f9a724192f74ab70d323288bae86876">   31</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../dc/ded/a01290.html#a8f9a724192f74ab70d323288bae86876">FunctionType</a> =</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      std::function&lt;QuadratureRule&lt;double, dim&gt;(<span class="keyword">const</span> <a class="code hl_typedef" href="../../dc/ded/a01290.html#a59d57d953fd146ae9ec714a2004e4755">ParameterSpaceElement</a>&amp;, <span class="keywordtype">int</span>, QuadratureType::Enum)&gt;;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#aebd8456cd60fddf784ecb9fbd1d0fba4">   34</a></span>  <a class="code hl_function" href="../../dc/ded/a01290.html#aebd8456cd60fddf784ecb9fbd1d0fba4">IntegrationRuleHolder</a>()</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      : generator_(DefaultParameterSpace::DefaultIntegrationRuleGenerator&lt;GridImp&gt;{}) {}</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#a0d71316cb8973cc2b3e0d209f8f6c20d">   37</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="../../dc/ded/a01290.html#a0d71316cb8973cc2b3e0d209f8f6c20d">integrationRule</a>(<a class="code hl_typedef" href="../../dc/ded/a01290.html#a8f9a724192f74ab70d323288bae86876">FunctionType</a> generator) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    generator_ = generator;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../dc/ded/a01290.html#a11bdc3f7fbde036b4837c314dace72d7">   41</a></span>  <a class="code hl_typedef" href="../../dc/ded/a01290.html#a8f9a724192f74ab70d323288bae86876">FunctionType</a> <a class="code hl_function" href="../../dc/ded/a01290.html#a11bdc3f7fbde036b4837c314dace72d7">integrationRule</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordflow">return</span> generator_;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  }</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <a class="code hl_typedef" href="../../dc/ded/a01290.html#a8f9a724192f74ab70d323288bae86876">FunctionType</a> generator_;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>};</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} <span class="comment">// namespace Dune::IGA</span></div>
+<div class="ttc" id="aa00104_html"><div class="ttname"><a href="../../d0/dc2/a00104.html">simplexintegrationrulegenerator.hh</a></div></div>
+<div class="ttc" id="aa00237_html"><div class="ttname"><a href="../../d4/d08/a00237.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> algorithms.hh:9</div></div>
+<div class="ttc" id="aa01286_html"><div class="ttname"><a href="../../d0/d00/a01286.html">Dune::IGA::DefaultParameterSpace::DefaultIntegrationRuleGenerator</a></div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:12</div></div>
+<div class="ttc" id="aa01286_html_ad3b0f04ca36691707fe0af11b230c369"><div class="ttname"><a href="../../d0/d00/a01286.html#ad3b0f04ca36691707fe0af11b230c369">Dune::IGA::DefaultParameterSpace::DefaultIntegrationRuleGenerator::operator()</a></div><div class="ttdeci">auto operator()(const auto &amp;element, int order, QuadratureType::Enum qt=QuadratureType::GaussLegendre) const</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:14</div></div>
+<div class="ttc" id="aa01290_html"><div class="ttname"><a href="../../dc/ded/a01290.html">Dune::IGA::IntegrationRuleHolder</a></div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:26</div></div>
+<div class="ttc" id="aa01290_html_a0d71316cb8973cc2b3e0d209f8f6c20d"><div class="ttname"><a href="../../dc/ded/a01290.html#a0d71316cb8973cc2b3e0d209f8f6c20d">Dune::IGA::IntegrationRuleHolder::integrationRule</a></div><div class="ttdeci">void integrationRule(FunctionType generator)</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:37</div></div>
+<div class="ttc" id="aa01290_html_a11bdc3f7fbde036b4837c314dace72d7"><div class="ttname"><a href="../../dc/ded/a01290.html#a11bdc3f7fbde036b4837c314dace72d7">Dune::IGA::IntegrationRuleHolder::integrationRule</a></div><div class="ttdeci">FunctionType integrationRule() const</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:41</div></div>
+<div class="ttc" id="aa01290_html_a59d57d953fd146ae9ec714a2004e4755"><div class="ttname"><a href="../../dc/ded/a01290.html#a59d57d953fd146ae9ec714a2004e4755">Dune::IGA::IntegrationRuleHolder::ParameterSpaceElement</a></div><div class="ttdeci">typename GridImp::ParameterSpace::template Codim&lt; 0 &gt;::ParameterSpaceGridEntity ParameterSpaceElement</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:27</div></div>
+<div class="ttc" id="aa01290_html_a5f235b98a58974dcb509500c824bee45"><div class="ttname"><a href="../../dc/ded/a01290.html#a5f235b98a58974dcb509500c824bee45">Dune::IGA::IntegrationRuleHolder::dim</a></div><div class="ttdeci">static constexpr int dim</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:29</div></div>
+<div class="ttc" id="aa01290_html_a8f9a724192f74ab70d323288bae86876"><div class="ttname"><a href="../../dc/ded/a01290.html#a8f9a724192f74ab70d323288bae86876">Dune::IGA::IntegrationRuleHolder::FunctionType</a></div><div class="ttdeci">std::function&lt; QuadratureRule&lt; double, dim &gt;(const ParameterSpaceElement &amp;, int, QuadratureType::Enum)&gt; FunctionType</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:32</div></div>
+<div class="ttc" id="aa01290_html_aebd8456cd60fddf784ecb9fbd1d0fba4"><div class="ttname"><a href="../../dc/ded/a01290.html#aebd8456cd60fddf784ecb9fbd1d0fba4">Dune::IGA::IntegrationRuleHolder::IntegrationRuleHolder</a></div><div class="ttdeci">IntegrationRuleHolder()</div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:34</div></div>
+<div class="ttc" id="aa01298_html_a8028055cbd3aae4719cd6e6e18fd8370"><div class="ttname"><a href="../../d4/d34/a01298.html#a8028055cbd3aae4719cd6e6e18fd8370">Dune::IGA::SimplexGenerator::Parameters::boundaryDivisions</a></div><div class="ttdeci">int boundaryDivisions</div><div class="ttdef"><b>Definition:</b> simplexgenerator.hh:25</div></div>
+<div class="ttc" id="aa01310_html"><div class="ttname"><a href="../../da/d79/a01310.html">Dune::IGA::SimplexIntegrationRuleGenerator</a></div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:12</div></div>
+<div class="ttc" id="aa01310_html_a303253ffd945b5e99b67315c47326852"><div class="ttname"><a href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Dune::IGA::SimplexIntegrationRuleGenerator::Parameters</a></div><div class="ttdeci">typename SimplexGeneratorImpl::Parameters Parameters</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:22</div></div>
+<div class="ttc" id="aa01310_html_ae7271f85d0622b15ecbab25e6649cd01"><div class="ttname"><a href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">Dune::IGA::SimplexIntegrationRuleGenerator::createIntegrationRule</a></div><div class="ttdeci">static auto createIntegrationRule(const ParameterSpaceElement &amp;element, int quadratureOrder, const Parameters &amp;parameters=Parameters{}, const QuadratureType::Enum qt=QuadratureType::GaussLegendre)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:26</div></div>
+<div class="ttc" id="aa01626_html_a57b170f47df09b48bfa8b0392d45f231"><div class="ttname"><a href="../../dd/d90/a01626.html#a57b170f47df09b48bfa8b0392d45f231">Dune::IGA::DefaultParameterSpace::Preferences::boundaryDivisions</a></div><div class="ttdeci">int boundaryDivisions() const</div><div class="ttdef"><b>Definition:</b> trimmerpreferences.hh:23</div></div>
+<div class="ttc" id="aa01626_html_a885a0aee4844f64a2dd667613883b528"><div class="ttname"><a href="../../dd/d90/a01626.html#a885a0aee4844f64a2dd667613883b528">Dune::IGA::DefaultParameterSpace::Preferences::targetAccuracy</a></div><div class="ttdeci">double targetAccuracy() const</div><div class="ttdef"><b>Definition:</b> trimmerpreferences.hh:32</div></div>
+<div class="ttc" id="aa01626_html_ada95676ba4f9a7e1435aac5a1d2cf57d"><div class="ttname"><a href="../../dd/d90/a01626.html#ada95676ba4f9a7e1435aac5a1d2cf57d">Dune::IGA::DefaultParameterSpace::Preferences::getInstance</a></div><div class="ttdeci">static Preferences &amp; getInstance()</div><div class="ttdef"><b>Definition:</b> trimmerpreferences.hh:14</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_e42d0074801678c644b0e137d50ef233.html">python</a></li><li class="navelem"><a class="el" href="../../dir_4df0bd6c9c69aa67512ad22eda882a96.html">iga</a></li><li class="navelem"><a class="el" href="../../df/d98/a00107.html">boundarypatch.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_42a2323245b29c7157765c1a0813ddf2.html">integrationrules</a></li><li class="navelem"><a class="el" href="../../df/d98/a00107.html">integrationruleholder.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

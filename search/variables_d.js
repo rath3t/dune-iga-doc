@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['scale_0',['scale',['../d4/d13/a01162.html#a1d056ab95bab7f99877a5a713727331d',1,'Dune::IGA::Trim::NURBSPatchTrimmer']]],
-  ['scaling_5f_1',['scaling_',['../d5/d4c/a01058.html#a37b0deda98cdb2fa4103e89b03b66536',1,'Dune::IGA::NURBSGeometry::scaling_()'],['../dc/d9e/a01206.html#af4bc4bed4998c5f84bf8042fbcb3ef32',1,'Dune::IGA::TransformToSpan::scaling_()']]],
-  ['subgrid_5f_2',['subgrid_',['../d5/d4c/a01058.html#a5a0585779a2647db21323ac5c6c38da7',1,'Dune::IGA::NURBSGeometry']]],
-  ['surface_5fgeometries_5f3d_3',['surface_geometries_3d',['../d1/d7a/a00982.html#a9010ce626abe088d92fa7ca94dea8809',1,'Dune::IGA::Ibra::BrepRepresentation']]],
-  ['surfaces_4',['surfaces',['../d3/d7b/a00986.html#a77af74d7b76494e0e1282baf5a9867c8',1,'Dune::IGA::Ibra::Brep']]]
+  ['n_5fcontrolpoints_0',['n_controlPoints',['../d5/df4/a01322.html#a11f6446750cdd679e343bf5c380a3b37',1,'Dune::IGA::Ibra::IbraNURBSData']]],
+  ['netdim_1',['netDim',['../d9/d37/a01754.html#a20c31ed8cf05b75297d849c3c70ee25b',1,'Dune::IGA::MultiDimensionalNet']]],
+  ['numberofsecondderivatives_2',['numberOfSecondDerivatives',['../d6/d40/a01114.html#a22485aefa28fa4f18ede2d53d1ec8b0c',1,'Dune::IGA::GeometryKernel::PatchGeometryLocalView']]],
+  ['numberoftrimmedelements_3',['numberOfTrimmedElements',['../d8/dd0/a01430.html#acaf2aa3ff730ce2cb4822e10bbb9ed89',1,'Dune::IGA::DefaultParameterSpace::VectorEntityContainer']]],
+  ['numberofuntrimmedelements_4',['numberOfUnTrimmedElements',['../d8/dd0/a01430.html#adfeff1ca7249191602c96f6b4b6ce5b1',1,'Dune::IGA::DefaultParameterSpace::VectorEntityContainer']]],
+  ['numboundarysegments_5f_5',['numBoundarySegments_',['../df/d2f/a01474.html#af14d168adc157397e609ac9ceec41a01',1,'Dune::IGA::DefaultParameterSpace::ParameterSpaceImpl']]],
+  ['numcells_5f_6',['numCells_',['../d8/dbe/a01370.html#ace1c9b7c96ba1c206f79b1c115939c41',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['numpoints_5f_7',['numPoints_',['../d8/dbe/a01370.html#acb3c97d81a0773a69a2fb7e42c8969ac',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
+  ['nurbs_5f_8',['nurbs_',['../d5/d10/a01738.html#a478dac2e76f1772e6cdb0ddef23d6ce6',1,'Dune::IGA::Splines::Nurbs::LocalView']]]
 ];

@@ -1,4 +1,7 @@
 var a00071 =
 [
-    [ "Dune::IGA::NURBSPatch< dim, dimworld, ScalarType >", "dd/de2/a01134.html", "dd/de2/a01134" ]
+    [ "Dune::IGA::PatchGridEntity< codim, dim, GridImp >", "d0/d58/a01230.html", "d0/d58/a01230" ],
+    [ "Dune::IGA::PatchGridEntity< 0, dim, GridImp >", "d8/ddf/a01238.html", "d8/ddf/a01238" ],
+    [ "referenceElement", "d0/d89/a00071.html#aa4c0e4b40689204d775a70c356f3df9c", null ],
+    [ "referenceElement", "d0/d89/a00071.html#a10579811f681f13697cedf2abf633e78", null ]
 ];
