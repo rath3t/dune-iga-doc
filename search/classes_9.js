@@ -1,31 +1,4 @@
 var searchData=
 [
-  ['newverteximpl_0',['NewVertexImpl',['../db/d95/a01637.html',1,'Dune::IGA::DefaultTrim::Util::ClippingResult::Vertex']]],
-  ['nth_3c_200_2c_20dune_3a_3afieldvector_3c_20t_2c_202_20_3e_20_3e_1',['nth&lt; 0, Dune::FieldVector&lt; T, 2 &gt; &gt;',['../dc/d8c/a01297.html',1,'mapbox::util']]],
-  ['nth_3c_201_2c_20dune_3a_3afieldvector_3c_20t_2c_202_20_3e_20_3e_2',['nth&lt; 1, Dune::FieldVector&lt; T, 2 &gt; &gt;',['../d3/d07/a01301.html',1,'mapbox::util']]],
-  ['nurbs_3',['Nurbs',['../d2/d70/a01729.html',1,'Dune::IGA::Splines::Nurbs&lt; dim, ScalarType_ &gt;'],['../d5/d36/a01773.html',1,'iga.basis.Nurbs']]],
-  ['nurbs_3c_20mydimension_2c_20ctype_20_3e_4',['Nurbs&lt; mydimension, ctype &gt;',['../d2/d70/a01729.html',1,'Dune::IGA::Splines']]],
-  ['nurbs_3c_20mydimension_2c_20double_20_3e_5',['Nurbs&lt; mydimension, double &gt;',['../d2/d70/a01729.html',1,'Dune::IGA::Splines']]],
-  ['nurbslocalbasis_6',['NurbsLocalBasis',['../da/d77/a01381.html',1,'Dune::Functions']]],
-  ['nurbslocalbasis_3c_20gv_2c_20double_20_3e_7',['NurbsLocalBasis&lt; GV, double &gt;',['../da/d77/a01381.html',1,'Dune::Functions']]],
-  ['nurbslocalcoefficients_8',['NurbsLocalCoefficients',['../df/d68/a01385.html',1,'Dune::Functions']]],
-  ['nurbslocalfiniteelement_9',['NurbsLocalFiniteElement',['../d3/dea/a01377.html',1,'Dune::Functions']]],
-  ['nurbslocalfiniteelement_3c_20gv_2c_20double_20_3e_10',['NurbsLocalFiniteElement&lt; GV, double &gt;',['../d3/dea/a01377.html',1,'Dune::Functions']]],
-  ['nurbslocalinterpolation_11',['NurbsLocalInterpolation',['../d0/d95/a01389.html',1,'Dune::Functions']]],
-  ['nurbslocalinterpolation_3c_20dim_2c_20dune_3a_3afunctions_3a_3anurbslocalbasis_3c_20gv_2c_20double_20_3e_20_3e_12',['NurbsLocalInterpolation&lt; dim, Dune::Functions::NurbsLocalBasis&lt; GV, double &gt; &gt;',['../d0/d95/a01389.html',1,'Dune::Functions']]],
-  ['nurbslocalinterpolation_3c_20dim_2c_20dune_3a_3afunctions_3a_3anurbslocalbasis_3c_20gv_2c_20r_20_3e_20_3e_13',['NurbsLocalInterpolation&lt; dim, Dune::Functions::NurbsLocalBasis&lt; GV, R &gt; &gt;',['../d0/d95/a01389.html',1,'Dune::Functions']]],
-  ['nurbsnode_14',['NurbsNode',['../d3/d92/a01393.html',1,'Dune::Functions']]],
-  ['nurbspatch_15',['NURBSPatch',['../de/d99/a01101.html',1,'Dune::IGA::GeometryKernel']]],
-  ['nurbspatch_3c_20dim_2c_20dimworld_2c_20ctype_20_3e_16',['NURBSPatch&lt; dim, dimworld, ctype &gt;',['../de/d99/a01101.html',1,'Dune::IGA::GeometryKernel']]],
-  ['nurbspatch_3c_20gridimp_3a_3adimension_2c_20worlddimension_2c_20ctype_20_3e_17',['NURBSPatch&lt; GridImp::dimension, worlddimension, ctype &gt;',['../de/d99/a01101.html',1,'Dune::IGA::GeometryKernel']]],
-  ['nurbspatch_3c_20mydimension_2c_20coorddimension_2c_20ctype_20_3e_18',['NURBSPatch&lt; mydimension, coorddimension, ctype &gt;',['../de/d99/a01101.html',1,'Dune::IGA::GeometryKernel']]],
-  ['nurbspatchdata_19',['NURBSPatchData',['../df/d2e/a01737.html',1,'Dune::IGA']]],
-  ['nurbspatchdata_3c_20dim_2c_20dimworld_20_3e_20',['NURBSPatchData&lt; dim, dimworld &gt;',['../df/d2e/a01737.html',1,'Dune::IGA']]],
-  ['nurbspatchdata_3c_20dim_2c_20dimworld_2c_20ctype_20_3e_21',['NURBSPatchData&lt; dim, dimworld, ctype &gt;',['../df/d2e/a01737.html',1,'Dune::IGA']]],
-  ['nurbspatchdata_3c_20mydimension_2c_20worlddimension_2c_20ctype_20_3e_22',['NURBSPatchData&lt; mydimension, worlddimension, ctype &gt;',['../df/d2e/a01737.html',1,'Dune::IGA']]],
-  ['nurbspatchdata_3c_20mydimension_2c_20worlddimension_2c_20double_20_3e_23',['NURBSPatchData&lt; mydimension, worlddimension, double &gt;',['../df/d2e/a01737.html',1,'Dune::IGA']]],
-  ['nurbsprebasis_24',['NurbsPreBasis',['../de/d04/a01209.html',1,'Dune::Functions']]],
-  ['nurbsprebasis_3c_20gv_20_3e_25',['NurbsPreBasis&lt; GV &gt;',['../de/d04/a01209.html',1,'Dune::Functions']]],
-  ['nurbsprebasis_3c_20gv_2c_20double_20_3e_26',['NurbsPreBasis&lt; GV, double &gt;',['../de/d04/a01209.html',1,'Dune::Functions']]],
-  ['nurbsprebasis_3c_20gv_2c_20r_20_3e_27',['NurbsPreBasis&lt; GV, R &gt;',['../de/d04/a01209.html',1,'Dune::Functions']]]
+  ['partition_0',['Partition',['../db/d32/a01122.html',1,'Dune::IGA::NurbsLeafGridViewTraits&lt; GridImp &gt;::Codim&lt; cd &gt;::Partition&lt; pit &gt;'],['../d4/da7/a01102.html',1,'NurbsGridTraits&lt; dim, dimw, GridImp, GeometryImp, EntityImp, LevelIteratorImp, LeafIntersectionImp, LevelIntersectionImp, LeafIntersectionIteratorImp, LevelIntersectionIteratorImp, HierarchicIteratorImp, LeafIteratorImp, LevelIndexSetImp, LeafIndexSetImp, GlobalIdSetImp, GIDType, LocalIdSetImp, LIDType, CCType, LevelGridViewTraits, LeafGridViewTraits, EntitySeedImp, LocalGeometryImp &gt;::Codim&lt; cd &gt;::Partition&lt; pitype &gt;']]]
 ];

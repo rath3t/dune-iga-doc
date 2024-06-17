@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localgeometrytag_0',['LocalGeometryTag',['../d4/d9a/a00246.html#a235119f36c1c00db38f86bc6d742d365',1,'Dune::IGA::DefaultTrim']]]
+  ['type_0',['Type',['../d8/dfa/a00121.html#a7e1d9b847ff31435dac790c39d02451f',1,'Dune::IGA::Ibra']]]
 ];

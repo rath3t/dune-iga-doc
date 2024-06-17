@@ -1,4 +1,5 @@
 var a00053 =
 [
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d1/d17/a01369.html", "d1/d17/a01369" ]
+    [ "is_instantiation_of< Template, T >", "d6/d1e/a01234.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d8/ddf/a01238.html", null ]
 ];

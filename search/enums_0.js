@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['elementtrimflag_0',['ElementTrimFlag',['../d4/d9a/a00246.html#a684b340440b49f6af9336f072361bdc7',1,'Dune::IGA::DefaultTrim']]],
-  ['entityidtype_1',['EntityIdType',['../d2/d9b/a01433.html#acb2092c4fcba2bacf983813d49dcafbf',1,'Dune::IGA::DefaultTrim::IdType']]]
+  ['edgeorientation_0',['EdgeOrientation',['../d2/d7b/a01150.html#a4b56bac0e58a6f15d7509de369649719',1,'Dune::IGA::Boundary']]],
+  ['elementtrimflag_1',['ElementTrimFlag',['../df/d6a/a00119.html#a34b2741ab599082a80dacc40c6e5069b',1,'Dune::IGA']]]
 ];

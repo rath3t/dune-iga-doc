@@ -1,30 +1,6 @@
 var searchData=
 [
-  ['parameter_0',['Parameter',['../d7/d82/a01601.html',1,'Dune::IGA::DefaultTrim::Parameter'],['../dd/db4/a01693.html',1,'Dune::IGA::IdentityTrim::Parameter']]],
-  ['parameters_1',['Parameters',['../dc/dd5/a01293.html',1,'Dune::IGA::SimplexGenerator']]],
-  ['patchgeometrylocalview_2',['PatchGeometryLocalView',['../d8/ded/a01113.html',1,'Dune::IGA::GeometryKernel']]],
-  ['patchgrid_3',['PatchGrid',['../d8/d53/a01225.html',1,'Dune::IGA']]],
-  ['patchgridentity_4',['PatchGridEntity',['../db/d1c/a01229.html',1,'Dune::IGA']]],
-  ['patchgridentity_3c_200_2c_20dim_2c_20gridimp_20_3e_5',['PatchGridEntity&lt; 0, dim, GridImp &gt;',['../dc/dab/a01237.html',1,'Dune::IGA']]],
-  ['patchgridentityseed_6',['PatchGridEntitySeed',['../dc/d60/a01461.html',1,'Dune::IGA::DefaultTrim::PatchGridEntitySeed&lt; codim, GridImp &gt;'],['../d3/d21/a01657.html',1,'Dune::IGA::IdentityTrim::PatchGridEntitySeed&lt; codim, GridImp &gt;']]],
-  ['patchgridfamily_7',['PatchGridFamily',['../da/d24/a01609.html',1,'Dune::IGA::DefaultTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;'],['../d5/d54/a01213.html',1,'Dune::IGA::IdentityTrim::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;'],['../d1/d31/a01245.html',1,'Dune::IGA::PatchGridFamily&lt; dim, dimworld, TrimmerType, ScalarType &gt;']]],
-  ['patchgridgeometry_8',['PatchGridGeometry',['../d3/d7b/a01249.html',1,'Dune::IGA']]],
-  ['patchgridglobalidset_9',['PatchGridGlobalIdSet',['../da/df7/a01457.html',1,'Dune::IGA::DefaultTrim::PatchGridGlobalIdSet&lt; GridImp &gt;'],['../dc/d87/a01649.html',1,'Dune::IGA::IdentityTrim::PatchGridGlobalIdSet&lt; GridImp &gt;']]],
-  ['patchgridhierarchiciterator_10',['PatchGridHierarchicIterator',['../d4/dfd/a01465.html',1,'Dune::IGA::DefaultTrim::PatchGridHierarchicIterator&lt; GridImp &gt;'],['../d4/d41/a01661.html',1,'Dune::IGA::IdentityTrim::PatchGridHierarchicIterator&lt; GridImp &gt;']]],
-  ['patchgridleafgridview_11',['PatchGridLeafGridView',['../d6/d16/a01269.html',1,'Dune::IGA']]],
-  ['patchgridleafgridviewtraits_12',['PatchGridLeafGridViewTraits',['../d2/d1d/a01277.html',1,'Dune::IGA']]],
-  ['patchgridleafindexset_13',['PatchGridLeafIndexSet',['../d8/d67/a01477.html',1,'Dune::IGA::DefaultTrim::PatchGridLeafIndexSet&lt; GridImp &gt;'],['../dc/dec/a01669.html',1,'Dune::IGA::IdentityTrim::PatchGridLeafIndexSet&lt; GridImp &gt;']]],
-  ['patchgridleafintersection_14',['PatchGridLeafIntersection',['../d9/de7/a01257.html',1,'Dune::IGA']]],
-  ['patchgridleafintersectioniterator_15',['PatchGridLeafIntersectionIterator',['../db/d1e/a01497.html',1,'Dune::IGA::DefaultTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt;'],['../d9/df5/a01673.html',1,'Dune::IGA::IdentityTrim::PatchGridLeafIntersectionIterator&lt; GridImp &gt;'],['../d6/da1/a01233.html',1,'Dune::IGA::PatchGridLeafIntersectionIterator&lt; GridImp &gt;']]],
-  ['patchgridleafiterator_16',['PatchGridLeafIterator',['../d1/d62/a01533.html',1,'Dune::IGA::DefaultTrim::PatchGridLeafIterator&lt; codim, pitype, GridImp &gt;'],['../df/d5a/a01681.html',1,'Dune::IGA::IdentityTrim::PatchGridLeafIterator&lt; codim, pitype, GridImp &gt;']]],
-  ['patchgridlevelgridview_17',['PatchGridLevelGridView',['../da/dd8/a01265.html',1,'Dune::IGA']]],
-  ['patchgridlevelgridviewtraits_18',['PatchGridLevelGridViewTraits',['../de/d85/a01273.html',1,'Dune::IGA']]],
-  ['patchgridlevelindexset_19',['PatchGridLevelIndexSet',['../de/d13/a01473.html',1,'Dune::IGA::DefaultTrim::PatchGridLevelIndexSet&lt; GridImp &gt;'],['../d9/d45/a01665.html',1,'Dune::IGA::IdentityTrim::PatchGridLevelIndexSet&lt; GridImp &gt;']]],
-  ['patchgridlevelintersection_20',['PatchGridLevelIntersection',['../de/d34/a01261.html',1,'Dune::IGA']]],
-  ['patchgridlevelintersectioniterator_21',['PatchGridLevelIntersectionIterator',['../db/d2c/a01501.html',1,'Dune::IGA::DefaultTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt;'],['../d2/d44/a01677.html',1,'Dune::IGA::IdentityTrim::PatchGridLevelIntersectionIterator&lt; GridImp &gt;']]],
-  ['patchgridleveliterator_22',['PatchGridLevelIterator',['../df/d3f/a01537.html',1,'Dune::IGA::DefaultTrim::PatchGridLevelIterator&lt; codim, pitype, GridImp &gt;'],['../de/d96/a01685.html',1,'Dune::IGA::IdentityTrim::PatchGridLevelIterator&lt; codim, pitype, GridImp &gt;']]],
-  ['patchgridlocalgeometry_23',['PatchGridLocalGeometry',['../da/d20/a01689.html',1,'Dune::IGA']]],
-  ['patchgridlocalidset_24',['PatchGridLocalIdSet',['../d1/de4/a01481.html',1,'Dune::IGA::DefaultTrim::PatchGridLocalIdSet&lt; GridImp &gt;'],['../d1/d03/a01653.html',1,'Dune::IGA::IdentityTrim::PatchGridLocalIdSet&lt; GridImp &gt;']]],
-  ['patchtrimdataimpl_25',['PatchTrimDataImpl',['../d9/dac/a01557.html',1,'Dune::IGA::DefaultTrim::PatchTrimDataImpl&lt; GridImp &gt;'],['../d9/dc5/a01705.html',1,'Dune::IGA::IdentityTrim::PatchTrimDataImpl&lt; dim, ScalarType &gt;']]],
-  ['preferences_26',['Preferences',['../dd/dda/a01621.html',1,'Dune::IGA::DefaultTrim']]]
+  ['transformtospan_0',['TransformToSpan',['../dc/d9e/a01206.html',1,'Dune::IGA']]],
+  ['trimdata_1',['TrimData',['../d5/d16/a01154.html',1,'Dune::IGA']]],
+  ['trimmedsubgrid_2',['TrimmedSubGrid',['../d4/d5d/a01202.html',1,'Dune::IGA']]]
 ];

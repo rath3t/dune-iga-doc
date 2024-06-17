@@ -1,5 +1,5 @@
 var a00008 =
 [
-    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "de/d99/a01101.html", "de/d99/a01101" ],
-    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "de/d1d/a01105.html", "de/d1d/a01105" ]
+    [ "Dune::IGA::NURBSLocalGeometry< mydim, dimworld, GridImpl >", "d0/d61/a01130.html", "d0/d61/a01130" ],
+    [ "referenceElement", "d4/dee/a00008.html#a1143a824b6baf6ddd144f4f1ce090d02", null ]
 ];
