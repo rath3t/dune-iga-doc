@@ -108,44 +108,45 @@ $(document).ready(function(){initNavTree('d4/d8b/a03538_source.html','../../'); 
 <div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d2/d20/a01790.html">   19</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d2/d20/a01790.html">ParameterSpace</a> =</div>
 <div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    T::isValid and</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">requires</span>(T parameterspace, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param, <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData,</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>             <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      <span class="keyword">typename</span> T::ctype;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keyword">typename</span> T::ParameterType;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <span class="keyword">typename</span> T::ElementTrimData;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keyword">typename</span> T::PatchTrimData;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      T(); </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="comment">// { parameterspace.referenceElement(std::declval&lt;const EntityType&gt;()) } -&gt; std::convertible_to&lt;typename</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="comment">// T::ReferenceElementType&gt;; Uncomment the line above when the referenceElement method is added to the</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="comment">// ParameterSpace concept.</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="comment">// { typename T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="comment">// { parameterspace.trimData(std::declval&lt;const EntityType&gt;(), std::declval&lt;const GlobalIdSet&gt;()) } -&gt;</span></div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// std::convertible_to&lt;std::optional&lt;std::reference_wrapper&lt;const typename T::ElementTrimData&gt;&gt;&gt;;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="comment">// Uncomment the line above when the trimData method is added to the ParameterSpace concept.</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      { parameterspace.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      { parameterspace.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      { parameterspace.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      { parameterspace.setParameters(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      <span class="comment">// { parameterspace.unTrimmedParameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="comment">// T::UntrimmedParameterSpaceGrid&amp;&gt;; { parameterspace.unTrimmedParameterSpaceGrid() } -&gt;</span></div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="comment">// std::convertible_to&lt;typename T::UntrimmedParameterSpaceGrid&amp;&gt;;</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    } and</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace Dune::IGA::Concept</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>    <span class="keyword">requires</span>(T parameterspace, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param,</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>             <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData, <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData,</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>             <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      <span class="keyword">typename</span> T::ctype;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <span class="keyword">typename</span> T::ParameterType;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keyword">typename</span> T::ElementTrimData;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keyword">typename</span> T::PatchTrimData;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      T(); </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="comment">// { parameterspace.referenceElement(std::declval&lt;const EntityType&gt;()) } -&gt; std::convertible_to&lt;typename</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <span class="comment">// T::ReferenceElementType&gt;; Uncomment the line above when the referenceElement method is added to the</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="comment">// ParameterSpace concept.</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="comment">// { typename T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// { parameterspace.trimData(std::declval&lt;const EntityType&gt;(), std::declval&lt;const GlobalIdSet&gt;()) } -&gt;</span></div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="comment">// std::convertible_to&lt;std::optional&lt;std::reference_wrapper&lt;const typename T::ElementTrimData&gt;&gt;&gt;;</span></div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="comment">// Uncomment the line above when the trimData method is added to the ParameterSpace concept.</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      { parameterspace.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      { parameterspace.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      { parameterspace.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      { parameterspace.setParameters(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="comment">// { parameterspace.unTrimmedParameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>      <span class="comment">// T::UntrimmedParameterSpaceGrid&amp;&gt;; { parameterspace.unTrimmedParameterSpaceGrid() } -&gt;</span></div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="comment">// std::convertible_to&lt;typename T::UntrimmedParameterSpaceGrid&amp;&gt;;</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    } and</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>} <span class="comment">// namespace Dune::IGA::Concept</span></div>
 <div class="ttc" id="aa00242_html"><div class="ttname"><a href="../../d2/dc8/a00242.html">Dune::IGA::Concept</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:9</div></div>
 <div class="ttc" id="aa01789_html"><div class="ttname"><a href="../../d6/d53/a01789.html">Dune::IGA::Concept::TrimDataContainer</a></div><div class="ttdef"><b>Definition:</b> parameterspace/concepts.hh:10</div></div>
 <div class="ttc" id="aa01790_html"><div class="ttname"><a href="../../d2/d20/a01790.html">Dune::IGA::Concept::ParameterSpace</a></div><div class="ttdoc">Concept representing a ParameterSpace class.</div><div class="ttdef"><b>Definition:</b> parameterspace/concepts.hh:19</div></div>

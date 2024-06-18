@@ -143,19 +143,19 @@ $(document).ready(function(){initNavTree('d8/d41/a00038_source.html','../../'); 
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        <span class="keywordflow">switch</span> (edgeInfo.idx) {</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>          <span class="keywordflow">case</span> 0:</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>            vertices.push_back(refElement.template geometry&lt;2&gt;(0).center());</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>          <span class="keywordflow">case</span> 1:</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>            vertices.push_back(refElement.template geometry&lt;2&gt;(1).center());</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>          <span class="keywordflow">case</span> 2:</div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>            vertices.push_back(refElement.template geometry&lt;2&gt;(3).center());</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>          <span class="keywordflow">case</span> 3:</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>            vertices.push_back(refElement.template geometry&lt;2&gt;(2).center());</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>          <span class="keywordflow">break</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>            <span class="keywordflow">break</span>;</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>          <span class="keywordflow">default</span>:</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            assert(edgeInfo.idx &lt; 4);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>          __builtin_unreachable();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>            __builtin_unreachable();</div>
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>        }</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      }</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
@@ -210,7 +210,7 @@ $(document).ready(function(){initNavTree('d8/d41/a00038_source.html','../../'); 
 <div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span> </div>
 <div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="comment">// Function to calculate the distance between two points</span></div>
 <div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keyword">static</span> <span class="keyword">auto</span> checkForConvergence(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; localGeometry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numSegments, <span class="keywordtype">double</span> curveLength,</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                                    <span class="keywordtype">double</span> targetAccuracy) -&gt; std::pair&lt;bool, std::vector&lt;Point&gt;&gt; {</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>                                  <span class="keywordtype">double</span> targetAccuracy) -&gt; std::pair&lt;bool, std::vector&lt;Point&gt;&gt; {</div>
 <div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keyword">auto</span> [totalDistance, points] = getPointsAndDistance(localGeometry, numSegments);</div>
 <div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keyword">auto</span> converged               = std::abs((totalDistance - curveLength) / curveLength) &lt; targetAccuracy;</div>
 <div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> std::make_pair(converged, points);</div>
@@ -221,8 +221,8 @@ $(document).ready(function(){initNavTree('d8/d41/a00038_source.html','../../'); 
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordflow">return</span> std::get&lt;0&gt;(getPointsAndDistance(localGeometry, numSegments));</div>
 <div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  }</div>
 <div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static</span> <span class="keyword">auto</span> getPointsAndDistance(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; localGeometry, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numSegments)</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>      -&gt; std::pair&lt;double, std::vector&lt;Point&gt;&gt; {</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">static</span> <span class="keyword">auto</span> getPointsAndDistance(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; localGeometry,</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>                                   <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> numSegments) -&gt; std::pair&lt;double, std::vector&lt;Point&gt;&gt; {</div>
 <div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keyword">auto</span> <a class="code hl_function" href="../../d7/d03/a00254.html#a9c654cb221f83781b32e8b03c9cceb21">distance</a> = [](<span class="keyword">const</span> <a class="code hl_typedef" href="../../d7/d88/a01294.html#a607de2152a313659a83b5c6624045d19">Point</a>&amp; p1, <span class="keyword">const</span> <a class="code hl_typedef" href="../../d7/d88/a01294.html#a607de2152a313659a83b5c6624045d19">Point</a>&amp; p2) {</div>
 <div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>      <span class="keywordflow">return</span> std::sqrt(Dune::power(p2[0] - p1[0], 2) + Dune::power(p2[1] - p1[1], 2));</div>
 <div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    };</div>
@@ -239,7 +239,7 @@ $(document).ready(function(){initNavTree('d8/d41/a00038_source.html','../../'); 
 <div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>  }</div>
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>};</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span> </div>
-<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>} <span class="comment">// namespace Dune::IGA::DefaultParameterSpace</span></div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>} <span class="comment">// namespace Dune::IGA</span></div>
 <div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span> </div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span><span class="comment">// Add support for Dune::FieldVector in Earcut</span></div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno"><a class="line" href="../../dd/dd7/a00248.html">  149</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../de/dbc/a00249.html">mapbox::util</a> {</div>
@@ -264,7 +264,7 @@ $(document).ready(function(){initNavTree('d8/d41/a00038_source.html','../../'); 
 <div class="ttc" id="aa00014_html"><div class="ttname"><a href="../../d2/de7/a00014.html">nurbspatchtransform.hh</a></div></div>
 <div class="ttc" id="aa00236_html"><div class="ttname"><a href="../../d7/d40/a00236.html">Dune</a></div><div class="ttdef"><b>Definition:</b> algorithms.hh:9</div></div>
 <div class="ttc" id="aa00237_html"><div class="ttname"><a href="../../d4/d08/a00237.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> algorithms.hh:9</div></div>
-<div class="ttc" id="aa00237_html_a10579811f681f13697cedf2abf633e78"><div class="ttname"><a href="../../d4/d08/a00237.html#a10579811f681f13697cedf2abf633e78">Dune::IGA::referenceElement</a></div><div class="ttdeci">auto referenceElement(const PatchGridEntity&lt; cd, dim, const PatchGrid&lt; dim, dimworld, GridFamily, ScalarType &gt; &gt; &amp;entity)</div><div class="ttdef"><b>Definition:</b> patchgridentity.hh:383</div></div>
+<div class="ttc" id="aa00237_html_a10579811f681f13697cedf2abf633e78"><div class="ttname"><a href="../../d4/d08/a00237.html#a10579811f681f13697cedf2abf633e78">Dune::IGA::referenceElement</a></div><div class="ttdeci">auto referenceElement(const PatchGridEntity&lt; cd, dim, const PatchGrid&lt; dim, dimworld, GridFamily, ScalarType &gt; &gt; &amp;entity)</div><div class="ttdef"><b>Definition:</b> patchgridentity.hh:385</div></div>
 <div class="ttc" id="aa00238_html_a5295757b5acf619a91ba551125ad7419"><div class="ttname"><a href="../../da/d2e/a00238.html#a5295757b5acf619a91ba551125ad7419">Dune::IGA::GeometryKernel::transformToSpan</a></div><div class="ttdeci">auto transformToSpan(const NURBSPatch&lt; dim, dimworld, ScalarType &gt; &amp;patch, const ParameterSpaceGeometry &amp;span)</div><div class="ttdef"><b>Definition:</b> nurbspatchtransform.hh:28</div></div>
 <div class="ttc" id="aa00239_html_aa3db3f379446d87eac1f9cc39abcbedd"><div class="ttname"><a href="../../d0/d27/a00239.html#aa3db3f379446d87eac1f9cc39abcbedd">Dune::IGA::Utilities::linspace</a></div><div class="ttdeci">auto linspace(T a, T b, unsigned int N)</div><div class="ttdoc">A view with N coordinates between a and b including a and b.</div><div class="ttdef"><b>Definition:</b> geohelper.hh:108</div></div>
 <div class="ttc" id="aa00249_html"><div class="ttname"><a href="../../de/dbc/a00249.html">mapbox::util</a></div><div class="ttdef"><b>Definition:</b> simplexgenerator.hh:149</div></div>

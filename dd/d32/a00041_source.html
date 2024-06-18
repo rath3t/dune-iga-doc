@@ -117,41 +117,39 @@ $(document).ready(function(){initNavTree('dd/d32/a00041_source.html','../../'); 
 <div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../da/d79/a01310.html#aec9cb76a20cf78139940f325d6800bf3">   21</a></span>  <span class="keyword">using </span><a class="code hl_struct" href="../../d7/d88/a01294.html">SimplexGeneratorImpl</a> = <a class="code hl_struct" href="../../d7/d88/a01294.html">SimplexGenerator&lt;GridImp&gt;</a>;</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">   22</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Parameters</a>           = <span class="keyword">typename</span> <a class="code hl_struct" href="../../d4/d34/a01298.html">SimplexGeneratorImpl::Parameters</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">   26</a></span>  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">createIntegrationRule</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../da/d79/a01310.html#a7b57f95ae89a54da7390a39448099e98">ParameterSpaceElement</a>&amp; element, <span class="keywordtype">int</span> quadratureOrder,</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>                                    <span class="keyword">const</span> <a class="code hl_typedef" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Parameters</a>&amp; parameters  = <a class="code hl_typedef" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Parameters</a>{},</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                    <span class="keyword">const</span> QuadratureType::Enum qt = QuadratureType::GaussLegendre) {</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (GridImp::ParameterSpace::isAlwaysTrivial)</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordflow">return</span> QuadratureRules&lt;double, dim&gt;::rule(element.type(), quadratureOrder, qt);</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      <span class="keywordflow">if</span> (not element.isTrimmed()) {</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        <span class="keywordflow">return</span> QuadratureRules&lt;double, dim&gt;::rule(element.type(), quadratureOrder, qt);</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      }</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keyword">auto</span> [elements, vertices, indices] = <a class="code hl_function" href="../../d7/d88/a01294.html#a2f223eb161915b1542a9044921ea180d">SimplexGeneratorImpl::createSimplicies</a>(element, parameters);</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      <span class="keywordflow">return</span> makeQuadratureRule(elements, quadratureOrder, qt);</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    }</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  }</div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keyword">static</span> <span class="keyword">auto</span> makeQuadratureRule(<span class="keyword">const</span> std::vector&lt;Element&gt;&amp; elements, <span class="keywordtype">int</span> quadratureOrder,</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>                                 <span class="keyword">const</span> QuadratureType::Enum qt) {</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    assert(qt == QuadratureType::GaussLegendre);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">   24</a></span>  <span class="keyword">static</span> <span class="keyword">auto</span> <a class="code hl_function" href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">createIntegrationRule</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../da/d79/a01310.html#a7b57f95ae89a54da7390a39448099e98">ParameterSpaceElement</a>&amp; element, <span class="keywordtype">int</span> quadratureOrder,</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                    <span class="keyword">const</span> <a class="code hl_typedef" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Parameters</a>&amp; parameters  = <a class="code hl_typedef" href="../../da/d79/a01310.html#a303253ffd945b5e99b67315c47326852">Parameters</a>{},</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>                                    <span class="keyword">const</span> QuadratureType::Enum qt = QuadratureType::GaussLegendre) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (GridImp::ParameterSpace::isAlwaysTrivial)</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keywordflow">return</span> QuadratureRules&lt;double, dim&gt;::rule(element.type(), quadratureOrder, qt);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keywordflow">if</span> (not element.isTrimmed()) {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>        <span class="keywordflow">return</span> QuadratureRules&lt;double, dim&gt;::rule(element.type(), quadratureOrder, qt);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>      }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      <span class="keyword">auto</span> [elements, vertices, indices] = <a class="code hl_function" href="../../d7/d88/a01294.html#a2f223eb161915b1542a9044921ea180d">SimplexGeneratorImpl::createSimplicies</a>(element, parameters);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keywordflow">return</span> makeQuadratureRule(elements, quadratureOrder, qt);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    }</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  }</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">static</span> <span class="keyword">auto</span> makeQuadratureRule(<span class="keyword">const</span> std::vector&lt;Element&gt;&amp; elements, <span class="keywordtype">int</span> quadratureOrder,</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                 <span class="keyword">const</span> QuadratureType::Enum qt) {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    assert(qt == QuadratureType::GaussLegendre);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    Dune::QuadratureRule&lt;double, dim&gt; vector{};</div>
 <div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    Dune::QuadratureRule&lt;double, dim&gt; vector{};</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; subElement : elements) {</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; rule = Dune::QuadratureRules&lt;double, dim&gt;::rule(subElement.type(), quadratureOrder, qt);</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> ip : rule) {</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        <span class="keyword">auto</span> globalInSpan = subElement.global(ip.position());</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        vector.emplace_back(globalInSpan, ip.weight() * subElement.integrationElement(ip.position()));</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      }</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    }</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordflow">return</span> vector;</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  }</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>};</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>} <span class="comment">// namespace Dune::IGA</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; subElement : elements) {</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="keyword">const</span> <span class="keyword">auto</span>&amp; rule = Dune::QuadratureRules&lt;double, dim&gt;::rule(subElement.type(), quadratureOrder, qt);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> ip : rule) {</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        <span class="keyword">auto</span> globalInSpan = subElement.global(ip.position());</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        vector.emplace_back(globalInSpan, ip.weight() * subElement.integrationElement(ip.position()));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      }</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    }</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">return</span> vector;</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  }</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>};</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>} <span class="comment">// namespace Dune::IGA</span></div>
 <div class="ttc" id="aa00038_html"><div class="ttname"><a href="../../d8/d41/a00038.html">simplexgenerator.hh</a></div></div>
 <div class="ttc" id="aa00237_html"><div class="ttname"><a href="../../d4/d08/a00237.html">Dune::IGA</a></div><div class="ttdef"><b>Definition:</b> algorithms.hh:9</div></div>
 <div class="ttc" id="aa01294_html"><div class="ttname"><a href="../../d7/d88/a01294.html">Dune::IGA::SimplexGenerator</a></div><div class="ttdef"><b>Definition:</b> simplexgenerator.hh:14</div></div>
@@ -164,7 +162,7 @@ $(document).ready(function(){initNavTree('dd/d32/a00041_source.html','../../'); 
 <div class="ttc" id="aa01310_html_a7b57f95ae89a54da7390a39448099e98"><div class="ttname"><a href="../../da/d79/a01310.html#a7b57f95ae89a54da7390a39448099e98">Dune::IGA::SimplexIntegrationRuleGenerator::ParameterSpaceElement</a></div><div class="ttdeci">typename GridImp::ParameterSpace::template Codim&lt; 0 &gt;::ParameterSpaceGridEntity ParameterSpaceElement</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:13</div></div>
 <div class="ttc" id="aa01310_html_aaaa8cd247bdb347662003289662df232"><div class="ttname"><a href="../../da/d79/a01310.html#aaaa8cd247bdb347662003289662df232">Dune::IGA::SimplexIntegrationRuleGenerator::Index</a></div><div class="ttdeci">std::uint64_t Index</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:19</div></div>
 <div class="ttc" id="aa01310_html_ab6e118e867b28a7127c1c69fad8491ed"><div class="ttname"><a href="../../da/d79/a01310.html#ab6e118e867b28a7127c1c69fad8491ed">Dune::IGA::SimplexIntegrationRuleGenerator::Point</a></div><div class="ttdeci">FieldVector&lt; double, dim &gt; Point</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:17</div></div>
-<div class="ttc" id="aa01310_html_ae7271f85d0622b15ecbab25e6649cd01"><div class="ttname"><a href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">Dune::IGA::SimplexIntegrationRuleGenerator::createIntegrationRule</a></div><div class="ttdeci">static auto createIntegrationRule(const ParameterSpaceElement &amp;element, int quadratureOrder, const Parameters &amp;parameters=Parameters{}, const QuadratureType::Enum qt=QuadratureType::GaussLegendre)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:26</div></div>
+<div class="ttc" id="aa01310_html_ae7271f85d0622b15ecbab25e6649cd01"><div class="ttname"><a href="../../da/d79/a01310.html#ae7271f85d0622b15ecbab25e6649cd01">Dune::IGA::SimplexIntegrationRuleGenerator::createIntegrationRule</a></div><div class="ttdeci">static auto createIntegrationRule(const ParameterSpaceElement &amp;element, int quadratureOrder, const Parameters &amp;parameters=Parameters{}, const QuadratureType::Enum qt=QuadratureType::GaussLegendre)</div><div class="ttdef"><b>Definition:</b> simplexintegrationrulegenerator.hh:24</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

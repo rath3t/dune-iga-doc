@@ -172,8 +172,8 @@ $(document).ready(function(){initNavTree('de/d5d/a03565_source.html','../../'); 
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    <span class="comment">// if the given entity is leaf or max level we do not add anything to the stack</span></div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <span class="keywordflow">if</span> (target-&gt;level() &lt; maxLevel_ &amp;&amp; !target-&gt;isLeaf())</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>      <span class="keywordflow">for</span> (<span class="keyword">auto</span> descendantId : target-&gt;entityInfo_.decendantIds)</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        parameterSpaceElementStack_.push(</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            &amp;parameterSpaceGrid_-&gt;parameterSpace().entityContainer_.template entity&lt;0&gt;(descendantId, target-&gt;level() + 1));</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>        parameterSpaceElementStack_.push(&amp;parameterSpaceGrid_-&gt;parameterSpace().entityContainer_.template entity&lt;0&gt;(</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>            descendantId, target-&gt;level() + 1));</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  }</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">void</span> setCurrentEntity() {</div>
