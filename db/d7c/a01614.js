@@ -26,6 +26,7 @@ var a01614 =
     [ "getQuadratureRule", "db/d7c/a01614.html#a69745604bd56651db9a0f52af7c473dd", null ],
     [ "global", "db/d7c/a01614.html#afd4e2c03f404866afaf80761a3c10600", null ],
     [ "integrationElement", "db/d7c/a01614.html#a94df8460ef106dfe4ea6733f7c749caf", null ],
+    [ "isTrimmed", "db/d7c/a01614.html#acd28628e41f11cce3f646a164b6b2a04", null ],
     [ "jacobianInverseTransposed", "db/d7c/a01614.html#af2cedc8431302d1463c21c39895904a2", null ],
     [ "jacobianTransposed", "db/d7c/a01614.html#a4b5a1f09d35aee50a2d1e1ce518f4c53", null ],
     [ "local", "db/d7c/a01614.html#aa1ef6955528b93d75987d088c4d08337", null ],

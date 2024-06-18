@@ -23,6 +23,7 @@ var a01726 =
     [ "getQuadratureRule", "df/dba/a01726.html#ad8f8110c106e2e181ebe7228317adcf0", null ],
     [ "global", "df/dba/a01726.html#a08c57f95fda5e726e1f16cf7684e9bff", null ],
     [ "integrationElement", "df/dba/a01726.html#afbb690b167e697719215d23a4c66b818", null ],
+    [ "isTrimmed", "df/dba/a01726.html#a1dc217d1c62dfab1fc0ad9408fcade43", null ],
     [ "jacobianInverseTransposed", "df/dba/a01726.html#a9acf5879b1bd0cdbc739735eaef63482", null ],
     [ "jacobianTransposed", "df/dba/a01726.html#abf0aea22decede6cebc30fa07ffff363", null ],
     [ "local", "df/dba/a01726.html#a5401630dc33943b1379cdd3dda6a188a", null ],

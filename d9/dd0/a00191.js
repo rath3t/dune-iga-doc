@@ -1,4 +1,5 @@
 var a00191 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "d6/d51/a01494.html", "d6/d51/a01494" ]
+    [ "is_instantiation_of< Template, T >", "dd/d40/a01762.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d0/d79/a01766.html", null ]
 ];

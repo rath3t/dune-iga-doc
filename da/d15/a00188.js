@@ -1,11 +1,11 @@
 var a00188 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >", "d4/d3c/a01418.html", "d4/d3c/a01418" ],
-    [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >::VertexInfo", "d1/df4/a01422.html", "d1/df4/a01422" ],
-    [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >::EdgeInfo", "dc/de6/a01426.html", "dc/de6/a01426" ],
-    [ "ElementTrimFlag", "da/d15/a00188.html#a8dc759d7742dc42a79d84dea11e846b2", [
-      [ "full", "da/d15/a00188.html#a8dc759d7742dc42a79d84dea11e846b2ae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "da/d15/a00188.html#a8dc759d7742dc42a79d84dea11e846b2aa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "da/d15/a00188.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ]
+    [ "Dune::IGA::MultiDimensionalNet< netdim, ElementType, Container >", "d9/d37/a01754.html", "d9/d37/a01754" ],
+    [ "Dune::IGA::MultiDimensionalNetIndex< netdim >", "d9/de3/a01758.html", "d9/de3/a01758" ],
+    [ "dot", "da/d15/a00188.html#ab494853db2f6cc105541b0eaf9a16573", null ],
+    [ "MultiDimensionalNet", "da/d15/a00188.html#ad434568f69368db1d1211d5e438d51ab", null ],
+    [ "operator*", "da/d15/a00188.html#a58e016c6ad5f1db9f128efbf889ccf14", null ],
+    [ "operator*", "da/d15/a00188.html#a06975ed3172fc423fe3c936bac9fefff", null ],
+    [ "operator-", "da/d15/a00188.html#af21f4f9e9fd92abd1a6f942043f72544", null ],
+    [ "operator/", "da/d15/a00188.html#a53dd923355abf6a83c2589bf67d5b0bd", null ]
 ];

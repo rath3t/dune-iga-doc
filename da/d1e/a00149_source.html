@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: entityinfo.hh Source File</title>
+<title>dune-iga: indextransformations.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,160 +91,113 @@ $(document).ready(function(){initNavTree('da/d1e/a00149_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">entityinfo.hh</div></div>
+  <div class="headertitle"><div class="title">indextransformations.hh</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="../../da/d1e/a00149.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/common/reservedvector.hh&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d1f/a00247.html">Dune::IGA::DefaultParameterSpace</a> {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> HostIdType&gt;</div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">struct </span>IdType;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Traits, <span class="keywordtype">int</span> codim&gt;</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="../../d0/de2/a01442.html">   19</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d0/de2/a01442.html">EntityInfoImpl</a></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>{</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>};</div>
+<a href="../../da/d1e/a00149.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2023 The Ikarus Developers mueller@ibb.uni-stuttgart.de</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d0/d1f/a00247.html">Dune::IGA::DefaultParameterSpace</a> {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d9/d3b/a01650.html">   10</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d9/d3b/a01650.html">Transformations</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">int</span>egral T, std::<span class="keywordtype">int</span>egral U&gt;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="../../d9/d3b/a01650.html#a255c2819f7c686d2a8edf9deca6df14a">   13</a></span>  <span class="keyword">static</span> U <a class="code hl_function" href="../../d9/d3b/a01650.html#a255c2819f7c686d2a8edf9deca6df14a">mapToDune</a>(T codim, U index) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">if</span> (codim == 2) <span class="comment">/* vertex */</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      <span class="keywordflow">return</span> vertexIndexToDune(index);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <span class="keywordflow">if</span> (codim == 1) <span class="comment">/* edge */</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>      <span class="keywordflow">return</span> edgeIndexToDune(index);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;Mapping only defined for codim 1 and 2&quot;</span>);</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  }</div>
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html">   24</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d0/de2/a01442.html">EntityInfoImpl</a>&lt;Traits, 2&gt;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>{</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#ac3dc382f7d6627ce7bc784f344daac67">   26</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> codimension = 2;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#a91bf2fa3eb66cdbd29ae36b9131de5ee">   27</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d8/d22/a01446.html#a91bf2fa3eb66cdbd29ae36b9131de5ee">HostIdType</a>                 = <span class="keyword">typename</span> Traits::ParameterSpaceGrid::GlobalIdSet::IdType;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#aa9a21504042dedcc26682b5e47f1749d">   28</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d8/d22/a01446.html#aa9a21504042dedcc26682b5e47f1749d">EntitySeedType</a> = <span class="keyword">typename</span> Traits::ParameterSpaceGrid::template Codim&lt;codimension&gt;::Entity::EntitySeed;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#adb7e8ac16fee82ecbca5ff11fb4340a2">   29</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d8/d22/a01446.html#adb7e8ac16fee82ecbca5ff11fb4340a2">TrimInfo</a>       = <span class="keyword">typename</span> Traits::ElementTrimData::VertexInfo;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#af0e54d9cddfc20dc96915faea912b641">   31</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indexInLvlStorage{std::numeric_limits&lt;unsigned int&gt;::max()};</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#ac1447637f742f7a9aba1298e17debe8d">   32</a></span>  <span class="keywordtype">int</span> lvl{};</div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#ac6a76ffa891656779122dd92a77d54b0">   33</a></span>  <span class="keywordtype">bool</span> <a class="code hl_enumvalue" href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">trimmed</a>{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#afa4a7551c5504393696df7ab1d0b10b0">   34</a></span>  <a class="code hl_struct" href="../../d5/dd0/a01438.html">IdType&lt;HostIdType&gt;</a> <a class="code hl_variable" href="../../d8/d22/a01446.html#afa4a7551c5504393696df7ab1d0b10b0">id</a>;</div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#a837aa60c4358e59037686c9de486fed1">   35</a></span>  <a class="code hl_typedef" href="../../d8/d22/a01446.html#aa9a21504042dedcc26682b5e47f1749d">EntitySeedType</a> hostSeed{};</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#a6009bd50a309457842558728395a6329">   37</a></span>  std::optional&lt;TrimInfo&gt; trimInfo{};</div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#a28acde86b0c09311144f9f6a913907c7">   39</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/d22/a01446.html#a28acde86b0c09311144f9f6a913907c7">isTrimmed</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">trimmed</a>;</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="../../d8/d22/a01446.html#ad9629d7791c896f0ebe54c0585a022cd">   43</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d8/d22/a01446.html#ad9629d7791c896f0ebe54c0585a022cd">isValid</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordflow">return</span> indexInLvlStorage != std::numeric_limits&lt;unsigned int&gt;::max();</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>};</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html">   49</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d0/de2/a01442.html">EntityInfoImpl</a>&lt;Traits, 1&gt;</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>{</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a66eddf75436be3daad918d614c701b76">   51</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> codimension = 1;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a9c2f0817f672ae7cb701953e08869a26">   52</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d3/da3/a01450.html#a9c2f0817f672ae7cb701953e08869a26">HostIdType</a>                 = <span class="keyword">typename</span> Traits::ParameterSpaceGrid::GlobalIdSet::IdType;</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a6067d211b959f7cf28c88ad1fa1a9057">   53</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d3/da3/a01450.html#a6067d211b959f7cf28c88ad1fa1a9057">EntitySeedType</a> = <span class="keyword">typename</span> Traits::ParameterSpaceGrid::template Codim&lt;codimension&gt;::Entity::EntitySeed;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a56d081c8644b27873dffc1d53ce78a56">   54</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d3/da3/a01450.html#a56d081c8644b27873dffc1d53ce78a56">TrimmedEntityGeometry</a> =</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keyword">typename</span> Traits::template Codim&lt;codimension&gt;::TrimmedParameterSpaceGeometry::PatchGeometry;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a910d234a4c2d1baeff515d36d16e2560">   57</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d3/da3/a01450.html#a910d234a4c2d1baeff515d36d16e2560">TrimInfo</a> = <span class="keyword">typename</span> Traits::ElementTrimData::EdgeInfo;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#adfeece1226cd3f465b9bd4cd58e01513">   59</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indexInLvlStorage{std::numeric_limits&lt;unsigned int&gt;::max()};</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a6e119551ff09db95ff7ef84db82e61a9">   60</a></span>  <span class="keywordtype">int</span> lvl{};</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#aa1b983cadeb7ac03514aa04a6da25c46">   61</a></span>  <span class="keywordtype">bool</span> <a class="code hl_enumvalue" href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">trimmed</a>{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#addc2ade0d004564fb8d0a6bc676d785f">   62</a></span>  <a class="code hl_struct" href="../../d5/dd0/a01438.html">IdType&lt;HostIdType&gt;</a> <a class="code hl_variable" href="../../d3/da3/a01450.html#addc2ade0d004564fb8d0a6bc676d785f">id</a>;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a4d7893e7e12d78d2555c8983aa79e438">   63</a></span>  <a class="code hl_typedef" href="../../d3/da3/a01450.html#a6067d211b959f7cf28c88ad1fa1a9057">EntitySeedType</a> hostSeed{};</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno"><a class="line" href="../../da/df6/a01454.html">   65</a></span>  <span class="keyword">struct </span>GeometryMap</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  {</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno"><a class="line" href="../../da/df6/a01454.html#aeb0ae3913c72fd35b95e830fbb4bfb63">   67</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="../../da/df6/a01454.html#aeb0ae3913c72fd35b95e830fbb4bfb63">indexOfInsideElementinLvl</a>;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno"><a class="line" href="../../da/df6/a01454.html#af02f9e732120828aae21cea4188e42d7">   68</a></span>    <a class="code hl_typedef" href="../../d3/da3/a01450.html#a56d081c8644b27873dffc1d53ce78a56">TrimmedEntityGeometry</a> <a class="code hl_variable" href="../../da/df6/a01454.html#af02f9e732120828aae21cea4188e42d7">geometry</a>;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  };</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a6372ccff76471bc6a8b61d9c1c3ccd86">   75</a></span>  <a class="code hl_typedef" href="../../d3/da3/a01450.html#a56d081c8644b27873dffc1d53ce78a56">TrimmedEntityGeometry</a> <a class="code hl_function" href="../../d3/da3/a01450.html#a6372ccff76471bc6a8b61d9c1c3ccd86">intersectionGeometry</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    assert(isTrimmed());</div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    <span class="keywordflow">if</span> (isTrimmedHost())</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      <span class="keywordflow">return</span> edgeGeometries.front().geometry;</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    <span class="comment">// Check if intersection is vertical or horizontally orientated</span></div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    <span class="keyword">auto</span> jac = edgeGeometries.front().geometry.jacobian({0.5});</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">return</span> edgeGeometries.front().geometry;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  }</div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#acf963f702c917f2dade5af87c53aa9f2">   86</a></span>  std::vector&lt;GeometryMap&gt; edgeGeometries{};</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#ad2701e28544360701c75d7ecc85fcbdb">   87</a></span>  std::optional&lt;TrimInfo&gt; trimInfo{};</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#adee8a1f813dbe49fa6d7fc73defecd89">   89</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/da3/a01450.html#adee8a1f813dbe49fa6d7fc73defecd89">isTrimmed</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">trimmed</a>;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a12bb85a7122d7da44a2025c600ef8885">   92</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/da3/a01450.html#a12bb85a7122d7da44a2025c600ef8885">isTrimmedHost</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">return</span> hostSeed.isValid() and isTrimmed();</div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  }</div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="../../d3/da3/a01450.html#a3dd9fbf2c5878a2ea550013c04daad34">   95</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d3/da3/a01450.html#a3dd9fbf2c5878a2ea550013c04daad34">isValid</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">return</span> indexInLvlStorage != std::numeric_limits&lt;unsigned int&gt;::max();</div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  }</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>};</div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span> </div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Traits&gt;</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html">  101</a></span><span class="keyword">struct </span><a class="code hl_struct" href="../../d0/de2/a01442.html">EntityInfoImpl</a>&lt;Traits, 0&gt;</div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>{</div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a507fc8c5f55e25926cded2cab468005c">  103</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keywordtype">int</span> codimension = 0;</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a467f400e7f8119d69776b4c04c7f6c6c">  104</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d7/dd1/a01458.html#a467f400e7f8119d69776b4c04c7f6c6c">HostIdType</a>                 = <span class="keyword">typename</span> Traits::ParameterSpaceGrid::GlobalIdSet::IdType;</div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a599e9715e61eb3928b960d67355f0c44">  105</a></span>  <span class="keyword">using </span><a class="code hl_typedef" href="../../d7/dd1/a01458.html#a599e9715e61eb3928b960d67355f0c44">EntitySeedType</a> = <span class="keyword">typename</span> Traits::ParameterSpaceGrid::template Codim&lt;codimension&gt;::Entity::EntitySeed;</div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span> </div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a9a62fa6950b7859e61e730a28bee9f79">  107</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> indexInLvlStorage{std::numeric_limits&lt;unsigned int&gt;::max()};</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#ac6ca62adb1d90caf807cbcf0f4553544">  108</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> unTrimmedIndexInLvl{std::numeric_limits&lt;unsigned int&gt;::max()};</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a391681a44a6c98597226aef15e008e9d">  109</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> trimmedIndexInLvl{std::numeric_limits&lt;unsigned int&gt;::max()};</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a173a2d0dde54a321c6876b1403f6c196">  110</a></span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> hostIndexInLvl{std::numeric_limits&lt;unsigned int&gt;::max()};</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a1ba26023fc3e0aea094a4bba71011660">  111</a></span>  <span class="keywordtype">int</span> lvl{};</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#ad94a40d24652f901724a7d08c5d62b63">  112</a></span>  <span class="keywordtype">bool</span> <a class="code hl_enumvalue" href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">trimmed</a>{<span class="keyword">false</span>};</div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#acbca4cdb3b4915c579e40e914aed7e8a">  113</a></span>  <a class="code hl_struct" href="../../d5/dd0/a01438.html">IdType&lt;HostIdType&gt;</a> <span class="keywordtype">id</span>{};</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a6fc6c3c93e5f83b0060ae4d3653f49be">  114</a></span>  <a class="code hl_typedef" href="../../d7/dd1/a01458.html#a599e9715e61eb3928b960d67355f0c44">EntitySeedType</a> hostSeed{};</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a6fa7c6829aa89215c2bffe96112eb7f1">  116</a></span>  <span class="keyword">auto</span> <a class="code hl_function" href="../../d7/dd1/a01458.html#a6fa7c6829aa89215c2bffe96112eb7f1">isTrimmed</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">trimmed</a>;</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>  }</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#abb630e4029c3acc6dd715faf3b37161d">  119</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d7/dd1/a01458.html#abb630e4029c3acc6dd715faf3b37161d">isValid</a>()<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    <span class="keywordflow">return</span> indexInLvlStorage != std::numeric_limits&lt;unsigned int&gt;::max();</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  }</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#a672b1f8227098ca2d34949d5b927b8cd">  123</a></span>  std::optional&lt;IdType&lt;HostIdType&gt;&gt; <a class="code hl_variable" href="../../d7/dd1/a01458.html#a672b1f8227098ca2d34949d5b927b8cd">fatherId</a>;</div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno"><a class="line" href="../../d7/dd1/a01458.html#abeed7931a7eeb4ce972b1cef933102ee">  124</a></span>  ReservedVector&lt;IdType&lt;HostIdType&gt;, 4&gt; <a class="code hl_variable" href="../../d7/dd1/a01458.html#abeed7931a7eeb4ce972b1cef933102ee">decendantIds</a>;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>};</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>} <span class="comment">// namespace Dune::IGA::DefaultParameterSpace</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">int</span>egral T, std::<span class="keywordtype">int</span>egral U&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d9/d3b/a01650.html#a02880d9e1a11f4cb9d6f72fc7f0f6bcf">   24</a></span>  <span class="keyword">static</span> U <a class="code hl_function" href="../../d9/d3b/a01650.html#a02880d9e1a11f4cb9d6f72fc7f0f6bcf">mapToParameterSpace</a>(T codim, U index) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <span class="keywordflow">if</span> (codim == 2) <span class="comment">/* vertex */</span> {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      <span class="keywordflow">return</span> vertexIndexToParameterSpace(index);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordflow">if</span> (codim == 1) <span class="comment">/* edge */</span> {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keywordflow">return</span> edgeIndexToParameterSpace(index);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;Mapping only defined for codim 1 and 2&quot;</span>);</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  }</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">int</span>egral U&gt;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <span class="keyword">static</span> U vertexIndexToDune(U index) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordflow">switch</span> (index) {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        <span class="keywordflow">return</span> index;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;index out of bounds&quot;</span>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    }</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  }</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">int</span>egral U&gt;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">static</span> U edgeIndexToDune(U index) {</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordflow">switch</span> (index) {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;index out of bounds&quot;</span>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    }</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">int</span>egral U&gt;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keyword">static</span> U vertexIndexToParameterSpace(U index) {</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">switch</span> (index) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>      <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        <span class="keywordflow">return</span> index;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;index out of bounds&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    }</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  }</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keyword">template</span> &lt;std::<span class="keywordtype">int</span>egral U&gt;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">static</span> U edgeIndexToParameterSpace(U index) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">switch</span> (index) {</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>      <span class="keywordflow">case</span> 0:</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>        <span class="keywordflow">return</span> 3;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      <span class="keywordflow">case</span> 1:</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      <span class="keywordflow">case</span> 2:</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>      <span class="keywordflow">case</span> 3:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        <span class="keywordflow">return</span> 2;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>      <span class="keywordflow">default</span>:</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>        DUNE_THROW(Dune::IOError, <span class="stringliteral">&quot;index out of bounds&quot;</span>);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    }</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  }</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>};</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>} <span class="comment">// namespace Dune::IGA::DefaultParameterSpace</span></div>
 <div class="ttc" id="aa00247_html"><div class="ttname"><a href="../../d0/d1f/a00247.html">Dune::IGA::DefaultParameterSpace</a></div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:9</div></div>
-<div class="ttc" id="aa00247_html_a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec"><div class="ttname"><a href="../../d0/d1f/a00247.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">Dune::IGA::DefaultParameterSpace::ElementTrimFlag::trimmed</a></div><div class="ttdeci">@ trimmed</div></div>
-<div class="ttc" id="aa01438_html"><div class="ttname"><a href="../../d5/dd0/a01438.html">Dune::IGA::DefaultParameterSpace::IdType</a></div><div class="ttdef"><b>Definition:</b> default/parameterspace.hh:68</div></div>
-<div class="ttc" id="aa01442_html"><div class="ttname"><a href="../../d0/de2/a01442.html">Dune::IGA::DefaultParameterSpace::EntityInfoImpl</a></div><div class="ttdef"><b>Definition:</b> entityinfo.hh:20</div></div>
-<div class="ttc" id="aa01446_html_a28acde86b0c09311144f9f6a913907c7"><div class="ttname"><a href="../../d8/d22/a01446.html#a28acde86b0c09311144f9f6a913907c7">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 2 &gt;::isTrimmed</a></div><div class="ttdeci">bool isTrimmed() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:39</div></div>
-<div class="ttc" id="aa01446_html_a91bf2fa3eb66cdbd29ae36b9131de5ee"><div class="ttname"><a href="../../d8/d22/a01446.html#a91bf2fa3eb66cdbd29ae36b9131de5ee">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 2 &gt;::HostIdType</a></div><div class="ttdeci">typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType HostIdType</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:27</div></div>
-<div class="ttc" id="aa01446_html_aa9a21504042dedcc26682b5e47f1749d"><div class="ttname"><a href="../../d8/d22/a01446.html#aa9a21504042dedcc26682b5e47f1749d">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 2 &gt;::EntitySeedType</a></div><div class="ttdeci">typename Traits::ParameterSpaceGrid::template Codim&lt; codimension &gt;::Entity::EntitySeed EntitySeedType</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:28</div></div>
-<div class="ttc" id="aa01446_html_ad9629d7791c896f0ebe54c0585a022cd"><div class="ttname"><a href="../../d8/d22/a01446.html#ad9629d7791c896f0ebe54c0585a022cd">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 2 &gt;::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:43</div></div>
-<div class="ttc" id="aa01446_html_adb7e8ac16fee82ecbca5ff11fb4340a2"><div class="ttname"><a href="../../d8/d22/a01446.html#adb7e8ac16fee82ecbca5ff11fb4340a2">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 2 &gt;::TrimInfo</a></div><div class="ttdeci">typename Traits::ElementTrimData::VertexInfo TrimInfo</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:29</div></div>
-<div class="ttc" id="aa01446_html_afa4a7551c5504393696df7ab1d0b10b0"><div class="ttname"><a href="../../d8/d22/a01446.html#afa4a7551c5504393696df7ab1d0b10b0">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 2 &gt;::id</a></div><div class="ttdeci">IdType&lt; HostIdType &gt; id</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:34</div></div>
-<div class="ttc" id="aa01450_html_a12bb85a7122d7da44a2025c600ef8885"><div class="ttname"><a href="../../d3/da3/a01450.html#a12bb85a7122d7da44a2025c600ef8885">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::isTrimmedHost</a></div><div class="ttdeci">bool isTrimmedHost() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:92</div></div>
-<div class="ttc" id="aa01450_html_a3dd9fbf2c5878a2ea550013c04daad34"><div class="ttname"><a href="../../d3/da3/a01450.html#a3dd9fbf2c5878a2ea550013c04daad34">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:95</div></div>
-<div class="ttc" id="aa01450_html_a56d081c8644b27873dffc1d53ce78a56"><div class="ttname"><a href="../../d3/da3/a01450.html#a56d081c8644b27873dffc1d53ce78a56">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::TrimmedEntityGeometry</a></div><div class="ttdeci">typename Traits::template Codim&lt; codimension &gt;::TrimmedParameterSpaceGeometry::PatchGeometry TrimmedEntityGeometry</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:55</div></div>
-<div class="ttc" id="aa01450_html_a6067d211b959f7cf28c88ad1fa1a9057"><div class="ttname"><a href="../../d3/da3/a01450.html#a6067d211b959f7cf28c88ad1fa1a9057">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::EntitySeedType</a></div><div class="ttdeci">typename Traits::ParameterSpaceGrid::template Codim&lt; codimension &gt;::Entity::EntitySeed EntitySeedType</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:53</div></div>
-<div class="ttc" id="aa01450_html_a6372ccff76471bc6a8b61d9c1c3ccd86"><div class="ttname"><a href="../../d3/da3/a01450.html#a6372ccff76471bc6a8b61d9c1c3ccd86">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::intersectionGeometry</a></div><div class="ttdeci">TrimmedEntityGeometry intersectionGeometry() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:75</div></div>
-<div class="ttc" id="aa01450_html_a910d234a4c2d1baeff515d36d16e2560"><div class="ttname"><a href="../../d3/da3/a01450.html#a910d234a4c2d1baeff515d36d16e2560">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::TrimInfo</a></div><div class="ttdeci">typename Traits::ElementTrimData::EdgeInfo TrimInfo</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:57</div></div>
-<div class="ttc" id="aa01450_html_a9c2f0817f672ae7cb701953e08869a26"><div class="ttname"><a href="../../d3/da3/a01450.html#a9c2f0817f672ae7cb701953e08869a26">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::HostIdType</a></div><div class="ttdeci">typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType HostIdType</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:52</div></div>
-<div class="ttc" id="aa01450_html_addc2ade0d004564fb8d0a6bc676d785f"><div class="ttname"><a href="../../d3/da3/a01450.html#addc2ade0d004564fb8d0a6bc676d785f">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::id</a></div><div class="ttdeci">IdType&lt; HostIdType &gt; id</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:62</div></div>
-<div class="ttc" id="aa01450_html_adee8a1f813dbe49fa6d7fc73defecd89"><div class="ttname"><a href="../../d3/da3/a01450.html#adee8a1f813dbe49fa6d7fc73defecd89">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::isTrimmed</a></div><div class="ttdeci">bool isTrimmed() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:89</div></div>
-<div class="ttc" id="aa01454_html_aeb0ae3913c72fd35b95e830fbb4bfb63"><div class="ttname"><a href="../../da/df6/a01454.html#aeb0ae3913c72fd35b95e830fbb4bfb63">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::GeometryMap::indexOfInsideElementinLvl</a></div><div class="ttdeci">unsigned int indexOfInsideElementinLvl</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:67</div></div>
-<div class="ttc" id="aa01454_html_af02f9e732120828aae21cea4188e42d7"><div class="ttname"><a href="../../da/df6/a01454.html#af02f9e732120828aae21cea4188e42d7">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::GeometryMap::geometry</a></div><div class="ttdeci">TrimmedEntityGeometry geometry</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:68</div></div>
-<div class="ttc" id="aa01458_html_a467f400e7f8119d69776b4c04c7f6c6c"><div class="ttname"><a href="../../d7/dd1/a01458.html#a467f400e7f8119d69776b4c04c7f6c6c">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 0 &gt;::HostIdType</a></div><div class="ttdeci">typename Traits::ParameterSpaceGrid::GlobalIdSet::IdType HostIdType</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:104</div></div>
-<div class="ttc" id="aa01458_html_a599e9715e61eb3928b960d67355f0c44"><div class="ttname"><a href="../../d7/dd1/a01458.html#a599e9715e61eb3928b960d67355f0c44">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 0 &gt;::EntitySeedType</a></div><div class="ttdeci">typename Traits::ParameterSpaceGrid::template Codim&lt; codimension &gt;::Entity::EntitySeed EntitySeedType</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:105</div></div>
-<div class="ttc" id="aa01458_html_a672b1f8227098ca2d34949d5b927b8cd"><div class="ttname"><a href="../../d7/dd1/a01458.html#a672b1f8227098ca2d34949d5b927b8cd">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 0 &gt;::fatherId</a></div><div class="ttdeci">std::optional&lt; IdType&lt; HostIdType &gt; &gt; fatherId</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:123</div></div>
-<div class="ttc" id="aa01458_html_a6fa7c6829aa89215c2bffe96112eb7f1"><div class="ttname"><a href="../../d7/dd1/a01458.html#a6fa7c6829aa89215c2bffe96112eb7f1">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 0 &gt;::isTrimmed</a></div><div class="ttdeci">auto isTrimmed() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:116</div></div>
-<div class="ttc" id="aa01458_html_abb630e4029c3acc6dd715faf3b37161d"><div class="ttname"><a href="../../d7/dd1/a01458.html#abb630e4029c3acc6dd715faf3b37161d">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 0 &gt;::isValid</a></div><div class="ttdeci">bool isValid() const</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:119</div></div>
-<div class="ttc" id="aa01458_html_abeed7931a7eeb4ce972b1cef933102ee"><div class="ttname"><a href="../../d7/dd1/a01458.html#abeed7931a7eeb4ce972b1cef933102ee">Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 0 &gt;::decendantIds</a></div><div class="ttdeci">ReservedVector&lt; IdType&lt; HostIdType &gt;, 4 &gt; decendantIds</div><div class="ttdef"><b>Definition:</b> entityinfo.hh:124</div></div>
+<div class="ttc" id="aa01650_html"><div class="ttname"><a href="../../d9/d3b/a01650.html">Dune::IGA::DefaultParameterSpace::Transformations</a></div><div class="ttdoc">Transformations for vertex and edge indices between ParameterSpace Notation and Dune Notation.</div><div class="ttdef"><b>Definition:</b> indextransformations.hh:11</div></div>
+<div class="ttc" id="aa01650_html_a02880d9e1a11f4cb9d6f72fc7f0f6bcf"><div class="ttname"><a href="../../d9/d3b/a01650.html#a02880d9e1a11f4cb9d6f72fc7f0f6bcf">Dune::IGA::DefaultParameterSpace::Transformations::mapToParameterSpace</a></div><div class="ttdeci">static U mapToParameterSpace(T codim, U index)</div><div class="ttdef"><b>Definition:</b> indextransformations.hh:24</div></div>
+<div class="ttc" id="aa01650_html_a255c2819f7c686d2a8edf9deca6df14a"><div class="ttname"><a href="../../d9/d3b/a01650.html#a255c2819f7c686d2a8edf9deca6df14a">Dune::IGA::DefaultParameterSpace::Transformations::mapToDune</a></div><div class="ttdeci">static U mapToDune(T codim, U index)</div><div class="ttdef"><b>Definition:</b> indextransformations.hh:13</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_f5de9a83ba433885a90732f39b87e823.html">default</a></li><li class="navelem"><a class="el" href="../../da/d1e/a00149.html">entityinfo.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_f5de9a83ba433885a90732f39b87e823.html">default</a></li><li class="navelem"><a class="el" href="../../dir_38776cb65d46f8937d679d1e10eb1d6d.html">trimmingutils</a></li><li class="navelem"><a class="el" href="../../da/d1e/a00149.html">indextransformations.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

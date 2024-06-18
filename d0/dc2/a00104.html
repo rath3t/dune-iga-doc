@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: simplexintegrationrulegenerator.hh File Reference</title>
+<title>dune-iga: gridcapabilities.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,24 +94,68 @@ $(document).ready(function(){initNavTree('d0/dc2/a00104.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">simplexintegrationrulegenerator.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">gridcapabilities.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d4/d3a/a00101_source.html">dune/iga/integrationrules/simplexgenerator.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d98/a00107_source.html">patchgridfwd.hh</a>&quot;</code><br />
+<code>#include &lt;dune/grid/common/capabilities.hh&gt;</code><br />
 </div>
 <p><a href="../../d0/dc2/a00104_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d79/a01310.html">Dune::IGA::SimplexIntegrationRuleGenerator&lt; GridImp &gt;</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d09/a01118.html">Dune::Capabilities::hasEntity&lt; const IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">has entities for some codimensions as host grid  <a href="../../dd/d09/a01118.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d32/a01122.html">Dune::Capabilities::hasEntity&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d1e/a01126.html">Dune::Capabilities::hasEntity&lt; const Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;, codim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d61/a01130.html">Dune::Capabilities::hasEntityIterator&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html">Dune::Capabilities::hasEntityIterator&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;, codim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d39/a01138.html">Dune::Capabilities::canCommunicate&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PatchGrid can communicate when the host grid can communicate.  <a href="../../d0/d39/a01138.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/ddc/a01142.html">Dune::Capabilities::canCommunicate&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;, codim &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d07/a01146.html">Dune::Capabilities::isLevelwiseConforming&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">has conforming level grids when host grid has  <a href="../../de/d07/a01146.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d7b/a01150.html">Dune::Capabilities::isLevelwiseConforming&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d16/a01154.html">Dune::Capabilities::isLeafwiseConforming&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">has conforming leaf grids when host grid has  <a href="../../d5/d16/a01154.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db5/a01158.html">Dune::Capabilities::isLeafwiseConforming&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d13/a01162.html">Dune::Capabilities::hasBackupRestoreFacilities&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dee/a01166.html">Dune::Capabilities::hasBackupRestoreFacilities&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/dc7/a01170.html">Dune::Capabilities::threadSafe&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/dfb/a01174.html">Dune::Capabilities::threadSafe&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d11/a01178.html">Dune::Capabilities::viewThreadSafe&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de9/a01182.html">Dune::Capabilities::viewThreadSafe&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbb/a01186.html">Dune::Capabilities::isCartesian&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d19/a01190.html">Dune::Capabilities::isCartesian&lt; Dune::Grid&lt; dim, dimworld, ScalarType, IGA::PatchGridFamily&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d5d/a01202.html">Dune::EnableBoundarySegmentIndexCheck&lt; Dune::IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d9e/a01206.html">EnableLevelIntersectionIteratorCheck&lt; Dune::IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt; &gt;</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d7/d40/a00236"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d4/d08/a00237"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html">Dune::IGA</a></td></tr>
+<tr class="memitem:d6/d82/a00243"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d82/a00243.html">Dune::Capabilities</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
@@ -119,7 +163,7 @@ Namespaces</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_42a2323245b29c7157765c1a0813ddf2.html">integrationrules</a></li><li class="navelem"><a class="el" href="../../d0/dc2/a00104.html">simplexintegrationrulegenerator.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d0/dc2/a00104.html">gridcapabilities.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
