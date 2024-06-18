@@ -1,5 +1,4 @@
 var a00065 =
 [
-    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, true >", "dc/d4b/a01359.html", "dc/d4b/a01359" ],
-    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, false >", "dd/d8b/a01363.html", "dd/d8b/a01363" ]
+    [ "Dune::IGA::NURBSintersection< GridImp >", "d1/d3d/a01110.html", "d1/d3d/a01110" ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbspatchtransform.hh File Reference</title>
+<title>dune-iga: nurbspatch.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -92,39 +85,42 @@ $(document).ready(function(){initNavTree('d4/d8c/a00035.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">nurbspatchtransform.hh File Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">nurbspatch.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d4/dee/a00008_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d03/a00062_source.html">nurbsalgorithms.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d7/d46/a00002_source.html">dune/iga/controlpoint.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d6/d5b/a00026_source.html">dune/iga/nurbsgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d51/a00017_source.html">dune/iga/trim/nurbstrimboundary.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/dee/a00008_source.html">dune/iga/trim/nurbstrimmer.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d45/a00011_source.html">dune/iga/trim/subgrid.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dec/a00080_source.html">dune/iga/utils/concepts.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
+<code>#include &lt;dune/grid/yaspgrid.hh&gt;</code><br />
 </div>
 <p><a href="../../d4/d8c/a00035_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
-Namespaces</h2></td></tr>
-<tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune::IGA</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune::IGA::GeometryKernel</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/de2/a01134.html">Dune::IGA::NURBSPatch&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class where the NURBS geometry can work on.  <a href="../../dd/de2/a01134.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:a02efab58e4dc7beb7bc5bc3307131a12"><td class="memTemplParams" colspan="2">template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:a02efab58e4dc7beb7bc5bc3307131a12"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a02efab58e4dc7beb7bc5bc3307131a12">Dune::IGA::GeometryKernel::transform</a> (const NURBSPatch&lt; dim_, dimworld_, ScalarType &gt; &amp;patch, const std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt; &amp;newDomain=std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt;{})</td></tr>
-<tr class="separator:a02efab58e4dc7beb7bc5bc3307131a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5295757b5acf619a91ba551125ad7419"><td class="memTemplParams" colspan="2">template&lt;int dim, int dimworld, typename ParameterSpaceGeometry , typename ScalarType  = double&gt; </td></tr>
-<tr class="memitem:a5295757b5acf619a91ba551125ad7419"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a5295757b5acf619a91ba551125ad7419">Dune::IGA::GeometryKernel::transformToSpan</a> (const NURBSPatch&lt; dim, dimworld, ScalarType &gt; &amp;patch, const ParameterSpaceGeometry &amp;span)</td></tr>
-<tr class="separator:a5295757b5acf619a91ba551125ad7419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:d8/d87/a00118"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/a00118.html">Dune</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:df/d6a/a00119"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html">Dune::IGA</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d4/d8c/a00035.html">nurbspatchtransform.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../d4/d8c/a00035.html">nurbspatch.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

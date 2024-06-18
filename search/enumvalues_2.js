@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['empty_0',['empty',['../d6/d08/a00244.html#a8dc759d7742dc42a79d84dea11e846b2aa2e4822a98337283e39f7b60acf85ec9',1,'Dune::IGA::DefaultParameterSpace']]]
+  ['full_0',['full',['../df/d6a/a00119.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0',1,'Dune::IGA']]]
 ];

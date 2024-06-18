@@ -1,11 +1,8 @@
 var a00029 =
 [
-    [ "DUNE_FMatrix_WITH_CHECKING", "d5/d16/a00029.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b", null ],
-    [ "IntersectionCurveAndLine", "d5/d16/a00029.html#aa9ac1b688f23da46f2a4b8c9063de166", [
-      [ "disjoint", "d5/d16/a00029.html#aa9ac1b688f23da46f2a4b8c9063de166aff8d48ba74b051ac230fb0c28ae11984", null ],
-      [ "intersect", "d5/d16/a00029.html#aa9ac1b688f23da46f2a4b8c9063de166aea228c391b72961cc1370e2d66442d86", null ],
-      [ "parallel", "d5/d16/a00029.html#aa9ac1b688f23da46f2a4b8c9063de166a48920c071f6a5c97ae3739be64630697", null ]
-    ] ],
-    [ "findIntersectionCurveAndLine", "d5/d16/a00029.html#ab844b5f8a427e7ef41a201df359488fc", null ],
-    [ "findIntersectionLinearCurveAndLine", "d5/d16/a00029.html#aacb1dcc3d78324404e5cfe1284bc3d16", null ]
+    [ "Dune::IGA::BsplineBasis1D< ScalarType_ >", "da/d40/a00946.html", "da/d40/a00946" ],
+    [ "findSpanCorrected", "d5/d16/a00029.html#a38d1fb2831ca0dbfa925c4858576a99b", null ],
+    [ "findSpanCorrected", "d5/d16/a00029.html#ac18a8662488d7f3817b559d81efcc445", null ],
+    [ "findSpanUncorrected", "d5/d16/a00029.html#a554d684e12126174010f2a98d8136a3d", null ],
+    [ "findSpanUncorrected", "d5/d16/a00029.html#a5fe5465b190549a27424a17e79029ace", null ]
 ];

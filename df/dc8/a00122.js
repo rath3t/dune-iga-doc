@@ -1,4 +1,4 @@
 var a00122 =
 [
-    [ "Dune::IGA::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "d6/d56/a01719.html", "d6/d56/a01719" ]
+    [ "DiscontinuousIgaDataCollector", "d0/d2b/a01010.html", "d0/d2b/a01010" ]
 ];

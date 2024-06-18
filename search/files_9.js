@@ -1,19 +1,5 @@
 var searchData=
 [
-  ['ibrageometry_2ehh_0',['ibrageometry.hh',['../df/d03/a00062.html',1,'']]],
-  ['ibrajsonreader_2ehh_1',['ibrajsonreader.hh',['../da/d24/a00068.html',1,'']]],
-  ['ibrareader_2ehh_2',['ibrareader.hh',['../de/de1/a00065.html',1,'']]],
-  ['idset_2ehh_3',['idset.hh',['../dd/d6d/a03547.html',1,'']]],
-  ['igadatacollector_2ehh_4',['igadatacollector.hh',['../d3/d8b/a00059.html',1,'']]],
-  ['igahelpers_2ehh_5',['igahelpers.hh',['../d6/d2d/a00047.html',1,'']]],
-  ['indextransformations_2ehh_6',['indextransformations.hh',['../db/ddf/a00164.html',1,'']]],
-  ['integrationruleholder_2ehh_7',['integrationruleholder.hh',['../df/d98/a00107.html',1,'']]],
-  ['nurbspatchdata_2ehh_8',['nurbspatchdata.hh',['../d2/db0/a03595.html',1,'']]],
-  ['parameterspace_2ehh_9',['parameterspace.hh',['../d1/da6/a03553.html',1,'']]],
-  ['patchgridentityseed_2ehh_10',['patchgridentityseed.hh',['../d0/db8/a03559.html',1,'']]],
-  ['patchgridhierarchiciterator_2ehh_11',['patchgridhierarchiciterator.hh',['../de/d5d/a03565.html',1,'']]],
-  ['patchgridindexsets_2ehh_12',['patchgridindexsets.hh',['../d3/da4/a03571.html',1,'']]],
-  ['patchgridintersectioniterator_2ehh_13',['patchgridintersectioniterator.hh',['../da/df8/a03577.html',1,'']]],
-  ['patchgridleafiterator_2ehh_14',['patchgridleafiterator.hh',['../d7/d12/a03583.html',1,'']]],
-  ['patchgridleveliterator_2ehh_15',['patchgridleveliterator.hh',['../d1/d3c/a03589.html',1,'']]]
+  ['subgrid_2ehh_0',['subgrid.hh',['../da/d45/a00011.html',1,'']]],
+  ['subgridhelpers_2ehh_1',['subgridhelpers.hh',['../d2/de7/a00014.html',1,'']]]
 ];

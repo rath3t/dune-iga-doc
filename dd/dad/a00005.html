@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: makecirculararc.hh File Reference</title>
+<title>dune-iga: nurbsgrid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -16,13 +16,6 @@
 <link href="../../search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../search/searchdata.js"></script>
 <script type="text/javascript" src="../../search/search.js"></script>
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  extensions: ["tex2jax.js"],
-  jax: ["input/TeX","output/HTML-CSS"],
-});
-</script>
-<script type="text/javascript" async="async" src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../doxygen-awesome.css" rel="stylesheet" type="text/css"/>
 <link href="../../custom.css" rel="stylesheet" type="text/css"/>
@@ -92,40 +85,65 @@ $(document).ready(function(){initNavTree('dd/dad/a00005.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">makecirculararc.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">nurbsgrid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d2/de7/a00014_source.html">dune/iga/geometrykernel/basealgorithms.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d2/db0/a03595_source.html">dune/iga/splines/nurbspatchdata.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;mutex&gt;</code><br />
+<code>#include &lt;optional&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+<code>#include &quot;<a class="el" href="../../d1/d44/a00098_source.html">dune/iga/gridcapabilities.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../df/d03/a00062_source.html">dune/iga/nurbsalgorithms.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../dc/d87/a00032_source.html">dune/iga/nurbsgridindexsets.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d5/de0/a00050_source.html">dune/iga/nurbsgridleafiterator.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/d24/a00068_source.html">dune/iga/nurbsgridtraits.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d9/d77/a00095_source.html">dune/iga/nurbsidset.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../de/de1/a00065_source.html">dune/iga/nurbsintersection.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d3/d8b/a00059_source.html">dune/iga/nurbsleafgridview.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d3a/a00101_source.html">dune/iga/nurbslocalgeometry.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../d4/d8c/a00035_source.html">dune/iga/nurbspatch.hh</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="../../da/dec/a00080_source.html">dune/iga/utils/concepts.hh</a>&quot;</code><br />
 </div>
 <p><a href="../../dd/dad/a00005_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d8a/a01062.html">Dune::IGA::EntitySeedStruct&lt; cd, GridImpl &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d7a/a00990.html">Dune::IGA::NURBSGrid&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">[<em> provides Dune::Grid </em>]  <a href="../../dd/d7a/a00990.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/dfb/a01066.html">Dune::IGA::NurbsGridFamily&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune</a></td></tr>
+<tr class="memitem:d8/d87/a00118"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d87/a00118.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune::IGA</a></td></tr>
+<tr class="memitem:df/d6a/a00119"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1eeaa4b0827547b46fa451ae2a522dac"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType = double&gt; </td></tr>
-<tr class="memitem:a1eeaa4b0827547b46fa451ae2a522dac"><td class="memTemplItemLeft" align="right" valign="top">NURBSPatchData&lt; 1, 3, ScalarType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html#a1eeaa4b0827547b46fa451ae2a522dac">Dune::IGA::makeCircularArc</a> (const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;origin={0, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;X={1, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;Y={0, 1, 0})</td></tr>
-<tr class="memdesc:a1eeaa4b0827547b46fa451ae2a522dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a circular arc as a NURBS patch with customizable options.  <a href="../../da/d31/a00234.html#a1eeaa4b0827547b46fa451ae2a522dac">More...</a><br /></td></tr>
-<tr class="separator:a1eeaa4b0827547b46fa451ae2a522dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType = double&gt; </td></tr>
-<tr class="memitem:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="memTemplItemLeft" align="right" valign="top">NURBSPatchData&lt; 1, 2, ScalarType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html#ab6a6c2bae7a9401f660e248da1be3ea6">Dune::IGA::makeCircularArc2D</a> (const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 2 &gt; &amp;origin={0, 0})</td></tr>
-<tr class="memdesc:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a circular arc as a NURBS patch with customizable options.  <a href="../../da/d31/a00234.html#ab6a6c2bae7a9401f660e248da1be3ea6">More...</a><br /></td></tr>
-<tr class="separator:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab372b8b34cfa334f8e7767bacec8170a"><td class="memTemplParams" colspan="2">template&lt;typename GridImpl , int griddim, std::integral auto... codim&gt; </td></tr>
+<tr class="memitem:ab372b8b34cfa334f8e7767bacec8170a"><td class="memTemplItemLeft" align="right" valign="top">std::tuple&lt; std::vector&lt; typename NurbsLeafGridViewTraits&lt; GridImpl &gt;::template Codim&lt; codim &gt;::Entity &gt;... &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#ab372b8b34cfa334f8e7767bacec8170a">Dune::IGA::gridEntityTupleGenerator</a> (std::integer_sequence&lt; std::common_type_t&lt; decltype(codim)... &gt;, codim... &gt;)</td></tr>
+<tr class="separator:ab372b8b34cfa334f8e7767bacec8170a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335f93275773dac8911e330abef913a8"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </td></tr>
+<tr class="memitem:a335f93275773dac8911e330abef913a8"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a335f93275773dac8911e330abef913a8">Dune::IGA::levelGridView</a> (const NURBSGrid&lt; dim, dimworld, ScalarType &gt; &amp;grid, int level)</td></tr>
+<tr class="separator:a335f93275773dac8911e330abef913a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8571f4f13050af2bf0d0f9ac38132765"><td class="memTemplParams" colspan="2">template&lt;std::integral auto dim, std::integral auto dimworld, typename ScalarType &gt; </td></tr>
+<tr class="memitem:a8571f4f13050af2bf0d0f9ac38132765"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d6a/a00119.html#a8571f4f13050af2bf0d0f9ac38132765">Dune::IGA::leafGridView</a> (const NURBSGrid&lt; dim, dimworld, ScalarType &gt; &amp;grid)</td></tr>
+<tr class="separator:a8571f4f13050af2bf0d0f9ac38132765"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../dd/dad/a00005.html">makecirculararc.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dd/dad/a00005.html">nurbsgrid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

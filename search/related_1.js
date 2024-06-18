@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['operator_3c_3c_0',['operator&lt;&lt;',['../d2/d8e/a01315.html#a5b59867bdd8d1d0f656beb3e489bcd4f',1,'Dune::IGA::Ibra::IbraBase::operator&lt;&lt;()'],['../d3/d95/a01435.html#a0a734e442bb8250ba46bb8e3d027fa23',1,'Dune::IGA::DefaultParameterSpace::IdType::operator&lt;&lt;()'],['../d0/da4/a01631.html#ad329482f69df01c10e3bc0a12045fbcd',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::operator&lt;&lt;()']]]
+  ['operator_3c_3c_0',['operator&lt;&lt;',['../df/d9c/a00958.html#a5b59867bdd8d1d0f656beb3e489bcd4f',1,'Dune::IGA::Ibra::IbraBase']]]
 ];

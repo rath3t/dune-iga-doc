@@ -1,4 +1,4 @@
 var a00056 =
 [
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d6/d4d/a01371.html", "d6/d4d/a01371" ]
+    [ "Dune::IGA::NURBSPatchGeometry< dim, dimworld, ScalarType >", "de/d07/a01146.html", "de/d07/a01146" ]
 ];

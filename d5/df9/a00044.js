@@ -1,11 +1,7 @@
 var a00044 =
 [
-    [ "Dune::IGA::MultiDimensionalNet< netdim, ElementType, Container >", "d5/db3/a01751.html", "d5/db3/a01751" ],
-    [ "Dune::IGA::MultiDimensionalNetIndex< netdim >", "d2/d7d/a01755.html", "d2/d7d/a01755" ],
-    [ "dot", "d5/df9/a00044.html#ab494853db2f6cc105541b0eaf9a16573", null ],
-    [ "MultiDimensionalNet", "d5/df9/a00044.html#ad434568f69368db1d1211d5e438d51ab", null ],
-    [ "operator*", "d5/df9/a00044.html#a58e016c6ad5f1db9f128efbf889ccf14", null ],
-    [ "operator*", "d5/df9/a00044.html#a06975ed3172fc423fe3c936bac9fefff", null ],
-    [ "operator-", "d5/df9/a00044.html#af21f4f9e9fd92abd1a6f942043f72544", null ],
-    [ "operator/", "d5/df9/a00044.html#a53dd923355abf6a83c2589bf67d5b0bd", null ]
+    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d4/dd0/a00994.html", "d4/dd0/a00994" ],
+    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d9a/a00998.html", "d9/d9a/a00998" ],
+    [ "Dune::JSONGridFactory< Grid_ >", "d2/dd5/a01002.html", "d2/dd5/a01002" ],
+    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/d81/a01006.html", "dc/d81/a01006" ]
 ];

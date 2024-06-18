@@ -1,7 +1,11 @@
 var a00089 =
 [
-    [ "Dune::IGA::PatchGridLevelGridViewTraits< GridImp >", "d3/d42/a01275.html", "d3/d42/a01275" ],
-    [ "Dune::IGA::PatchGridLevelGridView< GridImp >", "d4/d41/a01267.html", "d4/d41/a01267" ],
-    [ "Dune::IGA::PatchGridLeafGridViewTraits< GridImp >", "d9/de7/a01279.html", "d9/de7/a01279" ],
-    [ "Dune::IGA::PatchGridLeafGridView< GridImp >", "dd/d39/a01271.html", "dd/d39/a01271" ]
+    [ "Dune::IGA::Utilities::Domain< ScalarType >", "d3/dca/a00954.html", "d3/dca/a00954" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "db/dab/a00089.html#abed12b304dff899714427441b8558f7b", null ],
+    [ "clampToDomain", "db/dab/a00089.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
+    [ "linspace", "db/dab/a00089.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
+    [ "linspace", "db/dab/a00089.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
+    [ "linspace", "db/dab/a00089.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
+    [ "mapToRange", "db/dab/a00089.html#a36c887e0deedc2b16c340ffcee35f961", null ],
+    [ "splitDomainInHalf", "db/dab/a00089.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
 ];
