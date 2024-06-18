@@ -1,5 +1,5 @@
 var a00065 =
 [
-    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, true >", "dc/d4b/a01359.html", "dc/d4b/a01359" ],
-    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, false >", "dd/d8b/a01363.html", "dd/d8b/a01363" ]
+    [ "readJson", "de/de1/a00065.html#aa0f8ccf410542ea91d5841fee8673130", null ],
+    [ "readJson", "de/de1/a00065.html#a9d751eac9df3522e457a5620082bb7e8", null ]
 ];
