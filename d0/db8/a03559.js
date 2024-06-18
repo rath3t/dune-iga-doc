@@ -1,4 +1,4 @@
 var a03559 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::PatchGridEntitySeed< codim, GridImp >", "d6/dc9/a01498.html", "d6/dc9/a01498" ]
+    [ "Dune::IGA::IdentityParameterSpace::PatchGridEntitySeed< codim, GridImp >", "d7/db8/a01687.html", "d7/db8/a01687" ]
 ];

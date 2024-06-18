@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: parameterspace.hh File Reference</title>
+<title>dune-iga: patchgridentityseed.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,74 +94,38 @@ $(document).ready(function(){initNavTree('d3/df0/a03556.html','../../'); initRes
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">identity/parameterspace.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">default/patchgridentityseed.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Definition of the identity parameterspace class.  
+<p>The PatchGridEntitySeed class.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../df/d98/a00107_source.html">dune/iga/hierarchicpatch/patchgridfwd.hh</a>&quot;</code><br />
-<code>#include &lt;dune/geometry/referenceelements.hh&gt;</code><br />
-<code>#include &lt;dune/grid/concepts.hh&gt;</code><br />
-<code>#include &lt;dune/grid/yaspgrid.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d2/d1f/a00083_source.html">dune/iga/hierarchicpatch/patchgridgeometry.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../da/d2a/a00086_source.html">dune/iga/hierarchicpatch/patchgridview.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../df/dab/a03550_source.html">dune/iga/parameterspace/identity/idSet.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d5/d60/a03562_source.html">dune/iga/parameterspace/identity/patchgridentityseed.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/d29/a03568_source.html">dune/iga/parameterspace/identity/patchgridhierarchiciterator.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../db/d52/a03574_source.html">dune/iga/parameterspace/identity/patchgridindexsets.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/dca/a03580_source.html">dune/iga/parameterspace/identity/patchgridintersectioniterator.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d2/dcf/a03586_source.html">dune/iga/parameterspace/identity/patchgridleafiterator.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d8/d1b/a03592_source.html">dune/iga/parameterspace/identity/patchgridleveliterator.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../de/df3/a00185_source.html">dune/iga/parameterspace/identity/patchgridlocalgeometry.hh</a>&gt;</code><br />
-</div>
+
 <p><a href="../../d3/df0/a03556_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/dbc/a01662.html">Dune::IGA::IdentityParameterSpace::Parameter</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d9/dbc/a01662.html" title="Parameter struct representing parameters for the trimming operation.">Parameter</a> struct representing parameters for the trimming operation.  <a href="../../d9/dbc/a01662.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d75/a01666.html">Dune::IGA::IdentityParameterSpace::ElementTrimDataImpl&lt; mydim_, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ElementTrimData struct representing trim data for an element.  <a href="../../d8/d75/a01666.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/df6/a01670.html">Dune::IGA::IdentityParameterSpace::ElementTrimDataContainerImpl&lt; ParameterSpaceGrid &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ElementTrimDataContainer struct representing a container for element trim data.  <a href="../../de/df6/a01670.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d42/a01674.html">Dune::IGA::IdentityParameterSpace::PatchTrimDataImpl&lt; dim, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">PatchTrimData struct representing trim data for a patch.  <a href="../../dc/d42/a01674.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d32/a01214.html">Dune::IGA::IdentityParameterSpace::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d08/a01682.html">Dune::IGA::IdentityParameterSpace::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::ParameterSpaceTraits</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d31/a01686.html">Dune::IGA::IdentityParameterSpace::PatchGridFamily&lt; dim, dimworld, ScalarType &gt;::ParameterSpaceTraits::Codim&lt; codim &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d26/a01678.html">Dune::IGA::IdentityParameterSpace::ParameterSpaceImpl&lt; dim, dimworld, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">ParameterSpace struct representing a parameterspace with identity trimming (no trimming at all).  <a href="../../d6/d26/a01678.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d36/a01495.html">Dune::IGA::DefaultParameterSpace::PatchGridEntitySeed&lt; codim, GridImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The EntitySeed class provides the minimal information needed to restore an Entity using the grid.  <a href="../../d2/d36/a01495.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d7/d40/a00236"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html">Dune</a></td></tr>
+<tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d4/d08/a00237"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d08/a00237.html">Dune::IGA</a></td></tr>
+<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/d2e/a00238"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html">Dune::IGA::GeometryKernel</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d6/d22/a00245"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d22/a00245.html">Dune::IGA::IdentityParameterSpace</a></td></tr>
+<tr class="memitem:d6/d08/a00244"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d08/a00244.html">Dune::IGA::DefaultParameterSpace</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Definition of the identity parameterspace class. </p>
-<dl class="section author"><dt>Author</dt><dd>Alexander Müller <a href="#" onclick="location.href='mai'+'lto:'+'mue'+'ll'+'er@'+'ib'+'b.u'+'ni'+'-st'+'ut'+'tga'+'rt'+'.de'; return false;">muell<span class="obfuscator">.nosp@m.</span>er@i<span class="obfuscator">.nosp@m.</span>bb.un<span class="obfuscator">.nosp@m.</span>i-st<span class="obfuscator">.nosp@m.</span>uttga<span class="obfuscator">.nosp@m.</span>rt.d<span class="obfuscator">.nosp@m.</span>e</a> </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2023 </dd></dl>
+<div class="textblock"><p >The PatchGridEntitySeed class. </p>
 </div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_4f9a3fa99cd0e0423c5099ae82deb76f.html">identity</a></li><li class="navelem"><a class="el" href="../../d3/df0/a03556.html">parameterspace.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_f5de9a83ba433885a90732f39b87e823.html">default</a></li><li class="navelem"><a class="el" href="../../d3/df0/a03556.html">patchgridentityseed.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

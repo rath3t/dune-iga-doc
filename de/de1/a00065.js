@@ -1,4 +1,5 @@
 var a00065 =
 [
-    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d2/dff/a01374.html", "d2/dff/a01374" ]
+    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, true >", "dc/d4b/a01359.html", "dc/d4b/a01359" ],
+    [ "Dune::IGA::IbraReader< dim, dimworld, PatchGrid, false >", "dd/d8b/a01363.html", "dd/d8b/a01363" ]
 ];

@@ -1,4 +1,4 @@
 var a03565 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::PatchGridHierarchicIterator< GridImp >", "de/d3c/a01490.html", "de/d3c/a01490" ]
+    [ "Dune::IGA::IdentityParameterSpace::PatchGridHierarchicIterator< GridImp >", "d0/d54/a01691.html", "d0/d54/a01691" ]
 ];
