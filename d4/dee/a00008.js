@@ -1,10 +1,14 @@
 var a00008 =
 [
-    [ "Dune::IGA::Trim::ElementBoundaries", "df/db5/a01158.html", "df/db5/a01158" ],
-    [ "Dune::IGA::Trim::NURBSPatchTrimmer< intType_, sc_ >", "d4/d13/a01162.html", "d4/d13/a01162" ],
-    [ "ElementTrimFlag", "d4/dee/a00008.html#a34b2741ab599082a80dacc40c6e5069b", [
-      [ "full", "d4/dee/a00008.html#a34b2741ab599082a80dacc40c6e5069bae9dc924f238fa6cc29465942875fe8f0", null ],
-      [ "empty", "d4/dee/a00008.html#a34b2741ab599082a80dacc40c6e5069baa2e4822a98337283e39f7b60acf85ec9", null ],
-      [ "trimmed", "d4/dee/a00008.html#a34b2741ab599082a80dacc40c6e5069ba853600aa75baac4ae4d3b794b574ecec", null ]
-    ] ]
+    [ "Dune::IGA::Utilities::Domain< ScalarType >", "d9/df5/a01086.html", "d9/df5/a01086" ],
+    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "d4/dee/a00008.html#a532897d1990f320393603ae743e25401", null ],
+    [ "clampToDomain", "d4/dee/a00008.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
+    [ "linspace", "d4/dee/a00008.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
+    [ "linspace", "d4/dee/a00008.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
+    [ "linspace", "d4/dee/a00008.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
+    [ "mapToRange", "d4/dee/a00008.html#a3d59a12b8ff14b4ae1ba2bf40845b301", null ],
+    [ "mapToRange", "d4/dee/a00008.html#a9bfbe1e0c0481fdaa7f59bbcb02aae19", null ],
+    [ "mapToRange", "d4/dee/a00008.html#a36c887e0deedc2b16c340ffcee35f961", null ],
+    [ "mapToRangeFromZeroToOne", "d4/dee/a00008.html#a86276840eb12dcb7cc614974d1675d6c", null ],
+    [ "splitDomainInHalf", "d4/dee/a00008.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
 ];

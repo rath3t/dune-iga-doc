@@ -1,13 +1,19 @@
 var searchData=
 [
-  ['basisfactory_0',['BasisFactory',['../dc/dfe/a00125.html',1,'Dune::Functions']]],
-  ['concept_1',['Concept',['../d1/d88/a00128.html',1,'Dune::IGA']]],
-  ['dune_2',['Dune',['../d8/d87/a00118.html',1,'']]],
-  ['functions_3',['Functions',['../da/d72/a00124.html',1,'Dune']]],
-  ['ibra_4',['Ibra',['../d8/dfa/a00121.html',1,'Dune::IGA']]],
-  ['iga_5',['IGA',['../df/d6a/a00119.html',1,'Dune::IGA'],['../d6/db3/a00130.html',1,'Dune::Python::IGA']]],
-  ['python_6',['Python',['../d9/d47/a00129.html',1,'Dune']]],
-  ['trim_7',['Trim',['../df/dcd/a00127.html',1,'Dune::IGA']]],
-  ['utilities_8',['Utilities',['../d4/d98/a00120.html',1,'Dune::IGA']]],
-  ['vtk_9',['Vtk',['../df/dc8/a00122.html',1,'Dune']]]
+  ['basisfactory_0',['BasisFactory',['../dd/dd7/a00248.html',1,'Dune::Functions']]],
+  ['capabilities_1',['Capabilities',['../d0/d27/a00239.html',1,'Dune']]],
+  ['concept_2',['Concept',['../da/d2e/a00238.html',1,'Dune::IGA']]],
+  ['defaultparameterspace_3',['DefaultParameterSpace',['../d6/d82/a00243.html',1,'Dune::IGA']]],
+  ['dune_4',['Dune',['../d0/d53/a00232.html',1,'']]],
+  ['functions_5',['Functions',['../d9/d21/a00240.html',1,'Dune']]],
+  ['geometrykernel_6',['GeometryKernel',['../da/d31/a00234.html',1,'Dune::IGA']]],
+  ['ibra_7',['Ibra',['../d4/d9a/a00246.html',1,'Dune::IGA']]],
+  ['identityparameterspace_8',['IdentityParameterSpace',['../d6/db6/a00241.html',1,'Dune::IGA']]],
+  ['iga_9',['IGA',['../d6/de1/a00233.html',1,'Dune::IGA'],['../d7/d2f/a00258.html',1,'Dune::Python::IGA']]],
+  ['python_10',['Python',['../d9/d39/a00257.html',1,'Dune']]],
+  ['splines_11',['Splines',['../d4/d04/a00255.html',1,'Dune::IGA']]],
+  ['trim_12',['Trim',['../d7/d03/a00254.html',1,'Dune::IGA']]],
+  ['util_13',['Util',['../d0/da7/a00250.html',1,'Dune::IGA::DefaultParameterSpace']]],
+  ['utilities_14',['Utilities',['../d3/d42/a00235.html',1,'Dune::IGA']]],
+  ['vtk_15',['Vtk',['../d0/d1f/a00247.html',1,'Dune']]]
 ];

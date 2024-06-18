@@ -1,12 +1,12 @@
 var a00053 =
 [
-    [ "Dune::Functions::NurbsLocalBasis< GV, R >", "de/d91/a01034.html", "de/d91/a01034" ],
-    [ "Dune::Functions::NurbsLocalCoefficients< dim >", "d4/dbc/a01038.html", "d4/dbc/a01038" ],
-    [ "Dune::Functions::NurbsLocalInterpolation< dim, LB >", "d4/d56/a01042.html", "d4/d56/a01042" ],
-    [ "Dune::Functions::NurbsLocalFiniteElement< GV, R >", "de/d02/a01026.html", "de/d02/a01026" ],
-    [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >", "de/d41/a01030.html", "de/d41/a01030" ],
-    [ "Dune::Functions::NurbsNode< GV >", "da/d17/a01046.html", "da/d17/a01046" ],
-    [ "NurbsBasis", "dc/dee/a00053.html#a4e3cfaeb5308fbfa024b5ec8085912d1", null ],
-    [ "nurbs", "dc/dee/a00053.html#a5140df8b1bf39d0c73f6d853a2ec4c87", null ],
-    [ "nurbs", "dc/dee/a00053.html#a10c3f08f7830f39c003415e65e2a0361", null ]
+    [ "Dune::IGA::Splines::Nurbs< dim, ScalarType_ >", "de/db5/a01730.html", "de/db5/a01730" ],
+    [ "Dune::IGA::Splines::Nurbs< dim, ScalarType_ >::LocalView", "d0/d1f/a01734.html", "d0/d1f/a01734" ],
+    [ "degreeElevate", "dc/dee/a00053.html#ab00d012b66e12da10952ef8d49d4844d", null ],
+    [ "extractControlCoordinates", "dc/dee/a00053.html#ab1728f106934c40687f363cab2c7db4f", null ],
+    [ "extractWeights", "dc/dee/a00053.html#aeaadf1acdb2d02ef98b31059072a86f5", null ],
+    [ "generateRefinedKnots", "dc/dee/a00053.html#a32cad2d352405d98bf78df30093cf8f5", null ],
+    [ "knotRefinement", "dc/dee/a00053.html#a5e3ff1bb11d860a83e14581b3f8e1187", null ],
+    [ "netOfSpan", "dc/dee/a00053.html#a7a69389594176e66c842342b7c6b58e0", null ],
+    [ "netOfSpan", "dc/dee/a00053.html#a6dee5f4f93209fff3ca08503ce8c4652", null ]
 ];

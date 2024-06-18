@@ -1,6 +1,4 @@
 var a00110 =
 [
-    [ "Reader", "d4/d81/a00110.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-      [ "json", "d4/d81/a00110.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-    ] ]
+    [ "Dune::IGA::Trim::LocalGeometryVariant< ParameterSpaceType_, Implementations >", "d5/d29/a01722.html", "d5/d29/a01722" ]
 ];

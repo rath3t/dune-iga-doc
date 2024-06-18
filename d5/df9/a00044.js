@@ -1,7 +1,5 @@
 var a00044 =
 [
-    [ "Dune::IGA::IbraReader< gridDim, worldDim, ScalarType >", "d4/dd0/a00994.html", "d4/dd0/a00994" ],
-    [ "Dune::DGFGridInfo< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "d9/d9a/a00998.html", "d9/d9a/a00998" ],
-    [ "Dune::JSONGridFactory< Grid_ >", "d2/dd5/a01002.html", "d2/dd5/a01002" ],
-    [ "Dune::DGFGridFactory< Dune::IGA::NURBSGrid< gridDim, worldDim, ScalarType > >", "dc/d81/a01006.html", "dc/d81/a01006" ]
+    [ "Dune::IGA::DefaultParameterSpace::DefaultIntegrationRuleGenerator< GridImp >", "d8/d17/a01282.html", "d8/d17/a01282" ],
+    [ "Dune::IGA::IntegrationRuleHolder< GridImp >", "d0/d00/a01286.html", "d0/d00/a01286" ]
 ];
