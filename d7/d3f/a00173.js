@@ -1,4 +1,6 @@
 var a00173 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::Preferences", "d2/dcc/a01623.html", "d2/dcc/a01623" ]
+    [ "Dune::IGA::DefaultParameterSpace::TrimmedReferenceElement< dim, GridImp >", "dc/dbf/a01595.html", "dc/dbf/a01595" ],
+    [ "Dune::IGA::DefaultParameterSpace::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d9/d13/a01599.html", "d9/d13/a01599" ],
+    [ "Dune::IGA::DefaultParameterSpace::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "db/d51/a01603.html", "db/d51/a01603" ]
 ];

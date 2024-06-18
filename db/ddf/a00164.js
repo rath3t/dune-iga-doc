@@ -1,4 +1,4 @@
 var a00164 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "d7/d03/a01491.html", "d7/d03/a01491" ]
+    [ "Dune::IGA::DefaultParameterSpace::Transformations", "d6/df0/a01647.html", "d6/df0/a01647" ]
 ];

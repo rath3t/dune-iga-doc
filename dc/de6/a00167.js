@@ -1,5 +1,4 @@
 var a00167 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::VectorEntityContainer< GridImp >", "db/d78/a01427.html", "db/d78/a01427" ],
-    [ "Dune::IGA::DefaultParameterSpace::VectorEntityContainer< GridImp >::StringAndIndex", "d7/d8b/a01431.html", "d7/d8b/a01431" ]
+    [ "clipElementRectangle", "dc/de6/a00167.html#ad528a1bc5ed08cfd12f61e26124a5e4c", null ]
 ];

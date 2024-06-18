@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: bsplinealgorithms.hh File Reference</title>
+<title>dune-iga: createunstructuredgrid.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,59 +92,34 @@ $(document).ready(function(){initNavTree('d5/de0/a00050.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">bsplinealgorithms.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">createunstructuredgrid.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;algorithm&gt;</code><br />
-<code>#include &lt;concepts&gt;</code><br />
-<code>#include &lt;ranges&gt;</code><br />
-<code>#include &lt;dune/common/dynmatrix.hh&gt;</code><br />
-<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d9/d2e/a00056_source.html">dune/iga/io/vtk/vtkrefinedgeometries.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d5/de0/a00050_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/d0f/a01727.html">Dune::IGA::Splines::BsplineBasis&lt; ScalarType_ &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">One dimensional b-spline basis.  <a href="../../de/d0f/a01727.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d0/def/a00256"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/def/a00256.html">Dune::IGA::Splines</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:aa4d165c52600cfe1d6e076699c11c259"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
-<tr class="memitem:aa4d165c52600cfe1d6e076699c11c259"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/def/a00256.html#aa4d165c52600cfe1d6e076699c11c259">Dune::IGA::Splines::findSpan</a> (const int p, typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::difference_type offset=0)</td></tr>
-<tr class="memdesc:aa4d165c52600cfe1d6e076699c11c259"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the spanIndex in range [u_0,...,u_0,...,u_a ,u,...,u_n,...,u_n] which is first index lower than u.  <a href="../../d0/def/a00256.html#aa4d165c52600cfe1d6e076699c11c259">More...</a><br /></td></tr>
-<tr class="separator:aa4d165c52600cfe1d6e076699c11c259"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8903fd5c5528d00350ae67acdad78eda"><td class="memTemplParams" colspan="2">template&lt;int dim, size_t dim2, typename ValueType &gt; <br />
-requires (dim2 == dim)</td></tr>
-<tr class="memitem:a8903fd5c5528d00350ae67acdad78eda"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/def/a00256.html#a8903fd5c5528d00350ae67acdad78eda">Dune::IGA::Splines::findSpan</a> (const std::array&lt; int, dim2 &gt; &amp;p, const Dune::FieldVector&lt; ValueType, dim &gt; &amp;u, const std::array&lt; std::vector&lt; ValueType &gt;, dim2 &gt; &amp;U)</td></tr>
-<tr class="memdesc:a8903fd5c5528d00350ae67acdad78eda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as findSpan but for dim knotvectors.  <a href="../../d0/def/a00256.html#a8903fd5c5528d00350ae67acdad78eda">More...</a><br /></td></tr>
-<tr class="separator:a8903fd5c5528d00350ae67acdad78eda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8fa013ed31b0cad949e149776818c0a3"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
-<tr class="memitem:a8fa013ed31b0cad949e149776818c0a3"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/def/a00256.html#a8fa013ed31b0cad949e149776818c0a3">Dune::IGA::Splines::multiplicity</a> (Range &amp;&amp;U, typename std::remove_cvref_t&lt; Range &gt;::value_type u)</td></tr>
-<tr class="separator:a8fa013ed31b0cad949e149776818c0a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09b1b9cc7958375a8a31d62af5b0912"><td class="memTemplParams" colspan="2">template&lt;std::size_t dim, typename ScalarType &gt; </td></tr>
-<tr class="memitem:aa09b1b9cc7958375a8a31d62af5b0912"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/def/a00256.html#aa09b1b9cc7958375a8a31d62af5b0912">Dune::IGA::Splines::createUniqueKnotSpans</a> (const std::array&lt; std::vector&lt; ScalarType &gt;, dim &gt; &amp;knotSpans)</td></tr>
-<tr class="separator:aa09b1b9cc7958375a8a31d62af5b0912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3b41bcffed5f7e4d28f8f3fe629f05"><td class="memTemplParams" colspan="2">template&lt;typename UnstructuredGrid , typename PatchGrid &gt; </td></tr>
+<tr class="memitem:aab3b41bcffed5f7e4d28f8f3fe629f05"><td class="memTemplItemLeft" align="right" valign="top">std::unique_ptr&lt; UnstructuredGrid &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html#aab3b41bcffed5f7e4d28f8f3fe629f05">Dune::IGA::createUnstructuredGridImpl</a> (PatchGrid *patchGrid)</td></tr>
+<tr class="separator:aab3b41bcffed5f7e4d28f8f3fe629f05"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_479b904809ee7734e338128330b60cdb.html">splines</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">bsplinealgorithms.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_c3ccff8517fbe337b2b8ad503c3a1590.html">io</a></li><li class="navelem"><a class="el" href="../../d5/de0/a00050.html">createunstructuredgrid.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
