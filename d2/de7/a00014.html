@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: basealgorithms.hh File Reference</title>
+<title>dune-iga: nurbspatchtransform.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,10 +94,10 @@ $(document).ready(function(){initNavTree('d2/de7/a00014.html','../../'); initRes
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">basealgorithms.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">nurbspatchtransform.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d9/d1f/a03531_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="../../d6/d5b/a00026_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../d2/de7/a00014_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -107,24 +107,24 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune::IGA::GeometryKernel</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a0f93432d996799f910df4ac8ecc3147a"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
-<tr class="memitem:a0f93432d996799f910df4ac8ecc3147a"><td class="memTemplItemLeft" align="right" valign="top">VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html#a0f93432d996799f910df4ac8ecc3147a">Dune::IGA::projectPointOntoLine</a> (const VectorType basepoint, const VectorType direction, const VectorType point)</td></tr>
-<tr class="memdesc:a0f93432d996799f910df4ac8ecc3147a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects a point onto a line defined by a basepoint and direction.  <a href="../../d6/de1/a00233.html#a0f93432d996799f910df4ac8ecc3147a">More...</a><br /></td></tr>
-<tr class="separator:a0f93432d996799f910df4ac8ecc3147a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08b624d0e2f7ab790db8db08af9100d8"><td class="memTemplParams" colspan="2">template&lt;Concept::Vector VectorType&gt; </td></tr>
-<tr class="memitem:a08b624d0e2f7ab790db8db08af9100d8"><td class="memTemplItemLeft" align="right" valign="top">VectorType&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html#a08b624d0e2f7ab790db8db08af9100d8">Dune::IGA::intersect3DLines</a> (const VectorType basepoint1, const VectorType direction1, const VectorType basepoint2, const VectorType direction2)</td></tr>
-<tr class="memdesc:a08b624d0e2f7ab790db8db08af9100d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the intersection point of two 3D lines.  <a href="../../d6/de1/a00233.html#a08b624d0e2f7ab790db8db08af9100d8">More...</a><br /></td></tr>
-<tr class="separator:a08b624d0e2f7ab790db8db08af9100d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02efab58e4dc7beb7bc5bc3307131a12"><td class="memTemplParams" colspan="2">template&lt;int dim_, int dimworld_, typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:a02efab58e4dc7beb7bc5bc3307131a12"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html#a02efab58e4dc7beb7bc5bc3307131a12">Dune::IGA::GeometryKernel::transform</a> (const NURBSPatch&lt; dim_, dimworld_, ScalarType &gt; &amp;patch, const std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt; &amp;newDomain=std::array&lt; Utilities::Domain&lt; double &gt;, dim_ &gt;{})</td></tr>
+<tr class="separator:a02efab58e4dc7beb7bc5bc3307131a12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5295757b5acf619a91ba551125ad7419"><td class="memTemplParams" colspan="2">template&lt;int dim, int dimworld, typename ParameterSpaceGeometry , typename ScalarType  = double&gt; </td></tr>
+<tr class="memitem:a5295757b5acf619a91ba551125ad7419"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html#a5295757b5acf619a91ba551125ad7419">Dune::IGA::GeometryKernel::transformToSpan</a> (const NURBSPatch&lt; dim, dimworld, ScalarType &gt; &amp;patch, const ParameterSpaceGeometry &amp;span)</td></tr>
+<tr class="separator:a5295757b5acf619a91ba551125ad7419"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d2/de7/a00014.html">basealgorithms.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d2/de7/a00014.html">nurbspatchtransform.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

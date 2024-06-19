@@ -43,7 +43,7 @@ var searchData=
   ['dummyempty_40',['DummyEmpty',['../d0/dc7/a01402.html',1,'Dune::Functions::NurbsPreBasis']]],
   ['dune_41',['Dune',['../d0/d53/a00232.html',1,'']]],
   ['dune_2diga_20documentation_42',['dune-iga documentation',['../index.html',1,'']]],
-  ['dune_5ffmatrix_5fwith_5fchecking_43',['DUNE_FMatrix_WITH_CHECKING',['../d5/d16/a00029.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b',1,'findintersection.hh']]],
+  ['dune_5ffmatrix_5fwith_5fchecking_43',['DUNE_FMatrix_WITH_CHECKING',['../db/db2/a00020.html#ae4bc7cdc5e53b7a5a31910e968d7ef0b',1,'findintersection.hh']]],
   ['dunefunctionslayouts_44',['duneFunctionsLayouts',['../d3/dcc/a00264.html#a7567a58831582a87fbcc011042771efa',1,'iga::basis']]],
   ['dynamicmatrixtype_45',['DynamicMatrixType',['../de/db5/a01730.html#a130df53370b79989802f8d4e9f6c638f',1,'Dune::IGA::Splines::Nurbs::DynamicMatrixType()'],['../df/dba/a01726.html#ae9113cc5a1a64ed40b190fc3bdc83523',1,'Dune::IGA::Splines::BsplineBasis::DynamicMatrixType()']]],
   ['dynamicvectortype_46',['DynamicVectorType',['../de/db5/a01730.html#a0a7af2b8eaaf0eda9669b53bc938d803',1,'Dune::IGA::Splines::Nurbs::DynamicVectorType()'],['../df/dba/a01726.html#aaf3688be9018dfa2013f32a10d20a1af',1,'Dune::IGA::Splines::BsplineBasis::DynamicVectorType()']]],

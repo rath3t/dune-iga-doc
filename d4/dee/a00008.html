@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: nurbspatchgeometry.hh File Reference</title>
+<title>dune-iga: geohelper.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,30 +93,21 @@ $(document).ready(function(){initNavTree('d4/dee/a00008.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a>  </div>
-  <div class="headertitle"><div class="title">nurbspatchgeometry.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">geohelper.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-
-<p>Definition of the NURBSPatch class.  
-<a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="../../d1/d09/a00077_source.html">dune/iga/hierarchicpatch/patchgridfwd.hh</a>&quot;</code><br />
-<code>#include &lt;dune/geometry/axisalignedcubegeometry.hh&gt;</code><br />
-<code>#include &lt;dune/geometry/multilineargeometry.hh&gt;</code><br />
-<code>#include &lt;dune/geometry/quadraturerules.hh&gt;</code><br />
-<code>#include &lt;dune/grid/yaspgrid/yaspgridgeometry.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d3/d52/a00023_source.html">dune/iga/geometrykernel/algorithms.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d8/d41/a00038_source.html">dune/iga/geometrykernel/geohelper.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../dc/d87/a00032_source.html">dune/iga/geometrykernel/nurbspatchgeometrylocalview.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &lt;ranges&gt;</code><br />
+<code>#include &lt;dune/common/float_cmp.hh&gt;</code><br />
+<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
 </div>
 <p><a href="../../d4/dee/a00008_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d17/a01098.html">Dune::IGA::GeometryKernel::NURBSPatch&lt; dim_, dimworld_, ScalarType &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="../../d5/d17/a01098.html" title="NURBSPatch class representing a Non-Uniform Rational B-Spline patch.">NURBSPatch</a> class representing a Non-Uniform Rational B-Spline patch.  <a href="../../d5/d17/a01098.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/da7/a01102.html">Dune::IGA::GeometryKernel::NURBSPatch&lt; dim_, dimworld_, ScalarType &gt;::ConnectionResult</a></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/df5/a01086.html">Dune::IGA::Utilities::Domain&lt; ScalarType &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Small wrapper class that represents a one-dimensional closed domain.  <a href="../../d9/df5/a01086.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
@@ -125,19 +116,56 @@ Namespaces</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d6/de1/a00233"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/de1/a00233.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:da/d31/a00234"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d31/a00234.html">Dune::IGA::GeometryKernel</a></td></tr>
+<tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune::IGA::Utilities</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a532897d1990f320393603ae743e25401"><td class="memTemplParams" colspan="2">template&lt;typename ScalarType , int dim, size_t dim2&gt; <br />
+requires (dim == dim2)</td></tr>
+<tr class="memitem:a532897d1990f320393603ae743e25401"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a532897d1990f320393603ae743e25401">Dune::IGA::Utilities::clampToBoundaryAndCheckIfIsAtAllBoundaries</a> (FieldVector&lt; ScalarType, dim &gt; &amp;x, const std::array&lt; Domain&lt; ScalarType &gt;, dim2 &gt; &amp;domain={})</td></tr>
+<tr class="memdesc:a532897d1990f320393603ae743e25401"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the given array of domains to the boundary and checks if it is at all boundaries.  <a href="../../d3/d42/a00235.html#a532897d1990f320393603ae743e25401">More...</a><br /></td></tr>
+<tr class="separator:a532897d1990f320393603ae743e25401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3db3f379446d87eac1f9cc39abcbedd"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:aa3db3f379446d87eac1f9cc39abcbedd"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#aa3db3f379446d87eac1f9cc39abcbedd">Dune::IGA::Utilities::linspace</a> (T a, T b, unsigned int N)</td></tr>
+<tr class="memdesc:aa3db3f379446d87eac1f9cc39abcbedd"><td class="mdescLeft">&#160;</td><td class="mdescRight">A view with N coordinates between a and b including a and b.  <a href="../../d3/d42/a00235.html#aa3db3f379446d87eac1f9cc39abcbedd">More...</a><br /></td></tr>
+<tr class="separator:aa3db3f379446d87eac1f9cc39abcbedd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6880eea38c01ebcd77300a8b8fa27c62"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a6880eea38c01ebcd77300a8b8fa27c62"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a6880eea38c01ebcd77300a8b8fa27c62">Dune::IGA::Utilities::linspace</a> (std::array&lt; T, 2 &gt; ab, unsigned int N)</td></tr>
+<tr class="separator:a6880eea38c01ebcd77300a8b8fa27c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cac3b3b6837a6b5f5ced44e740bcd7a"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a8cac3b3b6837a6b5f5ced44e740bcd7a"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a8cac3b3b6837a6b5f5ced44e740bcd7a">Dune::IGA::Utilities::linspace</a> (Domain&lt; T &gt; ab, unsigned int N)</td></tr>
+<tr class="separator:a8cac3b3b6837a6b5f5ced44e740bcd7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="memTemplItemLeft" align="right" valign="top">auto &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#ac6a185a07ec904f01c6563a6e01d4a7f">Dune::IGA::Utilities::clampToDomain</a> (T &amp;val, const Domain&lt; T &gt; &amp;dom)</td></tr>
+<tr class="memdesc:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clamps the given value to the specified domain.  <a href="../../d3/d42/a00235.html#ac6a185a07ec904f01c6563a6e01d4a7f">More...</a><br /></td></tr>
+<tr class="separator:ac6a185a07ec904f01c6563a6e01d4a7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36c887e0deedc2b16c340ffcee35f961"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a36c887e0deedc2b16c340ffcee35f961"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a36c887e0deedc2b16c340ffcee35f961">Dune::IGA::Utilities::mapToRange</a> (T value, const Domain&lt; T &gt; &amp;input, const Domain&lt; T &gt; &amp;output)</td></tr>
+<tr class="memdesc:a36c887e0deedc2b16c340ffcee35f961"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value from one domain to another.  <a href="../../d3/d42/a00235.html#a36c887e0deedc2b16c340ffcee35f961">More...</a><br /></td></tr>
+<tr class="separator:a36c887e0deedc2b16c340ffcee35f961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86276840eb12dcb7cc614974d1675d6c"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:a86276840eb12dcb7cc614974d1675d6c"><td class="memTemplItemLeft" align="right" valign="top">T&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a86276840eb12dcb7cc614974d1675d6c">Dune::IGA::Utilities::mapToRangeFromZeroToOne</a> (T value, const Domain&lt; T &gt; &amp;output)</td></tr>
+<tr class="memdesc:a86276840eb12dcb7cc614974d1675d6c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value from the domain [0,1] to another.  <a href="../../d3/d42/a00235.html#a86276840eb12dcb7cc614974d1675d6c">More...</a><br /></td></tr>
+<tr class="separator:a86276840eb12dcb7cc614974d1675d6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d59a12b8ff14b4ae1ba2bf40845b301"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T, int size&gt; </td></tr>
+<tr class="memitem:a3d59a12b8ff14b4ae1ba2bf40845b301"><td class="memTemplItemLeft" align="right" valign="top">Dune::FieldVector&lt; T, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a3d59a12b8ff14b4ae1ba2bf40845b301">Dune::IGA::Utilities::mapToRange</a> (const Dune::FieldVector&lt; T, size &gt; &amp;value, const std::array&lt; Domain&lt; T &gt;, size &gt; &amp;input, const std::array&lt; Domain&lt; T &gt;, size &gt; &amp;output)</td></tr>
+<tr class="memdesc:a3d59a12b8ff14b4ae1ba2bf40845b301"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps a value from one domain to another.  <a href="../../d3/d42/a00235.html#a3d59a12b8ff14b4ae1ba2bf40845b301">More...</a><br /></td></tr>
+<tr class="separator:a3d59a12b8ff14b4ae1ba2bf40845b301"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9bfbe1e0c0481fdaa7f59bbcb02aae19"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T, int size, size_t size2&gt; </td></tr>
+<tr class="memitem:a9bfbe1e0c0481fdaa7f59bbcb02aae19"><td class="memTemplItemLeft" align="right" valign="top">Dune::FieldVector&lt; T, size &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#a9bfbe1e0c0481fdaa7f59bbcb02aae19">Dune::IGA::Utilities::mapToRange</a> (const Dune::FieldVector&lt; T, size &gt; &amp;value, const std::array&lt; Domain&lt; T &gt;, size2 &gt; &amp;input, const std::array&lt; Domain&lt; T &gt;, size2 &gt; &amp;output)</td></tr>
+<tr class="separator:a9bfbe1e0c0481fdaa7f59bbcb02aae19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf4a6ff4298be37a5684db7bb769bcdd"><td class="memTemplParams" colspan="2">template&lt;std::floating_point T&gt; </td></tr>
+<tr class="memitem:adf4a6ff4298be37a5684db7bb769bcdd"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; Domain&lt; T &gt;, 2 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html#adf4a6ff4298be37a5684db7bb769bcdd">Dune::IGA::Utilities::splitDomainInHalf</a> (const Domain&lt; T &gt; &amp;domain)</td></tr>
+<tr class="memdesc:adf4a6ff4298be37a5684db7bb769bcdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Splits a domain into two halves.  <a href="../../d3/d42/a00235.html#adf4a6ff4298be37a5684db7bb769bcdd">More...</a><br /></td></tr>
+<tr class="separator:adf4a6ff4298be37a5684db7bb769bcdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >Definition of the NURBSPatch class. </p>
-<dl class="section author"><dt>Author</dt><dd>Alexander Müller <a href="#" onclick="location.href='mai'+'lto:'+'mue'+'ll'+'er@'+'ib'+'b.u'+'ni'+'-st'+'ut'+'tga'+'rt'+'.de'; return false;">muell<span class="obfuscator">.nosp@m.</span>er@i<span class="obfuscator">.nosp@m.</span>bb.un<span class="obfuscator">.nosp@m.</span>i-st<span class="obfuscator">.nosp@m.</span>uttga<span class="obfuscator">.nosp@m.</span>rt.d<span class="obfuscator">.nosp@m.</span>e</a> </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2022 </dd></dl>
-</div></div><!-- contents -->
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d4/dee/a00008.html">nurbspatchgeometry.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../d4/dee/a00008.html">geohelper.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
