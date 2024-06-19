@@ -1,4 +1,5 @@
 var a00041 =
 [
-    [ "Dune::IGA::SimplexIntegrationRuleGenerator< GridImp >", "d7/d8c/a01306.html", "d7/d8c/a01306" ]
+    [ "is_instantiation_of< Template, T >", "d9/de3/a01758.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "dd/d40/a01762.html", null ]
 ];

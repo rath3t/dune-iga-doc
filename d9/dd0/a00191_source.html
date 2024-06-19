@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: igahelpers.hh Source File</title>
+<title>dune-iga: createlevel.hh Source File</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,7 +91,7 @@ $(document).ready(function(){initNavTree('d9/dd0/a00191_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">igahelpers.hh</div></div>
+  <div class="headertitle"><div class="title">createlevel.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d9/dd0/a00191.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2022-2024 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
@@ -99,79 +99,105 @@ $(document).ready(function(){initNavTree('d9/dd0/a00191_source.html','../../'); 
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
 <div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/common/bitsetvector.hh&gt;</span></div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;dune/geometry/referenceelements.hh&gt;</span></div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Gr<span class="keywordtype">id</span>View, <span class="keywordtype">int</span> ncomp = 1&gt;</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="../../d1/dd5/a01742.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="../../d1/dd5/a01742.html">BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> GridView::IndexSet IndexSet;</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">static</span> <span class="keyword">const</span> <span class="keywordtype">int</span> dim = GridView::dimension;</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;<a class="code" href="../../de/df3/a00185.html">dune/iga/parameterspace/default/elementtrimdata.hh</a>&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d82/a00243.html">Dune::IGA::DefaultParameterSpace</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="keyword">template</span> &lt;<span class="keywordtype">int</span> dim, <span class="keywordtype">int</span> dimworld, <span class="keyword">typename</span> ScalarType&gt;</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="../../d0/da4/a01470.html#a4204c8708586f15b66f480aa5e23ee1d">   11</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d0/da4/a01470.html#a4204c8708586f15b66f480aa5e23ee1d">ParameterSpaceImpl&lt;dim, dimworld, ScalarType&gt;::refineParameterSpaceGrid</a>(<span class="keywordtype">int</span> refCount, <span class="keywordtype">bool</span> initFlag) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> oldLevel = untrimmedParameterSpaceGrid_-&gt;maxLevel();</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  untrimmedParameterSpaceGrid_-&gt;globalRefine(refCount);</div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="keyword">public</span>:</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="../../d1/dd5/a01742.html#a5fd0163b3e0e45b1b23f036029bddd58">   16</a></span>  <span class="keyword">typedef</span> <span class="keyword">typename</span> GridView::Intersection <a class="code hl_typedef" href="../../d1/dd5/a01742.html#a5fd0163b3e0e45b1b23f036029bddd58">Intersection</a>;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="comment">// parameterSpaceGrid_-&gt;insertLeaf();</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="comment">// parameterSpaceGrid_-&gt;createEnd();</span></div>
 <div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="../../d1/dd5/a01742.html#a01647e7b3cf283823fb657ad8df0e93c">   20</a></span>  <a class="code hl_function" href="../../d1/dd5/a01742.html#a01647e7b3cf283823fb657ad8df0e93c">BoundaryPatchEnclosingVerticesPropertyTrimmed</a>(<span class="keyword">const</span> GridView&amp; gridView, <span class="keyword">const</span> Dune::BitSetVector&lt;ncomp&gt;&amp; vertices)</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      : indexSet_(gridView.indexSet()),</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        vertices_(vertices) {}</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../d1/dd5/a01742.html#ab0f5730b4be1b146ef68589bc1954ed7">   26</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="../../d1/dd5/a01742.html#ab0f5730b4be1b146ef68589bc1954ed7">operator()</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="../../d1/dd5/a01742.html#a5fd0163b3e0e45b1b23f036029bddd58">Intersection</a>&amp; i)<span class="keyword"> const </span>{</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">const</span> <span class="keyword">auto</span> inside  = i.inside();</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <span class="keywordtype">int</span> localFaceIndex = i.indexInInside();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  assert((initFlag and oldLevel == 0 and refCount == 0) or</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>         !initFlag &amp;&amp; <span class="stringliteral">&quot;If we initialize the grid, the untrimmedParameterSpaceGrid_ should only have one level&quot;</span>);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="comment">// if we init we start at 0 otherwise at 1</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="comment">// if the grid is refined once later this would yield int i = 1; i &lt; 2;</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = !initFlag; i &lt; refCount + 1; ++i) {</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> newLevel = oldLevel + i;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>    entityContainer_.entityImps_.emplace_back();</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    entityContainer_.trimFlags_.emplace_back();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keyword">auto</span> gvu = untrimmedParameterSpaceGrid_-&gt;leafGridView();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    parameterSpaceGrid_-&gt;createBegin();</div>
 <div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordflow">if</span> (inside.impl().isTrimmed())</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keyword">auto</span>&amp; indexSet              = gvu.indexSet();</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keyword">const</span> <span class="keyword">auto</span> elementTrimDatas = trimElements(newLevel);</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keyword">auto</span> refElement = Dune::ReferenceElements&lt;double, dim&gt;::general(inside.type());</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="comment">// Get global node ids</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">int</span> n = refElement.size(localFaceIndex, 1, dim);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; eleU : elements(gvu)) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d0/da4/a01470.html#a9b29c208c6b6f9792b68f09dbd088a08">ElementTrimData</a>&amp; eleTrimData = elementTrimDatas[indexSet.index(eleU)];</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      <span class="keyword">const</span> <a class="code hl_enumeration" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2">ElementTrimFlag</a> eleTrimFlag  = eleTrimData.flag();</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      entityContainer_.trimFlags_.back().emplace_back(eleTrimFlag);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="comment">// Using ReferenceElement::subEntity is OK here, because we loop</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="comment">// over all subEntities (i.e. sub-vertices) and just return false</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="comment">// if _any_ of them is not marked.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> ii = 0; ii &lt; n; ii++) {</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="keywordtype">int</span> localVertexIndex = refElement.subEntity(localFaceIndex, 1, ii, dim);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>      <span class="keywordflow">if</span> (not(vertices_[indexSet_.subIndex(inside, localVertexIndex, dim)].any()))</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    }</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  }</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a> or eleTrimFlag == <a class="code hl_enumvalue" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) {</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        parameterSpaceGrid_-&gt;insertPartial(eleU);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      }</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>    }</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    parameterSpaceGrid_-&gt;createEnd();</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keyword">auto</span> gv = parameterSpaceGrid_-&gt;levelGridView(newLevel);</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <span class="keyword">auto</span>&amp; globalIdSetParameterSpace = parameterSpaceGrid_-&gt;globalIdSet();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keyword">auto</span>&amp; indexSet2                 = gv.indexSet();</div>
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keyword">const</span> IndexSet&amp; indexSet_;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">const</span> Dune::BitSetVector&lt;ncomp&gt;&amp; vertices_;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>};</div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d9/d21/a00240.html">Dune::Functions</a> {</div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="keyword">template</span> &lt;<span class="keyword">class</span> Basis, <span class="keyword">class</span> F&gt;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="../../d9/d21/a00240.html#a8ce90ea47d11d38bdb1e3b675db93a18">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="../../d9/d21/a00240.html#a8ce90ea47d11d38bdb1e3b675db93a18">forEachUntrimmedBoundaryDOF</a>(<span class="keyword">const</span> Basis&amp; basis, F&amp;&amp; f) {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">auto</span> localView       = basis.localView();</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">auto</span> seDOFs          = subEntityDOFs(basis);</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  <span class="keyword">const</span> <span class="keyword">auto</span>&amp; gridView = basis.gridView();</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp;&amp; element : elements(gridView))</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <span class="keywordflow">if</span> (element.hasBoundaryIntersections() and not element.impl().isTrimmed()) {</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      localView.bind(element);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; intersection : intersections(gridView, element))</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">if</span> (intersection.boundary())</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>          <span class="keywordflow">for</span> (<span class="keyword">auto</span> localIndex : seDOFs.bind(localView, intersection))</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>            f(localIndex, localView, intersection);</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>} <span class="comment">// namespace Dune::Functions</span></div>
-<div class="ttc" id="aa00240_html"><div class="ttname"><a href="../../d9/d21/a00240.html">Dune::Functions</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/patchgrid.hh:28</div></div>
-<div class="ttc" id="aa00240_html_a8ce90ea47d11d38bdb1e3b675db93a18"><div class="ttname"><a href="../../d9/d21/a00240.html#a8ce90ea47d11d38bdb1e3b675db93a18">Dune::Functions::forEachUntrimmedBoundaryDOF</a></div><div class="ttdeci">void forEachUntrimmedBoundaryDOF(const Basis &amp;basis, F &amp;&amp;f)</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:57</div></div>
-<div class="ttc" id="aa01742_html"><div class="ttname"><a href="../../d1/dd5/a01742.html">BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div><div class="ttdef"><b>Definition:</b> igahelpers.hh:11</div></div>
-<div class="ttc" id="aa01742_html_a01647e7b3cf283823fb657ad8df0e93c"><div class="ttname"><a href="../../d1/dd5/a01742.html#a01647e7b3cf283823fb657ad8df0e93c">BoundaryPatchEnclosingVerticesPropertyTrimmed::BoundaryPatchEnclosingVerticesPropertyTrimmed</a></div><div class="ttdeci">BoundaryPatchEnclosingVerticesPropertyTrimmed(const GridView &amp;gridView, const Dune::BitSetVector&lt; ncomp &gt; &amp;vertices)</div><div class="ttdoc">Create property from a marker vector.</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:20</div></div>
-<div class="ttc" id="aa01742_html_a5fd0163b3e0e45b1b23f036029bddd58"><div class="ttname"><a href="../../d1/dd5/a01742.html#a5fd0163b3e0e45b1b23f036029bddd58">BoundaryPatchEnclosingVerticesPropertyTrimmed::Intersection</a></div><div class="ttdeci">GridView::Intersection Intersection</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:16</div></div>
-<div class="ttc" id="aa01742_html_ab0f5730b4be1b146ef68589bc1954ed7"><div class="ttname"><a href="../../d1/dd5/a01742.html#ab0f5730b4be1b146ef68589bc1954ed7">BoundaryPatchEnclosingVerticesPropertyTrimmed::operator()</a></div><div class="ttdeci">bool operator()(const Intersection &amp;i) const</div><div class="ttdoc">Check if intersection is enclosed by vertices in the vector.</div><div class="ttdef"><b>Definition:</b> igahelpers.hh:26</div></div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> unTrimmedElementIndex = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> trimmedElementIndex   = 0;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">auto</span> indices = [&amp;]() { <span class="keywordflow">return</span> std::make_tuple(unTrimmedElementIndex, trimmedElementIndex, newLevel); };</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    entityContainer_.idToVertexInfoMap.emplace_back();</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    entityContainer_.trimmedVertexIds_.emplace_back();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    entityContainer_.edgeCount.emplace_back(0);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    entityContainer_.vertexCount.emplace_back(0);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; ele : elements(gv)) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <span class="keyword">const</span> <a class="code hl_typedef" href="../../d0/da4/a01470.html#a9b29c208c6b6f9792b68f09dbd088a08">ElementTrimData</a>&amp; eleTrimData =</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>          elementTrimDatas[indexSet.index(parameterSpaceGrid_-&gt;template getHostEntity&lt;0&gt;(ele))];</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      <span class="keyword">const</span> <a class="code hl_enumeration" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2">ElementTrimFlag</a> eleTrimFlag = eleTrimData.flag();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      <span class="comment">// For now we are exiting if ele is empty</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2aa2e4822a98337283e39f7b60acf85ec9">ElementTrimFlag::empty</a>)</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="keywordflow">continue</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>      <span class="comment">// Father detection is done in createAndSaveElementInfo</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2ae9dc924f238fa6cc29465942875fe8f0">ElementTrimFlag::full</a>) {</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        createAndSaveElementInfo(indices(), ele, <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        ++unTrimmedElementIndex;</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (eleTrimFlag == <a class="code hl_enumvalue" href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">ElementTrimFlag::trimmed</a>) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        createAndSaveElementInfo(indices(), ele, <span class="keyword">true</span>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>        ++trimmedElementIndex;</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>      }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>      <span class="comment">// ******************* Now sub entities, collect all ids of subentities  ************************</span></div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>      collectElementEdges(newLevel, ele, eleTrimData);</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>      collectElementVertices(newLevel, ele, eleTrimData);</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// save numbers of untrimmed and trimmed elements per level</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    entityContainer_.numberOfTrimmedElements.push_back(trimmedElementIndex);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    entityContainer_.numberOfUnTrimmedElements.push_back(unTrimmedElementIndex);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    createElements(newLevel, elementTrimDatas);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    createSubEntities(newLevel);</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>  }</div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>}</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>} <span class="comment">// namespace Dune::IGA::DefaultParameterSpace</span></div>
+<div class="ttc" id="aa00185_html"><div class="ttname"><a href="../../de/df3/a00185.html">elementtrimdata.hh</a></div></div>
+<div class="ttc" id="aa00243_html"><div class="ttname"><a href="../../d6/d82/a00243.html">Dune::IGA::DefaultParameterSpace</a></div><div class="ttdef"><b>Definition:</b> integrationruleholder.hh:9</div></div>
+<div class="ttc" id="aa00243_html_a8dc759d7742dc42a79d84dea11e846b2"><div class="ttname"><a href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2">Dune::IGA::DefaultParameterSpace::ElementTrimFlag</a></div><div class="ttdeci">ElementTrimFlag</div><div class="ttdef"><b>Definition:</b> elementtrimdata.hh:18</div></div>
+<div class="ttc" id="aa00243_html_a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec"><div class="ttname"><a href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec">Dune::IGA::DefaultParameterSpace::ElementTrimFlag::trimmed</a></div><div class="ttdeci">@ trimmed</div></div>
+<div class="ttc" id="aa00243_html_a8dc759d7742dc42a79d84dea11e846b2aa2e4822a98337283e39f7b60acf85ec9"><div class="ttname"><a href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2aa2e4822a98337283e39f7b60acf85ec9">Dune::IGA::DefaultParameterSpace::ElementTrimFlag::empty</a></div><div class="ttdeci">@ empty</div></div>
+<div class="ttc" id="aa00243_html_a8dc759d7742dc42a79d84dea11e846b2ae9dc924f238fa6cc29465942875fe8f0"><div class="ttname"><a href="../../d6/d82/a00243.html#a8dc759d7742dc42a79d84dea11e846b2ae9dc924f238fa6cc29465942875fe8f0">Dune::IGA::DefaultParameterSpace::ElementTrimFlag::full</a></div><div class="ttdeci">@ full</div></div>
+<div class="ttc" id="aa01470_html_a4204c8708586f15b66f480aa5e23ee1d"><div class="ttname"><a href="../../d0/da4/a01470.html#a4204c8708586f15b66f480aa5e23ee1d">Dune::IGA::DefaultParameterSpace::ParameterSpaceImpl::refineParameterSpaceGrid</a></div><div class="ttdeci">void refineParameterSpaceGrid(int refCount, bool initFlag=false)</div><div class="ttdef"><b>Definition:</b> createlevel.hh:11</div></div>
+<div class="ttc" id="aa01470_html_a9b29c208c6b6f9792b68f09dbd088a08"><div class="ttname"><a href="../../d0/da4/a01470.html#a9b29c208c6b6f9792b68f09dbd088a08">Dune::IGA::DefaultParameterSpace::ParameterSpaceImpl::ElementTrimData</a></div><div class="ttdeci">typename GridFamily::ParameterSpaceTraits::ElementTrimData ElementTrimData</div><div class="ttdoc">Element trim data type.</div><div class="ttdef"><b>Definition:</b> default/parameterspace.hh:380</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_054fedf05f142c88b967e78541d2ed3d.html">utils</a></li><li class="navelem"><a class="el" href="../../d9/dd0/a00191.html">igahelpers.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_f5de9a83ba433885a90732f39b87e823.html">default</a></li><li class="navelem"><a class="el" href="../../d9/dd0/a00191.html">createlevel.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

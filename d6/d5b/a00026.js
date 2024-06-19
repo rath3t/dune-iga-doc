@@ -1,5 +1,4 @@
 var a00026 =
 [
-    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "d5/d17/a01098.html", "d5/d17/a01098" ],
-    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "d4/da7/a01102.html", "d4/da7/a01102" ]
+    [ "closestPointProjectionByTrustRegion", "d6/d5b/a00026.html#a7a62c0cc97a46970cbdfeaa02f5afa2e", null ]
 ];

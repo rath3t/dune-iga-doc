@@ -1,10 +1,5 @@
 var a00017 =
 [
-    [ "Dune::IGA::GeometryKernel::GeometryConcept", "d1/d6b/a01775.html", null ],
-    [ "centerOfMass", "d4/d51/a00017.html#a411224757279c53adc1f72ee1eb20637", null ],
-    [ "findClosestParameterSpaceCoordinate", "d4/d51/a00017.html#a9b67765d6be43c55a6e796d0e7fa4ebd", null ],
-    [ "hessian", "d4/d51/a00017.html#a8c84717f13b7cfdee0600f06d50727a2", null ],
-    [ "isPointOnLineSegment", "d4/d51/a00017.html#af70677b5740fa61eebbe419e897628a9", null ],
-    [ "jacobianTransposed", "d4/d51/a00017.html#aa846d6a57eeeae7b5b7f7d9fbdd52207", null ],
-    [ "position", "d4/d51/a00017.html#a59c520803eb8ee5193287d7000e371bb", null ]
+    [ "sliceCurve", "d4/d51/a00017.html#a5d356303d09efdcdd8ba0107960c32c2", null ],
+    [ "splitCurve", "d4/d51/a00017.html#a71b27d21f438d6da784c15ef742fbf39", null ]
 ];
