@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['additionalzval_0',['additionalZVal',['../d4/d99/a01634.html#ac8bb1f74182bd5eb3b2d8d8ab08ded63',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::HostVertexImpl']]]
+  ['additionalzvals_0',['additionalZVals',['../d4/d99/a01634.html#ae3132de40314b9769773c0cf0a186bb5',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::HostVertexImpl']]]
 ];
