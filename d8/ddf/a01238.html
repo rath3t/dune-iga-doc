@@ -115,8 +115,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a44f60e368063fda609b99c8c488c2d2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddf/a01238.html#a44f60e368063fda609b99c8c488c2d2e">insertPatch</a> (const <a class="el" href="../../d5/d10/a01738.html">IGA::NURBSPatchData</a>&lt; dim, dimworld, <a class="el" href="../../d8/ddf/a01238.html#a67b72339000c10d7132ca56703d0268b">ctype</a> &gt; &amp;patchData, const std::optional&lt; PatchTrimData &gt; &amp;patchTrimData=std::nullopt)</td></tr>
 <tr class="memdesc:a44f60e368063fda609b99c8c488c2d2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Insert a patch into the grid.  <a href="../../d8/ddf/a01238.html#a44f60e368063fda609b99c8c488c2d2e">More...</a><br /></td></tr>
 <tr class="separator:a44f60e368063fda609b99c8c488c2d2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8a9fc7eeebaf3b074d921eed0ed640e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddf/a01238.html#ab8a9fc7eeebaf3b074d921eed0ed640e">insertTrimmingCurve</a> (const <a class="el" href="../../d5/d10/a01738.html">IGA::NURBSPatchData</a>&lt; dim - 1, dim, <a class="el" href="../../d8/ddf/a01238.html#a67b72339000c10d7132ca56703d0268b">ctype</a> &gt; &amp;curve)</td></tr>
-<tr class="separator:ab8a9fc7eeebaf3b074d921eed0ed640e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1748ea888903226fe271fba5dba988a"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; <br />
+requires (std::same_as&lt;typename std::remove_cvref_t&lt;Range&gt;::value_type, <a class="el" href="../../d5/d10/a01738.html">IGA::NURBSPatchData</a>&lt;dim - 1, dim, <a class="el" href="../../d8/ddf/a01238.html#a67b72339000c10d7132ca56703d0268b">ctype</a>&gt;&gt; and not ParameterSpaceType::isAlwaysTrivial)</td></tr>
+<tr class="memitem:ac1748ea888903226fe271fba5dba988a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/ddf/a01238.html#ac1748ea888903226fe271fba5dba988a">insertTrimLoop</a> (Range &amp;&amp;curves)</td></tr>
+<tr class="memdesc:ac1748ea888903226fe271fba5dba988a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Here you can manually add trimming curves in a closed loop. This feature is still experimental. You have to add the curves in the coordinates of the parameter space of the patch, otherwise it will not work.  <a href="../../d8/ddf/a01238.html#ac1748ea888903226fe271fba5dba988a">More...</a><br /></td></tr>
+<tr class="separator:ac1748ea888903226fe271fba5dba988a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a82aebd9287c1807704d9dd443ec7f24f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddf/a01238.html#a82aebd9287c1807704d9dd443ec7f24f">insertTrimParameters</a> (const <a class="el" href="../../d8/ddf/a01238.html#a24d3823f6814a4d73f4c0754cce145b7">TrimParameterType</a> &amp;par)</td></tr>
 <tr class="separator:a82aebd9287c1807704d9dd443ec7f24f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae97f556b63de4ed8dd13ad8e9aadafe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/ddf/a01238.html#ae97f556b63de4ed8dd13ad8e9aadafe6">insertJson</a> (const std::string &amp;filename, const bool trim=true, std::array&lt; int, 2 &gt; preKnotRefine={0, 0}, std::array&lt; int, 2 &gt; degreeElevate={0, 0}, std::array&lt; int, 2 &gt; postKnotRefine={0, 0})</td></tr>
@@ -337,22 +340,25 @@ template&lt;int dim_, int dimworld_, template&lt; int, int, typename &gt; typena
 
 </div>
 </div>
-<a id="ab8a9fc7eeebaf3b074d921eed0ed640e" name="ab8a9fc7eeebaf3b074d921eed0ed640e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8a9fc7eeebaf3b074d921eed0ed640e">&#9670;&nbsp;</a></span>insertTrimmingCurve()</h2>
+<a id="ac1748ea888903226fe271fba5dba988a" name="ac1748ea888903226fe271fba5dba988a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1748ea888903226fe271fba5dba988a">&#9670;&nbsp;</a></span>insertTrimLoop()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
 template&lt;int dim_, int dimworld_, template&lt; int, int, typename &gt; typename ParameterSpaceType_, typename ScalarType &gt; </div>
+<div class="memtemplate">
+template&lt;std::ranges::random_access_range Range&gt; <br />
+requires (std::same_as&lt;typename std::remove_cvref_t&lt;Range&gt;::value_type, <a class="el" href="../../d5/d10/a01738.html">IGA::NURBSPatchData</a>&lt;dim - 1, dim, <a class="el" href="../../d8/ddf/a01238.html#a67b72339000c10d7132ca56703d0268b">ctype</a>&gt;&gt; and not ParameterSpaceType::isAlwaysTrivial)</div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Dune::GridFactory&lt; <a class="el" href="../../de/d7e/a01222.html">IGA::PatchGrid</a>&lt; dim_, dimworld_, ParameterSpaceType_, ScalarType &gt; &gt;::insertTrimmingCurve </td>
+          <td class="memname">void Dune::GridFactory&lt; <a class="el" href="../../de/d7e/a01222.html">IGA::PatchGrid</a>&lt; dim_, dimworld_, ParameterSpaceType_, ScalarType &gt; &gt;::insertTrimLoop </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../d5/d10/a01738.html">IGA::NURBSPatchData</a>&lt; dim - 1, dim, <a class="el" href="../../d8/ddf/a01238.html#a67b72339000c10d7132ca56703d0268b">ctype</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>curve</em></td><td>)</td>
+          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramname"><em>curves</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -362,6 +368,20 @@ template&lt;int dim_, int dimworld_, template&lt; int, int, typename &gt; typena
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Here you can manually add trimming curves in a closed loop. This feature is still experimental. You have to add the curves in the coordinates of the parameter space of the patch, otherwise it will not work. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Range</td><td>a random-acccess range </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">curves</td><td>range with NURBSPatchData </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
