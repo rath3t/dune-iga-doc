@@ -1,15 +1,11 @@
 var a01694 =
 [
-    [ "HostGrid", "d4/d8e/a01694.html#a9a62eeba774b65543bfff52c910e6c85", null ],
-    [ "Types", "d4/d8e/a01694.html#a2b0b0b5d7cd53e4aaf110f7883b2a43a", null ],
-    [ "contains", "d4/d8e/a01694.html#a4e173df7bde136ef8086ffed69c3065c", null ],
-    [ "index", "d4/d8e/a01694.html#a5548c287e90b30a20f30affa65110a04", null ],
-    [ "size", "d4/d8e/a01694.html#a7ff835feeb0a7592c2d2618338cfbd4b", null ],
-    [ "size", "d4/d8e/a01694.html#aabe47ee6484e25a2d341d77e39d37102", null ],
-    [ "subIndex", "d4/d8e/a01694.html#a1290efd5256bb69e54ec7e329dae3a8f", null ],
-    [ "types", "d4/d8e/a01694.html#a30a5f57a6841f98829e65f196e15bab9", null ],
-    [ "update", "d4/d8e/a01694.html#af7f75d65cc791cf6ba9ac05bdd8a06de", null ],
-    [ "dim", "d4/d8e/a01694.html#ae8528533209ca76448356b48b7c8b6e4", null ],
-    [ "grid_", "d4/d8e/a01694.html#af9e798d7a95b3bc143f038fe8670a5c4", null ],
-    [ "level_", "d4/d8e/a01694.html#a025025e962d53e562e199b3c1d1489ad", null ]
+    [ "ParameterSpace", "d4/d8e/a01694.html#a646097046fb726d536c14fe6cb7c0e00", null ],
+    [ "ParameterSpaceGridEntity", "d4/d8e/a01694.html#aa4f2d85f713d10ba622299f39f503473", null ],
+    [ "ParameterSpaceGridEntitySeed", "d4/d8e/a01694.html#adfcc05955e8db0ceb1d9dcf458680760", null ],
+    [ "PatchGridEntitySeed", "d4/d8e/a01694.html#a2a47f305fa4c3c136b911f1f1994b5d0", null ],
+    [ "PatchGridEntitySeed", "d4/d8e/a01694.html#a8ff56711b915b67b7b81b2d8f610ea0d", null ],
+    [ "hostEntitySeed", "d4/d8e/a01694.html#a8a2737f50721b8f3e9a231304f887d0e", null ],
+    [ "isValid", "d4/d8e/a01694.html#ab69e0ebf81dbb2f984c4dab67a85bf6a", null ],
+    [ "codimension", "d4/d8e/a01694.html#ad3e2353fbb397597f39eeeaa9fffe742", null ]
 ];

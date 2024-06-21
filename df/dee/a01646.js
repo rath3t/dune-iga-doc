@@ -1,5 +1,6 @@
 var a01646 =
 [
-    [ "mapToDune", "df/dee/a01646.html#a255c2819f7c686d2a8edf9deca6df14a", null ],
-    [ "mapToParameterSpace", "df/dee/a01646.html#a02880d9e1a11f4cb9d6f72fc7f0f6bcf", null ]
+    [ "curveIdxI", "df/dee/a01646.html#a93327ef10b93db1f56fb247c0108e28f", null ],
+    [ "curveIdxJ", "df/dee/a01646.html#a89507b1a5d2655045b3139531310b095", null ],
+    [ "loopIdx", "df/dee/a01646.html#adc21b8c8a76e750ccba55cbeb26df50b", null ]
 ];

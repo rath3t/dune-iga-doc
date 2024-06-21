@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['intersectioncurveandline_0',['IntersectionCurveAndLine',['../d6/de1/a00233.html#aa9ac1b688f23da46f2a4b8c9063de166',1,'Dune::IGA']]]
+  ['findintersectionerror_0',['FindIntersectionError',['../d0/d3e/a00253.html#a026c0aac784d18de2633a2f394dc0dde',1,'Dune::IGA::DefaultParameterSpace::Util']]]
 ];

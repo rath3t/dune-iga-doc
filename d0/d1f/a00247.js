@@ -1,4 +1,4 @@
 var a00247 =
 [
-    [ "DiscontinuousIgaDataCollector", "d6/dfe/a01366.html", "d6/dfe/a01366" ]
+    [ "util", "dd/dd7/a00248.html", "dd/dd7/a00248" ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::IGARefinedGeometries&lt; GridView &gt; Class Template Reference</title>
+<title>dune-iga: Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,120 +92,87 @@ $(document).ready(function(){initNavTree('d8/dbe/a01370.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a> &#124;
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="../../dd/d86/a01367.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::IGARefinedGeometries&lt; GridView &gt; Class Template Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../da/d24/a00068_source.html">dune/iga/io/vtk/vtkrefinedgeometries.hh</a>&gt;</code></p>
+<p>Implementation of Discontinuous DataCollector for Iga cells with or without trimming information.  
+ <a href="../../d8/dbe/a01370.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="../../d0/d89/a00071_source.html">dune/iga/io/vtk/igadatacollector.hh</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d1/d17/a01369.png" border="0" usemap="#a_dune_1_1_vtk_1_1_discontinuous_iga_data_collector_3_01_grid_view_01_4_inherit__map" alt="Inheritance graph"/></div>
+<map name="a_dune_1_1_vtk_1_1_discontinuous_iga_data_collector_3_01_grid_view_01_4_inherit__map" id="a_dune_1_1_vtk_1_1_discontinuous_iga_data_collector_3_01_grid_view_01_4_inherit__map">
+<area shape="rect" title="Implementation of Discontinuous DataCollector for Iga cells with or without trimming information." alt="" coords="308,20,528,61"/>
+<area shape="rect" title=" " alt="" coords="5,5,260,76"/>
+</map>
+</div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:ae0f1b0280a151f71808caddeb0db81b5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#ae0f1b0280a151f71808caddeb0db81b5">Element</a> = MultiLinearGeometry&lt; double, <a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a>, <a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a> &gt;</td></tr>
-<tr class="separator:ae0f1b0280a151f71808caddeb0db81b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a458043700435144746a87ae7c201e4a5"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a458043700435144746a87ae7c201e4a5">Point</a> = Dune::FieldVector&lt; double, <a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a> &gt;</td></tr>
-<tr class="separator:a458043700435144746a87ae7c201e4a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97f546935cd4cf34b919527ec5247bbf"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a> = std::uint64_t</td></tr>
-<tr class="separator:a97f546935cd4cf34b919527ec5247bbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2b97e7dd8e0e8c99d9a351493bdd889"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> = typename GridView::Grid::GlobalIdSet::IdType</td></tr>
-<tr class="separator:ab2b97e7dd8e0e8c99d9a351493bdd889"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:abd0e108b42abfdfc396410d7cc6d7539"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#abd0e108b42abfdfc396410d7cc6d7539">IGARefinedGeometries</a> (const GridView &amp;gridView, unsigned int subSampleFull, unsigned int subSampleTrimmed)</td></tr>
-<tr class="separator:abd0e108b42abfdfc396410d7cc6d7539"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e8200df1f6b5d42ce4dda94e61e6f39"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d8/dbe/a01370.html#ae0f1b0280a151f71808caddeb0db81b5">Element</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a3e8200df1f6b5d42ce4dda94e61e6f39">getElements</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex) const</td></tr>
-<tr class="separator:a3e8200df1f6b5d42ce4dda94e61e6f39"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a792f46594bae296b6de221aef296df84"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d8/dbe/a01370.html#a458043700435144746a87ae7c201e4a5">Point</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a792f46594bae296b6de221aef296df84">getVertices</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex) const</td></tr>
-<tr class="separator:a792f46594bae296b6de221aef296df84"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a13efad846c5456fb0e28731f9b38aa8f"><td class="memItemLeft" align="right" valign="top">const std::vector&lt; <a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a13efad846c5456fb0e28731f9b38aa8f">getIndices</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex) const</td></tr>
-<tr class="separator:a13efad846c5456fb0e28731f9b38aa8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42e1db517691e8606cef2c737f41d17d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a42e1db517691e8606cef2c737f41d17d">vertexSubIndex</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex, <a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a> subEleIndex, <a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a> subEntityIndex) const</td></tr>
-<tr class="separator:a42e1db517691e8606cef2c737f41d17d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca7e452e5ab9c5d6dfe8b08783590797"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#aca7e452e5ab9c5d6dfe8b08783590797">nElements</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex) const</td></tr>
-<tr class="separator:aca7e452e5ab9c5d6dfe8b08783590797"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5cd99803d3468f84edad7d8cd598dfd3"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a5cd99803d3468f84edad7d8cd598dfd3">nVertices</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex) const</td></tr>
-<tr class="separator:a5cd99803d3468f84edad7d8cd598dfd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:add16dc454795e1a41f7afba282c09ed0"><td class="memItemLeft" align="right" valign="top">GeometryType&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#add16dc454795e1a41f7afba282c09ed0">geometryType</a> (<a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a> eIndex) const</td></tr>
-<tr class="separator:add16dc454795e1a41f7afba282c09ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55a3f6f5057db6d51cdeef226e574fd1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a55a3f6f5057db6d51cdeef226e574fd1">DiscontinuousIgaDataCollector</a> (const GridView &amp;gridView, unsigned int subSampleFull, unsigned int subSampleTrimmed)</td></tr>
+<tr class="separator:a55a3f6f5057db6d51cdeef226e574fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad389225daec797ea6808acaed64dea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#aad389225daec797ea6808acaed64dea1">DiscontinuousIgaDataCollector</a> (const GridView &amp;gridView)</td></tr>
+<tr class="separator:aad389225daec797ea6808acaed64dea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86154334b14d4fa15dfc7e59139bd64a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a86154334b14d4fa15dfc7e59139bd64a">DiscontinuousIgaDataCollector</a> (const GridView &amp;gridView, int subsample)</td></tr>
+<tr class="separator:a86154334b14d4fa15dfc7e59139bd64a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f9f1b871c8800a722379721b64ec249"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a3f9f1b871c8800a722379721b64ec249">updateImpl</a> ()</td></tr>
+<tr class="memdesc:a3f9f1b871c8800a722379721b64ec249"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct the point sets.  <a href="../../d8/dbe/a01370.html#a3f9f1b871c8800a722379721b64ec249">More...</a><br /></td></tr>
+<tr class="separator:a3f9f1b871c8800a722379721b64ec249"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d62c4e8c581d0c68f66bbc1e7c3e2a7"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">numPointsImpl</a> () const</td></tr>
+<tr class="memdesc:a2d62c4e8c581d0c68f66bbc1e7c3e2a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of Lagrange nodes.  <a href="../../d8/dbe/a01370.html#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">More...</a><br /></td></tr>
+<tr class="separator:a2d62c4e8c581d0c68f66bbc1e7c3e2a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7146c60450378d89d507be93c2fc3567"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:a7146c60450378d89d507be93c2fc3567"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a7146c60450378d89d507be93c2fc3567">pointsImpl</a> () const</td></tr>
+<tr class="memdesc:a7146c60450378d89d507be93c2fc3567"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return a vector of point coordinates.  <a href="../../d8/dbe/a01370.html#a7146c60450378d89d507be93c2fc3567">More...</a><br /></td></tr>
+<tr class="separator:a7146c60450378d89d507be93c2fc3567"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66e7649e22ea229d30b699b43a0af45"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#ae66e7649e22ea229d30b699b43a0af45">numCellsImpl</a> () const</td></tr>
+<tr class="memdesc:ae66e7649e22ea229d30b699b43a0af45"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return number of grid cells.  <a href="../../d8/dbe/a01370.html#ae66e7649e22ea229d30b699b43a0af45">More...</a><br /></td></tr>
+<tr class="separator:ae66e7649e22ea229d30b699b43a0af45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ddd74a17c3266184bcc6dc9509c839d"><td class="memItemLeft" align="right" valign="top">Cells&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a3ddd74a17c3266184bcc6dc9509c839d">cellsImpl</a> () const</td></tr>
+<tr class="memdesc:a3ddd74a17c3266184bcc6dc9509c839d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return cell types, offsets, and connectivity.  <a href="../../d8/dbe/a01370.html#a3ddd74a17c3266184bcc6dc9509c839d">More...</a><br /></td></tr>
+<tr class="separator:a3ddd74a17c3266184bcc6dc9509c839d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75e6d1fb3072de1f868555615afe04d"><td class="memTemplParams" colspan="2">template&lt;class T , class GlobalFunction &gt; </td></tr>
+<tr class="memitem:ad75e6d1fb3072de1f868555615afe04d"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#ad75e6d1fb3072de1f868555615afe04d">pointDataImpl</a> (const GlobalFunction &amp;fct) const</td></tr>
+<tr class="memdesc:ad75e6d1fb3072de1f868555615afe04d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluate the <code>fct</code> at element vertices and edge centers in the same order as the point coords.  <a href="../../d8/dbe/a01370.html#ad75e6d1fb3072de1f868555615afe04d">More...</a><br /></td></tr>
+<tr class="separator:ad75e6d1fb3072de1f868555615afe04d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80173966f7d260562cc0034f1f12f16b"><td class="memTemplParams" colspan="2">template&lt;class T , class VtkFunction &gt; </td></tr>
+<tr class="memitem:a80173966f7d260562cc0034f1f12f16b"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a80173966f7d260562cc0034f1f12f16b">cellDataImpl</a> (const VtkFunction &amp;fct) const</td></tr>
+<tr class="separator:a80173966f7d260562cc0034f1f12f16b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a30471b9626e57db233cde8e609ea2b29"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a> = GridView::dimension</td></tr>
-<tr class="separator:a30471b9626e57db233cde8e609ea2b29"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-types" name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:ada1e06e4d2fe8194d01d2abf4f52b8ea"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">PointSet</a> = LagrangePointSet&lt; typename GridView::ctype, GridView::dimension &gt;</td></tr>
+<tr class="separator:ada1e06e4d2fe8194d01d2abf4f52b8ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr class="memitem:acb3c97d81a0773a69a2fb7e42c8969ac"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#acb3c97d81a0773a69a2fb7e42c8969ac">numPoints_</a> = 0</td></tr>
+<tr class="separator:acb3c97d81a0773a69a2fb7e42c8969ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace1c9b7c96ba1c206f79b1c115939c41"><td class="memItemLeft" align="right" valign="top">std::uint64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#ace1c9b7c96ba1c206f79b1c115939c41">numCells_</a> = 0</td></tr>
+<tr class="separator:ace1c9b7c96ba1c206f79b1c115939c41"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e52710bba07c29d37de65934406be2"><td class="memItemLeft" align="right" valign="top">std::map&lt; GeometryType, <a class="el" href="../../d8/dbe/a01370.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">PointSet</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a38e52710bba07c29d37de65934406be2">pointSets_</a> {}</td></tr>
+<tr class="separator:a38e52710bba07c29d37de65934406be2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e3a8e72b603367b1ba87ed69011c82"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a90e3a8e72b603367b1ba87ed69011c82">indexMap_</a> {}</td></tr>
+<tr class="separator:a90e3a8e72b603367b1ba87ed69011c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62034bc60158e38eefa437e30e67d3d5"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::pair&lt; IDType, std::size_t &gt;, std::int64_t &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a62034bc60158e38eefa437e30e67d3d5">vertexIndex_</a> {}</td></tr>
+<tr class="separator:a62034bc60158e38eefa437e30e67d3d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0e8dfe3e05f605cbfd5c7020f69376"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d2/dff/a01374.html">IGA::IGARefinedGeometries</a>&lt; GridView &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/dbe/a01370.html#a6b0e8dfe3e05f605cbfd5c7020f69376">geometries_</a> {}</td></tr>
+<tr class="separator:a6b0e8dfe3e05f605cbfd5c7020f69376"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="ae0f1b0280a151f71808caddeb0db81b5" name="ae0f1b0280a151f71808caddeb0db81b5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae0f1b0280a151f71808caddeb0db81b5">&#9670;&nbsp;</a></span>Element</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::Element =  MultiLinearGeometry&lt;double, <a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a>, <a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab2b97e7dd8e0e8c99d9a351493bdd889" name="ab2b97e7dd8e0e8c99d9a351493bdd889"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2b97e7dd8e0e8c99d9a351493bdd889">&#9670;&nbsp;</a></span>IDType</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::IDType =  typename GridView::Grid::GlobalIdSet::IdType</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a97f546935cd4cf34b919527ec5247bbf" name="a97f546935cd4cf34b919527ec5247bbf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a97f546935cd4cf34b919527ec5247bbf">&#9670;&nbsp;</a></span>Index</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::Index =  std::uint64_t</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a458043700435144746a87ae7c201e4a5" name="a458043700435144746a87ae7c201e4a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a458043700435144746a87ae7c201e4a5">&#9670;&nbsp;</a></span>Point</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::Point =  Dune::FieldVector&lt;double, <a class="el" href="../../d8/dbe/a01370.html#a30471b9626e57db233cde8e609ea2b29">dim</a>&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="abd0e108b42abfdfc396410d7cc6d7539" name="abd0e108b42abfdfc396410d7cc6d7539"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd0e108b42abfdfc396410d7cc6d7539">&#9670;&nbsp;</a></span>IGARefinedGeometries()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;class GridView&gt;<br />
+requires (GridView::dimension == 2)<br />
+class Dune::Vtk::DiscontinuousIgaDataCollector&lt; GridView &gt;</div><p >Implementation of Discontinuous DataCollector for Iga cells with or without trimming information. </p>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ada1e06e4d2fe8194d01d2abf4f52b8ea" name="ada1e06e4d2fe8194d01d2abf4f52b8ea"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada1e06e4d2fe8194d01d2abf4f52b8ea">&#9670;&nbsp;</a></span>PointSet</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -216,7 +183,32 @@ template&lt;class GridView &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::IGARefinedGeometries </td>
+          <td class="memname">using <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::PointSet =  LagrangePointSet&lt;typename GridView::ctype, GridView::dimension&gt;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a55a3f6f5057db6d51cdeef226e574fd1" name="a55a3f6f5057db6d51cdeef226e574fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55a3f6f5057db6d51cdeef226e574fd1">&#9670;&nbsp;</a></span>DiscontinuousIgaDataCollector() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::DiscontinuousIgaDataCollector </td>
           <td>(</td>
           <td class="paramtype">const GridView &amp;&#160;</td>
           <td class="paramname"><em>gridView</em>, </td>
@@ -248,9 +240,8 @@ template&lt;class GridView &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="add16dc454795e1a41f7afba282c09ed0" name="add16dc454795e1a41f7afba282c09ed0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#add16dc454795e1a41f7afba282c09ed0">&#9670;&nbsp;</a></span>geometryType()</h2>
+<a id="aad389225daec797ea6808acaed64dea1" name="aad389225daec797ea6808acaed64dea1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad389225daec797ea6808acaed64dea1">&#9670;&nbsp;</a></span>DiscontinuousIgaDataCollector() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -261,24 +252,24 @@ template&lt;class GridView &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">GeometryType <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::geometryType </td>
+          <td class="memname"><a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::DiscontinuousIgaDataCollector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramtype">const GridView &amp;&#160;</td>
+          <td class="paramname"><em>gridView</em></td><td>)</td>
+          <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<a id="a3e8200df1f6b5d42ce4dda94e61e6f39" name="a3e8200df1f6b5d42ce4dda94e61e6f39"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3e8200df1f6b5d42ce4dda94e61e6f39">&#9670;&nbsp;</a></span>getElements()</h2>
+<a id="a86154334b14d4fa15dfc7e59139bd64a" name="a86154334b14d4fa15dfc7e59139bd64a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86154334b14d4fa15dfc7e59139bd64a">&#9670;&nbsp;</a></span>DiscontinuousIgaDataCollector() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -289,167 +280,21 @@ template&lt;class GridView &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="../../d8/dbe/a01370.html#ae0f1b0280a151f71808caddeb0db81b5">Element</a> &gt; &amp; <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::getElements </td>
+          <td class="memname"><a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::DiscontinuousIgaDataCollector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a13efad846c5456fb0e28731f9b38aa8f" name="a13efad846c5456fb0e28731f9b38aa8f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13efad846c5456fb0e28731f9b38aa8f">&#9670;&nbsp;</a></span>getIndices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a> &gt; &amp; <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::getIndices </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a792f46594bae296b6de221aef296df84" name="a792f46594bae296b6de221aef296df84"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a792f46594bae296b6de221aef296df84">&#9670;&nbsp;</a></span>getVertices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">const std::vector&lt; <a class="el" href="../../d8/dbe/a01370.html#a458043700435144746a87ae7c201e4a5">Point</a> &gt; &amp; <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::getVertices </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aca7e452e5ab9c5d6dfe8b08783590797" name="aca7e452e5ab9c5d6dfe8b08783590797"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca7e452e5ab9c5d6dfe8b08783590797">&#9670;&nbsp;</a></span>nElements()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::nElements </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a5cd99803d3468f84edad7d8cd598dfd3" name="a5cd99803d3468f84edad7d8cd598dfd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5cd99803d3468f84edad7d8cd598dfd3">&#9670;&nbsp;</a></span>nVertices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::size_t <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::nVertices </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a42e1db517691e8606cef2c737f41d17d" name="a42e1db517691e8606cef2c737f41d17d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42e1db517691e8606cef2c737f41d17d">&#9670;&nbsp;</a></span>vertexSubIndex()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;class GridView &gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a> <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::vertexSubIndex </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#ab2b97e7dd8e0e8c99d9a351493bdd889">IDType</a>&#160;</td>
-          <td class="paramname"><em>eIndex</em>, </td>
+          <td class="paramtype">const GridView &amp;&#160;</td>
+          <td class="paramname"><em>gridView</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a>&#160;</td>
-          <td class="paramname"><em>subEleIndex</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="../../d8/dbe/a01370.html#a97f546935cd4cf34b919527ec5247bbf">Index</a>&#160;</td>
-          <td class="paramname"><em>subEntityIndex</em>&#160;</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>subsample</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -461,9 +306,39 @@ template&lt;class GridView &gt; </div>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a30471b9626e57db233cde8e609ea2b29" name="a30471b9626e57db233cde8e609ea2b29"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30471b9626e57db233cde8e609ea2b29">&#9670;&nbsp;</a></span>dim</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="a80173966f7d260562cc0034f1f12f16b" name="a80173966f7d260562cc0034f1f12f16b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80173966f7d260562cc0034f1f12f16b">&#9670;&nbsp;</a></span>cellDataImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<div class="memtemplate">
+template&lt;class T , class VtkFunction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; T &gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::cellDataImpl </td>
+          <td>(</td>
+          <td class="paramtype">const VtkFunction &amp;&#160;</td>
+          <td class="paramname"><em>fct</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3ddd74a17c3266184bcc6dc9509c839d" name="a3ddd74a17c3266184bcc6dc9509c839d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ddd74a17c3266184bcc6dc9509c839d">&#9670;&nbsp;</a></span>cellsImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -474,12 +349,314 @@ template&lt;class GridView &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">constexpr int <a class="el" href="../../d8/dbe/a01370.html">Dune::IGA::IGARefinedGeometries</a>&lt; GridView &gt;::dim = GridView::dimension</td>
+          <td class="memname">Cells <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::cellsImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return cell types, offsets, and connectivity. </p>
+<dl class="section see"><dt>See also</dt><dd>Cells The cell connectivity is composed of cell vertices </dd></dl>
+
+</div>
+</div>
+<a id="ae66e7649e22ea229d30b699b43a0af45" name="ae66e7649e22ea229d30b699b43a0af45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66e7649e22ea229d30b699b43a0af45">&#9670;&nbsp;</a></span>numCellsImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint64_t <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::numCellsImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return number of grid cells. </p>
+
+</div>
+</div>
+<a id="a2d62c4e8c581d0c68f66bbc1e7c3e2a7" name="a2d62c4e8c581d0c68f66bbc1e7c3e2a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d62c4e8c581d0c68f66bbc1e7c3e2a7">&#9670;&nbsp;</a></span>numPointsImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint64_t <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::numPointsImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return number of Lagrange nodes. </p>
+
+</div>
+</div>
+<a id="ad75e6d1fb3072de1f868555615afe04d" name="ad75e6d1fb3072de1f868555615afe04d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75e6d1fb3072de1f868555615afe04d">&#9670;&nbsp;</a></span>pointDataImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<div class="memtemplate">
+template&lt;class T , class GlobalFunction &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; T &gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::pointDataImpl </td>
+          <td>(</td>
+          <td class="paramtype">const GlobalFunction &amp;&#160;</td>
+          <td class="paramname"><em>fct</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Evaluate the <code>fct</code> at element vertices and edge centers in the same order as the point coords. </p>
+
+</div>
+</div>
+<a id="a7146c60450378d89d507be93c2fc3567" name="a7146c60450378d89d507be93c2fc3567"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7146c60450378d89d507be93c2fc3567">&#9670;&nbsp;</a></span>pointsImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; T &gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::pointsImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Return a vector of point coordinates. </p>
+<p >The vector of point coordinates is composed of vertex coordinates of the untrimmed elements and the vertices of the triangulated trimmed elements </p>
+
+</div>
+</div>
+<a id="a3f9f1b871c8800a722379721b64ec249" name="a3f9f1b871c8800a722379721b64ec249"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f9f1b871c8800a722379721b64ec249">&#9670;&nbsp;</a></span>updateImpl()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::updateImpl </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Construct the point sets. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Data Documentation</h2>
+<a id="a6b0e8dfe3e05f605cbfd5c7020f69376" name="a6b0e8dfe3e05f605cbfd5c7020f69376"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0e8dfe3e05f605cbfd5c7020f69376">&#9670;&nbsp;</a></span>geometries_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d2/dff/a01374.html">IGA::IGARefinedGeometries</a>&lt;GridView&gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::geometries_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a90e3a8e72b603367b1ba87ed69011c82" name="a90e3a8e72b603367b1ba87ed69011c82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90e3a8e72b603367b1ba87ed69011c82">&#9670;&nbsp;</a></span>indexMap_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::int64_t&gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::indexMap_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ace1c9b7c96ba1c206f79b1c115939c41" name="ace1c9b7c96ba1c206f79b1c115939c41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace1c9b7c96ba1c206f79b1c115939c41">&#9670;&nbsp;</a></span>numCells_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint64_t <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::numCells_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb3c97d81a0773a69a2fb7e42c8969ac" name="acb3c97d81a0773a69a2fb7e42c8969ac"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3c97d81a0773a69a2fb7e42c8969ac">&#9670;&nbsp;</a></span>numPoints_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::uint64_t <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::numPoints_ = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a38e52710bba07c29d37de65934406be2" name="a38e52710bba07c29d37de65934406be2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e52710bba07c29d37de65934406be2">&#9670;&nbsp;</a></span>pointSets_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;GeometryType, <a class="el" href="../../d8/dbe/a01370.html#ada1e06e4d2fe8194d01d2abf4f52b8ea">PointSet</a>&gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::pointSets_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62034bc60158e38eefa437e30e67d3d5" name="a62034bc60158e38eefa437e30e67d3d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62034bc60158e38eefa437e30e67d3d5">&#9670;&nbsp;</a></span>vertexIndex_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class GridView &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;std::pair&lt;IDType, std::size_t&gt;, std::int64_t&gt; <a class="el" href="../../d8/dbe/a01370.html">Dune::Vtk::DiscontinuousIgaDataCollector</a>&lt; GridView &gt;::vertexIndex_ {}</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -487,14 +664,14 @@ template&lt;class GridView &gt; </div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li><a class="el" href="../../da/d24/a00068_source.html">vtkrefinedgeometries.hh</a></li>
+<li><a class="el" href="../../d0/d89/a00071_source.html">igadatacollector.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d0/d53/a00232.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/de1/a00233.html">IGA</a></li><li class="navelem"><a class="el" href="../../d8/dbe/a01370.html">IGARefinedGeometries</a></li>
+    <li class="navelem"><a class="el" href="../../d3/d42/a00235.html">Dune</a></li><li class="navelem"><a class="el" href="../../d0/da7/a00250.html">Vtk</a></li><li class="navelem"><a class="el" href="../../d8/dbe/a01370.html">DiscontinuousIgaDataCollector</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

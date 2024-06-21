@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::Splines::Nurbs&lt; dim, ScalarType_ &gt;::LocalView Struct Reference</title>
+<title>dune-iga: Dune::IGA::Splines::BsplineBasis&lt; ScalarType_ &gt; Class Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -92,134 +92,157 @@ $(document).ready(function(){initNavTree('d0/d1f/a01734.html','../../'); initRes
 
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="../../df/dd2/a01731.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Dune::IGA::Splines::Nurbs&lt; dim, ScalarType_ &gt;::LocalView Struct Reference</div></div>
+  <div class="headertitle"><div class="title">Dune::IGA::Splines::BsplineBasis&lt; ScalarType_ &gt; Class Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Structure representing a local view of the <a class="el" href="../../de/db5/a01730.html" title="A dim dimensional NURBS class.">Nurbs</a> object.  
+<p>One dimensional b-spline basis.  
  <a href="../../d0/d1f/a01734.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="../../dc/dee/a00053_source.html">dune/iga/splines/nurbsalgorithms.hh</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="../../d5/de0/a00050_source.html">dune/iga/splines/bsplinealgorithms.hh</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a76ca8e13ef9244ce8301c346e06b014a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> = ScalarType_</td></tr>
+<tr class="separator:a76ca8e13ef9244ce8301c346e06b014a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf3688be9018dfa2013f32a10d20a1af"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#aaf3688be9018dfa2013f32a10d20a1af">DynamicVectorType</a> = Dune::DynamicVector&lt; <a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> &gt;</td></tr>
+<tr class="separator:aaf3688be9018dfa2013f32a10d20a1af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9113cc5a1a64ed40b190fc3bdc83523"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#ae9113cc5a1a64ed40b190fc3bdc83523">DynamicMatrixType</a> = Dune::DynamicMatrix&lt; <a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> &gt;</td></tr>
+<tr class="separator:ae9113cc5a1a64ed40b190fc3bdc83523"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a596cc7cec08e69e6a202f1b954c5b054"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a596cc7cec08e69e6a202f1b954c5b054">RowFixedMatrix</a> = std::array&lt; <a class="el" href="../../d0/d1f/a01734.html#aaf3688be9018dfa2013f32a10d20a1af">DynamicVectorType</a>, 2 &gt;</td></tr>
+<tr class="separator:a596cc7cec08e69e6a202f1b954c5b054"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:acb670cd4a3fe80c0b2b0a2443a47a230"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#acb670cd4a3fe80c0b2b0a2443a47a230">LocalView</a> ()=default</td></tr>
-<tr class="separator:acb670cd4a3fe80c0b2b0a2443a47a230"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a94fd81e5d6ea13f5bcda1584fced8468"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a94fd81e5d6ea13f5bcda1584fced8468">LocalView</a> (const <a class="el" href="../../de/db5/a01730.html">Nurbs</a> &amp;nurbs)</td></tr>
-<tr class="separator:a94fd81e5d6ea13f5bcda1584fced8468"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0c2b7d291c492d47e6aee937a7a5e76c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a0c2b7d291c492d47e6aee937a7a5e76c">bind</a> (const std::array&lt; int, dim &gt; &amp;spIndex)</td></tr>
-<tr class="memdesc:a0c2b7d291c492d47e6aee937a7a5e76c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bind the local view to a specific span index.  <a href="../../d0/d1f/a01734.html#a0c2b7d291c492d47e6aee937a7a5e76c">More...</a><br /></td></tr>
-<tr class="separator:a0c2b7d291c492d47e6aee937a7a5e76c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5042b2554eaab06d7b664a9fe17305a"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#ad5042b2554eaab06d7b664a9fe17305a">basisFunctionDerivatives</a> (const FieldVector&lt; <a class="el" href="../../de/db5/a01730.html#a034522e3b2568b214d1fe1ec0d9b7ff5">ScalarType</a>, dim &gt; &amp;u, const int derivativeOrder) const</td></tr>
-<tr class="memdesc:ad5042b2554eaab06d7b664a9fe17305a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute basis function derivatives for the given local view.  <a href="../../d0/d1f/a01734.html#ad5042b2554eaab06d7b664a9fe17305a">More...</a><br /></td></tr>
-<tr class="separator:ad5042b2554eaab06d7b664a9fe17305a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ace37bc1ecfc4f575e8ecd54fdb1ec72f"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#ace37bc1ecfc4f575e8ecd54fdb1ec72f">basisFunctions</a> (const FieldVector&lt; <a class="el" href="../../de/db5/a01730.html#a034522e3b2568b214d1fe1ec0d9b7ff5">ScalarType</a>, dim &gt; &amp;u) const</td></tr>
-<tr class="memdesc:ace37bc1ecfc4f575e8ecd54fdb1ec72f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute basis functions for the given local view.  <a href="../../d0/d1f/a01734.html#ace37bc1ecfc4f575e8ecd54fdb1ec72f">More...</a><br /></td></tr>
-<tr class="separator:ace37bc1ecfc4f575e8ecd54fdb1ec72f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a692cdbd6a073b7405819bfc2279710e2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a692cdbd6a073b7405819bfc2279710e2">BsplineBasis</a> (const std::vector&lt; <a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> &gt; &amp;knots, const int degree)</td></tr>
+<tr class="separator:a692cdbd6a073b7405819bfc2279710e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c0b302713428e40b56b45ac0ebbf2cc"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a2c0b302713428e40b56b45ac0ebbf2cc">operator()</a> (<a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> u)</td></tr>
+<tr class="separator:a2c0b302713428e40b56b45ac0ebbf2cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:aa1ec68d3ba306092a5c2008c17bc0f5b"><td class="memItemLeft" align="right" valign="top">std::optional&lt; std::array&lt; int, dim &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#aa1ec68d3ba306092a5c2008c17bc0f5b">spIndex_</a></td></tr>
-<tr class="separator:aa1ec68d3ba306092a5c2008c17bc0f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a478dac2e76f1772e6cdb0ddef23d6ce6"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="../../de/db5/a01730.html">Nurbs</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a478dac2e76f1772e6cdb0ddef23d6ce6">nurbs_</a> {nullptr}</td></tr>
-<tr class="separator:a478dac2e76f1772e6cdb0ddef23d6ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-attribs" name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a2c98e00da3d50be5e46b116cf8385a48"><td class="memItemLeft" align="right" valign="top">static constexpr int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a2c98e00da3d50be5e46b116cf8385a48">dimension</a> = dim</td></tr>
-<tr class="separator:a2c98e00da3d50be5e46b116cf8385a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a11caee94356370a625c195ce38a53e0a"><td class="memTemplParams" colspan="2">template&lt;std::ranges::random_access_range Range&gt; </td></tr>
+<tr class="memitem:a11caee94356370a625c195ce38a53e0a"><td class="memTemplItemLeft" align="right" valign="top">static auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#a11caee94356370a625c195ce38a53e0a">basisFunctions</a> (typename std::remove_cvref_t&lt; Range &gt;::value_type u, Range &amp;&amp;knots, const int p, std::optional&lt; int &gt; spIndex=std::nullopt)</td></tr>
+<tr class="memdesc:a11caee94356370a625c195ce38a53e0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">The evaluation function modified version of The <a class="el" href="../../d5/d10/a01738.html" title="A dim dimensional NURBS class.">Nurbs</a> Book Algorithm A2.2.  <a href="../../d0/d1f/a01734.html#a11caee94356370a625c195ce38a53e0a">More...</a><br /></td></tr>
+<tr class="separator:a11caee94356370a625c195ce38a53e0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0d07d62d3ea01843d3775a7e2732d17"><td class="memItemLeft" align="right" valign="top">static auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d1f/a01734.html#ac0d07d62d3ea01843d3775a7e2732d17">basisFunctionDerivatives</a> (<a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> u, const std::vector&lt; <a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> &gt; &amp;knots, const int p, const int derivativeOrder, std::optional&lt; int &gt; spIndex=std::nullopt)</td></tr>
+<tr class="memdesc:ac0d07d62d3ea01843d3775a7e2732d17"><td class="mdescLeft">&#160;</td><td class="mdescRight">The evaluation function modified version of The <a class="el" href="../../d5/d10/a01738.html" title="A dim dimensional NURBS class.">Nurbs</a> Book Algorithm A2.3.  <a href="../../d0/d1f/a01734.html#ac0d07d62d3ea01843d3775a7e2732d17">More...</a><br /></td></tr>
+<tr class="separator:ac0d07d62d3ea01843d3775a7e2732d17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><div class="compoundTemplParams">template&lt;int dim, typename ScalarType_ = double&gt;<br />
-struct Dune::IGA::Splines::Nurbs&lt; dim, ScalarType_ &gt;::LocalView</div><p >Structure representing a local view of the <a class="el" href="../../de/db5/a01730.html" title="A dim dimensional NURBS class.">Nurbs</a> object. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="acb670cd4a3fe80c0b2b0a2443a47a230" name="acb670cd4a3fe80c0b2b0a2443a47a230"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acb670cd4a3fe80c0b2b0a2443a47a230">&#9670;&nbsp;</a></span>LocalView() <span class="overload">[1/2]</span></h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename ScalarType_&gt;<br />
+class Dune::IGA::Splines::BsplineBasis&lt; ScalarType_ &gt;</div><p >One dimensional b-spline basis. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">ScalarType_</td><td>Scalar type of the coordinates </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="ae9113cc5a1a64ed40b190fc3bdc83523" name="ae9113cc5a1a64ed40b190fc3bdc83523"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9113cc5a1a64ed40b190fc3bdc83523">&#9670;&nbsp;</a></span>DynamicMatrixType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename ScalarType_ &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::LocalView </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
+          <td class="memname">using <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::DynamicMatrixType =  Dune::DynamicMatrix&lt;<a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a>&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a5">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
 
 </div>
 </div>
-<a id="a94fd81e5d6ea13f5bcda1584fced8468" name="a94fd81e5d6ea13f5bcda1584fced8468"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a94fd81e5d6ea13f5bcda1584fced8468">&#9670;&nbsp;</a></span>LocalView() <span class="overload">[2/2]</span></h2>
+<a id="aaf3688be9018dfa2013f32a10d20a1af" name="aaf3688be9018dfa2013f32a10d20a1af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf3688be9018dfa2013f32a10d20a1af">&#9670;&nbsp;</a></span>DynamicVectorType</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
+template&lt;typename ScalarType_ &gt; </div>
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::LocalView </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="../../de/db5/a01730.html">Nurbs</a> &amp;&#160;</td>
-          <td class="paramname"><em>nurbs</em></td><td>)</td>
-          <td></td>
+          <td class="memname">using <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::DynamicVectorType =  Dune::DynamicVector&lt;<a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a>&gt;</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a4">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad5042b2554eaab06d7b664a9fe17305a" name="ad5042b2554eaab06d7b664a9fe17305a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad5042b2554eaab06d7b664a9fe17305a">&#9670;&nbsp;</a></span>basisFunctionDerivatives()</h2>
+<a id="a596cc7cec08e69e6a202f1b954c5b054" name="a596cc7cec08e69e6a202f1b954c5b054"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a596cc7cec08e69e6a202f1b954c5b054">&#9670;&nbsp;</a></span>RowFixedMatrix</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
+template&lt;typename ScalarType_ &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::RowFixedMatrix =  std::array&lt;<a class="el" href="../../d0/d1f/a01734.html#aaf3688be9018dfa2013f32a10d20a1af">DynamicVectorType</a>, 2&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a6">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a76ca8e13ef9244ce8301c346e06b014a" name="a76ca8e13ef9244ce8301c346e06b014a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76ca8e13ef9244ce8301c346e06b014a">&#9670;&nbsp;</a></span>ScalarType</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ScalarType_ &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::ScalarType =  ScalarType_</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a3">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a692cdbd6a073b7405819bfc2279710e2" name="a692cdbd6a073b7405819bfc2279710e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a692cdbd6a073b7405819bfc2279710e2">&#9670;&nbsp;</a></span>BsplineBasis()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ScalarType_ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::basisFunctionDerivatives </td>
+          <td class="memname"><a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::BsplineBasis </td>
           <td>(</td>
-          <td class="paramtype">const FieldVector&lt; <a class="el" href="../../de/db5/a01730.html#a034522e3b2568b214d1fe1ec0d9b7ff5">ScalarType</a>, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>u</em>, </td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>derivativeOrder</em>&#160;</td>
+          <td class="paramname"><em>degree</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> const</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -228,72 +251,171 @@ template&lt;int dim, typename ScalarType_  = double&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Compute basis function derivatives for the given local view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">u</td><td>Local coordinate in the parameter space. </td></tr>
-    <tr><td class="paramname">derivativeOrder</td><td>Order of the derivative. </td></tr>
-  </table>
-  </dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a7">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Basis function derivatives. </dd></dl>
 
 </div>
 </div>
-<a id="ace37bc1ecfc4f575e8ecd54fdb1ec72f" name="ace37bc1ecfc4f575e8ecd54fdb1ec72f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ace37bc1ecfc4f575e8ecd54fdb1ec72f">&#9670;&nbsp;</a></span>basisFunctions()</h2>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac0d07d62d3ea01843d3775a7e2732d17" name="ac0d07d62d3ea01843d3775a7e2732d17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0d07d62d3ea01843d3775a7e2732d17">&#9670;&nbsp;</a></span>basisFunctionDerivatives()</h2>
 
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
+template&lt;typename ScalarType_ &gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto <a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::basisFunctions </td>
+          <td class="memname">static auto <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::basisFunctionDerivatives </td>
           <td>(</td>
-          <td class="paramtype">const FieldVector&lt; <a class="el" href="../../de/db5/a01730.html#a034522e3b2568b214d1fe1ec0d9b7ff5">ScalarType</a>, dim &gt; &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a>&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>derivativeOrder</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>spIndex</em> = <code>std::nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The evaluation function modified version of The <a class="el" href="../../d5/d10/a01738.html" title="A dim dimensional NURBS class.">Nurbs</a> Book Algorithm A2.3. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>scalar point where to evaluate the spline </td></tr>
+    <tr><td class="paramname">knots</td><td>knotvector </td></tr>
+    <tr><td class="paramname">p</td><td>polynomial p of the underlying b-spline basis </td></tr>
+    <tr><td class="paramname">derivativeOrder</td><td>maximum derivative degree that are constructed </td></tr>
+    <tr><td class="paramname">spIndex</td><td>optional index in which range the evaluation point lies, if omitted it is searched for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero B-spline derivatives evaluated at u </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a10">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a11caee94356370a625c195ce38a53e0a" name="a11caee94356370a625c195ce38a53e0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11caee94356370a625c195ce38a53e0a">&#9670;&nbsp;</a></span>basisFunctions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ScalarType_ &gt; </div>
+<div class="memtemplate">
+template&lt;std::ranges::random_access_range Range&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static auto <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::basisFunctions </td>
+          <td>(</td>
+          <td class="paramtype">typename std::remove_cvref_t&lt; Range &gt;::value_type&#160;</td>
+          <td class="paramname"><em>u</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Range &amp;&amp;&#160;</td>
+          <td class="paramname"><em>knots</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>p</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::optional&lt; int &gt;&#160;</td>
+          <td class="paramname"><em>spIndex</em> = <code>std::nullopt</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The evaluation function modified version of The <a class="el" href="../../d5/d10/a01738.html" title="A dim dimensional NURBS class.">Nurbs</a> Book Algorithm A2.2. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">Range</td><td>range of knotvector </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">u</td><td>scalar point where to evaluate the spline </td></tr>
+    <tr><td class="paramname">knots</td><td>knotvector </td></tr>
+    <tr><td class="paramname">p</td><td>polynomial degree of the underlying b-spline basis </td></tr>
+    <tr><td class="paramname">spIndex</td><td>optional index in which range the evaluation point lies, if omitted it is searched for </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Non-zero B-spline basis functions evaluated at u </dd></dl>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a9">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c0b302713428e40b56b45ac0ebbf2cc" name="a2c0b302713428e40b56b45ac0ebbf2cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c0b302713428e40b56b45ac0ebbf2cc">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename ScalarType_ &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto <a class="el" href="../../d0/d1f/a01734.html">Dune::IGA::Splines::BsplineBasis</a>&lt; ScalarType_ &gt;::operator() </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a">ScalarType</a>&#160;</td>
           <td class="paramname"><em>u</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Compute basis functions for the given local view. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">u</td><td>Local coordinate in the parameter space. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Basis functions. </dd></dl>
-
-</div>
-</div>
-<a id="a0c2b7d291c492d47e6aee937a7a5e76c" name="a0c2b7d291c492d47e6aee937a7a5e76c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c2b7d291c492d47e6aee937a7a5e76c">&#9670;&nbsp;</a></span>bind()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void <a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::bind </td>
-          <td>(</td>
-          <td class="paramtype">const std::array&lt; int, dim &gt; &amp;&#160;</td>
-          <td class="paramname"><em>spIndex</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -303,83 +425,20 @@ template&lt;int dim, typename ScalarType_  = double&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
-<p>Bind the local view to a specific span index. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">spIndex</td><td>Span index to bind the local view. </td></tr>
-  </table>
-  </dd>
+<dl class="section examples"><dt>Examples</dt><dd><a class="el" href="../../dc/dec/a01804.html#a8">/__w/dune-iga/dune-iga/dune/iga/splines/bsplinealgorithms.hh</a>.</dd>
 </dl>
 
 </div>
 </div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="a2c98e00da3d50be5e46b116cf8385a48" name="a2c98e00da3d50be5e46b116cf8385a48"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c98e00da3d50be5e46b116cf8385a48">&#9670;&nbsp;</a></span>dimension</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">constexpr int <a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::dimension = dim</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a478dac2e76f1772e6cdb0ddef23d6ce6" name="a478dac2e76f1772e6cdb0ddef23d6ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a478dac2e76f1772e6cdb0ddef23d6ce6">&#9670;&nbsp;</a></span>nurbs_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="../../de/db5/a01730.html">Nurbs</a>* <a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::nurbs_ {nullptr}</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa1ec68d3ba306092a5c2008c17bc0f5b" name="aa1ec68d3ba306092a5c2008c17bc0f5b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa1ec68d3ba306092a5c2008c17bc0f5b">&#9670;&nbsp;</a></span>spIndex_</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;int dim, typename ScalarType_  = double&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt;std::array&lt;int, dim&gt; &gt; <a class="el" href="../../de/db5/a01730.html">Dune::IGA::Splines::Nurbs</a>&lt; dim, ScalarType_ &gt;::LocalView::spIndex_</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
-<li><a class="el" href="../../dc/dee/a00053_source.html">nurbsalgorithms.hh</a></li>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li><a class="el" href="../../d5/de0/a00050_source.html">bsplinealgorithms.hh</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d0/d53/a00232.html">Dune</a></li><li class="navelem"><a class="el" href="../../d6/de1/a00233.html">IGA</a></li><li class="navelem"><a class="el" href="../../d4/d04/a00255.html">Splines</a></li><li class="navelem"><a class="el" href="../../de/db5/a01730.html">Nurbs</a></li><li class="navelem"><a class="el" href="../../d0/d1f/a01734.html">LocalView</a></li>
+    <li class="navelem"><a class="el" href="../../d3/d42/a00235.html">Dune</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">IGA</a></li><li class="navelem"><a class="el" href="../../d7/d2f/a00258.html">Splines</a></li><li class="navelem"><a class="el" href="../../d0/d1f/a01734.html">BsplineBasis</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

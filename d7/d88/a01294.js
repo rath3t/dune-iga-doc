@@ -1,6 +1,10 @@
 var a01294 =
 [
-    [ "useAdaptiveDivisions", "d7/d88/a01294.html#aec00e46d53a03b03050d232357e78a79", null ],
-    [ "boundaryDivisions", "d7/d88/a01294.html#a8028055cbd3aae4719cd6e6e18fd8370", null ],
-    [ "targetAccuracy", "d7/d88/a01294.html#a0818dae6bd3ceeaee4b44785d2500cac", null ]
+    [ "Parameters", "d4/d34/a01298.html", "d4/d34/a01298" ],
+    [ "Element", "d7/d88/a01294.html#ab384bae41c97eac8eed73c2941a49dd7", null ],
+    [ "Index", "d7/d88/a01294.html#a1f31286e0add4ace530531f7ea3842ea", null ],
+    [ "ParameterSpaceElement", "d7/d88/a01294.html#aa91ec605aac849c610c1fc0932dde70a", null ],
+    [ "Point", "d7/d88/a01294.html#a607de2152a313659a83b5c6624045d19", null ],
+    [ "createSimplicies", "d7/d88/a01294.html#a2f223eb161915b1542a9044921ea180d", null ],
+    [ "dim", "d7/d88/a01294.html#ac98c0eb40a3c840b7461b2d95ca8beab", null ]
 ];

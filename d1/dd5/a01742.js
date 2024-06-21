@@ -1,6 +1,11 @@
 var a01742 =
 [
-    [ "Intersection", "d1/dd5/a01742.html#a5fd0163b3e0e45b1b23f036029bddd58", null ],
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed", "d1/dd5/a01742.html#a01647e7b3cf283823fb657ad8df0e93c", null ],
-    [ "operator()", "d1/dd5/a01742.html#ab0f5730b4be1b146ef68589bc1954ed7", null ]
+    [ "LocalView", "d1/dd5/a01742.html#acb670cd4a3fe80c0b2b0a2443a47a230", null ],
+    [ "LocalView", "d1/dd5/a01742.html#a94fd81e5d6ea13f5bcda1584fced8468", null ],
+    [ "basisFunctionDerivatives", "d1/dd5/a01742.html#ad5042b2554eaab06d7b664a9fe17305a", null ],
+    [ "basisFunctions", "d1/dd5/a01742.html#ace37bc1ecfc4f575e8ecd54fdb1ec72f", null ],
+    [ "bind", "d1/dd5/a01742.html#a0c2b7d291c492d47e6aee937a7a5e76c", null ],
+    [ "dimension", "d1/dd5/a01742.html#a2c98e00da3d50be5e46b116cf8385a48", null ],
+    [ "nurbs_", "d1/dd5/a01742.html#a478dac2e76f1772e6cdb0ddef23d6ce6", null ],
+    [ "spIndex_", "d1/dd5/a01742.html#aa1ec68d3ba306092a5c2008c17bc0f5b", null ]
 ];

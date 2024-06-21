@@ -1,11 +1,11 @@
 var a01734 =
 [
-    [ "LocalView", "d0/d1f/a01734.html#acb670cd4a3fe80c0b2b0a2443a47a230", null ],
-    [ "LocalView", "d0/d1f/a01734.html#a94fd81e5d6ea13f5bcda1584fced8468", null ],
-    [ "basisFunctionDerivatives", "d0/d1f/a01734.html#ad5042b2554eaab06d7b664a9fe17305a", null ],
-    [ "basisFunctions", "d0/d1f/a01734.html#ace37bc1ecfc4f575e8ecd54fdb1ec72f", null ],
-    [ "bind", "d0/d1f/a01734.html#a0c2b7d291c492d47e6aee937a7a5e76c", null ],
-    [ "dimension", "d0/d1f/a01734.html#a2c98e00da3d50be5e46b116cf8385a48", null ],
-    [ "nurbs_", "d0/d1f/a01734.html#a478dac2e76f1772e6cdb0ddef23d6ce6", null ],
-    [ "spIndex_", "d0/d1f/a01734.html#aa1ec68d3ba306092a5c2008c17bc0f5b", null ]
+    [ "DynamicMatrixType", "d0/d1f/a01734.html#ae9113cc5a1a64ed40b190fc3bdc83523", null ],
+    [ "DynamicVectorType", "d0/d1f/a01734.html#aaf3688be9018dfa2013f32a10d20a1af", null ],
+    [ "RowFixedMatrix", "d0/d1f/a01734.html#a596cc7cec08e69e6a202f1b954c5b054", null ],
+    [ "ScalarType", "d0/d1f/a01734.html#a76ca8e13ef9244ce8301c346e06b014a", null ],
+    [ "BsplineBasis", "d0/d1f/a01734.html#a692cdbd6a073b7405819bfc2279710e2", null ],
+    [ "basisFunctionDerivatives", "d0/d1f/a01734.html#ac0d07d62d3ea01843d3775a7e2732d17", null ],
+    [ "basisFunctions", "d0/d1f/a01734.html#a11caee94356370a625c195ce38a53e0a", null ],
+    [ "operator()", "d0/d1f/a01734.html#a2c0b302713428e40b56b45ac0ebbf2cc", null ]
 ];

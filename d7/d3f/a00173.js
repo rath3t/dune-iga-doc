@@ -1,4 +1,4 @@
 var a00173 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::Preferences", "d1/d3a/a01622.html", "d1/d3a/a01622" ]
+    [ "Dune::IGA::DefaultParameterSpace::Preferences", "dd/d90/a01626.html", "dd/d90/a01626" ]
 ];

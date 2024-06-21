@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['localgeometrytag_0',['LocalGeometryTag',['../d6/d82/a00243.html#aec12dcc5c21b86a317a0045388c4c0f6',1,'Dune::IGA::DefaultParameterSpace']]]
+  ['intersectioncurveandline_0',['IntersectionCurveAndLine',['../d7/d40/a00236.html#aa9ac1b688f23da46f2a4b8c9063de166',1,'Dune::IGA']]]
 ];

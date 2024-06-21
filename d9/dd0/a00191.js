@@ -1,5 +1,5 @@
 var a00191 =
 [
-    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d1/dd5/a01742.html", "d1/dd5/a01742" ],
-    [ "forEachUntrimmedBoundaryDOF", "d9/dd0/a00191.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
+    [ "is_instantiation_of< Template, T >", "d9/d02/a01774.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "df/d21/a01778.html", null ]
 ];
