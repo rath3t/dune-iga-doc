@@ -1,7 +1,7 @@
 var a00253 =
 [
-    [ "ClippingResult", "d3/d33/a01630.html", "d3/d33/a01630" ],
-    [ "FindIntersectionResult", "d1/d73/a01654.html", "d1/d73/a01654" ],
+    [ "ClippingResult", "d4/d99/a01634.html", "d4/d99/a01634" ],
+    [ "FindIntersectionResult", "d9/d79/a01658.html", "d9/d79/a01658" ],
     [ "FindIntersectionError", "d0/d3e/a00253.html#a026c0aac784d18de2633a2f394dc0dde", [
       [ "parallel", "d0/d3e/a00253.html#a026c0aac784d18de2633a2f394dc0ddea48920c071f6a5c97ae3739be64630697", null ],
       [ "notSuccessful", "d0/d3e/a00253.html#a026c0aac784d18de2633a2f394dc0ddea575b705894ed77dcbd2f8aa858ebd15d", null ]

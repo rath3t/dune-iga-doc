@@ -9,5 +9,5 @@ var searchData=
   ['hasentityiterator_3c_20iga_3a_3apatchgrid_3c_20dim_2c_20dimworld_2c_20gridfamilytraits_2c_20scalartype_20_3e_2c_20codim_20_3e_6',['hasEntityIterator&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamilyTraits, ScalarType &gt;, codim &gt;',['../d0/d61/a01130.html',1,'Dune::Capabilities']]],
   ['hash_3c_20dune_3a_3aiga_3a_3adefaultparameterspace_3a_3aidtype_3c_20hostidtype_20_3e_20_3e_7',['hash&lt; Dune::IGA::DefaultParameterSpace::IdType&lt; HostIdType &gt; &gt;',['../d5/d67/a01466.html',1,'std']]],
   ['hostgridaccess_8',['HostGridAccess',['../d7/def/a01538.html',1,'Dune::IGA::DefaultParameterSpace::HostGridAccess&lt; Grid &gt;'],['../de/d7e/a01222.html',1,'Dune::IGA::HostGridAccess&lt; Grid &gt;']]],
-  ['hostverteximpl_9',['HostVertexImpl',['../dd/d55/a01638.html',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex']]]
+  ['hostverteximpl_9',['HostVertexImpl',['../d7/d94/a01642.html',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex']]]
 ];

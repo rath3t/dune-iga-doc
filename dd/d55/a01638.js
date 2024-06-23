@@ -1,5 +1,25 @@
 var a01638 =
 [
-    [ "additionalZVals", "dd/d55/a01638.html#ae3132de40314b9769773c0cf0a186bb5", null ],
-    [ "hostIdx", "dd/d55/a01638.html#a51024d9551665c5db73d9897065c5b9e", null ]
+    [ "HostVertexImpl", "d7/d94/a01642.html", "d7/d94/a01642" ],
+    [ "InsideVertexImpl", "d9/d3b/a01650.html", "d9/d3b/a01650" ],
+    [ "NewVertexImpl", "df/dee/a01646.html", "df/dee/a01646" ],
+    [ "VertexVariant", "dd/d55/a01638.html#a35131080e8be5f289db7d626bcd6378e", null ],
+    [ "addAdditionalZValue", "dd/d55/a01638.html#a203e43fc626ba4b05b28e9ec67d81a98", null ],
+    [ "additionalZValues", "dd/d55/a01638.html#a8812e5941716461bab3dde47da82cf79", null ],
+    [ "edgeId", "dd/d55/a01638.html#a18a0a28c53f36a05cbd9beb5739c39b7", null ],
+    [ "formerCurve", "dd/d55/a01638.html#ae1ff20ef57f26b515168c8f553fad96c", null ],
+    [ "hostId", "dd/d55/a01638.html#a8f5cf6cdf39c0d221c7ae602dc4f19bc", null ],
+    [ "HostVertex", "dd/d55/a01638.html#ac8a5f17afd158f53263a2ad39d7783a9", null ],
+    [ "HostVertex", "dd/d55/a01638.html#acfd293df57ed794641a005ba32470ce5", null ],
+    [ "InsideVertex", "dd/d55/a01638.html#a2d5698c5caa1ec28841240a01b403425", null ],
+    [ "isHost", "dd/d55/a01638.html#a408268039e9de6d4661a636f665f8bfb", null ],
+    [ "isInside", "dd/d55/a01638.html#a3ba388d1350d645f3f88b9bd15813fae", null ],
+    [ "isNew", "dd/d55/a01638.html#ae2b0f1a91591308327e585fafad4d17e", null ],
+    [ "loop", "dd/d55/a01638.html#a4e2def8b4b3cbe2b1cbf428fa338a53b", null ],
+    [ "NewVertex", "dd/d55/a01638.html#a47f959d3083a7cf49ebbae00da557420", null ],
+    [ "subsequentCurve", "dd/d55/a01638.html#a54d1ef0504839eac8a667a64a68e996b", null ],
+    [ "zValue", "dd/d55/a01638.html#a4211fca758bde9a16180408efdf5a4f5", null ],
+    [ "operator<<", "dd/d55/a01638.html#ad329482f69df01c10e3bc0a12045fbcd", null ],
+    [ "pt", "dd/d55/a01638.html#aac1c306bba05f831f2d7216f44fbb632", null ],
+    [ "vertexData", "dd/d55/a01638.html#a9e9fd18d551729a7e0a8d536108a01b2", null ]
 ];

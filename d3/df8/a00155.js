@@ -1,10 +1,10 @@
 var a00155 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult", "d3/d33/a01630.html", "d3/d33/a01630" ],
-    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex", "d4/d99/a01634.html", "d4/d99/a01634" ],
-    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::HostVertexImpl", "dd/d55/a01638.html", "dd/d55/a01638" ],
-    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::NewVertexImpl", "d7/d94/a01642.html", "d7/d94/a01642" ],
-    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::InsideVertexImpl", "df/dee/a01646.html", "df/dee/a01646" ],
+    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult", "d4/d99/a01634.html", "d4/d99/a01634" ],
+    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex", "dd/d55/a01638.html", "dd/d55/a01638" ],
+    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::HostVertexImpl", "d7/d94/a01642.html", "d7/d94/a01642" ],
+    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::NewVertexImpl", "df/dee/a01646.html", "df/dee/a01646" ],
+    [ "Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex::InsideVertexImpl", "d9/d3b/a01650.html", "d9/d3b/a01650" ],
     [ "giveEdgeIdx", "d3/df8/a00155.html#aad36dd099887ab4323ae466f402939c9", null ],
     [ "isConsecutive", "d3/df8/a00155.html#ae4fca3cae8ea68b63cbc3feac30361e3", null ],
     [ "isCornerVertex", "d3/df8/a00155.html#a8d3936491f20b581c6bb8c13faf67942", null ],

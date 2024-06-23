@@ -1,11 +1,20 @@
 var a01742 =
 [
-    [ "LocalView", "d1/dd5/a01742.html#acb670cd4a3fe80c0b2b0a2443a47a230", null ],
-    [ "LocalView", "d1/dd5/a01742.html#a94fd81e5d6ea13f5bcda1584fced8468", null ],
-    [ "basisFunctionDerivatives", "d1/dd5/a01742.html#ad5042b2554eaab06d7b664a9fe17305a", null ],
-    [ "basisFunctions", "d1/dd5/a01742.html#ace37bc1ecfc4f575e8ecd54fdb1ec72f", null ],
-    [ "bind", "d1/dd5/a01742.html#a0c2b7d291c492d47e6aee937a7a5e76c", null ],
-    [ "dimension", "d1/dd5/a01742.html#a2c98e00da3d50be5e46b116cf8385a48", null ],
-    [ "nurbs_", "d1/dd5/a01742.html#a478dac2e76f1772e6cdb0ddef23d6ce6", null ],
-    [ "spIndex_", "d1/dd5/a01742.html#aa1ec68d3ba306092a5c2008c17bc0f5b", null ]
+    [ "LocalView", "d5/dfa/a01746.html", "d5/dfa/a01746" ],
+    [ "DynamicMatrixType", "d1/dd5/a01742.html#a130df53370b79989802f8d4e9f6c638f", null ],
+    [ "DynamicVectorType", "d1/dd5/a01742.html#a0a7af2b8eaaf0eda9669b53bc938d803", null ],
+    [ "ScalarType", "d1/dd5/a01742.html#a034522e3b2568b214d1fe1ec0d9b7ff5", null ],
+    [ "Nurbs", "d1/dd5/a01742.html#a3b4b5faa539485a19246afd8b40b87cb", null ],
+    [ "Nurbs", "d1/dd5/a01742.html#a431a4b8de66620a338132dcd0f3c2aea", null ],
+    [ "Nurbs", "d1/dd5/a01742.html#a01afce9c82912636386dff3d7f170cc5", null ],
+    [ "Nurbs", "d1/dd5/a01742.html#a5c5be02737c382230e5957e0965c8f8b", null ],
+    [ "basisFunctionDerivatives", "d1/dd5/a01742.html#af258e03ad69612361533a477a35ad0b0", null ],
+    [ "basisFunctionDerivatives", "d1/dd5/a01742.html#ad8b204218c6a776d6364ec1eba9a5ad0", null ],
+    [ "basisFunctionDerivatives", "d1/dd5/a01742.html#ab839ac06c39cd4f90e35c75e43a2d92b", null ],
+    [ "basisFunctions", "d1/dd5/a01742.html#a00d049895433f953da2f05383bbe1e68", null ],
+    [ "basisFunctions", "d1/dd5/a01742.html#a3fe09a635a3e0f753b501d7e85ab367c", null ],
+    [ "basisFunctions", "d1/dd5/a01742.html#aff2f09bbf1d9f3927d1bd265ea04e133", null ],
+    [ "basisFunctions", "d1/dd5/a01742.html#a549674830073b432df4deeb437dea5a4", null ],
+    [ "localView", "d1/dd5/a01742.html#a01bf2ed160741e2dbfa7833f99edfabf", null ],
+    [ "dimension", "d1/dd5/a01742.html#a1396605aea2f8ece0af995eb15fbba03", null ]
 ];

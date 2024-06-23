@@ -2,7 +2,7 @@ var a00237 =
 [
     [ "NURBSPatch", "d4/da7/a01102.html", "d4/da7/a01102" ],
     [ "PatchGeometryLocalView", "d6/d40/a01114.html", "d6/d40/a01114" ],
-    [ "GeometryConcept", "d1/dea/a01791.html", null ],
+    [ "GeometryConcept", "d1/df0/a01795.html", null ],
     [ "centerOfMass", "d4/d08/a00237.html#a411224757279c53adc1f72ee1eb20637", null ],
     [ "findClosestParameterSpaceCoordinate", "d4/d08/a00237.html#a9b67765d6be43c55a6e796d0e7fa4ebd", null ],
     [ "hessian", "d4/d08/a00237.html#a8c84717f13b7cfdee0600f06d50727a2", null ],
