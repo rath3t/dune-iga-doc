@@ -1,7 +1,5 @@
 var a00038 =
 [
-    [ "Dune::IGA::SimplexGenerator< GridImp >", "d7/d88/a01294.html", "d7/d88/a01294" ],
-    [ "Dune::IGA::SimplexGenerator< GridImp >::Parameters", "d4/d34/a01298.html", "d4/d34/a01298" ],
-    [ "mapbox::util::nth< 0, Dune::FieldVector< T, 2 > >", "dc/de0/a01302.html", "dc/de0/a01302" ],
-    [ "mapbox::util::nth< 1, Dune::FieldVector< T, 2 > >", "d7/d8c/a01306.html", "d7/d8c/a01306" ]
+    [ "intersect3DLines", "d8/d41/a00038.html#a08b624d0e2f7ab790db8db08af9100d8", null ],
+    [ "projectPointOntoLine", "d8/d41/a00038.html#a0f93432d996799f910df4ac8ecc3147a", null ]
 ];

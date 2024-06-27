@@ -1,5 +1,5 @@
 var a00170 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl< GridImp >", "d4/d49/a01590.html", "d4/d49/a01590" ],
-    [ "Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl< GridImp >::CurveManager", "dc/def/a01594.html", "dc/def/a01594" ]
+    [ "Dune::IGA::DefaultParameterSpace::VectorEntityContainer< GridImp >", "d2/d9b/a01433.html", "d2/d9b/a01433" ],
+    [ "Dune::IGA::DefaultParameterSpace::VectorEntityContainer< GridImp >::StringAndIndex", "d9/db0/a01437.html", "d9/db0/a01437" ]
 ];

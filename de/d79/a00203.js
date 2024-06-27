@@ -1,6 +1,5 @@
 var a00203 =
 [
-    [ "Reader", "de/d79/a00203.html#a1ef280a2762fbf1b3a46535ade3f8172", [
-      [ "json", "de/d79/a00203.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
-    ] ]
+    [ "Dune::DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dc6/a01793.html", null ],
+    [ "Dune::DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dd1/a01797.html", "d4/dd1/a01797" ]
 ];

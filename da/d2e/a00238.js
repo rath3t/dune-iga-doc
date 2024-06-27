@@ -1,14 +1,19 @@
 var a00238 =
 [
-    [ "Domain", "da/d73/a01090.html", "da/d73/a01090" ],
-    [ "clampToBoundaryAndCheckIfIsAtAllBoundaries", "da/d2e/a00238.html#a532897d1990f320393603ae743e25401", null ],
-    [ "clampToDomain", "da/d2e/a00238.html#ac6a185a07ec904f01c6563a6e01d4a7f", null ],
-    [ "linspace", "da/d2e/a00238.html#a8cac3b3b6837a6b5f5ced44e740bcd7a", null ],
-    [ "linspace", "da/d2e/a00238.html#a6880eea38c01ebcd77300a8b8fa27c62", null ],
-    [ "linspace", "da/d2e/a00238.html#aa3db3f379446d87eac1f9cc39abcbedd", null ],
-    [ "mapToRange", "da/d2e/a00238.html#a3d59a12b8ff14b4ae1ba2bf40845b301", null ],
-    [ "mapToRange", "da/d2e/a00238.html#a9bfbe1e0c0481fdaa7f59bbcb02aae19", null ],
-    [ "mapToRange", "da/d2e/a00238.html#a36c887e0deedc2b16c340ffcee35f961", null ],
-    [ "mapToRangeFromZeroToOne", "da/d2e/a00238.html#a86276840eb12dcb7cc614974d1675d6c", null ],
-    [ "splitDomainInHalf", "da/d2e/a00238.html#adf4a6ff4298be37a5684db7bb769bcdd", null ]
+    [ "Capabilities", "d6/d22/a00245.html", "d6/d22/a00245" ],
+    [ "Functions", "d4/d9a/a00246.html", "d4/d9a/a00246" ],
+    [ "IGA", "d0/d27/a00239.html", "d0/d27/a00239" ],
+    [ "Python", "d3/dcc/a00264.html", "d3/dcc/a00264" ],
+    [ "Std", "df/da9/a00263.html", "df/da9/a00263" ],
+    [ "Vtk", "d0/d3e/a00253.html", "d0/d3e/a00253" ],
+    [ "DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dc6/a01793.html", null ],
+    [ "DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dd1/a01797.html", "d4/dd1/a01797" ],
+    [ "EnableBoundarySegmentIndexCheck", "d4/d10/a01197.html", null ],
+    [ "EnableBoundarySegmentIndexCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d61/a01205.html", null ],
+    [ "GridFactory< IGA::PatchGrid< dim_, dimworld_, ParameterSpaceType_, ScalarType > >", "d1/d31/a01245.html", "d1/d31/a01245" ],
+    [ "TensorProductCoordinates", "de/d99/a01101.html", null ],
+    [ "YaspGrid", "d1/dfa/a01097.html", null ],
+    [ "makePatchGridFactory", "da/d2e/a00238.html#a276a43039ec8e84f7cdb21e460a9cf43", null ],
+    [ "makePatchGridFactory", "da/d2e/a00238.html#a5a93eecf55bf1ee6fd5ca0fa8324a795", null ],
+    [ "withTrimmingCapabilities", "da/d2e/a00238.html#a4bcb674ccd63ce9fec49511a2088631a", null ]
 ];

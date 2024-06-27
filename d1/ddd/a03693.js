@@ -1,4 +1,0 @@
-var a03693 =
-[
-    [ "Dune::IGA::DefaultParameterSpace::PatchGridLevelIterator< codim, pitype, GridImp >", "d5/d75/a01570.html", "d5/d75/a01570" ]
-];

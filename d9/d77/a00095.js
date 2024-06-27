@@ -1,7 +1,7 @@
 var a00095 =
 [
-    [ "Dune::IGA::PatchGridEntity< codim, dim, GridImp >", "d0/d58/a01230.html", "d0/d58/a01230" ],
-    [ "Dune::IGA::PatchGridEntity< 0, dim, GridImp >", "d8/ddf/a01238.html", "d8/ddf/a01238" ],
-    [ "referenceElement", "d9/d77/a00095.html#aa4c0e4b40689204d775a70c356f3df9c", null ],
-    [ "referenceElement", "d9/d77/a00095.html#a10579811f681f13697cedf2abf633e78", null ]
+    [ "Dune::GridFactory< IGA::PatchGrid< dim_, dimworld_, ParameterSpaceType_, ScalarType > >", "d1/d31/a01245.html", "d1/d31/a01245" ],
+    [ "makePatchGridFactory", "d9/d77/a00095.html#a276a43039ec8e84f7cdb21e460a9cf43", null ],
+    [ "makePatchGridFactory", "d9/d77/a00095.html#a5a93eecf55bf1ee6fd5ca0fa8324a795", null ],
+    [ "withTrimmingCapabilities", "d9/d77/a00095.html#a4bcb674ccd63ce9fec49511a2088631a", null ]
 ];

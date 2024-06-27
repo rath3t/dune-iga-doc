@@ -1,5 +1,6 @@
 var a00191 =
 [
-    [ "is_instantiation_of< Template, T >", "df/d21/a01778.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "dd/dec/a01782.html", null ]
+    [ "Dune::Std::unexpected< E >", "db/db8/a01761.html", "db/db8/a01761" ],
+    [ "Dune::Std::expected< T, E >", "df/d7b/a01765.html", "df/d7b/a01765" ],
+    [ "unexpected", "d9/dd0/a00191.html#ad7f0c2902b39811c6daa9ded4514a140", null ]
 ];

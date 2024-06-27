@@ -1,5 +1,4 @@
 var a00167 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::VectorEntityContainer< GridImp >", "d8/dd0/a01430.html", "d8/dd0/a01430" ],
-    [ "Dune::IGA::DefaultParameterSpace::VectorEntityContainer< GridImp >::StringAndIndex", "d1/de7/a01434.html", "d1/de7/a01434" ]
+    [ "Dune::IGA::DefaultParameterSpace::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "db/d1e/a01497.html", "db/d1e/a01497" ]
 ];

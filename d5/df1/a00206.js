@@ -1,4 +1,6 @@
 var a00206 =
 [
-    [ "registry", "d5/df1/a00206.html#a692469dff5d684126efb9a24e2905bd4", null ]
+    [ "Reader", "d5/df1/a00206.html#a1ef280a2762fbf1b3a46535ade3f8172", [
+      [ "json", "d5/df1/a00206.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
+    ] ]
 ];

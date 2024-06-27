@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: Dune::IGA::Concept::ControlPoint Concept Reference</title>
+<title>dune-iga: Dune::DGFGridInfo&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt; Struct Template Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -91,34 +91,86 @@ $(document).ready(function(){initNavTree('d4/dd1/a01797.html','../../'); initRes
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">Dune::IGA::Concept::ControlPoint Concept Reference</div></div>
+  <div class="summary">
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="../../d5/dec/a01794.html">List of all members</a>  </div>
+  <div class="headertitle"><div class="title">Dune::DGFGridInfo&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt; Struct Template Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="../../d1/d7b/a03639_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</code></p>
-<h2 class="groupheader">Concept definition</h2>
-<div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> ControlPo<span class="keywordtype">int</span>Type&gt;</div>
-<div class="line"><span class="keyword">concept </span><a class="code hl_concept" href="../../d4/dd1/a01797.html">Dune::IGA::Concept::ControlPoint</a> =  <a class="code hl_concept" href="../../d3/d92/a01796.html">Vector&lt;typename ControlPointType::VectorType&gt;</a> &amp;&amp; <span class="keyword">requires</span>(ControlPointType cp) {</div>
-<div class="line">  <span class="keyword">typename</span> ControlPointType::VectorType;</div>
-<div class="line">  <span class="keyword">typename</span> ControlPointType::VectorType::value_type;</div>
-<div class="line">  { cp.p } -&gt; std::same_as&lt;typename ControlPointType::VectorType&amp;&gt;;</div>
-<div class="line">  { cp.w } -&gt; std::same_as&lt;typename ControlPointType::VectorType::value_type&amp;&gt;;</div>
-<div class="line">}</div>
-<div class="ttc" id="aa01796_html"><div class="ttname"><a href="../../d3/d92/a01796.html">Dune::IGA::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:12</div></div>
-<div class="ttc" id="aa01797_html"><div class="ttname"><a href="../../d4/dd1/a01797.html">Dune::IGA::Concept::ControlPoint</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:24</div></div>
-</div><!-- fragment --><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">ControlPointType</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-</div></div><!-- contents -->
+<p><code>#include &lt;<a class="el" href="../../de/d79/a00203_source.html">dune/python/iga/grid.hh</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:ac175085ce9ffc120e4fdf64b5cf24e90"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd1/a01797.html#ac175085ce9ffc120e4fdf64b5cf24e90">refineStepsForHalf</a> ()</td></tr>
+<tr class="separator:ac175085ce9ffc120e4fdf64b5cf24e90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8406ab2477444a09a330d394765bcff8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dd1/a01797.html#a8406ab2477444a09a330d394765bcff8">refineWeight</a> ()</td></tr>
+<tr class="separator:a8406ab2477444a09a330d394765bcff8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="ac175085ce9ffc120e4fdf64b5cf24e90" name="ac175085ce9ffc120e4fdf64b5cf24e90"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac175085ce9ffc120e4fdf64b5cf24e90">&#9670;&nbsp;</a></span>refineStepsForHalf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename GridFamily_, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int Dune::DGFGridInfo&lt; <a class="el" href="../../db/d1c/a01229.html">IGA::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt;::refineStepsForHalf </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8406ab2477444a09a330d394765bcff8" name="a8406ab2477444a09a330d394765bcff8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8406ab2477444a09a330d394765bcff8">&#9670;&nbsp;</a></span>refineWeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;int dim, int dimworld, template&lt; int, int, typename &gt; typename GridFamily_, typename ScalarType &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double Dune::DGFGridInfo&lt; <a class="el" href="../../db/d1c/a01229.html">IGA::PatchGrid</a>&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt;::refineWeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this struct was generated from the following file:<ul>
+<li><a class="el" href="../../de/d79/a00203_source.html">grid.hh</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../d3/d42/a00235.html">Dune</a></li><li class="navelem"><a class="el" href="../../d7/d40/a00236.html">IGA</a></li><li class="navelem"><a class="el" href="../../d6/db6/a00241.html">Concept</a></li><li class="navelem"><a class="el" href="../../d4/dd1/a01797.html">ControlPoint</a></li>
+    <li class="navelem"><a class="el" href="../../da/d2e/a00238.html">Dune</a></li><li class="navelem"><a class="el" href="../../d4/dd1/a01797.html">DGFGridInfo&lt; IGA::PatchGrid&lt; dim, dimworld, GridFamily_, ScalarType &gt; &gt;</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

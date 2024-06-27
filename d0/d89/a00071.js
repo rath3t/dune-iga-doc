@@ -1,4 +1,4 @@
 var a00071 =
 [
-    [ "Dune::Vtk::DiscontinuousIgaDataCollector< GridView >", "d8/dbe/a01370.html", "d8/dbe/a01370" ]
+    [ "Dune::IGA::IGARefinedGeometries< GridView >", "d3/dea/a01377.html", "d3/dea/a01377" ]
 ];

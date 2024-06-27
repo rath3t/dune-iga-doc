@@ -1,5 +1,5 @@
 var a00029 =
 [
-    [ "makeCircularArc", "d5/d16/a00029.html#a1eeaa4b0827547b46fa451ae2a522dac", null ],
-    [ "makeCircularArc2D", "d5/d16/a00029.html#ab6a6c2bae7a9401f660e248da1be3ea6", null ]
+    [ "centerOfMass", "d5/d16/a00029.html#a411224757279c53adc1f72ee1eb20637", null ],
+    [ "centerOfMass", "d5/d16/a00029.html#aeb2537438db44eea4336bb1eb5a4956c", null ]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: mdnet.hh File Reference</title>
+<title>dune-iga: patchgridlocalgeometry.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,69 +93,41 @@ $(document).ready(function(){initNavTree('de/df3/a00185.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">mdnet.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">patchgridlocalgeometry.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;concepts&gt;</code><br />
-<code>#include &lt;functional&gt;</code><br />
-<code>#include &lt;iterator&gt;</code><br />
-<code>#include &lt;numeric&gt;</code><br />
-<code>#include &lt;ranges&gt;</code><br />
-<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../d1/d7b/a03639_source.html">dune/iga/hierarchicpatch/concepts.hh</a>&gt;</code><br />
+
+<p>The PatchGridLocalGeometry class and its specializations.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/geometry.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d6/d5b/a00026_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
 </div>
 <p><a href="../../de/df3/a00185_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/dfe/a01770.html">Dune::IGA::MultiDimensionalNet&lt; netdim, ElementType, Container &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This is a condensed version of the proposal <a href="https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1684r2.html">https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p1684r2.html</a> It is a container with multidimensional accessors.  <a href="../../d4/dfe/a01770.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d02/a01774.html">Dune::IGA::MultiDimensionalNetIndex&lt; netdim &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">class holds a n-dim net  <a href="../../d9/d02/a01774.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2e/a01737.html">Dune::IGA::PatchGridLocalGeometry&lt; mydim, coorddim, GridImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class describes entities in the 0..1 space if untrimmed this is in the cube, for the untrimmed case this is simply a wrapper around the Yasp grid local geometry.  <a href="../../df/d2e/a01737.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
-<tr class="memitem:d3/d42/a00235"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d42/a00235.html">Dune</a></td></tr>
+<tr class="memitem:da/d2e/a00238"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:d7/d40/a00236"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html">Dune::IGA</a></td></tr>
+<tr class="memitem:d0/d27/a00239"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad434568f69368db1d1211d5e438d51ab"><td class="memTemplParams" colspan="2">template&lt;size_t netdim, typename value_type &gt; </td></tr>
-<tr class="memitem:ad434568f69368db1d1211d5e438d51ab"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#ad434568f69368db1d1211d5e438d51ab">Dune::IGA::MultiDimensionalNet</a> (std::array&lt; int, netdim &gt; dimSize, const std::vector&lt; std::vector&lt; std::vector&lt; value_type &gt; &gt; &gt; &amp;values) -&gt; MultiDimensionalNet&lt; netdim, value_type &gt;</td></tr>
-<tr class="separator:ad434568f69368db1d1211d5e438d51ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab494853db2f6cc105541b0eaf9a16573"><td class="memTemplParams" colspan="2">template&lt;std::integral auto netdim, typename lValueType , typename rValueType &gt; <br />
-requires Concept::MultiplyAble&lt;lValueType, rValueType&gt;</td></tr>
-<tr class="memitem:ab494853db2f6cc105541b0eaf9a16573"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#ab494853db2f6cc105541b0eaf9a16573">Dune::IGA::dot</a> (const MultiDimensionalNet&lt; netdim, lValueType &gt; &amp;lnet, const MultiDimensionalNet&lt; netdim, rValueType &gt; &amp;rnet)</td></tr>
-<tr class="separator:ab494853db2f6cc105541b0eaf9a16573"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af21f4f9e9fd92abd1a6f942043f72544"><td class="memTemplParams" colspan="2">template&lt;std::integral auto netdim, typename lValueType , typename rValueType &gt; <br />
-requires Concept::MultiplyAble&lt;lValueType, rValueType&gt;</td></tr>
-<tr class="memitem:af21f4f9e9fd92abd1a6f942043f72544"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#af21f4f9e9fd92abd1a6f942043f72544">Dune::IGA::operator-</a> (const MultiDimensionalNet&lt; netdim, lValueType &gt; &amp;lnet, const MultiDimensionalNet&lt; netdim, rValueType &gt; &amp;rnet)</td></tr>
-<tr class="separator:af21f4f9e9fd92abd1a6f942043f72544"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53dd923355abf6a83c2589bf67d5b0bd"><td class="memTemplParams" colspan="2">template&lt;std::integral auto netdim, typename lValueType , typename rValueType &gt; <br />
-requires Concept::DivideAble&lt;lValueType, rValueType&gt;</td></tr>
-<tr class="memitem:a53dd923355abf6a83c2589bf67d5b0bd"><td class="memTemplItemLeft" align="right" valign="top">MultiDimensionalNet&lt; netdim, lValueType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a53dd923355abf6a83c2589bf67d5b0bd">Dune::IGA::operator/</a> (const MultiDimensionalNet&lt; netdim, lValueType &gt; &amp;lnet, const rValueType &amp;div)</td></tr>
-<tr class="separator:a53dd923355abf6a83c2589bf67d5b0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58e016c6ad5f1db9f128efbf889ccf14"><td class="memTemplParams" colspan="2">template&lt;std::integral auto netdim, typename lValueType , typename rValueType &gt; <br />
-requires Concept::DivideAble&lt;lValueType, rValueType&gt;</td></tr>
-<tr class="memitem:a58e016c6ad5f1db9f128efbf889ccf14"><td class="memTemplItemLeft" align="right" valign="top">MultiDimensionalNet&lt; netdim, lValueType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a58e016c6ad5f1db9f128efbf889ccf14">Dune::IGA::operator*</a> (const MultiDimensionalNet&lt; netdim, lValueType &gt; &amp;lnet, const rValueType &amp;fac)</td></tr>
-<tr class="separator:a58e016c6ad5f1db9f128efbf889ccf14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06975ed3172fc423fe3c936bac9fefff"><td class="memTemplParams" colspan="2">template&lt;std::integral auto netdim, typename lValueType , typename rValueType &gt; <br />
-requires Concept::DivideAble&lt;lValueType, rValueType&gt;</td></tr>
-<tr class="memitem:a06975ed3172fc423fe3c936bac9fefff"><td class="memTemplItemLeft" align="right" valign="top">MultiDimensionalNet&lt; netdim, lValueType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d7/d40/a00236.html#a06975ed3172fc423fe3c936bac9fefff">Dune::IGA::operator*</a> (const rValueType &amp;fac, const MultiDimensionalNet&lt; netdim, lValueType &gt; &amp;lnet)</td></tr>
-<tr class="separator:a06975ed3172fc423fe3c936bac9fefff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The PatchGridLocalGeometry class and its specializations. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_054fedf05f142c88b967e78541d2ed3d.html">utils</a></li><li class="navelem"><a class="el" href="../../de/df3/a00185.html">mdnet.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_4f9a3fa99cd0e0423c5099ae82deb76f.html">identity</a></li><li class="navelem"><a class="el" href="../../de/df3/a00185.html">patchgridlocalgeometry.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>
