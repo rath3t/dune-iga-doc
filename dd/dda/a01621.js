@@ -15,7 +15,7 @@ var a01621 =
     [ "ParameterSpace", "dd/dda/a01621.html#a988fc9f585133d55255a032cf923b71c", null ],
     [ "ParameterSpaceElement", "dd/dda/a01621.html#a8126792fdce0b06a909e5631db5872bc", null ],
     [ "PatchGeometry", "dd/dda/a01621.html#a68d0fd8bcb6193da918f7a6ceae99423", null ],
-    [ "SimplexGenerator", "dd/dda/a01621.html#af7545ad74e7831de4e54985e23bd205a", null ],
+    [ "SimplexGeneratorImpl", "dd/dda/a01621.html#afa826a1888d245bc18248e55b796f341", null ],
     [ "TrimData", "dd/dda/a01621.html#a46c78e5f88ec19589f05f38d339afa46", null ],
     [ "Volume", "dd/dda/a01621.html#ae7f6bdb95b55cf25f359c2a9231d5069", null ],
     [ "TrimmedLocalGeometryImpl", "dd/dda/a01621.html#ae79d36ab35c2bc113357ba856360a34a", null ],

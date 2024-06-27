@@ -10,7 +10,7 @@ var searchData=
   ['indexmap_5f_7',['indexMap_',['../d5/d54/a01213.html#ac5f4f09c7b307cf44bace7337c118438',1,'Dune::Functions::NurbsPreBasis::indexMap_()'],['../d7/d38/a01373.html#a90e3a8e72b603367b1ba87ed69011c82',1,'Dune::Vtk::DiscontinuousIgaDataCollector::indexMap_()']]],
   ['indexoffset_8',['indexOffSet',['../d0/d1d/a01597.html#ab6faa1067e2480fada93be66bb7afec7',1,'Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl::CurveManager']]],
   ['indexofinsideelementinlvl_9',['indexOfInsideElementinLvl',['../da/df7/a01457.html#aeb0ae3913c72fd35b95e830fbb4bfb63',1,'Dune::IGA::DefaultParameterSpace::EntityInfoImpl&lt; Traits, 1 &gt;::GeometryMap']]],
-  ['indices_10',['indices',['../d3/d2d/a01625.html#ae34fcad01a597ac5cd9bc992af351447',1,'Dune::IGA::DefaultParameterSpace::TrimmedLocalGeometryImpl&lt; 2, coorddim, GridImp, localGeometryTag &gt;::Triangulation']]],
+  ['indices_10',['indices',['../d3/d2d/a01625.html#ae1b76c67fb17fe148ba7554f1df2eb99',1,'Dune::IGA::DefaultParameterSpace::TrimmedLocalGeometryImpl&lt; 2, coorddim, GridImp, localGeometryTag &gt;::Triangulation']]],
   ['isalwaystrivial_11',['isAlwaysTrivial',['../d8/d67/a01477.html#a067e56417138b4e5a205bc0372fba05d',1,'Dune::IGA::DefaultParameterSpace::ParameterSpaceImpl::isAlwaysTrivial()'],['../dd/db4/a01693.html#a055a32037d41162bb4b504e66827e913',1,'Dune::IGA::IdentityParameterSpace::ParameterSpaceImpl::isAlwaysTrivial()']]],
   ['isbound_12',['isBound',['../df/d68/a01385.html#a2e9ecefd3d1a91c0d053accc92f96035',1,'Dune::Functions::NurbsLocalFiniteElement']]],
   ['isconnected_13',['isConnected',['../d8/dbf/a01109.html#a73718a5b382ab3bc5d4ffd23790b84ca',1,'Dune::IGA::GeometryKernel::NURBSPatch::ConnectionResult']]],

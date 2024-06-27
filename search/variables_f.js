@@ -8,7 +8,7 @@ var searchData=
   ['patchdim_5',['patchDim',['../d1/de4/a01481.html#a8b486b08d7d25b08523e24c2b8cab4d2',1,'Dune::IGA::DefaultParameterSpace::PatchGridFamily::patchDim()'],['../db/dc0/a01757.html#ad6206583900ce3a6e663d2879feb1d7b',1,'Dune::IGA::NURBSPatchData::patchDim()']]],
   ['patchnumberofsecondderivatives_6',['patchNumberOfSecondDerivatives',['../d6/d8b/a01117.html#a1803f57b784d90e690b2977a29864374',1,'Dune::IGA::GeometryKernel::PatchGeometryLocalView']]],
   ['patchtrimdata_5f_7',['patchTrimData_',['../d1/d31/a01245.html#aa02f9d8528711458268e9a92f28f32b0',1,'Dune::GridFactory&lt; IGA::PatchGrid&lt; dim_, dimworld_, ParameterSpaceType_, ScalarType &gt; &gt;']]],
-  ['points_8',['points',['../d3/d2d/a01625.html#a85c1b7da664fc207d08758555e840390',1,'Dune::IGA::DefaultParameterSpace::TrimmedLocalGeometryImpl&lt; 2, coorddim, GridImp, localGeometryTag &gt;::Triangulation']]],
+  ['points_8',['points',['../d3/d2d/a01625.html#a9e051ecb6a3b13207b9ab261048fc313',1,'Dune::IGA::DefaultParameterSpace::TrimmedLocalGeometryImpl&lt; 2, coorddim, GridImp, localGeometryTag &gt;::Triangulation']]],
   ['pointsets_5f_9',['pointSets_',['../d7/d38/a01373.html#a38e52710bba07c29d37de65934406be2',1,'Dune::Vtk::DiscontinuousIgaDataCollector']]],
   ['prebasis_5f_10',['preBasis_',['../df/d68/a01385.html#a2694ec0d342287865eee67f869602641',1,'Dune::Functions::NurbsLocalFiniteElement::preBasis_()'],['../dc/df4/a01401.html#a7b3c53f6aef8715f9d617cf8d3d04b57',1,'Dune::Functions::NurbsNode::preBasis_()']]],
   ['pt_11',['pt',['../d7/d53/a01645.html#aac1c306bba05f831f2d7216f44fbb632',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex']]]
