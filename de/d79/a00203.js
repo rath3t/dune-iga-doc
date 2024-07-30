@@ -1,5 +1,5 @@
 var a00203 =
 [
-    [ "Dune::DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dc6/a01793.html", null ],
-    [ "Dune::DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dd1/a01797.html", "d4/dd1/a01797" ]
+    [ "sliceCurve", "de/d79/a00203.html#a5d356303d09efdcdd8ba0107960c32c2", null ],
+    [ "splitCurve", "de/d79/a00203.html#a71b27d21f438d6da784c15ef742fbf39", null ]
 ];

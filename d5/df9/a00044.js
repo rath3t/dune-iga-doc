@@ -1,4 +1,6 @@
 var a00044 =
 [
-    [ "Dune::IGA::SimplexIntegrationRuleGenerator< GridImp >", "de/d90/a01313.html", "de/d90/a01313" ]
+    [ "Dune::Std::unexpected< E >", "db/db8/a01761.html", "db/db8/a01761" ],
+    [ "Dune::Std::expected< T, E >", "df/d7b/a01765.html", "df/d7b/a01765" ],
+    [ "unexpected", "d5/df9/a00044.html#ad7f0c2902b39811c6daa9ded4514a140", null ]
 ];

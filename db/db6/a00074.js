@@ -1,4 +1,7 @@
 var a00074 =
 [
-    [ "Dune::Vtk::DiscontinuousIgaDataCollector< GridView >", "d7/d38/a01373.html", "d7/d38/a01373" ]
+    [ "Dune::IGA::PatchGridLevelGridViewTraits< GridImp >", "d5/d6f/a01281.html", "d5/d6f/a01281" ],
+    [ "Dune::IGA::PatchGridLevelGridView< GridImp >", "de/d85/a01273.html", "de/d85/a01273" ],
+    [ "Dune::IGA::PatchGridLeafGridViewTraits< GridImp >", "d1/d1a/a01285.html", "d1/d1a/a01285" ],
+    [ "Dune::IGA::PatchGridLeafGridView< GridImp >", "d2/d1d/a01277.html", "d2/d1d/a01277" ]
 ];

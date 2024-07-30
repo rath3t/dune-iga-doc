@@ -1,15 +1,5 @@
 var a00149 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::Util::FindIntersectionResult", "d9/d45/a01665.html", "d9/d45/a01665" ],
-    [ "FindIntersectionError", "da/d1e/a00149.html#a026c0aac784d18de2633a2f394dc0dde", [
-      [ "parallel", "da/d1e/a00149.html#a026c0aac784d18de2633a2f394dc0ddea48920c071f6a5c97ae3739be64630697", null ],
-      [ "notSuccessful", "da/d1e/a00149.html#a026c0aac784d18de2633a2f394dc0ddea575b705894ed77dcbd2f8aa858ebd15d", null ]
-    ] ],
-    [ "approxSamePoint", "da/d1e/a00149.html#a5ede4b0b739a4537538baee9df7b6eb9", null ],
-    [ "callFindIntersection", "da/d1e/a00149.html#ab2a8649f1afb2143449e4a5c1af56ac9", null ],
-    [ "coarsestFather", "da/d1e/a00149.html#a7360f92eb61fb721d5b59623cba4c9f2", null ],
-    [ "createHostGeometry", "da/d1e/a00149.html#a65fa3682920e0512a180e530d5657166", null ],
-    [ "createTrimmingCurveSlice", "da/d1e/a00149.html#ad3511c42399d38ec10e499636559044a", null ],
-    [ "distance", "da/d1e/a00149.html#a9c654cb221f83781b32e8b03c9cceb21", null ],
-    [ "findGoodStartingPoint", "da/d1e/a00149.html#aa4eec910fd0774569c40b63c51abd0c9", null ]
+    [ "isSameEdgeGeometry", "da/d1e/a00149.html#a7f866c4b31c2ec916378f2bec736a5dd", null ],
+    [ "sameCorner", "da/d1e/a00149.html#a857b687eb67bae25dbb21c57f558d364", null ]
 ];

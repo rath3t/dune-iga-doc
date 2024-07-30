@@ -1,6 +1,7 @@
 var a00212 =
 [
-    [ "decoratePre", "dd/dc1/a00212.html#ad65f5408153c82c969512c99cd0cf141", null ],
-    [ "myAttributes", "dd/dc1/a00212.html#a50bd049136e99dcaac652c1db2707efb", null ],
-    [ "MySimpleGenerator", "dd/dc1/a00212.html#a460b85e0cd1d9ffeb2f7dc7cc20d8518", null ]
+    [ "makeCircularArc", "dd/dc1/a00212.html#a22eb6b54ecd977addcf9b5da165613e8", null ],
+    [ "makeSurfaceOfRevolution", "dd/dc1/a00212.html#a5884657662741f0cb1233206aaccdd64", null ],
+    [ "runCircularArc", "dd/dc1/a00212.html#a4435c22c355c8f50239394e8452069db", null ],
+    [ "runSurfaceOfRevolution", "dd/dc1/a00212.html#a050e71892f002f5250de3c7b3155c942", null ]
 ];

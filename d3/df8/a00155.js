@@ -1,4 +1,4 @@
 var a00155 =
 [
-    [ "clipElementRectangle", "d3/df8/a00155.html#ad528a1bc5ed08cfd12f61e26124a5e4c", null ]
+    [ "Dune::IGA::DefaultParameterSpace::LoopHandler< ParameterSpace >", "d3/da1/a01613.html", "d3/da1/a01613" ]
 ];

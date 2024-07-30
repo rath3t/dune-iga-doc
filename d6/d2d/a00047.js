@@ -1,5 +1,5 @@
 var a00047 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::DefaultIntegrationRuleGenerator< GridImp >", "d9/dda/a01289.html", "d9/dda/a01289" ],
-    [ "Dune::IGA::IntegrationRuleHolder< GridImp >", "dc/dd5/a01293.html", "dc/dd5/a01293" ]
+    [ "BoundaryPatchEnclosingVerticesPropertyTrimmed< GridView, ncomp >", "d7/d6d/a01769.html", "d7/d6d/a01769" ],
+    [ "forEachUntrimmedBoundaryDOF", "d6/d2d/a00047.html#a8ce90ea47d11d38bdb1e3b675db93a18", null ]
 ];

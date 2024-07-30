@@ -1,4 +1,5 @@
 var a00059 =
 [
-    [ "createUnstructuredGridImpl", "d3/d8b/a00059.html#aab3b41bcffed5f7e4d28f8f3fe629f05", null ]
+    [ "Dune::IGA::DefaultParameterSpace::DefaultIntegrationRuleGenerator< GridImp >", "d9/dda/a01289.html", "d9/dda/a01289" ],
+    [ "Dune::IGA::IntegrationRuleHolder< GridImp >", "dc/dd5/a01293.html", "dc/dd5/a01293" ]
 ];

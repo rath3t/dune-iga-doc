@@ -1,5 +1,6 @@
 var a00011 =
 [
-    [ "sliceCurve", "da/d45/a00011.html#a5d356303d09efdcdd8ba0107960c32c2", null ],
-    [ "splitCurve", "da/d45/a00011.html#a71b27d21f438d6da784c15ef742fbf39", null ]
+    [ "Reader", "da/d45/a00011.html#a1ef280a2762fbf1b3a46535ade3f8172", [
+      [ "json", "da/d45/a00011.html#a1ef280a2762fbf1b3a46535ade3f8172a466deec76ecdf5fca6d38571f6324d54", null ]
+    ] ]
 ];

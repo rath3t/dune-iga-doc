@@ -1,5 +1,5 @@
 var a00026 =
 [
-    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >", "de/d1d/a01105.html", "de/d1d/a01105" ],
-    [ "Dune::IGA::GeometryKernel::NURBSPatch< dim_, dimworld_, ScalarType >::ConnectionResult", "d8/dbf/a01109.html", "d8/dbf/a01109" ]
+    [ "readJson", "d6/d5b/a00026.html#aa0f8ccf410542ea91d5841fee8673130", null ],
+    [ "readJson", "d6/d5b/a00026.html#a9d751eac9df3522e457a5620082bb7e8", null ]
 ];

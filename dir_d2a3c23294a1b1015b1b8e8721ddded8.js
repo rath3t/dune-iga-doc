@@ -7,6 +7,6 @@ var dir_d2a3c23294a1b1015b1b8e8721ddded8 =
     [ "parameterspace", "dir_13898c8d649d3f4053b811aa4a00f800.html", "dir_13898c8d649d3f4053b811aa4a00f800" ],
     [ "splines", "dir_479b904809ee7734e338128330b60cdb.html", "dir_479b904809ee7734e338128330b60cdb" ],
     [ "utils", "dir_054fedf05f142c88b967e78541d2ed3d.html", "dir_054fedf05f142c88b967e78541d2ed3d" ],
-    [ "nurbsbasis.hh", "d2/d1f/a00083.html", "d2/d1f/a00083" ],
-    [ "patchgrid.hh", "da/dec/a00080.html", null ]
+    [ "nurbsbasis.hh", "de/de1/a00065.html", "de/de1/a00065" ],
+    [ "patchgrid.hh", "d2/de7/a00014.html", null ]
 ];

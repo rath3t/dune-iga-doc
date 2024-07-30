@@ -1,6 +1,11 @@
 var a00146 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::TrimmedReferenceElement< dim, GridImp >", "d7/d82/a01601.html", "d7/d82/a01601" ],
-    [ "Dune::IGA::DefaultParameterSpace::TrimmedReferenceElement< dim, GridImp >::Codim< codim >", "d5/d75/a01605.html", "d5/d75/a01605" ],
-    [ "Dune::IGA::DefaultParameterSpace::TrimmedReferenceElement< dim, GridImp >::SubEntityRangeImpl", "da/d24/a01609.html", "da/d24/a01609" ]
+    [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >", "d4/d20/a01421.html", "d4/d20/a01421" ],
+    [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >::VertexInfo", "db/df2/a01425.html", "db/df2/a01425" ],
+    [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >::EdgeInfo", "d1/d3b/a01429.html", "d1/d3b/a01429" ],
+    [ "ElementTrimFlag", "d9/db6/a00146.html#a8dc759d7742dc42a79d84dea11e846b2", [
+      [ "full", "d9/db6/a00146.html#a8dc759d7742dc42a79d84dea11e846b2ae9dc924f238fa6cc29465942875fe8f0", null ],
+      [ "empty", "d9/db6/a00146.html#a8dc759d7742dc42a79d84dea11e846b2aa2e4822a98337283e39f7b60acf85ec9", null ],
+      [ "trimmed", "d9/db6/a00146.html#a8dc759d7742dc42a79d84dea11e846b2a853600aa75baac4ae4d3b794b574ecec", null ]
+    ] ]
 ];

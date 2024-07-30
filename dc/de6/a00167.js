@@ -1,4 +1,4 @@
 var a00167 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::TrimmedParameterSpaceGridEntity< codim_, dim, GridImp >", "db/d1e/a01497.html", "db/d1e/a01497" ]
+    [ "Dune::IGA::Trim::LocalGeometryVariant< ParameterSpaceType_, Implementations >", "d0/d4e/a01741.html", "d0/d4e/a01741" ]
 ];

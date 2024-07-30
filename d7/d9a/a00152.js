@@ -1,4 +1,5 @@
 var a00152 =
 [
-    [ "Dune::IGA::DefaultParameterSpace::Transformations", "d4/d41/a01661.html", "d4/d41/a01661" ]
+    [ "Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl< GridImp >", "d9/dc8/a01593.html", "d9/dc8/a01593" ],
+    [ "Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl< GridImp >::CurveManager", "d0/d1d/a01597.html", "d0/d1d/a01597" ]
 ];
