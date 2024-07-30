@@ -6,7 +6,7 @@ var searchData=
   ['addedge_3',['addEdge',['../d4/d20/a01421.html#a63abba3a0eb8396f50bd72ecf2cd158e',1,'Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl']]],
   ['addedgehostnew_4',['addEdgeHostNew',['../d4/d20/a01421.html#aaf846ee716aa4a692651b91bc2933b81',1,'Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl']]],
   ['addedgenewhost_5',['addEdgeNewHost',['../d4/d20/a01421.html#a80e069c5fe03c5bd35433d2c24b0ce40',1,'Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl']]],
-  ['addedgenewnew_6',['addEdgeNewNew',['../d4/d20/a01421.html#a7b8896d3e65fd3dbc01e65cd40653377',1,'Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl']]],
+  ['addedgenewnew_6',['addEdgeNewNew',['../d4/d20/a01421.html#a1a4ec7d6e3bc17836101708898d72d54',1,'Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl']]],
   ['addedgenewnewonhost_7',['addEdgeNewNewOnHost',['../d4/d20/a01421.html#a86114e1e1f168ca2cfe68632c361ca48',1,'Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl']]],
   ['addinsidevertex_8',['addInsideVertex',['../d0/d90/a01641.html#a1e27186eab892c14ccc866edf5e30b2e',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult']]],
   ['additionalzvalues_9',['additionalZValues',['../d7/d53/a01645.html#a8812e5941716461bab3dde47da82cf79',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex']]],

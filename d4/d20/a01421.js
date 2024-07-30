@@ -19,7 +19,7 @@ var a01421 =
     [ "addEdge", "d4/d20/a01421.html#a63abba3a0eb8396f50bd72ecf2cd158e", null ],
     [ "addEdgeHostNew", "d4/d20/a01421.html#aaf846ee716aa4a692651b91bc2933b81", null ],
     [ "addEdgeNewHost", "d4/d20/a01421.html#a80e069c5fe03c5bd35433d2c24b0ce40", null ],
-    [ "addEdgeNewNew", "d4/d20/a01421.html#a7b8896d3e65fd3dbc01e65cd40653377", null ],
+    [ "addEdgeNewNew", "d4/d20/a01421.html#a1a4ec7d6e3bc17836101708898d72d54", null ],
     [ "addEdgeNewNewOnHost", "d4/d20/a01421.html#a86114e1e1f168ca2cfe68632c361ca48", null ],
     [ "checkInside", "d4/d20/a01421.html#a94e4138773d62cfaccdd82207b0773f4", null ],
     [ "drawResult", "d4/d20/a01421.html#aab9ac54ef630c0bc740e93f8861a2dfa", null ],

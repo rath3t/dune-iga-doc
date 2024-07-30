@@ -16,8 +16,8 @@ var searchData=
   ['localidset_13',['localIdSet',['../db/d1c/a01229.html#a3d68bac5dc240fbcbc935ce7ef363fe4',1,'Dune::IGA::PatchGrid']]],
   ['localinterpolation_14',['localInterpolation',['../df/d68/a01385.html#af81c002fe6cd71c2b5d5e7d6c3db553f',1,'Dune::Functions::NurbsLocalFiniteElement']]],
   ['localkey_15',['localKey',['../d3/d92/a01393.html#adf5a802caa3f9bf1b909336121dea33c',1,'Dune::Functions::NurbsLocalCoefficients']]],
-  ['localview_16',['localView',['../de/d1d/a01105.html#a44b2f2bfe8d6294976afa0e6125c44dc',1,'Dune::IGA::GeometryKernel::NURBSPatch::localView()'],['../d5/d77/a01749.html#a01bf2ed160741e2dbfa7833f99edfabf',1,'Dune::IGA::Splines::Nurbs::localView()']]],
-  ['localview_17',['LocalView',['../d6/d72/a01753.html#acb670cd4a3fe80c0b2b0a2443a47a230',1,'Dune::IGA::Splines::Nurbs::LocalView::LocalView()=default'],['../d6/d72/a01753.html#a94fd81e5d6ea13f5bcda1584fced8468',1,'Dune::IGA::Splines::Nurbs::LocalView::LocalView(const Nurbs &amp;nurbs)']]],
+  ['localview_16',['LocalView',['../d6/d72/a01753.html#acb670cd4a3fe80c0b2b0a2443a47a230',1,'Dune::IGA::Splines::Nurbs::LocalView::LocalView()=default'],['../d6/d72/a01753.html#a94fd81e5d6ea13f5bcda1584fced8468',1,'Dune::IGA::Splines::Nurbs::LocalView::LocalView(const Nurbs &amp;nurbs)']]],
+  ['localview_17',['localView',['../de/d1d/a01105.html#a44b2f2bfe8d6294976afa0e6125c44dc',1,'Dune::IGA::GeometryKernel::NURBSPatch::localView()'],['../d5/d77/a01749.html#a01bf2ed160741e2dbfa7833f99edfabf',1,'Dune::IGA::Splines::Nurbs::localView()']]],
   ['loop_18',['loop',['../d7/d53/a01645.html#a4e2def8b4b3cbe2b1cbf428fa338a53b',1,'Dune::IGA::DefaultParameterSpace::Util::ClippingResult::Vertex']]],
   ['loophandler_19',['LoopHandler',['../d3/da1/a01613.html#ac15a4440e982de1be566e79a481a9a20',1,'Dune::IGA::DefaultParameterSpace::LoopHandler']]],
   ['loops_20',['loops',['../d9/dc8/a01593.html#aa72c86be9719e8b7d7f1050c895b211a',1,'Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl']]]
