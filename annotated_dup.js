@@ -146,8 +146,6 @@ var annotated_dup =
       [ "Vtk", "d0/d3e/a00253.html", [
         [ "DiscontinuousIgaDataCollector", "d7/d38/a01373.html", "d7/d38/a01373" ]
       ] ],
-      [ "DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dc6/a01793.html", null ],
-      [ "DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dd1/a01797.html", "d4/dd1/a01797" ],
       [ "EnableBoundarySegmentIndexCheck", "d4/d10/a01197.html", null ],
       [ "EnableBoundarySegmentIndexCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d61/a01205.html", null ],
       [ "GridFactory< IGA::PatchGrid< dim_, dimworld_, ParameterSpaceType_, ScalarType > >", "d1/d31/a01245.html", "d1/d31/a01245" ],
@@ -156,7 +154,7 @@ var annotated_dup =
     ] ],
     [ "iga", "d5/d35/a00266.html", [
       [ "basis", "dd/d86/a00271.html", [
-        [ "Nurbs", "d2/d42/a01801.html", "d2/d42/a01801" ]
+        [ "Nurbs", "d4/dc6/a01793.html", "d4/dc6/a01793" ]
       ] ]
     ] ],
     [ "mapbox", "d0/da7/a00250.html", [

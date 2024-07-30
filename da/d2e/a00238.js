@@ -6,8 +6,6 @@ var a00238 =
     [ "Python", "d3/dcc/a00264.html", "d3/dcc/a00264" ],
     [ "Std", "df/da9/a00263.html", "df/da9/a00263" ],
     [ "Vtk", "d0/d3e/a00253.html", "d0/d3e/a00253" ],
-    [ "DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dc6/a01793.html", null ],
-    [ "DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dd1/a01797.html", "d4/dd1/a01797" ],
     [ "EnableBoundarySegmentIndexCheck", "d4/d10/a01197.html", null ],
     [ "EnableBoundarySegmentIndexCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d61/a01205.html", null ],
     [ "GridFactory< IGA::PatchGrid< dim_, dimworld_, ParameterSpaceType_, ScalarType > >", "d1/d31/a01245.html", "d1/d31/a01245" ],

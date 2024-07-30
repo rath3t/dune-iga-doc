@@ -29,8 +29,6 @@ var hierarchy =
     [ "DefaultLevelGridViewTraits", null, [
       [ "Dune::IGA::PatchGridLevelGridViewTraits< GridImp >", "d5/d6f/a01281.html", null ]
     ] ],
-    [ "Dune::DGFGridFactory< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dc6/a01793.html", null ],
-    [ "Dune::DGFGridInfo< IGA::PatchGrid< dim, dimworld, GridFamily_, ScalarType > >", "d4/dd1/a01797.html", null ],
     [ "Dune::Functions::NurbsPreBasis< GV, ScalarType >::DummyEmpty", "d9/d6e/a01409.html", null ],
     [ "Dune::IGA::DefaultParameterSpace::ElementTrimDataImpl< Grid >::EdgeInfo", "d1/d3b/a01429.html", null ],
     [ "Dune::IGA::IdentityParameterSpace::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "de/d96/a01685.html", null ],
@@ -209,6 +207,6 @@ var hierarchy =
     [ "Dune::Capabilities::viewThreadSafe< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/db5/a01181.html", null ],
     [ "Dune::YaspGrid< dim, Coordinates >", "d1/dfa/a01097.html", null ],
     [ "Tree", null, [
-      [ "iga.basis.Nurbs", "d2/d42/a01801.html", null ]
+      [ "iga.basis.Nurbs", "d4/dc6/a01793.html", null ]
     ] ]
 ];
