@@ -1,4 +1,5 @@
 var a00200 =
 [
-    [ "closestPointProjectionByTrustRegion", "d3/db1/a00200.html#a7a62c0cc97a46970cbdfeaa02f5afa2e", null ]
+    [ "is_instantiation_of< Template, T >", "d7/d10/a01785.html", null ],
+    [ "is_instantiation_of< Template, Template< Args... > >", "d6/d53/a01789.html", null ]
 ];

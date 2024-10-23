@@ -1,5 +1,7 @@
 var a00149 =
 [
-    [ "isSameEdgeGeometry", "da/d1e/a00149.html#a7f866c4b31c2ec916378f2bec736a5dd", null ],
-    [ "sameCorner", "da/d1e/a00149.html#a857b687eb67bae25dbb21c57f558d364", null ]
+    [ "Dune::IGA::PatchGridLevelGridViewTraits< GridImp >", "d5/d6f/a01281.html", "d5/d6f/a01281" ],
+    [ "Dune::IGA::PatchGridLevelGridView< GridImp >", "de/d85/a01273.html", "de/d85/a01273" ],
+    [ "Dune::IGA::PatchGridLeafGridViewTraits< GridImp >", "d1/d1a/a01285.html", "d1/d1a/a01285" ],
+    [ "Dune::IGA::PatchGridLeafGridView< GridImp >", "d2/d1d/a01277.html", "d2/d1d/a01277" ]
 ];

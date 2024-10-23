@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: expected.hh File Reference</title>
+<title>dune-iga: patchgridlocalgeometry.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -93,41 +93,41 @@ $(document).ready(function(){initNavTree('d5/df9/a00044.html','../../'); initRes
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#namespaces">Namespaces</a> &#124;
-<a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">expected.hh File Reference</div></div>
+<a href="#namespaces">Namespaces</a>  </div>
+  <div class="headertitle"><div class="title">patchgridlocalgeometry.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
+<p>The PatchGridLocalGeometry class and its specializations.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/typetraits.hh&gt;</code><br />
+<code>#include &lt;dune/grid/common/geometry.hh&gt;</code><br />
+<code>#include &lt;<a class="el" href="../../d5/dcb/a00170_source.html">dune/iga/geometrykernel/nurbspatchgeometry.hh</a>&gt;</code><br />
+</div>
 <p><a href="../../d5/df9/a00044_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/db8/a01761.html">Dune::Std::unexpected&lt; E &gt;</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d7b/a01765.html">Dune::Std::expected&lt; T, E &gt;</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class template <a class="el" href="../../df/d7b/a01765.html" title="Class template Std::expected is a way to store either a expected value or an unexpected value....">Std::expected</a> is a way to store either a expected value or an unexpected value. The unexpected value is most of the type a class enum containing error code, but is not limited to that. This is a mimicry version of C++23 std::expected, it fulfills part of the proposed interface from <a href="https://en.cppreference.com/w/cpp/utility/expected">https://en.cppreference.com/w/cpp/utility/expected</a>. For usage refer to the example therein.  <a href="../../df/d7b/a01765.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d2e/a01737.html">Dune::IGA::PatchGridLocalGeometry&lt; mydim, coorddim, GridImp &gt;</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This class describes entities in the 0..1 space if untrimmed this is in the cube, for the untrimmed case this is simply a wrapper around the Yasp grid local geometry.  <a href="../../df/d2e/a01737.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
 Namespaces</h2></td></tr>
 <tr class="memitem:da/d2e/a00238"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/d2e/a00238.html">Dune</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:df/da9/a00263"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da9/a00263.html">Dune::Std</a></td></tr>
+<tr class="memitem:d0/d27/a00239"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html">Dune::IGA</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
-Functions</h2></td></tr>
-<tr class="memitem:ad7f0c2902b39811c6daa9ded4514a140"><td class="memTemplParams" colspan="2">template&lt;typename E &gt; </td></tr>
-<tr class="memitem:ad7f0c2902b39811c6daa9ded4514a140"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/da9/a00263.html#ad7f0c2902b39811c6daa9ded4514a140">Dune::Std::unexpected</a> (E) -&gt; unexpected&lt; E &gt;</td></tr>
-<tr class="separator:ad7f0c2902b39811c6daa9ded4514a140"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-</div><!-- contents -->
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p >The PatchGridLocalGeometry class and its specializations. </p>
+</div></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_054fedf05f142c88b967e78541d2ed3d.html">utils</a></li><li class="navelem"><a class="el" href="../../d5/df9/a00044.html">expected.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../dir_4f9a3fa99cd0e0423c5099ae82deb76f.html">identity</a></li><li class="navelem"><a class="el" href="../../d5/df9/a00044.html">patchgridlocalgeometry.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

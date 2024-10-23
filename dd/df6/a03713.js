@@ -1,5 +1,4 @@
 var a03713 =
 [
-    [ "Dune::IGA::IdentityParameterSpace::PatchGridGlobalIdSet< GridImp >", "dc/dec/a01669.html", "dc/dec/a01669" ],
-    [ "Dune::IGA::IdentityParameterSpace::PatchGridLocalIdSet< GridImp >", "d9/df5/a01673.html", "d9/df5/a01673" ]
+    [ "Dune::IGA::DefaultParameterSpace::PatchGridGlobalIdSet< GridImp >", "d4/dfd/a01465.html", "d4/dfd/a01465" ]
 ];

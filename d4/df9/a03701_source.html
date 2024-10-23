@@ -91,73 +91,71 @@ $(document).ready(function(){initNavTree('d4/df9/a03701_source.html','../../'); 
 </div>
 
 <div class="header">
-  <div class="headertitle"><div class="title">parameterspace/concepts.hh</div></div>
+  <div class="headertitle"><div class="title">hierarchicpatch/concepts.hh</div></div>
 </div><!--header-->
 <div class="contents">
 <a href="../../d4/df9/a03701.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="comment">// SPDX-FileCopyrightText: 2022-2024 The dune-iga developers mueller@ibb.uni-stuttgart.de</span></div>
 <div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="comment">// SPDX-License-Identifier: LGPL-3.0-or-later</span></div>
 <div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
 <div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#pragma once</span></div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;concepts&gt;</span></div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;dune/grid/concepts.hh&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;dune/grid/concepts/geometry.hh&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// #include &lt;dune/iga/geometrykernel/geohelper.hh&gt;</span></div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d08/a00244.html">Dune::IGA::Concept</a> {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="../../d6/d08/a00244.html">    9</a></span><span class="keyword">namespace </span><a class="code hl_namespace" href="../../d6/d08/a00244.html">Dune::IGA::Concept</a> {</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../dc/dec/a01804.html">   12</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../dc/dec/a01804.html">TrimDataContainer</a> = <span class="keyword">requires</span>(<span class="keyword">const</span> T&amp; t, <span class="keywordtype">size_t</span> i) { t[i]; };</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="../../d7/d62/a01805.html">   21</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d7/d62/a01805.html">ParameterSpace</a> =</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    T::isValid and</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <span class="keyword">requires</span>(T parameterspace, <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterType&amp; param,</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>             <span class="keyword">const</span> <span class="keyword">typename</span> T::ElementTrimData&amp; elementTrimData, <span class="keyword">const</span> <span class="keyword">typename</span> T::PatchTrimData&amp; patchTrimData,</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>             <span class="keyword">const</span> <span class="keyword">typename</span> T::ParameterSpaceGrid&amp; paramSpaceGrid) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>      { T::mydimension } -&gt; std::convertible_to&lt;int&gt;;</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <span class="keyword">typename</span> T::ctype;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>      <span class="keyword">typename</span> T::ParameterSpaceGrid;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>      <span class="keyword">typename</span> T::ParameterType;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>      <span class="keyword">typename</span> T::ElementTrimData;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>      <span class="keyword">typename</span> T::PatchTrimData;</div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>      T(); </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>      { T::template isLocalGeometryLinear&lt;0&gt; } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>      { T::isAlwaysTrivial } -&gt; std::convertible_to&lt;bool&gt;;</div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <span class="comment">// { parameterspace.referenceElement(std::declval&lt;const EntityType&gt;()) } -&gt; std::convertible_to&lt;typename</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>      <span class="comment">// T::ReferenceElementType&gt;; Uncomment the line above when the referenceElement method is added to the</span></div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>      <span class="comment">// ParameterSpace concept.</span></div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>      <span class="comment">// { typename T::ElementTrimDataContainer() } -&gt; std::convertible_to&lt;typename T::ElementTrimDataContainer&gt;;</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span> </div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>      <span class="comment">// { parameterspace.trimData(std::declval&lt;const EntityType&gt;(), std::declval&lt;const GlobalIdSet&gt;()) } -&gt;</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>      <span class="comment">// std::convertible_to&lt;std::optional&lt;std::reference_wrapper&lt;const typename T::ElementTrimData&gt;&gt;&gt;;</span></div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      <span class="comment">// Uncomment the line above when the trimData method is added to the ParameterSpace concept.</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>      { parameterspace.globalRefine(0) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>      { parameterspace.parameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>      { parameterspace.parameterSpaceGrid() } -&gt; std::convertible_to&lt;typename T::ParameterSpaceGrid&amp;&gt;;</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>      { parameterspace.setParameters(std::declval&lt;const typename T::ParameterType&gt;()) } -&gt; std::convertible_to&lt;void&gt;;</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>      <span class="comment">// { parameterspace.unTrimmedParameterSpaceGrid() } -&gt; std::convertible_to&lt;const typename</span></div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>      <span class="comment">// T::UntrimmedParameterSpaceGrid&amp;&gt;; { parameterspace.unTrimmedParameterSpaceGrid() } -&gt;</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="comment">// std::convertible_to&lt;typename T::UntrimmedParameterSpaceGrid&amp;&gt;;</span></div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    } and</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    Dune::Concept::Grid&lt;typename T::ParameterSpaceGrid&gt;;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} <span class="comment">// namespace Dune::IGA::Concept</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> VectorType&gt;</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="../../d1/df0/a01795.html">   12</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d1/df0/a01795.html">Vector</a> = <span class="keyword">requires</span>(VectorType v, <span class="keywordtype">double</span> a, <span class="keywordtype">int</span> index) {</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keyword">typename</span> VectorType::value_type;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  { v[index] } -&gt; std::same_as&lt;typename VectorType::value_type&amp;&gt;;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  { v += v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  { v -= v } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  { v *= a } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  { v /= a } -&gt; std::same_as&lt;VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>};</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> ControlPo<span class="keywordtype">int</span>Type&gt;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="../../d3/d92/a01796.html">   24</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d3/d92/a01796.html">ControlPoint</a> = <a class="code hl_concept" href="../../d1/df0/a01795.html">Vector&lt;typename ControlPointType::VectorType&gt;</a> &amp;&amp; <span class="keyword">requires</span>(ControlPointType cp) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <span class="keyword">typename</span> ControlPointType::VectorType;</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">typename</span> ControlPointType::VectorType::value_type;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  { cp.p } -&gt; std::same_as&lt;typename ControlPointType::VectorType&amp;&gt;;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  { cp.w } -&gt; std::same_as&lt;typename ControlPointType::VectorType::value_type&amp;&gt;;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>};</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="../../d4/dd1/a01797.html">   32</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d4/dd1/a01797.html">MultiplyAble</a> = <span class="keyword">requires</span>(L x, R y) { x* y; };</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="../../d2/d86/a01798.html">   35</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d2/d86/a01798.html">AddAble</a> = <span class="keyword">requires</span>(L x, R y) { x + y; };</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno"><a class="line" href="../../d5/d12/a01799.html">   38</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d5/d12/a01799.html">SubstractAble</a> = <span class="keyword">requires</span>(L x, R y) { x - y; };</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="../../d1/d42/a01800.html">   41</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d1/d42/a01800.html">MultiplyAssignAble</a> = <span class="keyword">requires</span>(L x, R y) { x *= y; };</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="../../d2/d42/a01801.html">   44</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../d2/d42/a01801.html">DivideAssignAble</a> = <span class="keyword">requires</span>(L x, R y) { x /= y; };</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> L, <span class="keyword">typename</span> R&gt;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno"><a class="line" href="../../dd/ddc/a01802.html">   47</a></span><span class="keyword">concept </span><a class="code hl_concept" href="../../dd/ddc/a01802.html">DivideAble</a> = <span class="keyword">requires</span>(L x, R y) { x / y; };</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>} <span class="comment">// namespace Dune::IGA::Concept</span></div>
 <div class="ttc" id="aa00244_html"><div class="ttname"><a href="../../d6/d08/a00244.html">Dune::IGA::Concept</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:9</div></div>
-<div class="ttc" id="aa01804_html"><div class="ttname"><a href="../../dc/dec/a01804.html">Dune::IGA::Concept::TrimDataContainer</a></div><div class="ttdef"><b>Definition:</b> parameterspace/concepts.hh:12</div></div>
-<div class="ttc" id="aa01805_html"><div class="ttname"><a href="../../d7/d62/a01805.html">Dune::IGA::Concept::ParameterSpace</a></div><div class="ttdoc">Concept representing a ParameterSpace class.</div><div class="ttdef"><b>Definition:</b> parameterspace/concepts.hh:21</div></div>
+<div class="ttc" id="aa01795_html"><div class="ttname"><a href="../../d1/df0/a01795.html">Dune::IGA::Concept::Vector</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:12</div></div>
+<div class="ttc" id="aa01796_html"><div class="ttname"><a href="../../d3/d92/a01796.html">Dune::IGA::Concept::ControlPoint</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:24</div></div>
+<div class="ttc" id="aa01797_html"><div class="ttname"><a href="../../d4/dd1/a01797.html">Dune::IGA::Concept::MultiplyAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:32</div></div>
+<div class="ttc" id="aa01798_html"><div class="ttname"><a href="../../d2/d86/a01798.html">Dune::IGA::Concept::AddAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:35</div></div>
+<div class="ttc" id="aa01799_html"><div class="ttname"><a href="../../d5/d12/a01799.html">Dune::IGA::Concept::SubstractAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:38</div></div>
+<div class="ttc" id="aa01800_html"><div class="ttname"><a href="../../d1/d42/a01800.html">Dune::IGA::Concept::MultiplyAssignAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:41</div></div>
+<div class="ttc" id="aa01801_html"><div class="ttname"><a href="../../d2/d42/a01801.html">Dune::IGA::Concept::DivideAssignAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:44</div></div>
+<div class="ttc" id="aa01802_html"><div class="ttname"><a href="../../dd/ddc/a01802.html">Dune::IGA::Concept::DivideAble</a></div><div class="ttdef"><b>Definition:</b> hierarchicpatch/concepts.hh:47</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_13898c8d649d3f4053b811aa4a00f800.html">parameterspace</a></li><li class="navelem"><a class="el" href="../../d4/df9/a03701.html">concepts.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_12fc9e68aad46ae2d80ba50ef1c96d76.html">hierarchicpatch</a></li><li class="navelem"><a class="el" href="../../d4/df9/a03701.html">concepts.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

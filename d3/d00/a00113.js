@@ -1,4 +1,5 @@
 var a00113 =
 [
-    [ "Dune::IGA::PatchGridLocalGeometry< mydim, coorddim, GridImp >", "df/d2e/a01737.html", "df/d2e/a01737" ]
+    [ "Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl< GridImp >", "d9/dc8/a01593.html", "d9/dc8/a01593" ],
+    [ "Dune::IGA::DefaultParameterSpace::PatchTrimDataImpl< GridImp >::CurveManager", "d0/d1d/a01597.html", "d0/d1d/a01597" ]
 ];

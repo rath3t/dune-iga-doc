@@ -1,10 +1,15 @@
 var a03719 =
 [
-    [ "Dune::IGA::IdentityParameterSpace::Parameter", "d2/d44/a01677.html", null ],
-    [ "Dune::IGA::IdentityParameterSpace::ElementTrimDataImpl< mydim_, ScalarType >", "df/d5a/a01681.html", null ],
-    [ "Dune::IGA::IdentityParameterSpace::ElementTrimDataContainerImpl< ParameterSpaceGrid >", "de/d96/a01685.html", null ],
-    [ "Dune::IGA::IdentityParameterSpace::PatchTrimDataImpl< dim, ScalarType >", "da/d20/a01689.html", null ],
-    [ "Dune::IGA::IdentityParameterSpace::PatchGridFamily< dim, dimworld, ScalarType >", "da/d19/a01217.html", "da/d19/a01217" ],
-    [ "Dune::IGA::IdentityParameterSpace::PatchGridFamily< dim, dimworld, ScalarType >::ParameterSpaceTraits", "d6/d15/a01697.html", "d6/d15/a01697" ],
-    [ "Dune::IGA::IdentityParameterSpace::PatchGridFamily< dim, dimworld, ScalarType >::ParameterSpaceTraits::Codim< codim >", "d1/db5/a01701.html", "d1/db5/a01701" ]
+    [ "std::hash< Dune::IGA::DefaultParameterSpace::IdType< HostIdType > >", "d9/d8b/a01469.html", "d9/d8b/a01469" ],
+    [ "Dune::IGA::DefaultParameterSpace::IdType< HostIdType >", "d5/df9/a01441.html", "d5/df9/a01441" ],
+    [ "Dune::IGA::DefaultParameterSpace::Parameter", "de/d13/a01473.html", "de/d13/a01473" ],
+    [ "Dune::IGA::DefaultParameterSpace::PatchGridFamily< dim, dimworld, ScalarType >", "d1/de4/a01481.html", "d1/de4/a01481" ],
+    [ "Dune::IGA::DefaultParameterSpace::PatchGridFamily< dim, dimworld, ScalarType >::ParameterSpaceTraits", "d4/d39/a01485.html", "d4/d39/a01485" ],
+    [ "Dune::IGA::DefaultParameterSpace::PatchGridFamily< dim, dimworld, ScalarType >::ParameterSpaceTraits::Codim< codim >", "d2/dac/a01489.html", "d2/dac/a01489" ],
+    [ "operator!=", "d7/da7/a03719.html#a2c1da3b1a7bdfc543bf7500964472dd4", null ],
+    [ "operator<", "d7/da7/a03719.html#aa38e57c1ca5a81be3e640332d8e65eb2", null ],
+    [ "operator<=", "d7/da7/a03719.html#acf116d0cabd93fc86e27351d762ffea7", null ],
+    [ "operator==", "d7/da7/a03719.html#abb706e8b67479f961b4ca9a7c7e4caac", null ],
+    [ "operator>", "d7/da7/a03719.html#afab0aad33e09d4e3f95fbc1dfa99c2be", null ],
+    [ "operator>=", "d7/da7/a03719.html#a90f5efa72f6a6513d1fe5063a428f170", null ]
 ];

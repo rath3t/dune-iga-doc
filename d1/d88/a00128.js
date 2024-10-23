@@ -1,4 +1,5 @@
 var a00128 =
 [
-    [ "clipElementRectangle", "d1/d88/a00128.html#ad528a1bc5ed08cfd12f61e26124a5e4c", null ]
+    [ "Dune::IGA::DefaultParameterSpace::DefaultIntegrationRuleGenerator< GridImp >", "d9/dda/a01289.html", "d9/dda/a01289" ],
+    [ "Dune::IGA::IntegrationRuleHolder< GridImp >", "dc/dd5/a01293.html", "dc/dd5/a01293" ]
 ];

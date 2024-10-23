@@ -1,11 +1,8 @@
 var a00038 =
 [
-    [ "Dune::IGA::MultiDimensionalNet< netdim, ElementType, Container >", "d3/dac/a01777.html", "d3/dac/a01777" ],
-    [ "Dune::IGA::MultiDimensionalNetIndex< netdim >", "d6/d27/a01781.html", "d6/d27/a01781" ],
-    [ "dot", "d8/d41/a00038.html#ab494853db2f6cc105541b0eaf9a16573", null ],
-    [ "MultiDimensionalNet", "d8/d41/a00038.html#ad434568f69368db1d1211d5e438d51ab", null ],
-    [ "operator*", "d8/d41/a00038.html#a58e016c6ad5f1db9f128efbf889ccf14", null ],
-    [ "operator*", "d8/d41/a00038.html#a06975ed3172fc423fe3c936bac9fefff", null ],
-    [ "operator-", "d8/d41/a00038.html#af21f4f9e9fd92abd1a6f942043f72544", null ],
-    [ "operator/", "d8/d41/a00038.html#a53dd923355abf6a83c2589bf67d5b0bd", null ]
+    [ "Dune::IGA::Splines::BsplineBasis< ScalarType_ >", "d0/d78/a01745.html", "d0/d78/a01745" ],
+    [ "createUniqueKnotSpans", "d8/d41/a00038.html#aa09b1b9cc7958375a8a31d62af5b0912", null ],
+    [ "findSpan", "d8/d41/a00038.html#aa4d165c52600cfe1d6e076699c11c259", null ],
+    [ "findSpan", "d8/d41/a00038.html#a8903fd5c5528d00350ae67acdad78eda", null ],
+    [ "multiplicity", "d8/d41/a00038.html#a8fa013ed31b0cad949e149776818c0a3", null ]
 ];

@@ -1,5 +1,4 @@
 var a00041 =
 [
-    [ "is_instantiation_of< Template, T >", "d7/d10/a01785.html", null ],
-    [ "is_instantiation_of< Template, Template< Args... > >", "d6/d53/a01789.html", null ]
+    [ "Dune::IGA::Trim::LocalGeometryVariant< ParameterSpaceType_, Implementations >", "d0/d4e/a01741.html", "d0/d4e/a01741" ]
 ];

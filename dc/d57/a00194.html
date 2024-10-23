@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.4"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>dune-iga: makecirculararc.hh File Reference</title>
+<title>dune-iga: closestpointprojection.hh File Reference</title>
 <link href="../../tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="../../jquery.js"></script>
 <script type="text/javascript" src="../../dynsections.js"></script>
@@ -94,11 +94,13 @@ $(document).ready(function(){initNavTree('dc/d57/a00194.html','../../'); initRes
   <div class="summary">
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">makecirculararc.hh File Reference</div></div>
+  <div class="headertitle"><div class="title">closestpointprojection.hh File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="../../d5/df1/a00206_source.html">dune/iga/geometrykernel/basealgorithms.hh</a>&gt;</code><br />
-<code>#include &lt;<a class="el" href="../../de/d79/a03761_source.html">dune/iga/splines/nurbspatchdata.hh</a>&gt;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="../../d7/d3f/a00173_source.html">dune/iga/geometrykernel/geohelper.hh</a>&quot;</code><br />
+<code>#include &lt;dune/common/fmatrix.hh&gt;</code><br />
+<code>#include &lt;dune/common/fvector.hh&gt;</code><br />
+<code>#include &lt;dune/common/transpose.hh&gt;</code><br />
 </div>
 <p><a href="../../dc/d57/a00194_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -111,21 +113,17 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a1eeaa4b0827547b46fa451ae2a522dac"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType = double&gt; </td></tr>
-<tr class="memitem:a1eeaa4b0827547b46fa451ae2a522dac"><td class="memTemplItemLeft" align="right" valign="top">NURBSPatchData&lt; 1, 3, ScalarType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html#a1eeaa4b0827547b46fa451ae2a522dac">Dune::IGA::makeCircularArc</a> (const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;origin={0, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;X={1, 0, 0}, const Dune::FieldVector&lt; ScalarType, 3 &gt; &amp;Y={0, 1, 0})</td></tr>
-<tr class="memdesc:a1eeaa4b0827547b46fa451ae2a522dac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a circular arc as a NURBS patch with customizable options.  <a href="../../d0/d27/a00239.html#a1eeaa4b0827547b46fa451ae2a522dac">More...</a><br /></td></tr>
-<tr class="separator:a1eeaa4b0827547b46fa451ae2a522dac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="memTemplParams" colspan="2">template&lt;std::floating_point ScalarType = double&gt; </td></tr>
-<tr class="memitem:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="memTemplItemLeft" align="right" valign="top">NURBSPatchData&lt; 1, 2, ScalarType &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html#ab6a6c2bae7a9401f660e248da1be3ea6">Dune::IGA::makeCircularArc2D</a> (const ScalarType radius=1.0, const ScalarType startAngle=0.0, ScalarType endAngle=360.0, const Dune::FieldVector&lt; ScalarType, 2 &gt; &amp;origin={0, 0})</td></tr>
-<tr class="memdesc:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a circular arc as a NURBS patch with customizable options.  <a href="../../d0/d27/a00239.html#ab6a6c2bae7a9401f660e248da1be3ea6">More...</a><br /></td></tr>
-<tr class="separator:ab6a6c2bae7a9401f660e248da1be3ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a62c0cc97a46970cbdfeaa02f5afa2e"><td class="memTemplParams" colspan="2">template&lt;typename Geo &gt; </td></tr>
+<tr class="memitem:a7a62c0cc97a46970cbdfeaa02f5afa2e"><td class="memTemplItemLeft" align="right" valign="top">auto&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d0/d27/a00239.html#a7a62c0cc97a46970cbdfeaa02f5afa2e">Dune::IGA::closestPointProjectionByTrustRegion</a> (const Geo &amp;geo, auto &amp;point, const std::optional&lt; typename Geo::LocalCoordinate &gt; &amp;start=std::nullopt) -&gt; std::tuple&lt; typename Geo::LocalCoordinate, typename Geo::ctype, typename Geo::ctype, typename Geo::ctype &gt; requires(Geo::mydimension==1 or Geo::mydimension==2)</td></tr>
+<tr class="memdesc:a7a62c0cc97a46970cbdfeaa02f5afa2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the closest point projection on a NURBS curve or surface by trust region method.  <a href="../../d0/d27/a00239.html#a7a62c0cc97a46970cbdfeaa02f5afa2e">More...</a><br /></td></tr>
+<tr class="separator:a7a62c0cc97a46970cbdfeaa02f5afa2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../dc/d57/a00194.html">makecirculararc.hh</a></li>
+    <li class="navelem"><a class="el" href="../../dir_5e69be5995c9f5d42bf491ae6f29600e.html">dune</a></li><li class="navelem"><a class="el" href="../../dir_d2a3c23294a1b1015b1b8e8721ddded8.html">iga</a></li><li class="navelem"><a class="el" href="../../dir_98571e7345f7327fea7723ec1a12d870.html">geometrykernel</a></li><li class="navelem"><a class="el" href="../../dc/d57/a00194.html">closestpointprojection.hh</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="../../doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.4 </li>
   </ul>
 </div>

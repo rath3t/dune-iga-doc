@@ -1,4 +1,4 @@
 var a00077 =
 [
-    [ "Dune::IGA::PatchGridGeometry< mydim, coorddim, GridImp >", "d9/de7/a01257.html", "d9/de7/a01257" ]
+    [ "Dune::IGA::DefaultParameterSpace::LoopHandler< ParameterSpace >", "d3/da1/a01613.html", "d3/da1/a01613" ]
 ];

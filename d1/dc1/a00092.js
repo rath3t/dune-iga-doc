@@ -1,24 +1,15 @@
 var a00092 =
 [
-    [ "Dune::Capabilities::hasEntity< const IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "dd/de4/a01121.html", "dd/de4/a01121" ],
-    [ "Dune::Capabilities::hasEntity< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "d6/dc4/a01125.html", "d6/dc4/a01125" ],
-    [ "Dune::Capabilities::hasEntity< const Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d9/d17/a01129.html", "d9/d17/a01129" ],
-    [ "Dune::Capabilities::hasEntityIterator< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "db/d28/a01133.html", "db/d28/a01133" ],
-    [ "Dune::Capabilities::hasEntityIterator< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d6/d6e/a01137.html", "d6/d6e/a01137" ],
-    [ "Dune::Capabilities::canCommunicate< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType >, codim >", "de/df6/a01141.html", "de/df6/a01141" ],
-    [ "Dune::Capabilities::canCommunicate< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > >, codim >", "d9/d65/a01145.html", "d9/d65/a01145" ],
-    [ "Dune::Capabilities::isLevelwiseConforming< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d8/d02/a01149.html", "d8/d02/a01149" ],
-    [ "Dune::Capabilities::isLevelwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dc/d06/a01153.html", "dc/d06/a01153" ],
-    [ "Dune::Capabilities::isLeafwiseConforming< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d9/d25/a01157.html", "d9/d25/a01157" ],
-    [ "Dune::Capabilities::isLeafwiseConforming< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dc/d81/a01161.html", "dc/d81/a01161" ],
-    [ "Dune::Capabilities::hasBackupRestoreFacilities< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d8/d92/a01165.html", "d8/d92/a01165" ],
-    [ "Dune::Capabilities::hasBackupRestoreFacilities< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d7/daf/a01169.html", "d7/daf/a01169" ],
-    [ "Dune::Capabilities::threadSafe< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d7/d0c/a01173.html", "d7/d0c/a01173" ],
-    [ "Dune::Capabilities::threadSafe< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dc/d98/a01177.html", "dc/d98/a01177" ],
-    [ "Dune::Capabilities::viewThreadSafe< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/db5/a01181.html", "de/db5/a01181" ],
-    [ "Dune::Capabilities::viewThreadSafe< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "d3/dd3/a01185.html", "d3/dd3/a01185" ],
-    [ "Dune::Capabilities::isCartesian< IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "d3/d10/a01189.html", "d3/d10/a01189" ],
-    [ "Dune::Capabilities::isCartesian< Dune::Grid< dim, dimworld, ScalarType, IGA::PatchGridFamily< dim, dimworld, GridFamilyTraits, ScalarType > > >", "dd/d43/a01193.html", "dd/d43/a01193" ],
-    [ "Dune::EnableBoundarySegmentIndexCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d61/a01205.html", null ],
-    [ "EnableLevelIntersectionIteratorCheck< Dune::IGA::PatchGrid< dim, dimworld, GridFamilyTraits, ScalarType > >", "de/d04/a01209.html", "de/d04/a01209" ]
+    [ "Dune::IGA::DefaultParameterSpace::Util::FindIntersectionResult", "d9/d45/a01665.html", "d9/d45/a01665" ],
+    [ "FindIntersectionError", "d1/dc1/a00092.html#a026c0aac784d18de2633a2f394dc0dde", [
+      [ "parallel", "d1/dc1/a00092.html#a026c0aac784d18de2633a2f394dc0ddea48920c071f6a5c97ae3739be64630697", null ],
+      [ "notSuccessful", "d1/dc1/a00092.html#a026c0aac784d18de2633a2f394dc0ddea575b705894ed77dcbd2f8aa858ebd15d", null ]
+    ] ],
+    [ "approxSamePoint", "d1/dc1/a00092.html#a5ede4b0b739a4537538baee9df7b6eb9", null ],
+    [ "callFindIntersection", "d1/dc1/a00092.html#ab2a8649f1afb2143449e4a5c1af56ac9", null ],
+    [ "coarsestFather", "d1/dc1/a00092.html#a7360f92eb61fb721d5b59623cba4c9f2", null ],
+    [ "createHostGeometry", "d1/dc1/a00092.html#a65fa3682920e0512a180e530d5657166", null ],
+    [ "createTrimmingCurveSlice", "d1/dc1/a00092.html#ad3511c42399d38ec10e499636559044a", null ],
+    [ "distance", "d1/dc1/a00092.html#a9c654cb221f83781b32e8b03c9cceb21", null ],
+    [ "findGoodStartingPoint", "d1/dc1/a00092.html#aa4eec910fd0774569c40b63c51abd0c9", null ]
 ];
