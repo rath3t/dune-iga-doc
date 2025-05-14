@@ -26,15 +26,15 @@ var NAVTREE =
 [
   [ "dune-iga", "index.html", [
     [ "dune-iga documentation", "index.html", null ],
-    [ "Modules", "modules.html", "modules" ],
+    [ "Deprecated List", "d4/d3e/a00116.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
         [ "All", "namespacemembers.html", null ],
         [ "Functions", "namespacemembers_func.html", null ],
-        [ "Variables", "namespacemembers_vars.html", null ],
         [ "Typedefs", "namespacemembers_type.html", null ],
-        [ "Enumerations", "namespacemembers_enum.html", null ]
+        [ "Enumerations", "namespacemembers_enum.html", null ],
+        [ "Enumerator", "namespacemembers_eval.html", null ]
       ] ]
     ] ],
     [ "Concepts", "concepts.html", "concepts" ],
@@ -45,43 +45,28 @@ var NAVTREE =
       [ "Class Members", "functions.html", [
         [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", "functions_func" ],
-        [ "Variables", "functions_vars.html", "functions_vars" ],
-        [ "Typedefs", "functions_type.html", "functions_type" ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Typedefs", "functions_type.html", null ],
         [ "Enumerations", "functions_enum.html", null ],
         [ "Related Functions", "functions_rela.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ],
-        [ "Macros", "globals_defs.html", null ]
-      ] ]
-    ] ],
-    [ "Examples", "examples.html", "examples" ]
+      [ "File List", "files.html", "files_dup" ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
 "annotated.html",
-"d1/d2f/a03767.html#abe7102c803053539b7417e439b0f122f",
-"d2/d49/a01561.html#a335ac07374bc47291b1e4b9fe7cdd903",
-"d3/d07/a01241.html#a1cc5090f223bcb7b4f6ca63d899541d1",
-"d3/dac/a01777.html#ace5699c97c7c9cf64b044a94cdca30ab",
-"d4/deb/a01345.html#ad3bff32c80e0b2c0c66f696da22af6a3",
-"d6/d16/a01269.html#a82eb6e2cd1e6491ad8c5fa3f01582081",
-"d6/da1/a01233.html",
-"d7/d53/a01645.html#a4e2def8b4b3cbe2b1cbf428fa338a53b",
-"d9/d17/a01129.html#ae9d19f935040161469902269c21759d0",
-"d9/df5/a01673.html#a68e1931bd965a544f0bd14b318ebd00b",
-"db/d1c/a01229.html#a7ca8657a9f7ace6308caf89b4746426a",
-"db/dc0/a01757.html#a044d32986dc5e0527224dffeda10215b",
-"dc/dd5/a01293.html#a8f9a724192f74ab70d323288bae86876",
-"dd/ddb/a01717.html",
-"de/d99/a01101.html",
-"dir_12fc9e68aad46ae2d80ba50ef1c96d76.html"
+"d1/dd8/a01022.html#a63f4d34767cc2468118f827a2257a4c4",
+"d4/d51/a00017.html#a7e1d9b847ff31435dac790c39d02451fadbcd2df59919078c8999bcf4522f3a0f",
+"d5/d67/a01070.html#a7dbb42697c1111f33461563b260b4d25",
+"da/d17/a01046.html#a5d44299aff465f934b96a97785fd1a67",
+"dc/dfe/a00125.html#a10c3f08f7830f39c003415e65e2a0361",
+"dd/de2/a01134.html#a5e9c0ab844847d9e4b15337869e58b1e",
+"de/d91/a01034.html#ad1ec86095c75c7472125add171d19867"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

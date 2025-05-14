@@ -1,9 +1,19 @@
 var searchData=
 [
-  ['generator_2epy_0',['generator.py',['../d5/ddf/a00224.html',1,'']]],
-  ['geohelper_2ehh_1',['geohelper.hh',['../d7/d3f/a00173.html',1,'']]],
-  ['grid_2ehh_2',['grid.hh',['../dd/dad/a00005.html',1,'']]],
-  ['gridcapabilities_2ehh_3',['gridcapabilities.hh',['../d9/db6/a00146.html',1,'']]],
-  ['griddrawer_2ehh_4',['griddrawer.hh',['../dc/d87/a00032.html',1,'']]],
-  ['gridenums_2ehh_5',['gridenums.hh',['../d7/d46/a00002.html',1,'']]]
+  ['nurbsalgorithms_2ehh_0',['nurbsalgorithms.hh',['../d4/dee/a00008.html',1,'']]],
+  ['nurbsbasis_2ehh_1',['nurbsbasis.hh',['../d7/d46/a00002.html',1,'']]],
+  ['nurbsgeometry_2ehh_2',['nurbsgeometry.hh',['../d1/d44/a00098.html',1,'']]],
+  ['nurbsgrid_2ehh_3',['nurbsgrid.hh',['../d9/d2e/a00056.html',1,'']]],
+  ['nurbsgridentity_2ehh_4',['nurbsgridentity.hh',['../d4/d3a/a00101.html',1,'']]],
+  ['nurbsgridindexsets_2ehh_5',['nurbsgridindexsets.hh',['../dd/dad/a00005.html',1,'']]],
+  ['nurbsgridleafiterator_2ehh_6',['nurbsgridleafiterator.hh',['../dd/d32/a00041.html',1,'']]],
+  ['nurbsgridtraits_2ehh_7',['nurbsgridtraits.hh',['../da/d24/a00068.html',1,'']]],
+  ['nurbsidset_2ehh_8',['nurbsidset.hh',['../d5/df9/a00044.html',1,'']]],
+  ['nurbsintersection_2ehh_9',['nurbsintersection.hh',['../d9/d77/a00095.html',1,'']]],
+  ['nurbsleafgridview_2ehh_10',['nurbsleafgridview.hh',['../d6/d2d/a00047.html',1,'']]],
+  ['nurbslocalgeometry_2ehh_11',['nurbslocalgeometry.hh',['../df/d03/a00062.html',1,'']]],
+  ['nurbspatch_2ehh_12',['nurbspatch.hh',['../d3/d8b/a00059.html',1,'']]],
+  ['nurbspatchgeometry_2ehh_13',['nurbspatchgeometry.hh',['../de/de1/a00065.html',1,'']]],
+  ['nurbstrimboundary_2ehh_14',['nurbstrimboundary.hh',['../d8/d41/a00038.html',1,'']]],
+  ['nurbstrimmer_2ehh_15',['nurbstrimmer.hh',['../dc/d87/a00032.html',1,'']]]
 ];

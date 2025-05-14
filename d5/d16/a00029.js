@@ -1,4 +1,11 @@
 var a00029 =
 [
-    [ "createUnstructuredGridImpl", "d5/d16/a00029.html#aab3b41bcffed5f7e4d28f8f3fe629f05", null ]
+    [ "Dune::IGA::TransformToSpan< dim >", "dc/d9e/a01206.html", "dc/d9e/a01206" ],
+    [ "Dune::IGA::DomainInformation", "d2/da6/a01210.html", "d2/da6/a01210" ],
+    [ "Dune::IGA::GridBoundarySegment< dim, Transformer >", "d5/d32/a01214.html", "d5/d32/a01214" ],
+    [ "DomainType", "d5/d16/a00029.html#a25585768c010972feb9ad3e744e16623", null ],
+    [ "calculateBoundaryLoopLength", "d5/d16/a00029.html#ad53d9d1af502406661ebe6320753c429", null ],
+    [ "determineCurvedBoundaries", "d5/d16/a00029.html#a271f64a918349a4cae9cbc2a9dad0a4d", null ],
+    [ "splitBoundariesImpl", "d5/d16/a00029.html#ad66112982ac256c7f15589dec5fcce68", null ],
+    [ "triangulate", "d5/d16/a00029.html#ab8e1d89240e3480112457535ab40b620", null ]
 ];
