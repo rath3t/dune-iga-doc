@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['gridboundarysegment_0',['GridBoundarySegment',['../d5/d32/a01214.html',1,'Dune::IGA']]]
+  ['findintersectionresult_0',['FindIntersectionResult',['../d9/d45/a01665.html',1,'Dune::IGA::DefaultParameterSpace::Util']]]
 ];

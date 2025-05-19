@@ -1,4 +1,4 @@
 var a00065 =
 [
-    [ "Dune::IGA::NURBSPatchGeometry< dim, dimworld, ScalarType >", "de/d07/a01146.html", "de/d07/a01146" ]
+    [ "Dune::IGA::SimplexIntegrationRuleGenerator< GridImp >", "de/d90/a01313.html", "de/d90/a01313" ]
 ];
